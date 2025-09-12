@@ -1,0 +1,79 @@
+2025-07-10 23:20:53,682 [INFO] ===== SEMANTIC SCORING RUN STARTED =====
+2025-07-10 23:20:53,682 [INFO] Model: all-mpnet-base-v2, Dedup: 0.85, Cluster K: 5, Seed: 42
+2025-07-10 23:20:53,682 [INFO] Input: keyword_extract/v1/step_3/scored
+2025-07-10 23:20:53,682 [INFO] Output: keyword_extract/v1/step_4/semantic/per_method/mpnet_base
+2025-07-10 23:20:53,682 [INFO] Log: sbert_fix/logs/keyword_extract/v1/step_4a_semantic_20250710T232053.log
+2025-07-10 23:20:53,693 [INFO] Use pytorch device_name: mps
+2025-07-10 23:20:53,693 [INFO] Load pretrained SentenceTransformer: all-mpnet-base-v2
+2025-07-10 23:21:21,571 [INFO] Semantic scored 100 files. (latest: spacy/keybert/meta70b/req-023/REQ-023-HLJ-Chunk_1-Item_4-v1.0_keybert.json)
+2025-07-10 23:21:45,130 [INFO] Semantic scored 200 files. (latest: spacy/keybert/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_8-v1.0_keybert.json)
+2025-07-10 23:22:08,868 [INFO] Semantic scored 300 files. (latest: spacy/keybert/opus4/req-008/REQ-008-HLJ-Chunk_3-Item_1-v1.0_keybert.json)
+2025-07-10 23:22:51,092 [INFO] Semantic scored 400 files. (latest: spacy/keybert/opus4/req-025/REQ-025-HLJ-Chunk_2-Item_5-v1.0_keybert.json)
+2025-07-10 23:23:43,120 [INFO] Semantic scored 500 files. (latest: spacy/keybert/opus4/req-005/REQ-005-HLJ-Chunk_1-Item_7-v1.0_keybert.json)
+2025-07-10 23:24:25,543 [INFO] Semantic scored 600 files. (latest: spacy/keybert/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_1-v1.0_keybert.json)
+2025-07-10 23:25:15,274 [INFO] Semantic scored 700 files. (latest: spacy/keybert/gpt41/req-009/REQ-009-HLJ-Chunk_1-Item_6-v1.0_keybert.json)
+2025-07-10 23:26:07,337 [INFO] Semantic scored 800 files. (latest: spacy/keybert/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_5-v1.0_keybert.json)
+2025-07-10 23:26:56,867 [INFO] Semantic scored 900 files. (latest: spacy/keybert/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_3-v1.0_keybert.json)
+2025-07-10 23:27:40,050 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/keybert/semantic_spacy_keybert.csv
+2025-07-10 23:27:40,051 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/keybert/top10_spacy_keybert.md
+2025-07-10 23:27:40,415 [INFO] Semantic scored 1000 files. (latest: spacy/rake/meta70b/req-008/REQ-008-HLJ-Chunk_2-Item_8-v1.0_rake.json)
+2025-07-10 23:27:53,265 [INFO] Semantic scored 1100 files. (latest: spacy/rake/meta70b/req-023/REQ-023-HLJ-Chunk_2-Item_11-v1.0_rake.json)
+2025-07-10 23:28:04,788 [INFO] Semantic scored 1200 files. (latest: spacy/rake/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_6-v1.0_rake.json)
+2025-07-10 23:28:15,186 [INFO] Semantic scored 1300 files. (latest: spacy/rake/opus4/req-008/REQ-008-HLJ-Chunk_2-Item_3-v1.0_rake.json)
+2025-07-10 23:28:29,882 [INFO] Semantic scored 1400 files. (latest: spacy/rake/opus4/req-025/REQ-025-HLJ-Chunk_1-Item_3-v1.0_rake.json)
+2025-07-10 23:28:46,114 [INFO] Semantic scored 1500 files. (latest: spacy/rake/opus4/req-005/REQ-005-HLJ-Chunk_3-Item_3-v1.0_rake.json)
+2025-07-10 23:29:00,735 [INFO] Semantic scored 1600 files. (latest: spacy/rake/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_9-v1.0_rake.json)
+2025-07-10 23:29:19,402 [INFO] Semantic scored 1700 files. (latest: spacy/rake/gpt41/req-009/REQ-009-HLJ-Chunk_1-Item_6-v1.0_rake.json)
+2025-07-10 23:29:36,447 [INFO] Semantic scored 1800 files. (latest: spacy/rake/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_2-v1.0_rake.json)
+2025-07-10 23:29:55,426 [INFO] Semantic scored 1900 files. (latest: spacy/rake/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_7-v1.0_rake.json)
+2025-07-10 23:30:13,961 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/rake/semantic_spacy_rake.csv
+2025-07-10 23:30:13,963 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/rake/top10_spacy_rake.md
+2025-07-10 23:30:15,605 [INFO] Semantic scored 2000 files. (latest: spacy/yake/meta70b/req-008/REQ-008-HLJ-Chunk_1-Item_2-v1.0_yake.json)
+2025-07-10 23:30:36,367 [INFO] Semantic scored 2100 files. (latest: spacy/yake/meta70b/req-023/REQ-023-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 23:30:57,241 [INFO] Semantic scored 2200 files. (latest: spacy/yake/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_8-v1.0_yake.json)
+2025-07-10 23:31:17,425 [INFO] Semantic scored 2300 files. (latest: spacy/yake/opus4/req-008/REQ-008-HLJ-Chunk_3-Item_3-v1.0_yake.json)
+2025-07-10 23:31:40,207 [INFO] Semantic scored 2400 files. (latest: spacy/yake/opus4/req-025/REQ-025-HLJ-Chunk_1-Item_8-v1.0_yake.json)
+2025-07-10 23:32:02,287 [INFO] Semantic scored 2500 files. (latest: spacy/yake/opus4/req-004/REQ-004-HLJ-Chunk_1-Item_10-v1.0_yake.json)
+2025-07-10 23:32:23,083 [INFO] Semantic scored 2600 files. (latest: spacy/yake/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_6-v1.0_yake.json)
+2025-07-10 23:32:44,656 [INFO] Semantic scored 2700 files. (latest: spacy/yake/gpt41/req-014/REQ-014-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 23:33:08,412 [INFO] Semantic scored 2800 files. (latest: spacy/yake/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 23:33:29,833 [INFO] Semantic scored 2900 files. (latest: spacy/yake/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_3-v1.0_yake.json)
+2025-07-10 23:33:50,378 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/yake/semantic_spacy_yake.csv
+2025-07-10 23:33:50,379 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/spacy/yake/top10_spacy_yake.md
+2025-07-10 23:33:53,947 [INFO] Semantic scored 3000 files. (latest: stanza/keybert/meta70b/req-008/REQ-008-HLJ-Chunk_1-Item_5-v1.0_keybert.json)
+2025-07-10 23:34:27,325 [INFO] Semantic scored 3100 files. (latest: stanza/keybert/meta70b/req-023/REQ-023-HLJ-Chunk_2-Item_11-v1.0_keybert.json)
+2025-07-10 23:34:58,200 [INFO] Semantic scored 3200 files. (latest: stanza/keybert/meta70b/req-017/REQ-017-HLJ-Chunk_1-Item_6-v1.0_keybert.json)
+2025-07-10 23:35:32,604 [INFO] Semantic scored 3300 files. (latest: stanza/keybert/opus4/req-008/REQ-008-HLJ-Chunk_2-Item_4-v1.0_keybert.json)
+2025-07-10 23:36:33,877 [INFO] Semantic scored 3400 files. (latest: stanza/keybert/opus4/req-025/REQ-025-HLJ-Chunk_1-Item_7-v1.0_keybert.json)
+2025-07-10 23:37:33,496 [INFO] Semantic scored 3500 files. (latest: stanza/keybert/opus4/req-004/REQ-004-HLJ-Chunk_2-Item_2-v1.0_keybert.json)
+2025-07-10 23:38:26,032 [INFO] Semantic scored 3600 files. (latest: stanza/keybert/opus4/req-016/REQ-016-HLJ-Chunk_1-Item_7-v1.0_keybert.json)
+2025-07-10 23:39:26,406 [INFO] Semantic scored 3700 files. (latest: stanza/keybert/gpt41/req-014/REQ-014-HLJ-Chunk_1-Item_5-v1.0_keybert.json)
+2025-07-10 23:40:25,667 [INFO] Semantic scored 3800 files. (latest: stanza/keybert/gpt41/req-002/REQ-002-HLJ-Chunk_1-Item_8-v1.0_keybert.json)
+2025-07-10 23:41:26,440 [INFO] Semantic scored 3900 files. (latest: stanza/keybert/gpt41/req-019/REQ-019-HLJ-Chunk_1-Item_2-v1.0_keybert.json)
+2025-07-10 23:42:17,226 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/keybert/semantic_stanza_keybert.csv
+2025-07-10 23:42:17,227 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/keybert/top10_stanza_keybert.md
+2025-07-10 23:42:19,509 [INFO] Semantic scored 4000 files. (latest: stanza/rake/meta70b/req-030/REQ-030-HLJ-Chunk_1-Item_2-v1.0_rake.json)
+2025-07-10 23:42:34,345 [INFO] Semantic scored 4100 files. (latest: stanza/rake/meta70b/req-024/REQ-024-HLJ-Chunk_1-Item_5-v1.0_rake.json)
+2025-07-10 23:42:47,465 [INFO] Semantic scored 4200 files. (latest: stanza/rake/meta70b/req-017/REQ-017-HLJ-Chunk_1-Item_4-v1.0_rake.json)
+2025-07-10 23:43:01,355 [INFO] Semantic scored 4300 files. (latest: stanza/rake/opus4/req-008/REQ-008-HLJ-Chunk_1-Item_4-v1.0_rake.json)
+2025-07-10 23:43:18,421 [INFO] Semantic scored 4400 files. (latest: stanza/rake/opus4/req-025/REQ-025-HLJ-Chunk_2-Item_3-v1.0_rake.json)
+2025-07-10 23:43:37,519 [INFO] Semantic scored 4500 files. (latest: stanza/rake/opus4/req-004/REQ-004-HLJ-Chunk_1-Item_3-v1.0_rake.json)
+2025-07-10 23:43:53,548 [INFO] Semantic scored 4600 files. (latest: stanza/rake/opus4/req-016/REQ-016-HLJ-Chunk_1-Item_8-v1.0_rake.json)
+2025-07-10 23:44:13,906 [INFO] Semantic scored 4700 files. (latest: stanza/rake/gpt41/req-014/REQ-014-HLJ-Chunk_1-Item_5-v1.0_rake.json)
+2025-07-10 23:44:35,718 [INFO] Semantic scored 4800 files. (latest: stanza/rake/gpt41/req-002/REQ-002-HLJ-Chunk_1-Item_7-v1.0_rake.json)
+2025-07-10 23:44:56,074 [INFO] Semantic scored 4900 files. (latest: stanza/rake/gpt41/req-019/REQ-019-HLJ-Chunk_1-Item_4-v1.0_rake.json)
+2025-07-10 23:45:12,645 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/rake/semantic_stanza_rake.csv
+2025-07-10 23:45:12,646 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/rake/top10_stanza_rake.md
+2025-07-10 23:45:16,320 [INFO] Semantic scored 5000 files. (latest: stanza/yake/meta70b/req-006/REQ-006-HLJ-Chunk_2-Item_2-v1.0_yake.json)
+2025-07-10 23:45:39,830 [INFO] Semantic scored 5100 files. (latest: stanza/yake/meta70b/req-024/REQ-024-HLJ-Chunk_2-Item_8-v1.0_yake.json)
+2025-07-10 23:46:02,083 [INFO] Semantic scored 5200 files. (latest: stanza/yake/meta70b/req-017/REQ-017-HLJ-Chunk_1-Item_3-v1.0_yake.json)
+2025-07-10 23:46:23,482 [INFO] Semantic scored 5300 files. (latest: stanza/yake/opus4/req-008/REQ-008-HLJ-Chunk_1-Item_1-v1.0_yake.json)
+2025-07-10 23:46:47,358 [INFO] Semantic scored 5400 files. (latest: stanza/yake/opus4/req-022/REQ-022-HLJ-Chunk_1-Item_3-v1.0_yake.json)
+2025-07-10 23:47:09,384 [INFO] Semantic scored 5500 files. (latest: stanza/yake/opus4/req-004/REQ-004-HLJ-Chunk_1-Item_7-v1.0_yake.json)
+2025-07-10 23:47:33,258 [INFO] Semantic scored 5600 files. (latest: stanza/yake/opus4/req-016/REQ-016-HLJ-Chunk_1-Item_6-v1.0_yake.json)
+2025-07-10 23:48:00,091 [INFO] Semantic scored 5700 files. (latest: stanza/yake/gpt41/req-013/REQ-013-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 23:48:25,968 [INFO] Semantic scored 5800 files. (latest: stanza/yake/gpt41/req-002/REQ-002-HLJ-Chunk_1-Item_7-v1.0_yake.json)
+2025-07-10 23:48:50,668 [INFO] Semantic scored 5900 files. (latest: stanza/yake/gpt41/req-019/REQ-019-HLJ-Chunk_1-Item_8-v1.0_yake.json)
+2025-07-10 23:49:11,175 [INFO] Exported CSV: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/yake/semantic_stanza_yake.csv
+2025-07-10 23:49:11,177 [INFO] Exported top10 MD: keyword_extract/v1/step_4/semantic/per_method/mpnet_base/stanza/yake/top10_stanza_yake.md
+2025-07-10 23:49:11,177 [INFO] ✅ Semantic scoring done! Total: 5982. Log: sbert_fix/logs/keyword_extract/v1/step_4a_semantic_20250710T232053.log

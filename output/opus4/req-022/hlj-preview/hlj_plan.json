@@ -1,0 +1,222 @@
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-022-HLJ-Chunk_1",
+      "focus": "Core logging infrastructure and data capture",
+      "items": [
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design database schema for resource access logs with user ID, timestamp, IP, access type fields",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Database"
+          ],
+          "tags": [
+            "logging",
+            "database",
+            "schema"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement access logging middleware to capture read, edit, export actions across API and UI",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Security"
+          ],
+          "tags": [
+            "logging",
+            "middleware",
+            "api"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Create configurable log retention system with 1-year default storage period",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Compliance"
+          ],
+          "tags": [
+            "retention",
+            "storage",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Build role-based access control for log export restricted to Compliance and Security roles",
+          "domain": "SaaS",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "rbac",
+            "security",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Develop CSV and JSON export functionality for access logs",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Export"
+          ],
+          "tags": [
+            "export",
+            "csv",
+            "json"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement log filtering by date, user, and resource type for exports",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Export"
+          ],
+          "tags": [
+            "filtering",
+            "export",
+            "query"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create sensitive data masking system for exports based on company and jurisdiction policies",
+          "domain": "SaaS",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "masking",
+            "privacy",
+            "compliance"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Implement historical role context preservation in logs when user roles change",
+          "domain": "SaaS",
+          "subdomain": [
+            "Logging",
+            "Security"
+          ],
+          "tags": [
+            "audit",
+            "roles",
+            "history"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Build notification system for compliance team leads on large-volume exports",
+          "domain": "SaaS",
+          "subdomain": [
+            "Notifications",
+            "Compliance"
+          ],
+          "tags": [
+            "notifications",
+            "alerts",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Create anomaly detection for unusual access patterns with compliance notifications",
+          "domain": "SaaS",
+          "subdomain": [
+            "Security",
+            "Monitoring"
+          ],
+          "tags": [
+            "anomaly",
+            "monitoring",
+            "alerts"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 29"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-022-HLJ-Chunk_2",
+      "focus": "Documentation, constraints, and compliance features",
+      "items": [
+        {
+          "id": "REQ-022-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Implement rate limiting for log export functionality to prevent abuse",
+          "domain": "SaaS",
+          "subdomain": [
+            "Security",
+            "Performance"
+          ],
+          "tags": [
+            "rate-limiting",
+            "security",
+            "performance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Update admin documentation with log export and retention guidelines",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation",
+            "Compliance"
+          ],
+          "tags": [
+            "documentation",
+            "compliance",
+            "admin"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 33"
+        }
+      ]
+    }
+  ]
+}

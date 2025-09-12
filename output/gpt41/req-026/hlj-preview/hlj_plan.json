@@ -1,0 +1,251 @@
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-026-HLJ-Chunk_1",
+      "focus": "Behavioral triggers, survey delivery, suppression logic, and UX",
+      "items": [
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Define configurable behavioral triggers for NPS surveys",
+          "domain": "SaaS",
+          "subdomain": [
+            "CustomerFeedback"
+          ],
+          "tags": [
+            "nps",
+            "automation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10\u201312"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement logic to delay/suppress surveys on churn signals",
+          "domain": "SaaS",
+          "subdomain": [
+            "BehavioralIntelligence"
+          ],
+          "tags": [
+            "nps"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13\u201314"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Embed NPS prompt natively in web and mobile apps",
+          "domain": "SaaS",
+          "subdomain": [
+            "CustomerFeedback"
+          ],
+          "tags": [
+            "nps",
+            "usability"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Design prompt retry and 30-day suppression after dismissal",
+          "domain": "SaaS",
+          "subdomain": [
+            "CustomerFeedback"
+          ],
+          "tags": [
+            "nps",
+            "usability"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 17\u201318"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Coordinate prompt delivery to prevent duplicates for multi-device users",
+          "domain": "SaaS",
+          "subdomain": [
+            "BehavioralIntelligence"
+          ],
+          "tags": [
+            "nps"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 28\u201329"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Handle conflicting triggers by prioritization logic",
+          "domain": "SaaS",
+          "subdomain": [
+            "BehavioralIntelligence"
+          ],
+          "tags": [
+            "nps"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30\u201331"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Ensure NPS prompt is minimally disruptive to user workflow",
+          "domain": "SaaS",
+          "subdomain": [
+            "CustomerFeedback"
+          ],
+          "tags": [
+            "usability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Allow users to opt out of feedback requests at any time",
+          "domain": "SaaS",
+          "subdomain": [
+            "CustomerFeedback",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "usability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update product training and onboarding for NPS insights",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "enablement"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 33"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Provide internal team feedback mechanism to refine survey rules and content",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "enablement"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 34"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-026-HLJ-Chunk_2",
+      "focus": "Analytics, insights, integration, compliance, localization, and KPIs",
+      "items": [
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Visualize NPS response rates, scores, and trends by cohort and event",
+          "domain": "SaaS",
+          "subdomain": [
+            "Analytics"
+          ],
+          "tags": [
+            "nps",
+            "analytics"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 19\u201321"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Integrate NPS results with CRM and support for proactive outreach",
+          "domain": "SaaS",
+          "subdomain": [
+            "Integration"
+          ],
+          "tags": [
+            "crm",
+            "support"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22\u201323"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Ensure survey data storage and audit per privacy standards",
+          "domain": "SaaS",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "privacy"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Integrate with analytics, CRM, and support ticketing platforms",
+          "domain": "SaaS",
+          "subdomain": [
+            "Integration"
+          ],
+          "tags": [
+            "integration"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Localize surveys for key markets",
+          "domain": "SaaS",
+          "subdomain": [
+            "Localization"
+          ],
+          "tags": [
+            "localization"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Monitor and enforce KPIs: >20% response rate, 90% mapping, <24h follow-up",
+          "domain": "SaaS",
+          "subdomain": [
+            "Analytics",
+            "Support"
+          ],
+          "tags": [
+            "kpi"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 39\u201342"
+        }
+      ]
+    }
+  ]
+}

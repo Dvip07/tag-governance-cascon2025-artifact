@@ -1,0 +1,500 @@
+{
+  "CHUNK_ID": "REQ-011-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Integrate with internal and third-party credit bureaus for real-time score retrieval (Ln 08\u201311)",
+    "Build decision engine to map credit score bands to eligible EMI plans and rates (Ln 12\u201314)",
+    "Ensure all scoring and eligibility checks complete within 2 seconds (Ln 15\u201315)",
+    "Display only qualified EMI plans at checkout with payment breakdown (Ln 17\u201318)",
+    "Trigger re-validation of eligibility if credit band changes prior to disbursement (Ln 19\u201320)",
+    "Enable manual override for borderline customers with justification logging (Ln 23\u201324)",
+    "Default to conservative EMI options and flag if credit lookup fails/times out (Ln 25\u201326)",
+    "Implement EMI calculator in checkout for users to simulate payment options (Ln 29\u201330)",
+    "Present all EMI terms and dispute processes in plain language at checkout (Ln 31\u201332)",
+    "Ensure user consent for all credit checks during EMI selection (Ln 36\u201337)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Integrate with internal and third-party credit bureaus for real-time score retrieval",
+        "summary": "Establish real-time integration with both internal and external credit bureaus to retrieve and update customer credit scores during the checkout process. This ensures that EMI offerings are based on up-to-date and accurate creditworthiness information. Interfaces must comply with relevant legal, privacy, and audit requirements.",
+        "tags": [
+          "integration",
+          "creditworthiness",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CreditAssessment"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.95,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 08\u201311",
+        "reasoning": {
+          "source_summary_fragment": "integration with internal and third-party credit bureaus for real-time score retrieval",
+          "tag_metadata_reference": [
+            {
+              "tag": "integration",
+              "confidence": 0.97
+            },
+            {
+              "tag": "creditworthiness",
+              "confidence": 0.93
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "credit bureau API",
+            "score retrieval",
+            "real-time eligibility"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Build decision engine to map credit score bands to eligible EMI plans and rates",
+        "summary": "Develop a decision engine that interprets retrieved credit scores and maps them to appropriate EMI plans and interest rates. The logic should be maintainable, transparent, and configurable to ensure regulatory and risk management requirements are met.",
+        "tags": [
+          "decisioning",
+          "emi",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CreditAssessment",
+          "EMI"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.94,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 12\u201314",
+        "reasoning": {
+          "source_summary_fragment": "decision engine to map credit score bands to eligible EMI plans and rates",
+          "tag_metadata_reference": [
+            {
+              "tag": "decisioning",
+              "confidence": 0.97
+            },
+            {
+              "tag": "emi",
+              "confidence": 0.95
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.89
+            }
+          ],
+          "mapped_concepts": [
+            "score band mapping",
+            "EMI plan selection",
+            "interest rate model"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.89,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Ensure all scoring and eligibility checks complete within 2 seconds",
+        "summary": "All credit scoring retrieval and EMI eligibility checks must complete within a maximum of 2 seconds to ensure a seamless and responsive checkout experience for users. Latency must be continually monitored and optimized.",
+        "tags": [
+          "performance",
+          "creditworthiness"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CreditAssessment"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 15\u201315",
+        "reasoning": {
+          "source_summary_fragment": "scoring and eligibility checks complete within 2 seconds",
+          "tag_metadata_reference": [
+            {
+              "tag": "performance",
+              "confidence": 0.97
+            },
+            {
+              "tag": "creditworthiness",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "latency SLA",
+            "performance targets",
+            "eligibility decision timing"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": 0.8,
+          "method": "explicit_no_additional_inference"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Display only qualified EMI plans at checkout with payment breakdown",
+        "summary": "During checkout, present users exclusively with EMI plans for which they are pre-qualified, including a detailed payment breakdown (principal, interest, tenure). This reduces friction and ensures users understand their financial obligations.",
+        "tags": [
+          "emi",
+          "usability",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Checkout",
+          "EMI"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 17\u201318",
+        "reasoning": {
+          "source_summary_fragment": "Display only qualified EMI plans at checkout with payment breakdown",
+          "tag_metadata_reference": [
+            {
+              "tag": "emi",
+              "confidence": 0.96
+            },
+            {
+              "tag": "usability",
+              "confidence": 0.92
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "EMI plan visibility",
+            "qualification filter",
+            "transparent payment structure"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.87,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Trigger re-validation of eligibility if credit band changes prior to disbursement",
+        "summary": "If a customer's credit band changes before loan disbursement, the system should automatically trigger a re-validation of their EMI eligibility, ensuring decisions reflect the most current credit information and risk policies.",
+        "tags": [
+          "revalidation",
+          "emi",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CreditAssessment",
+          "EMI"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 19\u201320",
+        "reasoning": {
+          "source_summary_fragment": "re-validation of eligibility if credit band changes prior to disbursement",
+          "tag_metadata_reference": [
+            {
+              "tag": "revalidation",
+              "confidence": 0.94
+            },
+            {
+              "tag": "emi",
+              "confidence": 0.91
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.85
+            }
+          ],
+          "mapped_concepts": [
+            "ongoing risk assessment",
+            "last-mile eligibility check",
+            "credit update"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.85,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Enable manual override for borderline customers with justification logging",
+        "summary": "Support staff should be able to manually approve or reject borderline EMI cases, with a mandatory justification and auditable log. This empowers risk management while maintaining transparency and accountability.",
+        "tags": [
+          "override",
+          "audit",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Support",
+          "CreditAssessment"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 23\u201324",
+        "reasoning": {
+          "source_summary_fragment": "manual override for borderline customers with justification logging",
+          "tag_metadata_reference": [
+            {
+              "tag": "override",
+              "confidence": 0.93
+            },
+            {
+              "tag": "audit",
+              "confidence": 0.92
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.85
+            }
+          ],
+          "mapped_concepts": [
+            "manual risk decision",
+            "justified override",
+            "audit trail"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.85,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Default to conservative EMI options and flag if credit lookup fails/times out",
+        "summary": "When real-time credit check fails or times out, provide customers with conservative EMI plan options by default and flag these cases for follow-up review, balancing customer experience and risk.",
+        "tags": [
+          "fallback",
+          "emi"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CreditAssessment",
+          "EMI"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.91,
+        "priority": "medium",
+        "priority_confidence": 0.89,
+        "line_source": "Ln 25\u201326",
+        "reasoning": {
+          "source_summary_fragment": "Default to conservative EMI options and flag if credit lookup fails/times out",
+          "tag_metadata_reference": [
+            {
+              "tag": "fallback",
+              "confidence": 0.94
+            },
+            {
+              "tag": "emi",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "timeout handling",
+            "default risk policy",
+            "fallback EMI option"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": 0.75,
+          "method": "explicit_no_additional_inference"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Implement EMI calculator in checkout for users to simulate payment options",
+        "summary": "Integrate an EMI calculator into the checkout, enabling users to simulate different EMI tenures, rates, and outcomes before selection. This promotes user empowerment and decision transparency.",
+        "tags": [
+          "usability",
+          "emi"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Checkout",
+          "EMI"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 29\u201330",
+        "reasoning": {
+          "source_summary_fragment": "Implement EMI calculator in checkout for users to simulate payment options",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.92
+            },
+            {
+              "tag": "emi",
+              "confidence": 0.89
+            }
+          ],
+          "mapped_concepts": [
+            "payment simulation tool",
+            "EMI planning",
+            "user self-service"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": 0.78,
+          "method": "explicit_no_additional_inference"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Present all EMI terms and dispute processes in plain language at checkout",
+        "summary": "During checkout, clearly display all EMI terms, conditions, and dispute resolution mechanisms in straightforward, plain language, enhancing customer understanding and regulatory compliance.",
+        "tags": [
+          "usability",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Checkout",
+          "EMI"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 31\u201332",
+        "reasoning": {
+          "source_summary_fragment": "Present all EMI terms and dispute processes in plain language at checkout",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.95
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "plain language terms",
+            "EMI dispute process",
+            "legal clarity"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": 0.93,
+          "method": "explicit_no_additional_inference"
+        },
+        "source_hlj_id": "REQ-011"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-011-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Ensure user consent for all credit checks during EMI selection",
+        "summary": "Obtain and log explicit user consent for all credit bureau checks triggered during the EMI selection process, in alignment with lending and privacy regulations (FCRA, GDPR). Consent records must be auditable.",
+        "tags": [
+          "consent",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Compliance",
+          "CreditAssessment"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 36\u201337",
+        "reasoning": {
+          "source_summary_fragment": "Ensure user consent for all credit checks during EMI selection",
+          "tag_metadata_reference": [
+            {
+              "tag": "consent",
+              "confidence": 0.97
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.99
+            }
+          ],
+          "mapped_concepts": [
+            "user consent capture",
+            "privacy regulation compliance",
+            "audit logging"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": 0.97,
+          "method": "explicit_no_additional_inference"
+        },
+        "source_hlj_id": "REQ-011"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-011-HLJ-Chunk_2",
+    "DATA": []
+  },
+  "errors": []
+}

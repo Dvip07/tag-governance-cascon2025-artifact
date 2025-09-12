@@ -1,0 +1,90 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Build scalable feature flag platform supporting geo-segmentation",
+  "summary": "Design and build a robust, scalable feature flag system capable of handling multiple geo-segments at scale. The platform must support country, region, and city-level segmentation to enable targeted feature deployment while maintaining performance under high load.",
+  "tags_v1": [
+    "feature-flags",
+    "scalable",
+    "[INFERRED] geo-segmentation"
+  ],
+  "tags_v2": [
+    "scalable"
+  ],
+  "tags_v3": [
+    "feature-flags",
+    "scalable",
+    "segmentation",
+    "geo-segmentation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "all_133",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.8049007654190063,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature-flags",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scalable",
+      "aliases": [
+        "scalability"
+      ],
+      "cluster_id": "all_134",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7865890264511108,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scalable",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "segmentation",
+      "aliases": [],
+      "cluster_id": "all_115",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7571690082550049,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "segmentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geo-segmentation",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7874163389205933,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-segmentation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,181 @@
+# 📝 Changelog for `req-014` — **meta70b**
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['gas-fee', 'estimation', 'blockchain']`
+**Validated tags:** `['gas-fee', 'estimation', 'blockchain']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'estimation', 'blockchain']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| blockchain | kept | direct | 1.0 | title | 2025-05-31T23:57:29.678319Z |
+| estimation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.675181Z |
+| gas-fee | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.659741Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['gas-fee', 'real-time', 'estimation']`
+**Validated tags:** `['gas-fee', 'estimation']`
+**Tags added:** `[]`
+**Tags dropped:** `['real-time']`
+**Tags kept:** `['gas-fee', 'estimation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| estimation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.869010Z |
+| gas-fee | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.693641Z |
+| real-time | dropped | none | 0.0 | None | 2025-05-31T23:57:29.854181Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['gas-fee', 'estimation']`
+**Validated tags:** `['gas-fee', 'estimation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'estimation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| estimation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.897966Z |
+| gas-fee | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.883846Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['gas-fee', 'dynamic', 'estimation']`
+**Validated tags:** `['gas-fee', 'dynamic', 'estimation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'dynamic', 'estimation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dynamic | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.921035Z |
+| estimation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.932334Z |
+| gas-fee | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.909598Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['gas-fee', 'transaction', 'estimation']`
+**Validated tags:** `['gas-fee', 'transaction', 'estimation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'transaction', 'estimation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| estimation | kept | direct | 1.0 | title | 2025-05-31T23:57:29.949159Z |
+| gas-fee | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:29.944080Z |
+| transaction | kept | direct | 1.0 | title | 2025-05-31T23:57:29.946623Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['gas-fee', 'display', 'estimation']`
+**Validated tags:** `['gas-fee', 'display', 'estimation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'display', 'estimation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| display | kept | direct | 1.0 | title | 2025-05-31T23:57:30.021922Z |
+| estimation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:30.033979Z |
+| gas-fee | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:30.018949Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['gas-fee', 'adjust', 'customization']`
+**Validated tags:** `['gas-fee', 'adjust']`
+**Tags added:** `[]`
+**Tags dropped:** `['customization']`
+**Tags kept:** `['gas-fee', 'adjust']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| adjust | kept | direct | 1.0 | title | 2025-05-31T23:57:30.105241Z |
+| customization | dropped | none | 0.0 | None | 2025-05-31T23:57:30.283765Z |
+| gas-fee | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:30.101927Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['gas-fee', 'congestion', 'fee spike']`
+**Validated tags:** `['gas-fee', 'congestion', 'fee spike']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'congestion', 'fee spike']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| congestion | kept | direct | 1.0 | title | 2025-05-31T23:57:30.360559Z |
+| fee spike | kept | semantic | 0.69321209192276 | mapped_concepts | 2025-05-31T23:57:30.476208Z |
+| gas-fee | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:30.357274Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['gas-fee', 'inaccuracy', 'retry']`
+**Validated tags:** `['gas-fee', 'inaccuracy', 'retry']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'inaccuracy', 'retry']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| gas-fee | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:30.546492Z |
+| inaccuracy | kept | direct | 1.0 | title | 2025-05-31T23:57:30.549333Z |
+| retry | kept | direct | 1.0 | title | 2025-05-31T23:57:30.551971Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_10-v1.0`
+
+**Original tags:** `['gas-fee', 'confirmation', 'resolution']`
+**Validated tags:** `['gas-fee', 'confirmation', 'resolution']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gas-fee', 'confirmation', 'resolution']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| confirmation | kept | direct | 1.0 | title | 2025-05-31T23:57:30.558224Z |
+| gas-fee | kept | direct | 1.0 | title | 2025-05-31T23:57:30.555178Z |
+| resolution | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:30.570621Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_11-v1.0`
+
+**Original tags:** `['security', 'compliance', 'user data']`
+**Validated tags:** `['security', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['user data']`
+**Tags kept:** `['security', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:30.646924Z |
+| security | kept | direct | 1.0 | summary | 2025-05-31T23:57:30.577860Z |
+| user data | dropped | none | 0.0 | None | 2025-05-31T23:57:30.784248Z |
+
+## 🔹 HLJ: `REQ-014-HLJ-Chunk_2-Item_12-v1.0`
+
+**Original tags:** `['logging', 'audit', 'fee query']`
+**Validated tags:** `['logs', 'audit']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', 'fee query']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | title | 2025-05-31T23:57:30.911914Z |
+| fee query | dropped | none | 0.0 | None | 2025-05-31T23:57:31.045664Z |
+| logging | dropped | semantic | 0.7016127109527588 | mapped_concepts | 2025-05-31T23:57:30.908149Z |
+| logs | added | semantic | 0.7016127109527588 | mapped_concepts | 2025-05-31T23:57:30.908149Z |

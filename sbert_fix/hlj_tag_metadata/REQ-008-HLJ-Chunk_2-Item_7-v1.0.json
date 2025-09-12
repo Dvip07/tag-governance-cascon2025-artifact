@@ -1,0 +1,113 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+  "model": "opus4",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Create enhanced identity and employment verification checks",
+  "summary": "Build advanced verification system to confirm applicant identity and validate gig platform employment status through API cross-references and document verification.",
+  "tags_v1": [
+    "verification",
+    "identity",
+    "compliance"
+  ],
+  "tags_v2": [
+    "verification",
+    "identity",
+    "compliance"
+  ],
+  "tags_v3": [
+    "verification",
+    "security",
+    "identity",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "verification",
+      "aliases": [],
+      "cluster_id": "all_162",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7376591563224792,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "verification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7099419236183167,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "identity",
+      "aliases": [],
+      "cluster_id": "all_259",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6877244114875793,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "identity",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.692717432975769,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "all_20",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.665258526802063,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    }
+  ]
+}

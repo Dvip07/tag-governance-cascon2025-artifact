@@ -1,0 +1,90 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Notify admins of unusual upgrade/downgrade patterns",
+    "summary": "Implement monitoring system to detect unusual subscription change patterns and automatically notify administrators. Includes threshold-based alerts for rapid plan changes or high-volume upgrades/downgrades.",
+    "tags": [
+      "notifications",
+      "monitoring",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "Includes invoice generation with detailed breakdowns, customer/admin notifications",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.92
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.88
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "admin notifications",
+        "pattern detection",
+        "subscription monitoring"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Update support scripts and FAQs for upgrade scenarios",
+    "summary": "Create and maintain comprehensive support documentation covering all prorated upgrade scenarios, edge cases, and billing calculations. Includes internal scripts for support agents and customer-facing FAQ updates.",
+    "tags": [
+      "documentation",
+      "support"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "low",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "support documentation updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "support",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "support scripts",
+        "FAQ documentation",
+        "upgrade scenarios"
+      ]
+    },
+    "source_hlj_id": "REQ-017"
+  }
+]

@@ -1,0 +1,388 @@
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148241Z'
+  original_tags:
+  - instrumentation
+  - performance
+  - '[INFERRED] optimization'
+  validated_tags:
+  - instrumentation
+  - performance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] optimization'
+  tags_kept:
+  - instrumentation
+  - performance
+  validation_details:
+  - original_tag: instrumentation
+    canonical_tag: instrumentation
+    matched_tag: instrumentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:33.588627Z'
+  - original_tag: performance
+    canonical_tag: performance
+    matched_tag: performance
+    tag_origin_cluster_id: performance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:33.595088Z'
+  - original_tag: '[INFERRED] optimization'
+    canonical_tag: '[INFERRED] optimization'
+    matched_tag: '[INFERRED] optimization'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:33.729149Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148252Z'
+  original_tags:
+  - reporting
+  - analytics
+  - '[INFERRED] metrics'
+  validated_tags:
+  - reporting
+  - analytics
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] metrics'
+  tags_kept:
+  - reporting
+  - analytics
+  validation_details:
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:33.801603Z'
+  - original_tag: analytics
+    canonical_tag: analytics
+    matched_tag: analytics
+    tag_origin_cluster_id: analytics
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:33.871662Z'
+  - original_tag: '[INFERRED] metrics'
+    canonical_tag: '[INFERRED] metrics'
+    matched_tag: '[INFERRED] metrics'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.007398Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148254Z'
+  original_tags:
+  - visualization
+  - dashboards
+  - '[INFERRED] engineering'
+  validated_tags:
+  - visualization
+  - dashboard
+  tags_added:
+  - dashboard
+  tags_dropped:
+  - dashboards
+  - '[INFERRED] engineering'
+  tags_kept:
+  - visualization
+  validation_details:
+  - original_tag: visualization
+    canonical_tag: visualization
+    matched_tag: visualization
+    tag_origin_cluster_id: visualization
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.080261Z'
+  - original_tag: dashboards
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:34.093134Z'
+  - original_tag: '[INFERRED] engineering'
+    canonical_tag: '[INFERRED] engineering'
+    matched_tag: '[INFERRED] engineering'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.227562Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148256Z'
+  original_tags:
+  - alerting
+  - Root Cause Analysis
+  - '[INFERRED] debugging'
+  validated_tags:
+  - alert
+  - Root Cause Analysis
+  tags_added:
+  - alert
+  tags_dropped:
+  - alerting
+  - '[INFERRED] debugging'
+  tags_kept:
+  - Root Cause Analysis
+  validation_details:
+  - original_tag: alerting
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:34.301664Z'
+  - original_tag: Root Cause Analysis
+    canonical_tag: Root Cause Analysis
+    matched_tag: Root Cause Analysis
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7526103258132935
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.413938Z'
+  - original_tag: '[INFERRED] debugging'
+    canonical_tag: '[INFERRED] debugging'
+    matched_tag: '[INFERRED] debugging'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.545473Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148258Z'
+  original_tags:
+  - alerting
+  - SLA
+  - '[INFERRED] notification'
+  validated_tags:
+  - alert
+  - SLA
+  tags_added:
+  - alert
+  tags_dropped:
+  - alerting
+  - '[INFERRED] notification'
+  tags_kept:
+  - SLA
+  validation_details:
+  - original_tag: alerting
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:34.559208Z'
+  - original_tag: SLA
+    canonical_tag: SLA
+    matched_tag: SLA
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.571080Z'
+  - original_tag: '[INFERRED] notification'
+    canonical_tag: '[INFERRED] notification'
+    matched_tag: '[INFERRED] notification'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.708731Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148260Z'
+  original_tags:
+  - CI/CD
+  - optimization
+  - '[INFERRED] automation'
+  validated_tags:
+  - ci/cd
+  - optimization
+  tags_added:
+  - ci/cd
+  tags_dropped:
+  - CI/CD
+  - '[INFERRED] automation'
+  tags_kept:
+  - optimization
+  validation_details:
+  - original_tag: CI/CD
+    canonical_tag: ci/cd
+    matched_tag: ci/cd
+    tag_origin_cluster_id: ci/cd
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.713754Z'
+  - original_tag: optimization
+    canonical_tag: optimization
+    matched_tag: optimization
+    tag_origin_cluster_id: optimization
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.728386Z'
+  - original_tag: '[INFERRED] automation'
+    canonical_tag: '[INFERRED] automation'
+    matched_tag: '[INFERRED] automation'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.862551Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148261Z'
+  original_tags:
+  - fallback
+  - external services
+  - '[INFERRED] reliability'
+  validated_tags:
+  - fallback
+  - external services
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] reliability'
+  tags_kept:
+  - fallback
+  - external services
+  validation_details:
+  - original_tag: fallback
+    canonical_tag: fallback
+    matched_tag: fallback
+    tag_origin_cluster_id: fallback
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.867480Z'
+  - original_tag: external services
+    canonical_tag: external services
+    matched_tag: external services
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:34.871564Z'
+  - original_tag: '[INFERRED] reliability'
+    canonical_tag: '[INFERRED] reliability'
+    matched_tag: '[INFERRED] reliability'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:35.001876Z'
+- hlj_id: REQ-025-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-025
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.148263Z'
+  original_tags:
+  - privacy
+  - compliance
+  - '[INFERRED] data protection'
+  validated_tags:
+  - privacy
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] data protection'
+  tags_kept:
+  - privacy
+  - compliance
+  validation_details:
+  - original_tag: privacy
+    canonical_tag: privacy
+    matched_tag: privacy
+    tag_origin_cluster_id: privacy
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:35.006043Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:35.019480Z'
+  - original_tag: '[INFERRED] data protection'
+    canonical_tag: '[INFERRED] data protection'
+    matched_tag: '[INFERRED] data protection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:35.152103Z'

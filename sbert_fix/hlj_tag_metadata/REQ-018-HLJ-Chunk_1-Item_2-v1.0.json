@@ -1,0 +1,126 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Implement email tagging with support for multiple tags",
+  "summary": "Enable the ability to tag emails with one or more tags to support categorization and organization. Ensure that users can select and assign multiple tags per email for flexible workflow management.",
+  "tags_v1": [
+    "tagging",
+    "email"
+  ],
+  "tags_v2": [
+    "tagging",
+    "email"
+  ],
+  "tags_v3": [
+    "tagging",
+    "email",
+    "data",
+    "model",
+    "routing",
+    "automation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "tagging",
+      "aliases": [],
+      "cluster_id": "all_222",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.751870334148407,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tagging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "email",
+      "aliases": [],
+      "cluster_id": "all_208",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8112943768501282,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "email",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7443789839744568,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "model",
+      "aliases": [],
+      "cluster_id": "all_332",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.739483118057251,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "model",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "routing",
+      "aliases": [],
+      "cluster_id": "all_194",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7390823364257812,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "routing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7856823205947876,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

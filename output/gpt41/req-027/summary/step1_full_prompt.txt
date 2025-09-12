@@ -1,0 +1,168 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-027-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-027",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-027-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-027-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-027 (SaaS)
+
+SA-012: RTL Layout & Mirrored UI Support in the Visual Builder
+Title:
+Comprehensive Support for Right-to-Left (RTL) Layouts and Mirrored User Interfaces in the Visual UI Builder
+
+Strategic Context:
+To deliver on our global-first, inclusive design mandate and win business in emerging markets, our platform must provide end-to-end support for right-to-left (RTL) languages (Arabic, Hebrew, Farsi, etc.) in all customer-facing interfaces. This future-ready enhancement will ensure our visual builder empowers teams to create regionally compliant, fully mirrored UIs, eliminating technical debt from ad-hoc workarounds and boosting our international expansion.
+
+Requirements:
+
+Core RTL Engine:
+
+Implement a robust RTL layout engine for the UI builder that toggles all flex, grid, and positioning properties for correct mirroring.
+
+Ensure component libraries, icons, and navigation elements render accurately in RTL mode.
+
+Designer Empowerment:
+
+Allow designers to preview layouts instantly in both LTR and RTL modes.
+
+Support per-section and per-component overrides for mixed-language pages.
+
+Localization & Translation:
+
+Integrate with translation memory services for rapid string swapping, preserving markup and context.
+
+Handle locale-specific formatting for dates, currencies, and numerals.
+
+Edge Cases & Validation:
+
+Flag components that break under mirroring (e.g., sliders, progress bars), and offer remediation guidance.
+
+Validate page exports to ensure accessibility and usability standards (WCAG, ADA) are maintained in RTL output.
+
+Operational Transparency:
+
+Provide detailed logs and change history for layout adjustments, to assist in QA and regional compliance audits.
+
+Documentation & Enablement:
+
+Create a “Designing for RTL” best practices guide and update onboarding materials.
+
+Host webinars or workshops to upskill internal teams and partners.
+
+Dependencies & Constraints:
+
+Component updates may require vendor coordination.
+
+Must not regress performance or accessibility for LTR users.
+
+KPIs:
+
+95% component compatibility in RTL mode
+
+Time-to-publish for RTL pages < 2x LTR
+
+Customer satisfaction in targeted regions up 20% post-launch
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

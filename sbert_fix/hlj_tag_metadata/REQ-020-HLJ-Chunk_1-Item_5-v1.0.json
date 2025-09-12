@@ -1,0 +1,124 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Provide side-by-side diff UI for resolving conflicting contact data",
+  "summary": "Design a user interface that displays conflicting contact data in a side-by-side comparison, enabling informed field-level decisions during merge operations. Enhances transparency and accuracy in resolving data conflicts.",
+  "tags_v1": [
+    "usability",
+    "conflict"
+  ],
+  "tags_v2": [
+    "conflict"
+  ],
+  "tags_v3": [
+    "email",
+    "duplicate-detection",
+    "conflict",
+    "crm",
+    "matching",
+    "merge"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "email",
+      "aliases": [],
+      "cluster_id": "all_208",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6887262463569641,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "email",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "duplicate-detection",
+      "aliases": [],
+      "cluster_id": "all_338",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7363986372947693,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicate-detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "conflict",
+      "aliases": [],
+      "cluster_id": "all_242",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7241410613059998,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "conflict",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7498229742050171,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "matching",
+      "aliases": [],
+      "cluster_id": "all_281",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7075875997543335,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "matching",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "merge",
+      "aliases": [],
+      "cluster_id": "all_454",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7568706274032593,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "merge",
+      "method": "dedup_canonical"
+    }
+  ]
+}

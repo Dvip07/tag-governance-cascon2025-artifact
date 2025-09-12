@@ -1,0 +1,133 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Include transaction, customer, merchant, and triggered rule details in alerts",
+  "summary": "Ensure every alert contains comprehensive context including transaction specifics, customer and merchant identities, plus the rule that triggered the alert. This level of detail supports rapid fraud assessment and investigation by operational teams.",
+  "tags_v1": [
+    "alert",
+    "details"
+  ],
+  "tags_v2": [
+    "alert",
+    "details"
+  ],
+  "tags_v3": [
+    "alert",
+    "slack",
+    "security",
+    "privacy",
+    "details",
+    "integration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7588646411895752,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alert",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "slack",
+      "aliases": [],
+      "cluster_id": "all_312",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6902261972427368,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "slack",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7529225945472717,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7065958976745605,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "details",
+      "aliases": [],
+      "cluster_id": "all_178",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7183891534805298,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "details",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6935201287269592,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

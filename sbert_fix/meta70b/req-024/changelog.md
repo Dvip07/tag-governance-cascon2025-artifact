@@ -1,0 +1,151 @@
+# 📝 Changelog for `req-024` — **meta70b**
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['template', 'personalization', '[INFERRED] dynamic content']`
+**Validated tags:** `['template', 'personalization']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] dynamic content']`
+**Tags kept:** `['template', 'personalization']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] dynamic content | dropped | none | 0.0 | None | 2025-05-31T23:57:39.674096Z |
+| personalization | kept | direct | 1.0 | summary | 2025-05-31T23:57:39.528896Z |
+| template | kept | direct | 1.0 | title | 2025-05-31T23:57:39.520981Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['delivery', 'scheduling', '[INFERRED] timing']`
+**Validated tags:** `['delivery', 'scheduling']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] timing']`
+**Tags kept:** `['delivery', 'scheduling']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] timing | dropped | none | 0.0 | None | 2025-05-31T23:57:39.901109Z |
+| delivery | kept | direct | 1.0 | title | 2025-05-31T23:57:39.677760Z |
+| scheduling | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:39.759216Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['testing', 'preview', '[INFERRED] quality assurance']`
+**Validated tags:** `['testing', 'preview']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] quality assurance']`
+**Tags kept:** `['testing', 'preview']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] quality assurance | dropped | none | 0.0 | None | 2025-05-31T23:57:40.051366Z |
+| preview | kept | direct | 1.0 | title | 2025-05-31T23:57:39.907729Z |
+| testing | kept | direct | 1.0 | title | 2025-05-31T23:57:39.904773Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['channel', 'preferences', '[INFERRED] personalization']`
+**Validated tags:** `['channel', 'preferences']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] personalization']`
+**Tags kept:** `['channel', 'preferences']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] personalization | dropped | none | 0.0 | None | 2025-05-31T23:57:40.211184Z |
+| channel | kept | direct | 1.0 | title | 2025-05-31T23:57:40.055169Z |
+| preferences | kept | direct | 1.0 | title | 2025-05-31T23:57:40.058324Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['personalization', 'data', '[INFERRED] user profiling']`
+**Validated tags:** `['personalization', 'data', '[INFERRED] user profiling']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['personalization', 'data', '[INFERRED] user profiling']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] user profiling | kept | semantic | 0.774325966835022 | mapped_concepts | 2025-05-31T23:57:40.342362Z |
+| data | kept | direct | 1.0 | title | 2025-05-31T23:57:40.219157Z |
+| personalization | kept | direct | 1.0 | title | 2025-05-31T23:57:40.215494Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['analytics', 'dashboard', '[INFERRED] data_visualization']`
+**Validated tags:** `['analytics', 'dashboard']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] data_visualization']`
+**Tags kept:** `['analytics', 'dashboard']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] data_visualization | dropped | none | 0.0 | None | 2025-05-31T23:57:40.603115Z |
+| analytics | kept | direct | 1.0 | title | 2025-05-31T23:57:40.345604Z |
+| dashboard | kept | semantic | 0.7065452337265015 | source_fragment | 2025-05-31T23:57:40.458263Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['alert', 'deliverability', '[INFERRED] monitoring']`
+**Validated tags:** `['alert', 'deliverability']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] monitoring']`
+**Tags kept:** `['alert', 'deliverability']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] monitoring | dropped | none | 0.0 | None | 2025-05-31T23:57:40.756973Z |
+| alert | kept | direct | 1.0 | title | 2025-05-31T23:57:40.607752Z |
+| deliverability | kept | direct | 1.0 | title | 2025-05-31T23:57:40.611479Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['compliance', 'regulation', '[INFERRED] legal']`
+**Validated tags:** `['compliance', 'regulation']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] legal']`
+**Tags kept:** `['compliance', 'regulation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] legal | dropped | none | 0.0 | None | 2025-05-31T23:57:41.020679Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:40.761930Z |
+| regulation | kept | semantic | 0.7979669570922852 | source_fragment | 2025-05-31T23:57:40.877277Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['opt-out', 'unsubscribe', '[INFERRED] recipient_control']`
+**Validated tags:** `['opt-out', 'unsubscribe', '[INFERRED] recipient_control']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['opt-out', 'unsubscribe', '[INFERRED] recipient_control']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] recipient_control | kept | semantic | 0.6848870515823364 | mapped_concepts | 2025-05-31T23:57:41.195074Z |
+| opt-out | kept | direct | 1.0 | title | 2025-05-31T23:57:41.024704Z |
+| unsubscribe | kept | direct | 1.0 | title | 2025-05-31T23:57:41.027654Z |
+
+## 🔹 HLJ: `REQ-024-HLJ-Chunk_2-Item_10-v1.0`
+
+**Original tags:** `['duplicates', 'notification', '[INFERRED] recipient_experience']`
+**Validated tags:** `['notification']`
+**Tags added:** `[]`
+**Tags dropped:** `['duplicates', '[INFERRED] recipient_experience']`
+**Tags kept:** `['notification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] recipient_experience | dropped | none | 0.0 | None | 2025-05-31T23:57:41.649508Z |
+| duplicates | dropped | none | 0.0 | None | 2025-05-31T23:57:41.392738Z |
+| notification | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:41.479408Z |

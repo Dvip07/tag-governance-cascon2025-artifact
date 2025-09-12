@@ -1,0 +1,164 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-001-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-001",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-001 (FinTech)
+
+FT-001: Unified Transaction History API
+Title:
+Unified Customer Transaction History Retrieval API
+
+Background & Objective:
+In the context of Open Banking partnerships, customers increasingly expect seamless access to their financial history, regardless of the originating partner bank or financial institution. To address this demand and meet evolving regulatory and user experience standards, the platform must provide a unified API endpoint for the retrieval of customer transaction history spanning all integrated partner banks.
+
+Requirement Details:
+
+API Design:
+
+Develop a RESTful API endpoint (GET /api/v2/transactions/history) that retrieves a consolidated list of a customer's transaction history across all connected partner banks.
+
+The API must support pagination, filtering by date range, transaction type, and partner institution.
+
+All requests and responses must adhere to the latest OpenAPI (Swagger) specifications.
+
+Data Consistency & Integrity:
+
+The API must ensure data is de-duplicated and consistently formatted, regardless of the source institution.
+
+Where source systems use different time zones, normalize all timestamps to UTC, and include the original time zone as a metadata field.
+
+Security & Compliance:
+
+Authenticate all requests using OAuth 2.0 with per-customer access tokens.
+
+Log all access events and support audit trail requirements per ISO 27001.
+
+Edge Cases:
+
+Handle discrepancies in transaction types and status fields between institutions (e.g., pending, reversed, declined).
+
+If a partner bank’s API is unavailable, provide partial results and log the outage in the API response.
+
+Performance:
+
+The API should return responses within 1.5 seconds for up to 24 months of transaction history per request.
+
+Documentation & Support:
+
+Provide comprehensive API documentation, example requests/responses, and contact channels for partner developers.
+
+Dependencies & Constraints:
+
+Integration with at least five major partner banks’ APIs is required for initial rollout.
+
+Any data caching must not exceed a freshness window of 5 minutes.
+
+Compliance review is mandatory prior to production deployment.
+
+
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

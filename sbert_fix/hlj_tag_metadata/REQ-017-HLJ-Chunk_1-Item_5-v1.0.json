@@ -1,0 +1,113 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Handle monthly and annual plan upgrades, including overlapping billing periods",
+  "summary": "Support upgrades between both monthly and annual plans, ensuring that any overlapping billing periods are managed correctly and that credits and charges are applied without error. This reduces ambiguity for users switching across different billing cycles.",
+  "tags_v1": [
+    "plans",
+    "dates",
+    "[INFERRED] period-alignment"
+  ],
+  "tags_v2": [
+    "plans",
+    "dates"
+  ],
+  "tags_v3": [
+    "invoice",
+    "billing",
+    "plans",
+    "support",
+    "dates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "invoice",
+      "aliases": [
+        "invoicing",
+        "invoices"
+      ],
+      "cluster_id": "all_155",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7093914151191711,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "invoices",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "billing",
+      "aliases": [],
+      "cluster_id": "all_200",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7363638877868652,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "plans",
+      "aliases": [],
+      "cluster_id": "all_205",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.687911868095398,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "plans",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6888815760612488,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dates",
+      "aliases": [],
+      "cluster_id": "all_206",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6939888000488281,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

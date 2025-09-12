@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_3-Item_4-v1.0",
+  "model": "opus4",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Conduct pilot testing with select user cohorts before general release",
+  "summary": "Execute controlled pilot testing of the card freeze/unfreeze feature with carefully selected user cohorts, monitoring performance metrics, gathering user feedback, and validating system stability before proceeding to general availability rollout.",
+  "tags_v1": [
+    "testing",
+    "pilot",
+    "rollout"
+  ],
+  "tags_v2": [
+    "testing",
+    "pilot",
+    "rollout"
+  ],
+  "tags_v3": [
+    "pilot",
+    "testing",
+    "rollback"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "pilot",
+      "aliases": [],
+      "cluster_id": "all_309",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7084152698516846,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pilot",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7252489328384399,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7173840999603271,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    }
+  ]
+}

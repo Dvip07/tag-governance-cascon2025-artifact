@@ -1,0 +1,136 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Revert to live FX rate and notify users if lock expires without funding",
+  "summary": "If a user fails to fund a payment within the FX lock window, the system must revert to the latest available FX rate and promptly notify the user. This prevents stale rate execution and keeps the transaction process transparent.",
+  "tags_v1": [
+    "fx",
+    "notifications",
+    "[INFERRED] fallback"
+  ],
+  "tags_v2": [
+    "fx",
+    "notification"
+  ],
+  "tags_v3": [
+    "fx",
+    "compliance",
+    "notification",
+    "lock",
+    "fx-rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "all_88",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7031651735305786,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6834058165550232,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6752147674560547,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.717605471611023,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "lock",
+      "aliases": [
+        "locking"
+      ],
+      "cluster_id": "all_89",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7207894921302795,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "lock",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "all_284",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7837958335876465,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

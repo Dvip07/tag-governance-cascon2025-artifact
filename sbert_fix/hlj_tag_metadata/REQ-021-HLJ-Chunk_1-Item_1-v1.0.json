@@ -1,0 +1,90 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Enable inline commenting on uploaded PDFs",
+  "summary": "Allow users to add and display comments directly within uploaded PDF files, supporting in-place feedback and collaborative review workflows. The inline commenting should visually anchor feedback to specific PDF locations.",
+  "tags_v1": [
+    "comments",
+    "ux"
+  ],
+  "tags_v2": [
+    "comments"
+  ],
+  "tags_v3": [
+    "comments",
+    "pdf",
+    "highlighting",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "comments",
+      "aliases": [
+        "commenting"
+      ],
+      "cluster_id": "all_209",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7690654993057251,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "comments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "pdf",
+      "aliases": [],
+      "cluster_id": "all_318",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7369295358657837,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pdf",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "highlighting",
+      "aliases": [],
+      "cluster_id": "all_319",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.706344485282898,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "highlighting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6871105432510376,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

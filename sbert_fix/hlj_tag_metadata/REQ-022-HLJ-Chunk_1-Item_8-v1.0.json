@@ -1,0 +1,136 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Update admin documentation for export/retention processes",
+  "summary": "Update administrative documentation and compliance playbooks to reflect new export and retention features. Comprehensive, current documentation is essential to ensure proper adoption and audit readiness.",
+  "tags_v1": [
+    "docs",
+    "compliance",
+    "[INFERRED] enablement"
+  ],
+  "tags_v2": [
+    "docs",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "roles",
+    "documentation",
+    "docs",
+    "audit",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7233709096908569,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "roles",
+      "aliases": [],
+      "cluster_id": "all_127",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6919017434120178,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "roles",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7078567147254944,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "docs",
+      "aliases": [],
+      "cluster_id": "all_131",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7024170160293579,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "docs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7252334952354431,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7143185138702393,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-017",
+  "summary": "Enable mid-cycle subscription plan upgrades for SaaS customers with prorated billing. When upgrading, calculate unused time on the current plan and apply it as a credit to the upgraded plan; the new plan activates immediately, but the billing cycle remains unchanged. All upgrade events, credits, and charges (including taxes) must be recorded and clearly itemized in billing history and invoices. Support upgrades across monthly and annual plans and handle overlapping periods appropriately. Downgrades in the same cycle should be flagged for manual review to prevent abuse. Send users email notifications summarizing upgrade calculations and changes, and alert admins to anomalous upgrade/downgrade activity. Update support materials (scripts, FAQs) to address common upgrade questions. Solution must integrate with payment processors as needed and correctly calculate local taxes/VAT."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Billing", "Subscriptions"],
+  "canonical_tags": ["proration", "upgrade", "history"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-017-HLJ-Chunk_1",
+      "focus": "Implement prorated subscription upgrades with billing history and notifications",
+      "items": [
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Calculate prorated credit and new plan charges on mid-cycle upgrade",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "Subscriptions"],
+          "tags": ["proration", "billing"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 7–13"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Activate upgraded plan immediately while preserving original billing cycle dates",
+          "domain": "SaaS",
+          "subdomain": ["Subscriptions"],
+          "tags": ["upgrade", "billing"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11–13"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Record upgrade events, credits, and charges in customer's billing history",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "History"],
+          "tags": ["history", "events"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15–17"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Ensure invoices show itemized old plan refund, new plan charge, and taxes",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "Invoices"],
+          "tags": ["invoice", "tax"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18–20"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Handle monthly and annual plan upgrades, including overlapping billing periods",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "Subscriptions"],
+          "tags": ["plans", "dates"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 22–24"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Flag downgrades during same cycle for manual review to prevent abuse",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "AbuseDetection"],
+          "tags": ["abuse", "review"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 25–27"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Send users email summary of upgrade: calculations, credits, renewal date",
+          "domain": "SaaS",
+          "subdomain": ["Notifications"],
+          "tags": ["notification", "email"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 29–31"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Notify admins on detection of unusual upgrade or downgrade patterns",
+          "domain": "SaaS",
+          "subdomain": ["Notifications", "AbuseDetection"],
+          "tags": ["admin", "alert"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 32–33"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update support scripts and FAQs for common upgrade scenarios",
+          "domain": "SaaS",
+          "subdomain": ["Support", "Documentation"],
+          "tags": ["support", "documentation"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35–37"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Integrate solution with payment processors and correctly apply local taxes/VAT",
+          "domain": "SaaS",
+          "subdomain": ["Billing", "Payments"],
+          "tags": ["integration", "tax"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 39–41"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

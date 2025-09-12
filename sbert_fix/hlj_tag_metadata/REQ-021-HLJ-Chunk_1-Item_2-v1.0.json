@@ -1,0 +1,107 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Support highlighted text or click-anywhere to start threads",
+  "summary": "Permit users to create comment threads by highlighting specific text or clicking anywhere within the PDF document. This enhances usability and flexibility in starting discussions.",
+  "tags_v1": [
+    "comments",
+    "ux"
+  ],
+  "tags_v2": [
+    "comments"
+  ],
+  "tags_v3": [
+    "comments",
+    "pdf",
+    "threaded_discussions",
+    "replies",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "comments",
+      "aliases": [
+        "commenting"
+      ],
+      "cluster_id": "all_209",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7743227481842041,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "commenting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "pdf",
+      "aliases": [],
+      "cluster_id": "all_318",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7502301335334778,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pdf",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "threaded_discussions",
+      "aliases": [],
+      "cluster_id": "all_436",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7754697799682617,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "threaded_discussions",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "replies",
+      "aliases": [],
+      "cluster_id": "all_437",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7533390522003174,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "replies",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7055200338363647,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

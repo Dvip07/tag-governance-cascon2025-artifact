@@ -1,0 +1,183 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement seller notifications with detailed payout status and reasons",
+    "summary": "Enable automated notifications to marketplace sellers, conveying payout statuses and explicit reasons for each transaction result. The system should support multiple notification channels (email, in-app, SMS) and ensure clarity in status updates for transparency.",
+    "tags": [
+      "notification",
+      "status",
+      "[INFERRED] transparency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notification"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 35\u201338",
+    "reasoning": {
+      "source_summary_fragment": "automated notifications to sellers (email, in-app, SMS) with reasons for failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "notification",
+          "confidence": 0.97
+        },
+        {
+          "tag": "status",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel notif",
+        "reason/vendor-facing transparency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "transparency",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Notify sellers upon payout rollback with rescheduling info",
+    "summary": "Send notifications to sellers when a payout is rolled back, clearly stating the rollback event and providing details about payout rescheduling or next steps. This ensures sellers are promptly informed of payout changes.",
+    "tags": [
+      "notification",
+      "rollback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notification"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 39\u201341",
+    "reasoning": {
+      "source_summary_fragment": "failure handling with partial or complete rollback. Automated notifications to sellers\u2026 with reasons for failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.95
+        },
+        {
+          "tag": "notification",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "payout failure comms",
+        "rescheduling messaging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Enforce financial compliance (AML, KYC, audit, retention)",
+    "summary": "Institute mechanisms to comply with financial regulations including anti-money laundering (AML), know your customer (KYC), audit logging, and data retention policies. Compliance should be integrated into all payout operations, with clear auditability.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 43\u201347",
+    "reasoning": {
+      "source_summary_fragment": "Enforce financial compliance (AML, KYC, audit logging, access control); support for \u2026 audit trails.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.94
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "AML",
+        "KYC",
+        "audit-logging",
+        "regulatory reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "audit",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Restrict sensitive operations to authorized personnel",
+    "summary": "Limit access to high-risk operations within the payout engine so that only users with specific authorization can perform sensitive actions. Implement access controls to enhance security and ensure compliance.",
+    "tags": [
+      "security",
+      "access"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "Restrict sensitive operations to authorized personnel. \u2026 access control\u2026 performance and security safeguards.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "access",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "privileged operations",
+        "RBAC",
+        "authorization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  }
+]

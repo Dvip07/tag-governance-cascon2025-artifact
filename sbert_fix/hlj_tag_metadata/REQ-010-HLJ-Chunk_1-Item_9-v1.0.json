@@ -1,0 +1,89 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Build reconciliation tools to detect and resolve ledger mismatches",
+  "summary": "Develop interactive and automated reconciliation tools designed to identify and resolve discrepancies between operational and reporting ledgers. These tools must enable effective resolution workflows and generate comprehensive audit logs for all actions taken.",
+  "tags_v1": [
+    "tooling",
+    "mismatch",
+    "[INFERRED] reconciliation"
+  ],
+  "tags_v2": [
+    "mismatch"
+  ],
+  "tags_v3": [
+    "security",
+    "mismatch",
+    "reconciliation",
+    "role-based access"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7131829857826233,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mismatch",
+      "aliases": [],
+      "cluster_id": "all_185",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7090567350387573,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mismatch",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7664397954940796,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "role-based access",
+      "aliases": [],
+      "cluster_id": "all_419",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6862204074859619,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "role-based access",
+      "method": "dedup_canonical"
+    }
+  ]
+}

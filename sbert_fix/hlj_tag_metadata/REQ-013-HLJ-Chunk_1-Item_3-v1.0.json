@@ -1,0 +1,96 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Enable scheduled and on-demand configurable batch payouts",
+  "summary": "Support both scheduled (automated) and ad-hoc (manual) payout batch runs, allowing configuration of critical parameters such as payout timing, batch size, and currency. This functionality allows marketplaces flexibility in managing payout cycles.",
+  "tags_v1": [
+    "scheduling",
+    "batch",
+    "[INFERRED] flexibility"
+  ],
+  "tags_v2": [
+    "batch"
+  ],
+  "tags_v3": [
+    "batch",
+    "rollback",
+    "failurehandling",
+    "scheduling"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "batch",
+      "aliases": [
+        "batchprocessing",
+        "batchpayouts"
+      ],
+      "cluster_id": "all_104",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7419619560241699,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "batch",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7557867765426636,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "failurehandling",
+      "aliases": [],
+      "cluster_id": "all_382",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7298760414123535,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "failurehandling",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduling",
+      "aliases": [],
+      "cluster_id": "all_105",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6961657404899597,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduling",
+      "method": "dedup_canonical"
+    }
+  ]
+}

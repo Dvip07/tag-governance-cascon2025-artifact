@@ -1,0 +1,110 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Implement custom cohort creation and saving",
+  "summary": "Enable users to define, create, and persist custom cohorts for analysis, supporting flexible inclusion criteria and reusable cohort definitions. Provides foundational capability for advanced cohort analytics within the SaaS platform.",
+  "tags_v1": [
+    "analytics",
+    "cohorts",
+    "[INFERRED] persistence"
+  ],
+  "tags_v2": [
+    "analytics",
+    "cohorts"
+  ],
+  "tags_v3": [
+    "cohorts",
+    "analytics",
+    "database",
+    "persistence"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "cohorts",
+      "aliases": [
+        "cohort_definition"
+      ],
+      "cluster_id": "all_211",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7592605948448181,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohorts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7735821008682251,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "database",
+      "aliases": [],
+      "cluster_id": "all_288",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7105637788772583,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "database",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "schema",
+      "aliases": [],
+      "cluster_id": "all_74",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6758456826210022,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "schema",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "persistence",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7236731052398682,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "persistence",
+      "method": "dedup_canonical"
+    }
+  ]
+}

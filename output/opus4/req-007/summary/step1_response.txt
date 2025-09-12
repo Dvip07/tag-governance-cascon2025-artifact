@@ -1,0 +1,223 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-007",
+  "summary": "Implement real-time KYC/AML watchlist screening during customer signup to meet regulatory compliance. System must check new users against OFAC, EU, UN sanctions lists via vendor-agnostic integration with <3s response time. Features include: automated fallback to manual review if primary service fails (>5s latency), immutable audit logging, compliance dashboard, user status notifications, and full encryption. Deliverables: updated onboarding flow, provider integration docs, monitoring dashboard, manual review training. Critical for maintaining bank partnerships and regulatory compliance in expanding international markets."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["CustomerOnboarding", "Compliance", "Security"],
+  "canonical_tags": ["kyc", "aml", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 18,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-007-HLJ-Chunk_1",
+      "focus": "Core screening integration and fallback mechanisms",
+      "items": [
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design vendor-agnostic screening service interface for watchlist providers",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Architecture"],
+          "tags": ["api", "architecture", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 11-13"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement real-time OFAC, EU, UN watchlist screening API integration",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Backend"],
+          "tags": ["aml", "api", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 11-12"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement <3 second response time constraint for screening checks",
+          "domain": "FinTech",
+          "subdomain": ["Performance", "Backend"],
+          "tags": ["performance", "sla", "backend"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create fallback protocol for >5s latency or service downtime",
+          "domain": "FinTech",
+          "subdomain": ["Reliability", "Backend"],
+          "tags": ["reliability", "fallback", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement pending account state for fallback scenarios",
+          "domain": "FinTech",
+          "subdomain": ["CustomerOnboarding", "Backend"],
+          "tags": ["state", "workflow", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Create compliance notification system for manual screening cases",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Notifications"],
+          "tags": ["notifications", "compliance", "workflow"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement near-match detection and hold state logic",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Backend"],
+          "tags": ["matching", "compliance", "workflow"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Build manual verification workflow for ambiguous matches",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Workflow"],
+          "tags": ["workflow", "manual", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Create immutable audit log for all screening attempts and results",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Compliance"],
+          "tags": ["audit", "security", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement privacy controls for audit log access",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Privacy"],
+          "tags": ["privacy", "security", "access"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-007-HLJ-Chunk_2",
+      "focus": "UI, compliance tools, monitoring and security features",
+      "items": [
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Design compliance dashboard for screening outcomes and reports",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Frontend"],
+          "tags": ["dashboard", "compliance", "reporting"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement ad-hoc reporting capabilities for compliance team",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Reporting"],
+          "tags": ["reporting", "compliance", "analytics"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Create user-facing screening status UI with verification messaging",
+          "domain": "FinTech",
+          "subdomain": ["CustomerOnboarding", "Frontend"],
+          "tags": ["ui", "ux", "communication"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Design context-sensitive next steps UI for delays/holds",
+          "domain": "FinTech",
+          "subdomain": ["CustomerOnboarding", "Frontend"],
+          "tags": ["ui", "ux", "workflow"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Implement encryption for screening data in transit and at rest",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Infrastructure"],
+          "tags": ["encryption", "security", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Create data retention and purging policies per regulations",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "DataGovernance"],
+          "tags": ["privacy", "compliance", "data"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Develop test suite for matches, false positives, and downtime",
+          "domain": "FinTech",
+          "subdomain": ["QA", "Compliance"],
+          "tags": ["testing", "qa", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Set up monitoring and alerting for unusual screening patterns",
+          "domain": "FinTech",
+          "subdomain": ["Operations", "Monitoring"],
+          "tags": ["monitoring", "alerting", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

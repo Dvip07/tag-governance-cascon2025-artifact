@@ -1,0 +1,2194 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement Operational Ledger for real-time posting",
+    "summary": "This item involves creating an operational ledger to handle real-time posting, enabling efficient and accurate transaction processing.",
+    "tags": [
+      "dual-ledger",
+      "operational-ledger",
+      "real-time posting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "Implement Operational Ledger",
+      "tag_metadata_reference": [
+        {
+          "tag": "dual-ledger",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "transaction management",
+        "real-time posting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] real-time",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "dual-ledger",
+      "operational-ledger",
+      "real-time posting"
+    ],
+    "tags_v2": [
+      "dual-ledger",
+      "operational-ledger",
+      "real-time posting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dual-ledger",
+        "canonical_tag": "dual-ledger",
+        "matched_tag": "dual-ledger",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.115549Z"
+      },
+      {
+        "original_tag": "operational-ledger",
+        "canonical_tag": "operational-ledger",
+        "matched_tag": "operational-ledger",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7492269277572632,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.235066Z"
+      },
+      {
+        "original_tag": "real-time posting",
+        "canonical_tag": "real-time posting",
+        "matched_tag": "real-time posting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.238212Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "dual-ledger",
+      "operational",
+      "operational-ledger",
+      "real-time posting",
+      "real-time"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "dual-ledger",
+        "original_tag": "dual-ledger",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8309053182601929,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "operational",
+        "original_tag": "operational",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.742741584777832,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "operational-ledger",
+        "original_tag": "operational-ledger",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8263199329376221,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "real-time posting",
+        "original_tag": "real-time posting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7695353031158447,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "real-time",
+        "original_tag": "real-time",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7628157138824463,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Reporting Ledger for financial reporting",
+    "summary": "This item focuses on developing a reporting ledger for financial reporting purposes, ensuring accurate and timely financial data.",
+    "tags": [
+      "dual-ledger",
+      "reporting-ledger",
+      "financial reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "FinancialReporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 14-17",
+    "reasoning": {
+      "source_summary_fragment": "Implement Reporting Ledger",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting-ledger",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "financial reporting",
+        "ledger management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] financial",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "dual-ledger",
+      "reporting-ledger",
+      "financial reporting"
+    ],
+    "tags_v2": [
+      "dual-ledger",
+      "reporting-ledger",
+      "financial reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dual-ledger",
+        "canonical_tag": "dual-ledger",
+        "matched_tag": "dual-ledger",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.336858Z"
+      },
+      {
+        "original_tag": "reporting-ledger",
+        "canonical_tag": "reporting-ledger",
+        "matched_tag": "reporting-ledger",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "semantic",
+        "similarity": 0.848290205001831,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.453085Z"
+      },
+      {
+        "original_tag": "financial reporting",
+        "canonical_tag": "financial reporting",
+        "matched_tag": "financial reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.456149Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reporting",
+      "reporting-ledger",
+      "dual-ledger",
+      "financial reporting",
+      "compliance",
+      "regulation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7324633598327637,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "reporting-ledger",
+        "original_tag": "reporting-ledger",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8117448091506958,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "dual-ledger",
+        "original_tag": "dual-ledger",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8270552754402161,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "financial reporting",
+        "original_tag": "financial reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7798174619674683,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698746919631958,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6959450244903564,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop logic for creating, updating, and expiring phantom transactions",
+    "summary": "This item involves designing logic for managing phantom transactions, including creation, updates, and expiration, to ensure accurate ledger balances.",
+    "tags": [
+      "phantom-balances",
+      "transaction-management",
+      "logic development"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "Develop logic for phantom transactions",
+      "tag_metadata_reference": [
+        {
+          "tag": "phantom-balances",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "phantom transactions",
+        "logic development"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] transaction",
+      "confidence": 0.96,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "phantom-balances",
+      "transaction-management",
+      "logic development"
+    ],
+    "tags_v2": [
+      "phantom balance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "phantom-balances",
+        "canonical_tag": "phantom balance",
+        "matched_tag": "phantom balance",
+        "tag_origin_cluster_id": "phantom balance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:57.557167Z"
+      },
+      {
+        "original_tag": "transaction-management",
+        "canonical_tag": "transactionmanagement",
+        "matched_tag": "transactionmanagement",
+        "tag_origin_cluster_id": "transactionmanagement",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:57.723049Z"
+      },
+      {
+        "original_tag": "logic development",
+        "canonical_tag": "logic development",
+        "matched_tag": "logic development",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.890310Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "phantom-balance",
+      "metadata",
+      "transaction-management",
+      "sync"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "phantom-balance",
+        "original_tag": "phantom-balances",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8181211948394775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "metadata",
+        "original_tag": "metadata",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7036088705062866,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "transaction-management",
+        "original_tag": "transaction-management",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7943875789642334,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "synchronization",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7486631870269775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Provide scheduled batch processes to reconcile phantom vs. settled balances",
+    "summary": "This item focuses on implementing scheduled batch processes to reconcile phantom and settled balances, ensuring ledger accuracy and data integrity.",
+    "tags": [
+      "reconciliation",
+      "batch-processing",
+      "ledger management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 25-28",
+    "reasoning": {
+      "source_summary_fragment": "Provide scheduled batch processes",
+      "tag_metadata_reference": [
+        {
+          "tag": "reconciliation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "batch processing",
+        "reconciliation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] batch",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "reconciliation",
+      "batch-processing",
+      "ledger management"
+    ],
+    "tags_v2": [
+      "reconciliation",
+      "batchprocessing",
+      "ledger management"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reconciliation",
+        "canonical_tag": "reconciliation",
+        "matched_tag": "reconciliation",
+        "tag_origin_cluster_id": "reconciliation",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:57.904898Z"
+      },
+      {
+        "original_tag": "batch-processing",
+        "canonical_tag": "batchprocessing",
+        "matched_tag": "batchprocessing",
+        "tag_origin_cluster_id": "batchprocessing",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.6888595819473267,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:58.056674Z"
+      },
+      {
+        "original_tag": "ledger management",
+        "canonical_tag": "ledger management",
+        "matched_tag": "ledger management",
+        "tag_origin_cluster_id": "ledger management",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.159109Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "phantom-balance",
+      "reconciliation",
+      "ledger-management"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "phantom-balance",
+        "original_tag": "phantom-balance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7896924614906311,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7477365732192993,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "segregation",
+        "original_tag": "segregation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6677854061126709,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "ledger-management",
+        "original_tag": "ledger management",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7794782519340515,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Develop comprehensive test plans covering creation, settlement, reversal, and reconciliation scenarios",
+    "summary": "This item involves creating comprehensive test plans to cover various scenarios, including creation, settlement, reversal, and reconciliation, to ensure thorough testing and validation.",
+    "tags": [
+      "testing",
+      "test-plans",
+      "scenario-based testing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "Develop comprehensive test plans",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "test plans",
+        "scenario-based testing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] comprehensive",
+      "confidence": 0.96,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "testing",
+      "test-plans",
+      "scenario-based testing"
+    ],
+    "tags_v2": [
+      "testing",
+      "test-plans",
+      "scenario-based testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.168839Z"
+      },
+      {
+        "original_tag": "test-plans",
+        "canonical_tag": "test-plans",
+        "matched_tag": "test-plans",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.8375732898712158,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.309810Z"
+      },
+      {
+        "original_tag": "scenario-based testing",
+        "canonical_tag": "scenario-based testing",
+        "matched_tag": "scenario-based testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.324514Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "phantom-balance",
+      "testing",
+      "lifecycle"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "phantom-balance",
+        "original_tag": "phantom-balance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7997449636459351,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7274396419525146,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "lifecycle",
+        "original_tag": "lifecycle",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7016360759735107,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Monitor all ledger activities, flagging anomalies in near real time",
+    "summary": "This item focuses on implementing real-time monitoring of ledger activities to detect and flag anomalies, ensuring prompt attention and resolution.",
+    "tags": [
+      "monitoring",
+      "anomaly-detection",
+      "real-time monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Monitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 35-38",
+    "reasoning": {
+      "source_summary_fragment": "Monitor all ledger activities",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "anomaly detection",
+        "real-time monitoring"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] real-time",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "monitoring",
+      "anomaly-detection",
+      "real-time monitoring"
+    ],
+    "tags_v2": [
+      "monitoring",
+      "anomaly detection",
+      "real-time monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.332432Z"
+      },
+      {
+        "original_tag": "anomaly-detection",
+        "canonical_tag": "anomaly detection",
+        "matched_tag": "anomaly detection",
+        "tag_origin_cluster_id": "anomaly detection",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.6977492570877075,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.473792Z"
+      },
+      {
+        "original_tag": "real-time monitoring",
+        "canonical_tag": "real-time monitoring",
+        "matched_tag": "real-time monitoring",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.482579Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "monitoring",
+      "ui",
+      "real-time-analytics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7558653354644775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6826555728912354,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "real-time-analytics",
+        "original_tag": "real-time monitoring",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7551296949386597,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Deliver updated API documentation, data model diagrams, and reconciliation SOPs",
+    "summary": "This item involves delivering updated documentation, including API documentation, data model diagrams, and reconciliation SOPs, to ensure clarity and consistency.",
+    "tags": [
+      "documentation",
+      "api-documentation",
+      "reconciliation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40-43",
+    "reasoning": {
+      "source_summary_fragment": "Deliver updated API documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "API documentation",
+        "data model diagrams"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] updated",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "documentation",
+      "api-documentation",
+      "reconciliation"
+    ],
+    "tags_v2": [
+      "documentation",
+      "api-documentation",
+      "reconciliation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.493005Z"
+      },
+      {
+        "original_tag": "api-documentation",
+        "canonical_tag": "api-documentation",
+        "matched_tag": "api-documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7158377170562744,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.635311Z"
+      },
+      {
+        "original_tag": "reconciliation",
+        "canonical_tag": "reconciliation",
+        "matched_tag": "reconciliation",
+        "tag_origin_cluster_id": "reconciliation",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.639340Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reconciliation",
+      "batch",
+      "phantom-balance",
+      "documentation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7597290277481079,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "batch",
+        "original_tag": "batch",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7194482088088989,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "phantom-balance",
+        "original_tag": "phantom-balance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7970595359802246,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7273063063621521,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Ensure all postings, updates, and reversals are logged with immutable audit trails",
+    "summary": "This item focuses on implementing immutable audit trails for all postings, updates, and reversals to ensure data integrity and compliance.",
+    "tags": [
+      "security",
+      "audit-trails",
+      "immutable logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 45-48",
+    "reasoning": {
+      "source_summary_fragment": "Ensure all postings are logged",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "audit trails",
+        "immutable logging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] immutable",
+      "confidence": 0.96,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "security",
+      "audit-trails",
+      "immutable logging"
+    ],
+    "tags_v2": [
+      "security",
+      "audit-trails",
+      "immutable logging"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.741568Z"
+      },
+      {
+        "original_tag": "audit-trails",
+        "canonical_tag": "audit-trails",
+        "matched_tag": "audit-trails",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.6814429759979248,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.859645Z"
+      },
+      {
+        "original_tag": "immutable logging",
+        "canonical_tag": "immutable logging",
+        "matched_tag": "immutable logging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.873031Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "reporting",
+      "immutable logging",
+      "audit-trails"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7160377502441406,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "exception",
+        "original_tag": "exception",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6696847677230835,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7070858478546143,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "immutable logging",
+        "original_tag": "immutable logging",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7702426910400391,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "audit-trails",
+        "original_tag": "audit-trails",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7812792658805847,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Access to ledger data must be role-based and enforce least-privilege principles",
+    "summary": "This item involves implementing role-based access control and least-privilege principles to ensure secure and controlled access to ledger data.",
+    "tags": [
+      "security",
+      "access-control",
+      "role-based access"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "Access to ledger data must be role-based",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "access control",
+        "least-privilege principles"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] role-based",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "security",
+      "access-control",
+      "role-based access"
+    ],
+    "tags_v2": [
+      "security",
+      "access control"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:58.973873Z"
+      },
+      {
+        "original_tag": "access-control",
+        "canonical_tag": "access control",
+        "matched_tag": "access control",
+        "tag_origin_cluster_id": "access control",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7393703460693359,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.120537Z"
+      },
+      {
+        "original_tag": "role-based access",
+        "canonical_tag": "role-based access",
+        "matched_tag": "role-based access",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.286167Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "mismatch",
+      "reconciliation",
+      "role-based access"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7449789643287659,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "mismatch",
+        "original_tag": "mismatch",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.701849102973938,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7563801407814026,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "role-based access",
+        "original_tag": "role-based access",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7459344863891602,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Meet or exceed regulatory standards for ledger management, including SOX and PCI-DSS",
+    "summary": "This item involves ensuring that the ledger management system meets or exceeds regulatory standards, including SOX and PCI-DSS, to maintain compliance and avoid penalties.",
+    "tags": [
+      "compliance",
+      "regulatory-standards",
+      "SOX"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 55-58",
+    "reasoning": {
+      "source_summary_fragment": "Meet or exceed regulatory standards",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory standards",
+        "SOX compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "[INFERRED] regulatory",
+      "confidence": 0.96,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "compliance",
+      "regulatory-standards",
+      "SOX"
+    ],
+    "tags_v2": [
+      "compliance",
+      "regulatory-standards",
+      "SOX"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.297833Z"
+      },
+      {
+        "original_tag": "regulatory-standards",
+        "canonical_tag": "regulatory-standards",
+        "matched_tag": "regulatory-standards",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7700604200363159,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.436300Z"
+      },
+      {
+        "original_tag": "SOX",
+        "canonical_tag": "SOX",
+        "matched_tag": "SOX",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.440648Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "audit",
+      "sox",
+      "workflow"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7308357954025269,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7463526725769043,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "sox",
+        "original_tag": "sox",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7086432576179504,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7096710205078125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Build reconciliation tools to detect and resolve mismatches between operational and reporting ledgers",
+    "summary": "Develop a system to identify and correct discrepancies between operational and reporting ledgers, ensuring data consistency and compliance.",
+    "tags": [
+      "reconciliation",
+      "mismatch-detection",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 60-63",
+    "reasoning": {
+      "source_summary_fragment": "reconciliation tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "reconciliation",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "reconciliation",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "reconciliation",
+      "mismatch-detection",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "reconciliation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reconciliation",
+        "canonical_tag": "reconciliation",
+        "matched_tag": "reconciliation",
+        "tag_origin_cluster_id": "reconciliation",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.444387Z"
+      },
+      {
+        "original_tag": "mismatch-detection",
+        "canonical_tag": "mismatch-detection",
+        "matched_tag": "mismatch-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.621976Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.788202Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reconciliation",
+      "audit",
+      "logging",
+      "compliance",
+      "immutability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7562679648399353,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7412559986114502,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7179312705993652,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.707338809967041,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "immutability",
+        "original_tag": "immutable",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7045889496803284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Allow manual and automated resolution workflows, with full audit trails for all actions",
+    "summary": "Implement flexible workflows for resolving discrepancies, including manual and automated processes, with comprehensive audit trails.",
+    "tags": [
+      "reconciliation",
+      "resolution-workflows"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 65-68",
+    "reasoning": {
+      "source_summary_fragment": "manual and automated resolution",
+      "tag_metadata_reference": [
+        {
+          "tag": "resolution-workflows",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "resolution",
+        "workflows"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "reconciliation",
+      "resolution-workflows"
+    ],
+    "tags_v2": [
+      "reconciliation",
+      "resolution-workflows"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reconciliation",
+        "canonical_tag": "reconciliation",
+        "matched_tag": "reconciliation",
+        "tag_origin_cluster_id": "reconciliation",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:59.890547Z"
+      },
+      {
+        "original_tag": "resolution-workflows",
+        "canonical_tag": "resolution-workflows",
+        "matched_tag": "resolution-workflows",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "semantic",
+        "similarity": 0.9871299266815186,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.041336Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rbac",
+      "resolution-workflows",
+      "reconciliation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rbac",
+        "original_tag": "rbac",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7025408744812012,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "resolution-workflows",
+        "original_tag": "resolution-workflows",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7628858685493469,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7601318359375,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "least-privilege",
+        "original_tag": "least-privilege",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6668248176574707,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Handle cases of 'phantom reversals' (phantom balance is reversed before settlement)",
+    "summary": "Develop a mechanism to address 'phantom reversals', where a phantom balance is reversed prior to settlement, ensuring accurate ledger management.",
+    "tags": [
+      "phantom-reversals",
+      "transaction-management",
+      "[INFERRED] ledger-management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 70-73",
+    "reasoning": {
+      "source_summary_fragment": "phantom reversals",
+      "tag_metadata_reference": [
+        {
+          "tag": "phantom-reversals",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "phantom",
+        "reversals",
+        "ledger-management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "ledger-management",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "phantom-reversals",
+      "transaction-management",
+      "[INFERRED] ledger-management"
+    ],
+    "tags_v2": [
+      "phantom-reversals",
+      "[INFERRED] ledger-management"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "phantom-reversals",
+        "canonical_tag": "phantom-reversals",
+        "matched_tag": "phantom-reversals",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7021257877349854,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.163467Z"
+      },
+      {
+        "original_tag": "transaction-management",
+        "canonical_tag": "transactionmanagement",
+        "matched_tag": "transactionmanagement",
+        "tag_origin_cluster_id": "transactionmanagement",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:00.326513Z"
+      },
+      {
+        "original_tag": "[INFERRED] ledger-management",
+        "canonical_tag": "[INFERRED] ledger-management",
+        "matched_tag": "[INFERRED] ledger-management",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7610877156257629,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.473595Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "sox",
+      "pci-dss",
+      "phantom-reversals",
+      "ledger-management",
+      "transaction-management",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "sox",
+        "original_tag": "sox",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6859415173530579,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "pci-dss",
+        "original_tag": "pci-dss",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7143791317939758,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "phantom-reversals",
+        "original_tag": "phantom-reversals",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7984613180160522,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "ledger-management",
+        "original_tag": "ledger-management",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7913902997970581,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "transaction-management",
+        "original_tag": "transaction-management",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7799639105796814,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6959869265556335,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Support for multi-currency transactions, including conversion logic for reporting ledger entries",
+    "summary": "Implement support for multi-currency transactions, incorporating conversion logic for accurate reporting ledger entries.",
+    "tags": [
+      "multi-currency",
+      "conversion-logic"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 75-78",
+    "reasoning": {
+      "source_summary_fragment": "multi-currency transactions",
+      "tag_metadata_reference": [
+        {
+          "tag": "multi-currency",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "multi-currency",
+        "conversion"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "multi-currency",
+      "conversion-logic"
+    ],
+    "tags_v2": [
+      "multi-currency"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "multi-currency",
+        "canonical_tag": "multi-currency",
+        "matched_tag": "multi-currency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.477896Z"
+      },
+      {
+        "original_tag": "conversion-logic",
+        "canonical_tag": "conversion-logic",
+        "matched_tag": "conversion-logic",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.639018Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "currency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "currency",
+        "original_tag": "multi-currency",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7280335426330566,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "If batch reconciliation fails, trigger alerts and restrict further settlement actions until resolved",
+    "summary": "Upon batch reconciliation failure, trigger alerts and restrict further settlement actions until the issue is resolved, ensuring data integrity.",
+    "tags": [
+      "reconciliation",
+      "alerting",
+      "[INFERRED] data-integrity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 80-83",
+    "reasoning": {
+      "source_summary_fragment": "batch reconciliation fails",
+      "tag_metadata_reference": [
+        {
+          "tag": "reconciliation",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "reconciliation",
+        "alerting",
+        "data-integrity"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "data-integrity",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010",
+    "tags_v1": [
+      "reconciliation",
+      "alerting",
+      "[INFERRED] data-integrity"
+    ],
+    "tags_v2": [
+      "reconciliation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reconciliation",
+        "canonical_tag": "reconciliation",
+        "matched_tag": "reconciliation",
+        "tag_origin_cluster_id": "reconciliation",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.643921Z"
+      },
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:00.810086Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-integrity",
+        "canonical_tag": "[INFERRED] data-integrity",
+        "matched_tag": "[INFERRED] data-integrity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:00.979578Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reconciliation",
+      "data-integrity"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reconciliation",
+        "original_tag": "reconciliation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7573360204696655,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-010"
+      },
+      {
+        "tag": "data-integrity",
+        "original_tag": "data-integrity",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7344104051589966,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-010-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-010"
+      }
+    ]
+  }
+]

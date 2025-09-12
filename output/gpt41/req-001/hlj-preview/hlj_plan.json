@@ -1,0 +1,183 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_1",
+      "focus": "Unified Transaction History API implementation (all functional & non-functional requirements)",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design and implement GET /api/v2/transactions/history endpoint",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "TransactionHistory"
+          ],
+          "tags": [
+            "api",
+            "rest",
+            "spec"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 6\u201311"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement pagination and filtering (date range, type, institution)",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "TransactionHistory"
+          ],
+          "tags": [
+            "api",
+            "filtering",
+            "pagination"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10\u201312"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure OpenAPI (Swagger) 3.x compliance for requests/responses",
+          "domain": "FinTech",
+          "subdomain": [
+            "APIDesign",
+            "Compliance"
+          ],
+          "tags": [
+            "openapi",
+            "spec",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 12"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Deduplicate transactions and harmonize transaction schemas",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataIntegration",
+            "TransactionHistory"
+          ],
+          "tags": [
+            "deduplication",
+            "schema",
+            "data"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 14\u201316"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Normalize transaction timestamps to UTC and add original timezone metadata",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataIntegration",
+            "TimestampHandling"
+          ],
+          "tags": [
+            "timezone",
+            "data",
+            "metadata"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16\u201317"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Authenticate API with OAuth 2.0 and enforce per-customer tokens",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Authentication"
+          ],
+          "tags": [
+            "oauth",
+            "security",
+            "authentication"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19\u201320"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Log access events and enable ISO 27001-compliant audit trails",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "logging",
+            "compliance",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20\u201321"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Gracefully handle bank API outages and provide partial results with error logging",
+          "domain": "FinTech",
+          "subdomain": [
+            "Resilience",
+            "ErrorHandling"
+          ],
+          "tags": [
+            "availability",
+            "error",
+            "logging"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24\u201327"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Meet API response performance target (\u22641.5s for up to 24 months\u2019 data)",
+          "domain": "FinTech",
+          "subdomain": [
+            "Performance",
+            "Scalability"
+          ],
+          "tags": [
+            "performance",
+            "latency",
+            "scalability"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 30\u201331"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Deliver documentation and support channels, and enforce compliance/caching/integration constraints",
+          "domain": "FinTech",
+          "subdomain": [
+            "Documentation",
+            "Compliance",
+            "Integration"
+          ],
+          "tags": [
+            "documentation",
+            "integration",
+            "support"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33\u201339"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,114 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Develop retry logic for failed webhook deliveries with exponential backoff",
+  "summary": "Implement robust retry logic for failed webhook deliveries using exponential backoff strategies to maximize successful delivery rates and ensure reliability even during transient outages.",
+  "tags_v1": [
+    "reliability",
+    "delivery"
+  ],
+  "tags_v2": [
+    "reliability",
+    "delivery"
+  ],
+  "tags_v3": [
+    "reliability",
+    "delivery",
+    "logging",
+    "monitoring",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.763592004776001,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "delivery",
+      "aliases": [],
+      "cluster_id": "all_98",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7328258156776428,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "delivery",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7549804449081421,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7427226305007935,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.710340678691864,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

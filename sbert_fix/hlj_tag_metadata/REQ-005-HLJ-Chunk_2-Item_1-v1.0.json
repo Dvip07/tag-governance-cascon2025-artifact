@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Develop REST API endpoints for freeze/unfreeze with atomic, idempotent operations",
+  "summary": "Design and implement RESTful API endpoints to manage card freeze and unfreeze actions, ensuring all operations are atomic and idempotent to prevent race conditions and duplicate processing. Clients must reliably obtain consistent state regardless of network errors or repeat requests.",
+  "tags_v1": [
+    "backend",
+    "api",
+    "security",
+    "[INFERRED] reliability"
+  ],
+  "tags_v2": [
+    "backend",
+    "api",
+    "security"
+  ],
+  "tags_v3": [
+    "api",
+    "backend",
+    "security",
+    "design"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7501733899116516,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7494958639144897,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7534197568893433,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "design",
+      "aliases": [],
+      "cluster_id": "all_305",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6898353099822998,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "design",
+      "method": "dedup_canonical"
+    }
+  ]
+}

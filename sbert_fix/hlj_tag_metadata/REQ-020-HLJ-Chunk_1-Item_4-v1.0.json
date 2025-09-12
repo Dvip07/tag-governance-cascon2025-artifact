@@ -1,0 +1,103 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Enable user review and resolution of duplicate matches",
+  "summary": "Provide a user interface for reviewing detected duplicate contacts and selecting appropriate resolutions (merge, keep separate, or ignore). The feature facilitates high data quality and gives users control over how to handle matching records.",
+  "tags_v1": [
+    "usability",
+    "duplicates"
+  ],
+  "tags_v2": [
+    "duplicates"
+  ],
+  "tags_v3": [
+    "duplicates",
+    "crm",
+    "contacts"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "duplicates",
+      "aliases": [],
+      "cluster_id": "all_240",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7186533808708191,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7429330945014954,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "contacts",
+      "aliases": [],
+      "cluster_id": "all_337",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7178382873535156,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "contacts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "import",
+      "aliases": [],
+      "cluster_id": "all_239",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6787364482879639,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "import",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6689341068267822,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    }
+  ]
+}

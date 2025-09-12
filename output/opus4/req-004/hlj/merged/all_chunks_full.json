@@ -1,0 +1,826 @@
+[
+  {
+    "CHUNK_ID": "REQ-004-HLJ-Chunk_1",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Refactor audit logs to include user-specific metadata fields (Ln 19\u201320)",
+      "Implement log classification system for personal vs operational data (Ln 22)",
+      "Build data lineage mechanism for tracing log dependencies (Ln 24)",
+      "Create automated RtE request processing system (Ln 28)",
+      "Implement full deletion mode for eligible personal data (Ln 31)",
+      "Implement partial deletion/redaction mode for log entries (Ln 32)",
+      "Build meta-logging system for all RtE actions (Ln 34)",
+      "Implement selective field-level redaction for multi-user logs (Ln 38)",
+      "Create role-based access controls for legally retained records (Ln 40)",
+      "Implement cryptographic checksums for deletion operations (Ln 44)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.92,
+      "DATA": [
+        {
+          "seq_no": 1,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Refactor audit logs to include user-specific metadata fields",
+          "summary": "Restructure existing audit log schema to incorporate user-specific metadata fields necessary for GDPR compliance. This enables individual user data identification and tracking for erasure requests.",
+          "tags": [
+            "audit",
+            "metadata",
+            "gdpr"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "DataPrivacy"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 19-20",
+          "reasoning": {
+            "source_summary_fragment": "restructuring logs with user-specific metadata",
+            "tag_metadata_reference": [
+              {
+                "tag": "audit",
+                "confidence": 0.95
+              },
+              {
+                "tag": "metadata",
+                "confidence": 0.92
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              }
+            ],
+            "mapped_concepts": [
+              "schema refactoring",
+              "user metadata",
+              "GDPR compliance"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 2,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement log classification system for personal vs operational data",
+          "summary": "Create a classification system to differentiate between personal data subject to GDPR and operational data that must be retained. This enables targeted erasure while maintaining compliance obligations.",
+          "tags": [
+            "classification",
+            "gdpr",
+            "privacy"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.86,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 22",
+          "reasoning": {
+            "source_summary_fragment": "personal/operational data classification",
+            "tag_metadata_reference": [
+              {
+                "tag": "classification",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              },
+              {
+                "tag": "privacy",
+                "confidence": 0.95
+              }
+            ],
+            "mapped_concepts": [
+              "data classification",
+              "personal data",
+              "operational data"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 3,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build data lineage mechanism for tracing log dependencies",
+          "summary": "Develop a comprehensive data lineage system to track dependencies between log entries, enabling complete identification of all data related to a specific user for erasure requests.",
+          "tags": [
+            "lineage",
+            "audit",
+            "tracking"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "DataPrivacy"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.91,
+          "priority": "medium",
+          "priority_confidence": 0.85,
+          "line_source": "Ln 24",
+          "reasoning": {
+            "source_summary_fragment": "tracing log dependencies",
+            "tag_metadata_reference": [
+              {
+                "tag": "lineage",
+                "confidence": 0.93
+              },
+              {
+                "tag": "audit",
+                "confidence": 0.91
+              },
+              {
+                "tag": "tracking",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "data lineage",
+              "dependency tracking",
+              "log relationships"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 4,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create automated RtE request processing system",
+          "summary": "Build an automated workflow system to handle Right-to-Erasure requests efficiently, including request validation, data identification, and execution of erasure operations in compliance with GDPR timelines.",
+          "tags": [
+            "automation",
+            "gdpr",
+            "privacy"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "DataPrivacy"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.95,
+          "line_source": "Ln 28",
+          "reasoning": {
+            "source_summary_fragment": "automated RtE workflows",
+            "tag_metadata_reference": [
+              {
+                "tag": "automation",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.97
+              },
+              {
+                "tag": "privacy",
+                "confidence": 0.95
+              }
+            ],
+            "mapped_concepts": [
+              "RtE automation",
+              "workflow orchestration",
+              "GDPR compliance"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 5,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement full deletion mode for eligible personal data",
+          "summary": "Develop functionality to completely delete personal data from audit logs when legally permissible, ensuring no traces remain while maintaining data integrity for non-affected records.",
+          "tags": [
+            "deletion",
+            "gdpr",
+            "privacy"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.87,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 31",
+          "reasoning": {
+            "source_summary_fragment": "full deletion and partial redaction modes",
+            "tag_metadata_reference": [
+              {
+                "tag": "deletion",
+                "confidence": 0.95
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              },
+              {
+                "tag": "privacy",
+                "confidence": 0.95
+              }
+            ],
+            "mapped_concepts": [
+              "data deletion",
+              "complete erasure",
+              "GDPR compliance"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 6,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement partial deletion/redaction mode for log entries",
+          "summary": "Create capability to selectively redact personal information from log entries while preserving operational context and audit trail integrity when full deletion is not possible.",
+          "tags": [
+            "redaction",
+            "gdpr",
+            "privacy"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 32",
+          "reasoning": {
+            "source_summary_fragment": "partial redaction modes",
+            "tag_metadata_reference": [
+              {
+                "tag": "redaction",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              },
+              {
+                "tag": "privacy",
+                "confidence": 0.95
+              }
+            ],
+            "mapped_concepts": [
+              "partial redaction",
+              "selective deletion",
+              "log integrity"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 7,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Build meta-logging system for all RtE actions",
+          "summary": "Implement a comprehensive meta-logging system that records all Right-to-Erasure actions performed, creating an immutable audit trail for compliance verification and regulatory reporting.",
+          "tags": [
+            "audit",
+            "logging",
+            "gdpr",
+            "[INFERRED] compliance"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.86,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 34",
+          "reasoning": {
+            "source_summary_fragment": "tamper-evident meta-logging",
+            "tag_metadata_reference": [
+              {
+                "tag": "audit",
+                "confidence": 0.95
+              },
+              {
+                "tag": "logging",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              },
+              {
+                "tag": "compliance",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "meta-logging",
+              "audit trail",
+              "RtE tracking"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.92,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 8,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Implement selective field-level redaction for multi-user logs",
+          "summary": "Develop sophisticated redaction capabilities to handle logs containing data from multiple users, ensuring only the requesting user's data is removed while preserving other users' information.",
+          "tags": [
+            "redaction",
+            "privacy",
+            "audit"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "AuditLogging"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.93,
+          "priority": "medium",
+          "priority_confidence": 0.84,
+          "line_source": "Ln 38",
+          "reasoning": {
+            "source_summary_fragment": "multi-user logs",
+            "tag_metadata_reference": [
+              {
+                "tag": "redaction",
+                "confidence": 0.94
+              },
+              {
+                "tag": "privacy",
+                "confidence": 0.95
+              },
+              {
+                "tag": "audit",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "field-level redaction",
+              "multi-user data",
+              "selective erasure"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 9,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Create role-based access controls for legally retained records",
+          "summary": "Implement granular role-based access control system for audit logs that must be legally retained despite erasure requests, ensuring only authorized personnel can access sensitive data.",
+          "tags": [
+            "rbac",
+            "security",
+            "gdpr"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.87,
+          "priority": "high",
+          "priority_confidence": 0.92,
+          "line_source": "Ln 40",
+          "reasoning": {
+            "source_summary_fragment": "legal retention conflicts",
+            "tag_metadata_reference": [
+              {
+                "tag": "rbac",
+                "confidence": 0.93
+              },
+              {
+                "tag": "security",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.95
+              }
+            ],
+            "mapped_concepts": [
+              "access control",
+              "legal retention",
+              "authorization"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 10,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement cryptographic checksums for deletion operations",
+          "summary": "Deploy cryptographic integrity verification mechanisms to ensure deletion operations are tamper-evident and verifiable, providing cryptographic proof of erasure for compliance audits.",
+          "tags": [
+            "cryptography",
+            "security",
+            "audit"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "AuditLogging"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 44",
+          "reasoning": {
+            "source_summary_fragment": "cryptographic integrity checks",
+            "tag_metadata_reference": [
+              {
+                "tag": "cryptography",
+                "confidence": 0.96
+              },
+              {
+                "tag": "security",
+                "confidence": 0.94
+              },
+              {
+                "tag": "audit",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "cryptographic verification",
+              "integrity checksums",
+              "tamper evidence"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "REQ-004-HLJ-Chunk_2",
+      "DATA": []
+    },
+    "errors": []
+  },
+  {
+    "CHUNK_ID": "REQ-004-HLJ-Chunk_2",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Build compliance team APIs for deletion operation review (Ln 46)",
+      "Implement RtE compliance dashboard and reporting system (Ln 50)",
+      "Create secure meta-log storage with access controls (Ln 52)",
+      "Develop integration tests for ghost data persistence validation (Ln 56)",
+      "Create edge case simulation and fail-loud alert system (Ln 58)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.92,
+      "DATA": [
+        {
+          "seq_no": 11,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Build compliance team APIs for deletion operation review",
+          "summary": "Develop RESTful APIs enabling compliance teams to review, approve, and track GDPR RtE deletion requests with audit trails and role-based access control.",
+          "tags": [
+            "api",
+            "compliance",
+            "gdpr"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "API"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.92,
+          "line_source": "Ln 46",
+          "reasoning": {
+            "source_summary_fragment": "implementing automated RtE workflows with full deletion and partial redaction modes",
+            "tag_metadata_reference": [
+              {
+                "tag": "api",
+                "confidence": 0.95
+              },
+              {
+                "tag": "compliance",
+                "confidence": 0.94
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.96
+              }
+            ],
+            "mapped_concepts": [
+              "RtE workflows",
+              "deletion operation review",
+              "compliance APIs"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 12,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement RtE compliance dashboard and reporting system",
+          "summary": "Create real-time dashboard for monitoring GDPR RtE request processing, compliance metrics, and automated reporting capabilities for regulatory audits.",
+          "tags": [
+            "dashboard",
+            "reporting",
+            "gdpr"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Monitoring",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.85,
+          "priority": "medium",
+          "priority_confidence": 0.83,
+          "line_source": "Ln 50",
+          "reasoning": {
+            "source_summary_fragment": "building compliance dashboards and reporting",
+            "tag_metadata_reference": [
+              {
+                "tag": "dashboard",
+                "confidence": 0.94
+              },
+              {
+                "tag": "reporting",
+                "confidence": 0.93
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "compliance dashboards",
+              "RtE reporting",
+              "monitoring system"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 13,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Create secure meta-log storage with access controls",
+          "summary": "Implement tamper-evident meta-logging infrastructure with cryptographic integrity checks and granular access controls for audit trail protection.",
+          "tags": [
+            "security",
+            "storage",
+            "audit"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "AuditLogging"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.87,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 52",
+          "reasoning": {
+            "source_summary_fragment": "adding cryptographic integrity checks and tamper-evident meta-logging",
+            "tag_metadata_reference": [
+              {
+                "tag": "security",
+                "confidence": 0.96
+              },
+              {
+                "tag": "storage",
+                "confidence": 0.89
+              },
+              {
+                "tag": "audit",
+                "confidence": 0.93
+              }
+            ],
+            "mapped_concepts": [
+              "meta-logging",
+              "cryptographic integrity",
+              "access controls"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 14,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Develop integration tests for ghost data persistence validation",
+          "summary": "Build comprehensive test suite to validate complete data erasure across all systems, ensuring no residual 'ghost' data persists after GDPR deletion requests.",
+          "tags": [
+            "testing",
+            "validation",
+            "gdpr"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "DataPrivacy"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.86,
+          "priority": "high",
+          "priority_confidence": 0.91,
+          "line_source": "Ln 56",
+          "reasoning": {
+            "source_summary_fragment": "ensuring no performance degradation during peak loads",
+            "tag_metadata_reference": [
+              {
+                "tag": "testing",
+                "confidence": 0.94
+              },
+              {
+                "tag": "validation",
+                "confidence": 0.92
+              },
+              {
+                "tag": "gdpr",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "integration tests",
+              "data persistence",
+              "ghost data validation"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": null,
+            "confidence": null,
+            "method": null
+          },
+          "source_hlj_id": "REQ-004"
+        },
+        {
+          "seq_no": 15,
+          "schema_version": "2025-05-28",
+          "id": "REQ-004-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Create edge case simulation and fail-loud alert system",
+          "summary": "Implement comprehensive edge case testing framework with automatic alert system for multi-user logs, legal retention conflicts, and other complex GDPR scenarios.",
+          "tags": [
+            "testing",
+            "alerts",
+            "monitoring",
+            "[INFERRED] edge-cases"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "Monitoring"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.89,
+          "priority": "medium",
+          "priority_confidence": 0.82,
+          "line_source": "Ln 58",
+          "reasoning": {
+            "source_summary_fragment": "handling edge cases like multi-user logs and legal retention conflicts",
+            "tag_metadata_reference": [
+              {
+                "tag": "testing",
+                "confidence": 0.92
+              },
+              {
+                "tag": "alerts",
+                "confidence": 0.91
+              },
+              {
+                "tag": "monitoring",
+                "confidence": 0.88
+              },
+              {
+                "tag": "edge-cases",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "edge case simulation",
+              "fail-loud alerts",
+              "conflict handling"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "edge-cases",
+            "confidence": 0.9,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-004"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": null,
+      "DATA": []
+    },
+    "errors": []
+  }
+]

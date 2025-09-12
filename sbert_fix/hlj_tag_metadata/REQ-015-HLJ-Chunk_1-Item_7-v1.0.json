@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Notify clients on persistent webhook delivery failures",
+  "summary": "Trigger alerts or notifications to clients when webhook deliveries have failed after all retry attempts, ensuring clients are informed of delivery issues in a timely manner.",
+  "tags_v1": [
+    "notifications",
+    "reliability"
+  ],
+  "tags_v2": [
+    "notification",
+    "reliability"
+  ],
+  "tags_v3": [
+    "notification",
+    "reliability",
+    "documentation",
+    "webhook"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7789833545684814,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7411158084869385,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7118879556655884,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7924567461013794,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhook",
+      "method": "dedup_canonical"
+    }
+  ]
+}

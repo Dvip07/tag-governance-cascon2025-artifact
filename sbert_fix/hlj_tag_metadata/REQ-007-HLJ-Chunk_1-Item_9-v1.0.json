@@ -1,0 +1,159 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Provide Compliance dashboard and ad-hoc reporting on screening outcomes",
+  "summary": "Deliver a dashboard for Compliance to review AML screening outcomes and generate ad-hoc reports as needed. This facilitates rapid oversight, compliance monitoring, and transparency across customer onboarding activities.",
+  "tags_v1": [
+    "dashboard",
+    "compliance",
+    "[INFERRED] reporting"
+  ],
+  "tags_v2": [
+    "dashboard",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "audit",
+    "security",
+    "dashboard",
+    "legal",
+    "support",
+    "reporting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7279140949249268,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7397962212562561,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7358262538909912,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7288159132003784,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "legal",
+      "aliases": [],
+      "cluster_id": "all_67",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6971518993377686,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "legal",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7010986804962158,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.711279034614563,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

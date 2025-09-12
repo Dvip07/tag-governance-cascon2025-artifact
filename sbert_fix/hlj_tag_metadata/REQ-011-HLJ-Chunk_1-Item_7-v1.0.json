@@ -1,0 +1,55 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Default to conservative EMI options and flag if credit lookup fails/times out",
+  "summary": "When real-time credit check fails or times out, provide customers with conservative EMI plan options by default and flag these cases for follow-up review, balancing customer experience and risk.",
+  "tags_v1": [
+    "fallback",
+    "emi"
+  ],
+  "tags_v2": [
+    "fallback",
+    "emi"
+  ],
+  "tags_v3": [
+    "fallback",
+    "emi"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "all_58",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7347466945648193,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "emi",
+      "aliases": [],
+      "cluster_id": "all_251",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7518182396888733,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "emi",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-022",
+  "summary": "Add granular per-resource access logging to support compliance in regulated industries. Log each access event\u2014including user ID, timestamp, IP, access type, and context\u2014for files, records, or dashboards, with retention configurable at a minimum of 1 year. Enable users with 'Compliance' or 'Security' roles to export logs in CSV or JSON, supporting filters (date, user, resource type) and masking sensitive info in exports as policy requires. Maintain accurate historical access context even after role changes. Notify compliance leads about high-volume exports or unusual patterns. Update admin documentation and compliance playbooks for the new features. Log exports must be rate-limited, and all processes must adhere to client-specific privacy, data protection, and geographic regulatory requirements."
+}

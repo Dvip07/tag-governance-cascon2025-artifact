@@ -1,0 +1,186 @@
+# 📝 Changelog for `req-022` — **opus4**
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['logging', 'database', 'schema']`
+**Validated tags:** `['logs', 'database', 'schema']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging']`
+**Tags kept:** `['database', 'schema']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| database | kept | direct | 1.0 | title | 2025-05-31T23:58:39.129406Z |
+| logging | dropped | direct | 1.0 | title | 2025-05-31T23:58:39.124957Z |
+| logs | added | direct | 1.0 | title | 2025-05-31T23:58:39.124957Z |
+| schema | kept | direct | 1.0 | title | 2025-05-31T23:58:39.133563Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['logging', 'middleware', 'api']`
+**Validated tags:** `['logs', 'middleware', 'api']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging']`
+**Tags kept:** `['middleware', 'api']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| api | kept | direct | 1.0 | title | 2025-05-31T23:58:39.199252Z |
+| logging | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:58:39.191422Z |
+| logs | added | direct | 1.0 | raw_requirement | 2025-05-31T23:58:39.191422Z |
+| middleware | kept | direct | 1.0 | title | 2025-05-31T23:58:39.195591Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['retention', 'storage', 'compliance']`
+**Validated tags:** `['retention', 'storage', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['retention', 'storage', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.220905Z |
+| retention | kept | direct | 1.0 | title | 2025-05-31T23:58:39.202456Z |
+| storage | kept | direct | 1.0 | title | 2025-05-31T23:58:39.205545Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['rbac', 'security', 'compliance']`
+**Validated tags:** `['security', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['rbac']`
+**Tags kept:** `['security', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:58:39.353184Z |
+| rbac | dropped | none | 0.0 | None | 2025-05-31T23:58:39.343995Z |
+| security | kept | direct | 1.0 | title | 2025-05-31T23:58:39.348969Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['export', 'csv', 'json']`
+**Validated tags:** `['export', 'csv', 'json']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['export', 'csv', 'json']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| csv | kept | direct | 1.0 | title | 2025-05-31T23:58:39.360046Z |
+| export | kept | direct | 1.0 | title | 2025-05-31T23:58:39.356661Z |
+| json | kept | direct | 1.0 | title | 2025-05-31T23:58:39.363181Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['filtering', 'export', 'query']`
+**Validated tags:** `['filter', 'export', 'query']`
+**Tags added:** `['filter']`
+**Tags dropped:** `['filtering']`
+**Tags kept:** `['export', 'query']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| export | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.470480Z |
+| filter | added | semantic | 0.8744757771492004 | source_fragment | 2025-05-31T23:58:39.455149Z |
+| filtering | dropped | semantic | 0.8744757771492004 | source_fragment | 2025-05-31T23:58:39.455149Z |
+| query | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.484663Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['masking', 'privacy', 'compliance']`
+**Validated tags:** `['masking', 'privacy', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['masking', 'privacy', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:39.560047Z |
+| masking | kept | direct | 1.0 | title | 2025-05-31T23:58:39.488207Z |
+| privacy | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.504462Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['audit', 'roles', 'history']`
+**Validated tags:** `['audit', 'roles']`
+**Tags added:** `[]`
+**Tags dropped:** `['history']`
+**Tags kept:** `['audit', 'roles']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | summary | 2025-05-31T23:58:39.571674Z |
+| history | dropped | none | 0.0 | None | 2025-05-31T23:58:39.697106Z |
+| roles | kept | direct | 1.0 | title | 2025-05-31T23:58:39.574925Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['notifications', 'alerts', 'compliance']`
+**Validated tags:** `['notification', 'alert', 'compliance']`
+**Tags added:** `['notification', 'alert']`
+**Tags dropped:** `['notifications', 'alerts']`
+**Tags kept:** `['compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| alert | added | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.717918Z |
+| alerts | dropped | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.717918Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:58:39.721215Z |
+| notification | added | direct | 1.0 | title | 2025-05-31T23:58:39.701404Z |
+| notifications | dropped | direct | 1.0 | title | 2025-05-31T23:58:39.701404Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['anomaly', 'monitoring', 'alerts']`
+**Validated tags:** `['anomaly', 'monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `['alerts']`
+**Tags kept:** `['anomaly', 'monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| alerts | dropped | none | 0.0 | None | 2025-05-31T23:58:39.857178Z |
+| anomaly | kept | direct | 1.0 | title | 2025-05-31T23:58:39.724392Z |
+| monitoring | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:39.738820Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['rate-limiting', 'security', 'performance']`
+**Validated tags:** `['security']`
+**Tags added:** `[]`
+**Tags dropped:** `['rate-limiting', 'performance']`
+**Tags kept:** `['security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| performance | dropped | none | 0.0 | None | 2025-05-31T23:58:40.161801Z |
+| rate-limiting | dropped | none | 0.0 | None | 2025-05-31T23:58:39.984507Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:40.042536Z |
+
+## 🔹 HLJ: `REQ-022-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['documentation', 'compliance', 'admin']`
+**Validated tags:** `['documentation', 'compliance', 'admin']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'compliance', 'admin']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| admin | kept | direct | 1.0 | title | 2025-05-31T23:58:40.179475Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:58:40.176251Z |
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:58:40.166053Z |

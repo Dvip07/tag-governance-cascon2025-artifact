@@ -1,0 +1,101 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "opus4",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Implement data privacy controls to limit sensitive data in alert payloads",
+  "summary": "Design and implement privacy-preserving mechanisms to redact or tokenize sensitive customer information in fraud alerts while maintaining sufficient detail for investigation purposes.",
+  "tags_v1": [
+    "security",
+    "privacy",
+    "compliance",
+    "[INFERRED] fraud"
+  ],
+  "tags_v2": [
+    "security",
+    "privacy",
+    "compliance"
+  ],
+  "tags_v3": [
+    "privacy",
+    "security",
+    "compliance",
+    "fraud"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7314836978912354,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7577460408210754,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7229289412498474,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7489876747131348,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    }
+  ]
+}

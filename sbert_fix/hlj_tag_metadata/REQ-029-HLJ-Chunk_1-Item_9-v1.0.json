@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Store logs for deleted users/orphaned actions with anonymized IDs and original role context",
+  "summary": "Ensure that audit logs for deleted users or orphaned actions are retained with anonymized user IDs while maintaining the original role context. This preserves historical audit integrity and meets regulatory requirements even for edge cases.",
+  "tags_v1": [
+    "compliance",
+    "security",
+    "[INFERRED] data-retention"
+  ],
+  "tags_v2": [
+    "compliance",
+    "security"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "data-retention"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6932629942893982,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7062129974365234,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-retention",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7348186373710632,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-retention",
+      "method": "dedup_canonical"
+    }
+  ]
+}

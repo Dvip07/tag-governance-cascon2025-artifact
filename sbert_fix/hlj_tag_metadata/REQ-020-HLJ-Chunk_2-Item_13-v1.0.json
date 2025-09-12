@@ -1,0 +1,59 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_2-Item_13-v1.0",
+  "model": "opus4",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Build 24-hour merge rollback functionality",
+  "summary": "Develop rollback capability allowing users to undo contact merge operations within 24-hour window. System must restore pre-merge state for all affected contacts and update any dependent records accordingly.",
+  "tags_v1": [
+    "rollback",
+    "undo",
+    "data-recovery"
+  ],
+  "tags_v2": [
+    "rollback",
+    "undo"
+  ],
+  "tags_v3": [
+    "rollback",
+    "undo"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7329644560813904,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "undo",
+      "aliases": [],
+      "cluster_id": "all_347",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7110902070999146,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "undo",
+      "method": "dedup_canonical"
+    }
+  ]
+}

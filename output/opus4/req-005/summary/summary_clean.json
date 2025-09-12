@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-005",
+  "summary": "FT-005 mandates implementing a mobile app feature for instant freeze/unfreeze of virtual debit/credit cards. Core requirements: toggle UI with visual status feedback, RESTful backend with atomic operations, real-time cross-system synchronization, transaction blocking for frozen cards (except whitelisted merchants), strong authentication (biometrics/PIN/MFA), end-to-end encryption, PCI DSS/SOC 2 compliance, edge case handling (queuing during maintenance, rollback on failures, request locking), audit logging with timestamps/metadata, customer support tools, notification integration, phased rollout with pilot testing. Deliverables include updated UI/backend, documentation, test cases, and go-live checklist. Dependencies: card processor APIs, transaction authorization systems. Performance must meet existing app standards."
+}

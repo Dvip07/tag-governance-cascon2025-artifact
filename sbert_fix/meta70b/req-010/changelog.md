@@ -1,0 +1,228 @@
+# 📝 Changelog for `req-010` — **meta70b**
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['dual-ledger', 'operational-ledger', 'real-time posting']`
+**Validated tags:** `['dual-ledger', 'operational-ledger', 'real-time posting']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['dual-ledger', 'operational-ledger', 'real-time posting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dual-ledger | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:57.115549Z |
+| operational-ledger | kept | semantic | 0.7492269277572632 | title | 2025-05-31T23:57:57.235066Z |
+| real-time posting | kept | direct | 1.0 | title | 2025-05-31T23:57:57.238212Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['dual-ledger', 'reporting-ledger', 'financial reporting']`
+**Validated tags:** `['dual-ledger', 'reporting-ledger', 'financial reporting']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['dual-ledger', 'reporting-ledger', 'financial reporting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dual-ledger | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:57.336858Z |
+| financial reporting | kept | direct | 1.0 | title | 2025-05-31T23:57:57.456149Z |
+| reporting-ledger | kept | semantic | 0.848290205001831 | title | 2025-05-31T23:57:57.453085Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['phantom-balances', 'transaction-management', 'logic development']`
+**Validated tags:** `['phantom balance']`
+**Tags added:** `['phantom balance']`
+**Tags dropped:** `['phantom-balances', 'transaction-management', 'logic development']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| logic development | dropped | none | 0.0 | None | 2025-05-31T23:57:57.890310Z |
+| phantom balance | added | direct | 1.0 | raw_requirement | 2025-05-31T23:57:57.557167Z |
+| phantom-balances | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:57:57.557167Z |
+| transaction-management | dropped | none | 0.0 | None | 2025-05-31T23:57:57.723049Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['reconciliation', 'batch-processing', 'ledger management']`
+**Validated tags:** `['reconciliation', 'batchprocessing', 'ledger management']`
+**Tags added:** `['batchprocessing']`
+**Tags dropped:** `['batch-processing']`
+**Tags kept:** `['reconciliation', 'ledger management']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| batch-processing | dropped | semantic | 0.6888595819473267 | source_fragment | 2025-05-31T23:57:58.056674Z |
+| batchprocessing | added | semantic | 0.6888595819473267 | source_fragment | 2025-05-31T23:57:58.056674Z |
+| ledger management | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:58.159109Z |
+| reconciliation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:57.904898Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['testing', 'test-plans', 'scenario-based testing']`
+**Validated tags:** `['testing', 'test-plans', 'scenario-based testing']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['testing', 'test-plans', 'scenario-based testing']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| scenario-based testing | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:58.324514Z |
+| test-plans | kept | semantic | 0.8375732898712158 | source_fragment | 2025-05-31T23:57:58.309810Z |
+| testing | kept | direct | 1.0 | summary | 2025-05-31T23:57:58.168839Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['monitoring', 'anomaly-detection', 'real-time monitoring']`
+**Validated tags:** `['monitoring', 'anomaly detection', 'real-time monitoring']`
+**Tags added:** `['anomaly detection']`
+**Tags dropped:** `['anomaly-detection']`
+**Tags kept:** `['monitoring', 'real-time monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| anomaly detection | added | semantic | 0.6977492570877075 | mapped_concepts | 2025-05-31T23:57:58.473792Z |
+| anomaly-detection | dropped | semantic | 0.6977492570877075 | mapped_concepts | 2025-05-31T23:57:58.473792Z |
+| monitoring | kept | direct | 1.0 | summary | 2025-05-31T23:57:58.332432Z |
+| real-time monitoring | kept | direct | 1.0 | summary | 2025-05-31T23:57:58.482579Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['documentation', 'api-documentation', 'reconciliation']`
+**Validated tags:** `['documentation', 'api-documentation', 'reconciliation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'api-documentation', 'reconciliation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| api-documentation | kept | semantic | 0.7158377170562744 | source_fragment | 2025-05-31T23:57:58.635311Z |
+| documentation | kept | direct | 1.0 | source_fragment | 2025-05-31T23:57:58.493005Z |
+| reconciliation | kept | direct | 1.0 | title | 2025-05-31T23:57:58.639340Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['security', 'audit-trails', 'immutable logging']`
+**Validated tags:** `['security', 'audit-trails', 'immutable logging']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['security', 'audit-trails', 'immutable logging']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit-trails | kept | semantic | 0.6814429759979248 | title | 2025-05-31T23:57:58.859645Z |
+| immutable logging | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:58.873031Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:58.741568Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['security', 'access-control', 'role-based access']`
+**Validated tags:** `['security', 'access control']`
+**Tags added:** `['access control']`
+**Tags dropped:** `['access-control', 'role-based access']`
+**Tags kept:** `['security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| access control | added | semantic | 0.7393703460693359 | mapped_concepts | 2025-05-31T23:57:59.120537Z |
+| access-control | dropped | semantic | 0.7393703460693359 | mapped_concepts | 2025-05-31T23:57:59.120537Z |
+| role-based access | dropped | none | 0.0 | None | 2025-05-31T23:57:59.286167Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:58.973873Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['compliance', 'regulatory-standards', 'SOX']`
+**Validated tags:** `['compliance', 'regulatory-standards', 'SOX']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['compliance', 'regulatory-standards', 'SOX']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| SOX | kept | direct | 1.0 | title | 2025-05-31T23:57:59.440648Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:59.297833Z |
+| regulatory-standards | kept | semantic | 0.7700604200363159 | source_fragment | 2025-05-31T23:57:59.436300Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['reconciliation', 'mismatch-detection', '[INFERRED] compliance']`
+**Validated tags:** `['reconciliation']`
+**Tags added:** `[]`
+**Tags dropped:** `['mismatch-detection', '[INFERRED] compliance']`
+**Tags kept:** `['reconciliation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:59.788202Z |
+| mismatch-detection | dropped | none | 0.0 | None | 2025-05-31T23:57:59.621976Z |
+| reconciliation | kept | direct | 1.0 | title | 2025-05-31T23:57:59.444387Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['reconciliation', 'resolution-workflows']`
+**Validated tags:** `['reconciliation', 'resolution-workflows']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['reconciliation', 'resolution-workflows']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| reconciliation | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:59.890547Z |
+| resolution-workflows | kept | semantic | 0.9871299266815186 | mapped_concepts | 2025-05-31T23:58:00.041336Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['phantom-reversals', 'transaction-management', '[INFERRED] ledger-management']`
+**Validated tags:** `['phantom-reversals', '[INFERRED] ledger-management']`
+**Tags added:** `[]`
+**Tags dropped:** `['transaction-management']`
+**Tags kept:** `['phantom-reversals', '[INFERRED] ledger-management']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] ledger-management | kept | semantic | 0.7610877156257629 | mapped_concepts | 2025-05-31T23:58:00.473595Z |
+| phantom-reversals | kept | semantic | 0.7021257877349854 | title | 2025-05-31T23:58:00.163467Z |
+| transaction-management | dropped | none | 0.0 | None | 2025-05-31T23:58:00.326513Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['multi-currency', 'conversion-logic']`
+**Validated tags:** `['multi-currency']`
+**Tags added:** `[]`
+**Tags dropped:** `['conversion-logic']`
+**Tags kept:** `['multi-currency']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| conversion-logic | dropped | none | 0.0 | None | 2025-05-31T23:58:00.639018Z |
+| multi-currency | kept | direct | 1.0 | title | 2025-05-31T23:58:00.477896Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['reconciliation', 'alerting', '[INFERRED] data-integrity']`
+**Validated tags:** `['reconciliation']`
+**Tags added:** `[]`
+**Tags dropped:** `['alerting', '[INFERRED] data-integrity']`
+**Tags kept:** `['reconciliation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] data-integrity | dropped | none | 0.0 | None | 2025-05-31T23:58:00.979578Z |
+| alerting | dropped | none | 0.0 | None | 2025-05-31T23:58:00.810086Z |
+| reconciliation | kept | direct | 1.0 | title | 2025-05-31T23:58:00.643921Z |

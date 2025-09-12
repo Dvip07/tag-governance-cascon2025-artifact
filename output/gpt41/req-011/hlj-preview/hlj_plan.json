@@ -1,0 +1,224 @@
+{
+  "estimated_hlj_count": 13,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-011-HLJ-Chunk_1",
+      "focus": "Creditworthiness assessment, EMI eligibility mapping, core user experience",
+      "items": [
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate with internal and third-party credit bureaus for real-time score retrieval",
+          "domain": "FinTech",
+          "subdomain": [
+            "CreditAssessment"
+          ],
+          "tags": [
+            "integration",
+            "creditworthiness"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 8\u201311"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Build decision engine to map credit score bands to eligible EMI plans and rates",
+          "domain": "FinTech",
+          "subdomain": [
+            "CreditAssessment",
+            "EMI"
+          ],
+          "tags": [
+            "decisioning",
+            "emi"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12\u201314"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure all scoring and eligibility checks complete within 2 seconds",
+          "domain": "FinTech",
+          "subdomain": [
+            "CreditAssessment"
+          ],
+          "tags": [
+            "performance",
+            "creditworthiness"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 15\u201315"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Display only qualified EMI plans at checkout with payment breakdown",
+          "domain": "FinTech",
+          "subdomain": [
+            "Checkout",
+            "EMI"
+          ],
+          "tags": [
+            "emi",
+            "usability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17\u201318"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Trigger re-validation of eligibility if credit band changes prior to disbursement",
+          "domain": "FinTech",
+          "subdomain": [
+            "CreditAssessment",
+            "EMI"
+          ],
+          "tags": [
+            "revalidation",
+            "emi"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 19\u201320"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Enable manual override for borderline customers with justification logging",
+          "domain": "FinTech",
+          "subdomain": [
+            "Support",
+            "CreditAssessment"
+          ],
+          "tags": [
+            "override",
+            "audit"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 23\u201324"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Default to conservative EMI options and flag if credit lookup fails/times out",
+          "domain": "FinTech",
+          "subdomain": [
+            "CreditAssessment",
+            "EMI"
+          ],
+          "tags": [
+            "fallback",
+            "emi"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25\u201326"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Implement EMI calculator in checkout for users to simulate payment options",
+          "domain": "FinTech",
+          "subdomain": [
+            "Checkout",
+            "EMI"
+          ],
+          "tags": [
+            "usability",
+            "emi"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29\u201330"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Present all EMI terms and dispute processes in plain language at checkout",
+          "domain": "FinTech",
+          "subdomain": [
+            "Checkout",
+            "EMI"
+          ],
+          "tags": [
+            "usability",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 31\u201332"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure user consent for all credit checks during EMI selection",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "CreditAssessment"
+          ],
+          "tags": [
+            "consent",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36\u201337"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-011-HLJ-Chunk_2",
+      "focus": "Compliance, auditability, monitoring, dependencies, reporting",
+      "items": [
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Comply with relevant lending and privacy laws in data flow (FCRA, GDPR, etc.)",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "DataSecurity"
+          ],
+          "tags": [
+            "compliance",
+            "security"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 34\u201335"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Log all decision engine inputs and outputs for audit and regulatory review",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Audit"
+          ],
+          "tags": [
+            "audit",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 38\u201339"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Monitor EMI adoption rates, declines, and band-shifting; provide analytics",
+          "domain": "FinTech",
+          "subdomain": [
+            "Analytics",
+            "EMI"
+          ],
+          "tags": [
+            "monitoring",
+            "analytics"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 41\u201342"
+        }
+      ]
+    }
+  ]
+}

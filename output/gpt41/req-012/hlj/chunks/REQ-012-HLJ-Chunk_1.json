@@ -1,0 +1,473 @@
+{
+  "CHUNK_ID": "REQ-012-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Implement dynamic GST rate table with auto-updates for all supported provinces (Ln 09\u201312)",
+    "Develop dual-GST province logic for correct allocation and calculation (Ln 13\u201314)",
+    "Apply province-correct GST rates during invoice generation based on billing address, service location, and exemptions (Ln 16\u201318)",
+    "Display GST breakdown (federal/provincial) on all invoices (Ln 19\u201320)",
+    "Support multi-rate invoices for split shipments or services (Ln 21\u201322)",
+    "Enable customer-level tax exemption with validation and documentation capture (Ln 24\u201325)",
+    "Handle retroactive GST rate changes and notify affected customers (Ln 26\u201327)",
+    "Apply fallback GST rules for ambiguous or missing address data and flag for review (Ln 28\u201329)",
+    "Log all tax rate changes, overrides, and manual adjustments with user metadata (Ln 39\u201341)",
+    "Integrate with government tax rate APIs for automatic updates (Ln 53\u201354)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Implement dynamic GST rate table with auto-updates for all supported provinces",
+        "summary": "Design and deliver a robust GST rate management framework that supports all Canadian provinces, enabling ongoing updates to GST rates as they change at the federal and provincial levels. The solution must actively reflect and enforce new rates across the entire B2B SaaS platform. It should integrate automated update mechanisms to minimize manual intervention and ensure tax accuracy.",
+        "tags": [
+          "gst",
+          "rates",
+          "[INFERRED] automation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.95,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 09\u201312",
+        "reasoning": {
+          "source_summary_fragment": "dynamically manage provincial tax rates (including dual-tax provinces), update with government changes",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.99
+            },
+            {
+              "tag": "rates",
+              "confidence": 0.95
+            },
+            {
+              "tag": "automation",
+              "confidence": 0.77
+            }
+          ],
+          "mapped_concepts": [
+            "dynamic tax rate table",
+            "auto-update",
+            "province-wide support"
+          ]
+        },
+        "low_confidence_reason": "automation inferred due to focus on automated updates.",
+        "inference_notes": {
+          "tag_added": "automation",
+          "confidence": 0.77,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Develop dual-GST province logic for correct allocation and calculation",
+        "summary": "Establish logic within the system to accurately allocate and calculate GST for provinces operating under dual-GST regimes such as Quebec, ensuring compliance with the specific rules of each affected jurisdiction. This function must clearly distinguish which GST components apply and ensure allocations are compliant with local regulations.",
+        "tags": [
+          "gst",
+          "dual-tax"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 13\u201314",
+        "reasoning": {
+          "source_summary_fragment": "manage provincial tax rates (including dual-tax provinces)",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.98
+            },
+            {
+              "tag": "dual-tax",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "dual-tax logic",
+            "allocation and calculation",
+            "province-specific rules"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Apply province-correct GST rates during invoice generation based on billing address, service location, and exemptions",
+        "summary": "Implement a process in invoice generation to apply the correct GST rates determined by the customer's billing address, service location, and any applicable tax exemptions. This ensures that GST calculations are accurate for every scenario, reducing risk of misapplied tax and supporting regulatory compliance.",
+        "tags": [
+          "gst",
+          "invoice"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Billing"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 16\u201318",
+        "reasoning": {
+          "source_summary_fragment": "GST application is required for each invoice based on billing address, service location, and exemptions",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.99
+            },
+            {
+              "tag": "invoice",
+              "confidence": 0.94
+            }
+          ],
+          "mapped_concepts": [
+            "dynamic GST calculation",
+            "location-based GST application",
+            "tax exemption logic"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Display GST breakdown (federal/provincial) on all invoices",
+        "summary": "Ensure that generated invoices clearly present a breakdown of GST charges, distinguishing between federal and provincial tax amounts. This supports customer transparency, regulatory accountability, and enables clients to comply with internal accounting standards.",
+        "tags": [
+          "gst",
+          "invoice",
+          "[INFERRED] transparency"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Billing"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 19\u201320",
+        "reasoning": {
+          "source_summary_fragment": "line-item breakdowns for federal and provincial portions",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.96
+            },
+            {
+              "tag": "invoice",
+              "confidence": 0.92
+            },
+            {
+              "tag": "transparency",
+              "confidence": 0.75
+            }
+          ],
+          "mapped_concepts": [
+            "split GST visualisation",
+            "customer clarity"
+          ]
+        },
+        "low_confidence_reason": "transparency inferred from intent to clarify line-item tax breakdowns.",
+        "inference_notes": {
+          "tag_added": "transparency",
+          "confidence": 0.75,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Support multi-rate invoices for split shipments or services",
+        "summary": "Extend invoice and billing logic to handle multiple GST rates in a single invoice, which may arise when shipments or services span multiple tax jurisdictions within the same transaction. The system should accurately segment and calculate GST per applicable region.",
+        "tags": [
+          "gst",
+          "multi-rate"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Billing"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "medium",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 21\u201322",
+        "reasoning": {
+          "source_summary_fragment": "support multi-rate invoices for split shipments or services",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.97
+            },
+            {
+              "tag": "multi-rate",
+              "confidence": 0.86
+            }
+          ],
+          "mapped_concepts": [
+            "multi-jurisdictional GST",
+            "invoice segmentation"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Enable customer-level tax exemption with validation and documentation capture",
+        "summary": "Build features that permit certain customers to claim GST exemption, provided valid documentation is supplied and verified. The system should track exemption records and maintain auditable evidence to ensure ongoing compliance and defensibility in audits.",
+        "tags": [
+          "gst",
+          "exemption",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 24\u201325",
+        "reasoning": {
+          "source_summary_fragment": "handle edge cases like tax exemptions, and maintain audit logs",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.97
+            },
+            {
+              "tag": "exemption",
+              "confidence": 0.93
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.79
+            }
+          ],
+          "mapped_concepts": [
+            "exemption eligibility",
+            "document validation",
+            "compliance evidence"
+          ]
+        },
+        "low_confidence_reason": "compliance inferred since documentation and auditability are referenced.",
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.79,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Handle retroactive GST rate changes and notify affected customers",
+        "summary": "Ensure the GST module can apply and record retroactive rate adjustments, and proactively notify any customers impacted by such changes. This includes maintaining historical tax rates and utilizing them for correct financial record-keeping.",
+        "tags": [
+          "gst",
+          "retroactive"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "medium",
+        "priority_confidence": 0.89,
+        "line_source": "Ln 26\u201327",
+        "reasoning": {
+          "source_summary_fragment": "handle retroactive rate adjustments and maintain audit logs",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.98
+            },
+            {
+              "tag": "retroactive",
+              "confidence": 0.88
+            }
+          ],
+          "mapped_concepts": [
+            "historical GST logic",
+            "customer notification"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Apply fallback GST rules for ambiguous or missing address data and flag for review",
+        "summary": "Implement fallback rules to determine provisional GST rates when address data is incomplete or ambiguous, and flag such transactions for manual review. This helps maintain tax integrity and reduces risk posed by data errors or incomplete customer records.",
+        "tags": [
+          "gst",
+          "fallback"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.87,
+        "line_source": "Ln 28\u201329",
+        "reasoning": {
+          "source_summary_fragment": "handle ambiguous addresses ... and flag for review",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.97
+            },
+            {
+              "tag": "fallback",
+              "confidence": 0.81
+            }
+          ],
+          "mapped_concepts": [
+            "fallback determination",
+            "error flagging"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Log all tax rate changes, overrides, and manual adjustments with user metadata",
+        "summary": "The module must maintain comprehensive logs for all GST rate changes\u2014automatic or manual\u2014including overrides and user-triggered adjustments. Audit trails should include user metadata to ensure traceability, supporting both compliance and internal controls.",
+        "tags": [
+          "logging",
+          "audit",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance",
+          "Audit"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 39\u201341",
+        "reasoning": {
+          "source_summary_fragment": "maintain audit logs ... with user metadata; ...reconciliation tools",
+          "tag_metadata_reference": [
+            {
+              "tag": "logging",
+              "confidence": 0.94
+            },
+            {
+              "tag": "audit",
+              "confidence": 0.96
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.78
+            }
+          ],
+          "mapped_concepts": [
+            "user event logging",
+            "auditability",
+            "access control"
+          ]
+        },
+        "low_confidence_reason": "compliance inferred due to requirement for regulatory audit logs.",
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.78,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Integrate with government tax rate APIs for automatic updates",
+        "summary": "Develop integration connectors with official government APIs to automatically fetch and apply updated GST rates. This helps the system remain current and compliant with regulatory changes without introducing operational lag or manual intervention.",
+        "tags": [
+          "integration",
+          "api",
+          "[INFERRED] automation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "TaxCompliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.94,
+        "priority": "medium",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 53\u201354",
+        "reasoning": {
+          "source_summary_fragment": "integration with tax rate APIs and coordination ... Deliverables: ... tax rate management UI",
+          "tag_metadata_reference": [
+            {
+              "tag": "integration",
+              "confidence": 0.97
+            },
+            {
+              "tag": "api",
+              "confidence": 0.96
+            },
+            {
+              "tag": "automation",
+              "confidence": 0.88
+            }
+          ],
+          "mapped_concepts": [
+            "external API sync",
+            "real-time rate updates"
+          ]
+        },
+        "low_confidence_reason": "automation inferred based on automated updates via API.",
+        "inference_notes": {
+          "tag_added": "automation",
+          "confidence": 0.88,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Activate upgraded plan immediately while preserving original billing cycle dates",
+  "summary": "Deploy immediate activation of the new subscription plan upon upgrade while maintaining the original billing cycle dates, preserving seamless billing periods for customers. This ensures users benefit from their upgrade without disrupting financial tracking cycles.",
+  "tags_v1": [
+    "upgrade",
+    "billing",
+    "[INFERRED] scheduling"
+  ],
+  "tags_v2": [
+    "upgrade",
+    "billing"
+  ],
+  "tags_v3": [
+    "upgrade",
+    "billing",
+    "billing history"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "upgrade",
+      "aliases": [
+        "upgrades"
+      ],
+      "cluster_id": "all_201",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7507048845291138,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "upgrade",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "billing",
+      "aliases": [],
+      "cluster_id": "all_200",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7254208326339722,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "credits",
+      "aliases": [],
+      "cluster_id": "all_315",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6567514538764954,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "credits",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "billing history",
+      "aliases": [],
+      "cluster_id": "all_431",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7485872507095337,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing history",
+      "method": "dedup_canonical"
+    }
+  ]
+}

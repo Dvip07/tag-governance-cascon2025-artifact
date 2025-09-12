@@ -1,0 +1,117 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Trigger automated RtE workflow upon user deletion request",
+  "summary": "Implement automation that initiates the right-to-erasure workflow when a user requests deletion, orchestrating relevant log entry identification, review, and action according to compliance protocols.",
+  "tags_v1": [
+    "automation",
+    "right-to-erasure"
+  ],
+  "tags_v2": [
+    "automation",
+    "right-to-erasure"
+  ],
+  "tags_v3": [
+    "automation",
+    "gdpr",
+    "right-to-erasure",
+    "privacy",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7460798025131226,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7190805673599243,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "right-to-erasure",
+      "aliases": [],
+      "cluster_id": "all_170",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7505250573158264,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "right-to-erasure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7334024906158447,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7274608612060547,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

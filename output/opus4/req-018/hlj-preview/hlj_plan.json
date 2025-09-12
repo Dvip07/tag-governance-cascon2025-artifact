@@ -1,0 +1,316 @@
+{
+  "estimated_hlj_count": 18,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-018-HLJ-Chunk_1",
+      "focus": "Core inbox functionality, tagging, and assignment rules",
+      "items": [
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design shared inbox UI with email list view and team member visibility",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration",
+            "EmailManagement"
+          ],
+          "tags": [
+            "inbox",
+            "ui",
+            "design"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16-17"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement multi-tag system allowing multiple tags per email",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement",
+            "WorkflowAutomation"
+          ],
+          "tags": [
+            "tagging",
+            "data",
+            "model"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Create predefined tags for 'Urgent', 'Billing', 'Feature Request'",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement"
+          ],
+          "tags": [
+            "tagging",
+            "config",
+            "setup"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Build automatic assignment rules engine based on email tags",
+          "domain": "SaaS",
+          "subdomain": [
+            "WorkflowAutomation",
+            "EmailManagement"
+          ],
+          "tags": [
+            "routing",
+            "rules",
+            "automation"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 23"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Configure rule: route 'Billing' tagged emails to finance team",
+          "domain": "SaaS",
+          "subdomain": [
+            "WorkflowAutomation"
+          ],
+          "tags": [
+            "routing",
+            "rules",
+            "config"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 23"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement manual email reassignment functionality",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration",
+            "EmailManagement"
+          ],
+          "tags": [
+            "assignment",
+            "manual",
+            "workflow"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Add 'unassigned' status marking capability for emails",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement"
+          ],
+          "tags": [
+            "assignment",
+            "status",
+            "workflow"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Develop reply collision prevention with locking mechanism",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration",
+            "EmailManagement"
+          ],
+          "tags": [
+            "concurrency",
+            "locking",
+            "safety"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Create warning system for simultaneous reply drafting attempts",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration"
+          ],
+          "tags": [
+            "ui",
+            "notification",
+            "concurrency"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement 'handled' status marking upon reply completion",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement",
+            "WorkflowAutomation"
+          ],
+          "tags": [
+            "status",
+            "workflow",
+            "automation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 31"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-018-HLJ-Chunk_2",
+      "focus": "Search, reporting, edge cases, integrations, and documentation",
+      "items": [
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Build notification system for team members on email status changes",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration"
+          ],
+          "tags": [
+            "notification",
+            "realtime",
+            "communication"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 31"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Create search/filter interface by tag, assignment, and status",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement"
+          ],
+          "tags": [
+            "search",
+            "filter",
+            "ui"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 35"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Generate response time reports grouped by tags and teams",
+          "domain": "SaaS",
+          "subdomain": [
+            "WorkflowAutomation",
+            "Analytics"
+          ],
+          "tags": [
+            "reporting",
+            "analytics",
+            "metrics"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Implement first-come-first-served conflict resolution for simultaneous assignments",
+          "domain": "SaaS",
+          "subdomain": [
+            "TeamCollaboration",
+            "WorkflowAutomation"
+          ],
+          "tags": [
+            "concurrency",
+            "rules",
+            "conflict"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 41"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Create reassignment prompt when tags affecting rules are removed",
+          "domain": "SaaS",
+          "subdomain": [
+            "WorkflowAutomation"
+          ],
+          "tags": [
+            "rules",
+            "validation",
+            "workflow"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 43"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Integrate with IMAP, Gmail API, and Office 365 email systems",
+          "domain": "SaaS",
+          "subdomain": [
+            "EmailManagement",
+            "Integration"
+          ],
+          "tags": [
+            "integration",
+            "email",
+            "api"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 50"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Ensure non-disruptive deployment for teams not using shared inbox",
+          "domain": "SaaS",
+          "subdomain": [
+            "Deployment",
+            "TeamCollaboration"
+          ],
+          "tags": [
+            "deployment",
+            "compatibility",
+            "safety"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 52"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Document tagging and assignment logic for team onboarding",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "onboarding",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 47"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,137 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Refactor audit logs to add user-specific metadata fields",
+  "summary": "Update audit log schemas and systems to include additional metadata fields that directly map each log entry to a specific user, improving traceability and enabling finer-grained GDPR compliance for personal data identification.",
+  "tags_v1": [
+    "gdpr",
+    "metadata",
+    "[INFERRED] traceability"
+  ],
+  "tags_v2": [
+    "gdpr",
+    "metadata"
+  ],
+  "tags_v3": [
+    "metadata",
+    "gdpr",
+    "audit",
+    "auditlogs",
+    "traceability",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "all_77",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7146898508071899,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7151703834533691,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.761402428150177,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auditlogs",
+      "aliases": [
+        "auditing"
+      ],
+      "cluster_id": "all_408",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8116818070411682,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditlogs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "traceability",
+      "aliases": [],
+      "cluster_id": "all_84",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7391854524612427,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "traceability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7152930498123169,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

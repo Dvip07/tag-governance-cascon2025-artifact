@@ -1,0 +1,102 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Log each user action with timestamp, resource, session ID, and role at time of action",
+  "summary": "Capture every user action in the audit log, including timestamp, specific resource accessed, session ID, and the precise user role at the moment of action. This comprehensive record improves traceability and accountability across all user activities.",
+  "tags_v1": [
+    "logging",
+    "security",
+    "[INFERRED] traceability"
+  ],
+  "tags_v2": [
+    "logs",
+    "security"
+  ],
+  "tags_v3": [
+    "logging",
+    "security",
+    "compliance",
+    "traceability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7481660842895508,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7113364934921265,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6871582269668579,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "traceability",
+      "aliases": [],
+      "cluster_id": "all_84",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7468513250350952,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "traceability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

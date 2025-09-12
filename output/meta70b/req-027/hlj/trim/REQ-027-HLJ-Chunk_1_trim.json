@@ -1,0 +1,86 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-027-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement robust RTL layout engine",
+    "summary": "Develop a comprehensive RTL layout engine to support right-to-left languages, ensuring proper rendering of UI components and boosting international expansion.",
+    "tags": [
+      "rtl",
+      "layout",
+      "[INFERRED] globalization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Visual Builder",
+      "RTL Support"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "Implement comprehensive RTL layout",
+      "tag_metadata_reference": [
+        {
+          "tag": "rtl",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "RTL layout engine",
+        "right-to-left languages"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "globalization",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-027"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-027-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Ensure accurate rendering of component libraries",
+    "summary": "Verify that component libraries are properly rendered in RTL mode, ensuring consistency and accuracy in the visual representation of UI components.",
+    "tags": [
+      "rtl",
+      "components",
+      "[INFERRED] ui_rendering"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Visual Builder",
+      "RTL Support"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 13-14",
+    "reasoning": {
+      "source_summary_fragment": "Ensure accurate rendering of component libraries",
+      "tag_metadata_reference": [
+        {
+          "tag": "components",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "component libraries",
+        "RTL rendering"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "ui_rendering",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-027"
+  }
+]

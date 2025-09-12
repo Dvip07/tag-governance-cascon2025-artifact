@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Deduplicate transactions and harmonize transaction schemas",
+  "summary": "Ensure that transactions from all partner banks are deduplicated and that differing schemas are harmonized for uniformity. This improves data consistency and reliability for downstream consumers and reporting processes.",
+  "tags_v1": [
+    "deduplication",
+    "schema",
+    "data"
+  ],
+  "tags_v2": [
+    "deduplication",
+    "schema",
+    "data"
+  ],
+  "tags_v3": [
+    "openapi",
+    "deduplication",
+    "api",
+    "schema",
+    "data",
+    "standards"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "openapi",
+      "aliases": [],
+      "cluster_id": "all_72",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7499278783798218,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "openapi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deduplication",
+      "aliases": [],
+      "cluster_id": "all_73",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7141793370246887,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deduplication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7283552885055542,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "schema",
+      "aliases": [],
+      "cluster_id": "all_74",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6837739944458008,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "schema",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6885032653808594,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "standards",
+      "aliases": [],
+      "cluster_id": "all_275",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7072948217391968,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "standards",
+      "method": "dedup_canonical"
+    }
+  ]
+}

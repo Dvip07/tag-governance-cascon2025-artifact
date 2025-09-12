@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Warn and pause sync if merging would cause webhook update conflicts",
+  "summary": "Introduce safeguards that detect potential webhook update conflicts during merges, warning users and pausing synchronization if issues are detected. This prevents data inconsistency and maintains reliable integration workflows.",
+  "tags_v1": [
+    "conflict",
+    "sync"
+  ],
+  "tags_v2": [
+    "conflict",
+    "sync"
+  ],
+  "tags_v3": [
+    "conflict",
+    "sync",
+    "crm",
+    "rollback",
+    "duplicate-resolution"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "conflict",
+      "aliases": [],
+      "cluster_id": "all_242",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.706663966178894,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "conflict",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6616370677947998,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync",
+      "aliases": [
+        "synchronization"
+      ],
+      "cluster_id": "all_166",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7286907434463501,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sync",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.727170467376709,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6972970962524414,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "duplicate-resolution",
+      "aliases": [],
+      "cluster_id": "all_341",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7113062143325806,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicate-resolution",
+      "method": "dedup_canonical"
+    }
+  ]
+}

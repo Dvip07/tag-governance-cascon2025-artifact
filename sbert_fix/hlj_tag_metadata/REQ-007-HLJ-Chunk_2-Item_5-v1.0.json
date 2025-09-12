@@ -1,0 +1,80 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "opus4",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Implement encryption for screening data in transit and at rest",
+  "summary": "Deploy end-to-end encryption for all KYC/AML screening data, including API communications with screening providers and database storage. Must meet financial services security standards and regulatory requirements.",
+  "tags_v1": [
+    "encryption",
+    "security",
+    "compliance"
+  ],
+  "tags_v2": [
+    "encryption",
+    "security",
+    "compliance"
+  ],
+  "tags_v3": [
+    "encryption",
+    "security",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "all_20",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7299993634223938,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7436152696609497,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7191570997238159,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

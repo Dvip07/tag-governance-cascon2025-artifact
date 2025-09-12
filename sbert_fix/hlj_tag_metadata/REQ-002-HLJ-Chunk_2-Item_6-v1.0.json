@@ -1,0 +1,80 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "meta70b",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Ensure Compliance with Regional Child Data Protection Regulations",
+  "summary": "Ensure the platform complies with regional child data protection regulations to safeguard minor users' data.",
+  "tags_v1": [
+    "compliance",
+    "regulation",
+    "[INFERRED] child_protection"
+  ],
+  "tags_v2": [
+    "compliance",
+    "regulation"
+  ],
+  "tags_v3": [
+    "compliance",
+    "regulation",
+    "child_protection"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7350876331329346,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7083259224891663,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "child_protection",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7445908784866333,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "child_protection",
+      "method": "dedup_canonical"
+    }
+  ]
+}

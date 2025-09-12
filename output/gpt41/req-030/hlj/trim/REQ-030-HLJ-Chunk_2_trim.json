@@ -1,0 +1,97 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Securely retain test artifacts, restricting access to authorized personnel",
+    "summary": "Test artifacts such as logs, screenshots, and videos must be securely stored with access limited to authorized personnel. Proper retention policies should be enforced to prevent unauthorized retrieval or leakage. All storage and access controls must be auditable and align with security best practices.",
+    "tags": [
+      "security",
+      "artifacts",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "TestingAutomation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 33\u201334",
+    "reasoning": {
+      "source_summary_fragment": "Secure test artifacts, restrict access to authorized personnel.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "artifacts",
+          "confidence": 0.9
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "test artifact retention",
+        "access controls",
+        "security audit"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Track and enforce accessibility (WCAG) compliance in the test suite",
+    "summary": "Implement mechanisms to track, validate, and enforce WCAG accessibility compliance across all automated test cases. Accessibility violations must be reported within the CI/CD pipeline, with actionable feedback provided to development and QA teams. Regular audits should be performed to ensure ongoing compliance.",
+    "tags": [
+      "accessibility",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "TestingAutomation",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 35\u201335",
+    "reasoning": {
+      "source_summary_fragment": "enforce accessibility (WCAG) compliance in the test suite.",
+      "tag_metadata_reference": [
+        {
+          "tag": "accessibility",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "WCAG compliance",
+        "CI/CD accessibility enforcement",
+        "accessibility audits"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-030"
+  }
+]

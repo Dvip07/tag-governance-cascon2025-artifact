@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Implement webhook schema validation and reject conflicts with detailed errors",
+  "summary": "Add webhook schema validation to reject conflicting schemas and provide clients with detailed error messages for resolution. This reduces onboarding errors and improves developer experience.",
+  "tags_v1": [
+    "validation",
+    "error-handling"
+  ],
+  "tags_v2": [
+    "validation"
+  ],
+  "tags_v3": [
+    "validation",
+    "ui",
+    "webhook"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7716211676597595,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.711327314376831,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8029661774635315,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhook",
+      "method": "dedup_canonical"
+    }
+  ]
+}

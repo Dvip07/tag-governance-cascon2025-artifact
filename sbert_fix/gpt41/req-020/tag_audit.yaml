@@ -1,0 +1,379 @@
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308639Z'
+  original_tags:
+  - sync
+  - oauth
+  - '[INFERRED] security'
+  validated_tags:
+  - sync
+  - oauth
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] security'
+  tags_kept:
+  - sync
+  - oauth
+  validation_details:
+  - original_tag: sync
+    canonical_tag: sync
+    matched_tag: sync
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:32.855043Z'
+  - original_tag: oauth
+    canonical_tag: oauth
+    matched_tag: oauth
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:32.859581Z'
+  - original_tag: '[INFERRED] security'
+    canonical_tag: '[INFERRED] security'
+    matched_tag: '[INFERRED] security'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.006639Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308647Z'
+  original_tags:
+  - import
+  - duplicates
+  - '[INFERRED] onboarding'
+  validated_tags:
+  - import
+  - duplicates
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] onboarding'
+  tags_kept:
+  - import
+  - duplicates
+  validation_details:
+  - original_tag: import
+    canonical_tag: import
+    matched_tag: import
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.011088Z'
+  - original_tag: duplicates
+    canonical_tag: duplicates
+    matched_tag: duplicates
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.014750Z'
+  - original_tag: '[INFERRED] onboarding'
+    canonical_tag: '[INFERRED] onboarding'
+    matched_tag: '[INFERRED] onboarding'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.161689Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308649Z'
+  original_tags:
+  - duplicates
+  - configurable
+  validated_tags:
+  - duplicates
+  - configurable
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - duplicates
+  - configurable
+  validation_details:
+  - original_tag: duplicates
+    canonical_tag: duplicates
+    matched_tag: duplicates
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.226551Z'
+  - original_tag: configurable
+    canonical_tag: configurable
+    matched_tag: configurable
+    tag_origin_cluster_id: configurable
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.230603Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308650Z'
+  original_tags:
+  - usability
+  - duplicates
+  validated_tags:
+  - duplicates
+  tags_added: []
+  tags_dropped:
+  - usability
+  tags_kept:
+  - duplicates
+  validation_details:
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.374396Z'
+  - original_tag: duplicates
+    canonical_tag: duplicates
+    matched_tag: duplicates
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.437452Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308652Z'
+  original_tags:
+  - usability
+  - conflict
+  validated_tags:
+  - conflict
+  tags_added: []
+  tags_dropped:
+  - usability
+  tags_kept:
+  - conflict
+  validation_details:
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.603465Z'
+  - original_tag: conflict
+    canonical_tag: conflict
+    matched_tag: conflict
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.620439Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308653Z'
+  original_tags:
+  - sync
+  - automation
+  validated_tags:
+  - sync
+  - automation
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - sync
+  - automation
+  validation_details:
+  - original_tag: sync
+    canonical_tag: sync
+    matched_tag: sync
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.624812Z'
+  - original_tag: automation
+    canonical_tag: automation
+    matched_tag: automation
+    tag_origin_cluster_id: automation
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.636579Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308655Z'
+  original_tags:
+  - logging
+  - history
+  validated_tags:
+  - history
+  tags_added: []
+  tags_dropped:
+  - logging
+  tags_kept:
+  - history
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.97
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-06-01T00:00:33.786649Z'
+  - original_tag: history
+    canonical_tag: history
+    matched_tag: history
+    tag_origin_cluster_id: history
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.790963Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308656Z'
+  original_tags:
+  - conflict
+  - sync
+  validated_tags:
+  - conflict
+  - sync
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - conflict
+  - sync
+  validation_details:
+  - original_tag: conflict
+    canonical_tag: conflict
+    matched_tag: conflict
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.808603Z'
+  - original_tag: sync
+    canonical_tag: sync
+    matched_tag: sync
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.812109Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308658Z'
+  original_tags:
+  - rollback
+  - usability
+  validated_tags:
+  - rollback
+  tags_added: []
+  tags_dropped:
+  - usability
+  tags_kept:
+  - rollback
+  validation_details:
+  - original_tag: rollback
+    canonical_tag: rollback
+    matched_tag: rollback
+    tag_origin_cluster_id: rollback
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.814852Z'
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:33.950434Z'
+- hlj_id: REQ-020-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-020
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.308659Z'
+  original_tags:
+  - docs
+  - usability
+  validated_tags:
+  - docs
+  tags_added: []
+  tags_dropped:
+  - usability
+  tags_kept:
+  - docs
+  validation_details:
+  - original_tag: docs
+    canonical_tag: docs
+    matched_tag: docs
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.015472Z'
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.153024Z'

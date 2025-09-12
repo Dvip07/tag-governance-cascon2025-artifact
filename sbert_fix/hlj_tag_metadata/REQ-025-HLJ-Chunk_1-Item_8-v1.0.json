@@ -1,0 +1,157 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Monitor fallback performance of external widgets and alert on persistent issues",
+  "summary": "Continuously monitor the fallback behavior and performance of external widgets, issuing alerts when issues persist to ensure overall dashboard resilience and user experience.",
+  "tags_v1": [
+    "resilience",
+    "external",
+    "[INFERRED] alerting"
+  ],
+  "tags_v2": [
+    "resilience",
+    "external"
+  ],
+  "tags_v3": [
+    "alert",
+    "privacy",
+    "sla",
+    "performance",
+    "resilience",
+    "external",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7140548229217529,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.683457612991333,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sla",
+      "aliases": [],
+      "cluster_id": "all_96",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6933167576789856,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sla",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7419629096984863,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "resilience",
+      "aliases": [],
+      "cluster_id": "all_120",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7064428925514221,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "resilience",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "external",
+      "aliases": [],
+      "cluster_id": "all_121",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6961806416511536,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "external",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6983572840690613,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

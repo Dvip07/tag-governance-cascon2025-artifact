@@ -1,0 +1,427 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Centralize notification templates with dynamic fields and multi-language support",
+    "summary": "Establishes a central system for managing notification templates that includes dynamic field substitution and support for multiple languages. Ensures reusability, consistency, and adaptability of messaging for diverse user bases. Enables efficient management, updates, and expansion of communication styles.",
+    "tags": [
+      "template",
+      "multi-language",
+      "[INFERRED] notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationEngine"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 08\u201309",
+    "reasoning": {
+      "source_summary_fragment": "centralized templates with dynamic fields and multi-language support",
+      "tag_metadata_reference": [
+        {
+          "tag": "template",
+          "confidence": 0.92
+        },
+        {
+          "tag": "multi-language",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "centralized template system",
+        "dynamic placeholders",
+        "language localization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Enable preview and testing of notification templates across all channels",
+    "summary": "Provides preview and testing capability for notification templates before deployment, supporting validation across all intended delivery channels (email, SMS, push, in-app). Reduces risk of misformatting and improves template usability. Facilitates marketer and engineer confidence in message rendering.",
+    "tags": [
+      "usability",
+      "testing",
+      "[INFERRED] notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationEngine"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10",
+    "reasoning": {
+      "source_summary_fragment": "preview and testing of notification templates across all channels",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.94
+        },
+        {
+          "tag": "testing",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "template preview",
+        "testing in multiple channels"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Support scheduling of notifications with customizable delays per user timezone",
+    "summary": "Implements notification scheduling with the flexibility to set delivery delays based on each user's timezone. Enables timely and context-aware communications, reducing disruption and increasing engagement. Enhances personalization and relevance of notifications.",
+    "tags": [
+      "timezone",
+      "scheduling",
+      "[INFERRED] personalization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationEngine",
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 12",
+    "reasoning": {
+      "source_summary_fragment": "flexible scheduling with per-user timezone delays",
+      "tag_metadata_reference": [
+        {
+          "tag": "timezone",
+          "confidence": 0.91
+        },
+        {
+          "tag": "scheduling",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "timezone adaptation",
+        "delayed messaging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "personalization",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Automatically select optimal delivery channel based on preferences and history",
+    "summary": "Enables automated selection of the most suitable delivery channel for each notification, leveraging user preferences and historical data. Maximizes message efficacy and user response by adapting to proven communication habits. Reduces manual configuration for campaign managers.",
+    "tags": [
+      "automation",
+      "multi-channel",
+      "[INFERRED] notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationEngine",
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 13",
+    "reasoning": {
+      "source_summary_fragment": "automatic channel selection based on user preferences and delivery history",
+      "tag_metadata_reference": [
+        {
+          "tag": "automation",
+          "confidence": 0.9
+        },
+        {
+          "tag": "multi-channel",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "channel optimization",
+        "smart delivery"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Integrate with user profile and behavior data for personalized notifications",
+    "summary": "Connects notification delivery with real-time user profile and behavioral data to personalize content, timing, and targeting. Drives higher user engagement through tailored messaging and adaptive strategies. Supports integration with internal and external user data sources.",
+    "tags": [
+      "personalization",
+      "integration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Personalization"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 15",
+    "reasoning": {
+      "source_summary_fragment": "personalization engine leverages user profile and behavior data",
+      "tag_metadata_reference": [
+        {
+          "tag": "personalization",
+          "confidence": 0.93
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user attribute mapping",
+        "behavioral segmentation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Enable A/B testing and automated audience segmentation for targeted campaigns",
+    "summary": "Adds A/B testing functionality to notifications and automates segmentation of audiences for campaign targeting. Facilitates optimization of content, timing, and targeting strategies. Enhances campaign success metrics through data-driven improvements.",
+    "tags": [
+      "a/b testing",
+      "segmentation",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Personalization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "supports A/B testing and automates audience segmentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "a/b testing",
+          "confidence": 0.93
+        },
+        {
+          "tag": "segmentation",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "experimentation",
+        "audience clusters"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.81,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Provide real-time dashboards showing open, click, and conversion rates per channel and template",
+    "summary": "Implements interactive dashboards that display real-time analytics for open, click, and conversion rates broken down by delivery channel and notification template. Empowers users to monitor campaign effectiveness and optimize future strategies. Allows performance analysis across multiple vectors.",
+    "tags": [
+      "dashboard",
+      "analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "real-time analytics dashboards cover open, click, and conversion rates",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.91
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "real-time performance metrics",
+        "campaign visibility"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Trigger alerts for abnormal drop-off and deliverability issues with self-healing workflows",
+    "summary": "Detects abnormal user drop-off and delivery problems, automatically triggering alerts and initiating self-healing workflows. Improves reliability via automated responses to issues, minimizing manual intervention. Supports real-time maintenance of notification quality.",
+    "tags": [
+      "reliability",
+      "automation",
+      "[INFERRED] notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 19",
+    "reasoning": {
+      "source_summary_fragment": "alerts and fallback mechanisms address drop-off and deliverability",
+      "tag_metadata_reference": [
+        {
+          "tag": "reliability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "anomaly alerting",
+        "automatic remediation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Ensure all messages include opt-out mechanisms and comply with CAN-SPAM, CASL, GDPR",
+    "summary": "Mandates inclusion of user opt-out functionality and explicit compliance with legal frameworks such as CAN-SPAM, CASL, and GDPR for all message types. Reduces regulatory risk and increases trust. Standardizes compliance across channels.",
+    "tags": [
+      "compliance",
+      "opt-out"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "compliance is ensured with opt-out options and adherence to CAN-SPAM, CASL, and GDPR",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "opt-out",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "opt-out management",
+        "legal adherence"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Track and log all opt-outs and message failures for audit purposes",
+    "summary": "Implements tracking and logging of all user opt-outs and message delivery failures, supporting thorough auditing and traceability. Enables compliance verification and incident investigation. Ensures accountability in notification processes.",
+    "tags": [
+      "logging",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance",
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "tracking all opt-outs and failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "audit log",
+        "event tracking"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-024"
+  }
+]

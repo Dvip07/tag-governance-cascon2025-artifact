@@ -1,0 +1,263 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-005",
+  "summary": "This requirement mandates building a secure, user-friendly feature enabling users to freeze or unfreeze eligible virtual debit and credit cards through the mobile app in real time. The UI must display card status with clear feedback, handle failed operations with retries, and offer contextual help. Backend services must provide atomic, idempotent RESTful endpoints, ensure instant status sync across all systems, handle exceptions (recurring transactions), and robustly log all actions for auditing. Requests during maintenance must be queued and user-notified; failures at third parties must roll back and inform users. Strong authentication (biometrics, PIN, MFA), encryption of communications and logs, and compliance with PCI DSS and SOC 2 are required. Customer support tools and notifications must be updated. User guides and help content must be revised, and the rollout should include a pilot phase and feedback loop. Dependencies include integration with card processors and transaction authorization, state rollback for failed ops, and adherence to current performance standards."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["CardManagement", "VirtualCards"],
+  "canonical_tags": ["security", "usability", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 17,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_1",
+      "focus": "User Interface & Frontend Experience",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate Freeze/Unfreeze toggle in virtual card management UI",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "MobileApp"],
+          "tags": ["usability", "frontend"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12–14"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Display real-time status (Frozen/Active) with visual cues in UI",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "MobileApp"],
+          "tags": ["usability", "feedback"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15–16"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement instant failure feedback and retry/cancel for toggle action",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "MobileApp"],
+          "tags": ["usability", "error_handling"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17–18"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Add contextual help/tooltips explaining freeze/unfreeze implications",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "MobileApp"],
+          "tags": ["usability", "documentation"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Provide customer support with real-time card status and override tools",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "SupportTools"],
+          "tags": ["operational", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 44–45"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Integrate freeze/unfreeze events with notification channels (push/SMS/email)",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Notifications"],
+          "tags": ["usability", "operational"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 46"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Update user guides and help center for new freeze/unfreeze feature",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Documentation"],
+          "tags": ["documentation", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 48"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Update in-app messaging regarding card freeze/unfreeze",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Documentation"],
+          "tags": ["documentation", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 48"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Pilot feature with selected cohorts and collect user feedback",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Rollout"],
+          "tags": ["operational", "feedback"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 49"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Iterate on feature based on pilot user feedback before general release",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Rollout"],
+          "tags": ["feedback", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 49"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_2",
+      "focus": "Backend, Security, Synchronization & Compliance",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Develop REST API endpoints for freeze/unfreeze with atomic, idempotent operations",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["backend", "api", "security"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22–24"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Ensure instant card status sync across card processor, fraud, authorization systems",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["integration", "synchronization"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Block transaction authorizations on frozen cards except for whitelisted exceptions",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Authorization"],
+          "tags": ["security", "backend"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 27–28"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Log all freeze/unfreeze actions with timestamp, user/device, and outcome for audit",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Logging"],
+          "tags": ["compliance", "audit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 29–30"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Queue requests and notify users if backend/API is under maintenance",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["availability", "resilience"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 32–33"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Rollback state and inform user if freeze/unfreeze fails at third-party processor",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["consistency", "error_handling"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 34–36"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Prevent conflicting freeze/unfreeze requests and alert user if detected",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["consistency", "error_handling"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37–38"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Require strong authentication (biometric, PIN, or MFA) for freeze/unfreeze actions",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Security"],
+          "tags": ["security", "authentication"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Encrypt API calls and logs end-to-end for this feature",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Security"],
+          "tags": ["security", "encryption"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 41"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Maintain compliance with PCI DSS, SOC 2, and applicable regulations",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Compliance"],
+          "tags": ["compliance", "regulation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 42–43"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_11-v1.0",
+          "title": "Ensure feature meets existing mobile app performance benchmarks",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Performance"],
+          "tags": ["performance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 55"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_12-v1.0",
+          "title": "Support rollback for failed freeze/unfreeze requests to prevent stuck cards",
+          "domain": "FinTech",
+          "subdomain": ["CardManagement", "Backend"],
+          "tags": ["consistency", "error_handling"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 53–54"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

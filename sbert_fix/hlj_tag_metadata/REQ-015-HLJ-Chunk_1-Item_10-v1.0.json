@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Allow clients to manage, pause, or revoke webhook registrations via self-service portal",
+  "summary": "Provide a client self-service portal for managing webhook registrations, including pausing or revoking endpoints, supporting operational agility and usability improvements for client teams.",
+  "tags_v1": [
+    "usability",
+    "self-service"
+  ],
+  "tags_v2": [
+    "usability"
+  ],
+  "tags_v3": [
+    "usability",
+    "compliance",
+    "self-service"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7245128154754639,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.748069703578949,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "self-service",
+      "aliases": [],
+      "cluster_id": "all_54",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7578152418136597,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "self-service",
+      "method": "dedup_canonical"
+    }
+  ]
+}

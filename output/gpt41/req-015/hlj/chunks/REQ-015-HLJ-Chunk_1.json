@@ -1,0 +1,447 @@
+{
+  "CHUNK_ID": "REQ-015-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Design webhook event framework for claim status notifications (Ln 07\u201310)",
+    "Implement client endpoint registration with event selection (Ln 11\u201312)",
+    "Enable per-client custom field mapping in webhook payloads (Ln 13\u201317)",
+    "Validate custom fields for conflicts, naming, and type constraints (Ln 15\u201317)",
+    "Implement webhook schema validation and reject conflicts with detailed errors (Ln 36\u201337)",
+    "Develop retry logic for failed webhook deliveries with exponential backoff (Ln 18\u201320)",
+    "Notify clients on persistent webhook delivery failures (Ln 20)",
+    "Provide clients with delivery status and logs via API or dashboard (Ln 21\u201322)",
+    "Require endpoint verification using shared secret or signed payloads (Ln 24)",
+    "Allow clients to manage, pause, or revoke webhook registrations via self-service portal (Ln 25\u201326)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Design webhook event framework for claim status notifications",
+        "summary": "Develop a webhook infrastructure to notify clients of insurance claim status changes, including submitted, in review, approved, rejected, and paid statuses. The framework should support standardized event types, extensibility, and integration with claims APIs. Scalability, reliability, and compliance for high-volume financial processing are required.",
+        "tags": [
+          "webhooks",
+          "notifications",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Insurance",
+          "APIs",
+          "Webhooks"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.94,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 07\u201310",
+        "reasoning": {
+          "source_summary_fragment": "Implement a webhook-based notification system for insurance API claim status changes (submitted, in review, approved, rejected, paid).",
+          "tag_metadata_reference": [
+            {
+              "tag": "webhooks",
+              "confidence": 0.97
+            },
+            {
+              "tag": "notifications",
+              "confidence": 0.96
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.78
+            }
+          ],
+          "mapped_concepts": [
+            "Webhook event architecture",
+            "Claim status change events",
+            "Insurance API integration"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.78,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Implement client endpoint registration with event selection",
+        "summary": "Enable clients to register webhook endpoints and select which claim status events should trigger notifications. The registration process must be secure and support customization for each integration profile.",
+        "tags": [
+          "webhooks",
+          "registration"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Insurance",
+          "APIs"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 11\u201312",
+        "reasoning": {
+          "source_summary_fragment": "Clients must be able to register endpoints, select events, and define custom data fields per integration profile.",
+          "tag_metadata_reference": [
+            {
+              "tag": "webhooks",
+              "confidence": 0.96
+            },
+            {
+              "tag": "registration",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "Endpoint registration",
+            "Event type selection",
+            "Integration customization"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Enable per-client custom field mapping in webhook payloads",
+        "summary": "Allow each client integration to define custom data fields within webhook payloads, enabling tailored data delivery to suit client-specific requirements and systems. Support mapping and management of custom fields on a per-client basis.",
+        "tags": [
+          "customization",
+          "webhooks",
+          "[INFERRED] usability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Insurance",
+          "APIs",
+          "Webhooks"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 13\u201317",
+        "reasoning": {
+          "source_summary_fragment": "Clients must be able to ... define custom data fields per integration profile.",
+          "tag_metadata_reference": [
+            {
+              "tag": "customization",
+              "confidence": 0.93
+            },
+            {
+              "tag": "webhooks",
+              "confidence": 0.91
+            },
+            {
+              "tag": "usability",
+              "confidence": 0.8
+            }
+          ],
+          "mapped_concepts": [
+            "Client-specific payload structure",
+            "Custom field mapping"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "usability",
+          "confidence": 0.8,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Validate custom fields for conflicts, naming, and type constraints",
+        "summary": "Provide validation logic to check custom fields defined by clients for reserved word conflicts, proper naming conventions, and allowed data types in webhook payloads. Ensure data integrity and prevent misconfiguration during client onboarding.",
+        "tags": [
+          "validation",
+          "schema"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "APIs"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 15\u201317",
+        "reasoning": {
+          "source_summary_fragment": "The system must validate custom fields (check for reserved word conflicts, naming/type constraints)...",
+          "tag_metadata_reference": [
+            {
+              "tag": "validation",
+              "confidence": 0.95
+            },
+            {
+              "tag": "schema",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "Field validation rules",
+            "Schema constraint enforcement"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Implement webhook schema validation and reject conflicts with detailed errors",
+        "summary": "Add webhook schema validation to reject conflicting schemas and provide clients with detailed error messages for resolution. This reduces onboarding errors and improves developer experience.",
+        "tags": [
+          "validation",
+          "error-handling"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Insurance",
+          "Webhooks"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 36\u201337",
+        "reasoning": {
+          "source_summary_fragment": "Edge cases include schema conflicts (reject with detailed errors)...",
+          "tag_metadata_reference": [
+            {
+              "tag": "validation",
+              "confidence": 0.96
+            },
+            {
+              "tag": "error-handling",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "Conflict rejection with error details",
+            "Schema validation workflow"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Develop retry logic for failed webhook deliveries with exponential backoff",
+        "summary": "Implement robust retry logic for failed webhook deliveries using exponential backoff strategies to maximize successful delivery rates and ensure reliability even during transient outages.",
+        "tags": [
+          "reliability",
+          "delivery"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Webhooks"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 18\u201320",
+        "reasoning": {
+          "source_summary_fragment": "Reliability is ensured via retry with exponential backoff...",
+          "tag_metadata_reference": [
+            {
+              "tag": "reliability",
+              "confidence": 0.95
+            },
+            {
+              "tag": "delivery",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "Retry mechanisms",
+            "Webhook delivery robustness"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Notify clients on persistent webhook delivery failures",
+        "summary": "Trigger alerts or notifications to clients when webhook deliveries have failed after all retry attempts, ensuring clients are informed of delivery issues in a timely manner.",
+        "tags": [
+          "notifications",
+          "reliability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Webhooks"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 20",
+        "reasoning": {
+          "source_summary_fragment": "and notification on persistent failures.",
+          "tag_metadata_reference": [
+            {
+              "tag": "notifications",
+              "confidence": 0.96
+            },
+            {
+              "tag": "reliability",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "Failure alerting",
+            "Persistent delivery warnings"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Provide clients with delivery status and logs via API or dashboard",
+        "summary": "Expose webhook delivery status and logs to clients through an API or dashboard, supporting transparency, troubleshooting, and operational visibility for ongoing integrations.",
+        "tags": [
+          "usability",
+          "monitoring"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "APIs",
+          "Webhooks"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.92,
+        "priority": "medium",
+        "priority_confidence": 0.89,
+        "line_source": "Ln 21\u201322",
+        "reasoning": {
+          "source_summary_fragment": "Reliability is ensured via ... delivery logs/status (API/dashboard)...",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.95
+            },
+            {
+              "tag": "monitoring",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "Transparency of webhook delivery",
+            "API/dashboard logging"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Require endpoint verification using shared secret or signed payloads",
+        "summary": "Enforce that webhook endpoints are verified using either a pre-shared secret or cryptographically signed payloads, bolstering security and guarding against spoofed or unauthorized notification delivery.",
+        "tags": [
+          "security",
+          "verification"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Webhooks",
+          "Security"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.96,
+        "priority": "high",
+        "priority_confidence": 0.99,
+        "line_source": "Ln 24",
+        "reasoning": {
+          "source_summary_fragment": "The system must ... enforce endpoint verification (shared secret/signed payloads)...",
+          "tag_metadata_reference": [
+            {
+              "tag": "security",
+              "confidence": 0.98
+            },
+            {
+              "tag": "verification",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "Endpoint verification",
+            "Secret-based authentication",
+            "Secure signature validation"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-015-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Allow clients to manage, pause, or revoke webhook registrations via self-service portal",
+        "summary": "Provide a client self-service portal for managing webhook registrations, including pausing or revoking endpoints, supporting operational agility and usability improvements for client teams.",
+        "tags": [
+          "usability",
+          "self-service"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Webhooks",
+          "Portal"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "medium",
+        "priority_confidence": 0.89,
+        "line_source": "Ln 25\u201326",
+        "reasoning": {
+          "source_summary_fragment": "support managing webhook registrations via a portal.",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.94
+            },
+            {
+              "tag": "self-service",
+              "confidence": 0.88
+            }
+          ],
+          "mapped_concepts": [
+            "Self-service portal",
+            "Webhook registration management"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-015"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

@@ -1,0 +1,1482 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design multi-step onboarding workflow for minor identity collection",
+    "summary": "Create a comprehensive multi-step onboarding workflow specifically designed for collecting minor identity information. The workflow must guide both minors and their guardians through the registration process with clear step indicators and age-appropriate UX elements.",
+    "tags": [
+      "onboarding",
+      "workflow",
+      "ux"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "multi-step process with seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.96
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.92
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "multi-step workflow",
+        "minor registration",
+        "user journey"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "onboarding",
+      "workflow",
+      "ux"
+    ],
+    "tags_v2": [
+      "onboarding",
+      "workflow",
+      "ux"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.164137Z"
+      },
+      {
+        "original_tag": "workflow",
+        "canonical_tag": "workflow",
+        "matched_tag": "workflow",
+        "tag_origin_cluster_id": "workflow",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.167473Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.178345Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement guardian information prompt and collection step",
+    "summary": "Develop the guardian information collection interface within the onboarding flow, including necessary form fields, validation rules, and clear instructions for guardians to provide their details for KYC verification purposes.",
+    "tags": [
+      "onboarding",
+      "guardian",
+      "ux"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "guardian-based KYC verification",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.94
+        },
+        {
+          "tag": "guardian",
+          "confidence": 0.97
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "guardian data collection",
+        "form validation",
+        "KYC preparation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "onboarding",
+      "guardian",
+      "ux"
+    ],
+    "tags_v2": [
+      "onboarding",
+      "guardian"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.187206Z"
+      },
+      {
+        "original_tag": "guardian",
+        "canonical_tag": "guardian",
+        "matched_tag": "guardian",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.189807Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.86,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.324030Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build seamless handoff mechanism for device/session switches",
+    "summary": "Create a robust handoff mechanism that allows users to seamlessly switch between devices or sessions during the onboarding process. This includes secure session transfer, progress preservation, and clear communication about the handoff process.",
+    "tags": [
+      "onboarding",
+      "session",
+      "ux",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.93
+        },
+        {
+          "tag": "session",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.88
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "session management",
+        "device handoff",
+        "state preservation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "onboarding",
+      "session",
+      "ux",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "onboarding",
+      "session"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.336059Z"
+      },
+      {
+        "original_tag": "session",
+        "canonical_tag": "session",
+        "matched_tag": "session",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.346407Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.481100Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.620929Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate third-party KYC provider API for real-time verification",
+    "summary": "Implement comprehensive integration with certified third-party KYC provider APIs to enable real-time identity verification for guardians. This includes API authentication, request/response handling, error management, and timeout configurations.",
+    "tags": [
+      "kyc",
+      "integration",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "third-party KYC provider integration",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.97
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.96
+        },
+        {
+          "tag": "api",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "API integration",
+        "real-time verification",
+        "KYC provider"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "kyc",
+      "integration",
+      "api"
+    ],
+    "tags_v2": [
+      "kyc",
+      "integration",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.625361Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.636690Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.640008Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement KYC failure/pending status feedback system",
+    "summary": "Develop a comprehensive feedback system that clearly communicates KYC verification status to users, including failure reasons, pending statuses, and next steps. The system should provide actionable guidance for resolution of verification issues.",
+    "tags": [
+      "kyc",
+      "ux",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC",
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "real-time guardian KYC processing",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.91
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "status feedback",
+        "error handling",
+        "user communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "kyc",
+      "ux",
+      "feedback"
+    ],
+    "tags_v2": [
+      "kyc",
+      "feedback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.642850Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.777232Z"
+      },
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.780640Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop guardian switching logic with KYC restart enforcement",
+    "summary": "Create logic to handle guardian switching scenarios where a different guardian needs to complete the verification process. This includes enforcing complete KYC restart for the new guardian and managing state transitions appropriately.",
+    "tags": [
+      "kyc",
+      "guardian",
+      "workflow"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "guardian switching support",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.92
+        },
+        {
+          "tag": "guardian",
+          "confidence": 0.95
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "guardian change",
+        "KYC restart",
+        "state management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "kyc",
+      "guardian",
+      "workflow"
+    ],
+    "tags_v2": [
+      "kyc",
+      "guardian",
+      "workflow"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.783496Z"
+      },
+      {
+        "original_tag": "guardian",
+        "canonical_tag": "guardian",
+        "matched_tag": "guardian",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.786095Z"
+      },
+      {
+        "original_tag": "workflow",
+        "canonical_tag": "workflow",
+        "matched_tag": "workflow",
+        "tag_origin_cluster_id": "workflow",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.855340Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create unique identity checking system to prevent duplicates",
+    "summary": "Build a comprehensive identity deduplication system that checks for existing accounts using various identity markers. The system should prevent duplicate registrations while handling edge cases like twins or similar names at the same address.",
+    "tags": [
+      "identity",
+      "validation",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "duplicate prevention",
+      "tag_metadata_reference": [
+        {
+          "tag": "identity",
+          "confidence": 0.93
+        },
+        {
+          "tag": "validation",
+          "confidence": 0.91
+        },
+        {
+          "tag": "security",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "deduplication",
+        "identity matching",
+        "fraud prevention"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "identity",
+      "validation",
+      "security"
+    ],
+    "tags_v2": [
+      "identity",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "identity",
+        "canonical_tag": "identity",
+        "matched_tag": "identity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.858406Z"
+      },
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.992762Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.064746Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Implement COPPA compliance checks and validations",
+    "summary": "Develop comprehensive COPPA (Children's Online Privacy Protection Act) compliance mechanisms including age verification, parental consent collection, and data handling restrictions for users under 13 years of age.",
+    "tags": [
+      "compliance",
+      "coppa",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 29",
+    "reasoning": {
+      "source_summary_fragment": "strict compliance with COPPA/GDPR-K regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "coppa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "security",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "COPPA requirements",
+        "parental consent",
+        "age verification"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "compliance",
+      "coppa",
+      "security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "coppa",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.068184Z"
+      },
+      {
+        "original_tag": "coppa",
+        "canonical_tag": "coppa",
+        "matched_tag": "coppa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.070801Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.140172Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Implement GDPR-K compliance checks and validations",
+    "summary": "Build GDPR-K (GDPR for Kids) compliance features ensuring proper data protection for minors in EU jurisdictions, including enhanced consent mechanisms, data minimization, and special safeguards for children's personal data.",
+    "tags": [
+      "compliance",
+      "gdpr",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 29",
+    "reasoning": {
+      "source_summary_fragment": "strict compliance with COPPA/GDPR-K regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "gdpr",
+          "confidence": 0.96
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "GDPR-K requirements",
+        "data protection",
+        "minor safeguards"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "compliance",
+      "gdpr",
+      "security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.143036Z"
+      },
+      {
+        "original_tag": "gdpr",
+        "canonical_tag": "gdpr",
+        "matched_tag": "gdpr",
+        "tag_origin_cluster_id": "gdpr",
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.279943Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.353014Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Configure data encryption at rest for all sensitive information",
+    "summary": "Implement comprehensive encryption at rest for all sensitive data including personal information, KYC documents, and audit logs. This includes selecting appropriate encryption algorithms, key management, and ensuring compliance with financial regulations.",
+    "tags": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "All data must be encrypted at rest/transit",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "encryption at rest",
+        "key management",
+        "data protection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.423201Z"
+      },
+      {
+        "original_tag": "encryption",
+        "canonical_tag": "encryption",
+        "matched_tag": "encryption",
+        "tag_origin_cluster_id": "encryption",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.426471Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.436179Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Configure data encryption in transit for all communications",
+    "summary": "Implement TLS 1.3+ encryption for all API endpoints and data transfers between client applications, internal services, and third-party KYC providers. Ensure certificate pinning and proper key rotation for guardian-minor data exchanges.",
+    "tags": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "All data must be encrypted at rest/transit",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.98
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "TLS encryption",
+        "data in transit",
+        "GDPR-K compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.506753Z"
+      },
+      {
+        "original_tag": "encryption",
+        "canonical_tag": "encryption",
+        "matched_tag": "encryption",
+        "tag_origin_cluster_id": "encryption",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.509650Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.525042Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Build comprehensive audit trail system with minor-specific flags",
+    "summary": "Develop audit logging system capturing all minor account actions, guardian approvals, and KYC verification events. Include immutable timestamps, actor IDs, and compliance flags for COPPA/GDPR-K regulatory reviews.",
+    "tags": [
+      "audit",
+      "compliance",
+      "logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 31",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive audit trails. Dependencies include certified KYC providers",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit trails",
+        "compliance tracking",
+        "regulatory requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "audit",
+      "compliance",
+      "logging"
+    ],
+    "tags_v2": [
+      "audit",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.528175Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.538658Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:51.681661Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Design mobile-optimized responsive onboarding interface",
+    "summary": "Create responsive UI layouts optimized for mobile devices supporting minor-to-guardian handoff flows. Include touch-friendly controls, progressive disclosure patterns, and seamless transition between minor and guardian screens.",
+    "tags": [
+      "mobile",
+      "ux",
+      "responsive"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "mobile-optimized UX, and comprehensive audit trails",
+      "tag_metadata_reference": [
+        {
+          "tag": "mobile",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.93
+        },
+        {
+          "tag": "responsive",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "mobile optimization",
+        "responsive design",
+        "user experience"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "mobile",
+      "ux",
+      "responsive"
+    ],
+    "tags_v2": [
+      "mobile",
+      "responsive"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "mobile",
+        "canonical_tag": "mobile",
+        "matched_tag": "mobile",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.693595Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.833333Z"
+      },
+      {
+        "original_tag": "responsive",
+        "canonical_tag": "responsive",
+        "matched_tag": "responsive",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.837029Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Create jargon-free UI copy for guardian involvement steps",
+    "summary": "Write clear, accessible UI text explaining guardian verification requirements without financial or legal jargon. Focus on simple language suitable for diverse educational backgrounds and age groups.",
+    "tags": [
+      "ux",
+      "content",
+      "accessibility",
+      "[INFERRED] i18n"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 35",
+    "reasoning": {
+      "source_summary_fragment": "seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "ux",
+          "confidence": 0.91
+        },
+        {
+          "tag": "content",
+          "confidence": 0.94
+        },
+        {
+          "tag": "accessibility",
+          "confidence": 0.9
+        },
+        {
+          "tag": "i18n",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "user interface copy",
+        "accessibility",
+        "content strategy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "i18n",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "ux",
+      "content",
+      "accessibility",
+      "[INFERRED] i18n"
+    ],
+    "tags_v2": [
+      "content",
+      "accessibility"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.976321Z"
+      },
+      {
+        "original_tag": "content",
+        "canonical_tag": "content",
+        "matched_tag": "content",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:51.993007Z"
+      },
+      {
+        "original_tag": "accessibility",
+        "canonical_tag": "accessibility",
+        "matched_tag": "accessibility",
+        "tag_origin_cluster_id": "accessibility",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:52.007259Z"
+      },
+      {
+        "original_tag": "[INFERRED] i18n",
+        "canonical_tag": "[INFERRED] i18n",
+        "matched_tag": "[INFERRED] i18n",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:52.137637Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Update user-facing onboarding documentation for minor accounts",
+    "summary": "Create comprehensive help documentation covering minor account creation, guardian verification process, and troubleshooting guides. Include visual aids and step-by-step instructions for both minors and guardians.",
+    "tags": [
+      "documentation",
+      "support",
+      "content"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "Digital onboarding workflow enabling minors",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.96
+        },
+        {
+          "tag": "support",
+          "confidence": 0.92
+        },
+        {
+          "tag": "content",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "user documentation",
+        "help content",
+        "support materials"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "documentation",
+      "support",
+      "content"
+    ],
+    "tags_v2": [
+      "documentation",
+      "support",
+      "content"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:52.141818Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:52.157820Z"
+      },
+      {
+        "original_tag": "content",
+        "canonical_tag": "content",
+        "matched_tag": "content",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:52.172365Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

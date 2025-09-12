@@ -1,0 +1,76 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Implement first-come-first-served conflict resolution for simultaneous assignments",
+  "summary": "Build concurrency control mechanism using optimistic locking to handle simultaneous email assignments. Implement first-come-first-served policy with clear user feedback when conflicts occur, preventing duplicate work on same emails.",
+  "tags_v1": [
+    "concurrency",
+    "rules",
+    "conflict"
+  ],
+  "tags_v2": [
+    "concurrency",
+    "rules",
+    "conflict"
+  ],
+  "tags_v3": [
+    "concurrency",
+    "conflict",
+    "rules"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "concurrency",
+      "aliases": [],
+      "cluster_id": "all_225",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8139681816101074,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "concurrency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "conflict",
+      "aliases": [],
+      "cluster_id": "all_242",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7413761615753174,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "conflict",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.737951397895813,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    }
+  ]
+}

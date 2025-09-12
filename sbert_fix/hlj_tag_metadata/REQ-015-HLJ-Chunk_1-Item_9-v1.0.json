@@ -1,0 +1,55 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Require endpoint verification using shared secret or signed payloads",
+  "summary": "Enforce that webhook endpoints are verified using either a pre-shared secret or cryptographically signed payloads, bolstering security and guarding against spoofed or unauthorized notification delivery.",
+  "tags_v1": [
+    "security",
+    "verification"
+  ],
+  "tags_v2": [
+    "security",
+    "verification"
+  ],
+  "tags_v3": [
+    "security",
+    "verification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7597423195838928,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "verification",
+      "aliases": [],
+      "cluster_id": "all_162",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7661329507827759,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "verification",
+      "method": "dedup_canonical"
+    }
+  ]
+}

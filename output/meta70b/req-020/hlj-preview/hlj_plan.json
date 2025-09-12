@@ -1,0 +1,172 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-020-HLJ-Chunk_1",
+      "focus": "CRM Contact Sync and Duplicate Merge",
+      "items": [
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design one-click sync with major CRMs via OAuth and API keys",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "oauth"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-12"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement dry run for initial sync showing potential duplicates",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "dryrun"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Develop configurable duplicate detection rules",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "detection"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create user interface for reviewing and resolving duplicate matches",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "ui"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 17-19"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement automatic merge of new duplicates based on saved preferences",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "merge"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20-21"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log all merges and changes with a history per contact",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "logging"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 22-23"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Handle edge case where merge would create conflicting webhook updates",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "webhook"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 24-25"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Support rollback for accidental merges within 24 hours",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "rollback"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 26-27"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update onboarding guide for CRM sync and duplicate management",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "onboarding"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 28-29"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure compliance with API rate limits for each CRM provider",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM",
+            "Contact Sync"
+          ],
+          "tags": [
+            "crm",
+            "api"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30-31"
+        }
+      ]
+    }
+  ]
+}

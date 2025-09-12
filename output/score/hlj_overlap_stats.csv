@@ -1,0 +1,515 @@
+req_id,hlj_id,present_models,missing_models,num_gpt41,num_opus4,num_meta70b,union_count,intersection_count,majority_count,agreement_score,disagreement_score,entropy,stable_tags,majority_tags,unique_gpt41,unique_opus4,unique_meta70b,opus4_precision,opus4_recall,opus4_f1,meta70b_precision,meta70b_recall,meta70b_f1
+req-001,req-001-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,1,2,0.16666666666666666,0.8333333333333334,0.7652465283787414,api,api|rest,spec,endpoint,[inferred] compliance|openbanking,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-001,req-001-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,4,3,0,7,0,0,0.0,1.0,1.0,,,[inferred] compliance|documentation|integration|support,api|availability|resilience,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,5,1,3,0.2,0.8,0.7346366672435917,api,api|filtering|pagination,,performance,[inferred] performance,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.6666666666666666
+req-001,req-001-hlj-chunk_1-item_3-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,compliance|openapi|spec,api|filtering|query,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_1-item_4-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,data|deduplication|schema,api|openapi|standards,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_1-item_5-v1.0,gpt41|opus4,meta70b,3,3,0,5,1,1,0.2,0.8,0.8,data,data,metadata|timezone,consistency|deduplication,,0.3333333333333333,0.3333333333333333,0.3333333333333333,,,
+req-001,req-001-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,authentication|oauth|security,data|normalization|timestamp,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,audit|compliance|logging,authentication|oauth|security,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,5,1,1,0.2,0.8,0.8,logging,logging,availability|error,compliance|security,,0.3333333333333333,0.3333333333333333,0.3333333333333333,,,
+req-001,req-001-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,4,3,0,7,0,0,0.0,1.0,1.0,,,[inferred] compliance|latency|performance|scalability,data|edge-cases|normalization,,0.0,0.0,0,,,
+req-001,req-001-hlj-chunk_2-item_1-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,api|optimization|performance,[inferred] compliance|oauth|security,,,,,,
+req-001,req-001-hlj-chunk_2-item_2-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,api|documentation|support,[inferred] security|audit|logging,,,,,,
+req-001,req-001-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,api|integration|partners,,,api|integration|partners,,,,,,,
+req-001,req-001-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,caching|data|performance,,,caching|data|performance,,,,,,,
+req-001,req-001-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] security|compliance|deployment|review,,,[inferred] security|compliance|deployment|review,,,,,,,
+req-002,req-002-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,compliance|onboarding,usability,ux|workflow,minor,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-002,req-002-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,maintainability|usability,compliance|encryption|security,,0.0,0.0,0,,,
+req-002,req-002-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,compliance|guardian,security,onboarding|ux,kyc,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-002,req-002-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,4,3,8,0,1,0.0,1.0,0.9182958340544896,,onboarding,[inferred] compliance|usability,[inferred] security|session|ux,compliance|handoff,0.0,0.0,0,0.0,0.0,0
+req-002,req-002-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,3,5,0,3,0.0,1.0,0.9182958340544897,,compliance|integration|kyc,security,api,,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-002,req-002-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,1,3,3,7,0,0,0.0,1.0,0.9182958340544898,,,usability,feedback|kyc|ux,compliance|edgecase|onboarding,0.0,0.0,0,0.0,0.0,0
+req-002,req-002-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,compliance|maintainability,guardian|kyc|workflow,,0.0,0.0,0,,,
+req-002,req-002-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,2,3,0,4,1,1,0.25,0.75,0.75,security,security,compliance,identity|validation,,0.3333333333333333,0.5,0.4,,,
+req-002,req-002-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,2,3,0,3,2,2,0.6666666666666666,0.33333333333333337,0.3333333333333333,compliance|security,compliance|security,,coppa,,0.6666666666666666,1.0,0.8,,,
+req-002,req-002-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,4,1,1,0.25,0.75,0.75,compliance,compliance,maintainability,gdpr|security,,0.3333333333333333,0.5,0.4,,,
+req-002,req-002-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|encryption|security,,,compliance|encryption|security,,,,,,,
+req-002,req-002-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,documentation|onboarding,,,,documentation|onboarding,,,,,,
+req-002,req-002-hlj-chunk_2-item_11-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,onboarding|verification,,,,onboarding|verification,,,,,,
+req-002,req-002-hlj-chunk_2-item_12-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,compliance|kyc,,,,compliance|kyc,,,,,,
+req-002,req-002-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,audit|compliance|logging,,,audit|compliance|logging,,,,,,,
+req-002,req-002-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,mobile|responsive|ux,,,mobile|responsive|ux,,,,,,,
+req-002,req-002-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] i18n|accessibility|content|ux,,,[inferred] i18n|accessibility|content|ux,,,,,,,
+req-002,req-002-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,content|documentation|support,,,content|documentation|support,,,,,,,
+req-002,req-002-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] child_protection|compliance|regulation,,,,[inferred] child_protection|compliance|regulation,,,,,,
+req-002,req-002-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,encryption|security,,,,encryption|security,,,,,,
+req-002,req-002-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,auditing|compliance,,,,auditing|compliance,,,,,,
+req-002,req-002-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] accessibility|mobile|onboarding,,,,[inferred] accessibility|mobile|onboarding,,,,,,
+req-003,req-003-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,4,3,7,0,3,0.0,1.0,0.9182958340544898,,detection|fraud|rules,[inferred] configurability|micro-transaction,[inferred] configuration,[inferred] microtransactions,0.25,0.3333333333333333,0.28571428571428575,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] data-minimization|privacy|security,alerts|performance|ratelimit,,0.0,0.0,0,,,
+req-003,req-003-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,fraud,[inferred] customization|rules,detection|patterns,[inferred] notification|alerting|realtime,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] analytics|detection|micro-transaction,fraud|ml|rules,[inferred] accuracy|edgecases|falsepositives,0.0,0.0,0,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] real-time|alert|notification,alerts|fraud|realtime,[inferred] compliance|audit|reporting,0.0,0.0,0,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,alert|details,alerts|integration|slack,[inferred] data_protection|privacy|security,0.0,0.0,0,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,integration,[inferred] maintainability|false-positive|logging,alerts|email,[inferred] interoperability|infrastructure,0.0,0.0,0,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,rate-limiting|usability,alerts|dashboard|ui,[inferred] governance|compliance|regulation,0.0,0.0,0,0.0,0.0,0
+req-003,req-003-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] auditability|audit|logging,alerts|data|security,,0.0,0.0,0,,,
+req-003,req-003-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,compliance|reporting,logging|ml|optimization,,0.0,0.0,0,,,
+req-003,req-003-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,audit|compliance|logging,,,audit|compliance|logging,,,,,,,
+req-003,req-003-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] fraud|compliance|privacy|security,,,[inferred] fraud|compliance|privacy|security,,,,,,,
+req-004,req-004-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,1,2,0.16666666666666666,0.8333333333333334,0.7652465283787414,metadata,gdpr|metadata,[inferred] traceability,audit,[inferred] compliance|auditlogs,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-004,req-004-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,security,integrity,audit|cryptography,[inferred] analytics|compliance|reporting,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,3,5,1,2,0.2,0.8,0.7346366672435917,gdpr,classification|gdpr,,privacy,[inferred] compliance|dataclassification,0.6666666666666666,1.0,0.8,0.3333333333333333,0.5,0.4
+req-004,req-004-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,gdpr|traceability,audit|lineage|tracking,[inferred] compliance|auditlogs|datalineage,0.0,0.0,0,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,automation|gdpr,right-to-erasure,privacy,[inferred] compliance|righttoerasure,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,3,5,1,2,0.2,0.8,0.7346366672435917,gdpr,deletion|gdpr,,privacy,[inferred] compliance|datadeletion,0.6666666666666666,1.0,0.8,0.3333333333333333,0.5,0.4
+req-004,req-004-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,7,0,2,0.0,1.0,0.9182958340544898,,gdpr|redaction,[inferred] auditability|right-to-erasure,privacy,[inferred] compliance|auditlogs,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,4,3,6,0,3,0.0,1.0,0.9182958340544897,,[inferred] compliance|audit|gdpr,meta-log,logging,edgecases,0.25,0.5,0.3333333333333333,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,redaction,[inferred] multi-user|edge-case,audit|privacy,[inferred] compliance|integrity|security,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-004,req-004-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,access-control|retention,gdpr|rbac|security,[inferred] gdpr|apis|compliance,0.0,0.0,0,0.0,0.0,0
+req-004,req-004-hlj-chunk_2-item_1-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,api|compliance,,gdpr,[inferred] integration|testing|validation,0.6666666666666666,1.0,0.8,0.0,0.0,0
+req-004,req-004-hlj-chunk_2-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,dashboard,[inferred] reporting|monitoring,gdpr|reporting,[inferred] simulation|edgecases|testing,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-004,req-004-hlj-chunk_2-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] security|meta-log|real-time,audit|security|storage,[inferred] officertraining|compliance|training,0.0,0.0,0,0.0,0.0,0
+req-004,req-004-hlj-chunk_2-item_4-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,gdpr|testing|validation,[inferred] updatedlogs|apis|documentation,,,,,,
+req-004,req-004-hlj-chunk_2-item_5-v1.0,opus4|meta70b,gpt41,0,4,3,7,0,0,0.0,1.0,1.0,,,,[inferred] edge-cases|alerts|monitoring|testing,[inferred] transitionplan|implementation|migration,,,,,,
+req-005,req-005-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] security|frontend|usability,design|mobile|ui,freezeunfreeze|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,feedback|usability,messaging|mobile|ui,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,ui,[inferred] accessibility|feedback|usability,design|mobile,virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,error_handling|usability,error-handling|mobile|ui,help|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,documentation,usability,mobile|ui,feedback|virtualcard,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-005,req-005-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] compliance|operational|usability,authentication|mobile|security,edgecases|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] security|operational|usability,mobile|notification|ui,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,documentation|usability,concurrency|mobile|ui,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,documentation|usability,integration|mobile|notification,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,feedback|operational,documentation|mobile|support,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,4,3,0,5,2,2,0.4,0.6,0.6,api|backend,api|backend,[inferred] reliability|security,design,,0.6666666666666666,0.5,0.5714285714285715,,,
+req-005,req-005-hlj-chunk_2-item_10-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,compliance|regulation,api|dependency|integration,conflict|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_2-item_2-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] consistency|integration|synchronization,api|backend|reliability,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_2-item_3-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] authorization|backend|security,api|integration|real-time,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_2-item_4-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] logging|audit|compliance,api|authorization|security,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_2-item_5-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] user-notification|availability|resilience,compliance|logging|security,,0.0,0.0,0,,,
+req-005,req-005-hlj-chunk_2-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] rollback|consistency|error_handling,backend|queue|reliability,[inferred] security|restful|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_2-item_7-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] concurrency|consistency|error_handling,backend|error-handling|reliability,atomicity|virtualcard,0.0,0.0,0,0.0,0.0,0
+req-005,req-005-hlj-chunk_2-item_8-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,security,authentication,api|encryption,logging|virtualcard,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-005,req-005-hlj-chunk_2-item_9-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,security,encryption,integration|monitoring,queueing|virtualcard,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-005,req-005-hlj-chunk_3-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|pci|security,,,compliance|pci|security,,,,,,,
+req-005,req-005-hlj-chunk_3-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,audit|compliance|security,,,audit|compliance|security,,,,,,,
+req-005,req-005-hlj-chunk_3-item_3-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] security|operations|support|tools,,,[inferred] security|operations|support|tools,,,,,,,
+req-005,req-005-hlj-chunk_3-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,pilot|rollout|testing,,,pilot|rollout|testing,,,,,,,
+req-006,req-006-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,0,3,0.0,1.0,0.9182958340544897,,api|configuration|rate-limiting,[inferred] customization,,rate limiting|tenant management,0.6666666666666666,0.6666666666666666,0.6666666666666666,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,security,abuse-detection,billing|compliance|reporting,api|rate limiting,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-006,req-006-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,4,3,6,0,3,0.0,1.0,0.9182958340544897,,[inferred] resilience|api|rate-limiting,,burst-control,burst limits|rate limiting,0.5,1.0,0.6666666666666666,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,configuration,[inferred] real-time|usability,admin-portal|real-time,api|rate limiting|real-time updates,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,rate-limiting,enforcement,api-gateway|infrastructure,api|api gateway|rate limiting,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,api,[inferred] api|feedback|usability,http-429|rate-limiting,instant feedback|rate limiting,0.0,0.0,0,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,2,3,3,5,1,2,0.2,0.8,0.7346366672435917,logging,compliance|logging,,monitoring,api|rate limiting,0.6666666666666666,1.0,0.8,0.3333333333333333,0.5,0.4
+req-006,req-006-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,alerting|monitoring,,dashboard,api|dashboards|rate limiting,0.6666666666666666,1.0,0.8,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,monitoring,[inferred] self-service|usability,alerting|notification,api|rate limiting|usage metrics,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-006,req-006-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,api|reporting,compliance,metrics|self-service,rate limiting,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-006,req-006-hlj-chunk_2-item_1-v1.0,gpt41|opus4|meta70b,,3,4,3,9,0,1,0.0,1.0,0.9182958340544896,,security,[inferred] audit|support|usability,[inferred] analytics|abuse-detection|monitoring,api|rate limiting,0.0,0.0,0,0.0,0.0,0
+req-006,req-006-hlj-chunk_2-item_10-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] communication|compliance|legal,compatibility|legacy|migration,,0.0,0.0,0,,,
+req-006,req-006-hlj-chunk_2-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] fallback|availability|resilience,audit|incident-response|override,api|multi-factor approval|security,0.0,0.0,0,0.0,0.0,0
+req-006,req-006-hlj-chunk_2-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] authentication|security,availability|fallback|resilience,api|rollout|tenant segment,0.0,0.0,0,0.0,0.0,0
+req-006,req-006-hlj-chunk_2-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,security,[inferred] audit|compliance,anti-spoofing|authentication,api|sandbox environments|testing,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-006,req-006-hlj-chunk_2-item_5-v1.0,gpt41|opus4|meta70b,,3,4,3,10,0,0,0.0,1.0,0.9182958340544897,,,[inferred] safety|availability|rollout,[inferred] access-control|audit|mfa|security,api|documentation|rate limit policies,0.0,0.0,0,0.0,0.0,0
+req-006,req-006-hlj-chunk_2-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] developer-experience|testing|usability,deployment|risk-management|rollout,,0.0,0.0,0,,,
+req-006,req-006-hlj-chunk_2-item_7-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,[inferred] education|documentation,client-support|sandbox|testing,,0.0,0.0,0,,,
+req-006,req-006-hlj-chunk_2-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] legacy|compatibility|migration,communication|documentation|self-service,,0.0,0.0,0,,,
+req-006,req-006-hlj-chunk_2-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,4,1,1,0.25,0.75,0.75,performance,performance,[inferred] latency,infrastructure|upgrade,,0.3333333333333333,0.5,0.4,,,
+req-007,req-007-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,aml,[inferred] integration|screening,api|architecture|compliance,kyc|regulatory,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-007,req-007-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] transparency|usability|ux,access|privacy|security,documentation|manual-review|training,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,aml,[inferred] onboarding|performance,api|compliance,recovery|regulatory|risk,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,aml|integration,backend|performance|sla,audit|privacy|security,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] resilience|aml|availability,fallback|reliability,regulatory|reporting,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] compliance|aml|notification,compliance|state|workflow,communication|ui|ux,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] traceability|audit|logging,compliance|notifications|workflow,quality|screening|testing,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] exception|aml|manualreview,compliance|matching|workflow,alerting|monitoring|security,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] immutability|audit|security,manual|workflow,privacy|regulatory,0.0,0.0,0,0.0,0.0,0
+req-007,req-007-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] reporting|dashboard,audit|security,edge-cases|legal|support,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-007,req-007-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|encryption|security,compliance|dashboard|reporting,,0.0,0.0,0,,,
+req-007,req-007-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,analytics|compliance|reporting,,,analytics|compliance|reporting,,,,,,,
+req-007,req-007-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,communication|ui|ux,,,communication|ui|ux,,,,,,,
+req-007,req-007-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,ui|ux|workflow,,,ui|ux|workflow,,,,,,,
+req-007,req-007-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|encryption|security,,,compliance|encryption|security,,,,,,,
+req-007,req-007-hlj-chunk_2-item_6-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] gdpr|compliance|data|privacy,,,[inferred] gdpr|compliance|data|privacy,,,,,,,
+req-007,req-007-hlj-chunk_2-item_7-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|qa|testing,,,compliance|qa|testing,,,,,,,
+req-007,req-007-hlj-chunk_2-item_8-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,alerting|compliance|monitoring,,,alerting|compliance|monitoring,,,,,,,
+req-008,req-008-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,integration,[inferred] data-verification|gig-economy,api|uber,[inferred] platform connectivity|api integration|gig workers,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-008,req-008-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,4,0,7,0,0,0.0,1.0,1.0,,,[inferred] regulation|compliance|privacy,[inferred] compliance|api|audit|logging,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] reconciliation|aggregation|data-normalization,api|doordash|integration,[inferred] income verification|eligibility rules|gig income,0.0,0.0,0,0.0,0.0,0
+req-008,req-008-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] rules-engine|eligibility|risk,api|integration|upwork,aml|compliance|kyc,0.0,0.0,0,0.0,0.0,0
+req-008,req-008-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] configurability|admin|rule-management,api|fiverr|integration,data connection|user experience,0.0,0.0,0,0.0,0.0,0
+req-008,req-008-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] validation|edge-case|eligibility,aggregation|data|income,[inferred] data accuracy|earnings summary|user experience,0.0,0.0,0,0.0,0.0,0
+req-008,req-008-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|aml|kyc,currency|data|normalization,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,3,4,0,7,0,0,0.0,1.0,1.0,,,[inferred] anomaly-detection|detection|fraud,[inferred] compliance|consent|privacy|ux,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] transparency|consent|user-experience,api|documentation|integration,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] user-trust|dispute|user-interface,api|encryption|security,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,3,4,0,7,0,0,0.0,1.0,1.0,,,[inferred] compliance|encryption|rbac,[inferred] analytics|eligibility|income|rules,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_2-item_2-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|dashboard|monitoring,eligibility|income|rules,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_2-item_3-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|audit|logging,admin|portal|rules,,0.0,0.0,0,,,
+req-008,req-008-hlj-chunk_2-item_4-v1.0,gpt41|opus4,meta70b,3,3,0,5,1,1,0.2,0.8,0.8,edge-case,edge-case,[inferred] resilience|error-handling,eligibility|income,,0.3333333333333333,0.3333333333333333,0.3333333333333333,,,
+req-008,req-008-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,currency|edge-case|income,,,currency|edge-case|income,,,,,,,
+req-008,req-008-hlj-chunk_2-item_6-v1.0,opus4|meta70b,gpt41,0,3,3,5,1,1,0.2,0.8,0.8,compliance,compliance,,aml|kyc,[inferred] legal|regulations,,,,,,
+req-008,req-008-hlj-chunk_2-item_7-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,compliance|identity|verification,[inferred] encryption|data protection|security,,,,,,
+req-008,req-008-hlj-chunk_2-item_8-v1.0,opus4|meta70b,gpt41,0,4,3,7,0,0,0.0,1.0,1.0,,,,[inferred] ml|fraud|income|security,[inferred] reporting|compliance|monitoring,,,,,,
+req-008,req-008-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] tracking|audit|logging,,,,[inferred] tracking|audit|logging,,,,,,
+req-008,req-008-hlj-chunk_3-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,ui|ux|workflow,,,ui|ux|workflow,,,,,,,
+req-008,req-008-hlj-chunk_3-item_2-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] api|connection|feedback|ux,,,[inferred] api|connection|feedback|ux,,,,,,,
+req-008,req-008-hlj-chunk_3-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,display|earnings|ux,,,display|earnings|ux,,,,,,,
+req-008,req-008-hlj-chunk_3-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,dashboard|monitoring|operations,,,dashboard|monitoring|operations,,,,,,,
+req-008,req-008-hlj-chunk_3-item_5-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] lending|audit|compliance|dashboard,,,[inferred] lending|audit|compliance|dashboard,,,,,,,
+req-008,req-008-hlj-chunk_3-item_6-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,alternative|edge-case|workflow,,,alternative|edge-case|workflow,,,,,,,
+req-009,req-009-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,1,2,0.16666666666666666,0.8333333333333334,0.7652465283787414,ui,payments|ui,[inferred] usability|scheduled payments,scheduling,crossborder,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] regulatory reporting|documentation,analytics|beta|feedback,audit|crossborder,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,fx,[inferred] risk management|locking,fx-rates|preview|ui,crossborder|lock,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,ui,[inferred] countdown|fx,fx-rates|rate-lock|timing,crossborder|payments,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,fx,[inferred] integrations|api,fx-rates|timer|ui,crossborder|integration,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,fx,[inferred] fallback|notifications,compliance|fx-rates|ui,crossborder|lock,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-009,req-009-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,payments,[inferred] traceability|audit|fx,scheduling|ui,crossborder|processing,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,3,3,7,0,2,0.0,1.0,0.9182958340544898,,cancellation|payments,[inferred] user confirmation|fx|validation,workflow,crossborder,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] cancellation|refund|scheduled payments,cancellation|payments|refunds,compliance|crossborder|risk,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] compliance|abuse prevention|fx,beta|deployment|feature-toggle,compliance|crossborder|regulation,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_1-v1.0,gpt41|opus4|meta70b,,2,4,4,10,0,0,0.0,1.0,0.9182958340544897,,,audit|compliance,[inferred] real-time|api|fx-rates|integration,[inferred] reminders|email|notifications|sms,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_10-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] implementation|delivery|modularity,,[inferred] implementation|delivery|modularity,,,,,,,,
+req-009,req-009-hlj-chunk_2-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] messaging|notifications|usability,database|fx-rates|rate-lock,crossborder|dashboard|reporting,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,compliance|dashboard,automation|fx-rates|payments,crossborder|edgecases|fx,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] outage-handling|availability|fx,database|fx-rates|metadata,beta|crossborder|rollout,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] retry|error handling|scheduled payments,database|fx-rates|timing,crossborder|delivery|ui,0.0,0.0,0,0.0,0.0,0
+req-009,req-009-hlj-chunk_2-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] integrations|api|fx,availability|error-handling|fx-rates,,0.0,0.0,0,,,
+req-009,req-009-hlj-chunk_2-item_7-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] reliability|compliance|sla,fx-rates|payments|validation,,0.0,0.0,0,,,
+req-009,req-009-hlj-chunk_2-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] rollout|beta|usability,fx-rates|ui|workflow,,0.0,0.0,0,,,
+req-009,req-009-hlj-chunk_2-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|usability,,documentation|usability,,,,,,,,
+req-009,req-009-hlj-chunk_3-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|fx-rates|risk,,,compliance|fx-rates|risk,,,,,,,
+req-009,req-009-hlj-chunk_3-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|payments|regulation,,,compliance|payments|regulation,,,,,,,
+req-009,req-009-hlj-chunk_3-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|documentation|payments,,,compliance|documentation|payments,,,,,,,
+req-009,req-009-hlj-chunk_3-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,audit|compliance|logging,,,audit|compliance|logging,,,,,,,
+req-009,req-009-hlj-chunk_3-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,messaging|notifications|payments,,,messaging|notifications|payments,,,,,,,
+req-009,req-009-hlj-chunk_3-item_6-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,dashboard|monitoring|reporting,,,dashboard|monitoring|reporting,,,,,,,
+req-009,req-009-hlj-chunk_3-item_7-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,automation|error-handling|payments,,,automation|error-handling|payments,,,,,,,
+req-010,req-010-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,dual-ledger,dual-ledger,operational|real-time,,operational-ledger|real-time posting,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-010,req-010-hlj-chunk_1-item_10-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|audit|workflow,,compliance|regulatory-standards|sox,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|regulatory|reporting,,dual-ledger|financial reporting|reporting-ledger,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,metadata|synchronization,,logic development|phantom-balances|transaction-management,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,phantom-balance|segregation,,batch-processing|ledger management|reconciliation,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,lifecycle|phantom-balance,,scenario-based testing|test-plans|testing,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_6-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,ui|visibility,,anomaly-detection|monitoring|real-time monitoring,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_7-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] reconciliation|batch|phantom-balance,,api-documentation|documentation|reconciliation,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_8-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,exception|reporting,,audit-trails|immutable logging|security,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_1-item_9-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] reconciliation|mismatch|tooling,,access-control|role-based access|security,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_2-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] immutable|audit|logging,,[inferred] compliance|mismatch-detection|reconciliation,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_2-item_2-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] least-privilege|access-control|rbac,,reconciliation|resolution-workflows,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_2-item_3-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|pci-dss|sox,,[inferred] ledger-management|phantom-reversals|transaction-management,,,,0.0,0.0,0
+req-010,req-010-hlj-chunk_2-item_4-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,conversion-logic|multi-currency,,,,conversion-logic|multi-currency,,,,,,
+req-010,req-010-hlj-chunk_2-item_5-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] data-integrity|alerting|reconciliation,,,,[inferred] data-integrity|alerting|reconciliation,,,,,,
+req-011,req-011-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,4,2,2,0.5,0.5,0.5,[inferred] compliance|creditworthiness,[inferred] compliance|creditworthiness,integration,,checkout,,,,0.6666666666666666,0.6666666666666666,0.6666666666666666
+req-011,req-011-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,compliance|consent,,compliance|consent,,,,,,,,
+req-011,req-011-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,2,4,1,1,0.25,0.75,0.75,emi,emi,[inferred] compliance|decisioning,,creditworthiness,,,,0.5,0.3333333333333333,0.4
+req-011,req-011-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,2,0,2,3,1,1,0.3333333333333333,0.6666666666666667,0.6666666666666666,performance,performance,creditworthiness,,checkout,,,,0.5,0.5,0.5
+req-011,req-011-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] compliance|emi|usability,,creditworthiness|edgecases,,,,0.0,0.0,0
+req-011,req-011-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] compliance|emi|revalidation,,overrides|support,,,,0.0,0.0,0
+req-011,req-011-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|audit|override,,[inferred] compliance|audit|override,,,,,,,,
+req-011,req-011-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,emi|fallback,,emi|fallback,,,,,,,,
+req-011,req-011-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,emi|usability,,emi|usability,,,,,,,,
+req-011,req-011-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,compliance|usability,,compliance|usability,,,,,,,,
+req-011,req-011-hlj-chunk_2-item_1-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] privacy|compliance|security,,[inferred] privacy|compliance|security,,,,,,,,
+req-011,req-011-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,analytics|emi,,,,analytics|emi,,,,,,
+req-011,req-011-hlj-chunk_2-item_2-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] traceability|audit|compliance,,[inferred] traceability|audit|compliance,,,,,,,,
+req-011,req-011-hlj-chunk_2-item_3-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,analytics|monitoring,,analytics|monitoring,,,,,,,,
+req-011,req-011-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] transparency|disclosure|emi,,,,[inferred] transparency|disclosure|emi,,,,,,
+req-011,req-011-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,calculator|emi,,,,calculator|emi,,,,,,
+req-011,req-011-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,compliance|transparency,,,,compliance|transparency,,,,,,
+req-011,req-011-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,compliance|consent,,,,compliance|consent,,,,,,
+req-012,req-012-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,gst,gst,[inferred] automation|rates,,provincial tax|taxation,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-012,req-012-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] automation|api|integration,,[inferred] automation|api|integration,,,,,,,,
+req-012,req-012-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,4,1,1,0.25,0.75,0.75,gst,gst,dual-tax,,dual-gst|provincial tax,,,,0.3333333333333333,0.5,0.4
+req-012,req-012-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,2,0,3,4,1,1,0.25,0.75,0.75,gst,gst,invoice,,invoicing|taxation,,,,0.3333333333333333,0.5,0.4
+req-012,req-012-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,gst,gst,[inferred] transparency|invoice,,invoicing|taxation,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-012,req-012-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,2,0,3,4,1,1,0.25,0.75,0.75,gst,gst,multi-rate,,multiple tax rates|taxation,,,,0.3333333333333333,0.5,0.4
+req-012,req-012-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|exemption|gst,,[inferred] compliance|exemption|gst,,,,,,,,
+req-012,req-012-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,gst|retroactive,,gst|retroactive,,,,,,,,
+req-012,req-012-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,fallback|gst,,fallback|gst,,,,,,,,
+req-012,req-012-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|audit|logging,,[inferred] compliance|audit|logging,,,,,,,,
+req-012,req-012-hlj-chunk_2-item_1-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|gst|reporting,,[inferred] compliance|gst|reporting,,,,,,,,
+req-012,req-012-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,privacy|security,,,,privacy|security,,,,,,
+req-012,req-012-hlj-chunk_2-item_2-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|audit|export,,[inferred] compliance|audit|export,,,,,,,,
+req-012,req-012-hlj-chunk_2-item_3-v1.0,gpt41,opus4|meta70b,4,0,0,4,4,0,1.0,0.0,0.0,[inferred] compliance|gst|portal|usability,,[inferred] compliance|gst|portal|usability,,,,,,,,
+req-012,req-012-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] compliance|exemptions|gst,,,,[inferred] compliance|exemptions|gst,,,,,,
+req-012,req-012-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,fallback|gst,,,,fallback|gst,,,,,,
+req-012,req-012-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,gst|reporting,,,,gst|reporting,,,,,,
+req-012,req-012-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,compliance|gst,,,,compliance|gst,,,,,,
+req-013,req-013-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] compliance|batch|engine,,batchprocessing|transactionmanagement,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] monitoring|admin|dashboard,,[inferred] monitoring|admin|dashboard,,,,,,,,
+req-013,req-013-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] traceability|audit|logging,,batchprocessing|logic,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] flexibility|batch|scheduling,,failurehandling|rollback,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] reliability|failure|rollback,,auditrail|reporting,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] consistency|atomicity|rollback,,admindashboard|batchpayouts,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] recovery|partial|retry,,[inferred] recovery|partial|retry,,,,,,,,
+req-013,req-013-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] traceability|exception|logging,,[inferred] traceability|exception|logging,,,,,,,,
+req-013,req-013-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] compliance|audit|logging,,[inferred] compliance|audit|logging,,,,,,,,
+req-013,req-013-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] analytics|exception|reporting,,[inferred] analytics|exception|reporting,,,,,,,,
+req-013,req-013-hlj-chunk_2-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] transparency|notification|status,,[inferred] riskmanagement|compliance|financialregulations,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_2-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,notification|rollback,,[inferred] cryptography|security|sensitiveoperations,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_2-item_3-v1.0,gpt41|meta70b,opus4,3,0,2,5,0,0,0.0,1.0,1.0,,,[inferred] audit|compliance|security,,edgecases|mixedcurrencypayouts,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_2-item_4-v1.0,gpt41|meta70b,opus4,2,0,2,4,0,0,0.0,1.0,1.0,,,access|security,,notifications|payoutstatus,,,,0.0,0.0,0
+req-013,req-013-hlj-chunk_2-item_5-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,compliance|dataretention,,,,compliance|dataretention,,,,,,
+req-013,req-013-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,documentation|training,,,,documentation|training,,,,,,
+req-013,req-013-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,2,2,2,0,1.0,0.0,0.0,qualityassurance|testing,,,,qualityassurance|testing,,,,,,
+req-014,req-014-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] coverage|integration|oracle,,blockchain|estimation|gas-fee,,,,0.0,0.0,0
+req-014,req-014-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|support,,documentation|support,,,,,,,,
+req-014,req-014-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,ui|usability,,estimation|gas-fee|real-time,,,,0.0,0.0,0
+req-014,req-014-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,1,0,2,3,0,0,0.0,1.0,1.0,,,coverage,,estimation|gas-fee,,,,0.0,0.0,0
+req-014,req-014-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,advanced|usability,,dynamic|estimation|gas-fee,,,,0.0,0.0,0
+req-014,req-014-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,1,0,3,4,0,0,0.0,1.0,1.0,,,notification,,estimation|gas-fee|transaction,,,,0.0,0.0,0
+req-014,req-014-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,reliability|usability,,reliability|usability,,,,,,,,
+req-014,req-014-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,blocking|security,,blocking|security,,,,,,,,
+req-014,req-014-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] privacy|compliance|security,,[inferred] privacy|compliance|security,,,,,,,,
+req-014,req-014-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,audit|logging,,audit|logging,,,,,,,,
+req-014,req-014-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,confirmation|gas-fee|resolution,,,,confirmation|gas-fee|resolution,,,,,,
+req-014,req-014-hlj-chunk_2-item_11-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,compliance|security|user data,,,,compliance|security|user data,,,,,,
+req-014,req-014-hlj-chunk_2-item_12-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,audit|fee query|logging,,,,audit|fee query|logging,,,,,,
+req-014,req-014-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,display|estimation|gas-fee,,,,display|estimation|gas-fee,,,,,,
+req-014,req-014-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,adjust|customization|gas-fee,,,,adjust|customization|gas-fee,,,,,,
+req-014,req-014-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,congestion|fee spike|gas-fee,,,,congestion|fee spike|gas-fee,,,,,,
+req-014,req-014-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,gas-fee|inaccuracy|retry,,,,gas-fee|inaccuracy|retry,,,,,,
+req-015,req-015-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|notifications|webhooks,,[inferred] real-time|insurance|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_10-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,self-service|usability,,[inferred] risk-management|compliance|regulation,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,registration|webhooks,,[inferred] flexibility|customfield|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] usability|customization|webhooks,,[inferred] fault-tolerance|reliability|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,schema|validation,,[inferred] authentication|security|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,error-handling|validation,,[inferred] user-experience|ui|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_6-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,delivery|reliability,,[inferred] analytics|logging|monitoring,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_7-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,notifications|reliability,,[inferred] onboarding|documentation|webhook,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_8-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,monitoring|usability,,[inferred] knowledge-base|support|training,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_1-item_9-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,security|verification,,[inferred] architecture|performance|scalability,,,,0.0,0.0,0
+req-015,req-015-hlj-chunk_2-item_1-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] auditing|compliance|logging,,[inferred] auditing|compliance|logging,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_2-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] reliability|performance|rate-limiting,,[inferred] reliability|performance|rate-limiting,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_3-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|usability,,documentation|usability,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_4-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,support|training,,support|training,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_5-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,dependency|integration,,dependency|integration,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_6-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] reliability|availability|scalability,,[inferred] reliability|availability|scalability,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_7-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,backend|ui,,backend|ui,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_8-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,compliance|monitoring,,compliance|monitoring,,,,,,,,
+req-015,req-015-hlj-chunk_2-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|training,,documentation|training,,,,,,,,
+req-016,req-016-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,2fa|security,compliance,rbac,[inferred] securitycompliance|rolebasedaccess,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,maintainability|usability,,maintainability|usability,,,,,,,,
+req-016,req-016-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,3,6,0,2,0.0,1.0,0.9182958340544897,,2fa|security,usability,rbac,[inferred] usability|rolebasedaccess,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,2fa,maintainability|security,automation|rbac,[inferred] adaptability|rolebasedaccess,0.0,0.0,0,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,2fa,security|usability,exemption|mobile,appspecificoverrides,0.0,0.0,0,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,2fa,compliance|security,notification|ux,usernotification,0.0,0.0,0,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,compliance,usability,logging|security,2fa|userguidance,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,1,3,2,6,0,0,0.0,1.0,0.9182958340544897,,,usability,compliance|reporting|security,2fa|exceptiontracking,0.0,0.0,0,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,2fa,compliance|security,documentation|support,compliancereporting,0.0,0.0,0,0.0,0.0,0
+req-016,req-016-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,compliance|security,,compliance|security,,,,,,,,
+req-017,req-017-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,2,3,6,1,1,0.16666666666666666,0.8333333333333334,0.7652465283787414,billing,billing,[inferred] finance|proration,calculations,[inferred] compliance|prorated upgrades,0.5,0.3333333333333333,0.4,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-017,req-017-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] compliance|integration|tax,email|notifications,[inferred] prorated upgrades|quality assurance|testing,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,2,3,7,0,1,0.0,1.0,0.9182958340544898,,billing,[inferred] scheduling|upgrade,credits,[inferred] compliance|billing history|upgrades,0.5,0.3333333333333333,0.4,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,2,3,7,0,1,0.0,1.0,0.9182958340544898,,upgrades,[inferred] audit|events|history,subscriptions,[inferred] billing|edge cases,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] transparency|invoice|tax,billing|history,[inferred] alerts|notifications|user experience,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] period-alignment|dates|plans,billing|invoices,[inferred] knowledge base|documentation|support,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] fraud|abuse|review,edge-cases|subscriptions,[inferred] prorated upgrades|integrations|payment processing,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] communication|email|notification,fraud-prevention|subscriptions,[inferred] vat|compliance|taxation,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,2,3,7,0,1,0.0,1.0,0.9182958340544898,,billing,[inferred] anomaly-detection|admin|alert,compliance,[inferred] refunds|invoicing,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,3,2,3,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] enablement|documentation|support,integrations|payments,[inferred] flags|downgrades|manual review,0.0,0.0,0,0.0,0.0,0
+req-017,req-017-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,[inferred] analytics|monitoring|notifications,,,[inferred] analytics|monitoring|notifications,,,,,,,
+req-017,req-017-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,2,0,2,2,0,1.0,0.0,0.0,documentation|support,,,documentation|support,,,,,,,
+req-018,req-018-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,7,0,2,0.0,1.0,0.9182958340544898,,inbox|ui,[inferred] ui|email,design,[inferred] collaboration|shared inbox,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,documentation|onboarding,automation|status|workflow,,0.0,0.0,0,,,
+req-018,req-018-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,3,6,1,1,0.16666666666666666,0.8333333333333334,0.7652465283787414,tagging,tagging,email,data|model,[inferred] automation|routing,0.3333333333333333,0.5,0.4,0.3333333333333333,0.5,0.4
+req-018,req-018-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,automation,assignment,config|setup|tagging,[inferred] workflow|assignment rules,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-018,req-018-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,assignment|manually,automation|routing|rules,[inferred] concurrency|collision handling|lock,0.0,0.0,0,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,concurrency|locking,config|routing|rules,[inferred] analytics|reporting|search,0.0,0.0,0,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,assignment,email|notification,manual|workflow,[inferred] data integrity|edge cases,0.0,0.0,0,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,filtering|search,assignment|status|workflow,[inferred] compatibility|email|integration,0.0,0.0,0,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,2,3,3,8,0,0,0.0,1.0,0.9182958340544896,,,analytics|reporting,concurrency|locking|safety,[inferred] knowledge base|documentation|onboarding,0.0,0.0,0,0.0,0.0,0
+req-018,req-018-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,assignment|edge-case,concurrency|notification|ui,,0.0,0.0,0,,,
+req-018,req-018-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,communication|notification|realtime,,,communication|notification|realtime,,,,,,,
+req-018,req-018-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,filter|search|ui,,,filter|search|ui,,,,,,,
+req-018,req-018-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,analytics|metrics|reporting,,,analytics|metrics|reporting,,,,,,,
+req-018,req-018-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,concurrency|conflict|rules,,,concurrency|conflict|rules,,,,,,,
+req-018,req-018-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,rules|validation|workflow,,,rules|validation|workflow,,,,,,,
+req-018,req-018-hlj-chunk_2-item_6-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,api|email|integration,,,api|email|integration,,,,,,,
+req-018,req-018-hlj-chunk_2-item_7-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compatibility|deployment|safety,,,compatibility|deployment|safety,,,,,,,
+req-018,req-018-hlj-chunk_2-item_8-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,documentation|onboarding|support,,,documentation|onboarding|support,,,,,,,
+req-019,req-019-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,cohorts,[inferred] persistence|analytics,database|schema,cohort_definition|user_interface,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] education|docs|support,database|optimization|performance,,0.0,0.0,0,,,
+req-019,req-019-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,2,5,0,2,0.0,1.0,0.9182958340544897,,automation|cohorts,,api|backend,cohort_updates,0.3333333333333333,0.5,0.4,0.5,0.5,0.5
+req-019,req-019-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] weighting|analytics|retention,api|cohorts|events,metrics|time_decay,0.0,0.0,0,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] configurability|settings|usability,automation|cohorts|updates,cohort_analysis|data_visualization,0.0,0.0,0,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] trends|heatmap|visualization,algorithms|decay|metrics,cohort_membership|edge_cases,0.0,0.0,0,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] comparison|overlay|visualization,algorithms|decay|metrics,decay_parameters|user_experience,0.0,0.0,0,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] interoperability|export|reporting,configuration|settings|ui,cohort_analysis|help_article,0.0,0.0,0,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,cohorts,[inferred] deduplication|edge-case,deduplication|logic,analytics_data_store|compatibility,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-019,req-019-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] guidance|error-handling|usability,ux|validation|warnings,,0.0,0.0,0,,,
+req-019,req-019-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,charts|ui|visualization,,,charts|ui|visualization,,,,,,,
+req-019,req-019-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,heatmap|ui|visualization,,,heatmap|ui|visualization,,,,,,,
+req-019,req-019-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,csv|export|reporting,,,csv|export|reporting,,,,,,,
+req-019,req-019-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,export|pdf|reporting,,,export|pdf|reporting,,,,,,,
+req-019,req-019-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,documentation|help|support,,,documentation|help|support,,,,,,,
+req-019,req-019-hlj-chunk_2-item_6-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] configuration|algorithms|documentation|help,,,[inferred] configuration|algorithms|documentation|help,,,,,,,
+req-019,req-019-hlj-chunk_2-item_7-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,backend|database|integration,,,backend|database|integration,,,,,,,
+req-020,req-020-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,7,1,1,0.14285714285714285,0.8571428571428572,0.7871107149038483,oauth,oauth,[inferred] security|sync,authentication|salesforce,api|crm,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-020,req-020-hlj-chunk_1-item_10-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,docs|usability,auto-merge|preferences|sync,api|crm,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,2,8,0,0,0.0,1.0,0.9182958340544896,,,[inferred] onboarding|duplicates|import,authentication|hubspot|oauth,crm|dryrun,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,configurable|duplicates,api-key|authentication|crm-sync,crm|detection,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,duplicates|usability,contacts|dry-run|import,crm|ui,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,conflict|usability,duplicate-detection|email|matching,crm|merge,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,automation|sync,duplicate-detection|matching|phone,crm|logging,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,history|logging,duplicate-detection|fuzzy-matching|names,crm|webhook,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,conflict|sync,duplicate-resolution|ui|user-action,crm|rollback,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_1-item_9-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,rollback|usability,conflict-resolution|data-merge|ui,crm|onboarding,0.0,0.0,0,0.0,0.0,0
+req-020,req-020-hlj-chunk_2-item_11-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] compliance|audit|history|logging,,,[inferred] compliance|audit|history|logging,,,,,,,
+req-020,req-020-hlj-chunk_2-item_12-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,conflict|sync-control|webhooks,,,conflict|sync-control|webhooks,,,,,,,
+req-020,req-020-hlj-chunk_2-item_13-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,data-recovery|rollback|undo,,,data-recovery|rollback|undo,,,,,,,
+req-020,req-020-hlj-chunk_2-item_14-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,docs|onboarding|user-guide,,,docs|onboarding|user-guide,,,,,,,
+req-021,req-021-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,2,3,2,5,0,2,0.0,1.0,0.9182958340544897,,pdf|ux,comments,highlighting,commenting,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,compatibility|performance,ux|validation|warnings,,0.0,0.0,0,,,
+req-021,req-021-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,2,3,2,6,0,1,0.0,1.0,0.9182958340544897,,ux,comments,commenting|pdf,replies|threaded_discussions,0.3333333333333333,0.5,0.4,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,1,3,2,5,0,1,0.0,1.0,0.9182958340544897,,comments,,backend|threading,commenting|filters,0.3333333333333333,1.0,0.5,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,comments|ux,backend|status|workflow,commenting|notifications,0.0,0.0,0,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,1,3,2,6,0,0,0.0,1.0,0.9182958340544897,,,notifications,filtering|ui|ux,browsers|compatibility,0.0,0.0,0,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,comments|ux,backend|messaging|notifications,optimization|performance,0.0,0.0,0,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,2,3,2,7,0,0,0.0,1.0,0.9182958340544898,,,comments|ux,deeplink|navigation|pdf,documentation|quickstart,0.0,0.0,0,0.0,0.0,0
+req-021,req-021-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,support|usability,events|notifications|workflow,,0.0,0.0,0,,,
+req-021,req-021-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,support|usability,backend|migration|versioning,,0.0,0.0,0,,,
+req-021,req-021-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,collision|frontend|validation,,,collision|frontend|validation,,,,,,,
+req-021,req-021-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,content|documentation|guide,,,content|documentation|guide,,,,,,,
+req-021,req-021-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] collaboration|content|documentation|workflow,,,[inferred] collaboration|content|documentation|workflow,,,,,,,
+req-021,req-021-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compatibility|frontend|testing,,,compatibility|frontend|testing,,,,,,,
+req-021,req-021-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,optimization|performance|scalability,,,optimization|performance|scalability,,,,,,,
+req-022,req-022-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,0,3,0.0,1.0,0.9182958340544897,,[inferred] compliance|logging|schema,audit,database,access_logs,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-022,req-022-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] data-protection|privacy|regulation,alerts|anomaly|monitoring,,0.0,0.0,0,,,
+req-022,req-022-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] policy|compliance|retention,api|logging|middleware,[inferred] security|access_logs|implementation,0.0,0.0,0,0.0,0.0,0
+req-022,req-022-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,roles,[inferred] security|export,compliance|retention|storage,[inferred] compliance|export_controls,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-022,req-022-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] usability|export|filter,compliance|rbac|security,[inferred] security|export_controls|filters,0.0,0.0,0,0.0,0.0,0
+req-022,req-022-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,masking,[inferred] data-protection|privacy,csv|export|json,[inferred] security|data_protection,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-022,req-022-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] integrity|audit|historical,export|filtering|query,[inferred] security|export_controls|rate_limiting,0.0,0.0,0,0.0,0.0,0
+req-022,req-022-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] alerting|anomaly|notification,masking|privacy,[inferred] security|notifications,0.0,0.0,0,0.0,0.0,0
+req-022,req-022-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,compliance,[inferred] enablement|docs,audit|history|roles,[inferred] security|documentation,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-022,req-022-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] security|abuse|rate-limit,alerts|compliance|notifications,,0.0,0.0,0,,,
+req-022,req-022-hlj-chunk_2-item_1-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,performance|rate-limiting|security,,,performance|rate-limiting|security,,,,,,,
+req-022,req-022-hlj-chunk_2-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,admin|compliance|documentation,,,admin|compliance|documentation,,,,,,,
+req-023,req-023-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,feature-flags,[inferred] geo-segmentation|scalable,backend|segmentation,feature flags|scalability,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-023,req-023-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,4,0,7,0,0,0.0,1.0,1.0,,,[inferred] event-logging|audit|geo-ip,[inferred] accessibility|frontend|notification|ux,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,feature-flags,[inferred] progressive-rollout|deployment,backend|rollout,geo-ip|geo-targeting,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-023,req-023-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,feature-flags,[inferred] portal|admin,admin-portal|frontend,edge cases|geo-ip,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-023,req-023-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,geo-ip,[inferred] location-resolution|real-time,backend|integration,feature flags|rollouts,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-023,req-023-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,2,7,0,1,0.0,1.0,0.9182958340544898,,geo-ip,[inferred] fallback|fault-tolerance,backend|security,admin portal|feature flags,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.0,0.0,0
+req-023,req-023-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,5,1,1,0.2,0.8,0.8,dashboard,dashboard,[inferred] kpi-tracking|real-time-analytics,analytics|frontend,,0.3333333333333333,0.3333333333333333,0.3333333333333333,,,
+req-023,req-023-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] automation|alerting|rollback,analytics|backend|monitoring,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] user-notification|communication|user-option,alerting|backend|monitoring,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] data-protection|compliance|privacy,backend|feature-flags|rollback,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|rollback|traceability,compliance|frontend|ux,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] training|documentation|onboarding,,,,[inferred] training|documentation|onboarding,,,,,,
+req-023,req-023-hlj-chunk_2-item_11-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] version control|change log|documentation,,,,[inferred] version control|change log|documentation,,,,,,
+req-023,req-023-hlj-chunk_2-item_12-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] geolocation|infrastructure|location awareness,,,,[inferred] geolocation|infrastructure|location awareness,,,,,,
+req-023,req-023-hlj-chunk_2-item_2-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] enablement|documentation|training,compliance|gdpr|security,,0.0,0.0,0,,,
+req-023,req-023-hlj-chunk_2-item_3-v1.0,gpt41|opus4,meta70b,3,3,0,5,1,1,0.2,0.8,0.8,audit,audit,[inferred] compliance|changelog,backend|geo-ip,,0.3333333333333333,0.3333333333333333,0.3333333333333333,,,
+req-023,req-023-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,audit|backend|rollback,,,audit|backend|rollback,,,,,,,
+req-023,req-023-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,documentation|product|training,,,documentation|product|training,,,,,,,
+req-023,req-023-hlj-chunk_2-item_6-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,developer|documentation|training,[inferred] metrics|dashboards|real-time analytics,,,,,,
+req-023,req-023-hlj-chunk_2-item_7-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,audit|backend|compliance,[inferred] monitoring|alerts|real-time analytics,,,,,,
+req-023,req-023-hlj-chunk_2-item_8-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,authentication|backend|infrastructure,[inferred] transparency|rollouts|user experience,,,,,,
+req-023,req-023-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,[inferred] data protection|compliance|privacy laws,,,,[inferred] data protection|compliance|privacy laws,,,,,,
+req-024,req-024-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,template,[inferred] notification|multi-language,backend|messaging|storage,[inferred] dynamic content|personalization,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-024,req-024-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,compliance|logging,api|integration|messaging,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] notification|testing|usability,backend|i18n|messaging,[inferred] timing|delivery|scheduling,0.0,0.0,0,0.0,0.0,0
+req-024,req-024-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,testing,[inferred] personalization|scheduling|timezone,messaging|ui,[inferred] quality assurance|preview,0.0,0.0,0,0.0,0.0,0
+req-024,req-024-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] notification|automation|multi-channel,messaging|qa|testing,[inferred] personalization|channel|preferences,0.0,0.0,0,0.0,0.0,0
+req-024,req-024-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,2,3,3,7,0,1,0.0,1.0,0.9182958340544898,,personalization,integration,backend|messaging|scheduling,[inferred] user profiling|data,0.0,0.0,0,0.3333333333333333,0.5,0.4
+req-024,req-024-hlj-chunk_1-item_6-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] analytics|a/b testing|segmentation,backend|messaging|optimization,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_1-item_7-v1.0,gpt41|opus4,meta70b,2,3,0,4,1,1,0.25,0.75,0.75,analytics,analytics,dashboard,messaging|ml,,0.3333333333333333,0.5,0.4,,,
+req-024,req-024-hlj-chunk_1-item_8-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] notification|automation|reliability,api|integration|messaging,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,compliance|opt-out,api|integration|messaging,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|timezone|usability,backend|messaging|personalization,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_2-item_10-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,audit|compliance|logging,[inferred] recipient_experience|duplicates|notification,,,,,,
+req-024,req-024-hlj-chunk_2-item_2-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|deduplication|reliability,analytics|optimization|testing,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_2-item_3-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,documentation|training,automation|ml|segmentation,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_2-item_4-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|help-center|usability,analytics|monitoring|ui,,0.0,0.0,0,,,
+req-024,req-024-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,analytics|metrics|tracking,,,analytics|metrics|tracking,,,,,,,
+req-024,req-024-hlj-chunk_2-item_6-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,alerts|monitoring|reliability,[inferred] data_visualization|analytics|dashboard,,,,,,
+req-024,req-024-hlj-chunk_2-item_7-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,automation|failover|reliability,[inferred] monitoring|alert|deliverability,,,,,,
+req-024,req-024-hlj-chunk_2-item_8-v1.0,opus4|meta70b,gpt41,0,3,3,5,1,1,0.2,0.8,0.8,compliance,compliance,,messaging|ux,[inferred] legal|regulation,,,,,,
+req-024,req-024-hlj-chunk_2-item_9-v1.0,opus4|meta70b,gpt41,0,3,3,6,0,0,0.0,1.0,1.0,,,,compliance|legal|tracking,[inferred] recipient_control|opt-out|unsubscribe,,,,,,
+req-024,req-024-hlj-chunk_3-item_1-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] automation|scheduling|timezone|ux,,,[inferred] automation|scheduling|timezone|ux,,,,,,,
+req-024,req-024-hlj-chunk_3-item_2-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,backend|deduplication|reliability,,,backend|deduplication|reliability,,,,,,,
+req-024,req-024-hlj-chunk_3-item_3-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,documentation|training|ux,,,documentation|training|ux,,,,,,,
+req-024,req-024-hlj-chunk_3-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,api|documentation|integration,,,api|documentation|integration,,,,,,,
+req-025,req-025-hlj-chunk_1-item_1-v1.0,gpt41|opus4|meta70b,,3,3,3,6,1,2,0.16666666666666666,0.8333333333333334,0.7652465283787414,instrumentation,instrumentation|performance,[inferred] performance|timing,analytics,[inferred] optimization,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-025,req-025-hlj-chunk_1-item_10-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] analytics|compliance|privacy,automation|ci-cd|performance,,0.0,0.0,0,,,
+req-025,req-025-hlj-chunk_1-item_2-v1.0,gpt41|opus4|meta70b,,3,3,3,7,0,2,0.0,1.0,0.9182958340544898,,analytics|reporting,[inferred] analytics|segmentation,instrumentation|performance,[inferred] metrics,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-025,req-025-hlj-chunk_1-item_3-v1.0,gpt41|opus4|meta70b,,3,4,3,9,0,1,0.0,1.0,0.9182958340544896,,visualization,[inferred] analytics|metrics,[inferred] privacy|analytics|performance|telemetry,[inferred] engineering|dashboards,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-025,req-025-hlj-chunk_1-item_4-v1.0,gpt41|opus4|meta70b,,3,3,3,8,0,1,0.0,1.0,0.9182958340544896,,alerting,[inferred] regression|diagnostics,analytics|dashboard|visualization,[inferred] debugging|root cause analysis,0.0,0.0,0,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-025,req-025-hlj-chunk_1-item_5-v1.0,gpt41|opus4|meta70b,,3,3,3,7,0,2,0.0,1.0,0.9182958340544898,,alerting|sla,[inferred] performance,analytics|dashboard|filtering,[inferred] notification,0.0,0.0,0,0.6666666666666666,0.6666666666666666,0.6666666666666666
+req-025,req-025-hlj-chunk_1-item_6-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] performance|cicd|regression,alerting|analytics|performance,[inferred] automation|ci/cd|optimization,0.0,0.0,0,0.0,0.0,0
+req-025,req-025-hlj-chunk_1-item_7-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] regression|automation|remediation,analytics|diagnostics|performance,[inferred] reliability|external services|fallback,0.0,0.0,0,0.0,0.0,0
+req-025,req-025-hlj-chunk_1-item_8-v1.0,gpt41|opus4|meta70b,,3,3,3,9,0,0,0.0,1.0,0.9182958340544896,,,[inferred] alerting|external|resilience,alerting|performance|sla,[inferred] data protection|compliance|privacy,0.0,0.0,0,0.0,0.0,0
+req-025,req-025-hlj-chunk_1-item_9-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] performance|prompt|usability,automation|ci-cd|performance,,0.0,0.0,0,,,
+req-025,req-025-hlj-chunk_2-item_1-v1.0,gpt41|opus4,meta70b,3,3,0,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|privacy|transparency,monitoring|performance|resilience,,0.0,0.0,0,,,
+req-025,req-025-hlj-chunk_2-item_2-v1.0,gpt41|opus4,meta70b,2,3,0,5,0,0,0.0,1.0,1.0,,,analytics|self-service,dashboard|performance|ux,,0.0,0.0,0,,,
+req-025,req-025-hlj-chunk_2-item_3-v1.0,opus4,gpt41|meta70b,0,4,0,4,4,0,1.0,0.0,0.0,[inferred] gdpr|compliance|privacy|security,,,[inferred] gdpr|compliance|privacy|security,,,,,,,
+req-025,req-025-hlj-chunk_2-item_4-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,compliance|privacy|ux,,,compliance|privacy|ux,,,,,,,
+req-025,req-025-hlj-chunk_2-item_5-v1.0,opus4,gpt41|meta70b,0,3,0,3,3,0,1.0,0.0,0.0,analytics|dashboard|self-service,,,analytics|dashboard|self-service,,,,,,,
+req-026,req-026-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,2,0,2,3,1,1,0.3333333333333333,0.6666666666666667,0.6666666666666666,nps,nps,automation,,behavioral_intelligence,,,,0.5,0.5,0.5
+req-026,req-026-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,1,0,0,1,1,0,1.0,0.0,0.0,enablement,,enablement,,,,,,,,
+req-026,req-026-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,2,0,2,3,1,1,0.3333333333333333,0.6666666666666667,0.6666666666666666,nps,nps,[inferred] behavioral-intelligence,,user_experience,,,,0.5,0.5,0.5
+req-026,req-026-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,3,0,2,4,1,1,0.25,0.75,0.75,nps,nps,[inferred] embedded-ui|usability,,churn_prevention,,,,0.5,0.3333333333333333,0.4
+req-026,req-026-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,2,0,2,3,1,1,0.3333333333333333,0.6666666666666667,0.6666666666666666,nps,nps,usability,,user_experience,,,,0.5,0.5,0.5
+req-026,req-026-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,2,0,2,3,1,1,0.3333333333333333,0.6666666666666667,0.6666666666666666,nps,nps,[inferred] synchronization,,user_experience,,,,0.5,0.5,0.5
+req-026,req-026-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,[inferred] prioritization|nps,,[inferred] prioritization|nps,,,,,,,,
+req-026,req-026-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,1,0,0,1,1,0,1.0,0.0,0.0,usability,,usability,,,,,,,,
+req-026,req-026-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,compliance|usability,,compliance|usability,,,,,,,,
+req-026,req-026-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,1,0,0,1,1,0,1.0,0.0,0.0,enablement,,enablement,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_1-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,analytics|nps,,analytics|nps,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,device_coordination|edge_cases|nps,,,,device_coordination|edge_cases|nps,,,,,,
+req-026,req-026-hlj-chunk_2-item_11-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,edge_cases|nps|trigger_prioritization,,,,edge_cases|nps|trigger_prioritization,,,,,,
+req-026,req-026-hlj-chunk_2-item_12-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,documentation|nps|onboarding,,,,documentation|nps|onboarding,,,,,,
+req-026,req-026-hlj-chunk_2-item_2-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] integration|crm|support,,[inferred] integration|crm|support,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_3-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] auditability|compliance|privacy,,[inferred] auditability|compliance|privacy,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_4-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] automation|integration|nps,,[inferred] automation|integration|nps,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_5-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,[inferred] compliance|localization,,[inferred] compliance|localization,,,,,,,,
+req-026,req-026-hlj-chunk_2-item_6-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,[inferred] automation|kpi,,analytics|nps|visualization,,,,0.0,0.0,0
+req-026,req-026-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,crm_integration|customer_support|nps,,,,crm_integration|customer_support|nps,,,,,,
+req-026,req-026-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,compliance|nps|privacy,,,,compliance|nps|privacy,,,,,,
+req-026,req-026-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,nps|opt_out|user_experience,,,,nps|opt_out|user_experience,,,,,,
+req-027,req-027-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,4,2,2,0.5,0.5,0.5,layout|rtl,layout|rtl,[inferred] engine,,[inferred] globalization,,,,0.6666666666666666,0.6666666666666666,0.6666666666666666
+req-027,req-027-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|onboarding,,documentation|onboarding,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,3,2,2,0.6666666666666666,0.33333333333333337,0.3333333333333333,components|rtl,components|rtl,,,[inferred] ui_rendering,,,,0.6666666666666666,1.0,0.8
+req-027,req-027-hlj-chunk_1-item_3-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] tooling|preview|usability,,[inferred] tooling|preview|usability,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_4-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] flexibility|mixed-language|override,,[inferred] flexibility|mixed-language|override,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_5-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,localization|translation,,localization|translation,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,formatting|localization,,formatting|localization,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] qa|mirror|validation,,[inferred] qa|mirror|validation,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] accessibility|compliance|validation,,[inferred] accessibility|compliance|validation,,,,,,,,
+req-027,req-027-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] traceability|auditing|logging,,[inferred] traceability|auditing|logging,,,,,,,,
+req-027,req-027-hlj-chunk_2-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|enablement|training,,[inferred] layout|preview|rtl,,,,0.0,0.0,0
+req-027,req-027-hlj-chunk_2-item_2-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|update|vendor,,[inferred] localization|rtl|translation,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] sentiment|classification|nlp,,[inferred] analysis|ai|sentiment,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_10-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] reporting|analytics|trend,,[inferred] leadership|buyin|training,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,urgency,urgency,[inferred] escalation|nlp,,[inferred] detection|ai,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-028,req-028-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,routing,routing,[inferred] escalation|priority,,[inferred] logic|ai,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-028,req-028-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] self-service|efficiency|routing,,[inferred] satisfaction|customer|metrics,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] tone-analysis|edge-case|nlp,,[inferred] trends|ai|edgecases,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_6-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] retraining|continuous-learning|feedback,,[inferred] audit|logging|transparency,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_7-v1.0,gpt41|meta70b,opus4,2,0,3,5,0,0,0.0,1.0,1.0,,,[inferred] latency|performance,,[inferred] guidelines|customer|documentation,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_8-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] training|change-management|usability,,[inferred] constraints|compliance|dependencies,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_1-item_9-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] kpi|analytics|reporting,,[inferred] tracking|kpi|metrics,,,,0.0,0.0,0
+req-028,req-028-hlj-chunk_2-item_1-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] traceability|audit|compliance,,[inferred] traceability|audit|compliance,,,,,,,,
+req-028,req-028-hlj-chunk_2-item_2-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] privacy|compliance|consent,,[inferred] privacy|compliance|consent,,,,,,,,
+req-029,req-029-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,5,1,1,0.2,0.8,0.8,logging,logging,[inferred] traceability|security,,[inferred] security|compliance,,,,0.3333333333333333,0.3333333333333333,0.3333333333333333
+req-029,req-029-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] regulatory|compliance|security,,[inferred] regulatory|compliance|security,,,,,,,,
+req-029,req-029-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] session-tracking|compliance|logging,,[inferred] access control|query|rbac,,,,0.0,0.0,0
+req-029,req-029-hlj-chunk_1-item_3-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] query-interface|compliance|usability,,[inferred] data analysis|filtering|query,,,,0.0,0.0,0
+req-029,req-029-hlj-chunk_1-item_4-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] advanced-filtering|compliance|usability,,[inferred] security protocol|consistency|session,,,,0.0,0.0,0
+req-029,req-029-hlj-chunk_1-item_5-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] role-consistency|compliance|security,,[inferred] compliance monitoring|anomaly|detection,,,,0.0,0.0,0
+req-029,req-029-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] anomaly-detection|compliance|security,,[inferred] anomaly-detection|compliance|security,,,,,,,,
+req-029,req-029-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] data-integrity|compliance|export,,[inferred] data-integrity|compliance|export,,,,,,,,
+req-029,req-029-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] periodic-summaries|compliance|reporting,,[inferred] periodic-summaries|compliance|reporting,,,,,,,,
+req-029,req-029-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,3,0,0,3,3,0,1.0,0.0,0.0,[inferred] data-retention|compliance|security,,[inferred] data-retention|compliance|security,,,,,,,,
+req-029,req-029-hlj-chunk_2-item_10-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,audit log gaps|compliance|violation,,,,audit log gaps|compliance|violation,,,,,,
+req-029,req-029-hlj-chunk_2-item_6-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,compliance|export|reporting,,,,compliance|export|reporting,,,,,,
+req-029,req-029-hlj-chunk_2-item_7-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,compliance|regulatory|storage,,,,compliance|regulatory|storage,,,,,,
+req-029,req-029-hlj-chunk_2-item_8-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,best practices|documentation|training,,,,best practices|documentation|training,,,,,,
+req-029,req-029-hlj-chunk_2-item_9-v1.0,meta70b,gpt41|opus4,0,0,3,3,3,0,1.0,0.0,0.0,kpi|performance|traceability,,,,kpi|performance|traceability,,,,,,
+req-030,req-030-hlj-chunk_1-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,parallel|staging|ui-testing,,[inferred] compatibility|browser_coverage|ui_testing,,,,0.0,0.0,0
+req-030,req-030-hlj-chunk_1-item_10-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,browser-matrix|communication,,browser-matrix|communication,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_2-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,blocking|ci-cd|critical-path,,[inferred] quality_assurance|ci_cd|deployment,,,,0.0,0.0,0
+req-030,req-030-hlj-chunk_1-item_3-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,analytics|coverage,,analytics|coverage,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_4-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,coverage|visualization,,coverage|visualization,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_5-v1.0,gpt41,opus4|meta70b,4,0,0,4,4,0,1.0,0.0,0.0,[inferred] artifact-retention|logs|screenshots|video,,[inferred] artifact-retention|logs|screenshots|video,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_6-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,flakiness|recommendations,,flakiness|recommendations,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_7-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,flakiness|headless,,flakiness|headless,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_8-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,flakiness|quarantine,,flakiness|quarantine,,,,,,,,
+req-030,req-030-hlj-chunk_1-item_9-v1.0,gpt41,opus4|meta70b,2,0,0,2,2,0,1.0,0.0,0.0,documentation|testing-guides,,documentation|testing-guides,,,,,,,,
+req-030,req-030-hlj-chunk_2-item_1-v1.0,gpt41|meta70b,opus4,3,0,3,6,0,0,0.0,1.0,1.0,,,[inferred] compliance|artifacts|security,,[inferred] quality_assurance|debugging|error_reporting,,,,0.0,0.0,0
+req-030,req-030-hlj-chunk_2-item_2-v1.0,gpt41|meta70b,opus4,2,0,3,4,1,1,0.25,0.75,0.75,compliance,compliance,accessibility,,[inferred] data_protection|security,,,,0.3333333333333333,0.5,0.4

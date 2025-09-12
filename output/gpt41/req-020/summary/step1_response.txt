@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-020",
+  "summary": "Design and implement a CRM contact sync feature supporting major third-party CRMs (e.g., Salesforce, HubSpot) using OAuth and API keys. Enable one-click import with a dry run to preview potential duplicates, and provide configurable duplicate detection (email, phone, fuzzy name). Allow users to review matches, merge, keep separate, or ignore, with a field-level diff for conflict resolution. Apply ongoing sync with auto-merging based on user preferences, log all changes per contact, and warn/hold sync if webhook conflicts arise. Support rollback on accidental merges within 24 hours. Update onboarding documentation and ensure compliance with provider API rate limits and existing workflow integrity. Non-functional areas addressed include performance (rate limits), usability (user-friendly review/diff/rollback), security (OAuth), and maintainability (logging/history, rollback)."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["CRMIntegration", "ContactManagement"],
+  "canonical_tags": ["sync", "duplicates", "usability"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-020-HLJ-Chunk_1",
+      "focus": "End-to-end CRM contact sync, duplicate handling, user review, ongoing merge, logging, compliance",
+      "items": [
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement OAuth and API key one-click sync for major CRMs",
+          "domain": "SaaS",
+          "subdomain": ["CRMIntegration"],
+          "tags": ["sync", "oauth"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 5–8"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Build initial contact import with dry run showing potential duplicates",
+          "domain": "SaaS",
+          "subdomain": ["CRMIntegration", "ContactManagement"],
+          "tags": ["import", "duplicates"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10–12"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Create configurable duplicate detection rules (email, phone, fuzzy name)",
+          "domain": "SaaS",
+          "subdomain": ["ContactManagement"],
+          "tags": ["duplicates", "configurable"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14–16"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Enable user review and resolution of duplicate matches",
+          "domain": "SaaS",
+          "subdomain": ["ContactManagement"],
+          "tags": ["usability", "duplicates"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17–18"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Provide side-by-side diff UI for resolving conflicting contact data",
+          "domain": "SaaS",
+          "subdomain": ["ContactManagement"],
+          "tags": ["usability", "conflict"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement ongoing sync to auto-merge new duplicates by saved user rules",
+          "domain": "SaaS",
+          "subdomain": ["CRMIntegration", "ContactManagement"],
+          "tags": ["sync", "automation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22–23"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Track and log all merges and changes with per-contact history",
+          "domain": "SaaS",
+          "subdomain": ["ContactManagement"],
+          "tags": ["logging", "history"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 24–25"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Warn and pause sync if merging would cause webhook update conflicts",
+          "domain": "SaaS",
+          "subdomain": ["CRMIntegration"],
+          "tags": ["conflict", "sync"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 27–28"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Support rollback of accidental merges within 24 hours",
+          "domain": "SaaS",
+          "subdomain": ["ContactManagement"],
+          "tags": ["rollback", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29–30"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Update onboarding guide with CRM sync and duplicate management steps",
+          "domain": "SaaS",
+          "subdomain": ["CRMIntegration", "Documentation"],
+          "tags": ["docs", "usability"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 32–33"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

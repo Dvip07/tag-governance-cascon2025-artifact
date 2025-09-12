@@ -1,0 +1,237 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Send confirmation, reminders, and expiry alerts via email, SMS, and in-app notifications",
+    "summary": "The system should send notifications to users via multiple channels to ensure timely reminders and updates on the status of their scheduled payments, including confirmations, reminders, and expiry alerts.",
+    "tags": [
+      "notifications",
+      "email",
+      "sms",
+      "[INFERRED] reminders"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 45-47",
+    "reasoning": {
+      "source_summary_fragment": "Send confirmation, reminders, and expiry alerts",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.93
+        },
+        {
+          "tag": "email",
+          "confidence": 0.9
+        },
+        {
+          "tag": "sms",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "scheduled payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "reminders",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Provide dashboards for finance and compliance teams to monitor outstanding scheduled payments",
+    "summary": "The system should provide dashboards for finance and compliance teams to track and monitor the status of outstanding scheduled payments, ensuring transparency and control over financial operations.",
+    "tags": [
+      "reporting",
+      "dashboard",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Reporting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 48-50",
+    "reasoning": {
+      "source_summary_fragment": "Provide dashboards for finance and compliance teams",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.96
+        },
+        {
+          "tag": "dashboard",
+          "confidence": 0.95
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "dashboards",
+        "scheduled payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Handle edge cases such as FX provider unavailability and insufficient account balance",
+    "summary": "The system should be able to handle edge cases such as unavailability of FX providers and insufficient account balances, ensuring robustness and reliability in cross-border payment processing.",
+    "tags": [
+      "edgecases",
+      "fx",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "EdgeCases"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 51-53",
+    "reasoning": {
+      "source_summary_fragment": "Handle edge cases such as FX provider unavailability",
+      "tag_metadata_reference": [
+        {
+          "tag": "edgecases",
+          "confidence": 0.94
+        },
+        {
+          "tag": "fx",
+          "confidence": 0.92
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge cases",
+        "cross-border payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement beta rollout plan with feedback collection framework",
+    "summary": "The system should have a beta rollout plan that includes a framework for collecting feedback from users, ensuring that the system meets their needs and is reliable.",
+    "tags": [
+      "rollout",
+      "beta",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 54-56",
+    "reasoning": {
+      "source_summary_fragment": "Implement beta rollout plan with feedback collection",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollout",
+          "confidence": 0.9
+        },
+        {
+          "tag": "beta",
+          "confidence": 0.88
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "beta rollout",
+        "feedback collection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Deliver updated payment scheduling UI and logic",
+    "summary": "The system should deliver an updated user interface and logic for payment scheduling, enhancing the user experience and ensuring accurate payment processing.",
+    "tags": [
+      "delivery",
+      "ui",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 57-59",
+    "reasoning": {
+      "source_summary_fragment": "Deliver updated payment scheduling UI and logic",
+      "tag_metadata_reference": [
+        {
+          "tag": "delivery",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.92
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "payment scheduling",
+        "user interface"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009"
+  }
+]

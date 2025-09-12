@@ -1,0 +1,163 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-025",
+  "summary": "This requirement mandates granular, real-time performance analytics for all dashboard widgets (first- and third-party) in a SaaS platform. Key functional needs include: instrumenting widgets to capture load, render, and interactive readiness times; reporting per widget, user, device, and browser; providing engineering dashboards with breakdowns and root-cause drilldowns; automated alerting for SLA breaches (e.g., 95th percentile >2s); CI/CD integration to prevent performance regressions; edge-case handling for external services and user prompt if dashboard is slow; anonymized telemetry data adhering to privacy agreements with user opt-out and transparency; self-service analytics for product owners; and comprehensive documentation. Non-functional requirements: no analytics degradation of dashboard performance, compliance with privacy standards, and the following KPIs: 99% dashboards loading <2.5s, <0.5% widget-level error rate, and regression fixes in 48h. Upgrade to telemetry infrastructure is a dependency."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["UserDashboard", "Analytics", "PerformanceMonitoring"],
+  "canonical_tags": ["performance", "analytics", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-025-HLJ-Chunk_1",
+      "focus": "Widget instrumentation, data collection, and insights visualization",
+      "items": [
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Instrument all dashboard widgets for load, render, and interactive readiness timing",
+          "domain": "SaaS",
+          "subdomain": ["UserDashboard", "PerformanceMonitoring"],
+          "tags": ["instrumentation", "timing"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 8–10"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Capture and report widget timing data per user, device, and browser context",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "PerformanceMonitoring"],
+          "tags": ["reporting", "segmentation"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11–12"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Provide engineering dashboards with breakdowns by widget, user segment, and time window",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "UserDashboard"],
+          "tags": ["metrics", "visualization"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 14–15"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement outlier and regression flagging with root-cause drill-downs",
+          "domain": "SaaS",
+          "subdomain": ["PerformanceMonitoring"],
+          "tags": ["alerting", "diagnostics"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Trigger automated alerts for widgets exceeding performance SLAs",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "PerformanceMonitoring"],
+          "tags": ["alerting", "sla"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Integrate performance checks with CI/CD for deployment blocking/regression prevention",
+          "domain": "SaaS",
+          "subdomain": ["PerformanceMonitoring", "DevOps"],
+          "tags": ["cicd", "regression"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Suggest automated remediation steps for detected performance regressions",
+          "domain": "SaaS",
+          "subdomain": ["PerformanceMonitoring"],
+          "tags": ["remediation", "automation"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Monitor fallback performance of external widgets and alert on persistent issues",
+          "domain": "SaaS",
+          "subdomain": ["PerformanceMonitoring"],
+          "tags": ["resilience", "external"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Prompt users to hide/reprioritize widgets if dashboards exceed performance budgets",
+          "domain": "SaaS",
+          "subdomain": ["UserDashboard", "Usability"],
+          "tags": ["prompt", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 27–28"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Anonymize performance telemetry and ensure user privacy compliance with opt-out",
+          "domain": "SaaS",
+          "subdomain": ["Compliance", "Analytics"],
+          "tags": ["privacy", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 30–33"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-025-HLJ-Chunk_2",
+      "focus": "User transparency, documentation, self-service analytics, infra dependency, and KPIs",
+      "items": [
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Provide users transparency and option to view and opt-out of data collection",
+          "domain": "SaaS",
+          "subdomain": ["UserDashboard", "Compliance"],
+          "tags": ["transparency", "privacy"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32–33"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement self-service analytics for product owners to monitor widget health",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "UserDashboard"],
+          "tags": ["self-service", "analytics"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 35–36"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

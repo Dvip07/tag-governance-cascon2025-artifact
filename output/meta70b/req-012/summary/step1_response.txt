@@ -1,0 +1,141 @@
+### === SUMMARY START ===
+{
+  "requirement_id": "REQ-012",
+  "summary": "Implement GST calculation and reporting module for B2B SaaS vendors, supporting varying provincial tax rates, exemptions, and dual-tax provinces, with accurate invoicing, transparent reporting, and compliant data handling."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+{
+  "domain": "FinTech",
+  "subdomain": ["GST Support", "B2B SaaS Vendors"],
+  "canonical_tags": ["gst", "taxation", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-012-HLJ-Chunk_1",
+      "focus": "Tax Rate Management and Invoice Logic",
+      "items": [
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement dynamic tax rate table for supported provinces",
+          "domain": "FinTech",
+          "subdomain": ["GST Support"],
+          "tags": ["gst", "taxation"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Support dual-GST provinces and ensure correct allocation logic",
+          "domain": "FinTech",
+          "subdomain": ["GST Support"],
+          "tags": ["gst", "provincial tax"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Apply correct GST rate(s) at invoice generation",
+          "domain": "FinTech",
+          "subdomain": ["Invoice Logic"],
+          "tags": ["gst", "invoicing"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20-23"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Itemize GST components on invoices",
+          "domain": "FinTech",
+          "subdomain": ["Invoice Logic"],
+          "tags": ["gst", "invoicing"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 25-27"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Handle scenarios with multiple tax rates on a single invoice",
+          "domain": "FinTech",
+          "subdomain": ["Invoice Logic"],
+          "tags": ["gst", "taxation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 30-33"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-012-HLJ-Chunk_2",
+      "focus": "Exemption, Reporting, and Compliance",
+      "items": [
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Allow for tax-exempt status recording and application",
+          "domain": "FinTech",
+          "subdomain": ["Exemption Handling"],
+          "tags": ["gst", "exemptions"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 35-38"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Implement fallback rules for ambiguous addresses",
+          "domain": "FinTech",
+          "subdomain": ["Exemption Handling"],
+          "tags": ["gst", "fallback"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 40-42"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Generate GST summary reports per province",
+          "domain": "FinTech",
+          "subdomain": ["Reporting"],
+          "tags": ["gst", "reporting"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 45-48"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Provide audit-ready exports for finance and compliance teams",
+          "domain": "FinTech",
+          "subdomain": ["Compliance"],
+          "tags": ["gst", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 50-53"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Protect customer and transaction data in line with PIPEDA and GDPR",
+          "domain": "FinTech",
+          "subdomain": ["Security and Privacy"],
+          "tags": ["security", "privacy"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 55-58"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+!!CONSTRAINT_BROKEN!!

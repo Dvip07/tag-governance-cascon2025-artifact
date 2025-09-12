@@ -1,0 +1,1005 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design configurable rate limit tiers (Standard: 1000 req/min, Premium: 5000 req/min)",
+    "summary": "Create a configurable rate limiting system supporting multiple tiers with Standard tier at 1000 requests/minute and Premium tier at 5000 requests/minute. System must allow dynamic tier assignment and configuration updates without service restarts.",
+    "tags": [
+      "rate-limiting",
+      "configuration",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "configurable rate tiers (Standard: 1000 req/min, Premium: 5000 req/min)",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.95
+        },
+        {
+          "tag": "configuration",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "tier configuration",
+        "rate limits",
+        "multi-tenant"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement burst and sustained rate limit logic with fallback behavior",
+    "summary": "Develop sophisticated rate limiting logic supporting both burst traffic handling and sustained rate enforcement. Include fallback mechanisms for graceful degradation when limits are exceeded, ensuring service reliability.",
+    "tags": [
+      "rate-limiting",
+      "burst-control",
+      "api",
+      "[INFERRED] resilience"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 21-22",
+    "reasoning": {
+      "source_summary_fragment": "burst/sustained limits, and real-time configuration updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.94
+        },
+        {
+          "tag": "burst-control",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.89
+        },
+        {
+          "tag": "resilience",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "burst handling",
+        "sustained rates",
+        "fallback logic"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "resilience",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build internal admin portal for real-time rate limit configuration updates",
+    "summary": "Create administrative web interface enabling real-time rate limit configuration changes per tenant. Portal must support MFA authentication, audit logging, and instant propagation of changes across the API gateway infrastructure.",
+    "tags": [
+      "admin-portal",
+      "configuration",
+      "real-time"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "real-time configuration updates. Security requires MFA for config changes",
+      "tag_metadata_reference": [
+        {
+          "tag": "admin-portal",
+          "confidence": 0.93
+        },
+        {
+          "tag": "configuration",
+          "confidence": 0.91
+        },
+        {
+          "tag": "real-time",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "admin UI",
+        "MFA security",
+        "config management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate rate limiting at API gateway/ingress controller layer",
+    "summary": "Implement rate limiting enforcement at the API gateway or ingress controller layer to ensure minimal latency impact (<10ms). Integration must support distributed caching for rate limit counters across multiple gateway instances.",
+    "tags": [
+      "api-gateway",
+      "rate-limiting",
+      "infrastructure"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "API gateway enforcement with HTTP 429 responses... <10ms latency impact",
+      "tag_metadata_reference": [
+        {
+          "tag": "api-gateway",
+          "confidence": 0.94
+        },
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "infrastructure",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "gateway integration",
+        "distributed caching",
+        "latency constraints"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement HTTP 429 responses with retry-after headers for rate limit breaches",
+    "summary": "Configure API gateway to return properly formatted HTTP 429 (Too Many Requests) responses when rate limits are exceeded. Include Retry-After headers with accurate wait times to facilitate client-side retry logic.",
+    "tags": [
+      "http-429",
+      "rate-limiting",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "API gateway enforcement with HTTP 429 responses",
+      "tag_metadata_reference": [
+        {
+          "tag": "http-429",
+          "confidence": 0.95
+        },
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "HTTP status codes",
+        "retry headers",
+        "client communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Create per-tenant rate limiting action and breach logging system",
+    "summary": "Implement comprehensive logging system capturing all rate limiting actions and breaches on a per-tenant basis. Logs must include timestamps, API endpoints, breach counts, and be retained for compliance purposes.",
+    "tags": [
+      "logging",
+      "compliance",
+      "monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "audit logging... monthly usage and rate limit breach reports for billing/compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "compliance retention",
+        "per-tenant tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Build monitoring dashboards for rate limit breaches and near-misses",
+    "summary": "Develop real-time monitoring dashboards displaying rate limit breach patterns, near-miss events (>80% threshold), and usage trends. Dashboards must support filtering by tenant, time range, and API endpoint.",
+    "tags": [
+      "monitoring",
+      "dashboard",
+      "alerting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive monitoring/alerting, tenant usage dashboards",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.94
+        },
+        {
+          "tag": "dashboard",
+          "confidence": 0.92
+        },
+        {
+          "tag": "alerting",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "real-time visualization",
+        "threshold monitoring",
+        "usage analytics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Develop alerting mechanisms for internal teams and affected tenants",
+    "summary": "Create multi-channel alerting system notifying internal teams of rate limit breaches and abuse patterns. Include tenant-facing notifications for approaching limits and breach events via email and webhook integrations.",
+    "tags": [
+      "alerting",
+      "monitoring",
+      "notification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive monitoring/alerting... abuse detection",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.89
+        },
+        {
+          "tag": "notification",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel alerts",
+        "tenant communication",
+        "abuse detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Expose per-tenant usage metrics via API for self-monitoring",
+    "summary": "Provide API endpoints enabling tenants to query their own usage metrics, rate limit status, and historical consumption patterns. API must include current usage percentages and time until limit reset.",
+    "tags": [
+      "api",
+      "metrics",
+      "self-service"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "tenant usage dashboards... Expose per-tenant usage metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.92
+        },
+        {
+          "tag": "metrics",
+          "confidence": 0.9
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "usage API",
+        "self-monitoring",
+        "tenant autonomy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Generate monthly usage and rate limit breach reports for billing/compliance",
+    "summary": "Produce automated monthly reports detailing per-tenant API usage, rate limit breaches, and billing-relevant metrics. Reports must be stored securely and include compliance attestations for audit purposes.",
+    "tags": [
+      "reporting",
+      "billing",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "monthly usage and rate limit breach reports for billing/compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "billing",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "monthly reports",
+        "billing integration",
+        "audit trail"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement circumvention detection for multiple API keys/rotating IPs/bots",
+    "summary": "Deploy advanced detection algorithms to identify and block attempts to circumvent rate limits through use of multiple API keys, rotating IP addresses, or automated bot traffic, ensuring fair resource allocation across all tenants.",
+    "tags": [
+      "security",
+      "abuse-detection",
+      "monitoring",
+      "[INFERRED] analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 44",
+    "reasoning": {
+      "source_summary_fragment": "abuse detection",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "abuse-detection",
+          "confidence": 0.97
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.93
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "circumvention detection",
+        "bot protection",
+        "IP rotation detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Create temporary limit override mechanism with audit logs and auto-reversion",
+    "summary": "Build a controlled override system allowing temporary rate limit adjustments for specific tenants during incidents or special circumstances, with mandatory audit logging and automatic reversion to prevent permanent unauthorized changes.",
+    "tags": [
+      "incident-response",
+      "audit",
+      "override"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "temporary limit override mechanism with audit logs",
+      "tag_metadata_reference": [
+        {
+          "tag": "incident-response",
+          "confidence": 0.9
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.96
+        },
+        {
+          "tag": "override",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "temporary override",
+        "auto-reversion",
+        "audit trail"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Design graceful fallback to system-wide limits during gateway/backend failures",
+    "summary": "Architect resilient fallback mechanisms that automatically apply conservative system-wide rate limits when specific tenant limit lookups fail due to gateway or backend service outages, maintaining API availability while protecting infrastructure.",
+    "tags": [
+      "resilience",
+      "fallback",
+      "availability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "graceful fallback to system-wide limits during gateway/backend failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "resilience",
+          "confidence": 0.95
+        },
+        {
+          "tag": "fallback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "availability",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "graceful degradation",
+        "failure handling",
+        "system-wide defaults"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement tenant ID spoofing protection in rate limiting logic",
+    "summary": "Strengthen rate limiting security by implementing cryptographic validation and authentication checks to prevent malicious actors from spoofing tenant IDs to access higher rate limits or bypass restrictions entirely.",
+    "tags": [
+      "security",
+      "authentication",
+      "anti-spoofing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "tenant ID spoofing protection",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.95
+        },
+        {
+          "tag": "anti-spoofing",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "tenant validation",
+        "ID spoofing prevention",
+        "authentication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Require MFA approval for high-tier tenant rate limit configuration changes",
+    "summary": "Enforce multi-factor authentication requirements for any configuration changes affecting premium or high-tier tenant rate limits, adding an additional security layer to prevent unauthorized modifications to critical usage parameters.",
+    "tags": [
+      "security",
+      "mfa",
+      "audit",
+      "[INFERRED] access-control"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 54",
+    "reasoning": {
+      "source_summary_fragment": "MFA approval for high-tier tenant rate limit configuration",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "mfa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "access-control",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "MFA enforcement",
+        "configuration security",
+        "high-tier protection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "access-control",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Execute phased rollout starting with low-risk tenants",
+    "summary": "Implement a controlled deployment strategy beginning with low-risk tenant segments to validate rate limiting functionality and performance before expanding to critical or high-volume customers, minimizing potential business impact.",
+    "tags": [
+      "deployment",
+      "rollout",
+      "risk-management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 58",
+    "reasoning": {
+      "source_summary_fragment": "phased rollout starting with low-risk tenants",
+      "tag_metadata_reference": [
+        {
+          "tag": "deployment",
+          "confidence": 0.94
+        },
+        {
+          "tag": "rollout",
+          "confidence": 0.96
+        },
+        {
+          "tag": "risk-management",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "phased deployment",
+        "risk mitigation",
+        "gradual rollout"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Provide sandbox environments for client rate limit testing",
+    "summary": "Establish dedicated sandbox environments where B2B clients can safely test and validate their applications against various rate limit configurations without impacting production systems or consuming actual quota allocations.",
+    "tags": [
+      "testing",
+      "sandbox",
+      "client-support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 60",
+    "reasoning": {
+      "source_summary_fragment": "sandbox environments for client rate limit testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        },
+        {
+          "tag": "sandbox",
+          "confidence": 0.97
+        },
+        {
+          "tag": "client-support",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "test environment",
+        "client validation",
+        "sandbox isolation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Update developer documentation with rate limit policies and self-service tools",
+    "summary": "Create comprehensive developer documentation detailing rate limit policies, tier structures, and usage guidelines, while providing self-service tools for monitoring consumption and managing rate limit configurations independently.",
+    "tags": [
+      "documentation",
+      "self-service",
+      "communication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 62",
+    "reasoning": {
+      "source_summary_fragment": "developer documentation with rate limit policies and self-service tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.97
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.94
+        },
+        {
+          "tag": "communication",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "developer docs",
+        "self-service portal",
+        "policy documentation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Upgrade API gateway infrastructure ensuring <10ms latency impact",
+    "summary": "Execute critical infrastructure upgrades to API gateway systems to support rate limiting functionality while maintaining strict performance requirements of less than 10 milliseconds additional latency per request.",
+    "tags": [
+      "infrastructure",
+      "performance",
+      "upgrade"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 66-67",
+    "reasoning": {
+      "source_summary_fragment": "API gateway infrastructure ensuring <10ms latency impact",
+      "tag_metadata_reference": [
+        {
+          "tag": "infrastructure",
+          "confidence": 0.96
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "upgrade",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "gateway upgrade",
+        "latency constraints",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Retrofit or phase out legacy APIs for rate limit compatibility",
+    "summary": "Assess and modify legacy API endpoints to support new rate limiting mechanisms, or develop migration strategies to phase out incompatible services while ensuring minimal disruption to existing B2B client integrations.",
+    "tags": [
+      "legacy",
+      "migration",
+      "compatibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 66",
+    "reasoning": {
+      "source_summary_fragment": "Retrofit or phase out legacy APIs for rate limit compatibility",
+      "tag_metadata_reference": [
+        {
+          "tag": "legacy",
+          "confidence": 0.95
+        },
+        {
+          "tag": "migration",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compatibility",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "legacy system retrofit",
+        "API migration",
+        "backward compatibility"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "meta70b",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Allow users to opt out of feedback requests",
+  "summary": "Provide users with the option to opt out of feedback requests, ensuring transparency and user control.",
+  "tags_v1": [
+    "nps",
+    "user_experience",
+    "opt_out"
+  ],
+  "tags_v2": [
+    "nps",
+    "opt_out"
+  ],
+  "tags_v3": [
+    "nps",
+    "user_experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.751556396484375,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7444770336151123,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user_experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

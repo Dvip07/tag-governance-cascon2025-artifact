@@ -1,0 +1,109 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Flag and report exceptions in balance reconciliation",
+  "summary": "Implement detection and reporting mechanisms for exceptions encountered during balance reconciliation, so that any mismatches or processing anomalies are promptly flagged. These exception reports must be available for both real-time and batch reconciliation processes.",
+  "tags_v1": [
+    "exception",
+    "reporting"
+  ],
+  "tags_v2": [
+    "exception",
+    "reporting"
+  ],
+  "tags_v3": [
+    "security",
+    "exception",
+    "reporting",
+    "immutable logging",
+    "audit-trails"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7174508571624756,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "exception",
+      "aliases": [],
+      "cluster_id": "all_110",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7111725807189941,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exception",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7269644141197205,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "immutable logging",
+      "aliases": [],
+      "cluster_id": "all_418",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7355161905288696,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "immutable logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit-trails",
+      "aliases": [],
+      "cluster_id": "all_417",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7491145133972168,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit-trails",
+      "method": "dedup_canonical"
+    }
+  ]
+}

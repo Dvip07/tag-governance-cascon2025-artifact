@@ -1,0 +1,117 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-016",
+  "summary": "Implement role-based two-factor authentication (2FA) enforcement with app-specific overrides, allowing admins and finance users to always have 2FA on, while standard users can opt in. The system must dynamically update 2FA policies based on user role changes and provide exemptions for the mobile app. Users will be notified about 2FA enforcement at login and provided with setup instructions."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "Security",
+  "subdomain": ["Authentication", "Authorization"],
+  "canonical_tags": ["2fa", "rolebasedaccess"],
+  "difficulty": "medium",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 8,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-016-HLJ-Chunk_1",
+      "focus": "2FA Enforcement and App-Specific Overrides",
+      "items": [
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Enforce 2FA for Admin, Finance, and DevOps roles",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Authorization"],
+          "tags": ["2fa", "rolebasedaccess"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 10-12"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Make 2FA optional for User and Viewer roles",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Authorization"],
+          "tags": ["2fa", "rolebasedaccess"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Dynamically update 2FA policy based on user role changes",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Authorization"],
+          "tags": ["2fa", "rolebasedaccess"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Exempt mobile app from mandatory 2FA enforcement",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Authorization"],
+          "tags": ["2fa", "appspecificoverrides"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 17-18"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Notify users about 2FA enforcement at login",
+          "domain": "Security",
+          "subdomain": ["Authentication", "UserExperience"],
+          "tags": ["2fa", "usernotification"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 19-20"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Provide clear 2FA setup instructions",
+          "domain": "Security",
+          "subdomain": ["Authentication", "UserExperience"],
+          "tags": ["2fa", "userguidance"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21-22"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Track and log policy exceptions",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Logging"],
+          "tags": ["2fa", "exceptiontracking"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 23-24"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Expose report for security/admins listing non-compliant or exempted users",
+          "domain": "Security",
+          "subdomain": ["Authentication", "Reporting"],
+          "tags": ["2fa", "complianceReporting"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25-26"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

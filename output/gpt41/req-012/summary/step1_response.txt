@@ -1,0 +1,173 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-012",
+  "summary": "REQ-012 requires the design and implementation of a GST calculation and reporting module for B2B SaaS platforms expanding into Canadian provinces. The system must dynamically manage provincial tax rates (including dual-tax provinces), update with government changes, handle edge cases like tax exemptions, ambiguous addresses, and retroactive rate adjustments, and maintain audit logs. Accurate GST application is required for each invoice based on billing address, service location, and exemptions, with line-item breakdowns for federal and provincial portions. Reporting must support province-level GST summaries, both accrual and cash accounting, exportable audit-ready data, and reconciliation tools. All user and transaction data must comply with PIPEDA/GDPR, with strict role-based access for configuration/reporting features. Dependencies include integration with tax rate APIs and coordination with Finance, Legal, and Support teams. Deliverables: upgraded billing/invoice modules, tax rate management UI, reporting/export tools, documentation, and compliance logs."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["TaxCompliance", "Billing", "Reporting"],
+  "canonical_tags": ["gst", "canada", "b2b"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 13,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-012-HLJ-Chunk_1",
+      "focus": "GST rate management, invoice/billing logic, exemption handling",
+      "items": [
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement dynamic GST rate table with auto-updates for all supported provinces",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["gst", "rates"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9–12"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Develop dual-GST province logic for correct allocation and calculation",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["gst", "dual-tax"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13–14"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Apply province-correct GST rates during invoice generation based on billing address, service location, and exemptions",
+          "domain": "FinTech",
+          "subdomain": ["Billing"],
+          "tags": ["gst", "invoice"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16–18"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Display GST breakdown (federal/provincial) on all invoices",
+          "domain": "FinTech",
+          "subdomain": ["Billing"],
+          "tags": ["gst", "invoice"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Support multi-rate invoices for split shipments or services",
+          "domain": "FinTech",
+          "subdomain": ["Billing"],
+          "tags": ["gst", "multi-rate"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Enable customer-level tax exemption with validation and documentation capture",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["gst", "exemption"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24–25"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Handle retroactive GST rate changes and notify affected customers",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["gst", "retroactive"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 26–27"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Apply fallback GST rules for ambiguous or missing address data and flag for review",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["gst", "fallback"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 28–29"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Log all tax rate changes, overrides, and manual adjustments with user metadata",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance", "Audit"],
+          "tags": ["logging", "audit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 39–41"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Integrate with government tax rate APIs for automatic updates",
+          "domain": "FinTech",
+          "subdomain": ["TaxCompliance"],
+          "tags": ["integration", "api"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 53–54"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-012-HLJ-Chunk_2",
+      "focus": "Reporting, compliance, user experience, security/access, dependencies",
+      "items": [
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Generate GST summary reports per province supporting accrual and cash methods",
+          "domain": "FinTech",
+          "subdomain": ["Reporting"],
+          "tags": ["reporting", "gst"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32–33"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Provide audit-ready exports and reconciliation tools for finance and compliance",
+          "domain": "FinTech",
+          "subdomain": ["Reporting", "Audit"],
+          "tags": ["audit", "export"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34–36"
+        },
+        {
+          "id": "REQ-012-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Upgrade self-service portal for GST-compliant invoice and tax summary downloads",
+          "domain": "FinTech",
+          "subdomain": ["Billing", "UX"],
+          "tags": ["portal", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 43–44"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

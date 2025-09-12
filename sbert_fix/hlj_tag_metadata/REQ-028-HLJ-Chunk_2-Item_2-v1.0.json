@@ -1,0 +1,62 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Provide user opt-out from automated sentiment classification",
+  "summary": "Users must be able to opt out from automated sentiment analysis and classification when submitting helpdesk tickets. This supports privacy, consent, and regulatory requirements, ensuring users retain control over the use of AI-driven ticket handling on their cases.",
+  "tags_v1": [
+    "compliance",
+    "consent",
+    "[INFERRED] privacy"
+  ],
+  "tags_v2": [
+    "compliance",
+    "consent"
+  ],
+  "tags_v3": [
+    "compliance",
+    "consent"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7375619411468506,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "consent",
+      "aliases": [],
+      "cluster_id": "all_15",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.73105788230896,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consent",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,730 @@
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057532Z'
+  original_tags:
+  - api
+  - rate limiting
+  - tenant management
+  validated_tags:
+  - api
+  - tenant management
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - tenant management
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.421403Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:16.717316Z'
+  - original_tag: tenant management
+    canonical_tag: tenant management
+    matched_tag: tenant management
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7001892328262329
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.883867Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057538Z'
+  original_tags:
+  - api
+  - rate limiting
+  - burst limits
+  validated_tags:
+  - api
+  - rate limit
+  - burst limits
+  tags_added:
+  - rate limit
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - burst limits
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:17.008361Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.95
+    validation_status: semantic
+    similarity: 0.6944013237953186
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:17.391456Z'
+  - original_tag: burst limits
+    canonical_tag: burst limits
+    matched_tag: burst limits
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:17.434556Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057539Z'
+  original_tags:
+  - api
+  - rate limiting
+  - real-time updates
+  validated_tags:
+  - api
+  - real-time updates
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - real-time updates
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:17.654504Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:18.233590Z'
+  - original_tag: real-time updates
+    canonical_tag: real-time updates
+    matched_tag: real-time updates
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:18.240241Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057541Z'
+  original_tags:
+  - api
+  - rate limiting
+  - API gateway
+  validated_tags:
+  - api
+  - rate limit
+  - API gateway
+  tags_added:
+  - rate limit
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - API gateway
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:18.245478Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.96
+    validation_status: semantic
+    similarity: 0.7979047894477844
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-05-31T23:57:18.554171Z'
+  - original_tag: API gateway
+    canonical_tag: API gateway
+    matched_tag: API gateway
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:18.559080Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057543Z'
+  original_tags:
+  - api
+  - rate limiting
+  - instant feedback
+  validated_tags:
+  - api
+  - instant feedback
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - instant feedback
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:18.725936Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:18.956359Z'
+  - original_tag: instant feedback
+    canonical_tag: instant feedback
+    matched_tag: instant feedback
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:18.963415Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057545Z'
+  original_tags:
+  - api
+  - rate limiting
+  - logging
+  validated_tags:
+  - api
+  - logs
+  tags_added:
+  - logs
+  tags_dropped:
+  - rate limiting
+  - logging
+  tags_kept:
+  - api
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:19.094300Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:19.309032Z'
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:19.428079Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057546Z'
+  original_tags:
+  - api
+  - rate limiting
+  - dashboards
+  validated_tags:
+  - api
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  - dashboards
+  tags_kept:
+  - api
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:19.542790Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:19.732934Z'
+  - original_tag: dashboards
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:19.918247Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057548Z'
+  original_tags:
+  - api
+  - rate limiting
+  - usage metrics
+  validated_tags:
+  - api
+  - usage metrics
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - usage metrics
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:19.922685Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:20.150824Z'
+  - original_tag: usage metrics
+    canonical_tag: usage metrics
+    matched_tag: usage metrics
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7140799760818481
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:20.313586Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057550Z'
+  original_tags:
+  - api
+  - rate limiting
+  - reporting
+  validated_tags:
+  - api
+  - rate limit
+  - reporting
+  tags_added:
+  - rate limit
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - reporting
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:20.425130Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.9
+    validation_status: semantic
+    similarity: 0.7103780508041382
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:20.641102Z'
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:20.655594Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057551Z'
+  original_tags:
+  - api
+  - rate limiting
+  - security
+  validated_tags:
+  - api
+  - security
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - security
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:20.663621Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.96
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:20.895866Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:20.904818Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057553Z'
+  original_tags:
+  - api
+  - security
+  - rate limiting
+  validated_tags:
+  - api
+  - security
+  tags_added: []
+  tags_dropped:
+  - rate limiting
+  tags_kept:
+  - api
+  - security
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.020358Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.029112Z'
+  - original_tag: rate limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:21.213843Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057555Z'
+  original_tags:
+  - api
+  - security
+  - multi-factor approval
+  validated_tags:
+  - api
+  - security
+  - multi-factor approval
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - api
+  - security
+  - multi-factor approval
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.331737Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.340605Z'
+  - original_tag: multi-factor approval
+    canonical_tag: multi-factor approval
+    matched_tag: multi-factor approval
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.343899Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_3-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057556Z'
+  original_tags:
+  - api
+  - rollout
+  - tenant segment
+  validated_tags:
+  - api
+  - rollout
+  - tenant segment
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - api
+  - rollout
+  - tenant segment
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.457404Z'
+  - original_tag: rollout
+    canonical_tag: rollout
+    matched_tag: rollout
+    tag_origin_cluster_id: rollout
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.460350Z'
+  - original_tag: tenant segment
+    canonical_tag: tenant segment
+    matched_tag: tenant segment
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.462904Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_4-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057558Z'
+  original_tags:
+  - api
+  - testing
+  - sandbox environments
+  validated_tags:
+  - api
+  - testing
+  - sandbox environments
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - api
+  - testing
+  - sandbox environments
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.575108Z'
+  - original_tag: testing
+    canonical_tag: testing
+    matched_tag: testing
+    tag_origin_cluster_id: null
+    original_confidence: 0.82
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.586070Z'
+  - original_tag: sandbox environments
+    canonical_tag: sandbox environments
+    matched_tag: sandbox environments
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.589164Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_5-v1.0
+  requirement: req-006
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.057560Z'
+  original_tags:
+  - api
+  - documentation
+  - rate limit policies
+  validated_tags:
+  - api
+  - documentation
+  - rate limit policies
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - api
+  - documentation
+  - rate limit policies
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.700141Z'
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.8
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.703610Z'
+  - original_tag: rate limit policies
+    canonical_tag: rate limit policies
+    matched_tag: rate limit policies
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7705188989639282
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.835111Z'

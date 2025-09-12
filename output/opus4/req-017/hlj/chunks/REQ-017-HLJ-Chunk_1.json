@@ -1,0 +1,432 @@
+{
+  "CHUNK_ID": "REQ-017-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Calculate unused plan value for mid-cycle upgrades (Ln 13-14)",
+    "Apply unused value as credit toward new plan (Ln 13-14)",
+    "Implement immediate upgrade activation with original renewal date alignment (Ln 16)",
+    "Record upgrade events in customer billing history (Ln 20)",
+    "Generate invoices with refund/credit/charge/tax breakdown (Ln 22)",
+    "Handle monthly-to-annual and annual-to-monthly plan upgrades (Ln 26)",
+    "Flag same-cycle downgrades for manual review (Ln 28)",
+    "Support local taxes and VAT in all calculations (Ln 42)",
+    "Update payment processor integrations for prorated billing (Ln 40)",
+    "Email upgrade summary with calculations and new renewal date (Ln 32)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Calculate unused plan value for mid-cycle upgrades",
+        "summary": "System must calculate the remaining unused value of a customer's current subscription plan when they upgrade mid-cycle, accounting for days used versus days remaining in the billing period.",
+        "tags": [
+          "billing",
+          "calculations"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 13-14",
+        "reasoning": {
+          "source_summary_fragment": "calculate unused plan value as credits",
+          "tag_metadata_reference": [
+            {
+              "tag": "billing",
+              "confidence": 0.95
+            },
+            {
+              "tag": "calculations",
+              "confidence": 0.94
+            }
+          ],
+          "mapped_concepts": [
+            "proration",
+            "billing calculations",
+            "credit system"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Apply unused value as credit toward new plan",
+        "summary": "After calculating unused plan value, automatically apply this amount as a credit toward the customer's new subscription plan, reducing the immediate payment required for the upgrade.",
+        "tags": [
+          "billing",
+          "credits"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 13-14",
+        "reasoning": {
+          "source_summary_fragment": "unused plan value as credits",
+          "tag_metadata_reference": [
+            {
+              "tag": "billing",
+              "confidence": 0.94
+            },
+            {
+              "tag": "credits",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "credit application",
+            "billing adjustments"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Implement immediate upgrade activation with original renewal date alignment",
+        "summary": "Activate subscription upgrades immediately upon processing while maintaining the customer's original renewal date alignment, ensuring consistent billing cycles throughout the upgrade process.",
+        "tags": [
+          "subscriptions",
+          "upgrades"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "SubscriptionManagement"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 16",
+        "reasoning": {
+          "source_summary_fragment": "maintain original renewal dates",
+          "tag_metadata_reference": [
+            {
+              "tag": "subscriptions",
+              "confidence": 0.93
+            },
+            {
+              "tag": "upgrades",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "renewal date alignment",
+            "immediate activation"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Record upgrade events in customer billing history",
+        "summary": "Log all subscription upgrade events in the customer's billing history, including timestamps, plan changes, credit applications, and payment details for comprehensive audit trails and customer service reference.",
+        "tags": [
+          "billing",
+          "history"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 20",
+        "reasoning": {
+          "source_summary_fragment": "comprehensive billing history tracking",
+          "tag_metadata_reference": [
+            {
+              "tag": "billing",
+              "confidence": 0.94
+            },
+            {
+              "tag": "history",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "audit trail",
+            "billing events",
+            "history tracking"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Generate invoices with refund/credit/charge/tax breakdown",
+        "summary": "Create detailed invoices for upgrade transactions showing clear breakdowns of refund amounts, applied credits, new charges, and applicable taxes, ensuring transparent billing communication with customers.",
+        "tags": [
+          "billing",
+          "invoices"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 22",
+        "reasoning": {
+          "source_summary_fragment": "invoice generation with detailed breakdowns",
+          "tag_metadata_reference": [
+            {
+              "tag": "billing",
+              "confidence": 0.95
+            },
+            {
+              "tag": "invoices",
+              "confidence": 0.97
+            }
+          ],
+          "mapped_concepts": [
+            "invoice generation",
+            "detailed breakdowns",
+            "tax calculations"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Handle monthly-to-annual and annual-to-monthly plan upgrades",
+        "summary": "Support complex upgrade scenarios between monthly and annual billing cycles, properly calculating prorated amounts and ensuring smooth transitions between different payment frequencies.",
+        "tags": [
+          "subscriptions",
+          "edge-cases"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "SubscriptionManagement"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 26",
+        "reasoning": {
+          "source_summary_fragment": "monthly/annual plan transitions",
+          "tag_metadata_reference": [
+            {
+              "tag": "subscriptions",
+              "confidence": 0.94
+            },
+            {
+              "tag": "edge-cases",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "billing cycle transitions",
+            "complex proration"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Flag same-cycle downgrades for manual review",
+        "summary": "Implement fraud prevention by automatically flagging subscription downgrades that occur within the same billing cycle for manual review, preventing potential abuse of the upgrade/downgrade system.",
+        "tags": [
+          "subscriptions",
+          "fraud-prevention"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "SubscriptionManagement"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "medium",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 28",
+        "reasoning": {
+          "source_summary_fragment": "same-cycle downgrades",
+          "tag_metadata_reference": [
+            {
+              "tag": "subscriptions",
+              "confidence": 0.93
+            },
+            {
+              "tag": "fraud-prevention",
+              "confidence": 0.89
+            }
+          ],
+          "mapped_concepts": [
+            "fraud detection",
+            "manual review process"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Support local taxes and VAT in all calculations",
+        "summary": "Ensure all billing calculations properly incorporate local taxes and VAT requirements based on customer location, maintaining compliance with international tax regulations throughout the upgrade process.",
+        "tags": [
+          "billing",
+          "compliance"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 42",
+        "reasoning": {
+          "source_summary_fragment": "local tax/VAT compliance",
+          "tag_metadata_reference": [
+            {
+              "tag": "billing",
+              "confidence": 0.94
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "tax compliance",
+            "VAT calculations",
+            "international billing"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Update payment processor integrations for prorated billing",
+        "summary": "Modify existing payment processor integrations to support prorated billing amounts, ensuring proper handling of partial charges, credits, and refunds across all supported payment platforms.",
+        "tags": [
+          "payments",
+          "integrations"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "BillingManagement"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.93,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 40",
+        "reasoning": {
+          "source_summary_fragment": "payment processor integration updates",
+          "tag_metadata_reference": [
+            {
+              "tag": "payments",
+              "confidence": 0.95
+            },
+            {
+              "tag": "integrations",
+              "confidence": 0.94
+            }
+          ],
+          "mapped_concepts": [
+            "payment processing",
+            "API integrations",
+            "proration support"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-28",
+        "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Email upgrade summary with calculations and new renewal date",
+        "summary": "Send automated email notifications to customers after upgrades, including a clear summary of the transaction with proration calculations and the confirmed new renewal date.",
+        "tags": [
+          "notifications",
+          "email"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "NotificationSystem"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.7,
+        "priority": "medium",
+        "priority_confidence": 0.87,
+        "line_source": "Ln 32",
+        "reasoning": {
+          "source_summary_fragment": "customer/admin notifications",
+          "tag_metadata_reference": [
+            {
+              "tag": "notifications",
+              "confidence": 0.93
+            },
+            {
+              "tag": "email",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "email automation",
+            "customer communication"
+          ]
+        },
+        "low_confidence_reason": "Difficulty confidence clamped to minimum 0.70 - email notifications are typically straightforward implementations",
+        "inference_notes": null,
+        "source_hlj_id": "REQ-017"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

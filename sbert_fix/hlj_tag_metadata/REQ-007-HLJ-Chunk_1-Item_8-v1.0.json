@@ -1,0 +1,174 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Audit and record all screening attempts and resolution actions securely",
+  "summary": "Maintain tamper-evident and privacy-compliant records of all customer screening attempts and resulting actions. This ensures a complete and immutable audit trail to support both regulatory and internal security requirements.",
+  "tags_v1": [
+    "audit",
+    "security",
+    "[INFERRED] immutability"
+  ],
+  "tags_v2": [
+    "audit",
+    "security"
+  ],
+  "tags_v3": [
+    "compliance",
+    "audit",
+    "regulation",
+    "security",
+    "workflow",
+    "manual",
+    "privacy",
+    "immutability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7263169288635254,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.758019208908081,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7096852660179138,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulatory",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7514792680740356,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7160235643386841,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "manual",
+      "aliases": [],
+      "cluster_id": "all_282",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6932952404022217,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "manual",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7280147075653076,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "immutability",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7119443416595459,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "immutability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

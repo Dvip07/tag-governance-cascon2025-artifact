@@ -1,0 +1,55 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+  "model": "meta70b",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Implement fallback rules for ambiguous addresses",
+  "summary": "The system should implement fallback rules to handle ambiguous addresses, ensuring accurate tax calculations and compliance with tax regulations.",
+  "tags_v1": [
+    "gst",
+    "fallback"
+  ],
+  "tags_v2": [
+    "gst",
+    "fallback"
+  ],
+  "tags_v3": [
+    "gst",
+    "fallback"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7678719758987427,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "all_58",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7330261468887329,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    }
+  ]
+}

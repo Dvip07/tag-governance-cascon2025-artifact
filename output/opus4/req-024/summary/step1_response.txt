@@ -1,0 +1,289 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-024",
+  "summary": "Build a unified notification engine supporting email, SMS, push, and in-app channels with template management, delayed scheduling, and personalization. System must handle dynamic fields, multi-language variants, timezone-aware delays, and channel optimization based on user preferences. Features include A/B testing, real-time analytics dashboards, compliance tracking (CAN-SPAM, CASL, GDPR), and automated opt-out management. Critical requirements: 25% open rate, <1% failed delivery, 10% user activation increase. Must integrate with Twilio, SendGrid, FCM and handle edge cases like nighttime scheduling and duplicate prevention."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["NotificationSystem", "MarketingAutomation"],
+  "canonical_tags": ["messaging", "analytics", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 24,
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "REQ-024-HLJ-Chunk_1",
+      "focus": "Template Management and Multi-Channel Core",
+      "items": [
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design centralized notification template storage with dynamic field support",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "backend", "storage"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement multi-language variant support for notification templates",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "i18n", "backend"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build template preview system for all notification channels",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "ui", "testing"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create template testing framework with mock delivery",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "testing", "qa"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement delay scheduling with timezone-aware calculations",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "scheduling", "backend"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Build automatic channel selection based on user preferences",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "optimization", "backend"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create channel selection algorithm using delivery history data",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "analytics", "ml"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Integrate Twilio API for SMS notification delivery",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "integration", "api"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 56"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Integrate SendGrid API for email notification delivery",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "integration", "api"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 56"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Integrate Firebase Cloud Messaging for push notifications",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["messaging", "integration", "api"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 56"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-024-HLJ-Chunk_2",
+      "focus": "Personalization, Analytics, and Compliance",
+      "items": [
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Build personalization engine with user profile integration",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem", "MarketingAutomation"],
+          "tags": ["messaging", "personalization", "backend"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement A/B testing framework for message variants",
+          "domain": "SaaS",
+          "subdomain": ["MarketingAutomation"],
+          "tags": ["testing", "analytics", "optimization"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Create automated audience segmentation system",
+          "domain": "SaaS",
+          "subdomain": ["MarketingAutomation"],
+          "tags": ["segmentation", "automation", "ml"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Design real-time analytics dashboard for notification metrics",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["analytics", "ui", "monitoring"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Implement tracking for open, click, and conversion rates",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["analytics", "tracking", "metrics"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Build alert system for deliverability issues",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["monitoring", "alerts", "reliability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Create self-healing workflows with channel fallback logic",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["reliability", "automation", "failover"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Implement opt-out/unsubscribe mechanisms for all channels",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["compliance", "messaging", "ux"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Build compliance tracking for CAN-SPAM, CASL, GDPR regulations",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["compliance", "legal", "tracking"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Create audit logging system for opt-outs and message failures",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["compliance", "logging", "audit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 42"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-024-HLJ-Chunk_3",
+      "focus": "Edge Cases, Documentation, and Timezone Logic",
+      "items": [
+        {
+          "id": "REQ-024-HLJ-Chunk_3-Item_1-v1.0",
+          "title": "Implement nighttime detection and automatic rescheduling",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["scheduling", "ux", "timezone"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 46"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_3-Item_2-v1.0",
+          "title": "Build duplicate notification prevention system",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["deduplication", "reliability", "backend"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 48"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_3-Item_3-v1.0",
+          "title": "Create quickstart guides for marketing team",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["documentation", "training", "ux"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 52"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_3-Item_4-v1.0",
+          "title": "Write detailed integration documentation for engineers",
+          "domain": "SaaS",
+          "subdomain": ["NotificationSystem"],
+          "tags": ["documentation", "api", "integration"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 52"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

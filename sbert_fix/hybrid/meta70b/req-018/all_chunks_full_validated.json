@@ -1,0 +1,1449 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design Shared Inbox Interface",
+    "summary": "Create an intuitive and user-friendly shared inbox interface for teams to manage incoming emails efficiently.",
+    "tags": [
+      "shared inbox",
+      "ui",
+      "[INFERRED] collaboration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Team Collaboration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "Design Shared Inbox Interface",
+      "tag_metadata_reference": [
+        {
+          "tag": "shared inbox",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "shared inbox",
+        "team collaboration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "collaboration",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "shared inbox",
+      "ui",
+      "[INFERRED] collaboration"
+    ],
+    "tags_v2": [
+      "shared inbox"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "shared inbox",
+        "canonical_tag": "shared inbox",
+        "matched_tag": "shared inbox",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.462868Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.689751Z"
+      },
+      {
+        "original_tag": "[INFERRED] collaboration",
+        "canonical_tag": "[INFERRED] collaboration",
+        "matched_tag": "[INFERRED] collaboration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.869473Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "inbox",
+      "ui",
+      "email",
+      "shared inbox",
+      "design",
+      "collaboration"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "inbox",
+        "original_tag": "inbox",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8093608617782593,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7414509057998657,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7953566908836365,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "shared inbox",
+        "original_tag": "shared inbox",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.863128662109375,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7160545587539673,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "collaboration",
+        "original_tag": "collaboration",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.773457407951355,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Tag-Based Routing",
+    "summary": "Develop a tag-based routing system to efficiently categorize and prioritize incoming emails.",
+    "tags": [
+      "tagging",
+      "routing",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Email Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "Implement Tag-Based Routing",
+      "tag_metadata_reference": [
+        {
+          "tag": "tagging",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "tag-based routing",
+        "email management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "tagging",
+      "routing",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "tagging",
+      "routing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "tagging",
+        "canonical_tag": "tagging",
+        "matched_tag": "tagging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.936075Z"
+      },
+      {
+        "original_tag": "routing",
+        "canonical_tag": "routing",
+        "matched_tag": "routing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.939050Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.080103Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "tagging",
+      "email",
+      "data",
+      "model",
+      "routing",
+      "automation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "tagging",
+        "original_tag": "tagging",
+        "score": 6,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7334626913070679,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7926632761955261,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "data",
+        "original_tag": "data",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7290210723876953,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "model",
+        "original_tag": "model",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7256483435630798,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "routing",
+        "original_tag": "routing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7811141014099121,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7794114947319031,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop Automatic Assignment Rules",
+    "summary": "Create automatic assignment rules to streamline the email assignment process for teams.",
+    "tags": [
+      "assignment rules",
+      "automation",
+      "[INFERRED] workflow"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Team Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 19-22",
+    "reasoning": {
+      "source_summary_fragment": "Develop Automatic Assignment Rules",
+      "tag_metadata_reference": [
+        {
+          "tag": "assignment rules",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "automatic assignment",
+        "team collaboration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "workflow",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "assignment rules",
+      "automation",
+      "[INFERRED] workflow"
+    ],
+    "tags_v2": [
+      "assignment rules"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "assignment rules",
+        "canonical_tag": "assignment rules",
+        "matched_tag": "assignment rules",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.146149Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.309122Z"
+      },
+      {
+        "original_tag": "[INFERRED] workflow",
+        "canonical_tag": "[INFERRED] workflow",
+        "matched_tag": "[INFERRED] workflow",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.436074Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "assignment",
+      "tagging",
+      "assignment rules",
+      "setup",
+      "automation",
+      "workflow"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "assignment",
+        "original_tag": "assignment",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7587903738021851,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "tagging",
+        "original_tag": "tagging",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7143586874008179,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "assignment rules",
+        "original_tag": "assignment rules",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7691097259521484,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "setup",
+        "original_tag": "setup",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7216921448707581,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7837055325508118,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7689403295516968,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement Collision Handling",
+    "summary": "Develop a collision handling system to prevent email assignment conflicts and ensure seamless teamwork.",
+    "tags": [
+      "collision handling",
+      "lock",
+      "[INFERRED] concurrency"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Email Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 24-26",
+    "reasoning": {
+      "source_summary_fragment": "Implement Collision Handling",
+      "tag_metadata_reference": [
+        {
+          "tag": "collision handling",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "collision handling",
+        "email management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "concurrency",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "collision handling",
+      "lock",
+      "[INFERRED] concurrency"
+    ],
+    "tags_v2": [
+      "collision handling",
+      "lock"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "collision handling",
+        "canonical_tag": "collision handling",
+        "matched_tag": "collision handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.500515Z"
+      },
+      {
+        "original_tag": "lock",
+        "canonical_tag": "lock",
+        "matched_tag": "lock",
+        "tag_origin_cluster_id": "lock",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.558869Z"
+      },
+      {
+        "original_tag": "[INFERRED] concurrency",
+        "canonical_tag": "[INFERRED] concurrency",
+        "matched_tag": "[INFERRED] concurrency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.699881Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "assignment",
+      "rules",
+      "routing",
+      "manually",
+      "collision",
+      "lock",
+      "automation",
+      "concurrency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "assignment",
+        "original_tag": "assignment",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7533926963806152,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "rules",
+        "original_tag": "rules",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7316519021987915,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "routing",
+        "original_tag": "routing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7316015958786011,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "manually",
+        "original_tag": "manually",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7314951419830322,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "collision",
+        "original_tag": "collision handling",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7821872234344482,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "lock",
+        "original_tag": "lock",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7404149174690247,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7686042785644531,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "concurrency",
+        "original_tag": "concurrency",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7722293138504028,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Design Search and Reporting Features",
+    "summary": "Create search and reporting features to enable teams to efficiently locate and analyze emails.",
+    "tags": [
+      "search",
+      "reporting",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Team Collaboration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 28-31",
+    "reasoning": {
+      "source_summary_fragment": "Design Search and Reporting Features",
+      "tag_metadata_reference": [
+        {
+          "tag": "search",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "search and reporting",
+        "team collaboration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "search",
+      "reporting",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "search",
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "search",
+        "canonical_tag": "search",
+        "matched_tag": "search",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.704086Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.707046Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.831874Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "search",
+      "lock",
+      "routing",
+      "rules",
+      "reporting",
+      "concurrency",
+      "analytics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "search",
+        "original_tag": "search",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7519028186798096,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "lock",
+        "original_tag": "locking",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7383221387863159,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "routing",
+        "original_tag": "routing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7341251969337463,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "rules",
+        "original_tag": "rules",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7307528257369995,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.777478814125061,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "concurrency",
+        "original_tag": "concurrency",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7575976848602295,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.745815634727478,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Handle Edge Cases for Assignment and Tagging",
+    "summary": "Develop a system to handle edge cases for assignment and tagging to ensure data consistency and accuracy.",
+    "tags": [
+      "edge cases",
+      "assignment",
+      "[INFERRED] data integrity"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Email Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 33-36",
+    "reasoning": {
+      "source_summary_fragment": "Handle Edge Cases for Assignment and Tagging",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge cases",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "edge cases",
+        "email management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data integrity",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "edge cases",
+      "assignment",
+      "[INFERRED] data integrity"
+    ],
+    "tags_v2": [
+      "assignment"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edge cases",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:10.973684Z"
+      },
+      {
+        "original_tag": "assignment",
+        "canonical_tag": "assignment",
+        "matched_tag": "assignment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:10.977418Z"
+      },
+      {
+        "original_tag": "[INFERRED] data integrity",
+        "canonical_tag": "[INFERRED] data integrity",
+        "matched_tag": "[INFERRED] data integrity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.114643Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "assignment",
+      "email",
+      "notification",
+      "manual",
+      "workflow",
+      "edge_cases"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "assignment",
+        "original_tag": "assignment",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7790693044662476,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8065738677978516,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7810322046279907,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "manual",
+        "original_tag": "manual",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7522464990615845,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7922236323356628,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "edge_cases",
+        "original_tag": "edge cases",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7993039488792419,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Integrate with Existing Email Systems",
+    "summary": "Develop an integration with existing email systems to ensure seamless email management.",
+    "tags": [
+      "integration",
+      "email",
+      "[INFERRED] compatibility"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Email Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 38-40",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with Existing Email Systems",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "integration",
+        "email management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compatibility",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "integration",
+      "email",
+      "[INFERRED] compatibility"
+    ],
+    "tags_v2": [
+      "integration",
+      "email"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.122869Z"
+      },
+      {
+        "original_tag": "email",
+        "canonical_tag": "email",
+        "matched_tag": "email",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.125767Z"
+      },
+      {
+        "original_tag": "[INFERRED] compatibility",
+        "canonical_tag": "[INFERRED] compatibility",
+        "matched_tag": "[INFERRED] compatibility",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.240742Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "search",
+      "status",
+      "assignment",
+      "integration",
+      "email",
+      "workflow"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "search",
+        "original_tag": "search",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7276830077171326,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "status",
+        "original_tag": "status",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.731397807598114,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "assignment",
+        "original_tag": "assignment",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7395181059837341,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7354328632354736,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7895186543464661,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.771992564201355,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Document Tagging and Assignment Logic",
+    "summary": "Create documentation for tagging and assignment logic to ensure transparency and maintainability.",
+    "tags": [
+      "documentation",
+      "onboarding",
+      "[INFERRED] knowledge base"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Team Collaboration"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.84,
+    "priority": "low",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 42-44",
+    "reasoning": {
+      "source_summary_fragment": "Document Tagging and Assignment Logic",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "documentation",
+        "team collaboration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "knowledge base",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-018",
+    "tags_v1": [
+      "documentation",
+      "onboarding",
+      "[INFERRED] knowledge base"
+    ],
+    "tags_v2": [
+      "documentation",
+      "onboarding"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.248231Z"
+      },
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.307063Z"
+      },
+      {
+        "original_tag": "[INFERRED] knowledge base",
+        "canonical_tag": "[INFERRED] knowledge base",
+        "matched_tag": "[INFERRED] knowledge base",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:11.430684Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reporting",
+      "lock",
+      "documentation",
+      "onboarding",
+      "concurrency",
+      "analytics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7818121314048767,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "lock",
+        "original_tag": "locking",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7700580954551697,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7932735085487366,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7501720786094666,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "concurrency",
+        "original_tag": "concurrency",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7831541895866394,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7569484710693359,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-018"
+      }
+    ]
+  }
+]

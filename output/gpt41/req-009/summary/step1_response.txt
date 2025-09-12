@@ -1,0 +1,243 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-009",
+  "summary": "Implement a scheduled cross-border payments feature enabling users to lock foreign exchange (FX) rates for a defined window (e.g., 24 hours), ensuring price certainty for future transactions. Enhance the payments UI to allow scheduling, FX rate previews, locking actions, expiry visuals, and countdowns. Integrate with external FX rate providers for real-time quotes and locking commitments; record all rate locks with audit metadata. Payment logic must handle rate expiry, user funding failures, and enable pre-execution cancellations with appropriate refund, notification, and compliance controls. Build mechanisms to prevent abuse of rate locks (e.g., speculative cancelling), support regulatory documentation for large-value transfers, and maintain complete audit logs. Notify users at all key stages (confirmation, reminders, expiry) via multiple channels, and provide dashboards for finance/compliance monitoring. Support edge cases such as FX provider outages and insufficient user balances. Dependencies include FX provider contracts, stable APIs, and ensuring payment processing SLAs/regulatory timelines remain unaffected. The feature will launch as a limited beta before general release, with user and support documentation and a structured feedback process."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["CrossBorderPayments", "ForeignExchange", "UserScheduling"],
+  "canonical_tags": ["fx", "scheduled payments", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_1",
+      "focus": "Core scheduling, UI, FX lock mechanics, and user workflows",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design scheduling UI to support cross-border payment setup and FX rate previews",
+          "domain": "FinTech",
+          "subdomain": ["CrossBorderPayments", "UserInterface"],
+          "tags": ["scheduled payments", "ui"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 7–11"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement FX rate lock option with selectable expiry window (e.g., 24h) after scheduling",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "UserScheduling"],
+          "tags": ["fx", "locking"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 10–14"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Display FX lock expiry details and countdown timers in the user interface",
+          "domain": "FinTech",
+          "subdomain": ["UserInterface"],
+          "tags": ["fx", "ui"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 12–13"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Integrate with FX rate providers for real-time rate fetch and lock confirmation",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "Integrations"],
+          "tags": ["fx", "api"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 15–16"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Revert to live FX rate and notify users if lock expires without funding",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "Notifications"],
+          "tags": ["fx", "notifications"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17–18"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Record all locked FX rates, metadata, and expiry data for audit and reconciliation",
+          "domain": "FinTech",
+          "subdomain": ["Audit", "ForeignExchange"],
+          "tags": ["audit", "fx"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Validate locked rate at execution; require user confirmation if rate expired",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "UserScheduling"],
+          "tags": ["fx", "validation"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 22–24"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Support partial/full cancellation of scheduled payments with refunds and notifications",
+          "domain": "FinTech",
+          "subdomain": ["CrossBorderPayments", "Notifications"],
+          "tags": ["scheduled payments", "refund"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Implement controls against abuse of FX rate locks (e.g., repeated locking/cancelling)",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "Risk"],
+          "tags": ["fx", "abuse prevention"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 28–29"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Support regulatory documentation for large-value cross-border payments",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "CrossBorderPayments"],
+          "tags": ["compliance", "documentation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29–30"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_2",
+      "focus": "Audit, notifications, dashboards, error handling, dependencies, roll-out, and support",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Maintain audit logs for all scheduling, FX locking, and execution events",
+          "domain": "FinTech",
+          "subdomain": ["Audit", "Compliance"],
+          "tags": ["audit", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 31"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Send confirmations, reminders, and expiry alerts via email, SMS, and in-app notifications",
+          "domain": "FinTech",
+          "subdomain": ["Notifications", "UserInterface"],
+          "tags": ["notifications", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 33–34"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Develop dashboards for finance/compliance teams to monitor payments, locks, and exceptions",
+          "domain": "FinTech",
+          "subdomain": ["Reporting", "Compliance"],
+          "tags": ["dashboard", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 35–36"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Restrict new payment scheduling during FX provider outages and notify users of service limitations",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "Notifications"],
+          "tags": ["fx", "availability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 38–39"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Handle insufficient balance at execution: auto-cancel or retry scheduled payment",
+          "domain": "FinTech",
+          "subdomain": ["CrossBorderPayments", "ErrorHandling"],
+          "tags": ["scheduled payments", "error handling"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 40–41"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Integrate with FX provider APIs and validate contractual dependencies",
+          "domain": "FinTech",
+          "subdomain": ["ForeignExchange", "Integrations"],
+          "tags": ["fx", "api"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 43–44"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Ensure no degradation to payment SLAs or regulatory deadlines with new features",
+          "domain": "FinTech",
+          "subdomain": ["PaymentProcessing", "Compliance"],
+          "tags": ["sla", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 45–46"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Prepare and execute limited beta rollout with feedback collection processes",
+          "domain": "FinTech",
+          "subdomain": ["Rollout", "UserFeedback"],
+          "tags": ["beta", "usability"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 48–49"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Develop user and support documentation for new scheduled FX payment features",
+          "domain": "FinTech",
+          "subdomain": ["Documentation"],
+          "tags": ["documentation", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 47–48"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Deliver updated modules: UI, FX integration, audit/reporting tools per scope",
+          "domain": "FinTech",
+          "subdomain": ["UserInterface", "ForeignExchange", "Audit"],
+          "tags": ["delivery", "modularity"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 50–55"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

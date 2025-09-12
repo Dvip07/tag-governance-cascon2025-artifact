@@ -1,0 +1,107 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Implement configurable detection rules for micro-transaction patterns",
+  "summary": "Develop a flexible detection framework that allows for the configuration of rules specifically targeting micro-transaction behaviors. This system should empower fraud analysts to define and adjust detection logic to capture evolving fraud patterns involving transactions under $1.",
+  "tags_v1": [
+    "fraud",
+    "micro-transaction",
+    "[INFERRED] configurability"
+  ],
+  "tags_v2": [
+    "fraud",
+    "micro-transaction"
+  ],
+  "tags_v3": [
+    "fraud",
+    "detection",
+    "rules",
+    "micro-transaction",
+    "microtransactions"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7580641508102417,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7503817081451416,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.709632158279419,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "micro-transaction",
+      "aliases": [],
+      "cluster_id": "all_176",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7780641317367554,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "micro-transaction",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "microtransactions",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7706784009933472,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "microtransactions",
+      "method": "dedup_canonical"
+    }
+  ]
+}

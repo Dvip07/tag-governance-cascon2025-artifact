@@ -1,0 +1,1616 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Build API integrations with major gig economy platforms",
+    "summary": "Design and integrate APIs with prominent gig economy platforms to aggregate income data, streamlining loan applications for gig workers.",
+    "tags": [
+      "api integration",
+      "gig workers",
+      "[INFERRED] platform connectivity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "integrating with major platforms",
+      "tag_metadata_reference": [
+        {
+          "tag": "api integration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "API",
+        "gig economy"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "platform connectivity",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "api integration",
+      "gig workers",
+      "[INFERRED] platform connectivity"
+    ],
+    "tags_v2": [
+      "gig workers"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api integration",
+        "canonical_tag": "api integration",
+        "matched_tag": "api integration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.220022Z"
+      },
+      {
+        "original_tag": "gig workers",
+        "canonical_tag": "gig workers",
+        "matched_tag": "gig workers",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.229070Z"
+      },
+      {
+        "original_tag": "[INFERRED] platform connectivity",
+        "canonical_tag": "[INFERRED] platform connectivity",
+        "matched_tag": "[INFERRED] platform connectivity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.635421Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "integration",
+      "api",
+      "uber",
+      "gig workers",
+      "gig-economy",
+      "api integration",
+      "data-verification"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6989543437957764,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7247018218040466,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "uber",
+        "original_tag": "uber",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6980950832366943,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "gig workers",
+        "original_tag": "gig workers",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7784426808357239,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "gig-economy",
+        "original_tag": "gig-economy",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7427642345428467,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "api integration",
+        "original_tag": "api integration",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7728397846221924,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "data-verification",
+        "original_tag": "data-verification",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7358371019363403,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Define dynamic eligibility rules for gig income",
+    "summary": "Develop and implement rules to assess gig income eligibility, considering variability in earnings and employment statuses.",
+    "tags": [
+      "eligibility rules",
+      "gig income",
+      "[INFERRED] income verification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "dynamic eligibility rules",
+      "tag_metadata_reference": [
+        {
+          "tag": "eligibility rules",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "eligibility",
+        "gig income"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "income verification",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "eligibility rules",
+      "gig income",
+      "[INFERRED] income verification"
+    ],
+    "tags_v2": [
+      "eligibility",
+      "gig income"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "eligibility rules",
+        "canonical_tag": "eligibility",
+        "matched_tag": "eligibility",
+        "tag_origin_cluster_id": "eligibility",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:11.638961Z"
+      },
+      {
+        "original_tag": "gig income",
+        "canonical_tag": "gig income",
+        "matched_tag": "gig income",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.641730Z"
+      },
+      {
+        "original_tag": "[INFERRED] income verification",
+        "canonical_tag": "[INFERRED] income verification",
+        "matched_tag": "[INFERRED] income verification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.873158Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "doordash",
+      "integration",
+      "aggregation",
+      "normalization",
+      "gig income",
+      "eligibility",
+      "income verification"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7141299843788147,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "doordash",
+        "original_tag": "doordash",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6983429789543152,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6942788362503052,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "aggregation",
+        "original_tag": "aggregation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7059330940246582,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "normalization",
+        "original_tag": "data-normalization",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6835626363754272,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "gig income",
+        "original_tag": "gig income",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7764682769775391,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "eligibility",
+        "original_tag": "eligibility rules",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7459579706192017,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "income verification",
+        "original_tag": "income verification",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7875407338142395,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement KYC and AML screening for applicants",
+    "summary": "Integrate Know Your Customer (KYC) and Anti-Money Laundering (AML) checks into the loan application process to ensure compliance and security.",
+    "tags": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "KYC and AML screening",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.91
+        },
+        {
+          "tag": "aml",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "KYC",
+        "AML",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "tags_v2": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.877964Z"
+      },
+      {
+        "original_tag": "aml",
+        "canonical_tag": "aml",
+        "matched_tag": "aml",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.881521Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.891268Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "upwork",
+      "integration",
+      "eligibility",
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6998838186264038,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "upwork",
+        "original_tag": "upwork",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7320647835731506,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6892776489257812,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "eligibility",
+        "original_tag": "eligibility",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720060408115387,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "risk",
+        "original_tag": "risk",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6779534816741943,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7350494861602783,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6848704218864441,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6954388618469238,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "rules-engine",
+        "original_tag": "rules-engine",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6774545907974243,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Guide users through data connection process",
+    "summary": "Design an intuitive process for users to connect their data sources, ensuring a seamless experience and reducing friction in the loan application process.",
+    "tags": [
+      "user experience",
+      "data connection"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40-43",
+    "reasoning": {
+      "source_summary_fragment": "guide users through data connection",
+      "tag_metadata_reference": [
+        {
+          "tag": "user experience",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "data connection"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "user experience",
+      "data connection"
+    ],
+    "tags_v2": [
+      "user experience",
+      "data connection"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user experience",
+        "canonical_tag": "user experience",
+        "matched_tag": "user experience",
+        "tag_origin_cluster_id": "user experience",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.985636Z"
+      },
+      {
+        "original_tag": "data connection",
+        "canonical_tag": "data connection",
+        "matched_tag": "data connection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:11.997419Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "fiverr",
+      "integration",
+      "admin",
+      "user_experience",
+      "data connection",
+      "rule-management"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7240965366363525,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "fiverr",
+        "original_tag": "fiverr",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7167676687240601,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7076990604400635,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "admin",
+        "original_tag": "admin",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6935896873474121,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user experience",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7242742776870728,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "data connection",
+        "original_tag": "data connection",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7176232933998108,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "rule-management",
+        "original_tag": "rule-management",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6905429363250732,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Display summary of imported earnings and allow user disputes",
+    "summary": "Provide a clear summary of imported earnings data and implement a process for users to dispute any inaccuracies, ensuring transparency and user trust.",
+    "tags": [
+      "user experience",
+      "earnings summary",
+      "[INFERRED] data accuracy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "display summary of imported earnings",
+      "tag_metadata_reference": [
+        {
+          "tag": "user experience",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "earnings summary"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "data accuracy",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "user experience",
+      "earnings summary",
+      "[INFERRED] data accuracy"
+    ],
+    "tags_v2": [
+      "user experience",
+      "earnings summary"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user experience",
+        "canonical_tag": "user experience",
+        "matched_tag": "user experience",
+        "tag_origin_cluster_id": "user experience",
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.091467Z"
+      },
+      {
+        "original_tag": "earnings summary",
+        "canonical_tag": "earnings summary",
+        "matched_tag": "earnings summary",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7248021960258484,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.331580Z"
+      },
+      {
+        "original_tag": "[INFERRED] data accuracy",
+        "canonical_tag": "[INFERRED] data accuracy",
+        "matched_tag": "[INFERRED] data accuracy",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.505743Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "income",
+      "aggregation",
+      "data",
+      "eligibility",
+      "earnings",
+      "user_experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "income",
+        "original_tag": "income",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7273410558700562,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "aggregation",
+        "original_tag": "aggregation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7110546827316284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "data",
+        "original_tag": "data",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6955936551094055,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "eligibility",
+        "original_tag": "eligibility",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7318063974380493,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "earnings",
+        "original_tag": "earnings summary",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7312552332878113,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user experience",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709774374961853,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Comply with local lending regulations and privacy laws",
+    "summary": "Ensure compliance with local lending regulations and privacy laws to avoid legal issues and maintain customer trust.",
+    "tags": [
+      "compliance",
+      "regulations",
+      "[INFERRED] legal"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 60-63",
+    "reasoning": {
+      "source_summary_fragment": "Comply with local lending regulations and privacy laws",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "legal",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "compliance",
+      "regulations",
+      "[INFERRED] legal"
+    ],
+    "tags_v2": [
+      "compliance",
+      "regulations"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.514906Z"
+      },
+      {
+        "original_tag": "regulations",
+        "canonical_tag": "regulations",
+        "matched_tag": "regulations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.517915Z"
+      },
+      {
+        "original_tag": "[INFERRED] legal",
+        "canonical_tag": "[INFERRED] legal",
+        "matched_tag": "[INFERRED] legal",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.803900Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "kyc",
+      "regulations",
+      "legal"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7256910800933838,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7260259389877319,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6779194474220276,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "regulations",
+        "original_tag": "regulations",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7153192758560181,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "legal",
+        "original_tag": "legal",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7141038179397583,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Secure all data transmissions and storage",
+    "summary": "Secure all data transmissions and storage to protect sensitive customer information and prevent data breaches.",
+    "tags": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 70-73",
+    "reasoning": {
+      "source_summary_fragment": "Secure all data transmissions and storage",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "data encryption"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "encryption",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "tags_v2": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:12.899435Z"
+      },
+      {
+        "original_tag": "data protection",
+        "canonical_tag": "data protection",
+        "matched_tag": "data protection",
+        "tag_origin_cluster_id": "data protection",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7163516283035278,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.076714Z"
+      },
+      {
+        "original_tag": "[INFERRED] encryption",
+        "canonical_tag": "[INFERRED] encryption",
+        "matched_tag": "[INFERRED] encryption",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.6853694915771484,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.212946Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "verification",
+      "security",
+      "identity",
+      "compliance",
+      "encryption"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "verification",
+        "original_tag": "verification",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7335415482521057,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7444697618484497,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "identity",
+        "original_tag": "identity",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6944026350975037,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7183369398117065,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7131574749946594,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Provide dashboards for operations and compliance teams",
+    "summary": "Provide dashboards for operations and compliance teams to monitor and analyze loan origination data and ensure regulatory compliance.",
+    "tags": [
+      "monitoring",
+      "compliance",
+      "[INFERRED] reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 80-83",
+    "reasoning": {
+      "source_summary_fragment": "Provide dashboards for operations and compliance teams",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "compliance monitoring"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "reporting",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "monitoring",
+      "compliance",
+      "[INFERRED] reporting"
+    ],
+    "tags_v2": [
+      "monitoring",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.225458Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.228093Z"
+      },
+      {
+        "original_tag": "[INFERRED] reporting",
+        "canonical_tag": "[INFERRED] reporting",
+        "matched_tag": "[INFERRED] reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.449363Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fraud",
+      "security",
+      "income",
+      "monitoring",
+      "compliance",
+      "reporting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fraud",
+        "original_tag": "fraud",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7116081714630127,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7125925421714783,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "income",
+        "original_tag": "income",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7157392501831055,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7171923518180847,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7146497964859009,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "ml",
+        "original_tag": "ml",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6642110347747803,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6971895694732666,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Log all API calls, eligibility checks, and manual interventions",
+    "summary": "Log all API calls, eligibility checks, and manual interventions to ensure auditability and compliance with regulatory requirements.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] tracking"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 90-93",
+    "reasoning": {
+      "source_summary_fragment": "Log all API calls, eligibility checks, and manual interventions",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "tracking",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "logging",
+      "audit",
+      "[INFERRED] tracking"
+    ],
+    "tags_v2": [
+      "logs",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.89,
+        "validation_status": "semantic",
+        "similarity": 0.6886088252067566,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:13.704760Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.719827Z"
+      },
+      {
+        "original_tag": "[INFERRED] tracking",
+        "canonical_tag": "[INFERRED] tracking",
+        "matched_tag": "[INFERRED] tracking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:13.896750Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "logging"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7428786754608154,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-008"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7025116682052612,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-008"
+      }
+    ]
+  }
+]

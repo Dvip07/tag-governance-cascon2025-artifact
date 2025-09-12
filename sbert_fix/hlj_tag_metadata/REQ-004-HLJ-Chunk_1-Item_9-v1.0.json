@@ -1,0 +1,135 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Restrict access with role-based controls when legal retention precludes deletion",
+  "summary": "Develop and enforce role-based access controls for log entries that must be retained by law, preventing unauthorized access to data that cannot be deleted but must remain protected for compliance reasons.",
+  "tags_v1": [
+    "retention",
+    "access-control"
+  ],
+  "tags_v2": [
+    "retention"
+  ],
+  "tags_v3": [
+    "gdpr",
+    "retention",
+    "compliance",
+    "security",
+    "access-control"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7071610689163208,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retention",
+      "aliases": [],
+      "cluster_id": "all_124",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6849625110626221,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retention",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7230740785598755,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731427788734436,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6734402775764465,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "apis",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access-control",
+      "aliases": [
+        "access control"
+      ],
+      "cluster_id": "all_174",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7347435355186462,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access-control",
+      "method": "dedup_canonical"
+    }
+  ]
+}

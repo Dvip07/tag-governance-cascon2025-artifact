@@ -1,0 +1,113 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Provide adjustable decay function selection (exponential, linear) in settings",
+  "summary": "Allow users to choose and configure decay weighting functions, such as exponential or linear, directly within application settings to tailor retention metrics to their analysis preferences.",
+  "tags_v1": [
+    "settings",
+    "usability",
+    "[INFERRED] configurability"
+  ],
+  "tags_v2": [
+    "settings"
+  ],
+  "tags_v3": [
+    "cohorts",
+    "settings",
+    "data_visualization",
+    "update",
+    "cohort_analysis"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "cohorts",
+      "aliases": [
+        "cohort_definition"
+      ],
+      "cluster_id": "all_211",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7378418445587158,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohorts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "settings",
+      "aliases": [],
+      "cluster_id": "all_214",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.714824914932251,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "settings",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data_visualization",
+      "aliases": [],
+      "cluster_id": "all_442",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7292542457580566,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data_visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "update",
+      "aliases": [
+        "updates"
+      ],
+      "cluster_id": "all_238",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7048047780990601,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "updates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "cohort_analysis",
+      "aliases": [
+        "cohort_membership"
+      ],
+      "cluster_id": "all_443",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.773615837097168,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohort_analysis",
+      "method": "dedup_canonical"
+    }
+  ]
+}

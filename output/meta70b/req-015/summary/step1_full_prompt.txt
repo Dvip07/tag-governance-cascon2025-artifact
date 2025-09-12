@@ -1,0 +1,173 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-015-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-015",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-015-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-015-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-015 (FinTech)
+
+Title:
+Implement Webhook-Based Claim Status Notifications for Insurance API With Support for Custom Data Fields
+
+Background & Objective:
+Our insurance API partners and enterprise customers increasingly require real-time status updates on claim submissions, approvals, and payouts. To meet this need, we will implement webhook triggers for key claim status changes, supporting delivery of both standard and custom fields as required by each client. This enhances transparency, integration capability, and client satisfaction.
+
+Scope of Requirement:
+
+Webhook Event Framework:
+
+Design a webhook system to notify external systems of claim status changes (submitted, in review, approved, rejected, paid).
+
+Allow clients to register endpoints, specify desired events, and provide custom field mappings as part of their integration profile.
+
+Custom Field Support:
+
+Enable clients to specify additional data fields (e.g., claim type, incident date, reference IDs) to be included in the webhook payload.
+
+Validate that custom fields do not conflict with reserved or standard schema fields; enforce naming and type constraints.
+
+Reliability & Delivery Guarantees:
+
+Implement retry logic for failed webhook deliveries, with exponential backoff and notification of persistent failures.
+
+Provide delivery status and logs to clients via API or dashboard.
+
+Security & Compliance:
+
+Require endpoint verification (shared secret or signed payloads) before sending notifications.
+
+Allow clients to manage, pause, or revoke webhook registrations via self-service portal.
+
+Log all webhook events, payloads, and delivery outcomes for compliance and troubleshooting.
+
+Edge Case Handling:
+
+If a custom field conflicts with webhook schema, reject registration with detailed validation errors.
+
+For clients with high-frequency updates, implement rate limits and notify on threshold breaches.
+
+Documentation & Support:
+
+Provide sample payloads, setup guides, and troubleshooting documentation.
+
+Train support teams on common webhook integration issues.
+
+Dependencies & Constraints:
+
+Requires upgrades to insurance claims processing system and API.
+
+Webhook system must scale to support enterprise clients with high event volumes.
+
+Deliverables:
+
+Webhook management UI and backend logic
+
+Documentation and sample integrations
+
+Compliance and monitoring scripts
+
+Client and support training guides
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

@@ -1,0 +1,319 @@
+{
+  "estimated_hlj_count": 13,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-015-HLJ-Chunk_1",
+      "focus": "Webhook core infrastructure, client registration, custom fields, validation",
+      "items": [
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design webhook event framework for claim status notifications",
+          "domain": "FinTech",
+          "subdomain": [
+            "Insurance",
+            "APIs",
+            "Webhooks"
+          ],
+          "tags": [
+            "webhooks",
+            "notifications"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 7\u201310"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement client endpoint registration with event selection",
+          "domain": "FinTech",
+          "subdomain": [
+            "Insurance",
+            "APIs"
+          ],
+          "tags": [
+            "webhooks",
+            "registration"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11\u201312"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Enable per-client custom field mapping in webhook payloads",
+          "domain": "FinTech",
+          "subdomain": [
+            "Insurance",
+            "APIs",
+            "Webhooks"
+          ],
+          "tags": [
+            "customization",
+            "webhooks"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13\u201317"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Validate custom fields for conflicts, naming, and type constraints",
+          "domain": "FinTech",
+          "subdomain": [
+            "APIs"
+          ],
+          "tags": [
+            "validation",
+            "schema"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15\u201317"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement webhook schema validation and reject conflicts with detailed errors",
+          "domain": "FinTech",
+          "subdomain": [
+            "Insurance",
+            "Webhooks"
+          ],
+          "tags": [
+            "validation",
+            "error-handling"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36\u201337"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Develop retry logic for failed webhook deliveries with exponential backoff",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks"
+          ],
+          "tags": [
+            "reliability",
+            "delivery"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18\u201320"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Notify clients on persistent webhook delivery failures",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks"
+          ],
+          "tags": [
+            "notifications",
+            "reliability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Provide clients with delivery status and logs via API or dashboard",
+          "domain": "FinTech",
+          "subdomain": [
+            "APIs",
+            "Webhooks"
+          ],
+          "tags": [
+            "usability",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21\u201322"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Require endpoint verification using shared secret or signed payloads",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "verification"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Allow clients to manage, pause, or revoke webhook registrations via self-service portal",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "Portal"
+          ],
+          "tags": [
+            "usability",
+            "self-service"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25\u201326"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-015-HLJ-Chunk_2",
+      "focus": "Security, compliance logging, rate-limiting, documentation, scalability, dependencies",
+      "items": [
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Log all webhook events, payloads, and delivery outcomes for compliance and troubleshooting",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "logging"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 27\u201328"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement rate limiting for high-frequency webhook clients and notify on threshold breaches",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "Performance"
+          ],
+          "tags": [
+            "rate-limiting",
+            "performance"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 38\u201339"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Produce and maintain sample payloads, setup guides, and troubleshooting documentation",
+          "domain": "FinTech",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "usability"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 41\u201342"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Train support teams on common webhook integration issues",
+          "domain": "FinTech",
+          "subdomain": [
+            "Support"
+          ],
+          "tags": [
+            "training",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 43"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Upgrade insurance claims processing system and API to support webhooks",
+          "domain": "FinTech",
+          "subdomain": [
+            "Insurance",
+            "APIs"
+          ],
+          "tags": [
+            "dependency",
+            "integration"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 45"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Ensure webhook system scalability for high enterprise event volumes",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "Scalability"
+          ],
+          "tags": [
+            "scalability",
+            "availability"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 46"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Deliver webhook management UI and backend logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "Webhooks",
+            "UI"
+          ],
+          "tags": [
+            "ui",
+            "backend"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 49"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Supply compliance and monitoring scripts for webhook operations",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Monitoring"
+          ],
+          "tags": [
+            "compliance",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 51"
+        },
+        {
+          "id": "REQ-015-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Develop and provide client and support training guides",
+          "domain": "FinTech",
+          "subdomain": [
+            "Support",
+            "Documentation"
+          ],
+          "tags": [
+            "training",
+            "documentation"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 52"
+        }
+      ]
+    }
+  ]
+}

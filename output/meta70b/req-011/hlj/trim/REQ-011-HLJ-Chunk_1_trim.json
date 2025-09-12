@@ -1,0 +1,203 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate with internal and external credit bureaus",
+    "summary": "Integrate the system with internal and external credit bureaus to assess customer creditworthiness in real-time.",
+    "tags": [
+      "creditworthiness",
+      "checkout",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "credit bureaus",
+      "tag_metadata_reference": [
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "creditworthiness",
+        "CustomerOnboarding"
+      ]
+    },
+    "low_confidence_reason": "insufficient data",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement decision engine to map credit score bands to EMI plans",
+    "summary": "Develop a decision engine that maps credit score bands to suitable EMI plans, ensuring personalized payment options for customers.",
+    "tags": [
+      "emi",
+      "creditworthiness"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PaymentProcessing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 13-15",
+    "reasoning": {
+      "source_summary_fragment": "credit score bands",
+      "tag_metadata_reference": [
+        {
+          "tag": "emi",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "emi",
+        "PaymentProcessing"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Ensure all scoring and eligibility checks are completed within 2 seconds",
+    "summary": "Optimize the system to complete all scoring and eligibility checks within 2 seconds, ensuring a seamless customer experience.",
+    "tags": [
+      "performance",
+      "checkout"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 16-17",
+    "reasoning": {
+      "source_summary_fragment": "scoring and eligibility checks",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "performance",
+        "Performance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Handle edge cases for 'borderline' customers",
+    "summary": "Develop strategies to handle edge cases for 'borderline' customers, ensuring fair treatment and compliance with regulations.",
+    "tags": [
+      "creditworthiness",
+      "edgecases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "edge cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "creditworthiness",
+        "CustomerOnboarding"
+      ]
+    },
+    "low_confidence_reason": "insufficient data",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement manual override by support staff for borderline customers",
+    "summary": "Develop a manual override feature for support staff to handle borderline customers, ensuring flexibility and customer satisfaction.",
+    "tags": [
+      "overrides",
+      "support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerSupport"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "manual override",
+      "tag_metadata_reference": [
+        {
+          "tag": "overrides",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "overrides",
+        "CustomerSupport"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011"
+  }
+]

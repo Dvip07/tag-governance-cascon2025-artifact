@@ -1,0 +1,947 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement custom cohort creation and saving",
+    "summary": "Enable users to define, create, and persist custom cohorts for analysis, supporting flexible inclusion criteria and reusable cohort definitions. Provides foundational capability for advanced cohort analytics within the SaaS platform.",
+    "tags": [
+      "analytics",
+      "cohorts",
+      "[INFERRED] persistence"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "CohortAnalysis"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 07\u201309",
+    "reasoning": {
+      "source_summary_fragment": "perform cohort analysis with time-decaying weighting for user retention metrics; users can create and auto-update custom cohorts",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.95
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.94
+        },
+        {
+          "tag": "persistence",
+          "confidence": 0.81
+        }
+      ],
+      "mapped_concepts": [
+        "custom cohort creation",
+        "cohort saving",
+        "SaaS analytics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "persistence",
+      "confidence": 0.81,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "analytics",
+      "cohorts",
+      "[INFERRED] persistence"
+    ],
+    "tags_v2": [
+      "analytics",
+      "cohorts"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.139258Z"
+      },
+      {
+        "original_tag": "cohorts",
+        "canonical_tag": "cohorts",
+        "matched_tag": "cohorts",
+        "tag_origin_cluster_id": "cohorts",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.149795Z"
+      },
+      {
+        "original_tag": "[INFERRED] persistence",
+        "canonical_tag": "[INFERRED] persistence",
+        "matched_tag": "[INFERRED] persistence",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.285817Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Enable auto-updating of cohorts as new users match criteria",
+    "summary": "Automatically update cohort membership to include users who newly satisfy the cohort criteria, ensuring cohort composition stays current without manual intervention.",
+    "tags": [
+      "automation",
+      "cohorts"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "CohortAnalysis"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.81,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 10",
+    "reasoning": {
+      "source_summary_fragment": "Users can create and auto-update custom cohorts based on signup date, product usage events, or milestones",
+      "tag_metadata_reference": [
+        {
+          "tag": "automation",
+          "confidence": 0.91
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "auto-update cohorts",
+        "automated inclusion criteria",
+        "dynamic cohort logic"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "automation",
+      "cohorts"
+    ],
+    "tags_v2": [
+      "cohorts"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.427442Z"
+      },
+      {
+        "original_tag": "cohorts",
+        "canonical_tag": "cohorts",
+        "matched_tag": "cohorts",
+        "tag_origin_cluster_id": "cohorts",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.431891Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Apply time-decay weighting to retention and activity metrics",
+    "summary": "Integrate time-decaying weighting functions into retention and activity metrics, allowing recent events to have greater analytical influence and enabling more nuanced analysis of user engagement trends.",
+    "tags": [
+      "analytics",
+      "retention",
+      "[INFERRED] weighting"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "RetentionMetrics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 12\u201313",
+    "reasoning": {
+      "source_summary_fragment": "Retention/activity metrics should support adjustable time-decay functions (e.g., exponential, linear)",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.97
+        },
+        {
+          "tag": "retention",
+          "confidence": 0.95
+        },
+        {
+          "tag": "weighting",
+          "confidence": 0.73
+        }
+      ],
+      "mapped_concepts": [
+        "time-decay function",
+        "weighted metrics",
+        "user engagement analytics"
+      ]
+    },
+    "low_confidence_reason": "Weighting as a tag is not standard; inference based on context.",
+    "inference_notes": {
+      "tag_added": "weighting",
+      "confidence": 0.73,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "analytics",
+      "retention",
+      "[INFERRED] weighting"
+    ],
+    "tags_v2": [
+      "analytics",
+      "retention"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.451032Z"
+      },
+      {
+        "original_tag": "retention",
+        "canonical_tag": "retention",
+        "matched_tag": "retention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.454497Z"
+      },
+      {
+        "original_tag": "[INFERRED] weighting",
+        "canonical_tag": "[INFERRED] weighting",
+        "matched_tag": "[INFERRED] weighting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.603163Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Provide adjustable decay function selection (exponential, linear) in settings",
+    "summary": "Allow users to choose and configure decay weighting functions, such as exponential or linear, directly within application settings to tailor retention metrics to their analysis preferences.",
+    "tags": [
+      "settings",
+      "usability",
+      "[INFERRED] configurability"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "RetentionMetrics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "Retention/activity metrics should support adjustable time-decay functions...with UI controls for function selection.",
+      "tag_metadata_reference": [
+        {
+          "tag": "settings",
+          "confidence": 0.95
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.9
+        },
+        {
+          "tag": "configurability",
+          "confidence": 0.79
+        }
+      ],
+      "mapped_concepts": [
+        "decay function selection",
+        "settings control",
+        "configurable analytics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "configurability",
+      "confidence": 0.79,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "settings",
+      "usability",
+      "[INFERRED] configurability"
+    ],
+    "tags_v2": [
+      "settings"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "settings",
+        "canonical_tag": "settings",
+        "matched_tag": "settings",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.607335Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.766947Z"
+      },
+      {
+        "original_tag": "[INFERRED] configurability",
+        "canonical_tag": "[INFERRED] configurability",
+        "matched_tag": "[INFERRED] configurability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.906350Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Develop visualizations including trend lines and cohort heatmaps",
+    "summary": "Create interactive visualizations that display user retention and activity trends, including trend lines and cohort heatmaps, to allow in-depth analysis of cohort behavior over time.",
+    "tags": [
+      "visualization",
+      "heatmap",
+      "[INFERRED] trends"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "DataVisualization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "Visualizations must include trend lines and heatmaps, supporting overlay of standard vs. time-decayed metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "visualization",
+          "confidence": 0.96
+        },
+        {
+          "tag": "heatmap",
+          "confidence": 0.92
+        },
+        {
+          "tag": "trends",
+          "confidence": 0.8
+        }
+      ],
+      "mapped_concepts": [
+        "trend lines",
+        "cohort heatmaps",
+        "visual analytics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "trends",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "visualization",
+      "heatmap",
+      "[INFERRED] trends"
+    ],
+    "tags_v2": [
+      "visualization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "visualization",
+        "canonical_tag": "visualization",
+        "matched_tag": "visualization",
+        "tag_origin_cluster_id": "visualization",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:23.968062Z"
+      },
+      {
+        "original_tag": "heatmap",
+        "canonical_tag": "heatmap",
+        "matched_tag": "heatmap",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.099343Z"
+      },
+      {
+        "original_tag": "[INFERRED] trends",
+        "canonical_tag": "[INFERRED] trends",
+        "matched_tag": "[INFERRED] trends",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.246467Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Allow overlay of standard and time-decayed metrics in visualizations",
+    "summary": "Support visualization overlays to compare traditional metrics with their time-decayed counterparts on the same chart, enhancing interpretability and comparative analysis for end users.",
+    "tags": [
+      "visualization",
+      "overlay",
+      "[INFERRED] comparison"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "DataVisualization",
+      "RetentionMetrics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 16\u201317",
+    "reasoning": {
+      "source_summary_fragment": "Visualizations must include trend lines and heatmaps, supporting overlay of standard vs. time-decayed metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "visualization",
+          "confidence": 0.96
+        },
+        {
+          "tag": "overlay",
+          "confidence": 0.93
+        },
+        {
+          "tag": "comparison",
+          "confidence": 0.78
+        }
+      ],
+      "mapped_concepts": [
+        "metric overlay",
+        "comparison visualization",
+        "time-decayed vs standard metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "comparison",
+      "confidence": 0.78,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "visualization",
+      "overlay",
+      "[INFERRED] comparison"
+    ],
+    "tags_v2": [
+      "visualization",
+      "overlay"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "visualization",
+        "canonical_tag": "visualization",
+        "matched_tag": "visualization",
+        "tag_origin_cluster_id": "visualization",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.258638Z"
+      },
+      {
+        "original_tag": "overlay",
+        "canonical_tag": "overlay",
+        "matched_tag": "overlay",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.263369Z"
+      },
+      {
+        "original_tag": "[INFERRED] comparison",
+        "canonical_tag": "[INFERRED] comparison",
+        "matched_tag": "[INFERRED] comparison",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.476844Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Support export of cohort analysis to CSV and PDF formats",
+    "summary": "Enable users to export cohort analysis data and visualizations in industry-standard formats (CSV, PDF) for reporting, sharing, and further offline analysis.",
+    "tags": [
+      "export",
+      "reporting",
+      "[INFERRED] interoperability"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "Reporting"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "Visualizations ... support CSV/PDF export",
+      "tag_metadata_reference": [
+        {
+          "tag": "export",
+          "confidence": 0.94
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.91
+        },
+        {
+          "tag": "interoperability",
+          "confidence": 0.76
+        }
+      ],
+      "mapped_concepts": [
+        "CSV/PDF export",
+        "offline analysis",
+        "data interoperability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "interoperability",
+      "confidence": 0.76,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "export",
+      "reporting",
+      "[INFERRED] interoperability"
+    ],
+    "tags_v2": [
+      "export",
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "export",
+        "canonical_tag": "export",
+        "matched_tag": "export",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.481991Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.504835Z"
+      },
+      {
+        "original_tag": "[INFERRED] interoperability",
+        "canonical_tag": "[INFERRED] interoperability",
+        "matched_tag": "[INFERRED] interoperability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:24.877003Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Handle duplicate cohort membership for users in overlapping cohorts",
+    "summary": "Ensure correct handling of users present in multiple overlapping cohorts, preventing double-counting or logic errors in retention and activity calculations.",
+    "tags": [
+      "edge-case",
+      "cohorts",
+      "[INFERRED] deduplication"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "CohortAnalysis"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.77,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "Handle users in overlapping cohorts",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge-case",
+          "confidence": 0.92
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.92
+        },
+        {
+          "tag": "deduplication",
+          "confidence": 0.7
+        }
+      ],
+      "mapped_concepts": [
+        "overlapping cohorts",
+        "user deduplication",
+        "correct metrics computation"
+      ]
+    },
+    "low_confidence_reason": "Deduplication as a tag was inferred at the lower bounds due to indirect mention.",
+    "inference_notes": {
+      "tag_added": "deduplication",
+      "confidence": 0.7,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "edge-case",
+      "cohorts",
+      "[INFERRED] deduplication"
+    ],
+    "tags_v2": [
+      "cohorts"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edge-case",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.080890Z"
+      },
+      {
+        "original_tag": "cohorts",
+        "canonical_tag": "cohorts",
+        "matched_tag": "cohorts",
+        "tag_origin_cluster_id": "cohorts",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.091195Z"
+      },
+      {
+        "original_tag": "[INFERRED] deduplication",
+        "canonical_tag": "[INFERRED] deduplication",
+        "matched_tag": "[INFERRED] deduplication",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.257619Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Prompt user to adjust if decay parameters cause zeroed metrics",
+    "summary": "Provide proactive user prompts when decay settings result in all metrics being zero, guiding users to reconfigure parameters for meaningful results.",
+    "tags": [
+      "usability",
+      "error-handling",
+      "[INFERRED] guidance"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "RetentionMetrics",
+      "UX"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 21\u201322",
+    "reasoning": {
+      "source_summary_fragment": "Prompt users when decay settings zero out metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "error-handling",
+          "confidence": 0.9
+        },
+        {
+          "tag": "guidance",
+          "confidence": 0.74
+        }
+      ],
+      "mapped_concepts": [
+        "user prompts",
+        "parameter validation",
+        "metric integrity guidance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "guidance",
+      "confidence": 0.74,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "usability",
+      "error-handling",
+      "[INFERRED] guidance"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.399707Z"
+      },
+      {
+        "original_tag": "error-handling",
+        "canonical_tag": "error-handling",
+        "matched_tag": "error-handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.547393Z"
+      },
+      {
+        "original_tag": "[INFERRED] guidance",
+        "canonical_tag": "[INFERRED] guidance",
+        "matched_tag": "[INFERRED] guidance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.681247Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-019-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Provide help article explaining cohort logic and decay weighting",
+    "summary": "Deliver documentation detailing cohort formation logic, the application of decay weighting in metrics, and best practices for utilizing these features effectively within SaaS analytics.",
+    "tags": [
+      "docs",
+      "support",
+      "[INFERRED] education"
+    ],
+    "domain": "SaaS Analytics",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.86,
+    "priority": "low",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "Provide documentation on cohort logic, decay weighting, and best practices.",
+      "tag_metadata_reference": [
+        {
+          "tag": "docs",
+          "confidence": 0.93
+        },
+        {
+          "tag": "support",
+          "confidence": 0.92
+        },
+        {
+          "tag": "education",
+          "confidence": 0.79
+        }
+      ],
+      "mapped_concepts": [
+        "help article",
+        "documentation",
+        "user education"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "education",
+      "confidence": 0.79,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "docs",
+      "support",
+      "[INFERRED] education"
+    ],
+    "tags_v2": [
+      "docs",
+      "support"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "docs",
+        "canonical_tag": "docs",
+        "matched_tag": "docs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.743606Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.799957Z"
+      },
+      {
+        "original_tag": "[INFERRED] education",
+        "canonical_tag": "[INFERRED] education",
+        "matched_tag": "[INFERRED] education",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:25.928165Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

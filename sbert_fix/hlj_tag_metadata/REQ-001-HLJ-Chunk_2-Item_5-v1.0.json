@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "opus4",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Complete compliance review before production deployment",
+  "summary": "Conduct thorough compliance review ensuring the API meets all regulatory requirements including ISO 27001 audit logging standards, data privacy regulations, and Open Banking compliance before releasing to production.",
+  "tags_v1": [
+    "compliance",
+    "review",
+    "deployment",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "compliance",
+    "review",
+    "deployment"
+  ],
+  "tags_v3": [
+    "compliance",
+    "review",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7248482704162598,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "review",
+      "aliases": [],
+      "cluster_id": "all_207",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7086031436920166,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "review",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deployment",
+      "aliases": [],
+      "cluster_id": "all_136",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6651777625083923,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "deployment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7223978638648987,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

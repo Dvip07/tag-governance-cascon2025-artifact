@@ -1,0 +1,138 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Achieve 1.5 second response time for 24 months of transaction data",
+  "summary": "Implement performance optimizations to ensure API endpoint responds within 1.5 seconds when retrieving 24 months of historical transaction data across all partner banks. This requires efficient query strategies and potentially asynchronous processing.",
+  "tags_v1": [
+    "performance",
+    "api",
+    "optimization"
+  ],
+  "tags_v2": [
+    "performance",
+    "api",
+    "optimization"
+  ],
+  "tags_v3": [
+    "performance",
+    "api",
+    "optimization",
+    "oauth",
+    "security",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.714398980140686,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7313117980957031,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "optimization",
+      "aliases": [],
+      "cluster_id": "all_277",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6942923069000244,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "optimization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "oauth",
+      "aliases": [],
+      "cluster_id": "all_78",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7382739186286926,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "oauth",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7134518623352051,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.696528434753418,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

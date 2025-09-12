@@ -1,0 +1,59 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Develop admin dashboard for batch status and payout drill-down",
+  "summary": "Deliver an administrative dashboard displaying real-time batch payout status, enabling drill-down into specific transactions, error cases, and manual overrides. The dashboard supports monitoring, reporting, and operational actions for payout management.",
+  "tags_v1": [
+    "dashboard",
+    "admin",
+    "[INFERRED] monitoring"
+  ],
+  "tags_v2": [
+    "dashboard",
+    "admin"
+  ],
+  "tags_v3": [
+    "dashboard",
+    "admin"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7297606468200684,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "admin",
+      "aliases": [],
+      "cluster_id": "all_8",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7135477066040039,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "admin",
+      "method": "dedup_canonical"
+    }
+  ]
+}

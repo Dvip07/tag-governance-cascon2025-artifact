@@ -1,0 +1,215 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-019",
+  "summary": "Implement cohort analysis with time-decaying weight for retention tracking in a SaaS analytics platform. System must support custom cohort creation based on signup dates/events, automatic cohort updates, adjustable time-decay functions (exponential/linear), and visualizations including trend lines and heatmaps. Key constraints: integrate with existing analytics datastore, maintain dashboard performance (≤20% load time increase), handle duplicate cohort memberships, and provide user warnings for aggressive decay parameters. Deliverables include CSV/PDF export functionality and comprehensive documentation."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Analytics", "UserRetention"],
+  "canonical_tags": ["analytics", "retention", "cohorts"],
+  "difficulty": "medium",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-019-HLJ-Chunk_1",
+      "focus": "Cohort Definition and Core Analytics Logic",
+      "items": [
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design database schema for custom cohort definitions",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "DataModeling"],
+          "tags": ["database", "cohorts", "schema"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14-15"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement cohort creation API supporting signup date criteria",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "API"],
+          "tags": ["api", "cohorts", "backend"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement cohort creation API supporting product usage events",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "API"],
+          "tags": ["api", "cohorts", "events"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Build automatic cohort update system for new matching users",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "BackgroundJobs"],
+          "tags": ["automation", "cohorts", "updates"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement exponential time-decay function for metrics",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Algorithms"],
+          "tags": ["algorithms", "metrics", "decay"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20-21"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement linear time-decay function for metrics",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Algorithms"],
+          "tags": ["algorithms", "metrics", "decay"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create settings interface for adjustable decay function parameters",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "UI"],
+          "tags": ["settings", "ui", "configuration"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Handle duplicate cohort membership logic",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "DataProcessing"],
+          "tags": ["cohorts", "deduplication", "logic"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Implement validation for aggressive decay parameters with user warnings",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Validation"],
+          "tags": ["validation", "warnings", "ux"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 32"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Optimize queries to maintain ≤20% dashboard load time increase",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Performance"],
+          "tags": ["performance", "optimization", "database"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 41"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-019-HLJ-Chunk_2",
+      "focus": "Visualization, Export, and Documentation",
+      "items": [
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Build trend line visualization for standard and time-decayed metrics",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Visualization"],
+          "tags": ["visualization", "charts", "ui"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Create cohort heatmap visualization with overlay capabilities",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Visualization"],
+          "tags": ["visualization", "heatmap", "ui"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Implement CSV export functionality for cohort analysis",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Export"],
+          "tags": ["export", "csv", "reporting"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 27"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Implement PDF export functionality for cohort analysis",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Export"],
+          "tags": ["export", "pdf", "reporting"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 27"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Write help article explaining cohort logic and best practices",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Support"],
+          "tags": ["documentation", "support", "help"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Document decay weighting functionality and configuration",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Support"],
+          "tags": ["documentation", "algorithms", "help"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Integrate cohort analysis with existing analytics data store",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Integration"],
+          "tags": ["integration", "database", "backend"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 40"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+
+!!CONSTRAINT_BROKEN!!

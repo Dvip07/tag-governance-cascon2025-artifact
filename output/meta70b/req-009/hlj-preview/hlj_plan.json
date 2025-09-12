@@ -1,0 +1,273 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_1",
+      "focus": "User Interface and Workflow",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Extend payments UI to allow scheduling cross-border payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "UserInterface"
+          ],
+          "tags": [
+            "payments",
+            "ui",
+            "crossborder"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement FX rate lock option with countdown timer",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "ForeignExchange"
+          ],
+          "tags": [
+            "fx",
+            "lock",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Display rate expiry details and conditions",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "UserInterface"
+          ],
+          "tags": [
+            "payments",
+            "ui",
+            "crossborder"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18-20"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Integrate with FX rate providers",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "ForeignExchange"
+          ],
+          "tags": [
+            "fx",
+            "integration",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22-24"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Manage rate lock commitments and expiry timestamps",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "ForeignExchange"
+          ],
+          "tags": [
+            "fx",
+            "lock",
+            "crossborder"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25-27"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement payment processing with locked FX rate validation",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "payments",
+            "processing",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29-31"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Allow partial or full cancellation of scheduled payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "payments",
+            "cancellation",
+            "crossborder"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 32-34"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Implement controls to prevent abuse of rate locks",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "risk",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 35-37"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Adhere to regulatory requirements for cross-border payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "regulation",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 38-40"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Maintain audit logs for all scheduling, locking, and execution events",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "audit",
+            "crossborder"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 41-43"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_2",
+      "focus": "Notifications, Reporting, and Edge Case Handling",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Send confirmation, reminders, and expiry alerts via email, SMS, and in-app notifications",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Notifications"
+          ],
+          "tags": [
+            "notifications",
+            "email",
+            "sms"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 45-47"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Provide dashboards for finance and compliance teams to monitor outstanding scheduled payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Reporting"
+          ],
+          "tags": [
+            "reporting",
+            "dashboard",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 48-50"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Handle edge cases such as FX provider unavailability and insufficient account balance",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "EdgeCases"
+          ],
+          "tags": [
+            "edgecases",
+            "fx",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 51-53"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Implement beta rollout plan with feedback collection framework",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Rollout"
+          ],
+          "tags": [
+            "rollout",
+            "beta",
+            "crossborder"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 54-56"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Deliver updated payment scheduling UI and logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "Delivery"
+          ],
+          "tags": [
+            "delivery",
+            "ui",
+            "crossborder"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 57-59"
+        }
+      ]
+    }
+  ]
+}

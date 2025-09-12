@@ -1,0 +1,125 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Update onboarding guide with CRM sync and duplicate management steps",
+  "summary": "Revise the onboarding guide to include clear instructions for CRM synchronization workflows and duplicate management. Ensures new users can efficiently connect CRMs and handle duplicate contacts, reducing onboarding friction.",
+  "tags_v1": [
+    "docs",
+    "usability"
+  ],
+  "tags_v2": [
+    "docs"
+  ],
+  "tags_v3": [
+    "docs",
+    "sync",
+    "crm",
+    "auto-merge"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "docs",
+      "aliases": [],
+      "cluster_id": "all_131",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6842527985572815,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "docs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync",
+      "aliases": [
+        "synchronization"
+      ],
+      "cluster_id": "all_166",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7259184718132019,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sync",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7315806150436401,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preferences",
+      "aliases": [],
+      "cluster_id": "all_345",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6589683890342712,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "preferences",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6753772497177124,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auto-merge",
+      "aliases": [],
+      "cluster_id": "all_344",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7497528791427612,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auto-merge",
+      "method": "dedup_canonical"
+    }
+  ]
+}

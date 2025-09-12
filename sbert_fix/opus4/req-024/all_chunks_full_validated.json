@@ -1,0 +1,2334 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design centralized notification template storage with dynamic field support",
+    "summary": "Create a centralized repository for notification templates supporting dynamic field injection, versioning, and template inheritance. System must handle variable placeholders, conditional content blocks, and maintain backward compatibility for existing templates.",
+    "tags": [
+      "messaging",
+      "backend",
+      "storage"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "template management, delayed scheduling, and personalization",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.91
+        },
+        {
+          "tag": "storage",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "template storage",
+        "dynamic fields",
+        "versioning"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "backend",
+      "storage"
+    ],
+    "tags_v2": [
+      "messaging",
+      "storage"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.182710Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.332072Z"
+      },
+      {
+        "original_tag": "storage",
+        "canonical_tag": "storage",
+        "matched_tag": "storage",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.336497Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement multi-language variant support for notification templates",
+    "summary": "Build localization framework for notification templates supporting multiple language variants, locale-specific formatting, and fallback mechanisms. Must handle RTL languages, character encoding, and dynamic content translation.",
+    "tags": [
+      "messaging",
+      "i18n",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "multi-language variants, timezone-aware delays",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.94
+        },
+        {
+          "tag": "i18n",
+          "confidence": 0.92
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "multi-language",
+        "localization",
+        "i18n"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "i18n",
+      "backend"
+    ],
+    "tags_v2": [
+      "messaging",
+      "i18n"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.424702Z"
+      },
+      {
+        "original_tag": "i18n",
+        "canonical_tag": "i18n",
+        "matched_tag": "i18n",
+        "tag_origin_cluster_id": "i18n",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.442757Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.602348Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build template preview system for all notification channels",
+    "summary": "Develop preview functionality allowing users to visualize how notifications will appear across email, SMS, push, and in-app channels. Include variable substitution, rendering accuracy, and responsive design validation.",
+    "tags": [
+      "messaging",
+      "ui",
+      "testing"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "template management, delayed scheduling, and personalization",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.89
+        },
+        {
+          "tag": "testing",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "template preview",
+        "multi-channel",
+        "visualization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "ui",
+      "testing"
+    ],
+    "tags_v2": [
+      "messaging",
+      "testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.687826Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.836452Z"
+      },
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.86,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.919850Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create template testing framework with mock delivery",
+    "summary": "Implement comprehensive testing framework for notification templates including mock delivery endpoints, test data generation, and validation rules. Support A/B testing scenarios and performance metrics collection.",
+    "tags": [
+      "messaging",
+      "testing",
+      "qa"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "Features include A/B testing, real-time analytics",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.92
+        },
+        {
+          "tag": "testing",
+          "confidence": 0.94
+        },
+        {
+          "tag": "qa",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "A/B testing",
+        "mock delivery",
+        "testing framework"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "testing",
+      "qa"
+    ],
+    "tags_v2": [
+      "messaging",
+      "testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:45.999948Z"
+      },
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.002814Z"
+      },
+      {
+        "original_tag": "qa",
+        "canonical_tag": "qa",
+        "matched_tag": "qa",
+        "tag_origin_cluster_id": "qa",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.149901Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement delay scheduling with timezone-aware calculations",
+    "summary": "Build sophisticated scheduling engine supporting delayed notification delivery with timezone intelligence, business hours consideration, and blackout period management. Handle DST transitions and cross-timezone scheduling edge cases.",
+    "tags": [
+      "messaging",
+      "scheduling",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "timezone-aware delays, and channel optimization",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "scheduling",
+          "confidence": 0.95
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "delay scheduling",
+        "timezone handling",
+        "DST transitions"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "scheduling",
+      "backend"
+    ],
+    "tags_v2": [
+      "messaging",
+      "scheduling"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.232986Z"
+      },
+      {
+        "original_tag": "scheduling",
+        "canonical_tag": "scheduling",
+        "matched_tag": "scheduling",
+        "tag_origin_cluster_id": "scheduling",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.235877Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.382045Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Build automatic channel selection based on user preferences",
+    "summary": "Develop intelligent channel selection system that automatically routes notifications through optimal channels based on user preferences, engagement history, and channel availability. Include fallback mechanisms and preference learning.",
+    "tags": [
+      "messaging",
+      "optimization",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "channel optimization based on user preferences",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.94
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.91
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "channel selection",
+        "user preferences",
+        "optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "optimization",
+      "backend"
+    ],
+    "tags_v2": [
+      "messaging",
+      "optimization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.464646Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.475875Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.628229Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create channel selection algorithm using delivery history data",
+    "summary": "Implement machine learning algorithm that analyzes historical delivery and engagement data to optimize channel selection. Must consider open rates, click-through rates, and user interaction patterns to improve targeting accuracy.",
+    "tags": [
+      "messaging",
+      "analytics",
+      "ml"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "real-time analytics dashboards, compliance tracking",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.92
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ml",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "ML algorithm",
+        "delivery history",
+        "engagement analysis"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "analytics",
+      "ml"
+    ],
+    "tags_v2": [
+      "messaging",
+      "analytics",
+      "ml"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.712280Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.724231Z"
+      },
+      {
+        "original_tag": "ml",
+        "canonical_tag": "ml",
+        "matched_tag": "ml",
+        "tag_origin_cluster_id": "ml",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.738162Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Integrate Twilio API for SMS notification delivery",
+    "summary": "Implement Twilio SMS integration with support for international delivery, phone number validation, and delivery status tracking. Include rate limiting, cost optimization, and error handling for failed deliveries.",
+    "tags": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "Must integrate with Twilio, SendGrid, FCM",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.94
+        },
+        {
+          "tag": "api",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "Twilio integration",
+        "SMS delivery",
+        "API integration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "tags_v2": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.817755Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.826822Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.829424Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Integrate SendGrid API for email notification delivery",
+    "summary": "Build SendGrid email integration supporting HTML templates, attachment handling, and bounce management. Implement domain authentication, IP warming strategies, and deliverability monitoring for optimal inbox placement.",
+    "tags": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "Must integrate with Twilio, SendGrid, FCM",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.93
+        },
+        {
+          "tag": "api",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "SendGrid integration",
+        "email delivery",
+        "deliverability"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "tags_v2": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.908183Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.916770Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.919357Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Integrate Firebase Cloud Messaging for push notifications",
+    "summary": "Implement FCM integration for Android and iOS push notifications with support for rich media, deep linking, and silent notifications. Handle token management, topic subscriptions, and platform-specific payload formatting.",
+    "tags": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "Must integrate with Twilio, SendGrid, FCM",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.94
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.93
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "FCM integration",
+        "push notifications",
+        "mobile platforms"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "integration",
+      "api"
+    ],
+    "tags_v2": [
+      "messaging",
+      "integration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.922072Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:46.931290Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.085502Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Build personalization engine with user profile integration",
+    "summary": "Develop a sophisticated personalization engine that integrates with user profiles to customize notification content, timing, and channel selection based on individual preferences and behavior patterns.",
+    "tags": [
+      "messaging",
+      "personalization",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem",
+      "MarketingAutomation"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "personalization engine with user profile integration",
+      "tag_metadata_reference": [
+        {
+          "tag": "messaging",
+          "confidence": 0.91
+        },
+        {
+          "tag": "personalization",
+          "confidence": 0.96
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "dynamic fields",
+        "user preferences",
+        "profile integration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "messaging",
+      "personalization",
+      "backend"
+    ],
+    "tags_v2": [
+      "messaging",
+      "personalization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.167688Z"
+      },
+      {
+        "original_tag": "personalization",
+        "canonical_tag": "personalization",
+        "matched_tag": "personalization",
+        "tag_origin_cluster_id": "personalization",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.170571Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.317403Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement A/B testing framework for message variants",
+    "summary": "Create a comprehensive A/B testing framework to evaluate different message variants, templates, and delivery strategies to optimize engagement metrics and conversion rates.",
+    "tags": [
+      "testing",
+      "analytics",
+      "optimization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "MarketingAutomation"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "A/B testing framework for message variants",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.94
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.87
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "A/B testing",
+        "variant analysis",
+        "statistical significance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "testing",
+      "analytics",
+      "optimization"
+    ],
+    "tags_v2": [
+      "testing",
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.321634Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.402113Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.545958Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Create automated audience segmentation system",
+    "summary": "Build an intelligent audience segmentation system using machine learning to automatically categorize users based on behavior, preferences, and engagement patterns for targeted messaging.",
+    "tags": [
+      "segmentation",
+      "automation",
+      "ml"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "MarketingAutomation"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "automated audience segmentation system",
+      "tag_metadata_reference": [
+        {
+          "tag": "segmentation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.9
+        },
+        {
+          "tag": "ml",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audience targeting",
+        "ML clustering",
+        "behavioral segmentation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "segmentation",
+      "automation",
+      "ml"
+    ],
+    "tags_v2": [
+      "segmentation",
+      "ml"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "segmentation",
+        "canonical_tag": "segmentation",
+        "matched_tag": "segmentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.549660Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.694613Z"
+      },
+      {
+        "original_tag": "ml",
+        "canonical_tag": "ml",
+        "matched_tag": "ml",
+        "tag_origin_cluster_id": "ml",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.709314Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Design real-time analytics dashboard for notification metrics",
+    "summary": "Develop a comprehensive real-time analytics dashboard displaying key notification performance metrics including delivery rates, engagement statistics, and channel effectiveness across all communication platforms.",
+    "tags": [
+      "analytics",
+      "ui",
+      "monitoring"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "real-time analytics dashboard for notification metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.86
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "real-time data",
+        "dashboard visualization",
+        "KPI tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "analytics",
+      "ui",
+      "monitoring"
+    ],
+    "tags_v2": [
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.712492Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.86,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:47.858606Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.006948Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Implement tracking for open, click, and conversion rates",
+    "summary": "Build comprehensive tracking mechanisms to capture and analyze open rates, click-through rates, and conversion metrics across all notification channels with pixel tracking and webhook integration.",
+    "tags": [
+      "analytics",
+      "tracking",
+      "metrics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "tracking for open, click, and conversion rates",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.92
+        },
+        {
+          "tag": "tracking",
+          "confidence": 0.96
+        },
+        {
+          "tag": "metrics",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "engagement tracking",
+        "conversion funnel",
+        "pixel implementation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "analytics",
+      "tracking",
+      "metrics"
+    ],
+    "tags_v2": [
+      "analytics",
+      "tracking",
+      "metrics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.089993Z"
+      },
+      {
+        "original_tag": "tracking",
+        "canonical_tag": "tracking",
+        "matched_tag": "tracking",
+        "tag_origin_cluster_id": "tracking",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.093313Z"
+      },
+      {
+        "original_tag": "metrics",
+        "canonical_tag": "metrics",
+        "matched_tag": "metrics",
+        "tag_origin_cluster_id": "metrics",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.102051Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Build alert system for deliverability issues",
+    "summary": "Implement a proactive alert system that monitors deliverability metrics, detects anomalies in bounce rates or spam complaints, and triggers immediate notifications to prevent reputation damage.",
+    "tags": [
+      "monitoring",
+      "alerts",
+      "reliability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "alert system for deliverability issues",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.93
+        },
+        {
+          "tag": "alerts",
+          "confidence": 0.95
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "deliverability monitoring",
+        "anomaly detection",
+        "alert thresholds"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "monitoring",
+      "alerts",
+      "reliability"
+    ],
+    "tags_v2": [
+      "monitoring",
+      "alert"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.115718Z"
+      },
+      {
+        "original_tag": "alerts",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:48.118295Z"
+      },
+      {
+        "original_tag": "reliability",
+        "canonical_tag": "reliability",
+        "matched_tag": "reliability",
+        "tag_origin_cluster_id": "reliability",
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.262642Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Create self-healing workflows with channel fallback logic",
+    "summary": "Design intelligent self-healing workflows that automatically detect channel failures and implement fallback strategies, switching between email, SMS, and push notifications based on deliverability and user preferences.",
+    "tags": [
+      "reliability",
+      "automation",
+      "failover"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "self-healing workflows with channel fallback logic",
+      "tag_metadata_reference": [
+        {
+          "tag": "reliability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.91
+        },
+        {
+          "tag": "failover",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "fallback mechanisms",
+        "channel orchestration",
+        "automatic recovery"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "reliability",
+      "automation",
+      "failover"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "reliability",
+        "canonical_tag": "reliability",
+        "matched_tag": "reliability",
+        "tag_origin_cluster_id": "reliability",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.421354Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.581326Z"
+      },
+      {
+        "original_tag": "failover",
+        "canonical_tag": "failover",
+        "matched_tag": "failover",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.733889Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Implement opt-out/unsubscribe mechanisms for all channels",
+    "summary": "Build comprehensive opt-out and unsubscribe functionality across all notification channels with one-click unsubscribe links, preference centers, and immediate processing of user choices.",
+    "tags": [
+      "compliance",
+      "messaging",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "opt-out/unsubscribe mechanisms for all channels",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "messaging",
+          "confidence": 0.88
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "unsubscribe flow",
+        "preference management",
+        "compliance requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "compliance",
+      "messaging",
+      "ux"
+    ],
+    "tags_v2": [
+      "compliance",
+      "messaging"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.751335Z"
+      },
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.831373Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.86,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.976468Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Build compliance tracking for CAN-SPAM, CASL, GDPR regulations",
+    "summary": "Develop a comprehensive compliance tracking system that ensures adherence to international regulations including CAN-SPAM, CASL, and GDPR with automated consent management and regulatory reporting.",
+    "tags": [
+      "compliance",
+      "legal",
+      "tracking"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "compliance tracking for CAN-SPAM, CASL, GDPR regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "legal",
+          "confidence": 0.94
+        },
+        {
+          "tag": "tracking",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance",
+        "consent management",
+        "data privacy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "compliance",
+      "legal",
+      "tracking"
+    ],
+    "tags_v2": [
+      "compliance",
+      "tracking"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:48.980809Z"
+      },
+      {
+        "original_tag": "legal",
+        "canonical_tag": "legal",
+        "matched_tag": "legal",
+        "tag_origin_cluster_id": "legal",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.134498Z"
+      },
+      {
+        "original_tag": "tracking",
+        "canonical_tag": "tracking",
+        "matched_tag": "tracking",
+        "tag_origin_cluster_id": "tracking",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.138899Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Create audit logging system for opt-outs and message failures",
+    "summary": "Implement a detailed audit logging system that captures all opt-out requests, message failures, and compliance-related events with tamper-proof storage and comprehensive reporting capabilities.",
+    "tags": [
+      "compliance",
+      "logging",
+      "audit"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 42",
+    "reasoning": {
+      "source_summary_fragment": "audit logging system for opt-outs and message failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "compliance logging",
+        "failure tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "compliance",
+      "logging",
+      "audit"
+    ],
+    "tags_v2": [
+      "compliance",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.155333Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:49.302421Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.306783Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 21,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_1-v1.0",
+    "title": "Implement nighttime detection and automatic rescheduling",
+    "summary": "Develop timezone-aware notification scheduling that detects recipient's nighttime hours and automatically reschedules messages to appropriate delivery times. System must respect user preferences and local regulations while maintaining delivery reliability.",
+    "tags": [
+      "scheduling",
+      "ux",
+      "timezone",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases like nighttime scheduling",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduling",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.87
+        },
+        {
+          "tag": "timezone",
+          "confidence": 0.94
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "timezone-aware delays",
+        "edge case handling",
+        "automated rescheduling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "scheduling",
+      "ux",
+      "timezone",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "scheduling",
+      "timezone"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "scheduling",
+        "canonical_tag": "scheduling",
+        "matched_tag": "scheduling",
+        "tag_origin_cluster_id": "scheduling",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.317418Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.464142Z"
+      },
+      {
+        "original_tag": "timezone",
+        "canonical_tag": "timezone",
+        "matched_tag": "timezone",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.547052Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.695714Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 22,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_2-v1.0",
+    "title": "Build duplicate notification prevention system",
+    "summary": "Create a deduplication mechanism to prevent sending identical notifications across multiple channels or within specified time windows. Must track message fingerprints and enforce cooldown periods while maintaining system performance.",
+    "tags": [
+      "deduplication",
+      "reliability",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "duplicate prevention",
+      "tag_metadata_reference": [
+        {
+          "tag": "deduplication",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.88
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate prevention",
+        "edge cases",
+        "system reliability"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "deduplication",
+      "reliability",
+      "backend"
+    ],
+    "tags_v2": [
+      "deduplication",
+      "reliability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "deduplication",
+        "canonical_tag": "deduplication",
+        "matched_tag": "deduplication",
+        "tag_origin_cluster_id": "deduplication",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.706727Z"
+      },
+      {
+        "original_tag": "reliability",
+        "canonical_tag": "reliability",
+        "matched_tag": "reliability",
+        "tag_origin_cluster_id": "reliability",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.720701Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.862814Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 23,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_3-v1.0",
+    "title": "Create quickstart guides for marketing team",
+    "summary": "Develop user-friendly documentation and tutorials enabling marketing teams to quickly onboard and utilize the notification engine. Include template creation guides, campaign setup workflows, and best practices for engagement.",
+    "tags": [
+      "documentation",
+      "training",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "template management",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "training",
+          "confidence": 0.89
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "marketing team enablement",
+        "template management",
+        "quickstart guides"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "documentation",
+      "training",
+      "ux"
+    ],
+    "tags_v2": [
+      "documentation",
+      "training"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.874372Z"
+      },
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:49.953847Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.111158Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 24,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_4-v1.0",
+    "title": "Write detailed integration documentation for engineers",
+    "summary": "Create comprehensive technical documentation covering API endpoints, SDK usage, webhook implementations, and integration patterns for Twilio, SendGrid, and FCM. Include code examples, error handling guidance, and performance optimization tips.",
+    "tags": [
+      "documentation",
+      "api",
+      "integration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "Must integrate with Twilio, SendGrid, FCM",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "api",
+          "confidence": 0.91
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "API documentation",
+        "third-party integrations",
+        "technical guides"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024",
+    "tags_v1": [
+      "documentation",
+      "api",
+      "integration"
+    ],
+    "tags_v2": [
+      "documentation",
+      "api",
+      "integration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.114841Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.126558Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:50.129526Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

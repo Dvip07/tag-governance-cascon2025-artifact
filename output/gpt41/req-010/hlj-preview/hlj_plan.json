@@ -1,0 +1,217 @@
+{
+  "estimated_hlj_count": 13,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-010-HLJ-Chunk_1",
+      "focus": "Core dual-ledger structure, phantom balances, posting, visibility",
+      "items": [
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design and implement operational ledger for real-time posting and holds",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement"
+          ],
+          "tags": [
+            "operational",
+            "real-time"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9\u201315"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Design and implement reporting ledger for regulatory and reconciliation purposes",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement",
+            "Compliance"
+          ],
+          "tags": [
+            "reporting",
+            "regulatory"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16\u201318"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure transaction postings occur in both ledgers and are metadata-linked",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement"
+          ],
+          "tags": [
+            "synchronization",
+            "metadata"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19\u201320"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Track and differentiate phantom balances within operational ledger",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement"
+          ],
+          "tags": [
+            "phantom-balance",
+            "segregation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21\u201322"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Develop logic for phantom transaction lifecycle (create, update, expire, settle, reverse)",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement"
+          ],
+          "tags": [
+            "phantom-balance",
+            "lifecycle"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25\u201328"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Expose phantom balances with proper status in customer and internal UIs",
+          "domain": "FinTech",
+          "subdomain": [
+            "LedgerManagement",
+            "UX"
+          ],
+          "tags": [
+            "visibility",
+            "ui"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29\u201331"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Provide scheduled batch reconciliation between phantom and settled balances",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reconciliation"
+          ],
+          "tags": [
+            "batch",
+            "phantom-balance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32\u201335"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Flag and report exceptions in balance reconciliation",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reconciliation"
+          ],
+          "tags": [
+            "exception",
+            "reporting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32\u201335"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Build reconciliation tools to detect and resolve ledger mismatches",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reconciliation"
+          ],
+          "tags": [
+            "tooling",
+            "mismatch"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 37\u201340"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement manual and automated exception resolution workflows with audit trails",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reconciliation",
+            "Compliance"
+          ],
+          "tags": [
+            "workflow",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 41\u201344"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-010-HLJ-Chunk_2",
+      "focus": "Security, compliance, edge cases, monitoring, migration, and documentation",
+      "items": [
+        {
+          "id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Log all ledger actions and reversals with immutable audit trails",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Security"
+          ],
+          "tags": [
+            "logging",
+            "audit"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 46\u201348"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Enforce role-based access and least-privilege on ledger data",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security"
+          ],
+          "tags": [
+            "rbac",
+            "access-control"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 49\u201350"
+        },
+        {
+          "id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Ensure SOX and PCI-DSS compliance for all ledger functionality",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "sox",
+            "pci-dss"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 51\u201352"
+        }
+      ]
+    }
+  ]
+}

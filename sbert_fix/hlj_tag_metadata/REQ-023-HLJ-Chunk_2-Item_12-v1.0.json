@@ -1,0 +1,71 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_12-v1.0",
+  "model": "meta70b",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Upgrade authentication and session services for location awareness",
+  "summary": "Enhance authentication and session services to support location awareness, enabling more precise targeting and personalization.",
+  "tags_v1": [
+    "infrastructure",
+    "location awareness",
+    "[INFERRED] geolocation"
+  ],
+  "tags_v2": [
+    "infrastructure",
+    "location awareness"
+  ],
+  "tags_v3": [
+    "infrastructure",
+    "location awareness",
+    "geolocation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "infrastructure",
+      "aliases": [],
+      "cluster_id": "all_268",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7168262004852295,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "infrastructure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "location awareness",
+      "aliases": [],
+      "cluster_id": "all_392",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7799398899078369,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "location awareness",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geolocation",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7748687267303467,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geolocation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

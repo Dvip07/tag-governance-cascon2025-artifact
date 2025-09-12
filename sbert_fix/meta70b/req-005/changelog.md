@@ -1,0 +1,144 @@
+# 📝 Changelog for `req-005` — **meta70b**
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['virtualcard', 'freezeunfreeze']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard', 'freezeunfreeze']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| freezeunfreeze | dropped | none | 0.0 | None | 2025-05-31T23:57:47.926335Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:47.732101Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['virtualcard', 'ui']`
+**Validated tags:** `['virtualcard', 'ui']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['virtualcard', 'ui']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| ui | kept | direct | 1.0 | title | 2025-05-31T23:57:48.127637Z |
+| virtualcard | kept | semantic | 0.7655507922172546 | mapped_concepts | 2025-05-31T23:57:48.124544Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['virtualcard', 'help']`
+**Validated tags:** `['virtualcard', 'help']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['virtualcard', 'help']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| help | kept | direct | 1.0 | title | 2025-05-31T23:57:48.319226Z |
+| virtualcard | kept | semantic | 0.7327313423156738 | mapped_concepts | 2025-05-31T23:57:48.315695Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['virtualcard', 'feedback']`
+**Validated tags:** `['feedback']`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard']`
+**Tags kept:** `['feedback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| feedback | kept | direct | 1.0 | title | 2025-05-31T23:57:48.522928Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:48.518529Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['virtualcard', 'edgecases']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard', 'edgecases']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| edgecases | dropped | none | 0.0 | None | 2025-05-31T23:57:48.940553Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:48.722245Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['virtualcard', 'restful', '[INFERRED] security']`
+**Validated tags:** `['restful']`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard', '[INFERRED] security']`
+**Tags kept:** `['restful']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] security | dropped | none | 0.0 | None | 2025-05-31T23:57:49.326310Z |
+| restful | kept | direct | 1.0 | title | 2025-05-31T23:57:49.140457Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:49.136711Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['virtualcard', 'atomicity']`
+**Validated tags:** `['atomicity']`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard']`
+**Tags kept:** `['atomicity']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| atomicity | kept | direct | 1.0 | title | 2025-05-31T23:57:49.531660Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:49.527389Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['virtualcard', 'logging']`
+**Validated tags:** `['logs']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['virtualcard', 'logging']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| logging | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:57:49.851824Z |
+| logs | added | direct | 1.0 | raw_requirement | 2025-05-31T23:57:49.851824Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:49.737148Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['virtualcard', 'queueing']`
+**Validated tags:** `['queue']`
+**Tags added:** `['queue']`
+**Tags dropped:** `['virtualcard', 'queueing']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| queue | added | direct | 1.0 | raw_requirement | 2025-05-31T23:57:50.213185Z |
+| queueing | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:57:50.213185Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:50.096630Z |
+
+## 🔹 HLJ: `REQ-005-HLJ-Chunk_2-Item_10-v1.0`
+
+**Original tags:** `['virtualcard', 'conflict']`
+**Validated tags:** `['conflict']`
+**Tags added:** `[]`
+**Tags dropped:** `['virtualcard']`
+**Tags kept:** `['conflict']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| conflict | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:50.472551Z |
+| virtualcard | dropped | none | 0.0 | None | 2025-05-31T23:57:50.455823Z |

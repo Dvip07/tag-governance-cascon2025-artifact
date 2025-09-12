@@ -1,0 +1,117 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Develop onboarding materials and documentation for feature flag usage and analytics",
+  "summary": "Create comprehensive user and technical documentation for feature flag management, focusing on best practices and analytics integration. Develop onboarding guides and training content to support adoption by both product and development teams. Ensure clarity in explaining progressive rollout, real-time monitoring, and compliance aspects.",
+  "tags_v1": [
+    "documentation",
+    "training",
+    "[INFERRED] enablement"
+  ],
+  "tags_v2": [
+    "documentation",
+    "training"
+  ],
+  "tags_v3": [
+    "compliance",
+    "documentation",
+    "gdpr",
+    "training",
+    "enablement"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7381428480148315,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7510548830032349,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.748064398765564,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "training",
+      "aliases": [],
+      "cluster_id": "all_143",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7348926067352295,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "training",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "enablement",
+      "aliases": [],
+      "cluster_id": "all_144",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7530580163002014,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "enablement",
+      "method": "dedup_canonical"
+    }
+  ]
+}

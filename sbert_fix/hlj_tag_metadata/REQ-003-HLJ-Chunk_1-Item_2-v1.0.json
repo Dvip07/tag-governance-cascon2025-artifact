@@ -1,0 +1,134 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Support rule customization by transaction frequency, merchant type, and time of day",
+  "summary": "Allow users to customize detection rules by key transaction parameters such as frequency, merchant type, and time windows. This enhancement aims to provide targeted fraud pattern identification by fine-tuning detection logic to known threat behaviors.",
+  "tags_v1": [
+    "fraud",
+    "rules",
+    "[INFERRED] customization"
+  ],
+  "tags_v2": [
+    "fraud",
+    "rules"
+  ],
+  "tags_v3": [
+    "fraud",
+    "rules",
+    "detection",
+    "patterns",
+    "alert",
+    "notification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.742954671382904,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6993576288223267,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7386072874069214,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "patterns",
+      "aliases": [],
+      "cluster_id": "all_311",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6993722915649414,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "patterns",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7378506660461426,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7495837211608887,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    }
+  ]
+}

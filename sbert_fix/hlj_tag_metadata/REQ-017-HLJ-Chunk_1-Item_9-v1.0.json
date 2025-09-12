@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Update support scripts and FAQs for common upgrade scenarios",
+  "summary": "Revise and enhance support documentation, scripts, and FAQs to address common questions regarding plan upgrades, proration, charges, and credits. This improves customer experience and enables faster support response.",
+  "tags_v1": [
+    "support",
+    "documentation",
+    "[INFERRED] enablement"
+  ],
+  "tags_v2": [
+    "support",
+    "documentation"
+  ],
+  "tags_v3": [
+    "support",
+    "documentation",
+    "downgrades",
+    "manual review",
+    "payments"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6693872213363647,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "integrations",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7033111453056335,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6985765099525452,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "downgrades",
+      "aliases": [],
+      "cluster_id": "all_434",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7452904582023621,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "downgrades",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "manual review",
+      "aliases": [],
+      "cluster_id": "all_435",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7013849020004272,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "manual review",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6860911846160889,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    }
+  ]
+}

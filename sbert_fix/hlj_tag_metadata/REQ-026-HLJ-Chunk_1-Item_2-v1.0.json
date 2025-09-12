@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Implement logic to delay/suppress surveys on churn signals",
+  "summary": "Develop system logic to detect churn risk and accordingly delay or suppress NPS survey prompts to affected users. This ensures surveys are not sent at inappropriate times, enhancing feedback quality and user experience.",
+  "tags_v1": [
+    "nps",
+    "[INFERRED] behavioral-intelligence"
+  ],
+  "tags_v2": [
+    "nps"
+  ],
+  "tags_v3": [
+    "nps",
+    "behavioral_intelligence",
+    "user_experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7455896139144897,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "behavioral_intelligence",
+      "aliases": [
+        "behavioral-intelligence"
+      ],
+      "cluster_id": "all_218",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.717765212059021,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "behavioral-intelligence",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7309133410453796,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user_experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

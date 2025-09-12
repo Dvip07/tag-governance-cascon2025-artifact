@@ -1,0 +1,1388 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Define flexible rules for auto-triggering NPS surveys",
+    "summary": "Create a system to trigger NPS surveys based on user behavior and preferences, ensuring timely and relevant feedback collection.",
+    "tags": [
+      "nps",
+      "behavioral_intelligence"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Customer Success"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "Auto-triggering NPS surveys",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "NPS survey triggering"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "behavioral_intelligence"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.037267Z"
+      },
+      {
+        "original_tag": "behavioral_intelligence",
+        "canonical_tag": "behavioral_intelligence",
+        "matched_tag": "behavioral_intelligence",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.221076Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "automation",
+      "behavioral_intelligence"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7630798816680908,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7473875284194946,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "behavioral_intelligence",
+        "original_tag": "behavioral_intelligence",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7309800982475281,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Embed NPS prompt natively in web and mobile apps",
+    "summary": "Integrate NPS surveys directly into web and mobile applications, providing a seamless user experience and increasing response rates.",
+    "tags": [
+      "nps",
+      "user_experience"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "User Experience"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "NPS prompt in web and mobile apps",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "NPS survey integration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "user_experience"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.225752Z"
+      },
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.396589Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "behavioral_intelligence",
+      "user_experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7567349076271057,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "behavioral_intelligence",
+        "original_tag": "behavioral-intelligence",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7247860431671143,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user_experience",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7467426061630249,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement logic to delay or suppress surveys for churn signs",
+    "summary": "Develop a system to detect early warning signs of customer churn and adjust NPS survey timing accordingly, preventing unnecessary prompts and improving user satisfaction.",
+    "tags": [
+      "nps",
+      "churn_prevention"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Customer Success"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "Delay or suppress surveys for churn signs",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "Churn prevention"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "churn_prevention"
+    ],
+    "tags_v2": [
+      "nps",
+      "churn_prevention"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.408948Z"
+      },
+      {
+        "original_tag": "churn_prevention",
+        "canonical_tag": "churn_prevention",
+        "matched_tag": "churn_prevention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.9521833062171936,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.557495Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "churn_prevention"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.744500458240509,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "churn_prevention",
+        "original_tag": "churn_prevention",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7677682638168335,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Retry survey prompt after cooling-off period",
+    "summary": "Implement a mechanism to retry NPS survey prompts after a predetermined cooling-off period, allowing users to provide feedback when they are more likely to be receptive.",
+    "tags": [
+      "nps",
+      "user_experience"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "User Experience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 23-24",
+    "reasoning": {
+      "source_summary_fragment": "Retry survey prompt after cooling-off period",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "NPS survey retry"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "user_experience"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.568188Z"
+      },
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.766641Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "user_experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7488475441932678,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user_experience",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7334442734718323,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Suppress further prompts for 30 days after ignore/dismissal",
+    "summary": "Develop a system to suppress NPS survey prompts for a 30-day period after a user ignores or dismisses a prompt, preventing unnecessary disturbances and improving user experience.",
+    "tags": [
+      "nps",
+      "user_experience"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "User Experience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "low",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 25-26",
+    "reasoning": {
+      "source_summary_fragment": "Suppress further prompts for 30 days",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "NPS survey suppression"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "user_experience"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.778803Z"
+      },
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.954020Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "user_experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7425203323364258,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user_experience",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.72003173828125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Visualize response rates, NPS scores, and trends by cohort",
+    "summary": "Create a dashboard to display response rates, NPS scores, and trends by cohort, enabling data-driven decisions.",
+    "tags": [
+      "nps",
+      "analytics",
+      "visualization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 28-30",
+    "reasoning": {
+      "source_summary_fragment": "Visualize response rates and NPS scores",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "cohort_analysis",
+        "nps_trends"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "visualization",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "nps",
+      "analytics",
+      "visualization"
+    ],
+    "tags_v2": [
+      "nps",
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.958476Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.037767Z"
+      },
+      {
+        "original_tag": "visualization",
+        "canonical_tag": "visualization",
+        "matched_tag": "visualization",
+        "tag_origin_cluster_id": "visualization",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.179666Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "kpi",
+      "nps",
+      "analytics",
+      "automation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "kpi",
+        "original_tag": "kpi",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7102941870689392,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7623968720436096,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7637857794761658,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7403202056884766,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Integrate NPS results with CRM and customer support workflows",
+    "summary": "Integrate NPS results with CRM and customer support workflows to streamline customer feedback and issue resolution.",
+    "tags": [
+      "nps",
+      "crm_integration",
+      "customer_support"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Customer Support"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 31-32",
+    "reasoning": {
+      "source_summary_fragment": "Integrate NPS results with CRM",
+      "tag_metadata_reference": [
+        {
+          "tag": "crm_integration",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "customer_feedback",
+        "issue_resolution"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "crm_integration",
+      "customer_support"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.183945Z"
+      },
+      {
+        "original_tag": "crm_integration",
+        "canonical_tag": "crm_integration",
+        "matched_tag": "crm_integration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.324950Z"
+      },
+      {
+        "original_tag": "customer_support",
+        "canonical_tag": "customer_support",
+        "matched_tag": "customer_support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.468666Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "customer_support"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7509176731109619,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "customer_support",
+        "original_tag": "customer_support",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7493595480918884,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Ensure survey data compliance with privacy standards",
+    "summary": "Implement measures to ensure survey data compliance with privacy standards, such as GDPR and CCPA.",
+    "tags": [
+      "nps",
+      "compliance",
+      "privacy"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.99,
+    "line_source": "Ln 33-34",
+    "reasoning": {
+      "source_summary_fragment": "Ensure survey data compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "privacy_standards",
+        "gdpr"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "compliance",
+      "privacy"
+    ],
+    "tags_v2": [
+      "nps",
+      "compliance",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.545006Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.547910Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.550925Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "nps",
+      "privacy"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7276092767715454,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7480685710906982,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7281426191329956,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Allow users to opt out of feedback requests",
+    "summary": "Provide users with the option to opt out of feedback requests, ensuring transparency and user control.",
+    "tags": [
+      "nps",
+      "user_experience",
+      "opt_out"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "User Experience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.7,
+    "line_source": "Ln 35-36",
+    "reasoning": {
+      "source_summary_fragment": "Allow users to opt out",
+      "tag_metadata_reference": [
+        {
+          "tag": "user_experience",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user_control",
+        "transparency"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "user_experience",
+      "opt_out"
+    ],
+    "tags_v2": [
+      "nps",
+      "opt_out"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.625015Z"
+      },
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.769939Z"
+      },
+      {
+        "original_tag": "opt_out",
+        "canonical_tag": "opt_out",
+        "matched_tag": "opt_out",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7345317602157593,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.886090Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps",
+      "user_experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.751556396484375,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user_experience",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7444770336151123,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Coordinate survey prompts across multiple devices",
+    "summary": "Coordinate survey prompts across multiple devices to ensure a seamless user experience.",
+    "tags": [
+      "nps",
+      "edge_cases",
+      "device_coordination"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Edge Cases"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 37-38",
+    "reasoning": {
+      "source_summary_fragment": "Coordinate survey prompts",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge_cases",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "device_coordination",
+        "user_experience"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "edge_cases",
+      "device_coordination"
+    ],
+    "tags_v2": [
+      "nps",
+      "device_coordination"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:08.960506Z"
+      },
+      {
+        "original_tag": "edge_cases",
+        "canonical_tag": "edge_cases",
+        "matched_tag": "edge_cases",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.121891Z"
+      },
+      {
+        "original_tag": "device_coordination",
+        "canonical_tag": "device_coordination",
+        "matched_tag": "device_coordination",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.135078Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7508859038352966,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_11-v1.0",
+    "title": "Prioritize conflicting triggers by recency or highest-value action",
+    "summary": "Prioritize conflicting triggers by recency or highest-value action to optimize NPS survey delivery.",
+    "tags": [
+      "nps",
+      "edge_cases",
+      "trigger_prioritization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Edge Cases"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 39-40",
+    "reasoning": {
+      "source_summary_fragment": "Prioritize conflicting triggers",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge_cases",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "trigger_prioritization",
+        "nps_survey_delivery"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "edge_cases",
+      "trigger_prioritization"
+    ],
+    "tags_v2": [
+      "nps",
+      "trigger_prioritization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.143033Z"
+      },
+      {
+        "original_tag": "edge_cases",
+        "canonical_tag": "edge_cases",
+        "matched_tag": "edge_cases",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.290598Z"
+      },
+      {
+        "original_tag": "trigger_prioritization",
+        "canonical_tag": "trigger_prioritization",
+        "matched_tag": "trigger_prioritization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.303733Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "nps"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7550451159477234,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_11-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+    "title": "Update product training and onboarding materials for NPS insights",
+    "summary": "Update product training and onboarding materials to incorporate NPS insights and improve user adoption.",
+    "tags": [
+      "nps",
+      "documentation",
+      "onboarding"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.7,
+    "line_source": "Ln 41-42",
+    "reasoning": {
+      "source_summary_fragment": "Update product training and onboarding",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user_adoption",
+        "nps_insights"
+      ]
+    },
+    "tags_v1": [
+      "nps",
+      "documentation",
+      "onboarding"
+    ],
+    "tags_v2": [
+      "nps",
+      "documentation",
+      "onboarding"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.307177Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.380770Z"
+      },
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:09.384058Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "nps",
+      "onboarding"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7018697261810303,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "nps",
+        "original_tag": "nps",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7571855783462524,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+        "req_id": "req-026"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7750871181488037,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+        "req_id": "req-026"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1467 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Log each user action with timestamp, resource, session ID, and role at time of action",
+    "summary": "Capture every user action in the audit log, including timestamp, specific resource accessed, session ID, and the precise user role at the moment of action. This comprehensive record improves traceability and accountability across all user activities.",
+    "tags": [
+      "logging",
+      "security",
+      "[INFERRED] traceability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 07–09",
+    "reasoning": {
+      "source_summary_fragment": "Implement audit log enhancements to record every user action with timestamp, resource, session ID, and role at action time.",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.96
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user action logging",
+        "role capture",
+        "audit trail"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "logging",
+      "security",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "logs",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-06-01T00:00:34.243098Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.324909Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.495673Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "security",
+      "compliance",
+      "traceability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7481660842895508,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7113364934921265,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6871582269668579,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "traceability",
+        "original_tag": "traceability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7468513250350952,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Store a record of role changes within active user sessions",
+    "summary": "Track and persist all user role changes occurring during active sessions to ensure the audit log reflects every context shift. This ensures session logs are historically accurate for compliance and forensic review.",
+    "tags": [
+      "logging",
+      "compliance",
+      "[INFERRED] session-tracking"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 09–10",
+    "reasoning": {
+      "source_summary_fragment": "Accurately track role changes within user sessions and ensure logs retain historical role context, even if roles shift mid-session.",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "role change tracking",
+        "session state persistence"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "session-tracking",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "logging",
+      "compliance",
+      "[INFERRED] session-tracking"
+    ],
+    "tags_v2": [
+      "logs",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-06-01T00:00:34.511065Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.522710Z"
+      },
+      {
+        "original_tag": "[INFERRED] session-tracking",
+        "canonical_tag": "[INFERRED] session-tracking",
+        "matched_tag": "[INFERRED] session-tracking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.704174Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "compliance",
+      "query",
+      "session-tracking",
+      "access-control",
+      "rbac"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.739384114742279,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6943156719207764,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "query",
+        "original_tag": "query",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6843914985656738,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "session-tracking",
+        "original_tag": "session-tracking",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7862947583198547,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "access-control",
+        "original_tag": "access control",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6948193311691284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "rbac",
+        "original_tag": "rbac",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6842283010482788,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement role-based query interface for audit logs with filters (role, resource, action type)",
+    "summary": "Develop an audit log query interface that enables compliance and admin users to filter logs by user role, resource, and action type. This supports investigation, monitoring, and policy enforcement across complex operations.",
+    "tags": [
+      "compliance",
+      "usability",
+      "[INFERRED] query-interface"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 12–14",
+    "reasoning": {
+      "source_summary_fragment": "Build a query interface for compliance/admin users, supporting advanced filters by role, resource, and action type.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "filterable audit queries",
+        "role-based access",
+        "log investigation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "query-interface",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "compliance",
+      "usability",
+      "[INFERRED] query-interface"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.718257Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.869752Z"
+      },
+      {
+        "original_tag": "[INFERRED] query-interface",
+        "canonical_tag": "[INFERRED] query-interface",
+        "matched_tag": "[INFERRED] query-interface",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.035962Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "filter",
+      "query",
+      "query-interface",
+      "data analysis"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7024006247520447,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filtering",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7142675518989563,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "query",
+        "original_tag": "query",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7100515961647034,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "query-interface",
+        "original_tag": "query-interface",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7211489081382751,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "data analysis",
+        "original_tag": "data analysis",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6884960532188416,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Support advanced filter options on log queries (e.g., by department and time)",
+    "summary": "Add enhanced filtering to audit log queries, enabling users to filter data by department, specific time ranges, and other dimensions. This increases precision in compliance reviews and operational audits.",
+    "tags": [
+      "usability",
+      "compliance",
+      "[INFERRED] advanced-filtering"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "Support advanced filter options on log queries (e.g., by department and time)",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "advanced query filters",
+        "department-based audit"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "advanced-filtering",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "usability",
+      "compliance",
+      "[INFERRED] advanced-filtering"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.177622Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.189048Z"
+      },
+      {
+        "original_tag": "[INFERRED] advanced-filtering",
+        "canonical_tag": "[INFERRED] advanced-filtering",
+        "matched_tag": "[INFERRED] advanced-filtering",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.331742Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "session",
+      "compliance",
+      "consistency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "session",
+        "original_tag": "session",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7082054615020752,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6925012469291687,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "consistency",
+        "original_tag": "consistency",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6946773529052734,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Maintain clear timeline and consistency of user roles for all actions within a session",
+    "summary": "Ensure the audit trail preserves a consistent and clear timeline of user roles linked to each action during a session. This underpins accurate audits and supports the detection of irregular role-based privilege use.",
+    "tags": [
+      "security",
+      "compliance",
+      "[INFERRED] role-consistency"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 16–17",
+    "reasoning": {
+      "source_summary_fragment": "Maintain session-consistent role information for auditability...",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "role timeline",
+        "privilege auditing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "role-consistency",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "security",
+      "compliance",
+      "[INFERRED] role-consistency"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.414297Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.487064Z"
+      },
+      {
+        "original_tag": "[INFERRED] role-consistency",
+        "canonical_tag": "[INFERRED] role-consistency",
+        "matched_tag": "[INFERRED] role-consistency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.648981Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "role-consistency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6920108795166016,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7053910493850708,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "anomaly",
+        "original_tag": "anomaly",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6748956441879272,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "role-consistency",
+        "original_tag": "role-consistency",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7768291234970093,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Flag and report anomalous or rapid mid-session role switching",
+    "summary": "Detect and notify administrators of unusual or rapid changes in user roles during active sessions. This monitoring helps identify suspicious behavior and strengthens compliance with security policy.",
+    "tags": [
+      "security",
+      "compliance",
+      "[INFERRED] anomaly-detection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "flag anomalous or rapid role switches...",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "anomaly detection",
+        "role monitoring"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "anomaly-detection",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "security",
+      "compliance",
+      "[INFERRED] anomaly-detection"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.661177Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.671487Z"
+      },
+      {
+        "original_tag": "[INFERRED] anomaly-detection",
+        "canonical_tag": "[INFERRED] anomaly-detection",
+        "matched_tag": "[INFERRED] anomaly-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.821700Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "compliance",
+      "anomaly-detection"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7122173309326172,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6896573901176453,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "anomaly-detection",
+        "original_tag": "anomaly-detection",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7350858449935913,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Enable audit log export in CSV, JSON, and PDF with compliance headers and digital signatures",
+    "summary": "Support export of audit logs in CSV, JSON, and PDF formats, including compliance-specific headers and digital signatures for each export. This feature facilitates external audits and regulatory reporting requirements.",
+    "tags": [
+      "compliance",
+      "export",
+      "[INFERRED] data-integrity"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "allow export of logs in CSV, JSON, and PDF formats, including compliance headers and digital signatures.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "export",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "audit data export",
+        "regulatory traceability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-integrity",
+      "confidence": 0.83,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "compliance",
+      "export",
+      "[INFERRED] data-integrity"
+    ],
+    "tags_v2": [
+      "compliance",
+      "export"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.830729Z"
+      },
+      {
+        "original_tag": "export",
+        "canonical_tag": "export",
+        "matched_tag": "export",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.835378Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-integrity",
+        "canonical_tag": "[INFERRED] data-integrity",
+        "matched_tag": "[INFERRED] data-integrity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:35.987315Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "export",
+      "data-integrity"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7133650779724121,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.708730161190033,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "data-integrity",
+        "original_tag": "data-integrity",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7425527572631836,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Provide automated weekly/monthly audit summaries by role",
+    "summary": "Generate scheduled summary reports of audit log data, categorizing actions and events by user role for both weekly and monthly periods. This strengthens oversight and simplifies recurring compliance checks.",
+    "tags": [
+      "reporting",
+      "compliance",
+      "[INFERRED] periodic-summaries"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.81,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "Generate automated reports by role, update documentation and training...",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.86
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "periodic audit summaries",
+        "role-based reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "periodic-summaries",
+      "confidence": 0.81,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "reporting",
+      "compliance",
+      "[INFERRED] periodic-summaries"
+    ],
+    "tags_v2": [
+      "reporting",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.86,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.006444Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.016168Z"
+      },
+      {
+        "original_tag": "[INFERRED] periodic-summaries",
+        "canonical_tag": "[INFERRED] periodic-summaries",
+        "matched_tag": "[INFERRED] periodic-summaries",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.169957Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "reporting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6998351812362671,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7127516269683838,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Store logs for deleted users/orphaned actions with anonymized IDs and original role context",
+    "summary": "Ensure that audit logs for deleted users or orphaned actions are retained with anonymized user IDs while maintaining the original role context. This preserves historical audit integrity and meets regulatory requirements even for edge cases.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] data-retention"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "AuditLog"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 23–24",
+    "reasoning": {
+      "source_summary_fragment": "handling edge cases such as deleted/orphaned users...",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "user anonymization",
+        "audit record retention"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-retention",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "compliance",
+      "security",
+      "[INFERRED] data-retention"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.252328Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.325753Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-retention",
+        "canonical_tag": "[INFERRED] data-retention",
+        "matched_tag": "[INFERRED] data-retention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.479583Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "data-retention"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6932629942893982,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7062129974365234,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "data-retention",
+        "original_tag": "data-retention",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7348186373710632,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Ensure audit logs meet SOC2, GDPR, and HIPAA security and retention requirements",
+    "summary": "Design audit logging to satisfy SOC2, GDPR, and HIPAA requirements for security, access controls, and data retention policies. The solution must provide demonstrable compliance for all stored and exported log data.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] regulatory"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 24–25",
+    "reasoning": {
+      "source_summary_fragment": "ensure storage meets SOC2, GDPR, and HIPAA standards...",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "security standards",
+        "regulatory compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "regulatory",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-029",
+    "tags_v1": [
+      "compliance",
+      "security",
+      "[INFERRED] regulatory"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.493697Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.498045Z"
+      },
+      {
+        "original_tag": "[INFERRED] regulatory",
+        "canonical_tag": "[INFERRED] regulatory",
+        "matched_tag": "[INFERRED] regulatory",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:36.672392Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "regulation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7219966650009155,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7298774123191833,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-029"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.694000780582428,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-029"
+      }
+    ]
+  }
+]

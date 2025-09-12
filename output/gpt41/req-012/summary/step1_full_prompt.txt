@@ -1,0 +1,180 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-012-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-012",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-012-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-012-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-012 (FinTech)
+
+FT-012: GST Support for B2B SaaS Vendors with Provincial Rate Handling
+Title:
+GST Calculation and Reporting Module for B2B SaaS Vendors Supporting Varying Provincial Tax Rates
+
+Background & Objective:
+To expand our B2B SaaS offering into new Canadian provinces, we must support complex Goods and Services Tax (GST) rules, including varying provincial rates, exemptions, and dual-tax provinces. Accurate GST calculation, transparent invoicing, and compliant reporting are non-negotiable to avoid legal penalties and ensure customer trust.
+
+Scope of Requirement:
+
+Tax Rate Management:
+
+Maintain a dynamic tax rate table for all supported provinces, automatically updating in response to government rate changes.
+
+Support dual-GST provinces (e.g., Quebec with both federal and provincial GST) and ensure correct allocation and calculation logic.
+
+Invoice & Billing Logic:
+
+Apply the correct GST rate(s) at the time of invoice generation, based on customer billing address, service location, and applicable exemptions.
+
+Clearly itemize GST components on all invoices, showing breakdowns for federal and provincial portions where applicable.
+
+Support scenarios where multiple tax rates apply on a single invoice (e.g., split shipments/services).
+
+Exemption & Edge Case Handling:
+
+Allow for tax-exempt status to be recorded and applied per customer, with validation logic and required documentation.
+
+Handle retroactive rate changes—if rates are updated between order and billing, ensure proper adjustment and customer notification.
+
+Implement fallback rules for ambiguous addresses or missing location data, defaulting to federal GST and flagging for manual review.
+
+Reporting & Compliance:
+
+Generate GST summary reports per province, supporting both accrual and cash accounting methods.
+
+Provide audit-ready exports for finance and compliance teams, including transaction-level detail and reconciliation tools.
+
+Log all tax rate changes, overrides, and manual adjustments with user metadata for traceability.
+
+User Experience:
+
+Update self-service portals for customers to view/download GST-compliant invoices and tax summary statements.
+
+Provide helpdesk scripts and documentation to support GST-related queries.
+
+Security & Privacy:
+
+Protect all customer and transaction data in line with PIPEDA and GDPR requirements.
+
+Limit access to tax-related configuration and reporting features to authorized finance/admin roles.
+
+Dependencies & Constraints:
+
+Requires integration with government tax rate APIs (where available).
+
+Must coordinate with Finance, Legal, and Support teams for implementation and go-live communications.
+
+Deliverables:
+
+Updated billing and invoice modules
+
+Tax rate management UI
+
+Reporting and export tools
+
+Customer and support documentation
+
+Audit and compliance logs
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

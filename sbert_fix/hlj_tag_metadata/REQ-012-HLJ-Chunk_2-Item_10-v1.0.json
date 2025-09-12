@@ -1,0 +1,58 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+  "model": "meta70b",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Protect customer and transaction data in line with PIPEDA and GDPR",
+  "summary": "The system should protect customer and transaction data in line with PIPEDA and GDPR, ensuring compliance with data protection regulations.",
+  "tags_v1": [
+    "security",
+    "privacy"
+  ],
+  "tags_v2": [
+    "security",
+    "privacy"
+  ],
+  "tags_v3": [
+    "privacy",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6933000087738037,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6960088610649109,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

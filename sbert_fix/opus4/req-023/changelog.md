@@ -1,0 +1,273 @@
+# 📝 Changelog for `req-023` — **opus4**
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['feature-flags', 'segmentation', 'backend']`
+**Validated tags:** `['segmentation']`
+**Tags added:** `[]`
+**Tags dropped:** `['feature-flags', 'backend']`
+**Tags kept:** `['segmentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:40.512727Z |
+| feature-flags | dropped | none | 0.0 | None | 2025-05-31T23:58:40.352829Z |
+| segmentation | kept | direct | 1.0 | title | 2025-05-31T23:58:40.357883Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['feature-flags', 'rollout', 'backend']`
+**Validated tags:** `['rollout']`
+**Tags added:** `[]`
+**Tags dropped:** `['feature-flags', 'backend']`
+**Tags kept:** `['rollout']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:40.825390Z |
+| feature-flags | dropped | none | 0.0 | None | 2025-05-31T23:58:40.667050Z |
+| rollout | kept | direct | 1.0 | title | 2025-05-31T23:58:40.672893Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['admin-portal', 'feature-flags', 'frontend']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['admin-portal', 'feature-flags', 'frontend']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| admin-portal | dropped | none | 0.0 | None | 2025-05-31T23:58:40.980574Z |
+| feature-flags | dropped | none | 0.0 | None | 2025-05-31T23:58:41.137913Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:58:41.290985Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['geo-ip', 'integration', 'backend']`
+**Validated tags:** `['geo-ip', 'integration']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['geo-ip', 'integration']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:41.459332Z |
+| geo-ip | kept | direct | 1.0 | title | 2025-05-31T23:58:41.295654Z |
+| integration | kept | direct | 1.0 | summary | 2025-05-31T23:58:41.307128Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['geo-ip', 'security', 'backend']`
+**Validated tags:** `['geo-ip']`
+**Tags added:** `[]`
+**Tags dropped:** `['security', 'backend']`
+**Tags kept:** `['geo-ip']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:41.851256Z |
+| geo-ip | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:41.546422Z |
+| security | dropped | none | 0.0 | None | 2025-05-31T23:58:41.699101Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['analytics', 'dashboard', 'frontend']`
+**Validated tags:** `['analytics', 'dashboard']`
+**Tags added:** `[]`
+**Tags dropped:** `['frontend']`
+**Tags kept:** `['analytics', 'dashboard']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | title | 2025-05-31T23:58:41.855530Z |
+| dashboard | kept | direct | 1.0 | title | 2025-05-31T23:58:41.859074Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:58:42.010908Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['analytics', 'monitoring', 'backend']`
+**Validated tags:** `['analytics', 'monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['analytics', 'monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:42.097852Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:42.251285Z |
+| monitoring | kept | direct | 1.0 | title | 2025-05-31T23:58:42.101206Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['alerting', 'monitoring', 'backend']`
+**Validated tags:** `['alert', 'monitoring']`
+**Tags added:** `['alert']`
+**Tags dropped:** `['alerting', 'backend']`
+**Tags kept:** `['monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| alert | added | semantic | 0.7420138716697693 | source_fragment | 2025-05-31T23:58:42.372834Z |
+| alerting | dropped | semantic | 0.7420138716697693 | source_fragment | 2025-05-31T23:58:42.372834Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:42.537814Z |
+| monitoring | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:42.387793Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['rollback', 'feature-flags', 'backend']`
+**Validated tags:** `['rollback']`
+**Tags added:** `[]`
+**Tags dropped:** `['feature-flags', 'backend']`
+**Tags kept:** `['rollback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:42.857880Z |
+| feature-flags | dropped | none | 0.0 | None | 2025-05-31T23:58:42.698715Z |
+| rollback | kept | direct | 1.0 | title | 2025-05-31T23:58:42.542271Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['ux', 'notification', 'frontend', '[INFERRED] accessibility']`
+**Validated tags:** `['notification']`
+**Tags added:** `[]`
+**Tags dropped:** `['ux', 'frontend', '[INFERRED] accessibility']`
+**Tags kept:** `['notification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] accessibility | dropped | none | 0.0 | None | 2025-05-31T23:58:43.324099Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:58:43.170635Z |
+| notification | kept | direct | 1.0 | title | 2025-05-31T23:58:43.016360Z |
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:58:43.012108Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['compliance', 'ux', 'frontend']`
+**Validated tags:** `['compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['ux', 'frontend']`
+**Tags kept:** `['compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | source_fragment | 2025-05-31T23:58:43.339619Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:58:43.644105Z |
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:58:43.491657Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['compliance', 'gdpr', 'security']`
+**Validated tags:** `['compliance', 'gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `['security']`
+**Tags kept:** `['compliance', 'gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:58:43.648366Z |
+| gdpr | kept | direct | 1.0 | title | 2025-05-31T23:58:43.652021Z |
+| security | dropped | none | 0.0 | None | 2025-05-31T23:58:43.804281Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['audit', 'geo-ip', 'backend']`
+**Validated tags:** `['audit', 'geo-ip']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['audit', 'geo-ip']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | title | 2025-05-31T23:58:43.809112Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:43.970753Z |
+| geo-ip | kept | direct | 1.0 | title | 2025-05-31T23:58:43.813113Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['audit', 'rollback', 'backend']`
+**Validated tags:** `['audit', 'rollback']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['audit', 'rollback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | summary | 2025-05-31T23:58:43.981353Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:44.136264Z |
+| rollback | kept | direct | 1.0 | title | 2025-05-31T23:58:43.984314Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['documentation', 'training', 'product']`
+**Validated tags:** `['documentation', 'product']`
+**Tags added:** `[]`
+**Tags dropped:** `['training']`
+**Tags kept:** `['documentation', 'product']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:58:44.140456Z |
+| product | kept | direct | 1.0 | title | 2025-05-31T23:58:44.296458Z |
+| training | dropped | none | 0.0 | None | 2025-05-31T23:58:44.292314Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['documentation', 'developer', 'training']`
+**Validated tags:** `['documentation', 'developer']`
+**Tags added:** `[]`
+**Tags dropped:** `['training']`
+**Tags kept:** `['documentation', 'developer']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| developer | kept | direct | 1.0 | title | 2025-05-31T23:58:44.303470Z |
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:58:44.300065Z |
+| training | dropped | none | 0.0 | None | 2025-05-31T23:58:44.466098Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['audit', 'compliance', 'backend']`
+**Validated tags:** `['audit', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['audit', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | source_fragment | 2025-05-31T23:58:44.480411Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:44.641835Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:58:44.489563Z |
+
+## 🔹 HLJ: `REQ-023-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['authentication', 'infrastructure', 'backend']`
+**Validated tags:** `['authentication']`
+**Tags added:** `[]`
+**Tags dropped:** `['infrastructure', 'backend']`
+**Tags kept:** `['authentication']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| authentication | kept | direct | 1.0 | title | 2025-05-31T23:58:44.645459Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:58:45.066809Z |
+| infrastructure | dropped | none | 0.0 | None | 2025-05-31T23:58:44.796397Z |

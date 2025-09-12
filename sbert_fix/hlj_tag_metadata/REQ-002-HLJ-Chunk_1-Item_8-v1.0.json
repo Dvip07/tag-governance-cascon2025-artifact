@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Encrypt all sensitive data at rest and in transit per compliance",
+  "summary": "Apply robust encryption standards to all sensitive information related to minors and guardians, ensuring data is secure both at rest and during transmission as mandated by compliance regulations.",
+  "tags_v1": [
+    "security",
+    "compliance"
+  ],
+  "tags_v2": [
+    "security",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "coppa"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7337366342544556,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7460954189300537,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "coppa",
+      "aliases": [],
+      "cluster_id": "all_301",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6993701457977295,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "coppa",
+      "method": "dedup_canonical"
+    }
+  ]
+}

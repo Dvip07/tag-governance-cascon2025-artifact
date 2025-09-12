@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Rollback state and inform user if freeze/unfreeze fails at third-party processor",
+  "summary": "Build mechanisms to detect third-party processor failures and roll back any partial state changes, ensuring system and user states remain synchronized. Notify users promptly in the event of failures, supporting trust and operational integrity.",
+  "tags_v1": [
+    "consistency",
+    "error_handling",
+    "[INFERRED] rollback"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "queue",
+    "rest",
+    "backend",
+    "virtualcard",
+    "rollback",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "queue",
+      "aliases": [
+        "queueing"
+      ],
+      "cluster_id": "all_306",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7082042694091797,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "queue",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rest",
+      "aliases": [
+        "restful"
+      ],
+      "cluster_id": "all_68",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6889286041259766,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "restful",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7364952564239502,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7529622912406921,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7495110034942627,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7500781416893005,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

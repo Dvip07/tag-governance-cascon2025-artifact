@@ -1,0 +1,134 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Log all RtE actions in real-time to a secure, access-controlled meta-log system",
+  "summary": "Ensure that every right-to-erasure (RtE) action is logged in real time to a secure meta-log system with strict access controls. These meta-logs must be tamper-evident, cryptographically validated, and support audit and compliance requirements.",
+  "tags_v1": [
+    "real-time",
+    "meta-log",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "meta-log"
+  ],
+  "tags_v3": [
+    "security",
+    "meta-log",
+    "audit",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7335985898971558,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "meta-log",
+      "aliases": [],
+      "cluster_id": "all_173",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7527372241020203,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "meta-log",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7621222734451294,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "storage",
+      "aliases": [],
+      "cluster_id": "all_291",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6734403371810913,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "storage",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7179136276245117,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "training",
+      "aliases": [],
+      "cluster_id": "all_143",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6638767719268799,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "training",
+      "method": "dedup_canonical"
+    }
+  ]
+}

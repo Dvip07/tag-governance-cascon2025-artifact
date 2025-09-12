@@ -1,0 +1,57 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "opus4",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Handle income in non-supported currencies",
+  "summary": "Create currency conversion logic for income data from international gig platforms, including real-time exchange rates and handling of currency volatility impact on eligibility.",
+  "tags_v1": [
+    "currency",
+    "edge-case",
+    "income"
+  ],
+  "tags_v2": [
+    "currency",
+    "income"
+  ],
+  "tags_v3": [
+    "income",
+    "currency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "income",
+      "aliases": [],
+      "cluster_id": "all_256",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731584906578064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "currency",
+      "aliases": [
+        "multi-currency"
+      ],
+      "cluster_id": "all_257",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7428023815155029,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "currency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

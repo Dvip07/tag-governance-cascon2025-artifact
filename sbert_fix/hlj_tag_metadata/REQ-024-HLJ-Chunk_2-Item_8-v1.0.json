@@ -1,0 +1,81 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "opus4",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Implement opt-out/unsubscribe mechanisms for all channels",
+  "summary": "Build comprehensive opt-out and unsubscribe functionality across all notification channels with one-click unsubscribe links, preference centers, and immediate processing of user choices.",
+  "tags_v1": [
+    "compliance",
+    "messaging",
+    "ux"
+  ],
+  "tags_v2": [
+    "compliance",
+    "messaging"
+  ],
+  "tags_v3": [
+    "messaging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6777392625808716,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.718768835067749,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6626201272010803,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "regulation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

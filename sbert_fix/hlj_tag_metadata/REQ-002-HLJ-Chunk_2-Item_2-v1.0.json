@@ -1,0 +1,64 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "opus4",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Build comprehensive audit trail system with minor-specific flags",
+  "summary": "Develop audit logging system capturing all minor account actions, guardian approvals, and KYC verification events. Include immutable timestamps, actor IDs, and compliance flags for COPPA/GDPR-K regulatory reviews.",
+  "tags_v1": [
+    "audit",
+    "compliance",
+    "logging"
+  ],
+  "tags_v2": [
+    "audit",
+    "compliance"
+  ],
+  "tags_v3": [
+    "audit",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.74431312084198,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7328720092773438,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

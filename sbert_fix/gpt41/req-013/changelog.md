@@ -1,0 +1,212 @@
+# 📝 Changelog for `req-013` — **gpt41**
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['engine', 'batch', '[INFERRED] compliance']`
+**Validated tags:** `['engine', 'batch']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['engine', 'batch']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:59:36.521333Z |
+| batch | kept | direct | 1.0 | title | 2025-05-31T23:59:36.321135Z |
+| engine | kept | direct | 1.0 | title | 2025-05-31T23:59:36.317502Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['logging', 'audit', '[INFERRED] traceability']`
+**Validated tags:** `['logs', 'audit']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', '[INFERRED] traceability']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] traceability | dropped | none | 0.0 | None | 2025-05-31T23:59:36.958685Z |
+| audit | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:36.719914Z |
+| logging | dropped | direct | 1.0 | summary | 2025-05-31T23:59:36.532830Z |
+| logs | added | direct | 1.0 | summary | 2025-05-31T23:59:36.532830Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['scheduling', 'batch', '[INFERRED] flexibility']`
+**Validated tags:** `['batch']`
+**Tags added:** `[]`
+**Tags dropped:** `['scheduling', '[INFERRED] flexibility']`
+**Tags kept:** `['batch']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] flexibility | dropped | none | 0.0 | None | 2025-05-31T23:59:37.329111Z |
+| batch | kept | direct | 1.0 | title | 2025-05-31T23:59:37.139812Z |
+| scheduling | dropped | none | 0.0 | None | 2025-05-31T23:59:37.135055Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['failure', 'rollback', '[INFERRED] reliability']`
+**Validated tags:** `['failure', 'rollback']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] reliability']`
+**Tags kept:** `['failure', 'rollback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reliability | dropped | none | 0.0 | None | 2025-05-31T23:59:37.608306Z |
+| failure | kept | direct | 1.0 | title | 2025-05-31T23:59:37.332588Z |
+| rollback | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:37.425247Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['atomicity', 'rollback', '[INFERRED] consistency']`
+**Validated tags:** `['atomicity', 'rollback']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] consistency']`
+**Tags kept:** `['atomicity', 'rollback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] consistency | dropped | none | 0.0 | None | 2025-05-31T23:59:37.786925Z |
+| atomicity | kept | direct | 1.0 | summary | 2025-05-31T23:59:37.620914Z |
+| rollback | kept | direct | 1.0 | title | 2025-05-31T23:59:37.623898Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['retry', 'partial', '[INFERRED] recovery']`
+**Validated tags:** `['retry', 'partial']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] recovery']`
+**Tags kept:** `['retry', 'partial']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] recovery | dropped | none | 0.0 | None | 2025-05-31T23:59:37.959157Z |
+| partial | kept | direct | 1.0 | summary | 2025-05-31T23:59:37.802286Z |
+| retry | kept | direct | 1.0 | title | 2025-05-31T23:59:37.790551Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['logging', 'exception', '[INFERRED] traceability']`
+**Validated tags:** `['logs', 'exception']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', '[INFERRED] traceability']`
+**Tags kept:** `['exception']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] traceability | dropped | none | 0.0 | None | 2025-05-31T23:59:38.142425Z |
+| exception | kept | direct | 1.0 | summary | 2025-05-31T23:59:37.982093Z |
+| logging | dropped | direct | 1.0 | summary | 2025-05-31T23:59:37.971939Z |
+| logs | added | direct | 1.0 | summary | 2025-05-31T23:59:37.971939Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['audit', 'logging', '[INFERRED] compliance']`
+**Validated tags:** `['audit', 'logs']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', '[INFERRED] compliance']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:59:38.315534Z |
+| audit | kept | direct | 1.0 | title | 2025-05-31T23:59:38.146783Z |
+| logging | dropped | direct | 1.0 | title | 2025-05-31T23:59:38.150515Z |
+| logs | added | direct | 1.0 | title | 2025-05-31T23:59:38.150515Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['reporting', 'exception', '[INFERRED] analytics']`
+**Validated tags:** `['reporting', 'exception']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] analytics']`
+**Tags kept:** `['reporting', 'exception']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] analytics | dropped | none | 0.0 | None | 2025-05-31T23:59:38.511813Z |
+| exception | kept | direct | 1.0 | title | 2025-05-31T23:59:38.335640Z |
+| reporting | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:38.332675Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['dashboard', 'admin', '[INFERRED] monitoring']`
+**Validated tags:** `['dashboard', 'admin']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] monitoring']`
+**Tags kept:** `['dashboard', 'admin']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] monitoring | dropped | none | 0.0 | None | 2025-05-31T23:59:38.686927Z |
+| admin | kept | direct | 1.0 | title | 2025-05-31T23:59:38.520048Z |
+| dashboard | kept | direct | 1.0 | title | 2025-05-31T23:59:38.516246Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['notification', 'status', '[INFERRED] transparency']`
+**Validated tags:** `['notification', 'status']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] transparency']`
+**Tags kept:** `['notification', 'status']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] transparency | dropped | none | 0.0 | None | 2025-05-31T23:59:38.872391Z |
+| notification | kept | direct | 1.0 | summary | 2025-05-31T23:59:38.700382Z |
+| status | kept | direct | 1.0 | title | 2025-05-31T23:59:38.704050Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['notification', 'rollback']`
+**Validated tags:** `['notification', 'rollback']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['notification', 'rollback']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| notification | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:38.962415Z |
+| rollback | kept | direct | 1.0 | title | 2025-05-31T23:59:38.965350Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['compliance', 'security', '[INFERRED] audit']`
+**Validated tags:** `['compliance', 'security']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] audit']`
+**Tags kept:** `['compliance', 'security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] audit | dropped | none | 0.0 | None | 2025-05-31T23:59:39.359505Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:59:38.968549Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:39.061047Z |
+
+## 🔹 HLJ: `REQ-013-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['security', 'access']`
+**Validated tags:** `['security', 'access']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['security', 'access']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| access | kept | direct | 1.0 | summary | 2025-05-31T23:59:39.383933Z |
+| security | kept | direct | 1.0 | summary | 2025-05-31T23:59:39.372712Z |

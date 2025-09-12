@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-020",
+  "summary": "Design and implement a CRM contact sync feature supporting major third-party CRMs (e.g., Salesforce, HubSpot) using OAuth and API keys. Enable one-click import with a dry run to preview potential duplicates, and provide configurable duplicate detection (email, phone, fuzzy name). Allow users to review matches, merge, keep separate, or ignore, with a field-level diff for conflict resolution. Apply ongoing sync with auto-merging based on user preferences, log all changes per contact, and warn/hold sync if webhook conflicts arise. Support rollback on accidental merges within 24 hours. Update onboarding documentation and ensure compliance with provider API rate limits and existing workflow integrity. Non-functional areas addressed include performance (rate limits), usability (user-friendly review/diff/rollback), security (OAuth), and maintainability (logging/history, rollback)."
+}

@@ -1,0 +1,965 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Log user/resource/timestamp/IP/action/context on resource access",
+    "summary": "Log each access to resources, including user ID, resource, timestamp, IP address, action, and access context. This enables granular event tracking per access for files, records, or dashboards, supporting compliance and security requirements in regulated SaaS environments.",
+    "tags": [
+      "audit",
+      "logging",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 08\u201310",
+    "reasoning": {
+      "source_summary_fragment": "Log each access event\u2014including user ID, timestamp, IP, access type, and context\u2014for files, records, or dashboards",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.93
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "resource access logging",
+        "audit trail",
+        "compliance event capture"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "audit",
+      "logging",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "audit",
+      "logs"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.249962Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:42.321092Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.467025Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Support 1-year configurable log retention policy",
+    "summary": "Implement a log retention policy with a minimum configurable period of 1 year to ensure auditability and meet compliance demands. The system must allow retention periods to be adjusted based on client policy and relevant regulatory requirements.",
+    "tags": [
+      "retention",
+      "compliance",
+      "[INFERRED] policy"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 11",
+    "reasoning": {
+      "source_summary_fragment": "with retention configurable at a minimum of 1 year",
+      "tag_metadata_reference": [
+        {
+          "tag": "retention",
+          "confidence": 0.94
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        },
+        {
+          "tag": "policy",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "configurable retention",
+        "audit log policy"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "policy",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "retention",
+      "compliance",
+      "[INFERRED] policy"
+    ],
+    "tags_v2": [
+      "retention",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "retention",
+        "canonical_tag": "retention",
+        "matched_tag": "retention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.470718Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.482450Z"
+      },
+      {
+        "original_tag": "[INFERRED] policy",
+        "canonical_tag": "[INFERRED] policy",
+        "matched_tag": "[INFERRED] policy",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.633591Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Enable compliance/security roles to export access logs (CSV/JSON)",
+    "summary": "Grant users with Compliance or Security roles the ability to export access logs in CSV or JSON format. This export functionality is restricted by role and supports compliance reviews and external reporting needs.",
+    "tags": [
+      "export",
+      "roles",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Export",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 13\u201314",
+    "reasoning": {
+      "source_summary_fragment": "Enable users with 'Compliance' or 'Security' roles to export logs in CSV or JSON",
+      "tag_metadata_reference": [
+        {
+          "tag": "export",
+          "confidence": 0.96
+        },
+        {
+          "tag": "roles",
+          "confidence": 0.94
+        },
+        {
+          "tag": "security",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "role-based access",
+        "log export",
+        "CSV/JSON output"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "export",
+      "roles",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "export",
+      "roles"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "export",
+        "canonical_tag": "export",
+        "matched_tag": "export",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.638562Z"
+      },
+      {
+        "original_tag": "roles",
+        "canonical_tag": "roles",
+        "matched_tag": "roles",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.642564Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.782268Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement export filters: date, user, resource type",
+    "summary": "Add export filtering criteria for access logs, allowing users to filter by date range, user, and resource type during export. These filters improve data manageability and facilitate targeted compliance or forensic queries.",
+    "tags": [
+      "filter",
+      "export",
+      "[INFERRED] usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Export"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 15",
+    "reasoning": {
+      "source_summary_fragment": "supporting filters (date, user, resource type)",
+      "tag_metadata_reference": [
+        {
+          "tag": "filter",
+          "confidence": 0.92
+        },
+        {
+          "tag": "export",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "log export filters",
+        "targeted reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "filter",
+      "export",
+      "[INFERRED] usability"
+    ],
+    "tags_v2": [
+      "filter",
+      "export"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "filter",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.793729Z"
+      },
+      {
+        "original_tag": "export",
+        "canonical_tag": "export",
+        "matched_tag": "export",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.797754Z"
+      },
+      {
+        "original_tag": "[INFERRED] usability",
+        "canonical_tag": "[INFERRED] usability",
+        "matched_tag": "[INFERRED] usability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.944512Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Apply masking for sensitive data on export per policy",
+    "summary": "Ensure that sensitive information in exported logs is masked according to defined policies. The export masking process enforces privacy protection and compliance requirements when data is shared or analyzed externally.",
+    "tags": [
+      "privacy",
+      "masking",
+      "[INFERRED] data-protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Export",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "masking sensitive info in exports as policy requires",
+      "tag_metadata_reference": [
+        {
+          "tag": "privacy",
+          "confidence": 0.93
+        },
+        {
+          "tag": "masking",
+          "confidence": 0.92
+        },
+        {
+          "tag": "data-protection",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "data masking",
+        "privacy policy enforcement"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-protection",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "privacy",
+      "masking",
+      "[INFERRED] data-protection"
+    ],
+    "tags_v2": [
+      "privacy",
+      "masking"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.957792Z"
+      },
+      {
+        "original_tag": "masking",
+        "canonical_tag": "masking",
+        "matched_tag": "masking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.961368Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-protection",
+        "canonical_tag": "[INFERRED] data-protection",
+        "matched_tag": "[INFERRED] data-protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.102936Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Preserve original access context despite user role changes",
+    "summary": "Ensure that historical access logs maintain the original access context, including user roles effective at the time of access, even if user roles have changed since. This maintains the integrity and accuracy of audit trails.",
+    "tags": [
+      "audit",
+      "historical",
+      "[INFERRED] integrity"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "Maintain accurate historical access context even after role changes",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "historical",
+          "confidence": 0.91
+        },
+        {
+          "tag": "integrity",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "access context immutability",
+        "audit trail preservation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "integrity",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "audit",
+      "historical",
+      "[INFERRED] integrity"
+    ],
+    "tags_v2": [
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.115150Z"
+      },
+      {
+        "original_tag": "historical",
+        "canonical_tag": "history",
+        "matched_tag": "history",
+        "tag_origin_cluster_id": "history",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:43.253866Z"
+      },
+      {
+        "original_tag": "[INFERRED] integrity",
+        "canonical_tag": "[INFERRED] integrity",
+        "matched_tag": "[INFERRED] integrity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.390877Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Notify compliance leads of large exports/unusual access",
+    "summary": "Set up automated notifications to compliance leads when there are large export actions or unusual access patterns. This promotes rapid response to potential security incidents and supports compliance oversight.",
+    "tags": [
+      "notification",
+      "anomaly",
+      "[INFERRED] alerting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Notifications",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "Notify compliance leads about high-volume exports or unusual patterns",
+      "tag_metadata_reference": [
+        {
+          "tag": "notification",
+          "confidence": 0.92
+        },
+        {
+          "tag": "anomaly",
+          "confidence": 0.9
+        },
+        {
+          "tag": "alerting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "compliance notifications",
+        "anomaly detection alerts"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "alerting",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "notification",
+      "anomaly",
+      "[INFERRED] alerting"
+    ],
+    "tags_v2": [
+      "anomaly"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notification",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.547837Z"
+      },
+      {
+        "original_tag": "anomaly",
+        "canonical_tag": "anomaly",
+        "matched_tag": "anomaly",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.564869Z"
+      },
+      {
+        "original_tag": "[INFERRED] alerting",
+        "canonical_tag": "[INFERRED] alerting",
+        "matched_tag": "[INFERRED] alerting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.718758Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Update admin documentation for export/retention processes",
+    "summary": "Update administrative documentation and compliance playbooks to reflect new export and retention features. Comprehensive, current documentation is essential to ensure proper adoption and audit readiness.",
+    "tags": [
+      "docs",
+      "compliance",
+      "[INFERRED] enablement"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 22\u201323",
+    "reasoning": {
+      "source_summary_fragment": "Update admin documentation and compliance playbooks for the new features",
+      "tag_metadata_reference": [
+        {
+          "tag": "docs",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        },
+        {
+          "tag": "enablement",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "documentation update",
+        "operational enablement"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "enablement",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "docs",
+      "compliance",
+      "[INFERRED] enablement"
+    ],
+    "tags_v2": [
+      "docs",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "docs",
+        "canonical_tag": "docs",
+        "matched_tag": "docs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.778410Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.787016Z"
+      },
+      {
+        "original_tag": "[INFERRED] enablement",
+        "canonical_tag": "[INFERRED] enablement",
+        "matched_tag": "[INFERRED] enablement",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:43.926272Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Enforce rate-limiting on export actions",
+    "summary": "Introduce rate-limiting controls for export actions to prevent system abuse and secure compliance logs. Restrictions mitigate the risk of data exfiltration or unintentional system overload.",
+    "tags": [
+      "rate-limit",
+      "abuse",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Export",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "Log exports must be rate-limited",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limit",
+          "confidence": 0.91
+        },
+        {
+          "tag": "abuse",
+          "confidence": 0.9
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "rate-limiting",
+        "export abuse prevention"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "rate-limit",
+      "abuse",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "abuse"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rate-limit",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.067081Z"
+      },
+      {
+        "original_tag": "abuse",
+        "canonical_tag": "abuse",
+        "matched_tag": "abuse",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.078010Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.232590Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-022-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Ensure geographic privacy/data-protection compliance",
+    "summary": "Build and enforce mechanisms to ensure privacy, data protection, and geographic regulatory compliance for all processes relating to access logs. Implementation must respect jurisdiction-specific requirements for regulated industries.",
+    "tags": [
+      "regulation",
+      "privacy",
+      "[INFERRED] data-protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 27",
+    "reasoning": {
+      "source_summary_fragment": "all processes must adhere to client-specific privacy, data protection, and geographic regulatory requirements",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.92
+        },
+        {
+          "tag": "data-protection",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance",
+        "geographic data protection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-protection",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "regulation",
+      "privacy",
+      "[INFERRED] data-protection"
+    ],
+    "tags_v2": [
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulation",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.412657Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.430877Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-protection",
+        "canonical_tag": "[INFERRED] data-protection",
+        "matched_tag": "[INFERRED] data-protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.600753Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

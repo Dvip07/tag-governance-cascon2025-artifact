@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Ensure rate limiting is resilient to spoofed tenant IDs or credentials",
+  "summary": "The system should defend against attempts to bypass rate limits with spoofed tenant IDs or credentials. Employ authentication and verification measures to ensure limits are securely enforced and cannot be evaded by malicious actors.",
+  "tags_v1": [
+    "security",
+    "[INFERRED] authentication"
+  ],
+  "tags_v2": [
+    "security"
+  ],
+  "tags_v3": [
+    "fallback",
+    "security",
+    "availability",
+    "tenant segment",
+    "api"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "all_58",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6941347122192383,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7388511300086975,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "all_57",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7176896333694458,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6782733201980591,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tenant segment",
+      "aliases": [],
+      "cluster_id": "all_363",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7252352833747864,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tenant segment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7423593997955322,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    }
+  ]
+}

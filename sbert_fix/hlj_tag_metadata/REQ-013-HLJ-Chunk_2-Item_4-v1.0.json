@@ -1,0 +1,93 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Restrict sensitive operations to authorized personnel",
+  "summary": "Limit access to high-risk operations within the payout engine so that only users with specific authorization can perform sensitive actions. Implement access controls to enhance security and ensure compliance.",
+  "tags_v1": [
+    "security",
+    "access"
+  ],
+  "tags_v2": [
+    "security",
+    "access"
+  ],
+  "tags_v3": [
+    "security",
+    "access",
+    "notification",
+    "payoutstatus"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7297054529190063,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access",
+      "aliases": [],
+      "cluster_id": "all_112",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6919746398925781,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7017196416854858,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payoutstatus",
+      "aliases": [],
+      "cluster_id": "all_384",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7634612321853638,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payoutstatus",
+      "method": "dedup_canonical"
+    }
+  ]
+}

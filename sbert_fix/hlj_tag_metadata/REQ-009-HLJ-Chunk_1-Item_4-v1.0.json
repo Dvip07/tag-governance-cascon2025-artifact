@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Integrate with FX rate providers for real-time rate fetch and lock confirmation",
+  "summary": "Connect and interface with external FX rate provider APIs to retrieve live exchange rates and process lock confirmations in real time. Ensure the system handles external data consistency and transaction reliability.",
+  "tags_v1": [
+    "fx",
+    "api",
+    "[INFERRED] integrations"
+  ],
+  "tags_v2": [
+    "fx",
+    "api"
+  ],
+  "tags_v3": [
+    "fx",
+    "timer",
+    "ui",
+    "api",
+    "integration",
+    "fx-rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "all_88",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7095084190368652,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timer",
+      "aliases": [],
+      "cluster_id": "all_286",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7203432321548462,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timer",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6855369806289673,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7110399007797241,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6924700736999512,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "all_284",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7965095639228821,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

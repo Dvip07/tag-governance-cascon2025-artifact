@@ -1,0 +1,81 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Provide detailed logs and change history for layout adjustments",
+  "summary": "Record comprehensive logs and versioned change histories for all RTL and LTR layout updates, providing transparency and auditability for compliance purposes. This supports debugging, traceability, and regulatory readiness.",
+  "tags_v1": [
+    "logging",
+    "auditing",
+    "[INFERRED] traceability"
+  ],
+  "tags_v2": [
+    "logs",
+    "audit"
+  ],
+  "tags_v3": [
+    "logging",
+    "auditlogs",
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7488170862197876,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auditlogs",
+      "aliases": [
+        "auditing"
+      ],
+      "cluster_id": "all_408",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7702898383140564,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v2",
+      "score": 1,
+      "confidence": 0.7233891487121582,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

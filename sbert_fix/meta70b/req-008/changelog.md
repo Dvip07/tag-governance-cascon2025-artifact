@@ -1,0 +1,137 @@
+# 📝 Changelog for `req-008` — **meta70b**
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['api integration', 'gig workers', '[INFERRED] platform connectivity']`
+**Validated tags:** `['gig workers']`
+**Tags added:** `[]`
+**Tags dropped:** `['api integration', '[INFERRED] platform connectivity']`
+**Tags kept:** `['gig workers']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] platform connectivity | dropped | none | 0.0 | None | 2025-05-31T23:57:11.635421Z |
+| api integration | dropped | none | 0.0 | None | 2025-05-31T23:57:11.220022Z |
+| gig workers | kept | direct | 1.0 | summary | 2025-05-31T23:57:11.229070Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['eligibility rules', 'gig income', '[INFERRED] income verification']`
+**Validated tags:** `['eligibility', 'gig income']`
+**Tags added:** `['eligibility']`
+**Tags dropped:** `['eligibility rules', '[INFERRED] income verification']`
+**Tags kept:** `['gig income']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] income verification | dropped | none | 0.0 | None | 2025-05-31T23:57:11.873158Z |
+| eligibility | added | direct | 1.0 | title | 2025-05-31T23:57:11.638961Z |
+| eligibility rules | dropped | direct | 1.0 | title | 2025-05-31T23:57:11.638961Z |
+| gig income | kept | direct | 1.0 | title | 2025-05-31T23:57:11.641730Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['kyc', 'aml', 'compliance']`
+**Validated tags:** `['kyc', 'aml', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['kyc', 'aml', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| aml | kept | direct | 1.0 | title | 2025-05-31T23:57:11.881521Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:11.891268Z |
+| kyc | kept | direct | 1.0 | title | 2025-05-31T23:57:11.877964Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['user experience', 'data connection']`
+**Validated tags:** `['user experience', 'data connection']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['user experience', 'data connection']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| data connection | kept | direct | 1.0 | source_fragment | 2025-05-31T23:57:11.997419Z |
+| user experience | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:11.985636Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['user experience', 'earnings summary', '[INFERRED] data accuracy']`
+**Validated tags:** `['user experience', 'earnings summary']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] data accuracy']`
+**Tags kept:** `['user experience', 'earnings summary']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] data accuracy | dropped | none | 0.0 | None | 2025-05-31T23:57:12.505743Z |
+| earnings summary | kept | semantic | 0.7248021960258484 | source_fragment | 2025-05-31T23:57:12.331580Z |
+| user experience | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:12.091467Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['compliance', 'regulations', '[INFERRED] legal']`
+**Validated tags:** `['compliance', 'regulations']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] legal']`
+**Tags kept:** `['compliance', 'regulations']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] legal | dropped | none | 0.0 | None | 2025-05-31T23:57:12.803900Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:12.514906Z |
+| regulations | kept | direct | 1.0 | title | 2025-05-31T23:57:12.517915Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['security', 'data protection', '[INFERRED] encryption']`
+**Validated tags:** `['security', 'data protection', '[INFERRED] encryption']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['security', 'data protection', '[INFERRED] encryption']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] encryption | kept | semantic | 0.6853694915771484 | mapped_concepts | 2025-05-31T23:57:13.212946Z |
+| data protection | kept | semantic | 0.7163516283035278 | summary | 2025-05-31T23:57:13.076714Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:12.899435Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['monitoring', 'compliance', '[INFERRED] reporting']`
+**Validated tags:** `['monitoring', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] reporting']`
+**Tags kept:** `['monitoring', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reporting | dropped | none | 0.0 | None | 2025-05-31T23:57:13.449363Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:13.228093Z |
+| monitoring | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:13.225458Z |
+
+## 🔹 HLJ: `REQ-008-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['logging', 'audit', '[INFERRED] tracking']`
+**Validated tags:** `['logs', 'audit']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', '[INFERRED] tracking']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] tracking | dropped | none | 0.0 | None | 2025-05-31T23:57:13.896750Z |
+| audit | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:13.719827Z |
+| logging | dropped | semantic | 0.6886088252067566 | mapped_concepts | 2025-05-31T23:57:13.704760Z |
+| logs | added | semantic | 0.6886088252067566 | mapped_concepts | 2025-05-31T23:57:13.704760Z |

@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Encrypt API calls and logs end-to-end for this feature",
+  "summary": "Ensure all API communications and log storage pertaining to card freeze/unfreeze functionality are encrypted end-to-end. This guards against data leaks and meets best practices and regulatory demands for sensitive financial data.",
+  "tags_v1": [
+    "security",
+    "encryption"
+  ],
+  "tags_v2": [
+    "security",
+    "encryption"
+  ],
+  "tags_v3": [
+    "security",
+    "monitoring",
+    "encryption",
+    "integration",
+    "queue",
+    "virtualcard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7512468695640564,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7144502401351929,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "all_20",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7277909517288208,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6830666065216064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "queue",
+      "aliases": [
+        "queueing"
+      ],
+      "cluster_id": "all_306",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.698933482170105,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "queueing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7410653829574585,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

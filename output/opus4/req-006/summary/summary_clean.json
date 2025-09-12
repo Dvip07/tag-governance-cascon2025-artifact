@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-006",
+  "summary": "FT-006 mandates implementing per-tenant API rate limiting for the B2B developer platform to ensure fair usage and prevent resource monopolization. The system must support configurable rate tiers (Standard: 1000 req/min, Premium: 5000 req/min), burst/sustained limits, and real-time configuration updates. Implementation includes API gateway enforcement with HTTP 429 responses, comprehensive monitoring/alerting, tenant usage dashboards, and abuse detection. Security requires MFA for config changes and audit logging. Technical constraints: <10ms latency impact, phased rollout strategy, and legacy API retrofitting. Deliverables encompass updated gateway systems, management UI, monitoring dashboards, migration plan, and client communications."
+}

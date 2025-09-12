@@ -1,0 +1,83 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_3-Item_2-v1.0",
+  "model": "opus4",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Implement cross-border payment regulatory compliance checks",
+  "summary": "Build automated compliance validation system for international transfers including sanctions screening, regulatory reporting requirements, and real-time compliance checks before payment execution.",
+  "tags_v1": [
+    "compliance",
+    "regulation",
+    "payments"
+  ],
+  "tags_v2": [
+    "compliance",
+    "payments"
+  ],
+  "tags_v3": [
+    "compliance",
+    "payments",
+    "regulation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7207936644554138,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7321529388427734,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7146753072738647,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

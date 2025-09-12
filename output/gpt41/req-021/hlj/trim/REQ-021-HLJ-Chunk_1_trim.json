@@ -1,0 +1,383 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Enable inline commenting on uploaded PDFs",
+    "summary": "Allow users to add and display comments directly within uploaded PDF files, supporting in-place feedback and collaborative review workflows. The inline commenting should visually anchor feedback to specific PDF locations.",
+    "tags": [
+      "comments",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 07\u201309",
+    "reasoning": {
+      "source_summary_fragment": "Enable users to add inline, threaded comments directly within uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.96
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "inline comments",
+        "PDF annotation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Support highlighted text or click-anywhere to start threads",
+    "summary": "Permit users to create comment threads by highlighting specific text or clicking anywhere within the PDF document. This enhances usability and flexibility in starting discussions.",
+    "tags": [
+      "comments",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 11\u201312",
+    "reasoning": {
+      "source_summary_fragment": "Users must be able to highlight text or click to start threads",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.93
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "highlight-triggered comments",
+        "contextual discussion initiation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement nested replies with at least two levels of threading",
+    "summary": "Introduce support for multi-level comment threads, allowing users to reply within replies up to at least two nesting levels. Enables focused discussions and detailed feedback chains.",
+    "tags": [
+      "comments"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 13",
+    "reasoning": {
+      "source_summary_fragment": "supporting at least two nesting levels for replies",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "nested threads",
+        "multi-level replies"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Provide filter for unresolved vs. resolved comment status",
+    "summary": "Implement a filtering feature to distinguish and display unresolved and resolved comments. Helps users focus on outstanding feedback and track review progress efficiently.",
+    "tags": [
+      "comments",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "distinguishing unresolved and resolved comments with filters",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "status filtering",
+        "comment state management"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Notify owners and participants on comment, reply, or resolution with direct links",
+    "summary": "Send notifications with direct links to relevant document owners and discussion participants when comments are added, replied to, or resolved. Ensures timely awareness and engagement.",
+    "tags": [
+      "notifications"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 16\u201319",
+    "reasoning": {
+      "source_summary_fragment": "Notifications\u2014including direct links\u2014shall be sent to document owners and participants when comments or threads are added, replied to, or resolved",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "event-based notification",
+        "direct engagement links"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Preserve comment positions or warn users when uploading new PDF versions",
+    "summary": "When a new version of a PDF is uploaded, the system should attempt to retain comment locations or alert users about potential position shifts. This maintains accuracy and context in feedback.",
+    "tags": [
+      "comments",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 21\u201322",
+    "reasoning": {
+      "source_summary_fragment": "the system should attempt to preserve comment positions or warn of shifts",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.91
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.83
+        }
+      ],
+      "mapped_concepts": [
+        "coordinate mapping",
+        "versioned document feedback"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Prevent overlapping or duplicate comment highlights",
+    "summary": "The system must stop users from creating overlapping or duplicate text highlights for comments, ensuring clarity and preventing feedback confusion in the document.",
+    "tags": [
+      "comments",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 23",
+    "reasoning": {
+      "source_summary_fragment": "overlapping/duplicate highlights must be prevented",
+      "tag_metadata_reference": [
+        {
+          "tag": "comments",
+          "confidence": 0.91
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.83
+        }
+      ],
+      "mapped_concepts": [
+        "non-overlapping annotations",
+        "highlight validation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Add quickstart guide for PDF commenting features",
+    "summary": "Provide a concise quickstart guide to help users understand and utilize PDF commenting functions. Improves onboarding and reduces friction for new users.",
+    "tags": [
+      "support",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "include a quickstart guide and feedback best practices",
+      "tag_metadata_reference": [
+        {
+          "tag": "support",
+          "confidence": 0.91
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user onboarding",
+        "feature walkthrough"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Document best practices for effective feedback",
+    "summary": "Provide documentation of best practices to guide users in giving actionable, effective feedback via PDF comments. Supports quality and constructive collaboration.",
+    "tags": [
+      "support",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "include a quickstart guide and feedback best practices",
+      "tag_metadata_reference": [
+        {
+          "tag": "support",
+          "confidence": 0.9
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "feedback documentation",
+        "effective communication"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-021-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Ensure performance, compatibility, and scalability for large PDFs and major browsers",
+    "summary": "Optimize PDF commenting features to scale efficiently on large files (100+ pages) and work seamlessly across major browsers. Prioritize speed, reliability, and cross-platform compatibility.",
+    "tags": [
+      "performance",
+      "compatibility"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 28\u201330",
+    "reasoning": {
+      "source_summary_fragment": "handle large PDFs (100+ pages) without performance degradation, and include support for major browsers and PDF viewers",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compatibility",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "scalability",
+        "browser support",
+        "high-load optimization"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-021"
+  }
+]

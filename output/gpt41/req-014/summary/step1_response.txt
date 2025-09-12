@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-014",
+  "summary": "This requirement mandates integrating a real-time gas-fee estimation feature into blockchain wallet platforms. Before confirming a transaction, users must see a range of estimated gas fees (min/expected/max) for different transaction types across at least three supported blockchain networks such as Ethereum and Polygon. Estimates should update dynamically, with the UI displaying the fee and total cost; users can adjust gas parameters with guidance. System must handle network disruptions by warning users of inaccuracies or disabling confirmations if estimates fail. All user data and transaction parameters must be secured and compliant with privacy policies. Logging of fee queries and confirmations is required for auditing and support. User support features must include documentation of gas fees/troubleshooting and provide support staff with recent estimate and user action logs. Deliverables include updated wallet UI, backend logic, fee oracle integrations, documentation, and audit/monitoring scripts. Performance, usability, security, compliance, and maintainability are prioritized."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["BlockchainWallet", "FeeEstimation"],
+  "canonical_tags": ["usability", "security", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-014-HLJ-Chunk_1",
+      "focus": "Gas fee estimation, dynamic UI, error handling, compliance, user support",
+      "items": [
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate real-time gas fee oracle modules for ≥3 networks",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "FeeEstimation"],
+          "tags": ["integration", "oracle"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9–13"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Display dynamic min/expected/max gas fee estimates in UI pre-confirmation",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "UserInterface"],
+          "tags": ["usability", "ui"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14–18"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Enable fee estimation for multiple transaction types (transfer, contract, swap)",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "FeeEstimation"],
+          "tags": ["coverage"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12–14"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Support advanced gas parameter adjustment with inline guidance",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "UserInterface"],
+          "tags": ["usability", "advanced"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Highlight fee spikes and advise users in case of pending pool congestion",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "UserInterface"],
+          "tags": ["notification"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Warn users and suggest actions if fee data is delayed or inaccurate",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "ErrorHandling"],
+          "tags": ["usability", "reliability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24–25"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Disable transaction confirmation if estimation unavailable",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "ErrorHandling"],
+          "tags": ["security", "blocking"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 26–27"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Ensure secure and compliant handling of all user data and transaction parameters",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "Security"],
+          "tags": ["security", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29–31"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Log all gas fee queries and confirmations for audit and troubleshooting",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "Audit"],
+          "tags": ["logging", "audit"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 32–33"
+        },
+        {
+          "id": "REQ-014-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Provide help documentation and support logs for gas fees and transaction issues",
+          "domain": "FinTech",
+          "subdomain": ["BlockchainWallet", "Support"],
+          "tags": ["documentation", "support"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 35–39"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

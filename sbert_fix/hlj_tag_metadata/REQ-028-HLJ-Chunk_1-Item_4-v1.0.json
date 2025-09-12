@@ -1,0 +1,105 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Route routine helpdesk inquiries to self-service or standard agents",
+  "summary": "Direct routine or low-complexity helpdesk inquiries to self-service options or standard agents, increasing efficiency and ensuring that advanced cases receive expert attention.",
+  "tags_v1": [
+    "routing",
+    "efficiency",
+    "[INFERRED] self-service"
+  ],
+  "tags_v2": [
+    "routing",
+    "efficiency"
+  ],
+  "tags_v3": [
+    "routing",
+    "efficiency",
+    "customer",
+    "self-service",
+    "satisfaction"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "routing",
+      "aliases": [],
+      "cluster_id": "all_194",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7438645362854004,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "routing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "efficiency",
+      "aliases": [],
+      "cluster_id": "all_196",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7299249172210693,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "efficiency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "customer",
+      "aliases": [],
+      "cluster_id": "all_424",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7364202737808228,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "customer",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "self-service",
+      "aliases": [],
+      "cluster_id": "all_54",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7465509176254272,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "self-service",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "satisfaction",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7116839289665222,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "satisfaction",
+      "method": "dedup_canonical"
+    }
+  ]
+}

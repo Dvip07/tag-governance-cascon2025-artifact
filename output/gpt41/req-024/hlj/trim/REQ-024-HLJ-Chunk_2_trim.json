@@ -1,0 +1,189 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Handle delay scheduling that overlaps with user nighttime, with reschedule or override",
+    "summary": "Ensure notification delivery schedules are aware of a user's nighttime hours, providing options to reschedule deliveries that would otherwise arrive at inconvenient times or to allow overrides. This feature enhances user experience by respecting personal routines and preferences while maintaining timely messaging. Compliance is supported through permission and opt-out management.",
+    "tags": [
+      "timezone",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "Features include centralized templates with dynamic fields... flexible scheduling with per-user timezone delays...",
+      "tag_metadata_reference": [
+        {
+          "tag": "timezone",
+          "confidence": 0.91
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "user nighttime detection",
+        "delivery rescheduling",
+        "override options"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Prevent duplicate notifications when a user qualifies for multiple triggers",
+    "summary": "Design mechanisms to avoid sending users duplicate notifications if they qualify for overlapping triggers, ensuring clarity and improving user experience. This approach addresses deliverability concerns and supports reliability and deduplication of notification events. Compliance is enhanced by minimizing unnecessary contact.",
+    "tags": [
+      "reliability",
+      "deduplication",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Delivery"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases like ... duplicate suppression are handled. ... Compliance is ensured with opt-out options...",
+      "tag_metadata_reference": [
+        {
+          "tag": "reliability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "deduplication",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "notification deduplication",
+        "multi-trigger events",
+        "user delivery optimization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Develop quickstart guides and integration docs for marketers and engineers",
+    "summary": "Create comprehensive quickstart and integration documentation targeting both marketers and engineers to facilitate rapid understanding and implementation of the notification engine. These resources cover template customization, API use, and workflow setup, supporting onboarding and training.",
+    "tags": [
+      "documentation",
+      "training"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "The solution integrates with current infrastructure, ... includes documentation for marketers and engineers.",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "training",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "quickstart guides",
+        "engineer onboarding",
+        "API documentation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-024-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Update customer help center with notification preference settings",
+    "summary": "Revise the customer help center to clearly document and explain all notification preference settings, allowing users to manage their communication choices effectively. Increased transparency and usability empower users and support opt-out compliance.",
+    "tags": [
+      "usability",
+      "help-center",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "low",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 29",
+    "reasoning": {
+      "source_summary_fragment": "Compliance is ensured with opt-out options and ... tracking all opt-outs ... help center ... notification preference settings.",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "help-center",
+          "confidence": 0.9
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "opt-out settings",
+        "user communication preferences",
+        "help documentation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  }
+]

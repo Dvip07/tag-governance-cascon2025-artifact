@@ -1,0 +1,151 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Provide customer support with real-time card status and override tools",
+  "summary": "Enhance support dashboards to include real-time status visibility for virtual cards, and offer tools for authorized override of freeze/unfreeze operations. These tools must log actions for auditing and comply with internal access policies.",
+  "tags_v1": [
+    "operational",
+    "usability",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "operational",
+    "usability"
+  ],
+  "tags_v3": [
+    "authentication",
+    "security",
+    "operational",
+    "mobile",
+    "usability",
+    "virtualcard",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7319259643554688,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7514839172363281,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "operational",
+      "aliases": [],
+      "cluster_id": "all_165",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7113841772079468,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "operational",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7332234382629395,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7317320704460144,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7615747451782227,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7000365257263184,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,95 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Add quickstart guide for PDF commenting features",
+  "summary": "Provide a concise quickstart guide to help users understand and utilize PDF commenting functions. Improves onboarding and reduces friction for new users.",
+  "tags_v1": [
+    "support",
+    "usability"
+  ],
+  "tags_v2": [
+    "support"
+  ],
+  "tags_v3": [
+    "notification",
+    "support",
+    "events",
+    "usability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7149922847747803,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7089155912399292,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "events",
+      "aliases": [],
+      "cluster_id": "all_203",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6814454197883606,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "events",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7288614511489868,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

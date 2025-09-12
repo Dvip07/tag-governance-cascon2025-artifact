@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Expose phantom balances with proper status in customer and internal UIs",
+  "summary": "Surface phantom balances, along with their current processing status (pending, settled, reversed, etc.), in both customer-facing and internal user interfaces. This ensures transparency for users and enables internal monitoring and prompt issue resolution.",
+  "tags_v1": [
+    "visibility",
+    "ui"
+  ],
+  "tags_v2": [
+    "ui"
+  ],
+  "tags_v3": [
+    "monitoring",
+    "ui",
+    "real-time-analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7405953407287598,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7099189758300781,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time-analytics",
+      "aliases": [
+        "real-time analytics",
+        "real-time monitoring"
+      ],
+      "cluster_id": "all_141",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7449675798416138,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time monitoring",
+      "method": "dedup_canonical"
+    }
+  ]
+}

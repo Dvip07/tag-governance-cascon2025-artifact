@@ -1,0 +1,581 @@
+[
+  {
+    "CHUNK_ID": "REQ-007-HLJ-Chunk_1",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Integrate real-time customer screening with vendor-agnostic provider support (Ln 07\u201312)",
+      "Ensure screening completes before account activation with <3s per check (Ln 12\u201314)",
+      "Support switchable screening provider architecture (Ln 14\u201315)",
+      "Implement fallback flow for screening downtime or latency >5s (Ln 16\u201320)",
+      "Set pending state and notify Compliance on fallback trigger (Ln 17\u201318)",
+      "Log all fallback events and their resolution path (Ln 18\u201319)",
+      "Hold and require manual review for ambiguous or near match results (Ln 20\u201321)",
+      "Audit and record all screening attempts and resolution actions securely (Ln 22\u201324)",
+      "Provide Compliance dashboard and ad-hoc reporting on screening outcomes (Ln 25\u201326)",
+      "Display screening status and next steps to users during onboarding (Ln 27\u201330)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.93,
+      "DATA": [
+        {
+          "seq_no": 1,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate real-time customer screening with vendor-agnostic provider support",
+          "summary": "Integrate a real-time screening process into the customer onboarding flow, ensuring that the solution supports interchangeable screening providers without vendor lock-in. Provide consistent and timely checks against updated AML and sanctions lists in a modular fashion.",
+          "tags": [
+            "aml",
+            "screening",
+            "[INFERRED] integration"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "AMLScreening"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.97,
+          "priority": "high",
+          "priority_confidence": 0.98,
+          "line_source": "Ln 07\u201312",
+          "reasoning": {
+            "source_summary_fragment": "integrate real-time screening with modular, vendor-neutral provider architecture",
+            "tag_metadata_reference": [
+              {
+                "tag": "aml",
+                "confidence": 0.97
+              },
+              {
+                "tag": "screening",
+                "confidence": 0.97
+              },
+              {
+                "tag": "integration",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "screening provider integration",
+              "real-time onboarding screening"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "integration",
+            "confidence": 0.91,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 2,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Ensure screening completes before account activation with <3s per check",
+          "summary": "Guarantee that all AML and sanctions screening processes are fully completed before activating any customer account. Each check should not exceed three seconds, supporting strong performance and customer experience.",
+          "tags": [
+            "performance",
+            "aml",
+            "[INFERRED] onboarding"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "AMLScreening"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.99,
+          "line_source": "Ln 12\u201314",
+          "reasoning": {
+            "source_summary_fragment": "Must complete screening for all signups under 3 seconds before activation",
+            "tag_metadata_reference": [
+              {
+                "tag": "performance",
+                "confidence": 0.93
+              },
+              {
+                "tag": "aml",
+                "confidence": 0.93
+              },
+              {
+                "tag": "onboarding",
+                "confidence": 0.87
+              }
+            ],
+            "mapped_concepts": [
+              "pre-activation screening",
+              "performance SLA"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "onboarding",
+            "confidence": 0.87,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 3,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Support switchable screening provider architecture",
+          "summary": "Design the AML screening system to enable easy switching or addition of external providers, ensuring future adaptability and uninterrupted compliance with regulatory requirements. Abstract provider logic to standardize integration points.",
+          "tags": [
+            "aml",
+            "integration"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.86,
+          "priority": "medium",
+          "priority_confidence": 0.85,
+          "line_source": "Ln 14\u201315",
+          "reasoning": {
+            "source_summary_fragment": "Architecture must permit switchable AML screening providers",
+            "tag_metadata_reference": [
+              {
+                "tag": "aml",
+                "confidence": 0.91
+              },
+              {
+                "tag": "integration",
+                "confidence": 0.88
+              }
+            ],
+            "mapped_concepts": [
+              "provider abstraction",
+              "pluggable screening"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "",
+            "confidence": 0.0,
+            "method": ""
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 4,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement fallback flow for screening downtime or latency >5s",
+          "summary": "Establish an automatic fallback protocol for scenarios where the primary AML screening service is unavailable or response time exceeds five seconds. The process must ensure business continuity and compliance oversight during such periods.",
+          "tags": [
+            "availability",
+            "aml",
+            "[INFERRED] resilience"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening",
+            "Compliance"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.93,
+          "priority": "high",
+          "priority_confidence": 0.95,
+          "line_source": "Ln 16\u201320",
+          "reasoning": {
+            "source_summary_fragment": "Fallback flow must activate on provider downtime or latency above 5s",
+            "tag_metadata_reference": [
+              {
+                "tag": "availability",
+                "confidence": 0.93
+              },
+              {
+                "tag": "aml",
+                "confidence": 0.92
+              },
+              {
+                "tag": "resilience",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "failover screening",
+              "fallback triggers"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "resilience",
+            "confidence": 0.89,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 5,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Set pending state and notify Compliance on fallback trigger",
+          "summary": "Upon fallback activation, place customer accounts into a pending status and immediately notify the Compliance team. This ensures oversight during any deviation from the normal screening workflow and mitigates regulatory risk.",
+          "tags": [
+            "aml",
+            "notification",
+            "[INFERRED] compliance"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "AMLScreening"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.9,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 17\u201318",
+          "reasoning": {
+            "source_summary_fragment": "Set to pending and notify Compliance on fallback trigger",
+            "tag_metadata_reference": [
+              {
+                "tag": "aml",
+                "confidence": 0.92
+              },
+              {
+                "tag": "notification",
+                "confidence": 0.91
+              },
+              {
+                "tag": "compliance",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "fallback workflow",
+              "compliance notification"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.89,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 6,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log all fallback events and their resolution path",
+          "summary": "Record every fallback incident related to AML screening processes, including the detailed resolution path and timestamps for audit and compliance. This enables traceability and supports regulatory investigations and process improvements.",
+          "tags": [
+            "audit",
+            "logging",
+            "[INFERRED] traceability"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Audit"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.88,
+          "line_source": "Ln 18\u201319",
+          "reasoning": {
+            "source_summary_fragment": "All fallback events and resolutions must be logged for audit/compliance",
+            "tag_metadata_reference": [
+              {
+                "tag": "audit",
+                "confidence": 0.91
+              },
+              {
+                "tag": "logging",
+                "confidence": 0.9
+              },
+              {
+                "tag": "traceability",
+                "confidence": 0.86
+              }
+            ],
+            "mapped_concepts": [
+              "event logging",
+              "compliance traceability"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "traceability",
+            "confidence": 0.86,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 7,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Hold and require manual review for ambiguous or near match results",
+          "summary": "When AML screening results are ambiguous or close matches, suspend the onboarding process and mandate manual review. This ensures careful human vetting of potential watchlist matches, reducing the risk of onboarding flagged individuals.",
+          "tags": [
+            "aml",
+            "manualreview",
+            "[INFERRED] exception"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening",
+            "Compliance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.87,
+          "priority": "medium",
+          "priority_confidence": 0.84,
+          "line_source": "Ln 20\u201321",
+          "reasoning": {
+            "source_summary_fragment": "Ambiguous screening requires hold/manual review",
+            "tag_metadata_reference": [
+              {
+                "tag": "aml",
+                "confidence": 0.89
+              },
+              {
+                "tag": "manualreview",
+                "confidence": 0.88
+              },
+              {
+                "tag": "exception",
+                "confidence": 0.83
+              }
+            ],
+            "mapped_concepts": [
+              "manual queue",
+              "exception handling workflow"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "exception",
+            "confidence": 0.83,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 8,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Audit and record all screening attempts and resolution actions securely",
+          "summary": "Maintain tamper-evident and privacy-compliant records of all customer screening attempts and resulting actions. This ensures a complete and immutable audit trail to support both regulatory and internal security requirements.",
+          "tags": [
+            "audit",
+            "security",
+            "[INFERRED] immutability"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Audit",
+            "Compliance"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.96,
+          "priority": "high",
+          "priority_confidence": 0.97,
+          "line_source": "Ln 22\u201324",
+          "reasoning": {
+            "source_summary_fragment": "Audit and securely record all AML screening attempts and actions",
+            "tag_metadata_reference": [
+              {
+                "tag": "audit",
+                "confidence": 0.97
+              },
+              {
+                "tag": "security",
+                "confidence": 0.94
+              },
+              {
+                "tag": "immutability",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "secure audit trail",
+              "privacy compliance"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "immutability",
+            "confidence": 0.89,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 9,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide Compliance dashboard and ad-hoc reporting on screening outcomes",
+          "summary": "Deliver a dashboard for Compliance to review AML screening outcomes and generate ad-hoc reports as needed. This facilitates rapid oversight, compliance monitoring, and transparency across customer onboarding activities.",
+          "tags": [
+            "dashboard",
+            "compliance",
+            "[INFERRED] reporting"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Reporting"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.9,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 25\u201326",
+          "reasoning": {
+            "source_summary_fragment": "Compliance dashboards/ad-hoc reporting on screening",
+            "tag_metadata_reference": [
+              {
+                "tag": "dashboard",
+                "confidence": 0.9
+              },
+              {
+                "tag": "compliance",
+                "confidence": 0.9
+              },
+              {
+                "tag": "reporting",
+                "confidence": 0.86
+              }
+            ],
+            "mapped_concepts": [
+              "compliance analytics",
+              "ad-hoc reporting UI"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "reporting",
+            "confidence": 0.86,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        },
+        {
+          "seq_no": 10,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Display screening status and next steps to users during onboarding",
+          "summary": "Clearly present the screening status and guidance for next steps to users as they progress through onboarding. This enhances transparency, reduces confusion, and ensures a positive user experience, especially if holds or manual review are triggered.",
+          "tags": [
+            "usability",
+            "ux",
+            "[INFERRED] transparency"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "UX"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "medium",
+          "priority_confidence": 0.89,
+          "line_source": "Ln 27\u201330",
+          "reasoning": {
+            "source_summary_fragment": "Display onboarding screening status and next steps to users",
+            "tag_metadata_reference": [
+              {
+                "tag": "usability",
+                "confidence": 0.9
+              },
+              {
+                "tag": "ux",
+                "confidence": 0.89
+              },
+              {
+                "tag": "transparency",
+                "confidence": 0.85
+              }
+            ],
+            "mapped_concepts": [
+              "user status display",
+              "onboarding communication"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "transparency",
+            "confidence": 0.85,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "",
+      "DATA": []
+    },
+    "errors": []
+  },
+  {
+    "CHUNK_ID": "REQ-007-HLJ-Chunk_2",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Enforce encryption for sensitive data in transit and at rest per regulations (Ln 35\u201337)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.91,
+      "DATA": [
+        {
+          "seq_no": 11,
+          "schema_version": "2025-05-17",
+          "id": "REQ-007-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Enforce encryption for sensitive data in transit and at rest per regulations",
+          "summary": "All sensitive data, including audit logs and screening reports, must be encrypted both during transmission and while stored, fully aligning with relevant FinTech regulatory requirements. The encryption protocols must cover data at rest and in transit to protect customer information, comply with compliance mandates, and ensure robust privacy and security postures.",
+          "tags": [
+            "security",
+            "encryption",
+            "[INFERRED] compliance"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Security"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 35\u201337",
+          "reasoning": {
+            "source_summary_fragment": "All sensitive data ... must be encrypted both during transmission and while stored, fully aligning with ... regulatory requirements.",
+            "tag_metadata_reference": [
+              {
+                "tag": "security",
+                "confidence": 0.96
+              },
+              {
+                "tag": "encryption",
+                "confidence": 0.93
+              },
+              {
+                "tag": "compliance",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "encryption at rest",
+              "encryption in transit",
+              "regulatory compliance"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.91,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-007"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "REQ-007-HLJ-Chunk_3",
+      "DATA": []
+    },
+    "errors": []
+  }
+]

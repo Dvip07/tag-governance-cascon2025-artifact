@@ -1,0 +1,114 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Develop dashboards for finance/compliance teams to monitor payments, locks, and exceptions",
+  "summary": "Create monitoring dashboards for finance and compliance personnel to review scheduled payments, rate locks, and exception events. These dashboards support operational oversight and regulatory auditing.",
+  "tags_v1": [
+    "dashboard",
+    "compliance"
+  ],
+  "tags_v2": [
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "payments",
+    "fx",
+    "fx-rates",
+    "dashboard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7171465158462524,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7338430881500244,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "all_88",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7016297578811646,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "all_284",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7777510285377502,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7190767526626587,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

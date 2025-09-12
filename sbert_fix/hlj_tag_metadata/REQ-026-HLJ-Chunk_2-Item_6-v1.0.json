@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Monitor and enforce KPIs: >20% response rate, 90% mapping, <24h follow-up",
+  "summary": "Continuously track and enforce KPIs such as survey response rates above 20%, NPS mapping coverage over 90%, and ensuring follow-up actions occur within 24 hours. Automate alerts and operational checks on these metrics.",
+  "tags_v1": [
+    "kpi",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "kpi"
+  ],
+  "tags_v3": [
+    "kpi",
+    "nps",
+    "analytics",
+    "automation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "kpi",
+      "aliases": [],
+      "cluster_id": "all_197",
+      "domains": [
+        "Compliance and Security",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7216477990150452,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "kpi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7493910789489746,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7444190382957458,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7542594075202942,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

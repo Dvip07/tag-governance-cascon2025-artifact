@@ -1,0 +1,91 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Support multi-rate invoices for split shipments or services",
+  "summary": "Extend invoice and billing logic to handle multiple GST rates in a single invoice, which may arise when shipments or services span multiple tax jurisdictions within the same transaction. The system should accurately segment and calculate GST per applicable region.",
+  "tags_v1": [
+    "gst",
+    "multi-rate"
+  ],
+  "tags_v2": [
+    "gst",
+    "multi-rate"
+  ],
+  "tags_v3": [
+    "gst",
+    "tax",
+    "multi-rate",
+    "multiple tax rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7639942765235901,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tax",
+      "aliases": [
+        "taxation"
+      ],
+      "cluster_id": "all_204",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7327046394348145,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "taxation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-rate",
+      "aliases": [],
+      "cluster_id": "all_156",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7574654817581177,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-rate",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multiple tax rates",
+      "aliases": [],
+      "cluster_id": "all_401",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7978740334510803,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multiple tax rates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

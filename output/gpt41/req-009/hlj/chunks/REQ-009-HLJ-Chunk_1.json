@@ -1,0 +1,488 @@
+{
+  "CHUNK_ID": "REQ-009-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Design scheduling UI to support cross-border payment setup and FX rate previews (Ln 07\u201311)",
+    "Implement FX rate lock option with selectable expiry window (e.g., 24h) after scheduling (Ln 10\u201314)",
+    "Display FX lock expiry details and countdown timers in the user interface (Ln 12\u201313)",
+    "Integrate with FX rate providers for real-time rate fetch and lock confirmation (Ln 15\u201316)",
+    "Revert to live FX rate and notify users if lock expires without funding (Ln 17\u201318)",
+    "Record all locked FX rates, metadata, and expiry data for audit and reconciliation (Ln 19\u201320)",
+    "Validate locked rate at execution; require user confirmation if rate expired (Ln 22\u201324)",
+    "Support partial/full cancellation of scheduled payments with refunds and notifications (Ln 25\u201326)",
+    "Implement controls against abuse of FX rate locks (e.g., repeated locking/cancelling) (Ln 28\u201329)",
+    "Support regulatory documentation for large-value cross-border payments (Ln 29\u201330)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Design scheduling UI to support cross-border payment setup and FX rate previews",
+        "summary": "Create an intuitive user interface enabling users to schedule cross-border payments with upfront FX rate previews. The UI must clearly present scheduling options and ensure transparency in rate selection for international transactions.",
+        "tags": [
+          "scheduled payments",
+          "ui",
+          "[INFERRED] usability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CrossBorderPayments",
+          "UserInterface"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 07\u201311",
+        "reasoning": {
+          "source_summary_fragment": "Enhance the payments UI to allow scheduling, FX rate previews, locking actions, expiry visuals",
+          "tag_metadata_reference": [
+            {
+              "tag": "scheduled payments",
+              "confidence": 0.96
+            },
+            {
+              "tag": "ui",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "cross-border payment setup",
+            "FX preview",
+            "payment scheduling interface"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "usability",
+          "confidence": 0.88,
+          "method": "semantic_feature_match_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Implement FX rate lock option with selectable expiry window (e.g., 24h) after scheduling",
+        "summary": "Provide a functionality allowing users to lock in a foreign exchange rate for a fixed, user-selected expiry window after scheduling a payment. This ensures price certainty and risk mitigation against FX fluctuations.",
+        "tags": [
+          "fx",
+          "locking",
+          "[INFERRED] risk management"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "ForeignExchange",
+          "UserScheduling"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 10\u201314",
+        "reasoning": {
+          "source_summary_fragment": "users to lock foreign exchange (FX) rates for a defined window (e.g., 24 hours), ensuring price certainty",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.98
+            },
+            {
+              "tag": "locking",
+              "confidence": 0.97
+            }
+          ],
+          "mapped_concepts": [
+            "rate lock window",
+            "FX expiry",
+            "user-selected lock time"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "risk management",
+          "confidence": 0.84,
+          "method": "policy_link_inference_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Display FX lock expiry details and countdown timers in the user interface",
+        "summary": "Surface FX rate lock expiry information and real-time countdowns in the payment UI. This visually alerts users to the remaining validity window for their locked rate, increasing transparency and preventing confusion.",
+        "tags": [
+          "fx",
+          "ui",
+          "[INFERRED] countdown"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "UserInterface"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.83,
+        "priority": "medium",
+        "priority_confidence": 0.87,
+        "line_source": "Ln 12\u201313",
+        "reasoning": {
+          "source_summary_fragment": "Enhance the payments UI to allow ... expiry visuals, and countdowns",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.92
+            },
+            {
+              "tag": "ui",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "lock expiry timer",
+            "visual expiry indication"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "countdown",
+          "confidence": 0.86,
+          "method": "semantic_fragment_match_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Integrate with FX rate providers for real-time rate fetch and lock confirmation",
+        "summary": "Connect and interface with external FX rate provider APIs to retrieve live exchange rates and process lock confirmations in real time. Ensure the system handles external data consistency and transaction reliability.",
+        "tags": [
+          "fx",
+          "api",
+          "[INFERRED] integrations"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "ForeignExchange",
+          "Integrations"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 15\u201316",
+        "reasoning": {
+          "source_summary_fragment": "Integrate with external FX rate providers for real-time quotes and locking commitments",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.98
+            },
+            {
+              "tag": "api",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "FX API integration",
+            "real-time provider fetching"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "integrations",
+          "confidence": 0.91,
+          "method": "api_match_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Revert to live FX rate and notify users if lock expires without funding",
+        "summary": "If a user fails to fund a payment within the FX lock window, the system must revert to the latest available FX rate and promptly notify the user. This prevents stale rate execution and keeps the transaction process transparent.",
+        "tags": [
+          "fx",
+          "notifications",
+          "[INFERRED] fallback"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "ForeignExchange",
+          "Notifications"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.81,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 17\u201318",
+        "reasoning": {
+          "source_summary_fragment": "Payment logic must handle rate expiry, user funding failures, and enable notification",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.93
+            },
+            {
+              "tag": "notifications",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "FX rate expiry handler",
+            "user notification on expiry"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "fallback",
+          "confidence": 0.85,
+          "method": "policy_failover_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Record all locked FX rates, metadata, and expiry data for audit and reconciliation",
+        "summary": "Store all locked FX rates together with full metadata and expiry information to enable complete audit trails and finance reconciliation. The solution must ensure robust, tamper-evident record keeping aligned with audit requirements.",
+        "tags": [
+          "audit",
+          "fx",
+          "[INFERRED] traceability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Audit",
+          "ForeignExchange"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.84,
+        "priority": "high",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 19\u201320",
+        "reasoning": {
+          "source_summary_fragment": "record all rate locks with audit metadata",
+          "tag_metadata_reference": [
+            {
+              "tag": "audit",
+              "confidence": 0.98
+            },
+            {
+              "tag": "fx",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "FX lock records",
+            "audit-ready metadata"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "traceability",
+          "confidence": 0.89,
+          "method": "audit_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Validate locked rate at execution; require user confirmation if rate expired",
+        "summary": "Upon payment execution, the system must verify the validity of the locked FX rate. If the rate has expired, confirmation from the user is required before proceeding to avoid unintended rate acceptance.",
+        "tags": [
+          "fx",
+          "validation",
+          "[INFERRED] user confirmation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "ForeignExchange",
+          "UserScheduling"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.8,
+        "priority": "medium",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 22\u201324",
+        "reasoning": {
+          "source_summary_fragment": "Payment logic must handle rate expiry ... require user confirmation if rate expired",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.93
+            },
+            {
+              "tag": "validation",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "FX rate validation",
+            "post-expiry user flow"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "user confirmation",
+          "confidence": 0.84,
+          "method": "user_flow_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Support partial/full cancellation of scheduled payments with refunds and notifications",
+        "summary": "Allow users or system administrators to cancel scheduled payments either partially or in full, ensuring that refunds are processed and users are notified. This feature increases flexibility and user trust in the scheduling system.",
+        "tags": [
+          "scheduled payments",
+          "refund",
+          "[INFERRED] cancellation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "CrossBorderPayments",
+          "Notifications"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.82,
+        "priority": "medium",
+        "priority_confidence": 0.85,
+        "line_source": "Ln 25\u201326",
+        "reasoning": {
+          "source_summary_fragment": "enable pre-execution cancellations with appropriate refund, notification",
+          "tag_metadata_reference": [
+            {
+              "tag": "scheduled payments",
+              "confidence": 0.97
+            },
+            {
+              "tag": "refund",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "partial/full payment cancellation",
+            "refund workflow"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "cancellation",
+          "confidence": 0.89,
+          "method": "payments_action_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Implement controls against abuse of FX rate locks (e.g., repeated locking/cancelling)",
+        "summary": "Introduce mechanisms to detect and prevent abuse of the FX rate lock function, such as users repeatedly locking and cancelling to speculate on rates. Enforcement policies must be auditable and aligned with regulatory oversight.",
+        "tags": [
+          "fx",
+          "abuse prevention",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "ForeignExchange",
+          "Risk"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.93,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 28\u201329",
+        "reasoning": {
+          "source_summary_fragment": "Build mechanisms to prevent abuse of rate locks (e.g., speculative cancelling), support regulatory documentation",
+          "tag_metadata_reference": [
+            {
+              "tag": "fx",
+              "confidence": 0.96
+            },
+            {
+              "tag": "abuse prevention",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "FX lock abuse detection",
+            "anti-speculation controls"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.95,
+          "method": "regulation_risk_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Support regulatory documentation for large-value cross-border payments",
+        "summary": "Implement workflows to collect and manage regulatory documentation for high-value cross-border transfers, ensuring adherence to compliance requirements and enabling smooth audit processes.",
+        "tags": [
+          "compliance",
+          "documentation",
+          "[INFERRED] regulatory reporting"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Compliance",
+          "CrossBorderPayments"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 29\u201330",
+        "reasoning": {
+          "source_summary_fragment": "support regulatory documentation for large-value transfers, and maintain complete audit logs",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.97
+            },
+            {
+              "tag": "documentation",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "regulatory submission",
+            "large-value KYC documentation"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": "regulatory reporting",
+          "confidence": 0.9,
+          "method": "compliance_doc_infer_v1"
+        },
+        "source_hlj_id": "REQ-009"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

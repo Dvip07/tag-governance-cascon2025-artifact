@@ -1,0 +1,244 @@
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-020-HLJ-Chunk_1",
+      "focus": "CRM Integration Setup & Initial Sync",
+      "items": [
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement OAuth authentication flow for Salesforce CRM integration",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM Integration"
+          ],
+          "tags": [
+            "oauth",
+            "salesforce",
+            "authentication"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement OAuth authentication flow for HubSpot CRM integration",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM Integration"
+          ],
+          "tags": [
+            "oauth",
+            "hubspot",
+            "authentication"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build API key authentication mechanism for CRM connections",
+          "domain": "SaaS",
+          "subdomain": [
+            "CRM Integration"
+          ],
+          "tags": [
+            "api-key",
+            "authentication",
+            "crm-sync"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 13"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create contact import service with dry run preview functionality",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management",
+            "Data Synchronization"
+          ],
+          "tags": [
+            "import",
+            "dry-run",
+            "contacts"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement email-based duplicate detection algorithm",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "duplicate-detection",
+            "email",
+            "matching"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement phone number duplicate detection algorithm",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "duplicate-detection",
+            "phone",
+            "matching"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Build fuzzy name matching algorithm for duplicate detection",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "duplicate-detection",
+            "fuzzy-matching",
+            "names"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Create duplicate review UI with merge/keep/ignore actions",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "ui",
+            "duplicate-resolution",
+            "user-action"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Build side-by-side field comparison UI for merge conflicts",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "ui",
+            "conflict-resolution",
+            "data-merge"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement automatic duplicate merge based on saved user preferences",
+          "domain": "SaaS",
+          "subdomain": [
+            "Data Synchronization",
+            "Contact Management"
+          ],
+          "tags": [
+            "auto-merge",
+            "preferences",
+            "sync"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-020-HLJ-Chunk_2",
+      "focus": "Sync Management, Logging & Edge Cases",
+      "items": [
+        {
+          "id": "REQ-020-HLJ-Chunk_2-Item_11-v1.0",
+          "title": "Create contact merge history logging system with per-contact audit trail",
+          "domain": "SaaS",
+          "subdomain": [
+            "Data Synchronization"
+          ],
+          "tags": [
+            "logging",
+            "audit",
+            "history"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_2-Item_12-v1.0",
+          "title": "Implement webhook conflict detection and sync pause mechanism",
+          "domain": "SaaS",
+          "subdomain": [
+            "Data Synchronization"
+          ],
+          "tags": [
+            "webhooks",
+            "conflict",
+            "sync-control"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_2-Item_13-v1.0",
+          "title": "Build 24-hour merge rollback functionality",
+          "domain": "SaaS",
+          "subdomain": [
+            "Contact Management"
+          ],
+          "tags": [
+            "rollback",
+            "undo",
+            "data-recovery"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 31"
+        },
+        {
+          "id": "REQ-020-HLJ-Chunk_2-Item_14-v1.0",
+          "title": "Update onboarding guide with CRM sync and duplicate management documentation",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "docs",
+            "onboarding",
+            "user-guide"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35"
+        }
+      ]
+    }
+  ]
+}

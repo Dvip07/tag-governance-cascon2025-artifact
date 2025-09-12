@@ -1,0 +1,149 @@
+{
+    "estimated_hlj_count": 13,
+    "chunk_count": 2,
+    "chunks": [
+      {
+        "chunk_id": "REQ-004-HLJ-Chunk_1",
+        "focus": "Core audit log structuring and right-to-erasure workflow",
+        "items": [
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_1-v1.0",
+            "title": "Refactor audit logs to add user-specific metadata fields",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["gdpr", "metadata"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 10–12"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_2-v1.0",
+            "title": "Classify log entries as personal or operational data per GDPR v2",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["gdpr", "classification"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 13–14"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_3-v1.0",
+            "title": "Implement data lineage tracking for log downstream dependencies",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging"],
+            "tags": ["traceability", "gdpr"],
+            "difficulty": "high",
+            "priority": "medium",
+            "line_source": "Ln 15"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_4-v1.0",
+            "title": "Trigger automated RtE workflow upon user deletion request",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["automation", "right-to-erasure"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 17–18"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_5-v1.0",
+            "title": "Support full deletion of eligible personal data in logs",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "GDPR"],
+            "tags": ["deletion", "gdpr"],
+            "difficulty": "high",
+            "priority": "high",
+            "line_source": "Ln 19"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_6-v1.0",
+            "title": "Enable partial deletion/redaction in situations impacting auditability",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "GDPR"],
+            "tags": ["redaction", "right-to-erasure"],
+            "difficulty": "high",
+            "priority": "medium",
+            "line_source": "Ln 20–21"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_7-v1.0",
+            "title": "Log all RtE actions in meta-logs with reason codes, requestor ID, and timestamps",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging"],
+            "tags": ["meta-log", "audit"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 22–23"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_8-v1.0",
+            "title": "Handle field-level redaction for composite log entries involving multiple users",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["redaction", "edge-case"],
+            "difficulty": "high",
+            "priority": "medium",
+            "line_source": "Ln 25"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_9-v1.0",
+            "title": "Restrict access with role-based controls when legal retention precludes deletion",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["retention", "access-control"],
+            "difficulty": "high",
+            "priority": "high",
+            "line_source": "Ln 26–27"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_1-Item_10-v1.0",
+            "title": "Ensure all deletion/redaction operations are tamper-evident using cryptographic checksums and hash chaining",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Security"],
+            "tags": ["integrity", "security"],
+            "difficulty": "high",
+            "priority": "high",
+            "line_source": "Ln 29–30"
+          }
+        ]
+      },
+      {
+        "chunk_id": "REQ-004-HLJ-Chunk_2",
+        "focus": "APIs, operational monitoring, validation, compliance, and deliverables",
+        "items": [
+          {
+            "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+            "title": "Provide APIs for compliance team review/approval/denial of deletion/redaction actions",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Compliance"],
+            "tags": ["api", "compliance"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 31–32"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+            "title": "Implement dashboards and scheduled reports for RtE monitoring and metrics",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Reporting"],
+            "tags": ["dashboard", "monitoring"],
+            "difficulty": "medium",
+            "priority": "medium",
+            "line_source": "Ln 34–35"
+          },
+          {
+            "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+            "title": "Log all RtE actions in real-time to a secure, access-controlled meta-log system",
+            "domain": "FinTech",
+            "subdomain": ["AuditLogging", "Security"],
+            "tags": ["real-time", "meta-log"],
+            "difficulty": "medium",
+            "priority": "high",
+            "line_source": "Ln 36"
+          }
+        ]
+      }
+    ]
+  }
+  

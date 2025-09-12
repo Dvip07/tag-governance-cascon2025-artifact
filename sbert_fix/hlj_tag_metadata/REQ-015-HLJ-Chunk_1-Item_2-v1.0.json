@@ -1,0 +1,57 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Implement client endpoint registration with event selection",
+  "summary": "Enable clients to register webhook endpoints and select which claim status events should trigger notifications. The registration process must be secure and support customization for each integration profile.",
+  "tags_v1": [
+    "webhooks",
+    "registration"
+  ],
+  "tags_v2": [
+    "webhook",
+    "registration"
+  ],
+  "tags_v3": [
+    "webhook",
+    "registration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.796256422996521,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhooks",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "registration",
+      "aliases": [],
+      "cluster_id": "all_160",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7568850517272949,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "registration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

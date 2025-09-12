@@ -1,0 +1,119 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Maintain logs of triggered alerts, investigations, and outcomes for audit",
+  "summary": "Create persistent logs for all triggered alerts, subsequent investigations, and their outcomes. These logs are essential for auditability, supporting oversight requirements and external reviews.",
+  "tags_v1": [
+    "audit",
+    "logging",
+    "[INFERRED] auditability"
+  ],
+  "tags_v2": [
+    "audit",
+    "logs"
+  ],
+  "tags_v3": [
+    "audit",
+    "alert",
+    "logging",
+    "data",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7467247843742371,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.736432671546936,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7292742729187012,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6829807758331299,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7384157180786133,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

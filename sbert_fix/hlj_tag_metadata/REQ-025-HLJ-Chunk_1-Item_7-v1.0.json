@@ -1,0 +1,144 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Suggest automated remediation steps for detected performance regressions",
+  "summary": "Upon detecting performance regressions, automatically suggest remediation actions such as configuration adjustments, rollbacks, or code fixes to facilitate swift resolution.",
+  "tags_v1": [
+    "remediation",
+    "automation",
+    "[INFERRED] regression"
+  ],
+  "tags_v2": [
+    "remediation"
+  ],
+  "tags_v3": [
+    "performance",
+    "remediation",
+    "analytics",
+    "fallback",
+    "external services",
+    "diagnostics",
+    "regression"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7453433275222778,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "remediation",
+      "aliases": [],
+      "cluster_id": "all_119",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7203344106674194,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "remediation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7493223547935486,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "all_58",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7007496356964111,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "external services",
+      "aliases": [],
+      "cluster_id": "all_386",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7121677398681641,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "external services",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "diagnostics",
+      "aliases": [],
+      "cluster_id": "all_117",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7397235035896301,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "diagnostics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regression",
+      "aliases": [],
+      "cluster_id": "all_118",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.714181125164032,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regression",
+      "method": "dedup_canonical"
+    }
+  ]
+}

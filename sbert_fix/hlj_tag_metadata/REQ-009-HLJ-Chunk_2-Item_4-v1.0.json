@@ -1,0 +1,141 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Restrict new payment scheduling during FX provider outages and notify users of service limitations",
+  "summary": "Implement logic to block scheduling of new payments when FX services are unavailable, and promptly notify users of any service limitations. This prevents failed lock actions and improves system transparency.",
+  "tags_v1": [
+    "fx",
+    "availability",
+    "[INFERRED] outage-handling"
+  ],
+  "tags_v2": [
+    "fx"
+  ],
+  "tags_v3": [
+    "fx",
+    "rollback",
+    "fx-rates",
+    "availability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "all_88",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6892921924591064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "database",
+      "aliases": [],
+      "cluster_id": "all_288",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6604068875312805,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "database",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6894050240516663,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "all_77",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6515082716941833,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "beta",
+      "aliases": [],
+      "cluster_id": "all_97",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6588828563690186,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "beta",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "all_284",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7669053673744202,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "all_57",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7246509194374084,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

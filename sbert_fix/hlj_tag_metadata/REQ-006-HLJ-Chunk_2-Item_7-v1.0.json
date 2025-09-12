@@ -1,0 +1,90 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Update developer documentation and FAQs for new rate limit policies",
+  "summary": "Thoroughly update platform documentation and FAQs to reflect new rate limit policies and tiers. This ensures developers have clear guidance and reduces support burden from misunderstandings.",
+  "tags_v1": [
+    "documentation",
+    "[INFERRED] education"
+  ],
+  "tags_v2": [
+    "documentation"
+  ],
+  "tags_v3": [
+    "sandbox",
+    "documentation",
+    "testing",
+    "client-support"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "sandbox",
+      "aliases": [],
+      "cluster_id": "all_271",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7166494131088257,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sandbox",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731148362159729,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6995135545730591,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "client-support",
+      "aliases": [],
+      "cluster_id": "all_272",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7392011880874634,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "client-support",
+      "method": "dedup_canonical"
+    }
+  ]
+}

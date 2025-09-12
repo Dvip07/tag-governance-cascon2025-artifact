@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-028",
+  "summary": "Implement AI-driven sentiment and urgency classification for helpdesk ticket routing. Integrate an NLP engine to auto-classify tickets as positive, neutral, or negative and to detect urgent cases at intake, enabling fast routing: negative/urgent tickets go to senior agents or escalation, routine ones to standard or self-service. Handle edge cases like sarcasm and allow agents to correct classifications, supporting continuous model learning. Provide reporting on resolution time, satisfaction by class, and trend surfacing for ops review. Ensure compliance by logging all decisions/actions, offering opt-out for users, and supplying documentation for agents and customers. System must process each ticket in under 500ms, achieve 85% model accuracy on labeled data, and target a 30% reduction in resolution time for negative/urgent tickets with 90% agent satisfaction on routing."
+}

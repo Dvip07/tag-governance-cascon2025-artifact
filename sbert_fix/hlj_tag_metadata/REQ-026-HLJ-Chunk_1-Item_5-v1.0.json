@@ -1,0 +1,56 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Coordinate prompt delivery to prevent duplicates for multi-device users",
+  "summary": "Synchronize NPS survey prompt delivery across multiple devices for the same user to ensure that prompts are not duplicated. This coordination improves user experience and avoids repetitive survey exposure.",
+  "tags_v1": [
+    "nps",
+    "[INFERRED] synchronization"
+  ],
+  "tags_v2": [
+    "nps"
+  ],
+  "tags_v3": [
+    "nps",
+    "user_experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7513280510902405,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.739591658115387,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user_experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

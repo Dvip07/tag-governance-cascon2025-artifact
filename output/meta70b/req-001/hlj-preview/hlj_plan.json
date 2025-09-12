@@ -1,0 +1,82 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_1",
+      "focus": "API Design",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design GET /api/v2/transactions/history endpoint",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "TransactionHistory"
+          ],
+          "tags": [
+            "api",
+            "openbanking"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement pagination and filtering",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "TransactionHistory"
+          ],
+          "tags": [
+            "api",
+            "filtering"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 15-17"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_2",
+      "focus": "Security and Compliance",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Authenticate requests using OAuth 2.0",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "oauth",
+            "security"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25-27"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Log access events and support audit trail",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "logging",
+            "audit"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30-32"
+        }
+      ]
+    }
+  ]
+}

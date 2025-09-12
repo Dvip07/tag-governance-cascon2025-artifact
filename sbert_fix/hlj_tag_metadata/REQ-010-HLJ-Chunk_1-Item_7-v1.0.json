@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Provide scheduled batch reconciliation between phantom and settled balances",
+  "summary": "Integrate batch processes that regularly reconcile differences between phantom and settled balances, ensuring that operational and reporting ledgers remain fully synchronized. These routine reconciliations help detect anomalies and support regulatory accuracy.",
+  "tags_v1": [
+    "batch",
+    "phantom-balance",
+    "[INFERRED] reconciliation"
+  ],
+  "tags_v2": [
+    "batch",
+    "phantom balance"
+  ],
+  "tags_v3": [
+    "reconciliation",
+    "batch",
+    "phantom-balance",
+    "documentation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7528198957443237,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "batch",
+      "aliases": [
+        "batchprocessing",
+        "batchpayouts"
+      ],
+      "cluster_id": "all_104",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7220404148101807,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "batch",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "phantom-balance",
+      "aliases": [
+        "phantom-balances",
+        "phantom balance"
+      ],
+      "cluster_id": "all_181",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7935824394226074,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "phantom-balance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6844794750213623,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

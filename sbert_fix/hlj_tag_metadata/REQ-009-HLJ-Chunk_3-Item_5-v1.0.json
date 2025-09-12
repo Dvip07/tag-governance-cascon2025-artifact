@@ -1,0 +1,60 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_3-Item_5-v1.0",
+  "model": "opus4",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Implement multi-channel notification system (email/SMS/in-app)",
+  "summary": "Build notification framework supporting email, SMS, and in-app alerts for rate expiry warnings, payment status updates, and transaction confirmations with user preference management.",
+  "tags_v1": [
+    "notifications",
+    "messaging",
+    "payments"
+  ],
+  "tags_v2": [
+    "notification",
+    "payments"
+  ],
+  "tags_v3": [
+    "notification",
+    "payments"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7584241032600403,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7408608198165894,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    }
+  ]
+}

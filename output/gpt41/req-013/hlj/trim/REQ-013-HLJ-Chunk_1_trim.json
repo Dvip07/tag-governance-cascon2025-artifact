@@ -1,0 +1,499 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design batch payout engine for multi-seller transactions",
+    "summary": "Develop a robust batch payout engine capable of processing payouts to multiple sellers within a marketplace. The solution should handle large transaction volumes, ensure secure, auditable transactions, and enable both scheduled and on-demand payout runs.",
+    "tags": [
+      "engine",
+      "batch",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "Marketplace"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.98,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 06\u201311",
+    "reasoning": {
+      "source_summary_fragment": "Build a robust batch payout engine for marketplace sellers...",
+      "tag_metadata_reference": [
+        {
+          "tag": "engine",
+          "confidence": 0.97
+        },
+        {
+          "tag": "batch",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "batch payout processing",
+        "multi-seller marketplace payments",
+        "configurable payout schedules"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement detailed transaction logging with unique IDs and metadata",
+    "summary": "Establish comprehensive logging for each batch payout transaction, capturing unique identifiers, associated metadata, and contextual details. Logs must support traceability, auditing, and downstream reconciliation requirements.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 12\u201313",
+    "reasoning": {
+      "source_summary_fragment": "All batch operations must log transaction details (IDs, metadata)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.98
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "transaction logging",
+        "unique transaction identifiers",
+        "metadata for audit/reconciliation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Enable scheduled and on-demand configurable batch payouts",
+    "summary": "Support both scheduled (automated) and ad-hoc (manual) payout batch runs, allowing configuration of critical parameters such as payout timing, batch size, and currency. This functionality allows marketplaces flexibility in managing payout cycles.",
+    "tags": [
+      "scheduling",
+      "batch",
+      "[INFERRED] flexibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 14\u201316",
+    "reasoning": {
+      "source_summary_fragment": "support configuration of batch size, currency, and payout timing...",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduling",
+          "confidence": 0.97
+        },
+        {
+          "tag": "batch",
+          "confidence": 0.95
+        },
+        {
+          "tag": "flexibility",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "scheduled payouts",
+        "on-demand payouts",
+        "batch parameter configuration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "flexibility",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement failure handling logic for batch payout transactions",
+    "summary": "Introduce robust failure handling mechanisms for batch payouts, including detection of processing errors, compliance holds, or bank failures. The system must ensure accurate error capture and support appropriate response actions.",
+    "tags": [
+      "failure",
+      "rollback",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 18\u201326",
+    "reasoning": {
+      "source_summary_fragment": "In case of any transaction failure (e.g., bank error, compliance hold)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "failure",
+          "confidence": 0.96
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.91
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.72
+        }
+      ],
+      "mapped_concepts": [
+        "failure detection",
+        "payout transaction errors",
+        "handling of compliance and processing failures"
+      ]
+    },
+    "low_confidence_reason": "Inferred 'reliability' tag at minimum threshold due to lack of explicit mention.",
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.72,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Support atomic rollback for failed batch payouts",
+    "summary": "Ensure the payout system supports atomic rollbacks, undoing all transactions in a batch if any individual payout fails due to errors or compliance issues. Atomicity must guard against partial, inconsistent payouts.",
+    "tags": [
+      "atomicity",
+      "rollback",
+      "[INFERRED] consistency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 25\u201326",
+    "reasoning": {
+      "source_summary_fragment": "provide atomic rollback for entire batches...",
+      "tag_metadata_reference": [
+        {
+          "tag": "atomicity",
+          "confidence": 0.97
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.94
+        },
+        {
+          "tag": "consistency",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "atomic transaction guarantees",
+        "rollback on batch payout failure",
+        "consistency in financial operations"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "consistency",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Allow retry of failed individual payout transactions",
+    "summary": "Enable retries for failed individual payout entries within a batch, allowing resolution of transient errors and partial recovery without requiring full batch rollback. Track retry history and escalation paths as needed.",
+    "tags": [
+      "retry",
+      "partial",
+      "[INFERRED] recovery"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 21\u201322",
+    "reasoning": {
+      "source_summary_fragment": "allow retrying failed transactions, while recording exceptions...",
+      "tag_metadata_reference": [
+        {
+          "tag": "retry",
+          "confidence": 0.97
+        },
+        {
+          "tag": "partial",
+          "confidence": 0.95
+        },
+        {
+          "tag": "recovery",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "individual transaction retry",
+        "partial batch payouts",
+        "automated error resolution"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "recovery",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Log and mark partial batch payout successes and exceptions",
+    "summary": "Track and log both successful and exceptional (failed) payouts within a batch, explicitly marking partial success states. Exception logs must facilitate downstream audits and error analytics.",
+    "tags": [
+      "logging",
+      "exception",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 23\u201324",
+    "reasoning": {
+      "source_summary_fragment": "recording exceptions and maintaining audit trails...",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.94
+        },
+        {
+          "tag": "exception",
+          "confidence": 0.96
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "partial batch outcome logging",
+        "exception reporting",
+        "audit of payout events"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Record audit logs for all batch operations and manual overrides",
+    "summary": "Create audit logs for every batch operation, including both automated and manually overridden actions. Logging must satisfy regulatory, compliance, and operational traceability requirements.",
+    "tags": [
+      "audit",
+      "logging",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 28\u201329",
+    "reasoning": {
+      "source_summary_fragment": "audit logging, access control...",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.98
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.98
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail creation",
+        "manual override logs",
+        "regulatory traceability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Generate exception and summary reports for payouts",
+    "summary": "Provide tools to generate exception-focused and summary reports for payout operations. These reports should highlight failed transactions, compliance exceptions, and overall batch outcomes for stakeholder review.",
+    "tags": [
+      "reporting",
+      "exception",
+      "[INFERRED] analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 30\u201331",
+    "reasoning": {
+      "source_summary_fragment": "exception and summary reports for payouts...",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.97
+        },
+        {
+          "tag": "exception",
+          "confidence": 0.95
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "exception reporting",
+        "summary outcome reports",
+        "stakeholder analytics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Develop admin dashboard for batch status and payout drill-down",
+    "summary": "Deliver an administrative dashboard displaying real-time batch payout status, enabling drill-down into specific transactions, error cases, and manual overrides. The dashboard supports monitoring, reporting, and operational actions for payout management.",
+    "tags": [
+      "dashboard",
+      "admin",
+      "[INFERRED] monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "AdminUI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 32\u201333",
+    "reasoning": {
+      "source_summary_fragment": "admin dashboard for monitoring, rollback, and reporting...",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.98
+        },
+        {
+          "tag": "admin",
+          "confidence": 0.97
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "admin dashboard UI",
+        "batch payout monitoring",
+        "transaction drill-down"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "monitoring",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013"
+  }
+]

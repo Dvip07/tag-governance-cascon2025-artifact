@@ -1,0 +1,148 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Implement collision handling to prevent duplicate replies",
+  "summary": "Introduce collision detection and handling so that teams can prevent duplicate replies to the same email. Use mechanisms like locking or warnings to manage concurrent access.",
+  "tags_v1": [
+    "concurrency",
+    "locking"
+  ],
+  "tags_v2": [
+    "lock"
+  ],
+  "tags_v3": [
+    "search",
+    "lock",
+    "routing",
+    "rules",
+    "reporting",
+    "concurrency",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "search",
+      "aliases": [],
+      "cluster_id": "all_226",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7335426807403564,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "search",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "lock",
+      "aliases": [
+        "locking"
+      ],
+      "cluster_id": "all_89",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.759436309337616,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "locking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "routing",
+      "aliases": [],
+      "cluster_id": "all_194",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7278021574020386,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "routing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7272622585296631,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7485021948814392,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "concurrency",
+      "aliases": [],
+      "cluster_id": "all_225",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7908803224563599,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "concurrency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7277482151985168,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

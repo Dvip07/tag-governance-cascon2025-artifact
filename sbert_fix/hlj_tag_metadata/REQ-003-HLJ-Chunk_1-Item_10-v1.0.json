@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Ensure sensitive customer data is excluded from alert payloads beyond investigation need",
+  "summary": "Implement strict data handling in alert payloads so that only investigative-relevant information is included, excluding unnecessary sensitive customer data. This reduces privacy risk and supports regulatory compliance for customer data protection.",
+  "tags_v1": [
+    "security",
+    "privacy",
+    "[INFERRED] data-minimization"
+  ],
+  "tags_v2": [
+    "security",
+    "privacy"
+  ],
+  "tags_v3": [
+    "security",
+    "privacy",
+    "alert",
+    "ratelimit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7593729496002197,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7307968139648438,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7505641579627991,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ratelimit",
+      "aliases": [],
+      "cluster_id": "all_313",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7285621166229248,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ratelimit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

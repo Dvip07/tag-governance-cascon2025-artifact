@@ -1,0 +1,147 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Centralize notification templates with dynamic fields and multi-language support",
+  "summary": "Establishes a central system for managing notification templates that includes dynamic field substitution and support for multiple languages. Ensures reusability, consistency, and adaptability of messaging for diverse user bases. Enables efficient management, updates, and expansion of communication styles.",
+  "tags_v1": [
+    "template",
+    "multi-language",
+    "[INFERRED] notification"
+  ],
+  "tags_v2": [
+    "template",
+    "multi-language"
+  ],
+  "tags_v3": [
+    "template",
+    "messaging",
+    "multi-language",
+    "personalization",
+    "notification",
+    "backend"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "template",
+      "aliases": [],
+      "cluster_id": "all_146",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7202022075653076,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "template",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7472317218780518,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-language",
+      "aliases": [],
+      "cluster_id": "all_147",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749474048614502,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-language",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "storage",
+      "aliases": [],
+      "cluster_id": "all_291",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.676048994064331,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "storage",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "all_148",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7246497869491577,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7706297636032104,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7084956169128418,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    }
+  ]
+}

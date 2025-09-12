@@ -1,0 +1,199 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Build reconciliation tools to detect and resolve mismatches between operational and reporting ledgers",
+    "summary": "Develop a system to identify and correct discrepancies between operational and reporting ledgers, ensuring data consistency and compliance.",
+    "tags": [
+      "reconciliation",
+      "mismatch-detection",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 60-63",
+    "reasoning": {
+      "source_summary_fragment": "reconciliation tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "reconciliation",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "reconciliation",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Allow manual and automated resolution workflows, with full audit trails for all actions",
+    "summary": "Implement flexible workflows for resolving discrepancies, including manual and automated processes, with comprehensive audit trails.",
+    "tags": [
+      "reconciliation",
+      "resolution-workflows"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 65-68",
+    "reasoning": {
+      "source_summary_fragment": "manual and automated resolution",
+      "tag_metadata_reference": [
+        {
+          "tag": "resolution-workflows",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "resolution",
+        "workflows"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Handle cases of 'phantom reversals' (phantom balance is reversed before settlement)",
+    "summary": "Develop a mechanism to address 'phantom reversals', where a phantom balance is reversed prior to settlement, ensuring accurate ledger management.",
+    "tags": [
+      "phantom-reversals",
+      "transaction-management",
+      "[INFERRED] ledger-management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 70-73",
+    "reasoning": {
+      "source_summary_fragment": "phantom reversals",
+      "tag_metadata_reference": [
+        {
+          "tag": "phantom-reversals",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "phantom",
+        "reversals",
+        "ledger-management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "ledger-management",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Support for multi-currency transactions, including conversion logic for reporting ledger entries",
+    "summary": "Implement support for multi-currency transactions, incorporating conversion logic for accurate reporting ledger entries.",
+    "tags": [
+      "multi-currency",
+      "conversion-logic"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "TransactionManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 75-78",
+    "reasoning": {
+      "source_summary_fragment": "multi-currency transactions",
+      "tag_metadata_reference": [
+        {
+          "tag": "multi-currency",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "multi-currency",
+        "conversion"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-010-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "If batch reconciliation fails, trigger alerts and restrict further settlement actions until resolved",
+    "summary": "Upon batch reconciliation failure, trigger alerts and restrict further settlement actions until the issue is resolved, ensuring data integrity.",
+    "tags": [
+      "reconciliation",
+      "alerting",
+      "[INFERRED] data-integrity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reconciliation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 80-83",
+    "reasoning": {
+      "source_summary_fragment": "batch reconciliation fails",
+      "tag_metadata_reference": [
+        {
+          "tag": "reconciliation",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "reconciliation",
+        "alerting",
+        "data-integrity"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "data-integrity",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  }
+]

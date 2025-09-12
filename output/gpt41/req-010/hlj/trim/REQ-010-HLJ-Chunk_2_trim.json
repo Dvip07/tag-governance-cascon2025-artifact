@@ -1,0 +1,138 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Log all ledger actions and reversals with immutable audit trails",
+    "summary": "Implement immutable audit logging for all operational and reporting ledger actions, including reversals. Ensure every transaction is recorded with unalterable audit trails accessible for compliance, security reviews, and forensic analysis.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] immutable"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 46\u201348",
+    "reasoning": {
+      "source_summary_fragment": "immutable audit trails, role-based access, compliance to SOX/PCI-DSS",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.92
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "ledger action logging",
+        "reversal traceability",
+        "immutable records"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "immutable",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Enforce role-based access and least-privilege on ledger data",
+    "summary": "Apply strict role-based access controls (RBAC) and least-privilege principles to all ledger data, ensuring users only have permissions necessary for their functions. Protect sensitive transactions and metadata against unauthorized access and privilege escalation.",
+    "tags": [
+      "rbac",
+      "access-control",
+      "[INFERRED] least-privilege"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 49\u201350",
+    "reasoning": {
+      "source_summary_fragment": "role-based access, least-privilege on ledger data",
+      "tag_metadata_reference": [
+        {
+          "tag": "rbac",
+          "confidence": 0.95
+        },
+        {
+          "tag": "access-control",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "RBAC",
+        "access restriction",
+        "privilege minimization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "least-privilege",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Ensure SOX and PCI-DSS compliance for all ledger functionality",
+    "summary": "Guarantee that all ledger features, processes, and data handling meet SOX and PCI-DSS standards. Enable audit readiness, regulatory reporting, and support for compliance sign-off by Finance, Risk, and Compliance teams.",
+    "tags": [
+      "sox",
+      "pci-dss",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 51\u201352",
+    "reasoning": {
+      "source_summary_fragment": "compliance to SOX/PCI-DSS, and exception handling",
+      "tag_metadata_reference": [
+        {
+          "tag": "sox",
+          "confidence": 0.96
+        },
+        {
+          "tag": "pci-dss",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance",
+        "SOX conformity",
+        "PCI-DSS adherence"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-010"
+  }
+]

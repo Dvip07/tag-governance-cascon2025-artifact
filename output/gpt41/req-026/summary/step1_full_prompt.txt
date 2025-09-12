@@ -1,0 +1,170 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-026-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-026",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-026-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-026-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-026 (SaaS)
+
+SA-011: Automated NPS Feedback Triggering With Behavioral Intelligence
+Title:
+Behaviorally Intelligent Net Promoter Score (NPS) Triggering to Maximize Actionable Feedback
+
+Executive Summary:
+To enable data-driven customer success and close the loop on user sentiment, we will deploy a smart NPS feedback engine that uses behavioral intelligence to automatically prompt users for feedback at optimal moments—post-onboarding, after the fifth login, or following key feature adoption. Insights will be tracked in real time and used to drive continuous improvement in product and customer support.
+
+Requirements:
+
+Behavioral Triggers:
+
+Define flexible rules to auto-trigger NPS surveys after specific user actions (e.g., five logins, feature X completed, account milestone reached).
+
+Add logic to delay or suppress surveys if user shows signs of churn (e.g., no activity in the last week).
+
+User Experience:
+
+Embed NPS prompt natively in web and mobile apps, minimizing disruption to workflow.
+
+If a user ignores or dismisses the survey, retry once after a cooling-off period, then suppress further prompts for 30 days.
+
+Analytics & Insights:
+
+Visualize response rates, NPS scores, and trends by cohort, segment, and event type.
+
+Integrate NPS results with CRM and customer support workflows for proactive outreach.
+
+Compliance & Data Privacy:
+
+Ensure all survey data is stored in compliance with privacy standards and accessible for audit.
+
+Allow users to opt out of feedback requests at any time.
+
+Edge Cases & Tuning:
+
+For power users who interact across multiple devices, coordinate to avoid duplicate survey prompts.
+
+In case of conflicting triggers (e.g., milestone + login in the same session), prioritize by recency or highest-value action.
+
+Documentation & Enablement:
+
+Update product training and onboarding materials for teams using NPS insights.
+
+Provide a feedback loop for internal teams to refine triggering rules and survey content.
+
+Dependencies & Constraints:
+
+Integration required with analytics, CRM, and support ticketing platforms.
+
+Surveys must be localized for key markets.
+
+KPIs:
+
+Survey response rate >20%
+
+90% NPS response mapped to user action
+
+Time from survey completion to support follow-up under 24h
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

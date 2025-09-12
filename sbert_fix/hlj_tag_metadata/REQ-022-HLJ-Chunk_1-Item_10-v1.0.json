@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Ensure geographic privacy/data-protection compliance",
+  "summary": "Build and enforce mechanisms to ensure privacy, data protection, and geographic regulatory compliance for all processes relating to access logs. Implementation must respect jurisdiction-specific requirements for regulated industries.",
+  "tags_v1": [
+    "regulation",
+    "privacy",
+    "[INFERRED] data-protection"
+  ],
+  "tags_v2": [
+    "privacy"
+  ],
+  "tags_v3": [
+    "privacy",
+    "monitoring",
+    "data-protection",
+    "regulation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.725457489490509,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "anomaly",
+      "aliases": [],
+      "cluster_id": "all_130",
+      "domains": [
+        "Compliance and Security",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6519280076026917,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "anomaly",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7090280055999756,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-protection",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.757706880569458,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-protection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7036948204040527,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

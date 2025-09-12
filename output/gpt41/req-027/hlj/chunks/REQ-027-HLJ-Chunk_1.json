@@ -1,0 +1,477 @@
+{
+  "CHUNK_ID": "REQ-027-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Develop robust RTL layout engine for UI builder (Ln 07\u201311)",
+    "Ensure accurate RTL rendering for component libraries, icons, navigation (Ln 11\u201312)",
+    "Enable instant LTR/RTL layout preview for designers (Ln 14\u201315)",
+    "Support per-section and per-component overrides for mixed-language pages (Ln 16\u201317)",
+    "Integrate with translation memory services for string swapping (Ln 19\u201320)",
+    "Implement locale-specific formatting for dates, currencies, numerals (Ln 21)",
+    "Flag components that break under mirroring and provide remediation guidance (Ln 23\u201324)",
+    "Validate exports to ensure WCAG and ADA accessibility in RTL output (Ln 25\u201326)",
+    "Provide detailed logs and change history for layout adjustments (Ln 28\u201329)",
+    "Create 'Designing for RTL' best practices guide and update onboarding materials (Ln 31\u201332)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.93,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Develop robust RTL layout engine for UI builder",
+        "summary": "Design and implement a foundational RTL layout engine for the SaaS Visual Builder, focusing on dynamic toggling of layout direction for flex, grid, and positioning. The solution must support seamless LTR/RTL switching and comprehensive mirroring across all supported UI structures. This engine underpins compatibility for diverse global users and regions.",
+        "tags": [
+          "rtl",
+          "layout",
+          "[INFERRED] engine"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder",
+          "Internationalization"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.94,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 07\u201311",
+        "reasoning": {
+          "source_summary_fragment": "development of an RTL engine toggling layout properties (flex, grid, positioning)",
+          "tag_metadata_reference": [
+            {
+              "tag": "rtl",
+              "confidence": 0.97
+            },
+            {
+              "tag": "layout",
+              "confidence": 0.95
+            },
+            {
+              "tag": "engine",
+              "confidence": 0.74
+            }
+          ],
+          "mapped_concepts": [
+            "RTL core architecture",
+            "dynamic layout toggling"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "engine",
+          "confidence": 0.74,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Ensure accurate RTL rendering for component libraries, icons, navigation",
+        "summary": "Guarantee that all reusable component libraries, icon sets, and navigation elements render correctly and mirror accurately when switched to RTL mode. Address edge-cases and visual fidelity to uphold consistent user experiences in regionally mirrored layouts.",
+        "tags": [
+          "rtl",
+          "components"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 11\u201312",
+        "reasoning": {
+          "source_summary_fragment": "accurate rendering for all components ... accurate rendering for component libraries, icons, navigation",
+          "tag_metadata_reference": [
+            {
+              "tag": "rtl",
+              "confidence": 0.97
+            },
+            {
+              "tag": "components",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "RTL rendering",
+            "component mirroring"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Enable instant LTR/RTL layout preview for designers",
+        "summary": "Provide tooling within the UI builder, allowing designers to instantly switch between LTR and RTL layout previews. This functionality accelerates validation, increases design agility for global markets, and reduces errors from misinterpreted mirroring.",
+        "tags": [
+          "preview",
+          "usability",
+          "[INFERRED] tooling"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder",
+          "UX"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.96,
+        "line_source": "Ln 14\u201315",
+        "reasoning": {
+          "source_summary_fragment": "designer tools for instant LTR/RTL preview",
+          "tag_metadata_reference": [
+            {
+              "tag": "preview",
+              "confidence": 0.94
+            },
+            {
+              "tag": "usability",
+              "confidence": 0.92
+            },
+            {
+              "tag": "tooling",
+              "confidence": 0.88
+            }
+          ],
+          "mapped_concepts": [
+            "designer preview tools",
+            "instant LTR/RTL switching"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "tooling",
+          "confidence": 0.88,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Support per-section and per-component overrides for mixed-language pages",
+        "summary": "Allow granular overrides of RTL/LTR direction and localization behaviors by section or individual component, supporting flexible mixed-language layouts. This enables accurate UIs for pages where both LTR and RTL content coexist, ensuring regional and linguistic compliance.",
+        "tags": [
+          "override",
+          "mixed-language",
+          "[INFERRED] flexibility"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder",
+          "Internationalization"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 16\u201317",
+        "reasoning": {
+          "source_summary_fragment": "per-section/component overrides. ... per-section and per-component overrides for mixed-language pages.",
+          "tag_metadata_reference": [
+            {
+              "tag": "override",
+              "confidence": 0.95
+            },
+            {
+              "tag": "mixed-language",
+              "confidence": 0.91
+            },
+            {
+              "tag": "flexibility",
+              "confidence": 0.77
+            }
+          ],
+          "mapped_concepts": [
+            "directional override",
+            "mixed content layout"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "flexibility",
+          "confidence": 0.77,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Integrate with translation memory services for string swapping",
+        "summary": "Connect the UI builder with translation memory services to automate string replacements for multiple locales. This integration significantly streamlines internationalization workflows and maintains linguistic consistency in RTL and LTR UI environments.",
+        "tags": [
+          "localization",
+          "translation"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Internationalization"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 19\u201320",
+        "reasoning": {
+          "source_summary_fragment": "Integration with translation memory ... for string swapping",
+          "tag_metadata_reference": [
+            {
+              "tag": "localization",
+              "confidence": 0.93
+            },
+            {
+              "tag": "translation",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "translation memory",
+            "auto string swap"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Implement locale-specific formatting for dates, currencies, numerals",
+        "summary": "Add support for rendering and input of dates, currencies, and numbers according to locale-specific rules. This facilitates regionally accurate and globally accessible UI experiences across various languages and markets.",
+        "tags": [
+          "localization",
+          "formatting"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Internationalization"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "medium",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 21",
+        "reasoning": {
+          "source_summary_fragment": "locale-specific formatting for dates, currencies, numerals",
+          "tag_metadata_reference": [
+            {
+              "tag": "localization",
+              "confidence": 0.91
+            },
+            {
+              "tag": "formatting",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "i18n formatting",
+            "locale data support"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Flag components that break under mirroring and provide remediation guidance",
+        "summary": "Automatically detect and highlight UI components that visually break or misalign when mirrored for RTL contexts, and supply actionable remediation steps to designers or developers. This minimizes regression risk and accelerates internationalization QA.",
+        "tags": [
+          "validation",
+          "mirror",
+          "[INFERRED] QA"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder",
+          "QA"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 23\u201324",
+        "reasoning": {
+          "source_summary_fragment": "flagging/remediating broken components",
+          "tag_metadata_reference": [
+            {
+              "tag": "validation",
+              "confidence": 0.94
+            },
+            {
+              "tag": "mirror",
+              "confidence": 0.85
+            },
+            {
+              "tag": "QA",
+              "confidence": 0.77
+            }
+          ],
+          "mapped_concepts": [
+            "mirroring validation",
+            "remediation workflow"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "QA",
+          "confidence": 0.77,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Validate exports to ensure WCAG and ADA accessibility in RTL output",
+        "summary": "Perform export-time checks to verify that RTL layouts comply with both WCAG and ADA accessibility standards. This ensures legal and industry alignment for customers deploying regionally localized SaaS UIs.",
+        "tags": [
+          "compliance",
+          "validation",
+          "[INFERRED] accessibility"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Accessibility"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.93,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 25\u201326",
+        "reasoning": {
+          "source_summary_fragment": "Validations ensure accessibility/compliance (WCAG, ADA)",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.97
+            },
+            {
+              "tag": "validation",
+              "confidence": 0.95
+            },
+            {
+              "tag": "accessibility",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "WCAG conformance",
+            "ADA accessible output"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "accessibility",
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Provide detailed logs and change history for layout adjustments",
+        "summary": "Record comprehensive logs and versioned change histories for all RTL and LTR layout updates, providing transparency and auditability for compliance purposes. This supports debugging, traceability, and regulatory readiness.",
+        "tags": [
+          "logging",
+          "auditing",
+          "[INFERRED] traceability"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "VisualBuilder",
+          "Compliance"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 28\u201329",
+        "reasoning": {
+          "source_summary_fragment": "audit logs provide transparency",
+          "tag_metadata_reference": [
+            {
+              "tag": "logging",
+              "confidence": 0.91
+            },
+            {
+              "tag": "auditing",
+              "confidence": 0.93
+            },
+            {
+              "tag": "traceability",
+              "confidence": 0.84
+            }
+          ],
+          "mapped_concepts": [
+            "change auditing",
+            "layout adjustment records"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "traceability",
+          "confidence": 0.84,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-027-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Create 'Designing for RTL' best practices guide and update onboarding materials",
+        "summary": "Develop and publish best practices documentation for designing RTL interfaces, and update onboarding resources to enable smooth adoption by users and developers. This strengthens knowledge transfer and supports customer enablement efforts.",
+        "tags": [
+          "documentation",
+          "onboarding"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Documentation",
+          "Enablement"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 31\u201332",
+        "reasoning": {
+          "source_summary_fragment": "Documentation updates (guides, onboarding) and enablement (webinars) are included.",
+          "tag_metadata_reference": [
+            {
+              "tag": "documentation",
+              "confidence": 0.92
+            },
+            {
+              "tag": "onboarding",
+              "confidence": 0.86
+            }
+          ],
+          "mapped_concepts": [
+            "RTL best practices guide",
+            "enablement resource update"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-027"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "",
+    "DATA": []
+  },
+  "errors": []
+}

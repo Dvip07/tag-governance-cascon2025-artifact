@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "opus4",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Develop integration tests for ghost data persistence validation",
+  "summary": "Build comprehensive test suite to validate complete data erasure across all systems, ensuring no residual 'ghost' data persists after GDPR deletion requests.",
+  "tags_v1": [
+    "testing",
+    "validation",
+    "gdpr"
+  ],
+  "tags_v2": [
+    "testing",
+    "validation",
+    "gdpr"
+  ],
+  "tags_v3": [
+    "testing",
+    "validation",
+    "gdpr",
+    "api",
+    "updatedlogs"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6830040812492371,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7038978934288025,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7201831340789795,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6747070550918579,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6812086701393127,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "apis",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "updatedlogs",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7423449754714966,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "updatedlogs",
+      "method": "dedup_canonical"
+    }
+  ]
+}

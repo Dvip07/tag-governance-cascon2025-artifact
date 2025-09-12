@@ -1,0 +1,364 @@
+- hlj_id: REQ-005-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250588Z'
+  original_tags:
+  - virtualcard
+  - freezeunfreeze
+  validated_tags: []
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  - freezeunfreeze
+  tags_kept: []
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:47.732101Z'
+  - original_tag: freezeunfreeze
+    canonical_tag: freezeunfreeze
+    matched_tag: freezeunfreeze
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:47.926335Z'
+- hlj_id: REQ-005-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250595Z'
+  original_tags:
+  - virtualcard
+  - ui
+  validated_tags:
+  - virtualcard
+  - ui
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - virtualcard
+  - ui
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: semantic
+    similarity: 0.7655507922172546
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.124544Z'
+  - original_tag: ui
+    canonical_tag: ui
+    matched_tag: ui
+    tag_origin_cluster_id: ui
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.127637Z'
+- hlj_id: REQ-005-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250597Z'
+  original_tags:
+  - virtualcard
+  - help
+  validated_tags:
+  - virtualcard
+  - help
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - virtualcard
+  - help
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: semantic
+    similarity: 0.7327313423156738
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.315695Z'
+  - original_tag: help
+    canonical_tag: help
+    matched_tag: help
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.319226Z'
+- hlj_id: REQ-005-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250599Z'
+  original_tags:
+  - virtualcard
+  - feedback
+  validated_tags:
+  - feedback
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  tags_kept:
+  - feedback
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.518529Z'
+  - original_tag: feedback
+    canonical_tag: feedback
+    matched_tag: feedback
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.522928Z'
+- hlj_id: REQ-005-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250601Z'
+  original_tags:
+  - virtualcard
+  - edgecases
+  validated_tags: []
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  - edgecases
+  tags_kept: []
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:48.722245Z'
+  - original_tag: edgecases
+    canonical_tag: edgecase
+    matched_tag: edgecase
+    tag_origin_cluster_id: edgecase
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:48.940553Z'
+- hlj_id: REQ-005-HLJ-Chunk_2-Item_6-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250602Z'
+  original_tags:
+  - virtualcard
+  - restful
+  - '[INFERRED] security'
+  validated_tags:
+  - restful
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  - '[INFERRED] security'
+  tags_kept:
+  - restful
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.136711Z'
+  - original_tag: restful
+    canonical_tag: restful
+    matched_tag: restful
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.140457Z'
+  - original_tag: '[INFERRED] security'
+    canonical_tag: '[INFERRED] security'
+    matched_tag: '[INFERRED] security'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.326310Z'
+- hlj_id: REQ-005-HLJ-Chunk_2-Item_7-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250604Z'
+  original_tags:
+  - virtualcard
+  - atomicity
+  validated_tags:
+  - atomicity
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  tags_kept:
+  - atomicity
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.527389Z'
+  - original_tag: atomicity
+    canonical_tag: atomicity
+    matched_tag: atomicity
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.531660Z'
+- hlj_id: REQ-005-HLJ-Chunk_2-Item_8-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250606Z'
+  original_tags:
+  - virtualcard
+  - logging
+  validated_tags:
+  - logs
+  tags_added:
+  - logs
+  tags_dropped:
+  - virtualcard
+  - logging
+  tags_kept: []
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:49.737148Z'
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:49.851824Z'
+- hlj_id: REQ-005-HLJ-Chunk_2-Item_9-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250607Z'
+  original_tags:
+  - virtualcard
+  - queueing
+  validated_tags:
+  - queue
+  tags_added:
+  - queue
+  tags_dropped:
+  - virtualcard
+  - queueing
+  tags_kept: []
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:50.096630Z'
+  - original_tag: queueing
+    canonical_tag: queue
+    matched_tag: queue
+    tag_origin_cluster_id: queue
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:50.213185Z'
+- hlj_id: REQ-005-HLJ-Chunk_2-Item_10-v1.0
+  requirement: req-005
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.250609Z'
+  original_tags:
+  - virtualcard
+  - conflict
+  validated_tags:
+  - conflict
+  tags_added: []
+  tags_dropped:
+  - virtualcard
+  tags_kept:
+  - conflict
+  validation_details:
+  - original_tag: virtualcard
+    canonical_tag: virtualcard
+    matched_tag: virtualcard
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:50.455823Z'
+  - original_tag: conflict
+    canonical_tag: conflict
+    matched_tag: conflict
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:50.472551Z'

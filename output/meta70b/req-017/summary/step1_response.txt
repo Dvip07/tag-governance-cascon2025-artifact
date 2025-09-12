@@ -1,0 +1,139 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-017",
+  "summary": "Implement prorated upgrades for subscription plans, retaining accurate billing history, including upgrade logic, billing and history, edge cases, notifications, support, and documentation, while considering dependencies and constraints such as payment processor integrations and local taxes/VAT."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Subscription Plans", "Billing and Payments"],
+  "canonical_tags": ["prorated upgrades", "billing history"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-017-HLJ-Chunk_1",
+      "focus": "Prorated Upgrades and Billing",
+      "items": [
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design upgrade logic for mid-cycle plan changes",
+          "domain": "SaaS",
+          "subdomain": ["Subscription Plans"],
+          "tags": ["prorated upgrades", "billing"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-15"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement billing history preservation for upgrades",
+          "domain": "SaaS",
+          "subdomain": ["Billing and Payments"],
+          "tags": ["billing history", " upgrades"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16-20"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Handle edge cases for upgrades involving monthly and annual plans",
+          "domain": "SaaS",
+          "subdomain": ["Subscription Plans"],
+          "tags": ["edge cases", " upgrades"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21-25"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Develop notifications for users and admins on upgrades and unusual patterns",
+          "domain": "SaaS",
+          "subdomain": ["Notifications"],
+          "tags": ["notifications", "user experience"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 26-30"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Update support scripts and customer FAQs for common upgrade scenarios",
+          "domain": "SaaS",
+          "subdomain": ["Support and Documentation"],
+          "tags": ["support", "documentation"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 31-35"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Ensure payment processor integrations support prorated upgrades",
+          "domain": "SaaS",
+          "subdomain": ["Payment Processing"],
+          "tags": ["payment processing", "integrations"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36-40"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement local taxes/VAT support in upgrade calculations",
+          "domain": "SaaS",
+          "subdomain": ["Taxation and Compliance"],
+          "tags": ["taxation", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 41-45"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Design invoice breakdown for upgrades, including refunds and new charges",
+          "domain": "SaaS",
+          "subdomain": ["Billing and Invoicing"],
+          "tags": ["invoicing", "billing"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 46-50"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Flag downgrades during the same cycle for manual review",
+          "domain": "SaaS",
+          "subdomain": ["Subscription Plans"],
+          "tags": ["downgrades", "manual review"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 51-55"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Conduct testing for prorated upgrades and billing history preservation",
+          "domain": "SaaS",
+          "subdomain": ["Testing and Quality Assurance"],
+          "tags": ["testing", "quality assurance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 56-60"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+
+!!CONSTRAINT_BROKEN!!

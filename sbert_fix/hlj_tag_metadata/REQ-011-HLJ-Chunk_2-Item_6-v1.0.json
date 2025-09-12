@@ -1,0 +1,73 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "meta70b",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Display eligible EMI plans with clear disclosure of terms",
+  "summary": "The system should display all eligible EMI plans to the user with clear disclosure of terms and conditions.",
+  "tags_v1": [
+    "emi",
+    "disclosure",
+    "[INFERRED] transparency"
+  ],
+  "tags_v2": [
+    "emi",
+    "disclosure"
+  ],
+  "tags_v3": [
+    "emi",
+    "disclosure",
+    "transparency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "emi",
+      "aliases": [],
+      "cluster_id": "all_251",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7569103240966797,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "emi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "disclosure",
+      "aliases": [],
+      "cluster_id": "all_463",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7213268876075745,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "disclosure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "transparency",
+      "aliases": [],
+      "cluster_id": "all_123",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6976227760314941,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "transparency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

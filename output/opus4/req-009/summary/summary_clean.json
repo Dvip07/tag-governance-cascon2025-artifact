@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-009",
+  "summary": "Implement scheduled cross-border payments with FX rate locking capability. Users can schedule future international transfers and lock exchange rates for 24-hour windows, providing cost predictability. System must integrate FX providers for real-time rates, handle rate expiry/validation, support payment cancellation, and maintain compliance with cross-border regulations. Features include UI extensions for scheduling/rate preview, automated notifications for rate expiry/payment status, risk controls against rate speculation, and comprehensive audit logging. Edge cases cover FX provider outages and insufficient funds at execution. Deliverables include updated UI, FX integration modules, reporting tools, documentation, and beta rollout plan. Dependencies: FX provider contracts/APIs. Constraints: maintain payment SLAs, regulatory compliance, beta-first release."
+}

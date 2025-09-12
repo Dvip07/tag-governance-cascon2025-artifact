@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Ensure SOX and PCI-DSS compliance for all ledger functionality",
+  "summary": "Guarantee that all ledger features, processes, and data handling meet SOX and PCI-DSS standards. Enable audit readiness, regulatory reporting, and support for compliance sign-off by Finance, Risk, and Compliance teams.",
+  "tags_v1": [
+    "sox",
+    "pci-dss",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "sox",
+    "pci-dss"
+  ],
+  "tags_v3": [
+    "sox",
+    "pci-dss",
+    "phantom-reversals",
+    "ledger-management",
+    "transaction-management",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "sox",
+      "aliases": [],
+      "cluster_id": "all_188",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7033475637435913,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sox",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "pci-dss",
+      "aliases": [],
+      "cluster_id": "all_189",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7513529062271118,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pci-dss",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "phantom-reversals",
+      "aliases": [],
+      "cluster_id": "all_421",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7515875101089478,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "phantom-reversals",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ledger-management",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7833037376403809,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ledger-management",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "transaction-management",
+      "aliases": [
+        "transactionmanagement"
+      ],
+      "cluster_id": "all_381",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7646825313568115,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "transaction-management",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7239876985549927,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

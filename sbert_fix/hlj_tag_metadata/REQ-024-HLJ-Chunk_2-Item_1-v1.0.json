@@ -1,0 +1,131 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Handle delay scheduling that overlaps with user nighttime, with reschedule or override",
+  "summary": "Ensure notification delivery schedules are aware of a user's nighttime hours, providing options to reschedule deliveries that would otherwise arrive at inconvenient times or to allow overrides. This feature enhances user experience by respecting personal routines and preferences while maintaining timely messaging. Compliance is supported through permission and opt-out management.",
+  "tags_v1": [
+    "timezone",
+    "usability",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "timezone"
+  ],
+  "tags_v3": [
+    "personalization",
+    "timezone",
+    "messaging",
+    "usability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "all_148",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7046332955360413,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timezone",
+      "aliases": [],
+      "cluster_id": "all_76",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7140040397644043,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timezone",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7197328805923462,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6885396242141724,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6782522201538086,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6618096828460693,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

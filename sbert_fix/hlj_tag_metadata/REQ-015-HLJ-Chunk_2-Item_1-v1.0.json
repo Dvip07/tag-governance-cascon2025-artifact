@@ -1,0 +1,65 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Log all webhook events, payloads, and delivery outcomes for compliance and troubleshooting",
+  "summary": "All webhook event activity—including incoming payloads, delivery attempts, and results—must be logged thoroughly to support compliance, auditing, and incident troubleshooting. Logging must be granular enough to reconstruct event flows, trace failures, and demonstrate regulatory adherence.",
+  "tags_v1": [
+    "compliance",
+    "logging",
+    "[INFERRED] auditing"
+  ],
+  "tags_v2": [
+    "compliance",
+    "logs"
+  ],
+  "tags_v3": [
+    "compliance",
+    "logging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7497298717498779,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7748761177062988,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    }
+  ]
+}

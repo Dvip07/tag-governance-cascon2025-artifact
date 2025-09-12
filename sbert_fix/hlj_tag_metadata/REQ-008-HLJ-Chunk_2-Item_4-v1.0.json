@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Handle unsupported platforms and incomplete data edge cases",
+  "summary": "Ensure robust edge case handling for situations involving unsupported gig platforms or incomplete/missing data, including error messaging and fallback mechanisms. This minimizes application disruptions and user friction, maintaining process integrity.",
+  "tags_v1": [
+    "edge-case",
+    "error-handling",
+    "[INFERRED] resilience"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "income",
+    "eligibility",
+    "edge_cases"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "income",
+      "aliases": [],
+      "cluster_id": "all_256",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7227543592453003,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "all_5",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7426074147224426,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "edge_cases",
+      "aliases": [
+        "edge-case",
+        "edge case",
+        "edge cases"
+      ],
+      "cluster_id": "all_258",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v2",
+      "score": 1,
+      "confidence": 0.7423540353775024,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "edge case",
+      "method": "dedup_canonical"
+    }
+  ]
+}

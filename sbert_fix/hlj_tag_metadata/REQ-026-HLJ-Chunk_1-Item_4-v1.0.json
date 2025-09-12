@@ -1,0 +1,56 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Design prompt retry and 30-day suppression after dismissal",
+  "summary": "Establish logic to retry showing the NPS prompt if dismissed, while enforcing a 30-day suppression window to avoid user fatigue. This rule controls prompt frequency and improves user satisfaction.",
+  "tags_v1": [
+    "nps",
+    "usability"
+  ],
+  "tags_v2": [
+    "nps"
+  ],
+  "tags_v3": [
+    "nps",
+    "user_experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7536081075668335,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7343079447746277,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user_experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

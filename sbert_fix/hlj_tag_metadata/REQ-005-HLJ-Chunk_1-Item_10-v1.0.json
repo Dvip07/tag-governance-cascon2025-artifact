@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Iterate on feature based on pilot user feedback before general release",
+  "summary": "Analyze feedback and issues from pilot cohorts, prioritizing fixes and enhancements to improve the freeze/unfreeze experience. Make all necessary adjustments in usability, messaging, and performance prior to general availability.",
+  "tags_v1": [
+    "feedback",
+    "usability"
+  ],
+  "tags_v2": [
+    "feedback",
+    "usability"
+  ],
+  "tags_v3": [
+    "messaging",
+    "usability",
+    "mobile",
+    "feedback",
+    "ui"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7189932465553284,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7551866769790649,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7420046329498291,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feedback",
+      "aliases": [],
+      "cluster_id": "all_51",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7264537811279297,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feedback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731429398059845,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    }
+  ]
+}

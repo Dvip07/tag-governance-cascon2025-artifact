@@ -1,0 +1,233 @@
+# 📝 Changelog for `req-025` — **opus4**
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['analytics', 'performance', 'instrumentation']`
+**Validated tags:** `['analytics', 'performance', 'instrumentation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['analytics', 'performance', 'instrumentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:36.904267Z |
+| instrumentation | kept | direct | 1.0 | title | 2025-05-31T23:58:36.916391Z |
+| performance | kept | direct | 1.0 | summary | 2025-05-31T23:58:36.913395Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['analytics', 'performance', 'instrumentation']`
+**Validated tags:** `['analytics', 'performance', 'instrumentation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['analytics', 'performance', 'instrumentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:36.986293Z |
+| instrumentation | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.126464Z |
+| performance | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.056458Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['analytics', 'performance', 'telemetry', '[INFERRED] privacy']`
+**Validated tags:** `['analytics', 'performance', 'telemetry']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] privacy']`
+**Tags kept:** `['analytics', 'performance', 'telemetry']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] privacy | dropped | none | 0.0 | None | 2025-05-31T23:58:37.351786Z |
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.196658Z |
+| performance | kept | direct | 1.0 | summary | 2025-05-31T23:58:37.205374Z |
+| telemetry | kept | direct | 1.0 | summary | 2025-05-31T23:58:37.213616Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['analytics', 'dashboard', 'visualization']`
+**Validated tags:** `['analytics', 'dashboard', 'visualization']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['analytics', 'dashboard', 'visualization']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.425098Z |
+| dashboard | kept | direct | 1.0 | title | 2025-05-31T23:58:37.427953Z |
+| visualization | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.496919Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['analytics', 'dashboard', 'filtering']`
+**Validated tags:** `['analytics', 'dashboard', 'filter']`
+**Tags added:** `['filter']`
+**Tags dropped:** `['filtering']`
+**Tags kept:** `['analytics', 'dashboard']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.567163Z |
+| dashboard | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.636540Z |
+| filter | added | direct | 1.0 | summary | 2025-05-31T23:58:37.645237Z |
+| filtering | dropped | direct | 1.0 | summary | 2025-05-31T23:58:37.645237Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['analytics', 'performance', 'alerting']`
+**Validated tags:** `['analytics', 'performance', 'alert']`
+**Tags added:** `['alert']`
+**Tags dropped:** `['alerting']`
+**Tags kept:** `['analytics', 'performance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| alert | added | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.792145Z |
+| alerting | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.792145Z |
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.715181Z |
+| performance | kept | direct | 1.0 | summary | 2025-05-31T23:58:37.723286Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['analytics', 'performance', 'diagnostics']`
+**Validated tags:** `['analytics', 'performance']`
+**Tags added:** `[]`
+**Tags dropped:** `['diagnostics']`
+**Tags kept:** `['analytics', 'performance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:37.864650Z |
+| diagnostics | dropped | none | 0.0 | None | 2025-05-31T23:58:38.008617Z |
+| performance | kept | direct | 1.0 | summary | 2025-05-31T23:58:37.874694Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['alerting', 'performance', 'sla']`
+**Validated tags:** `['alert', 'performance', 'sla']`
+**Tags added:** `['alert']`
+**Tags dropped:** `['alerting']`
+**Tags kept:** `['performance', 'sla']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| alert | added | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.084097Z |
+| alerting | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.084097Z |
+| performance | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.155732Z |
+| sla | kept | direct | 1.0 | source_fragment | 2025-05-31T23:58:38.168964Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['ci-cd', 'performance', 'automation']`
+**Validated tags:** `['ci/cd', 'performance', 'automation']`
+**Tags added:** `['ci/cd']`
+**Tags dropped:** `['ci-cd']`
+**Tags kept:** `['performance', 'automation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| automation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:58:38.189422Z |
+| ci-cd | dropped | direct | 1.0 | title | 2025-05-31T23:58:38.172002Z |
+| ci/cd | added | direct | 1.0 | title | 2025-05-31T23:58:38.172002Z |
+| performance | kept | direct | 1.0 | title | 2025-05-31T23:58:38.174961Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['ci-cd', 'performance', 'automation']`
+**Validated tags:** `['ci/cd', 'performance']`
+**Tags added:** `['ci/cd']`
+**Tags dropped:** `['ci-cd', 'automation']`
+**Tags kept:** `['performance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| automation | dropped | none | 0.0 | None | 2025-05-31T23:58:38.392947Z |
+| ci-cd | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.258173Z |
+| ci/cd | added | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.258173Z |
+| performance | kept | direct | 1.0 | title | 2025-05-31T23:58:38.260903Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['performance', 'resilience', 'monitoring']`
+**Validated tags:** `['performance', 'resilience', 'monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['performance', 'resilience', 'monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| monitoring | kept | direct | 1.0 | summary | 2025-05-31T23:58:38.478039Z |
+| performance | kept | direct | 1.0 | title | 2025-05-31T23:58:38.396639Z |
+| resilience | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.468881Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['performance', 'ux', 'dashboard']`
+**Validated tags:** `['performance', 'ux', 'dashboard']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['performance', 'ux', 'dashboard']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dashboard | kept | direct | 1.0 | summary | 2025-05-31T23:58:38.561776Z |
+| performance | kept | direct | 1.0 | title | 2025-05-31T23:58:38.481274Z |
+| ux | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.552186Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['privacy', 'compliance', 'security', '[INFERRED] GDPR']`
+**Validated tags:** `['privacy', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['security', '[INFERRED] GDPR']`
+**Tags kept:** `['privacy', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] GDPR | dropped | none | 0.0 | None | 2025-05-31T23:58:38.846979Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:58:38.566973Z |
+| privacy | kept | direct | 1.0 | title | 2025-05-31T23:58:38.564408Z |
+| security | dropped | none | 0.0 | None | 2025-05-31T23:58:38.704284Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['privacy', 'ux', 'compliance']`
+**Validated tags:** `['privacy', 'ux', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['privacy', 'ux', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:58:38.940274Z |
+| privacy | kept | direct | 1.0 | summary | 2025-05-31T23:58:38.859028Z |
+| ux | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:38.930513Z |
+
+## 🔹 HLJ: `REQ-025-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['analytics', 'dashboard', 'self-service']`
+**Validated tags:** `['analytics', 'dashboard']`
+**Tags added:** `[]`
+**Tags dropped:** `['self-service']`
+**Tags kept:** `['analytics', 'dashboard']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | title | 2025-05-31T23:58:38.943319Z |
+| dashboard | kept | direct | 1.0 | summary | 2025-05-31T23:58:38.952631Z |
+| self-service | dropped | none | 0.0 | None | 2025-05-31T23:58:39.096283Z |

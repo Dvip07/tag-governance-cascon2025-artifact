@@ -1,0 +1,125 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Create configurable duplicate detection rules (email, phone, fuzzy name)",
+  "summary": "Enable users to define and adjust duplicate detection rules based on email, phone number, and fuzzy name matching. Configurability allows tailored duplicate handling for diverse organization needs and improves accuracy during contact management operations.",
+  "tags_v1": [
+    "duplicates",
+    "configurable"
+  ],
+  "tags_v2": [
+    "duplicates",
+    "configurable"
+  ],
+  "tags_v3": [
+    "duplicates",
+    "authentication",
+    "configurable",
+    "crm",
+    "detection",
+    "crm-sync"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "duplicates",
+      "aliases": [],
+      "cluster_id": "all_240",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7187690734863281,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6846023201942444,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "configurable",
+      "aliases": [],
+      "cluster_id": "all_241",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7346290349960327,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "configurable",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7472099661827087,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6859443187713623,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm-sync",
+      "aliases": [],
+      "cluster_id": "all_336",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8092750310897827,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm-sync",
+      "method": "dedup_canonical"
+    }
+  ]
+}

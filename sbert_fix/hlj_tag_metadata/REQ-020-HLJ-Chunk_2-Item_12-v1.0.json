@@ -1,0 +1,76 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_2-Item_12-v1.0",
+  "model": "opus4",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Implement webhook conflict detection and sync pause mechanism",
+  "summary": "Build conflict detection system for webhook events that identifies synchronization conflicts between CRM and local data. System must automatically pause sync operations when conflicts detected and provide clear warnings to users.",
+  "tags_v1": [
+    "webhooks",
+    "conflict",
+    "sync-control"
+  ],
+  "tags_v2": [
+    "webhook",
+    "conflict"
+  ],
+  "tags_v3": [
+    "webhook",
+    "conflict",
+    "sync-control"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.730733335018158,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhooks",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "conflict",
+      "aliases": [],
+      "cluster_id": "all_242",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7180137634277344,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "conflict",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync-control",
+      "aliases": [],
+      "cluster_id": "all_346",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7416110038757324,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sync-control",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,94 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Provide real-time dashboards showing open, click, and conversion rates per channel and template",
+  "summary": "Implements interactive dashboards that display real-time analytics for open, click, and conversion rates broken down by delivery channel and notification template. Empowers users to monitor campaign effectiveness and optimize future strategies. Allows performance analysis across multiple vectors.",
+  "tags_v1": [
+    "dashboard",
+    "analytics"
+  ],
+  "tags_v2": [
+    "analytics"
+  ],
+  "tags_v3": [
+    "analytics",
+    "messaging",
+    "ml",
+    "dashboard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7560545206069946,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7314549684524536,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ml",
+      "aliases": [],
+      "cluster_id": "all_260",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6809715032577515,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7557981014251709,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

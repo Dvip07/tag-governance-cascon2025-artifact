@@ -1,0 +1,82 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "meta70b",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Maintain Audit Trail for All Onboarding Attempts",
+  "summary": "Maintain a comprehensive audit trail for all onboarding attempts to ensure transparency and accountability.",
+  "tags_v1": [
+    "compliance",
+    "auditing"
+  ],
+  "tags_v2": [
+    "compliance",
+    "audit"
+  ],
+  "tags_v3": [
+    "compliance",
+    "auditlogs",
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7256039381027222,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auditlogs",
+      "aliases": [
+        "auditing"
+      ],
+      "cluster_id": "all_408",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7397403717041016,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v2",
+      "score": 1,
+      "confidence": 0.7429753541946411,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

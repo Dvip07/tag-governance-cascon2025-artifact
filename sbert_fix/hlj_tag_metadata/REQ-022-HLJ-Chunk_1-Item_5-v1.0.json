@@ -1,0 +1,127 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Apply masking for sensitive data on export per policy",
+  "summary": "Ensure that sensitive information in exported logs is masked according to defined policies. The export masking process enforces privacy protection and compliance requirements when data is shared or analyzed externally.",
+  "tags_v1": [
+    "privacy",
+    "masking",
+    "[INFERRED] data-protection"
+  ],
+  "tags_v2": [
+    "privacy",
+    "masking"
+  ],
+  "tags_v3": [
+    "csv",
+    "privacy",
+    "export",
+    "data-protection",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "csv",
+      "aliases": [],
+      "cluster_id": "all_292",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7080472111701965,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "csv",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "json",
+      "aliases": [],
+      "cluster_id": "all_293",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6664165258407593,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "json",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7258051633834839,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7241148948669434,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-protection",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749901533126831,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-protection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7280415892601013,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

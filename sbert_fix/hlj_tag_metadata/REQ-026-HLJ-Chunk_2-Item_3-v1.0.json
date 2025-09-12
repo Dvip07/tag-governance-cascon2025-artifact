@@ -1,0 +1,64 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Ensure survey data storage and audit per privacy standards",
+  "summary": "Implement survey data storage, retention, and audit processes to adhere to privacy regulations and user opt-out requirements. Ensure traceability and regulatory compliance for all stored NPS feedback.",
+  "tags_v1": [
+    "compliance",
+    "privacy",
+    "[INFERRED] auditability"
+  ],
+  "tags_v2": [
+    "compliance",
+    "privacy"
+  ],
+  "tags_v3": [
+    "compliance",
+    "privacy"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7389441132545471,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7434031367301941,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    }
+  ]
+}

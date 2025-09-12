@@ -1,0 +1,188 @@
+# 📝 Changelog for `req-004` — **gpt41**
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['gdpr', 'metadata', '[INFERRED] traceability']`
+**Validated tags:** `['gdpr', 'metadata']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] traceability']`
+**Tags kept:** `['gdpr', 'metadata']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] traceability | dropped | none | 0.0 | None | 2025-06-01T00:00:07.778315Z |
+| gdpr | kept | direct | 1.0 | summary | 2025-06-01T00:00:07.558582Z |
+| metadata | kept | direct | 1.0 | title | 2025-06-01T00:00:07.562585Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['gdpr', 'classification']`
+**Validated tags:** `['gdpr', 'classification']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['gdpr', 'classification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| classification | kept | direct | 1.0 | source_fragment | 2025-06-01T00:00:07.796943Z |
+| gdpr | kept | direct | 1.0 | title | 2025-06-01T00:00:07.782900Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['traceability', 'gdpr']`
+**Validated tags:** `['traceability', 'gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['traceability', 'gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| gdpr | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:07.933781Z |
+| traceability | kept | direct | 1.0 | summary | 2025-06-01T00:00:07.808575Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['automation', 'right-to-erasure']`
+**Validated tags:** `['automation', 'right-to-erasure']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['automation', 'right-to-erasure']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| automation | kept | direct | 1.0 | summary | 2025-06-01T00:00:07.944333Z |
+| right-to-erasure | kept | direct | 1.0 | summary | 2025-06-01T00:00:07.953507Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['deletion', 'gdpr']`
+**Validated tags:** `['deletion', 'gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['deletion', 'gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| deletion | kept | direct | 1.0 | title | 2025-06-01T00:00:07.956908Z |
+| gdpr | kept | direct | 1.0 | summary | 2025-06-01T00:00:07.966574Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['redaction', 'right-to-erasure', '[INFERRED] auditability']`
+**Validated tags:** `['redaction', 'right-to-erasure']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] auditability']`
+**Tags kept:** `['redaction', 'right-to-erasure']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] auditability | dropped | none | 0.0 | None | 2025-06-01T00:00:08.314065Z |
+| redaction | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:07.982350Z |
+| right-to-erasure | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:08.106887Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['meta-log', 'audit']`
+**Validated tags:** `['meta-log', 'audit']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['meta-log', 'audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:08.346319Z |
+| meta-log | kept | direct | 1.0 | summary | 2025-06-01T00:00:08.327365Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['redaction', 'edge-case', '[INFERRED] multi-user']`
+**Validated tags:** `['redaction']`
+**Tags added:** `[]`
+**Tags dropped:** `['edge-case', '[INFERRED] multi-user']`
+**Tags kept:** `['redaction']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] multi-user | dropped | none | 0.0 | None | 2025-06-01T00:00:08.746913Z |
+| edge-case | dropped | none | 0.0 | None | 2025-06-01T00:00:08.542690Z |
+| redaction | kept | direct | 1.0 | title | 2025-06-01T00:00:08.349904Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['retention', 'access-control']`
+**Validated tags:** `['retention']`
+**Tags added:** `[]`
+**Tags dropped:** `['access-control']`
+**Tags kept:** `['retention']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| access-control | dropped | none | 0.0 | None | 2025-06-01T00:00:08.967226Z |
+| retention | kept | direct | 1.0 | title | 2025-06-01T00:00:08.751068Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['integrity', 'security']`
+**Validated tags:** `['integrity', 'security']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['integrity', 'security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| integrity | kept | direct | 1.0 | summary | 2025-06-01T00:00:08.983033Z |
+| security | kept | direct | 1.0 | summary | 2025-06-01T00:00:08.994128Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['api', 'compliance']`
+**Validated tags:** `['api', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['api', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| api | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:09.116972Z |
+| compliance | kept | direct | 1.0 | title | 2025-06-01T00:00:09.121348Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['dashboard', 'monitoring', '[INFERRED] reporting']`
+**Validated tags:** `['dashboard', 'monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] reporting']`
+**Tags kept:** `['dashboard', 'monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reporting | dropped | none | 0.0 | None | 2025-06-01T00:00:09.346413Z |
+| dashboard | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:09.139483Z |
+| monitoring | kept | direct | 1.0 | title | 2025-06-01T00:00:09.142830Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['real-time', 'meta-log', '[INFERRED] security']`
+**Validated tags:** `['meta-log']`
+**Tags added:** `[]`
+**Tags dropped:** `['real-time', '[INFERRED] security']`
+**Tags kept:** `['meta-log']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] security | dropped | none | 0.0 | None | 2025-06-01T00:00:09.898286Z |
+| meta-log | kept | direct | 1.0 | title | 2025-06-01T00:00:09.560093Z |
+| real-time | dropped | none | 0.0 | None | 2025-06-01T00:00:09.554789Z |

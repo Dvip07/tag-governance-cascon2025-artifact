@@ -1,0 +1,432 @@
+[
+  {
+    "CHUNK_ID": "REQ-011-HLJ-Chunk_1",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Integrate with internal and external credit bureaus (Ln 10-12)",
+      "Implement decision engine to map credit score bands to EMI plans (Ln 13-15)",
+      "Ensure all scoring and eligibility checks are completed within 2 seconds (Ln 16-17)",
+      "Handle edge cases for 'borderline' customers (Ln 18-19)",
+      "Implement manual override by support staff for borderline customers (Ln 20-21)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.92,
+      "DATA": [
+        {
+          "seq_no": 1,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate with internal and external credit bureaus",
+          "summary": "Integrate the system with internal and external credit bureaus to assess customer creditworthiness in real-time.",
+          "tags": [
+            "creditworthiness",
+            "checkout",
+            "[INFERRED] compliance"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.85,
+          "priority": "high",
+          "priority_confidence": 0.91,
+          "line_source": "Ln 10-12",
+          "reasoning": {
+            "source_summary_fragment": "credit bureaus",
+            "tag_metadata_reference": [
+              {
+                "tag": "creditworthiness",
+                "confidence": 0.93
+              }
+            ],
+            "mapped_concepts": [
+              "creditworthiness",
+              "CustomerOnboarding"
+            ]
+          },
+          "low_confidence_reason": "insufficient data",
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.94,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 2,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement decision engine to map credit score bands to EMI plans",
+          "summary": "Develop a decision engine that maps credit score bands to suitable EMI plans, ensuring personalized payment options for customers.",
+          "tags": [
+            "emi",
+            "creditworthiness"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentProcessing"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.9,
+          "priority": "high",
+          "priority_confidence": 0.95,
+          "line_source": "Ln 13-15",
+          "reasoning": {
+            "source_summary_fragment": "credit score bands",
+            "tag_metadata_reference": [
+              {
+                "tag": "emi",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "emi",
+              "PaymentProcessing"
+            ]
+          },
+          "low_confidence_reason": "",
+          "inference_notes": {
+            "tag_added": "",
+            "confidence": 0.0,
+            "method": ""
+          },
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 3,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure all scoring and eligibility checks are completed within 2 seconds",
+          "summary": "Optimize the system to complete all scoring and eligibility checks within 2 seconds, ensuring a seamless customer experience.",
+          "tags": [
+            "performance",
+            "checkout"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Performance"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.92,
+          "line_source": "Ln 16-17",
+          "reasoning": {
+            "source_summary_fragment": "scoring and eligibility checks",
+            "tag_metadata_reference": [
+              {
+                "tag": "performance",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "performance",
+              "Performance"
+            ]
+          },
+          "low_confidence_reason": "",
+          "inference_notes": {
+            "tag_added": "",
+            "confidence": 0.0,
+            "method": ""
+          },
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 4,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Handle edge cases for 'borderline' customers",
+          "summary": "Develop strategies to handle edge cases for 'borderline' customers, ensuring fair treatment and compliance with regulations.",
+          "tags": [
+            "creditworthiness",
+            "edgecases"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.8,
+          "priority": "medium",
+          "priority_confidence": 0.85,
+          "line_source": "Ln 18-19",
+          "reasoning": {
+            "source_summary_fragment": "edge cases",
+            "tag_metadata_reference": [
+              {
+                "tag": "creditworthiness",
+                "confidence": 0.88
+              }
+            ],
+            "mapped_concepts": [
+              "creditworthiness",
+              "CustomerOnboarding"
+            ]
+          },
+          "low_confidence_reason": "insufficient data",
+          "inference_notes": {
+            "tag_added": "",
+            "confidence": 0.0,
+            "method": ""
+          },
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 5,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement manual override by support staff for borderline customers",
+          "summary": "Develop a manual override feature for support staff to handle borderline customers, ensuring flexibility and customer satisfaction.",
+          "tags": [
+            "overrides",
+            "support"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerSupport"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.82,
+          "priority": "medium",
+          "priority_confidence": 0.88,
+          "line_source": "Ln 20-21",
+          "reasoning": {
+            "source_summary_fragment": "manual override",
+            "tag_metadata_reference": [
+              {
+                "tag": "overrides",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "overrides",
+              "CustomerSupport"
+            ]
+          },
+          "low_confidence_reason": "",
+          "inference_notes": {
+            "tag_added": "",
+            "confidence": 0.0,
+            "method": ""
+          },
+          "source_hlj_id": "REQ-011"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "REQ-011-HLJ-Chunk_2",
+      "DATA": []
+    },
+    "errors": []
+  },
+  {
+    "CHUNK_ID": "REQ-011-HLJ-Chunk_2",
+    "is_final_chunk": false,
+    "TASK_SUMMARY": [
+      "Display eligible EMI plans with clear disclosure of terms (Ln 22-24)",
+      "Provide EMI calculator in the checkout flow (Ln 25-26)",
+      "Present terms in plain language, including prepayment penalties (Ln 27-29)",
+      "Ensure user consent is obtained for all credit checks (Ln 30-31)",
+      "Monitor EMI adoption rates and approval declines (Ln 32-33)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.92,
+      "DATA": [
+        {
+          "seq_no": 6,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Display eligible EMI plans with clear disclosure of terms",
+          "summary": "The system should display all eligible EMI plans to the user with clear disclosure of terms and conditions.",
+          "tags": [
+            "emi",
+            "disclosure",
+            "[INFERRED] transparency"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentProcessing"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.85,
+          "priority": "high",
+          "priority_confidence": 0.95,
+          "line_source": "Ln 22-24",
+          "reasoning": {
+            "source_summary_fragment": "eligible EMI plans",
+            "tag_metadata_reference": [
+              {
+                "tag": "emi",
+                "confidence": 0.98
+              }
+            ],
+            "mapped_concepts": [
+              "emi",
+              "checkout"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "transparency",
+            "confidence": 0.92,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 7,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Provide EMI calculator in the checkout flow",
+          "summary": "The system should provide an EMI calculator in the checkout flow to help users calculate their monthly payments.",
+          "tags": [
+            "emi",
+            "calculator"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "UserExperience"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.8,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 25-26",
+          "reasoning": {
+            "source_summary_fragment": "EMI calculator",
+            "tag_metadata_reference": [
+              {
+                "tag": "emi",
+                "confidence": 0.96
+              }
+            ],
+            "mapped_concepts": [
+              "emi",
+              "calculator"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": null,
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 8,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Present terms in plain language, including prepayment penalties",
+          "summary": "The system should present terms and conditions in plain language, including prepayment penalties, to ensure user understanding.",
+          "tags": [
+            "compliance",
+            "transparency"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.85,
+          "priority": "high",
+          "priority_confidence": 0.98,
+          "line_source": "Ln 27-29",
+          "reasoning": {
+            "source_summary_fragment": "plain language",
+            "tag_metadata_reference": [
+              {
+                "tag": "compliance",
+                "confidence": 0.99
+              }
+            ],
+            "mapped_concepts": [
+              "compliance",
+              "terms"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": null,
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 9,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Ensure user consent is obtained for all credit checks",
+          "summary": "The system should ensure that user consent is obtained for all credit checks to comply with regulatory requirements.",
+          "tags": [
+            "compliance",
+            "consent"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.8,
+          "priority": "high",
+          "priority_confidence": 0.99,
+          "line_source": "Ln 30-31",
+          "reasoning": {
+            "source_summary_fragment": "user consent",
+            "tag_metadata_reference": [
+              {
+                "tag": "compliance",
+                "confidence": 0.98
+              }
+            ],
+            "mapped_concepts": [
+              "compliance",
+              "consent"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": null,
+          "source_hlj_id": "REQ-011"
+        },
+        {
+          "seq_no": 10,
+          "schema_version": "2025-05-28",
+          "id": "REQ-011-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Monitor EMI adoption rates and approval declines",
+          "summary": "The system should monitor EMI adoption rates and approval declines to improve the overall user experience and optimize the EMI offering.",
+          "tags": [
+            "analytics",
+            "emi"
+          ],
+          "domain": "FinTech",
+          "subdomain": [
+            "Analytics"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.85,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 32-33",
+          "reasoning": {
+            "source_summary_fragment": "EMI adoption rates",
+            "tag_metadata_reference": [
+              {
+                "tag": "analytics",
+                "confidence": 0.96
+              }
+            ],
+            "mapped_concepts": [
+              "analytics",
+              "emi"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": null,
+          "source_hlj_id": "REQ-011"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "REQ-011-HLJ-Chunk_3",
+      "DATA": []
+    },
+    "errors": []
+  }
+]

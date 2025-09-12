@@ -1,0 +1,58 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_2-Item_11-v1.0",
+  "model": "opus4",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Create contact merge history logging system with per-contact audit trail",
+  "summary": "Implement comprehensive logging system that tracks all merge operations with detailed per-contact audit trails. System must capture before/after field states, timestamp all changes, and maintain queryable history for compliance and debugging purposes.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "history",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "audit",
+    "history"
+  ],
+  "tags_v3": [
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.699222981929779,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "history",
+      "aliases": [],
+      "cluster_id": "all_202",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6633007526397705,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "history",
+      "method": "dedup_canonical"
+    }
+  ]
+}

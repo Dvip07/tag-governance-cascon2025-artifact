@@ -1,0 +1,57 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_7-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Ensure non-disruptive deployment for teams not using shared inbox",
+  "summary": "Design deployment strategy with feature flags and gradual rollout to ensure teams not using shared inbox functionality remain unaffected. Include compatibility checks and fallback mechanisms to prevent any disruption to existing email workflows.",
+  "tags_v1": [
+    "deployment",
+    "compatibility",
+    "safety"
+  ],
+  "tags_v2": [
+    "deployment",
+    "compatibility"
+  ],
+  "tags_v3": [
+    "deployment",
+    "compatibility"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "deployment",
+      "aliases": [],
+      "cluster_id": "all_136",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.781417727470398,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deployment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compatibility",
+      "aliases": [],
+      "cluster_id": "all_63",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7543047666549683,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compatibility",
+      "method": "dedup_canonical"
+    }
+  ]
+}

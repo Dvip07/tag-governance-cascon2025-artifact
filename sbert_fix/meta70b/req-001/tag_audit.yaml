@@ -1,0 +1,189 @@
+- hlj_id: REQ-001-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-001
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.078403Z'
+  original_tags:
+  - api
+  - openbanking
+  - '[INFERRED] compliance'
+  validated_tags:
+  - api
+  tags_added: []
+  tags_dropped:
+  - openbanking
+  - '[INFERRED] compliance'
+  tags_kept:
+  - api
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:21.865319Z'
+  - original_tag: openbanking
+    canonical_tag: openbanking
+    matched_tag: openbanking
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.016390Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.152876Z'
+- hlj_id: REQ-001-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-001
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.078411Z'
+  original_tags:
+  - api
+  - filtering
+  - '[INFERRED] performance'
+  validated_tags:
+  - api
+  tags_added: []
+  tags_dropped:
+  - filtering
+  - '[INFERRED] performance'
+  tags_kept:
+  - api
+  validation_details:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.228322Z'
+  - original_tag: filtering
+    canonical_tag: filter
+    matched_tag: filter
+    tag_origin_cluster_id: filter
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:22.367103Z'
+  - original_tag: '[INFERRED] performance'
+    canonical_tag: '[INFERRED] performance'
+    matched_tag: '[INFERRED] performance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.502717Z'
+- hlj_id: REQ-001-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-001
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.078413Z'
+  original_tags:
+  - oauth
+  - security
+  - '[INFERRED] compliance'
+  validated_tags:
+  - oauth
+  - security
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] compliance'
+  tags_kept:
+  - oauth
+  - security
+  validation_details:
+  - original_tag: oauth
+    canonical_tag: oauth
+    matched_tag: oauth
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.506376Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.578812Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.726754Z'
+- hlj_id: REQ-001-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-001
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.078415Z'
+  original_tags:
+  - logging
+  - audit
+  - '[INFERRED] security'
+  validated_tags:
+  - audit
+  tags_added: []
+  tags_dropped:
+  - logging
+  - '[INFERRED] security'
+  tags_kept:
+  - audit
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:22.863806Z'
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:22.867510Z'
+  - original_tag: '[INFERRED] security'
+    canonical_tag: '[INFERRED] security'
+    matched_tag: '[INFERRED] security'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:23.000513Z'

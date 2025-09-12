@@ -1,0 +1,131 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Capture and report widget timing data per user, device, and browser context",
+  "summary": "Collect and report detailed timing data for each widget, segmented by user, device type, and browser context. Enables data-driven performance analysis and targeting of optimizations.",
+  "tags_v1": [
+    "reporting",
+    "segmentation",
+    "[INFERRED] analytics"
+  ],
+  "tags_v2": [
+    "reporting",
+    "segmentation"
+  ],
+  "tags_v3": [
+    "analytics",
+    "reporting",
+    "performance",
+    "segmentation",
+    "instrumentation",
+    "metrics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 5,
+      "confidence": 0.7608144879341125,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7131174206733704,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7427421808242798,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "segmentation",
+      "aliases": [],
+      "cluster_id": "all_115",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7010720372200012,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "segmentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "instrumentation",
+      "aliases": [],
+      "cluster_id": "all_113",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7015098929405212,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "instrumentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7399572134017944,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

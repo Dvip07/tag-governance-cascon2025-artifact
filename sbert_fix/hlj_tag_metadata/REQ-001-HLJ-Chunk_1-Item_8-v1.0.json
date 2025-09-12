@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Gracefully handle bank API outages and provide partial results with error logging",
+  "summary": "On detection of bank API outages, the system must still provide customers with any available transaction data while clearly logging outages and communicating partial result status. This maximizes resilience and user trust in case of partial downstream failures.",
+  "tags_v1": [
+    "availability",
+    "error",
+    "logging"
+  ],
+  "tags_v2": [
+    "error"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "logging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6981682777404785,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7159579992294312,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "error",
+      "aliases": [],
+      "cluster_id": "all_80",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6631172895431519,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "error",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7055758833885193,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    }
+  ]
+}

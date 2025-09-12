@@ -1,0 +1,273 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_1",
+      "focus": "API Design & Core Functionality",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design GET /api/v2/transactions/history endpoint",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "API"
+          ],
+          "tags": [
+            "api",
+            "endpoint",
+            "rest"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17-18"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement pagination for transaction history results",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "API"
+          ],
+          "tags": [
+            "api",
+            "pagination",
+            "performance"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Add filtering by date range, transaction type, and partner institution",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "API"
+          ],
+          "tags": [
+            "api",
+            "filtering",
+            "query"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Ensure API adheres to latest OpenAPI (Swagger) specifications",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "API"
+          ],
+          "tags": [
+            "api",
+            "openapi",
+            "standards"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement transaction data de-duplication across partner banks",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "DataProcessing"
+          ],
+          "tags": [
+            "data",
+            "deduplication",
+            "consistency"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Normalize all timestamps to UTC with original timezone metadata",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "DataProcessing"
+          ],
+          "tags": [
+            "data",
+            "timestamp",
+            "normalization"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement OAuth 2.0 authentication with per-customer access tokens",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "oauth",
+            "authentication"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Log all API access events per ISO 27001 requirements",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "logging",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Handle discrepancies in transaction types/status between institutions",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "DataProcessing"
+          ],
+          "tags": [
+            "data",
+            "normalization",
+            "edge-cases"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 38"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Return partial results when partner bank API is unavailable",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "ErrorHandling"
+          ],
+          "tags": [
+            "api",
+            "resilience",
+            "availability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 40"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_2",
+      "focus": "Performance, Integration & Documentation",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Achieve 1.5 second response time for 24 months of transaction data",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Performance"
+          ],
+          "tags": [
+            "performance",
+            "api",
+            "optimization"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 44"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Create comprehensive API documentation with examples",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "api",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 48"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Integrate with five major partner banks' APIs",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Integration"
+          ],
+          "tags": [
+            "integration",
+            "partners",
+            "api"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 52"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Implement data caching with 5-minute freshness window",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Performance"
+          ],
+          "tags": [
+            "caching",
+            "performance",
+            "data"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 54"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Complete compliance review before production deployment",
+          "domain": "FinTech",
+          "subdomain": [
+            "OpenBanking",
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "review",
+            "deployment"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 56"
+        }
+      ]
+    }
+  ]
+}

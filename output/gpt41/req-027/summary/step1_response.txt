@@ -1,0 +1,163 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-027",
+  "summary": "This requirement mandates comprehensive RTL (Right-to-Left) layout and mirrored UI support within the SaaS Visual Builder to enable regionally compliant, fully mirrored UIs for global and emerging market users. The core includes development of an RTL engine toggling layout properties (flex, grid, positioning), accurate rendering for all components, and designer tools for instant LTR/RTL preview with per-section/component overrides. Integration with translation memory, locale-specific formatting, and edge-case handling (flagging/remediating broken components) are required. Validations ensure accessibility/compliance (WCAG, ADA), while audit logs provide transparency. Documentation updates (guides, onboarding) and enablement (webinars) are included. Dependencies involve third-party vendors, and regressions affecting LTR performance/accessibility must be prevented. KPIs: 95% RTL compatibility, RTL pages published in <2x LTR time, and 20% customer satisfaction increase in targeted regions."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["VisualBuilder", "Internationalization", "Accessibility"],
+  "canonical_tags": ["rtl", "compliance", "usability"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-027-HLJ-Chunk_1",
+      "focus": "RTL Engine, Designer Tools, Component Rendering",
+      "items": [
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Develop robust RTL layout engine for UI builder",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder", "Internationalization"],
+          "tags": ["rtl", "layout"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 7–11"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Ensure accurate RTL rendering for component libraries, icons, navigation",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder"],
+          "tags": ["rtl", "components"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11–12"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Enable instant LTR/RTL layout preview for designers",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder", "UX"],
+          "tags": ["preview", "usability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14–15"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Support per-section and per-component overrides for mixed-language pages",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder", "Internationalization"],
+          "tags": ["override", "mixed-language"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Integrate with translation memory services for string swapping",
+          "domain": "SaaS",
+          "subdomain": ["Internationalization"],
+          "tags": ["localization", "translation"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement locale-specific formatting for dates, currencies, numerals",
+          "domain": "SaaS",
+          "subdomain": ["Internationalization"],
+          "tags": ["localization", "formatting"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Flag components that break under mirroring and provide remediation guidance",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder", "QA"],
+          "tags": ["validation", "mirror"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 23–24"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Validate exports to ensure WCAG and ADA accessibility in RTL output",
+          "domain": "SaaS",
+          "subdomain": ["Accessibility"],
+          "tags": ["compliance", "validation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide detailed logs and change history for layout adjustments",
+          "domain": "SaaS",
+          "subdomain": ["VisualBuilder", "Compliance"],
+          "tags": ["logging", "auditing"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 28–29"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Create 'Designing for RTL' best practices guide and update onboarding materials",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Enablement"],
+          "tags": ["documentation", "onboarding"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 31–32"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-027-HLJ-Chunk_2",
+      "focus": "Enablement, Dependencies, Performance, KPIs",
+      "items": [
+        {
+          "id": "REQ-027-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Host webinars or workshops to upskill internal teams and partners",
+          "domain": "SaaS",
+          "subdomain": ["Enablement"],
+          "tags": ["training", "enablement"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 33"
+        },
+        {
+          "id": "REQ-027-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Coordinate component updates involving third-party vendors",
+          "domain": "SaaS",
+          "subdomain": ["Dependencies"],
+          "tags": ["vendor", "update"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 36"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

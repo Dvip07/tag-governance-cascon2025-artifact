@@ -1,0 +1,124 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Design shared inbox interface with team visibility",
+  "summary": "Design a shared inbox interface that allows all team members to view and access incoming emails. The UI should make email status and assignments visible to the entire team for better transparency.",
+  "tags_v1": [
+    "email",
+    "inbox",
+    "[INFERRED] UI"
+  ],
+  "tags_v2": [
+    "email",
+    "inbox"
+  ],
+  "tags_v3": [
+    "inbox",
+    "ui",
+    "email",
+    "shared inbox",
+    "design",
+    "collaboration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "inbox",
+      "aliases": [],
+      "cluster_id": "all_221",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.8172078132629395,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "inbox",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7496198415756226,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "email",
+      "aliases": [],
+      "cluster_id": "all_208",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8048639297485352,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "email",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "shared inbox",
+      "aliases": [],
+      "cluster_id": "all_449",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8678564429283142,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "shared inbox",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "design",
+      "aliases": [],
+      "cluster_id": "all_305",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7250276207923889,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "design",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "collaboration",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7765740156173706,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "collaboration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,927 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design Real-Time Screening Service Integration",
+    "summary": "Integrate real-time KYC/AML screening into the onboarding workflow to ensure regulatory compliance and operational efficiency.",
+    "tags": [
+      "kyc",
+      "aml",
+      "regulatory"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "KYC/AML screening",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.95
+        },
+        {
+          "tag": "aml",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "real-time screening"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "kyc",
+      "aml",
+      "regulatory"
+    ],
+    "tags_v2": [
+      "aml"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.217246Z"
+      },
+      {
+        "original_tag": "aml",
+        "canonical_tag": "aml",
+        "matched_tag": "aml",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.314193Z"
+      },
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:23.479944Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Fallback Protocol for Primary Service Downtime",
+    "summary": "Develop a fallback protocol to handle primary service downtime, ensuring minimal disruption to the onboarding process.",
+    "tags": [
+      "regulatory",
+      "risk",
+      "recovery"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 20-25",
+    "reasoning": {
+      "source_summary_fragment": "fallback protocol",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.9
+        },
+        {
+          "tag": "risk",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "downtime handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] recovery",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "risk",
+      "recovery"
+    ],
+    "tags_v2": [
+      "risk"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:23.664551Z"
+      },
+      {
+        "original_tag": "risk",
+        "canonical_tag": "risk",
+        "matched_tag": "risk",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.777599Z"
+      },
+      {
+        "original_tag": "recovery",
+        "canonical_tag": "recovery",
+        "matched_tag": "recovery",
+        "tag_origin_cluster_id": "recovery",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.937719Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop Secure Audit Logging for Screening Attempts",
+    "summary": "Implement secure audit logging for all screening attempts, ensuring the ability to track and investigate any issues.",
+    "tags": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 30-32",
+    "reasoning": {
+      "source_summary_fragment": "secure audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] audit",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "tags_v2": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.031365Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.124661Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.128169Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create Compliance Dashboard and Reporting",
+    "summary": "Develop a compliance dashboard and reporting system to track and manage regulatory requirements.",
+    "tags": [
+      "regulatory",
+      "reporting",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 35-37",
+    "reasoning": {
+      "source_summary_fragment": "compliance dashboard",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "compliance management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] compliance",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "reporting",
+      "compliance"
+    ],
+    "tags_v2": [
+      "reporting",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:24.290455Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.293879Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.296870Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement User-Friendly Screening Status Communication",
+    "summary": "Develop a user-friendly system to communicate screening status to customers, ensuring transparency and trust.",
+    "tags": [
+      "ux",
+      "ui",
+      "communication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.75,
+    "priority": "low",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 40-42",
+    "reasoning": {
+      "source_summary_fragment": "user-friendly communication",
+      "tag_metadata_reference": [
+        {
+          "tag": "ux",
+          "confidence": 0.9
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "customer communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] communication",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "ux",
+      "ui",
+      "communication"
+    ],
+    "tags_v2": [
+      "ui",
+      "communication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.456696Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.550603Z"
+      },
+      {
+        "original_tag": "communication",
+        "canonical_tag": "communication",
+        "matched_tag": "communication",
+        "tag_origin_cluster_id": "communication",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.553570Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop Test Cases for Screening Scenarios",
+    "summary": "Create comprehensive test cases for various screening scenarios to ensure the system's accuracy and reliability.",
+    "tags": [
+      "testing",
+      "quality",
+      "screening"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 45-47",
+    "reasoning": {
+      "source_summary_fragment": "test cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        },
+        {
+          "tag": "quality",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "testing scenarios"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] screening",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "testing",
+      "quality",
+      "screening"
+    ],
+    "tags_v2": [
+      "testing",
+      "screening"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.565276Z"
+      },
+      {
+        "original_tag": "quality",
+        "canonical_tag": "quality",
+        "matched_tag": "quality",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.714956Z"
+      },
+      {
+        "original_tag": "screening",
+        "canonical_tag": "screening",
+        "matched_tag": "screening",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.718407Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Set Up Monitoring and Alerting for Unusual Patterns",
+    "summary": "Implement monitoring and alerting systems to detect unusual patterns in screening results, enabling quick response to potential issues.",
+    "tags": [
+      "security",
+      "monitoring",
+      "alerting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "monitoring and alerting",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "anomaly detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] alerting",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "security",
+      "monitoring",
+      "alerting"
+    ],
+    "tags_v2": [
+      "security",
+      "monitoring",
+      "alert"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.810874Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.813877Z"
+      },
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7007545828819275,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:24.942813Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Ensure Compliance with Local and International Regulations",
+    "summary": "Ensure the system complies with all relevant local and international regulations, including data protection and privacy laws.",
+    "tags": [
+      "regulatory",
+      "compliance",
+      "privacy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 55-58",
+    "reasoning": {
+      "source_summary_fragment": "regulatory compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] privacy",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "compliance",
+      "privacy"
+    ],
+    "tags_v2": [
+      "regulation",
+      "compliance",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7411317825317383,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:25.068387Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.071515Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.078497Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Collaborate with Legal and Customer Support for Edge-Case Handling",
+    "summary": "Collaborate with legal and customer support teams to develop procedures for handling edge cases and ensuring compliance with regulations.",
+    "tags": [
+      "legal",
+      "support",
+      "edge-cases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 60-62",
+    "reasoning": {
+      "source_summary_fragment": "edge-case handling",
+      "tag_metadata_reference": [
+        {
+          "tag": "legal",
+          "confidence": 0.9
+        },
+        {
+          "tag": "support",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "collaboration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] edge-cases",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "legal",
+      "support",
+      "edge-cases"
+    ],
+    "tags_v2": [
+      "legal",
+      "support",
+      "edge case"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "legal",
+        "canonical_tag": "legal",
+        "matched_tag": "legal",
+        "tag_origin_cluster_id": "legal",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.082124Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.085281Z"
+      },
+      {
+        "original_tag": "edge-cases",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.8297152519226074,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:25.215093Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Document and Train for Manual Review Procedures",
+    "summary": "Develop comprehensive documentation and training programs for manual review procedures to ensure consistency and compliance.",
+    "tags": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.75,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 65-67",
+    "reasoning": {
+      "source_summary_fragment": "manual review procedures",
+      "tag_metadata_reference": [
+        {
+          "tag": "training",
+          "confidence": 0.9
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "manual review"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] manual-review",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "tags_v2": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.222954Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.229270Z"
+      },
+      {
+        "original_tag": "manual-review",
+        "canonical_tag": "manual-review",
+        "matched_tag": "manual-review",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7150020599365234,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.337163Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

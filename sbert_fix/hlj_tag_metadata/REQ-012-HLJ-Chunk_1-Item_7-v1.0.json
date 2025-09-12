@@ -1,0 +1,54 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Handle retroactive GST rate changes and notify affected customers",
+  "summary": "Ensure the GST module can apply and record retroactive rate adjustments, and proactively notify any customers impacted by such changes. This includes maintaining historical tax rates and utilizing them for correct financial record-keeping.",
+  "tags_v1": [
+    "gst",
+    "retroactive"
+  ],
+  "tags_v2": [
+    "gst",
+    "retroactive"
+  ],
+  "tags_v3": [
+    "gst",
+    "retroactive"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7580327987670898,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retroactive",
+      "aliases": [],
+      "cluster_id": "all_158",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7504415512084961,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retroactive",
+      "method": "dedup_canonical"
+    }
+  ]
+}

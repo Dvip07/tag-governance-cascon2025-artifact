@@ -1,0 +1,136 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Implement fraud detection for anomalous or inflated reported income",
+  "summary": "Deploy advanced fraud detection mechanisms targeting abnormal or exaggerated income submissions. The system should flag suspicious patterns to protect lending integrity and minimize risk.",
+  "tags_v1": [
+    "fraud",
+    "detection",
+    "[INFERRED] anomaly-detection"
+  ],
+  "tags_v2": [
+    "fraud",
+    "detection"
+  ],
+  "tags_v3": [
+    "consent",
+    "privacy",
+    "fraud",
+    "detection",
+    "compliance",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "consent",
+      "aliases": [],
+      "cluster_id": "all_15",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6975393295288086,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consent",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6968998908996582,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7468125820159912,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7172834873199463,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.703055739402771,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6834374666213989,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

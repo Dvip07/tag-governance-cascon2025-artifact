@@ -1,0 +1,163 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-003",
+  "summary": "Develop automated fraud detection system for micro-transactions (<$1) with configurable pattern recognition, real-time alerts, and compliance reporting. System detects suspicious patterns (multiple micro-transactions from same customer/device in 24hrs), sends alerts via Slack/email/dashboard with transaction details, handles false positives through logging/ML refinement, implements rate-limiting to prevent spam, maintains audit logs, and ensures data privacy. Must integrate with existing fraud systems and receive Risk/Compliance approval before launch."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["FraudDetection", "PaymentProcessing"],
+  "canonical_tags": ["fraud", "security", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-003-HLJ-Chunk_1",
+      "focus": "Core detection logic and alerting infrastructure",
+      "items": [
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement configurable fraud detection rules for micro-transactions",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["fraud", "rules", "detection"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Create pattern detection for multiple transactions from same customer/device in 24hr window",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["fraud", "patterns", "detection"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build rule refinement system based on transaction frequency, merchant type, and time",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["fraud", "rules", "ml"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement real-time alert generation for fraud operations team",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection", "Alerting"],
+          "tags": ["alerts", "realtime", "fraud"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Integrate alert notifications with Slack channel",
+          "domain": "FinTech",
+          "subdomain": ["Alerting", "Integration"],
+          "tags": ["integration", "slack", "alerts"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Integrate alert notifications with email system",
+          "domain": "FinTech",
+          "subdomain": ["Alerting", "Integration"],
+          "tags": ["integration", "email", "alerts"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create dashboard widget for fraud alerts",
+          "domain": "FinTech",
+          "subdomain": ["Alerting", "UI"],
+          "tags": ["dashboard", "ui", "alerts"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Design alert payload with transaction details, customer ID, merchant info, and triggered rules",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection", "DataModel"],
+          "tags": ["data", "alerts", "security"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Implement false positive logging system for pattern refinement",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection", "ML"],
+          "tags": ["ml", "logging", "optimization"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Build rate-limiting mechanism to prevent alert spam per customer",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection", "Performance"],
+          "tags": ["performance", "alerts", "ratelimit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 28"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-003-HLJ-Chunk_2",
+      "focus": "Audit, compliance, security, and system integration",
+      "items": [
+        {
+          "id": "REQ-003-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Create audit logging system for all triggered alerts and investigations",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Logging"],
+          "tags": ["audit", "compliance", "logging"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement data privacy controls to limit sensitive data in alert payloads",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Privacy"],
+          "tags": ["security", "privacy", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 37"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

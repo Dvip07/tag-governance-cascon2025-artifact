@@ -1,0 +1,132 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Integrate freeze/unfreeze events with notification channels (push/SMS/email)",
+  "summary": "Ensure that whenever a card is frozen or unfrozen, event triggers seamlessly send user notifications through push, SMS, and email channels. Messages must be securely transmitted and clearly reflect current card status changes.",
+  "tags_v1": [
+    "usability",
+    "operational",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "usability",
+    "operational"
+  ],
+  "tags_v3": [
+    "notification",
+    "operational",
+    "ui",
+    "mobile",
+    "usability",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7625762224197388,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "operational",
+      "aliases": [],
+      "cluster_id": "all_165",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6895430684089661,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "operational",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7093909978866577,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7389933466911316,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7246273756027222,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.743902325630188,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

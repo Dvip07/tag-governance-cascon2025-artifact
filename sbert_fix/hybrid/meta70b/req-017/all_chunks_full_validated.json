@@ -1,0 +1,1677 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design upgrade logic for mid-cycle plan changes",
+    "summary": "Develop logic to handle mid-cycle plan upgrades, ensuring accurate billing and minimal disruption to customers.",
+    "tags": [
+      "prorated upgrades",
+      "billing",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Subscription Plans"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-15",
+    "reasoning": {
+      "source_summary_fragment": "mid-cycle plan upgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "prorated upgrades",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "prorated upgrades",
+        "billing"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "prorated upgrades",
+      "billing",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "prorated upgrades",
+      "billing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "prorated upgrades",
+        "canonical_tag": "prorated upgrades",
+        "matched_tag": "prorated upgrades",
+        "tag_origin_cluster_id": "prorated upgrades",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.115726Z"
+      },
+      {
+        "original_tag": "billing",
+        "canonical_tag": "billing",
+        "matched_tag": "billing",
+        "tag_origin_cluster_id": "billing",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.122973Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.249450Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "billing",
+      "calculations",
+      "prorated upgrades",
+      "proration"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 6,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7509013414382935,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "calculations",
+        "original_tag": "calculations",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7046670913696289,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "prorated upgrades",
+        "original_tag": "prorated upgrades",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8309339284896851,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "proration",
+        "original_tag": "proration",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7274212837219238,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement billing history preservation for upgrades",
+    "summary": "Develop a system to preserve billing history when upgrades occur, ensuring accurate records and compliance.",
+    "tags": [
+      "billing history",
+      "upgrades",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Billing and Payments"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 16-20",
+    "reasoning": {
+      "source_summary_fragment": "billing history preservation",
+      "tag_metadata_reference": [
+        {
+          "tag": "billing history",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "billing history",
+        "upgrades"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "billing history",
+      "upgrades",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "billing history",
+      "upgrade"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "billing history",
+        "canonical_tag": "billing history",
+        "matched_tag": "billing history",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.258284Z"
+      },
+      {
+        "original_tag": "upgrades",
+        "canonical_tag": "upgrade",
+        "matched_tag": "upgrade",
+        "tag_origin_cluster_id": "upgrade",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:04.312848Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.429217Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "upgrade",
+      "billing",
+      "billing history"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "upgrade",
+        "original_tag": "upgrade",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7629854083061218,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7442575097084045,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "credits",
+        "original_tag": "credits",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6716322898864746,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "billing history",
+        "original_tag": "billing history",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7860194444656372,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Handle edge cases for upgrades involving monthly and annual plans",
+    "summary": "Develop logic to handle edge cases when upgrading between monthly and annual plans, ensuring accurate billing and minimal disruption.",
+    "tags": [
+      "edge cases",
+      "upgrades",
+      "[INFERRED] billing"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Subscription Plans"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 21-25",
+    "reasoning": {
+      "source_summary_fragment": "edge cases for upgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge cases",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "edge cases",
+        "upgrades"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "billing",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "edge cases",
+      "upgrades",
+      "[INFERRED] billing"
+    ],
+    "tags_v2": [
+      "edge case",
+      "upgrade"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edge cases",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": 0.91,
+        "validation_status": "semantic",
+        "similarity": 0.7356244325637817,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:04.532934Z"
+      },
+      {
+        "original_tag": "upgrades",
+        "canonical_tag": "upgrade",
+        "matched_tag": "upgrade",
+        "tag_origin_cluster_id": "upgrade",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:04.590593Z"
+      },
+      {
+        "original_tag": "[INFERRED] billing",
+        "canonical_tag": "[INFERRED] billing",
+        "matched_tag": "[INFERRED] billing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.712706Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "upgrade",
+      "edge_cases",
+      "billing",
+      "subscriptions",
+      "audit",
+      "events"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "upgrade",
+        "original_tag": "upgrades",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7723979949951172,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "history",
+        "original_tag": "history",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6783750653266907,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "edge_cases",
+        "original_tag": "edge cases",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7282319068908691,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7485283017158508,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "subscriptions",
+        "original_tag": "subscriptions",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.729375958442688,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6981521844863892,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "events",
+        "original_tag": "events",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6841074228286743,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Develop notifications for users and admins on upgrades and unusual patterns",
+    "summary": "Create a notification system to inform users and admins of upgrades and unusual patterns, ensuring timely awareness and action.",
+    "tags": [
+      "notifications",
+      "user experience",
+      "[INFERRED] alerts"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Notifications"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.79,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 26-30",
+    "reasoning": {
+      "source_summary_fragment": "notifications for upgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "user experience"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "alerts",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "notifications",
+      "user experience",
+      "[INFERRED] alerts"
+    ],
+    "tags_v2": [
+      "notification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:04.722510Z"
+      },
+      {
+        "original_tag": "user experience",
+        "canonical_tag": "user experience",
+        "matched_tag": "user experience",
+        "tag_origin_cluster_id": "user experience",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.842222Z"
+      },
+      {
+        "original_tag": "[INFERRED] alerts",
+        "canonical_tag": "[INFERRED] alerts",
+        "matched_tag": "[INFERRED] alerts",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.962655Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "invoice",
+      "history",
+      "billing",
+      "notification"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "invoice",
+        "original_tag": "invoice",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7301084995269775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "history",
+        "original_tag": "history",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.684423565864563,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.743381142616272,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7414261102676392,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "tax",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6604963541030884,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Update support scripts and customer FAQs for common upgrade scenarios",
+    "summary": "Update support scripts and customer FAQs to reflect common upgrade scenarios, ensuring accurate information and efficient support.",
+    "tags": [
+      "support",
+      "documentation",
+      "[INFERRED] knowledge base"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Support and Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "low",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 31-35",
+    "reasoning": {
+      "source_summary_fragment": "support scripts and FAQs",
+      "tag_metadata_reference": [
+        {
+          "tag": "support",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "support",
+        "documentation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "knowledge base",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "support",
+      "documentation",
+      "[INFERRED] knowledge base"
+    ],
+    "tags_v2": [
+      "support",
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.966801Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:04.979400Z"
+      },
+      {
+        "original_tag": "[INFERRED] knowledge base",
+        "canonical_tag": "[INFERRED] knowledge base",
+        "matched_tag": "[INFERRED] knowledge base",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.105120Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "invoice",
+      "billing",
+      "plans",
+      "support",
+      "dates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "invoice",
+        "original_tag": "invoices",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7166038155555725,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7335183620452881,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "plans",
+        "original_tag": "plans",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.686576247215271,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7012161016464233,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "dates",
+        "original_tag": "dates",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6907622814178467,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Ensure payment processor integrations support prorated upgrades",
+    "summary": "Verify that payment processor integrations support prorated upgrades, ensuring seamless and accurate billing.",
+    "tags": [
+      "payment processing",
+      "integrations",
+      "[INFERRED] prorated upgrades"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Payment Processing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.81,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 36-40",
+    "reasoning": {
+      "source_summary_fragment": "payment processor integrations",
+      "tag_metadata_reference": [
+        {
+          "tag": "payment processing",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "payment processing",
+        "integrations"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "prorated upgrades",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "payment processing",
+      "integrations",
+      "[INFERRED] prorated upgrades"
+    ],
+    "tags_v2": [
+      "payment processing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "payment processing",
+        "canonical_tag": "payment processing",
+        "matched_tag": "payment processing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "semantic",
+        "similarity": 0.7248057126998901,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.195327Z"
+      },
+      {
+        "original_tag": "integrations",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:05.313068Z"
+      },
+      {
+        "original_tag": "[INFERRED] prorated upgrades",
+        "canonical_tag": "[INFERRED] prorated upgrades",
+        "matched_tag": "[INFERRED] prorated upgrades",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.433666Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "review",
+      "payment processing",
+      "prorated upgrades",
+      "subscriptions",
+      "integration"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "abuse",
+        "original_tag": "abuse",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6701607704162598,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "review",
+        "original_tag": "review",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6935944557189941,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "payment processing",
+        "original_tag": "payment processing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7566136121749878,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "prorated upgrades",
+        "original_tag": "prorated upgrades",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8191711902618408,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "subscriptions",
+        "original_tag": "subscriptions",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71685791015625,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integrations",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6859039068222046,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Implement local taxes/VAT support in upgrade calculations",
+    "summary": "Develop a system to handle local taxes and VAT in upgrade calculations, ensuring compliance and accurate billing.",
+    "tags": [
+      "taxation",
+      "compliance",
+      "[INFERRED] VAT"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Taxation and Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 41-45",
+    "reasoning": {
+      "source_summary_fragment": "local taxes and VAT",
+      "tag_metadata_reference": [
+        {
+          "tag": "taxation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "taxation",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "VAT",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "taxation",
+      "compliance",
+      "[INFERRED] VAT"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "taxation",
+        "canonical_tag": "tax",
+        "matched_tag": "tax",
+        "tag_origin_cluster_id": "tax",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:05.564849Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.574446Z"
+      },
+      {
+        "original_tag": "[INFERRED] VAT",
+        "canonical_tag": "[INFERRED] VAT",
+        "matched_tag": "[INFERRED] VAT",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.865559Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "email",
+      "notification",
+      "subscriptions",
+      "fraud-prevention",
+      "vat"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6800438165664673,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6998704671859741,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "subscriptions",
+        "original_tag": "subscriptions",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7242573499679565,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "fraud-prevention",
+        "original_tag": "fraud-prevention",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.701409101486206,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "vat",
+        "original_tag": "vat",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7014038562774658,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Design invoice breakdown for upgrades, including refunds and new charges",
+    "summary": "Create an invoice breakdown system to handle upgrades, including refunds and new charges, ensuring accurate and transparent billing.",
+    "tags": [
+      "invoicing",
+      "billing",
+      "[INFERRED] refunds"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Billing and Invoicing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 46-50",
+    "reasoning": {
+      "source_summary_fragment": "invoice breakdown for upgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "invoicing",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "invoicing",
+        "billing"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "refunds",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "invoicing",
+      "billing",
+      "[INFERRED] refunds"
+    ],
+    "tags_v2": [
+      "invoicing",
+      "billing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "invoicing",
+        "canonical_tag": "invoicing",
+        "matched_tag": "invoicing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.884657Z"
+      },
+      {
+        "original_tag": "billing",
+        "canonical_tag": "billing",
+        "matched_tag": "billing",
+        "tag_origin_cluster_id": "billing",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:05.898953Z"
+      },
+      {
+        "original_tag": "[INFERRED] refunds",
+        "canonical_tag": "[INFERRED] refunds",
+        "matched_tag": "[INFERRED] refunds",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.029513Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "billing",
+      "invoice",
+      "admin",
+      "refund"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7531121969223022,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6738379597663879,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "alert",
+        "original_tag": "alert",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.661766529083252,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "invoice",
+        "original_tag": "invoicing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7518543004989624,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "admin",
+        "original_tag": "admin",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6914684772491455,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "refund",
+        "original_tag": "refunds",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7388820648193359,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Flag downgrades during the same cycle for manual review",
+    "summary": "Develop a system to flag downgrades during the same cycle for manual review, ensuring accurate handling and minimal disruption.",
+    "tags": [
+      "downgrades",
+      "manual review",
+      "[INFERRED] flags"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Subscription Plans"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 51-55",
+    "reasoning": {
+      "source_summary_fragment": "flag downgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "downgrades",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "downgrades",
+        "manual review"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "flags",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "downgrades",
+      "manual review",
+      "[INFERRED] flags"
+    ],
+    "tags_v2": [
+      "downgrades",
+      "manual review"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "downgrades",
+        "canonical_tag": "downgrades",
+        "matched_tag": "downgrades",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.033813Z"
+      },
+      {
+        "original_tag": "manual review",
+        "canonical_tag": "manual review",
+        "matched_tag": "manual review",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.037312Z"
+      },
+      {
+        "original_tag": "[INFERRED] flags",
+        "canonical_tag": "[INFERRED] flags",
+        "matched_tag": "[INFERRED] flags",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.155317Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "integration",
+      "support",
+      "documentation",
+      "downgrades",
+      "manual review",
+      "payments"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "integration",
+        "original_tag": "integrations",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6805275678634644,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7036298513412476,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.694466233253479,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "downgrades",
+        "original_tag": "downgrades",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7843015193939209,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "manual review",
+        "original_tag": "manual review",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7250658869743347,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704136312007904,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Conduct testing for prorated upgrades and billing history preservation",
+    "summary": "Develop a testing system to verify prorated upgrades and billing history preservation, ensuring accurate and reliable billing.",
+    "tags": [
+      "testing",
+      "quality assurance",
+      "[INFERRED] prorated upgrades"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Testing and Quality Assurance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 56-60",
+    "reasoning": {
+      "source_summary_fragment": "testing for prorated upgrades",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "testing",
+        "quality assurance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "prorated upgrades",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-017",
+    "tags_v1": [
+      "testing",
+      "quality assurance",
+      "[INFERRED] prorated upgrades"
+    ],
+    "tags_v2": [
+      "testing",
+      "quality assurance",
+      "[INFERRED] prorated upgrades"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.159413Z"
+      },
+      {
+        "original_tag": "quality assurance",
+        "canonical_tag": "quality assurance",
+        "matched_tag": "quality assurance",
+        "tag_origin_cluster_id": "quality assurance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.171985Z"
+      },
+      {
+        "original_tag": "[INFERRED] prorated upgrades",
+        "canonical_tag": "[INFERRED] prorated upgrades",
+        "matched_tag": "[INFERRED] prorated upgrades",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7455201745033264,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.261831Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "testing",
+      "prorated upgrades"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6664643287658691,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "tax",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6522514820098877,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6745604872703552,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6897952556610107,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7020508646965027,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      },
+      {
+        "tag": "prorated upgrades",
+        "original_tag": "prorated upgrades",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8153764009475708,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-017"
+      }
+    ]
+  }
+]

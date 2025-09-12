@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_3-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Build rate lock abuse prevention controls",
+  "summary": "Implement risk controls to prevent FX rate speculation and abuse, including rate lock frequency limits, suspicious pattern detection, and automated blocking mechanisms to maintain system integrity.",
+  "tags_v1": [
+    "compliance",
+    "risk",
+    "fx-rates"
+  ],
+  "tags_v2": [
+    "compliance",
+    "risk"
+  ],
+  "tags_v3": [
+    "risk",
+    "compliance",
+    "fx-rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "risk",
+      "aliases": [],
+      "cluster_id": "all_6",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7133152484893799,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "risk",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6947087049484253,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "all_284",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7885643243789673,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

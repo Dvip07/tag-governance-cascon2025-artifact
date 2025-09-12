@@ -1,0 +1,82 @@
+[
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Capture logs, screenshots, and video recordings for failed tests",
+    "summary": "Automate the collection of logs, screenshots, and video recordings for failed UI tests to facilitate debugging and improvement.",
+    "tags": [
+      "error_reporting",
+      "debugging",
+      "[INFERRED] quality_assurance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Error Reporting"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "Automate UI testing with browser coverage analytics",
+      "tag_metadata_reference": [
+        {
+          "tag": "error_reporting",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "UI testing",
+        "error reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "quality_assurance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Ensure test artifacts are retained securely",
+    "summary": "Implement a secure retention policy for test artifacts, ensuring compliance with regulatory standards and protecting sensitive data.",
+    "tags": [
+      "security",
+      "compliance",
+      "[INFERRED] data_protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30-31",
+    "reasoning": {
+      "source_summary_fragment": "integrating with CI/CD pipeline, and ensuring security",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "security",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data_protection",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030"
+  }
+]

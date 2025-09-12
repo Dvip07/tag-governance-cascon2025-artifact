@@ -1,0 +1,160 @@
+### === SUMMARY START ===
+{
+  "requirement_id": "REQ-026",
+  "summary": "Deploy a smart NPS feedback engine using behavioral intelligence to prompt users for feedback at optimal moments, track insights in real-time, and drive continuous improvement in product and customer support, while ensuring compliance with privacy standards and accessibility for audit."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+{
+  "domain": "SaaS",
+  "subdomain": ["Customer Success", "User Feedback"],
+  "canonical_tags": ["nps", "feedback", "behavioral_intelligence"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-026-HLJ-Chunk_1",
+      "focus": "Behavioral Triggers and User Experience",
+      "items": [
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Define flexible rules for auto-triggering NPS surveys",
+          "domain": "SaaS",
+          "subdomain": ["Customer Success"],
+          "tags": ["nps", "behavioral_intelligence"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Embed NPS prompt natively in web and mobile apps",
+          "domain": "SaaS",
+          "subdomain": ["User Experience"],
+          "tags": ["nps", "user_experience"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20-22"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement logic to delay or suppress surveys for churn signs",
+          "domain": "SaaS",
+          "subdomain": ["Customer Success"],
+          "tags": ["nps", "churn_prevention"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 18-19"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Retry survey prompt after cooling-off period",
+          "domain": "SaaS",
+          "subdomain": ["User Experience"],
+          "tags": ["nps", "user_experience"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 23-24"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Suppress further prompts for 30 days after ignore/dismissal",
+          "domain": "SaaS",
+          "subdomain": ["User Experience"],
+          "tags": ["nps", "user_experience"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 25-26"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-026-HLJ-Chunk_2",
+      "focus": "Analytics, Compliance, and Edge Cases",
+      "items": [
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Visualize response rates, NPS scores, and trends by cohort",
+          "domain": "SaaS",
+          "subdomain": ["Analytics"],
+          "tags": ["nps", "analytics"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 28-30"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Integrate NPS results with CRM and customer support workflows",
+          "domain": "SaaS",
+          "subdomain": ["Customer Support"],
+          "tags": ["nps", "crm_integration"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 31-32"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Ensure survey data compliance with privacy standards",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["nps", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 33-34"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Allow users to opt out of feedback requests",
+          "domain": "SaaS",
+          "subdomain": ["User Experience"],
+          "tags": ["nps", "user_experience"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 35-36"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Coordinate survey prompts across multiple devices",
+          "domain": "SaaS",
+          "subdomain": ["Edge Cases"],
+          "tags": ["nps", "edge_cases"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37-38"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_11-v1.0",
+          "title": "Prioritize conflicting triggers by recency or highest-value action",
+          "domain": "SaaS",
+          "subdomain": ["Edge Cases"],
+          "tags": ["nps", "edge_cases"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 39-40"
+        },
+        {
+          "id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+          "title": "Update product training and onboarding materials for NPS insights",
+          "domain": "SaaS",
+          "subdomain": ["Documentation"],
+          "tags": ["nps", "documentation"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 41-42"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

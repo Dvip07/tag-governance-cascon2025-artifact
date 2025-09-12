@@ -1,0 +1,170 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-030-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-030",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-030-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-030-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-030 (SaaS)
+
+SA-015: Pre-Deployment UI Tests With Browser Coverage Metrics
+Title:
+Automated Pre-Deployment UI Testing With Real-Time Browser Coverage Analytics
+
+Strategic Rationale:
+In the drive toward agile release velocity and risk-managed delivery, we need automated UI test execution in the staging environment before every deployment. Browser coverage analytics will give teams full-spectrum visibility into test effectiveness, uncovering gaps and ensuring consistent experiences across platforms.
+
+Requirements:
+
+Automated Test Execution:
+
+Run all UI regression tests on supported browsers (Chrome, Firefox, Safari, Edge) in parallel in staging.
+
+Integrate with CI/CD pipeline to block deployments if critical UI tests fail.
+
+Coverage Analytics:
+
+Generate real-time reports showing test coverage by browser, platform (Windows/Mac/Linux), and screen size.
+
+Visualize gaps in coverage, prioritizing unsupported or failing configurations.
+
+Error Reporting & Debugging:
+
+Capture full logs, screenshots, and video recordings for failed test cases.
+
+Summarize flakiness trends and provide actionable recommendations for stabilization.
+
+Edge Case Handling:
+
+Identify and flag tests that are consistently flaky only in headless mode, recommending additional review.
+
+For unreproducible failures, offer a “quarantine” option to skip deployment blocking but notify QA leads.
+
+Documentation & Enablement:
+
+Maintain up-to-date testing and triage guides for engineering and QA teams.
+
+Share browser support matrix with product and customer support.
+
+Security & Compliance:
+
+Ensure test artifacts (logs, screenshots) are retained securely and only accessible by authorized personnel.
+
+Track compliance with accessibility standards (WCAG) as part of the test suite.
+
+Dependencies & Constraints:
+
+Requires maintenance of cloud/browser farm infrastructure.
+
+Must not add more than 10 minutes to typical CI/CD build pipeline.
+
+KPIs:
+
+99% UI regression coverage across browsers
+
+<5% flake rate on critical paths
+
+<12hr average time-to-fix for newly discovered browser bugs
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

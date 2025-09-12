@@ -1,0 +1,82 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "meta70b",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Ensure survey data compliance with privacy standards",
+  "summary": "Implement measures to ensure survey data compliance with privacy standards, such as GDPR and CCPA.",
+  "tags_v1": [
+    "nps",
+    "compliance",
+    "privacy"
+  ],
+  "tags_v2": [
+    "nps",
+    "compliance",
+    "privacy"
+  ],
+  "tags_v3": [
+    "compliance",
+    "nps",
+    "privacy"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7276092767715454,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7480685710906982,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7281426191329956,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    }
+  ]
+}

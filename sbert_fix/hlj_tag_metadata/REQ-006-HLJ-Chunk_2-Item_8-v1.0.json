@@ -1,0 +1,128 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Retrofit or phase out legacy APIs to support per-tenant rate limiting",
+  "summary": "Legacy APIs must be upgraded or replaced to enforce per-tenant rate limits. Plan systematic migration or sunset of incompatible endpoints to maintain consistent enforcement and prevent circumvention.",
+  "tags_v1": [
+    "migration",
+    "compatibility",
+    "[INFERRED] legacy"
+  ],
+  "tags_v2": [
+    "migration",
+    "compatibility"
+  ],
+  "tags_v3": [
+    "documentation",
+    "migration",
+    "compatibility",
+    "legacy",
+    "self-service"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7036787867546082,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "migration",
+      "aliases": [],
+      "cluster_id": "all_62",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6996703147888184,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "migration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compatibility",
+      "aliases": [],
+      "cluster_id": "all_63",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7155296802520752,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compatibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "communication",
+      "aliases": [],
+      "cluster_id": "all_43",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6676754951477051,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "communication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "legacy",
+      "aliases": [],
+      "cluster_id": "all_64",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7231651544570923,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "legacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "self-service",
+      "aliases": [],
+      "cluster_id": "all_54",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6904711127281189,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "self-service",
+      "method": "dedup_canonical"
+    }
+  ]
+}

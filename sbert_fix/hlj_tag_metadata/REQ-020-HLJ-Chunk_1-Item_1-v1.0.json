@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Implement OAuth and API key one-click sync for major CRMs",
+  "summary": "Develop integration supporting OAuth and API key authentication to enable seamless, one-click synchronization with major CRM systems. This streamlines setup for users and enforces modern security standards. The feature must work across supported CRM APIs while preserving data integrity and compliance.",
+  "tags_v1": [
+    "sync",
+    "oauth",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "sync",
+    "oauth"
+  ],
+  "tags_v3": [
+    "oauth",
+    "salesforce",
+    "sync",
+    "authentication",
+    "crm",
+    "api"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "oauth",
+      "aliases": [],
+      "cluster_id": "all_78",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7339919805526733,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "oauth",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "salesforce",
+      "aliases": [],
+      "cluster_id": "all_334",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7181771993637085,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "salesforce",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync",
+      "aliases": [
+        "synchronization"
+      ],
+      "cluster_id": "all_166",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7215015888214111,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sync",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7050144672393799,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7427833676338196,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6986728310585022,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    }
+  ]
+}

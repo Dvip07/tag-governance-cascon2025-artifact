@@ -1,0 +1,278 @@
+# 📝 Changelog for `req-015` — **gpt41**
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['webhooks', 'notifications', '[INFERRED] compliance']`
+**Validated tags:** `['webhook', 'notification']`
+**Tags added:** `['webhook', 'notification']`
+**Tags dropped:** `['webhooks', 'notifications', '[INFERRED] compliance']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:59:55.007165Z |
+| notification | added | direct | 1.0 | source_fragment | 2025-05-31T23:59:54.767843Z |
+| notifications | dropped | direct | 1.0 | source_fragment | 2025-05-31T23:59:54.767843Z |
+| webhook | added | direct | 1.0 | title | 2025-05-31T23:59:54.730711Z |
+| webhooks | dropped | direct | 1.0 | title | 2025-05-31T23:59:54.730711Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['webhooks', 'registration']`
+**Validated tags:** `['webhook', 'registration']`
+**Tags added:** `['webhook']`
+**Tags dropped:** `['webhooks']`
+**Tags kept:** `['registration']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| registration | kept | direct | 1.0 | title | 2025-05-31T23:59:55.021024Z |
+| webhook | added | direct | 1.0 | summary | 2025-05-31T23:59:55.018138Z |
+| webhooks | dropped | direct | 1.0 | summary | 2025-05-31T23:59:55.018138Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['customization', 'webhooks', '[INFERRED] usability']`
+**Validated tags:** `['webhook']`
+**Tags added:** `['webhook']`
+**Tags dropped:** `['customization', 'webhooks', '[INFERRED] usability']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] usability | dropped | none | 0.0 | None | 2025-05-31T23:59:55.389459Z |
+| customization | dropped | none | 0.0 | None | 2025-05-31T23:59:55.210649Z |
+| webhook | added | direct | 1.0 | title | 2025-05-31T23:59:55.214795Z |
+| webhooks | dropped | direct | 1.0 | title | 2025-05-31T23:59:55.214795Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['validation', 'schema']`
+**Validated tags:** `['validation', 'schema']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['validation', 'schema']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| schema | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:55.421263Z |
+| validation | kept | direct | 1.0 | summary | 2025-05-31T23:59:55.402580Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['validation', 'error-handling']`
+**Validated tags:** `['validation']`
+**Tags added:** `[]`
+**Tags dropped:** `['error-handling']`
+**Tags kept:** `['validation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| error-handling | dropped | none | 0.0 | None | 2025-05-31T23:59:55.597491Z |
+| validation | kept | direct | 1.0 | title | 2025-05-31T23:59:55.424450Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['reliability', 'delivery']`
+**Validated tags:** `['reliability', 'delivery']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['reliability', 'delivery']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| delivery | kept | direct | 1.0 | summary | 2025-05-31T23:59:55.617679Z |
+| reliability | kept | direct | 1.0 | summary | 2025-05-31T23:59:55.608096Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['notifications', 'reliability']`
+**Validated tags:** `['notification', 'reliability']`
+**Tags added:** `['notification']`
+**Tags dropped:** `['notifications']`
+**Tags kept:** `['reliability']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| notification | added | direct | 1.0 | source_fragment | 2025-05-31T23:59:55.630182Z |
+| notifications | dropped | direct | 1.0 | source_fragment | 2025-05-31T23:59:55.630182Z |
+| reliability | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:55.707871Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['usability', 'monitoring']`
+**Validated tags:** `['monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `['usability']`
+**Tags kept:** `['monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| monitoring | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:55.948418Z |
+| usability | dropped | none | 0.0 | None | 2025-05-31T23:59:55.868864Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['security', 'verification']`
+**Validated tags:** `['security', 'verification']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['security', 'verification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| security | kept | direct | 1.0 | summary | 2025-05-31T23:59:55.958624Z |
+| verification | kept | direct | 1.0 | title | 2025-05-31T23:59:55.962002Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['usability', 'self-service']`
+**Validated tags:** `['usability']`
+**Tags added:** `[]`
+**Tags dropped:** `['self-service']`
+**Tags kept:** `['usability']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| self-service | dropped | none | 0.0 | None | 2025-05-31T23:59:56.147469Z |
+| usability | kept | direct | 1.0 | summary | 2025-05-31T23:59:55.972331Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['compliance', 'logging', '[INFERRED] auditing']`
+**Validated tags:** `['compliance', 'logs']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging', '[INFERRED] auditing']`
+**Tags kept:** `['compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] auditing | dropped | none | 0.0 | None | 2025-05-31T23:59:56.396272Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:59:56.152395Z |
+| logging | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:59:56.237337Z |
+| logs | added | direct | 1.0 | raw_requirement | 2025-05-31T23:59:56.237337Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['rate-limiting', 'performance', '[INFERRED] reliability']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['rate-limiting', 'performance', '[INFERRED] reliability']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reliability | dropped | none | 0.0 | None | 2025-05-31T23:59:56.981843Z |
+| performance | dropped | none | 0.0 | None | 2025-05-31T23:59:56.759820Z |
+| rate-limiting | dropped | none | 0.0 | None | 2025-05-31T23:59:56.585982Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['documentation', 'usability']`
+**Validated tags:** `['documentation', 'usability']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'usability']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:59:56.992990Z |
+| usability | kept | direct | 1.0 | summary | 2025-05-31T23:59:57.012115Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['training', 'support']`
+**Validated tags:** `['training', 'support']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['training', 'support']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| support | kept | direct | 1.0 | title | 2025-05-31T23:59:57.042641Z |
+| training | kept | direct | 1.0 | summary | 2025-05-31T23:59:57.034428Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['dependency', 'integration']`
+**Validated tags:** `['integration']`
+**Tags added:** `[]`
+**Tags dropped:** `['dependency']`
+**Tags kept:** `['integration']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dependency | dropped | none | 0.0 | None | 2025-05-31T23:59:57.307423Z |
+| integration | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:57.333141Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['scalability', 'availability', '[INFERRED] reliability']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['scalability', 'availability', '[INFERRED] reliability']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reliability | dropped | none | 0.0 | None | 2025-05-31T23:59:58.164922Z |
+| availability | dropped | none | 0.0 | None | 2025-05-31T23:59:57.941174Z |
+| scalability | dropped | none | 0.0 | None | 2025-05-31T23:59:57.757351Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['ui', 'backend']`
+**Validated tags:** `['ui', 'backend']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['ui', 'backend']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | kept | direct | 1.0 | title | 2025-05-31T23:59:58.176169Z |
+| ui | kept | direct | 1.0 | title | 2025-05-31T23:59:58.172769Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['compliance', 'monitoring']`
+**Validated tags:** `['compliance', 'monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['compliance', 'monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:59:58.180330Z |
+| monitoring | kept | direct | 1.0 | title | 2025-05-31T23:59:58.185237Z |
+
+## 🔹 HLJ: `REQ-015-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['training', 'documentation']`
+**Validated tags:** `['training', 'documentation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['training', 'documentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:58.276878Z |
+| training | kept | direct | 1.0 | title | 2025-05-31T23:59:58.190382Z |

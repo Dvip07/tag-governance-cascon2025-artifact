@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Integrate with analytics, CRM, and support ticketing platforms",
+  "summary": "Establish robust two-way integrations with analytics platforms, CRM, and support ticketing systems to synchronize NPS data and workflow actions. Facilitates holistic feedback management and operational response.",
+  "tags_v1": [
+    "integration",
+    "nps",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "integration",
+    "nps"
+  ],
+  "tags_v3": [
+    "integration",
+    "nps",
+    "automation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7180302739143372,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7567005157470703,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7444469928741455,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

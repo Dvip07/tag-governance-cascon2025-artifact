@@ -1,0 +1,202 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design Minor Onboarding Workflow",
+    "summary": "Design a streamlined onboarding process for minors, ensuring compliance with child data protection regulations and providing an intuitive user experience.",
+    "tags": [
+      "onboarding",
+      "minor",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "minor onboarding workflow",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "onboarding",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Guardian KYC Fallback",
+    "summary": "Implement a KYC fallback process for guardians, ensuring secure and compliant identity verification.",
+    "tags": [
+      "kyc",
+      "guardian",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-18",
+    "reasoning": {
+      "source_summary_fragment": "guardian kyc fallback",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "kyc",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop Seamless Hand-off Between Minor and Guardian",
+    "summary": "Develop a seamless hand-off process between minor and guardian accounts, ensuring a smooth and intuitive user experience.",
+    "tags": [
+      "onboarding",
+      "handoff",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "seamless hand-off",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "onboarding",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate with Third-Party KYC Verification Providers",
+    "summary": "Integrate the platform with third-party KYC verification providers, ensuring secure and compliant identity verification.",
+    "tags": [
+      "kyc",
+      "integration",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 25-28",
+    "reasoning": {
+      "source_summary_fragment": "kyc verification providers",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "kyc",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement Edge Case Handling for Minor Switching Guardians",
+    "summary": "Implement edge case handling for minors switching guardians, ensuring a smooth and compliant user experience.",
+    "tags": [
+      "onboarding",
+      "edgecase",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "low",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 30-32",
+    "reasoning": {
+      "source_summary_fragment": "edge case handling",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "onboarding",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  }
+]

@@ -1,0 +1,58 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Support per-section and per-component overrides for mixed-language pages",
+  "summary": "Allow granular overrides of RTL/LTR direction and localization behaviors by section or individual component, supporting flexible mixed-language layouts. This enables accurate UIs for pages where both LTR and RTL content coexist, ensuring regional and linguistic compliance.",
+  "tags_v1": [
+    "override",
+    "mixed-language",
+    "[INFERRED] flexibility"
+  ],
+  "tags_v2": [
+    "override",
+    "mixed-language"
+  ],
+  "tags_v3": [
+    "override",
+    "mixed-language"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "override",
+      "aliases": [
+        "overrides"
+      ],
+      "cluster_id": "all_231",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7471059560775757,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "override",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mixed-language",
+      "aliases": [],
+      "cluster_id": "all_232",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7808736562728882,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mixed-language",
+      "method": "dedup_canonical"
+    }
+  ]
+}

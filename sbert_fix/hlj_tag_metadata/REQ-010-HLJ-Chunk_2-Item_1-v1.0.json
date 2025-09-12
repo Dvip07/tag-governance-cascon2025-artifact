@@ -1,0 +1,116 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Log all ledger actions and reversals with immutable audit trails",
+  "summary": "Implement immutable audit logging for all operational and reporting ledger actions, including reversals. Ensure every transaction is recorded with unalterable audit trails accessible for compliance, security reviews, and forensic analysis.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "[INFERRED] immutable"
+  ],
+  "tags_v2": [
+    "audit"
+  ],
+  "tags_v3": [
+    "reconciliation",
+    "audit",
+    "logging",
+    "compliance",
+    "immutability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7388967871665955,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7570970058441162,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7292375564575195,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6969786882400513,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "immutability",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7381746172904968,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "immutable",
+      "method": "dedup_canonical"
+    }
+  ]
+}

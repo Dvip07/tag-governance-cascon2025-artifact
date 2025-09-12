@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Detect suspicious micro-transaction activity per customer or device in 24-hour window",
+  "summary": "Implement analytics to monitor customer and device activity for micro-transactions over 24-hour periods. The system should raise alerts when suspicious activity patterns or thresholds are detected per entity in a rolling daily window.",
+  "tags_v1": [
+    "micro-transaction",
+    "detection",
+    "[INFERRED] analytics"
+  ],
+  "tags_v2": [
+    "micro-transaction",
+    "detection"
+  ],
+  "tags_v3": [
+    "micro-transaction",
+    "detection",
+    "fraud",
+    "rules",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "micro-transaction",
+      "aliases": [],
+      "cluster_id": "all_176",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7682880759239197,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "micro-transaction",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7404073476791382,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7353166937828064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6893842816352844,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7103663682937622,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

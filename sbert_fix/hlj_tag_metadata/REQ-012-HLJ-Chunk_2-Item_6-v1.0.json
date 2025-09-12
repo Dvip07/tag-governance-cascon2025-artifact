@@ -1,0 +1,81 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "meta70b",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Allow for tax-exempt status recording and application",
+  "summary": "The system should allow for the recording and application of tax-exempt status for eligible entities, ensuring compliance with relevant tax regulations.",
+  "tags_v1": [
+    "gst",
+    "exemptions",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "gst",
+    "exemption"
+  ],
+  "tags_v3": [
+    "gst",
+    "exemption",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7684280872344971,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "exemption",
+      "aliases": [
+        "exemptions"
+      ],
+      "cluster_id": "all_157",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7394118309020996,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exemptions",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7222974300384521,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

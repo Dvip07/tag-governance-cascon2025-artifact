@@ -1,0 +1,97 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Provide users transparency and option to view and opt-out of data collection",
+    "summary": "Enables SaaS users to view what data is being collected and gives them control to opt-out of anonymized telemetry. Ensures transparent communication and allows compliance with user privacy preferences. This feature supports adherence to privacy standards and regulations.",
+    "tags": [
+      "transparency",
+      "privacy",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserDashboard",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 32\u201333",
+    "reasoning": {
+      "source_summary_fragment": "anonymized telemetry data adhering to privacy agreements with user opt-out and transparency",
+      "tag_metadata_reference": [
+        {
+          "tag": "transparency",
+          "confidence": 0.95
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "privacy controls",
+        "telemetry opt-out",
+        "user transparency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement self-service analytics for product owners to monitor widget health",
+    "summary": "Offers product owners analytics dashboards to independently monitor the health and performance of their widgets. Self-service capabilities include real-time metrics, error rates, and actionable insights, supporting both performance assessment and SLA compliance.",
+    "tags": [
+      "self-service",
+      "analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "UserDashboard"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 35\u201336",
+    "reasoning": {
+      "source_summary_fragment": "self-service analytics for product owners; reporting per widget, user, device, and browser; engineering dashboards with breakdowns and root-cause drilldowns",
+      "tag_metadata_reference": [
+        {
+          "tag": "self-service",
+          "confidence": 0.93
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "product owner dashboards",
+        "widget health metrics",
+        "real-time reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025"
+  }
+]

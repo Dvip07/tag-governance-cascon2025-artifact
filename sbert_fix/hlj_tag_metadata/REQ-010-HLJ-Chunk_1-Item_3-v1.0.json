@@ -1,0 +1,94 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Ensure transaction postings occur in both ledgers and are metadata-linked",
+  "summary": "Guarantee that each transaction is posted both to the operational and reporting ledgers, and that all postings are linked using robust metadata for traceability. This ensures synchronized transaction records, facilitates unified auditing, and enables downstream integration with compliance systems.",
+  "tags_v1": [
+    "synchronization",
+    "metadata"
+  ],
+  "tags_v2": [
+    "metadata"
+  ],
+  "tags_v3": [
+    "phantom-balance",
+    "metadata",
+    "transaction-management",
+    "sync"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "phantom-balance",
+      "aliases": [
+        "phantom-balances",
+        "phantom balance"
+      ],
+      "cluster_id": "all_181",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7881983518600464,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "phantom-balances",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "all_77",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7186410427093506,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "transaction-management",
+      "aliases": [
+        "transactionmanagement"
+      ],
+      "cluster_id": "all_381",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7834157943725586,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "transaction-management",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync",
+      "aliases": [
+        "synchronization"
+      ],
+      "cluster_id": "all_166",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7442740797996521,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "synchronization",
+      "method": "dedup_canonical"
+    }
+  ]
+}

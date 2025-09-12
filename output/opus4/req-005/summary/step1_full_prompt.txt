@@ -1,0 +1,188 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-005-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-005",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-005 (FinTech)
+
+FT-005: Virtual Card Freeze/Unfreeze via Mobile App
+Title:
+Enable User-Controlled Freezing and Unfreezing of Virtual Debit and Credit Cards Through Mobile Application
+
+Background & Business Objective:
+As digital banking becomes the norm, customers expect high degrees of self-service, transparency, and security when managing their payment instruments. One increasingly demanded feature is the ability to instantly freeze or unfreeze virtual cards through the mobile app—empowering users to control their cards in real time, especially in suspected fraud or loss scenarios.
+
+The objective is to design, implement, and deploy a robust, user-centric feature that allows customers to freeze or unfreeze their virtual cards at any time via our mobile application, with strong attention to security, usability, and cross-system synchronization.
+
+Scope of Requirement:
+
+User Experience & Interface:
+
+Integrate a “Freeze/Unfreeze Card” toggle within the existing mobile app card management screen for all eligible virtual cards.
+
+Display clear UI feedback, showing the current status (Frozen/Active) with visual cues (color change, icon, status text).
+
+If the freeze/unfreeze operation fails (e.g., due to backend or network issues), provide instant feedback and offer retry/cancel options.
+
+Include context-sensitive help and tooltips to educate users about the implications of freezing a card (e.g., online purchases, subscriptions).
+
+Backend Logic & Synchronization:
+
+Implement RESTful endpoints to handle freeze/unfreeze requests, ensuring atomicity and idempotence of operations.
+
+All changes must be instantly reflected in the card’s status across all systems (e.g., card processor, fraud monitoring, transaction authorization).
+
+For cards in a “frozen” state, decline all new transaction authorization requests except for whitelisted exceptions (e.g., merchant-initiated recurring payments, settlement adjustments).
+
+Ensure freeze/unfreeze actions are logged with timestamp, user/device metadata, and operation outcome for auditability.
+
+Edge Case Handling:
+
+If a user attempts to freeze or unfreeze a card during scheduled backend maintenance or API downtime, the system must queue the request and notify the user.
+
+In scenarios where freeze/unfreeze fails on third-party processor systems, roll back the change and inform the user with actionable next steps.
+
+Prevent conflicting requests (e.g., multiple freeze/unfreeze toggles within a short period) by locking the state and alerting the user.
+
+Security & Compliance:
+
+Require strong user authentication (biometrics, PIN, or multi-factor) prior to freeze/unfreeze actions.
+
+Ensure all API calls and logs related to this feature are encrypted end-to-end.
+
+Maintain compliance with applicable payment network and regulatory requirements (e.g., PCI DSS, SOC 2).
+
+Operational Support:
+
+Provide customer support teams with real-time status visibility and override tools for exceptional cases.
+
+Integrate new events and status changes with existing notification channels (push, SMS, email).
+
+Documentation & Rollout:
+
+Update user guides, help center articles, and in-app messaging.
+
+Pilot feature with select user cohorts before general release, collecting feedback and iterating as needed.
+
+Dependencies & Constraints:
+
+Requires coordination with card processor APIs and existing transaction authorization systems.
+
+Feature must support rollback for failed requests to prevent “stuck” cards.
+
+Performance benchmarks must meet existing mobile app standards.
+
+Deliverables:
+
+Updated app UI and backend endpoints
+
+End-to-end process documentation
+
+Test cases and QA plan
+
+Go-live checklist and support scripts
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

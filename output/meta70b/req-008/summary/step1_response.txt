@@ -1,0 +1,134 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-008",
+  "summary": "Design and deploy a loan origination workflow for gig economy workers, integrating with major platforms to aggregate and verify income, with dynamic eligibility rules, KYC and fraud checks, and compliance with lending regulations and privacy laws."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["Loan Origination", "Gig Economy"],
+  "canonical_tags": ["loan eligibility", "gig workers", "api integration"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-008-HLJ-Chunk_1",
+      "focus": "API Integrations and Eligibility Logic",
+      "items": [
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Build API integrations with major gig economy platforms",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["api integration", "gig workers"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Define dynamic eligibility rules for gig income",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["eligibility rules", "gig income"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20-23"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement KYC and AML screening for applicants",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["kyc", "aml", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30-33"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Guide users through data connection process",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["user experience", "data connection"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 40-43"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Display summary of imported earnings and allow user disputes",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["user experience", "earnings summary"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 50-53"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-008-HLJ-Chunk_2",
+      "focus": "Compliance, Security, and Monitoring",
+      "items": [
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Comply with local lending regulations and privacy laws",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["compliance", "regulations"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 60-63"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Secure all data transmissions and storage",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["security", "data protection"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 70-73"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Provide dashboards for operations and compliance teams",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["monitoring", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 80-83"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Log all API calls, eligibility checks, and manual interventions",
+          "domain": "FinTech",
+          "subdomain": ["Loan Origination", "Gig Economy"],
+          "tags": ["logging", "audit"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 90-93"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+!!CONSTRAINT_BROKEN!!

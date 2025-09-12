@@ -1,0 +1,94 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Validate custom fields for conflicts, naming, and type constraints",
+  "summary": "Provide validation logic to check custom fields defined by clients for reserved word conflicts, proper naming conventions, and allowed data types in webhook payloads. Ensure data integrity and prevent misconfiguration during client onboarding.",
+  "tags_v1": [
+    "validation",
+    "schema"
+  ],
+  "tags_v2": [
+    "validation",
+    "schema"
+  ],
+  "tags_v3": [
+    "security",
+    "validation",
+    "schema",
+    "webhook"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7578997611999512,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7840986847877502,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "schema",
+      "aliases": [],
+      "cluster_id": "all_74",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7228230237960815,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "schema",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8022431135177612,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhook",
+      "method": "dedup_canonical"
+    }
+  ]
+}

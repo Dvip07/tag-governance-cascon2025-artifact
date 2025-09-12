@@ -1,0 +1,134 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Integrate performance checks with CI/CD for deployment blocking/regression prevention",
+  "summary": "Integrate automated performance testing into the CI/CD pipeline to block deployments in case of regressions, ensuring substandard updates do not affect production.",
+  "tags_v1": [
+    "cicd",
+    "regression",
+    "[INFERRED] performance"
+  ],
+  "tags_v2": [
+    "regression"
+  ],
+  "tags_v3": [
+    "performance",
+    "ci/cd",
+    "alert",
+    "regression",
+    "analytics",
+    "optimization"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7397387027740479,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ci/cd",
+      "aliases": [
+        "ci-cd",
+        "ci_cd"
+      ],
+      "cluster_id": "all_29",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6981091499328613,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ci/cd",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6911045908927917,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regression",
+      "aliases": [],
+      "cluster_id": "all_118",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6981893181800842,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regression",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7404385805130005,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "optimization",
+      "aliases": [],
+      "cluster_id": "all_277",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7048735022544861,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "optimization",
+      "method": "dedup_canonical"
+    }
+  ]
+}

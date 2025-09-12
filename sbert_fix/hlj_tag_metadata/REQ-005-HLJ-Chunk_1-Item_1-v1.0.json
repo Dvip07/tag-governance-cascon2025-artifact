@@ -1,0 +1,145 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Integrate Freeze/Unfreeze toggle in virtual card management UI",
+  "summary": "Build a secure, real-time toggle in the app’s card management screen, allowing users to instantly freeze or unfreeze any eligible virtual debit or credit card through a clear and intuitive UI. Leverage robust authentication and ensure seamless backend orchestration for atomic state changes.",
+  "tags_v1": [
+    "usability",
+    "frontend",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "usability"
+  ],
+  "tags_v3": [
+    "ui",
+    "mobile",
+    "usability",
+    "design",
+    "virtualcard",
+    "freezeunfreeze",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7284583449363708,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7460805177688599,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7463852763175964,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "design",
+      "aliases": [],
+      "cluster_id": "all_305",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6875348687171936,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "design",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7617733478546143,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "freezeunfreeze",
+      "aliases": [],
+      "cluster_id": "all_407",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7752636671066284,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "freezeunfreeze",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7497150897979736,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

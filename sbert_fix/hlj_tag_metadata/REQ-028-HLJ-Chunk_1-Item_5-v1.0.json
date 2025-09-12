@@ -1,0 +1,73 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Detect and handle sarcasm or ambiguous tone using secondary cues",
+  "summary": "Enable the system to recognize sarcasm or ambiguous tones in tickets by leveraging secondary linguistic or contextual cues, improving accuracy in sentiment classification and routing.",
+  "tags_v1": [
+    "nlp",
+    "edge-case",
+    "[INFERRED] tone-analysis"
+  ],
+  "tags_v2": [
+    "nlp"
+  ],
+  "tags_v3": [
+    "nlp",
+    "ai",
+    "trend"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nlp",
+      "aliases": [],
+      "cluster_id": "all_190",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7308141589164734,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nlp",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ai",
+      "aliases": [],
+      "cluster_id": "all_422",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7382175922393799,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ai",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "trend",
+      "aliases": [
+        "trends"
+      ],
+      "cluster_id": "all_198",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.720306396484375,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "trends",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Generate monthly usage and breach reports for billing, compliance, and support",
+  "summary": "Produce automated monthly reports capturing tenant API usage and rate limit breaches. Reports support billing, compliance, and support analysis workflows.",
+  "tags_v1": [
+    "reporting",
+    "compliance"
+  ],
+  "tags_v2": [
+    "reporting",
+    "compliance"
+  ],
+  "tags_v3": [
+    "reporting",
+    "api",
+    "compliance",
+    "metrics",
+    "rate-limiting",
+    "self-service"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7249777317047119,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7386767864227295,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7154474258422852,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7230716347694397,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7901740670204163,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "self-service",
+      "aliases": [],
+      "cluster_id": "all_54",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6947765946388245,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "self-service",
+      "method": "dedup_canonical"
+    }
+  ]
+}

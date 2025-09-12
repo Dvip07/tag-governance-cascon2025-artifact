@@ -1,0 +1,317 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement configurable rules for micro-transaction pattern detection",
+    "summary": "Configure rules to detect suspicious micro-transaction patterns, ensuring adaptability and accuracy in fraud detection.",
+    "tags": [
+      "detection",
+      "rules",
+      "[INFERRED] microtransactions"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "FraudDetection",
+      "MicroTransactions"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 15-18",
+    "reasoning": {
+      "source_summary_fragment": "Configurable rules for micro-transaction pattern detection",
+      "tag_metadata_reference": [
+        {
+          "tag": "detection",
+          "confidence": 0.93
+        },
+        {
+          "tag": "rules",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "micro-transaction",
+        "fraud detection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "microtransactions",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Develop real-time alert generation for detected patterns",
+    "summary": "Generate real-time alerts for detected micro-transaction patterns, ensuring prompt action against fraudulent activities.",
+    "tags": [
+      "alerting",
+      "realtime",
+      "[INFERRED] notification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "FraudDetection",
+      "Alerting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "Real-time alert generation for detected patterns",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.92
+        },
+        {
+          "tag": "realtime",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "real-time alerting",
+        "fraud detection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement edge case handling for false positives",
+    "summary": "Handle edge cases to minimize false positives in micro-transaction pattern detection, ensuring accuracy and efficiency.",
+    "tags": [
+      "edgecases",
+      "falsepositives",
+      "[INFERRED] accuracy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "FraudDetection",
+      "EdgeCases"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 25-28",
+    "reasoning": {
+      "source_summary_fragment": "Edge case handling for false positives",
+      "tag_metadata_reference": [
+        {
+          "tag": "edgecases",
+          "confidence": 0.9
+        },
+        {
+          "tag": "falsepositives",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "edge cases",
+        "false positives"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "accuracy",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Develop audit and reporting capabilities for triggered alerts",
+    "summary": "Create audit and reporting capabilities for triggered alerts, ensuring transparency and accountability in fraud detection.",
+    "tags": [
+      "audit",
+      "reporting",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "FraudDetection",
+      "Audit"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "Audit and reporting capabilities for triggered alerts",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit",
+        "reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Ensure security and privacy of customer data in alert payloads",
+    "summary": "Ensure the security and privacy of customer data in alert payloads, protecting sensitive information and maintaining trust.",
+    "tags": [
+      "security",
+      "privacy",
+      "[INFERRED] data_protection"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security",
+      "Privacy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 35-38",
+    "reasoning": {
+      "source_summary_fragment": "Security and privacy of customer data in alert payloads",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "security",
+        "privacy"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data_protection",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Integrate with existing fraud monitoring systems and alerting infrastructure",
+    "summary": "Integrate the fraud detection system with existing monitoring systems and alerting infrastructure, ensuring seamless communication and efficient response.",
+    "tags": [
+      "integration",
+      "infrastructure",
+      "[INFERRED] interoperability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Integration",
+      "Infrastructure"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 40-43",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with existing fraud monitoring systems and alerting infrastructure",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.92
+        },
+        {
+          "tag": "infrastructure",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "integration",
+        "infrastructure"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "interoperability",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-003-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Obtain initial ruleset review and sign-off from Risk and Compliance",
+    "summary": "Obtain review and sign-off from Risk and Compliance for the initial ruleset, ensuring regulatory compliance and risk management.",
+    "tags": [
+      "regulation",
+      "compliance",
+      "[INFERRED] governance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Regulation",
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 45-48",
+    "reasoning": {
+      "source_summary_fragment": "Initial ruleset review and sign-off from Risk and Compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "regulation",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "governance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-003"
+  }
+]

@@ -1,0 +1,73 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Flag components that break under mirroring and provide remediation guidance",
+  "summary": "Automatically detect and highlight UI components that visually break or misalign when mirrored for RTL contexts, and supply actionable remediation steps to designers or developers. This minimizes regression risk and accelerates internationalization QA.",
+  "tags_v1": [
+    "validation",
+    "mirror",
+    "[INFERRED] QA"
+  ],
+  "tags_v2": [
+    "validation"
+  ],
+  "tags_v3": [
+    "validation",
+    "mirror",
+    "qa"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7437650561332703,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mirror",
+      "aliases": [],
+      "cluster_id": "all_235",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7673937082290649,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mirror",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "qa",
+      "aliases": [],
+      "cluster_id": "all_236",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7564016580581665,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "qa",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,81 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Enable customer-level tax exemption with validation and documentation capture",
+  "summary": "Build features that permit certain customers to claim GST exemption, provided valid documentation is supplied and verified. The system should track exemption records and maintain auditable evidence to ensure ongoing compliance and defensibility in audits.",
+  "tags_v1": [
+    "gst",
+    "exemption",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "gst",
+    "exemption"
+  ],
+  "tags_v3": [
+    "gst",
+    "exemption",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7665883302688599,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "exemption",
+      "aliases": [
+        "exemptions"
+      ],
+      "cluster_id": "all_157",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7429336905479431,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exemption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7205502986907959,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

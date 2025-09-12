@@ -1,0 +1,159 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Preserve original access context despite user role changes",
+  "summary": "Ensure that historical access logs maintain the original access context, including user roles effective at the time of access, even if user roles have changed since. This maintains the integrity and accuracy of audit trails.",
+  "tags_v1": [
+    "audit",
+    "historical",
+    "[INFERRED] integrity"
+  ],
+  "tags_v2": [
+    "audit"
+  ],
+  "tags_v3": [
+    "rate-limiting",
+    "audit",
+    "filter",
+    "export",
+    "export_controls",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.694846510887146,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate_limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7365173101425171,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "all_70",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6838208436965942,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filtering",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7134524583816528,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "query",
+      "aliases": [],
+      "cluster_id": "all_274",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6676189303398132,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "query",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export_controls",
+      "aliases": [],
+      "cluster_id": "all_388",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7467830181121826,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export_controls",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7196582555770874,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

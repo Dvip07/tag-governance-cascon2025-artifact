@@ -1,0 +1,83 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design GET /api/v2/transactions/history endpoint",
+    "summary": "The goal is to create an API endpoint for retrieving transaction history, ensuring compliance with financial regulations and data security standards.",
+    "tags": [
+      "api",
+      "openbanking",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "TransactionHistory"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "transaction history API",
+      "tag_metadata_reference": [
+        {
+          "tag": "openbanking",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "GET /api/v2/transactions/history"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement pagination and filtering",
+    "summary": "To enhance user experience, implement efficient pagination and filtering mechanisms for the transaction history endpoint, ensuring seamless data retrieval.",
+    "tags": [
+      "api",
+      "filtering",
+      "[INFERRED] performance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "TransactionHistory"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "pagination and filtering",
+      "tag_metadata_reference": [
+        {
+          "tag": "filtering",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "pagination",
+        "filtering"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001"
+  }
+]

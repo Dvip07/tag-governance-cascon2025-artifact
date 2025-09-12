@@ -1,0 +1,261 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design inline commenting feature for PDFs",
+    "summary": "Design a feature for inline commenting on PDFs to facilitate collaboration and feedback.",
+    "tags": [
+      "pdf",
+      "commenting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 5-7",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "pdf",
+          "confidence": 0.93
+        },
+        {
+          "tag": "commenting",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "inline commenting",
+        "PDF"
+      ]
+    }
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement nested reply system for comments",
+    "summary": "Implement a nested reply system for comments to facilitate threaded discussions.",
+    "tags": [
+      "threaded_discussions",
+      "replies"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 8-9",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "threaded_discussions",
+          "confidence": 0.95
+        },
+        {
+          "tag": "replies",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "nested replies",
+        "threaded discussions"
+      ]
+    }
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop comment status tracking with filters",
+    "summary": "Develop a feature to track comment status with filters to facilitate comment management.",
+    "tags": [
+      "commenting",
+      "filters"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 10-11",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "commenting",
+          "confidence": 0.9
+        },
+        {
+          "tag": "filters",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "comment status",
+        "filters"
+      ]
+    }
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement notification system for new comments and replies",
+    "summary": "Implement a notification system for new comments and replies to facilitate collaboration.",
+    "tags": [
+      "notifications",
+      "commenting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 12-14",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.92
+        },
+        {
+          "tag": "commenting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "new comments"
+      ]
+    }
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Ensure compatibility with major browsers and PDF viewers",
+    "summary": "Ensure compatibility with major browsers and PDF viewers to facilitate accessibility.",
+    "tags": [
+      "compatibility",
+      "browsers"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "compatibility",
+          "confidence": 0.88
+        },
+        {
+          "tag": "browsers",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "browser compatibility",
+        "PDF viewers"
+      ]
+    }
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Optimize performance for large PDFs",
+    "summary": "Optimize performance for large PDFs to facilitate smooth user experience.",
+    "tags": [
+      "performance",
+      "optimization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 22-23",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "performance optimization",
+        "large PDFs"
+      ]
+    }
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create quickstart guide for commenting features",
+    "summary": "Create a quickstart guide for commenting features to facilitate user onboarding.",
+    "tags": [
+      "documentation",
+      "quickstart"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "low",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 24-25",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.86
+        },
+        {
+          "tag": "quickstart",
+          "confidence": 0.83
+        }
+      ],
+      "mapped_concepts": [
+        "quickstart guide",
+        "commenting features"
+      ]
+    }
+  }
+]

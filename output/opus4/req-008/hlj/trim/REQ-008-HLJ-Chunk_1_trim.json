@@ -1,0 +1,521 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Build API integration for Uber platform earnings retrieval",
+    "summary": "Develop secure API integration with Uber platform to retrieve driver earnings data. Must handle OAuth authentication, rate limiting, and data privacy requirements for gig worker income verification.",
+    "tags": [
+      "api",
+      "integration",
+      "uber"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIIntegration",
+      "GigEconomy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "aggregate income data from multiple gig platforms (Uber, DoorDash, Upwork, Fiverr) with user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.99
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.98
+        },
+        {
+          "tag": "uber",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "OAuth",
+        "earnings API",
+        "rate limiting"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Build API integration for DoorDash platform earnings retrieval",
+    "summary": "Create API integration with DoorDash to fetch dasher earnings and delivery history. Implement secure token management and handle paginated responses for historical income data retrieval.",
+    "tags": [
+      "api",
+      "integration",
+      "doordash"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIIntegration",
+      "GigEconomy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "aggregate income data from multiple gig platforms (Uber, DoorDash, Upwork, Fiverr) with user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.99
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.98
+        },
+        {
+          "tag": "doordash",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "earnings API",
+        "token management",
+        "pagination"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build API integration for Upwork platform earnings retrieval",
+    "summary": "Establish API connection with Upwork to access freelancer earnings and project history. Handle API versioning, implement retry logic, and manage API key rotation for continuous data access.",
+    "tags": [
+      "api",
+      "integration",
+      "upwork"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIIntegration",
+      "GigEconomy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "aggregate income data from multiple gig platforms (Uber, DoorDash, Upwork, Fiverr) with user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.99
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.98
+        },
+        {
+          "tag": "upwork",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "freelancer API",
+        "API versioning",
+        "retry logic"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Build API integration for Fiverr platform earnings retrieval",
+    "summary": "Implement Fiverr API integration to retrieve seller revenue and completed gig data. Support webhook notifications for real-time income updates and handle API quota management effectively.",
+    "tags": [
+      "api",
+      "integration",
+      "fiverr"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIIntegration",
+      "GigEconomy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "aggregate income data from multiple gig platforms (Uber, DoorDash, Upwork, Fiverr) with user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.99
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.98
+        },
+        {
+          "tag": "fiverr",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "seller API",
+        "webhooks",
+        "quota management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement multi-platform income aggregation logic",
+    "summary": "Build aggregation engine to combine earnings data from all integrated gig platforms. Calculate total income, identify patterns, and generate unified income reports for loan eligibility assessment.",
+    "tags": [
+      "aggregation",
+      "income",
+      "data"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIIntegration",
+      "DataProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 19-19",
+    "reasoning": {
+      "source_summary_fragment": "System must aggregate income data from multiple gig platforms",
+      "tag_metadata_reference": [
+        {
+          "tag": "aggregation",
+          "confidence": 0.98
+        },
+        {
+          "tag": "income",
+          "confidence": 0.99
+        },
+        {
+          "tag": "data",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "income calculation",
+        "pattern analysis",
+        "report generation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Create data normalization for different period cycles and currencies",
+    "summary": "Develop normalization logic to standardize earnings across different payment cycles and currencies. Convert weekly, bi-weekly, and monthly payments to consistent format with real-time exchange rates.",
+    "tags": [
+      "normalization",
+      "currency",
+      "data"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DataProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 19-19",
+    "reasoning": {
+      "source_summary_fragment": "System must aggregate income data from multiple gig platforms",
+      "tag_metadata_reference": [
+        {
+          "tag": "normalization",
+          "confidence": 0.97
+        },
+        {
+          "tag": "currency",
+          "confidence": 0.98
+        },
+        {
+          "tag": "data",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "payment cycles",
+        "exchange rates",
+        "standardization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Implement user consent flow for platform data access",
+    "summary": "Design and implement user consent workflow for authorizing access to gig platform earnings. Include clear privacy disclosures, granular permissions, and consent revocation mechanisms.",
+    "tags": [
+      "consent",
+      "privacy",
+      "ux",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "UserExperience",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 17-18, 36-36",
+    "reasoning": {
+      "source_summary_fragment": "aggregate income data from multiple gig platforms... with user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "consent",
+          "confidence": 0.99
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.97
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "consent management",
+        "privacy policy",
+        "permission controls"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Design API documentation for platform integrations",
+    "summary": "Create comprehensive API documentation covering all gig platform integrations. Include authentication flows, endpoint specifications, error handling, and example implementations for developers.",
+    "tags": [
+      "documentation",
+      "api",
+      "integration"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation",
+      "APIIntegration"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 61-61",
+    "reasoning": {
+      "source_summary_fragment": "Key deliverables include... API integrations",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.98
+        },
+        {
+          "tag": "api",
+          "confidence": 0.99
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "API specs",
+        "developer guide",
+        "code examples"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Implement secure data transmission encryption for API calls",
+    "summary": "Add end-to-end encryption for all API communications with gig platforms. Implement TLS 1.3, certificate pinning, and secure key management to protect sensitive earnings data in transit.",
+    "tags": [
+      "security",
+      "encryption",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security",
+      "APIIntegration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 42-42",
+    "reasoning": {
+      "source_summary_fragment": "ensure compliance with lending regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.99
+        },
+        {
+          "tag": "api",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "TLS 1.3",
+        "certificate pinning",
+        "key management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Create API call logging for audit purposes",
+    "summary": "Implement comprehensive logging system for all platform API interactions. Track request/response data, timestamps, and user actions for compliance auditing and troubleshooting purposes.",
+    "tags": [
+      "logging",
+      "audit",
+      "api",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Monitoring",
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 46-46",
+    "reasoning": {
+      "source_summary_fragment": "ensure compliance with lending regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.98
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.99
+        },
+        {
+          "tag": "api",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "request logging",
+        "compliance tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  }
+]

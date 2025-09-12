@@ -1,0 +1,166 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Apply time-decay weighting to retention and activity metrics",
+  "summary": "Integrate time-decaying weighting functions into retention and activity metrics, allowing recent events to have greater analytical influence and enabling more nuanced analysis of user engagement trends.",
+  "tags_v1": [
+    "analytics",
+    "retention",
+    "[INFERRED] weighting"
+  ],
+  "tags_v2": [
+    "analytics",
+    "retention"
+  ],
+  "tags_v3": [
+    "analytics",
+    "cohorts",
+    "retention",
+    "api",
+    "events",
+    "time_decay",
+    "metrics",
+    "weighting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7788628935813904,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "cohorts",
+      "aliases": [
+        "cohort_definition"
+      ],
+      "cluster_id": "all_211",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7440890073776245,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohorts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retention",
+      "aliases": [],
+      "cluster_id": "all_124",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7374361753463745,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retention",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.693231463432312,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "events",
+      "aliases": [],
+      "cluster_id": "all_203",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7090033292770386,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "events",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "time_decay",
+      "aliases": [],
+      "cluster_id": "all_441",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7805470824241638,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "time_decay",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7621245384216309,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "weighting",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7415316104888916,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "weighting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

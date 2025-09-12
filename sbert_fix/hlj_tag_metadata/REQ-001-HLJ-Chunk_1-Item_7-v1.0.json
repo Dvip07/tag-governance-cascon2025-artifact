@@ -1,0 +1,139 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Log access events and enable ISO 27001-compliant audit trails",
+  "summary": "Implement detailed logging of access events, ensuring auditability and traceability in accordance with ISO 27001 standards. This supports regulatory requirements and internal security monitoring.",
+  "tags_v1": [
+    "logging",
+    "compliance",
+    "audit"
+  ],
+  "tags_v2": [
+    "compliance",
+    "audit"
+  ],
+  "tags_v3": [
+    "oauth",
+    "authentication",
+    "security",
+    "compliance",
+    "audit",
+    "logging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "oauth",
+      "aliases": [],
+      "cluster_id": "all_78",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7522826194763184,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "oauth",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7299057245254517,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7366793751716614,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7184867858886719,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7509894371032715,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7249361276626587,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    }
+  ]
+}

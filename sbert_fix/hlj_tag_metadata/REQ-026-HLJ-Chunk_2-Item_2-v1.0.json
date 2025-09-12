@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Integrate NPS results with CRM and support for proactive outreach",
+  "summary": "Connect NPS survey results to CRM and support systems to enable proactive customer engagement based on feedback. Triggers can automate outreach to users at risk or those providing critical feedback.",
+  "tags_v1": [
+    "crm",
+    "support",
+    "[INFERRED] integration"
+  ],
+  "tags_v2": [
+    "crm",
+    "support"
+  ],
+  "tags_v3": [
+    "crm",
+    "support",
+    "integration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7596516609191895,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7158629894256592,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7040842771530151,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

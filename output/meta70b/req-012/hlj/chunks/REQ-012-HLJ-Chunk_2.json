@@ -1,0 +1,243 @@
+{
+  "CHUNK_ID": "REQ-012-HLJ-Chunk_2",
+  "is_final_chunk": false,
+  "TASK_SUMMARY": [
+    "Allow for tax-exempt status recording and application (Ln 35-38)",
+    "Implement fallback rules for ambiguous addresses (Ln 40-42)",
+    "Generate GST summary reports per province (Ln 45-48)",
+    "Provide audit-ready exports for finance and compliance teams (Ln 50-53)",
+    "Protect customer and transaction data in line with PIPEDA and GDPR (Ln 55-58)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-28",
+        "id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+        "title": "Allow for tax-exempt status recording and application",
+        "summary": "The system should allow for the recording and application of tax-exempt status for eligible entities, ensuring compliance with relevant tax regulations.",
+        "tags": [
+          "gst",
+          "exemptions",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Exemption Handling"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 35-38",
+        "reasoning": {
+          "source_summary_fragment": "tax-exempt status recording",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.95
+            },
+            {
+              "tag": "exemptions",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "tax exemption",
+            "compliance"
+          ]
+        },
+        "low_confidence_reason": "initial assignment",
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-28",
+        "id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+        "title": "Implement fallback rules for ambiguous addresses",
+        "summary": "The system should implement fallback rules to handle ambiguous addresses, ensuring accurate tax calculations and compliance with tax regulations.",
+        "tags": [
+          "gst",
+          "fallback"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Exemption Handling"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "low",
+        "priority_confidence": 0.75,
+        "line_source": "Ln 40-42",
+        "reasoning": {
+          "source_summary_fragment": "fallback rules for ambiguous addresses",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.9
+            },
+            {
+              "tag": "fallback",
+              "confidence": 0.85
+            }
+          ],
+          "mapped_concepts": [
+            "address validation",
+            "tax calculation"
+          ]
+        },
+        "low_confidence_reason": "initial assignment",
+        "inference_notes": {
+          "tag_added": "",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-28",
+        "id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+        "title": "Generate GST summary reports per province",
+        "summary": "The system should generate GST summary reports per province, providing insights into tax revenue and compliance with tax regulations.",
+        "tags": [
+          "gst",
+          "reporting"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Reporting"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 45-48",
+        "reasoning": {
+          "source_summary_fragment": "GST summary reports per province",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.95
+            },
+            {
+              "tag": "reporting",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "tax reporting",
+            "compliance"
+          ]
+        },
+        "low_confidence_reason": "initial assignment",
+        "inference_notes": {
+          "tag_added": "",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-28",
+        "id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+        "title": "Provide audit-ready exports for finance and compliance teams",
+        "summary": "The system should provide audit-ready exports for finance and compliance teams, ensuring compliance with tax regulations and reducing audit risks.",
+        "tags": [
+          "gst",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Compliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 50-53",
+        "reasoning": {
+          "source_summary_fragment": "audit-ready exports",
+          "tag_metadata_reference": [
+            {
+              "tag": "gst",
+              "confidence": 0.9
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "audit readiness",
+            "compliance"
+          ]
+        },
+        "low_confidence_reason": "initial assignment",
+        "inference_notes": {
+          "tag_added": "",
+          "confidence": 0.94,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-28",
+        "id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+        "title": "Protect customer and transaction data in line with PIPEDA and GDPR",
+        "summary": "The system should protect customer and transaction data in line with PIPEDA and GDPR, ensuring compliance with data protection regulations.",
+        "tags": [
+          "security",
+          "privacy"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Security and Privacy"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 55-58",
+        "reasoning": {
+          "source_summary_fragment": "protect customer and transaction data",
+          "tag_metadata_reference": [
+            {
+              "tag": "security",
+              "confidence": 0.9
+            },
+            {
+              "tag": "privacy",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "data protection",
+            "compliance"
+          ]
+        },
+        "low_confidence_reason": "initial assignment",
+        "inference_notes": {
+          "tag_added": "",
+          "confidence": 0.94,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-012-HLJ-Chunk_3",
+    "DATA": []
+  },
+  "errors": []
+}

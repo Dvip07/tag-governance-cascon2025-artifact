@@ -1,0 +1,273 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-004-HLJ-Chunk_1",
+      "focus": "Log Restructuring and RtE Workflow Implementation",
+      "items": [
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Refactor audit logs to include user-specific metadata fields",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "DataPrivacy"
+          ],
+          "tags": [
+            "audit",
+            "metadata",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19-20"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement log classification system for personal vs operational data",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "tags": [
+            "classification",
+            "gdpr",
+            "privacy"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build data lineage mechanism for tracing log dependencies",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "DataPrivacy"
+          ],
+          "tags": [
+            "lineage",
+            "audit",
+            "tracking"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create automated RtE request processing system",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "DataPrivacy"
+          ],
+          "tags": [
+            "automation",
+            "gdpr",
+            "privacy"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement full deletion mode for eligible personal data",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "tags": [
+            "deletion",
+            "gdpr",
+            "privacy"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 31"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement partial deletion/redaction mode for log entries",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "Compliance"
+          ],
+          "tags": [
+            "redaction",
+            "gdpr",
+            "privacy"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Build meta-logging system for all RtE actions",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "Compliance"
+          ],
+          "tags": [
+            "audit",
+            "logging",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Implement selective field-level redaction for multi-user logs",
+          "domain": "FinTech",
+          "subdomain": [
+            "DataPrivacy",
+            "AuditLogging"
+          ],
+          "tags": [
+            "redaction",
+            "privacy",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 38"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Create role-based access controls for legally retained records",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Compliance"
+          ],
+          "tags": [
+            "rbac",
+            "security",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement cryptographic checksums for deletion operations",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "AuditLogging"
+          ],
+          "tags": [
+            "cryptography",
+            "security",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 44"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-004-HLJ-Chunk_2",
+      "focus": "APIs, Monitoring, Testing and Documentation",
+      "items": [
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Build compliance team APIs for deletion operation review",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "API"
+          ],
+          "tags": [
+            "api",
+            "compliance",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 46"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement RtE compliance dashboard and reporting system",
+          "domain": "FinTech",
+          "subdomain": [
+            "Monitoring",
+            "Compliance"
+          ],
+          "tags": [
+            "dashboard",
+            "reporting",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 50"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Create secure meta-log storage with access controls",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "AuditLogging"
+          ],
+          "tags": [
+            "security",
+            "storage",
+            "audit"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 52"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Develop integration tests for ghost data persistence validation",
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "DataPrivacy"
+          ],
+          "tags": [
+            "testing",
+            "validation",
+            "gdpr"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 56"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Create edge case simulation and fail-loud alert system",
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "Monitoring"
+          ],
+          "tags": [
+            "testing",
+            "alerts",
+            "monitoring"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 58"
+        }
+      ]
+    }
+  ]
+}

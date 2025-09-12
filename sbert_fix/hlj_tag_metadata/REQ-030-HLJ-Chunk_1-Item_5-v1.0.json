@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Capture and store full logs, screenshots, and video for failed tests",
+  "summary": "Automatically collect and persist detailed logs, screenshots, and video artifacts for each case of test failure. Store data securely to assist in root cause analysis and auditing of UI regression outcomes.",
+  "tags_v1": [
+    "logs",
+    "screenshots",
+    "video",
+    "[INFERRED] artifact-retention"
+  ],
+  "tags_v2": [
+    "logs",
+    "screenshots",
+    "video"
+  ],
+  "tags_v3": [
+    "logging",
+    "screenshots",
+    "video"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7326627373695374,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "screenshots",
+      "aliases": [],
+      "cluster_id": "all_34",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7610931992530823,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "screenshots",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "video",
+      "aliases": [],
+      "cluster_id": "all_35",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6991282105445862,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "video",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,54 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Embed NPS prompt natively in web and mobile apps",
+  "summary": "Integrate NPS survey prompts directly into both web and mobile applications, ensuring users receive feedback requests within the context of their normal workflow. This approach maximizes response rates and minimizes disruption.",
+  "tags_v1": [
+    "nps",
+    "usability",
+    "[INFERRED] embedded-ui"
+  ],
+  "tags_v2": [
+    "nps"
+  ],
+  "tags_v3": [
+    "nps",
+    "churn_prevention"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7589544057846069,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "churn_prevention",
+      "aliases": [],
+      "cluster_id": "all_447",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7410393357276917,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "churn_prevention",
+      "method": "dedup_canonical"
+    }
+  ]
+}

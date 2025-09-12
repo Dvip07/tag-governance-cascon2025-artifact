@@ -1,0 +1,172 @@
+{
+  "CHUNK_ID": "REQ-012-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Generate GST summary reports per province supporting accrual and cash methods (Ln 32\u201333)",
+    "Provide audit-ready exports and reconciliation tools for finance and compliance (Ln 34\u201336)",
+    "Upgrade self-service portal for GST-compliant invoice and tax summary downloads (Ln 43\u201344)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 11,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_2-Item_1-v1.0",
+        "title": "Generate GST summary reports per province supporting accrual and cash methods",
+        "summary": "Develop reporting functionality to generate GST summary reports for each Canadian province. Reports must be capable of supporting both accrual and cash accounting methods, reflecting dynamic provincial tax rate configurations. Ensures provincial compliance and provides actionable insights for finance teams.",
+        "tags": [
+          "reporting",
+          "gst",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Reporting"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.96,
+        "line_source": "Ln 32\u201333",
+        "reasoning": {
+          "source_summary_fragment": "Reporting must support province-level GST summaries, both accrual and cash accounting, exportable audit-ready data.",
+          "tag_metadata_reference": [
+            {
+              "tag": "reporting",
+              "confidence": 0.9
+            },
+            {
+              "tag": "gst",
+              "confidence": 0.94
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "provincial GST reporting",
+            "accrual and cash accounting methods"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 12,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_2-Item_2-v1.0",
+        "title": "Provide audit-ready exports and reconciliation tools for finance and compliance",
+        "summary": "Implement tools to export audit-ready GST and financial data, facilitating reconciliation for finance teams and ensuring regulatory compliance. The exports must be formatted for audit processes and support robust review by compliance teams.",
+        "tags": [
+          "audit",
+          "export",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Reporting",
+          "Audit"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 34\u201336",
+        "reasoning": {
+          "source_summary_fragment": "Reporting must support province-level GST summaries, both accrual and cash accounting, exportable audit-ready data, and reconciliation tools.",
+          "tag_metadata_reference": [
+            {
+              "tag": "audit",
+              "confidence": 0.91
+            },
+            {
+              "tag": "export",
+              "confidence": 0.9
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "audit-ready export",
+            "finance reconciliation",
+            "regulatory compliance"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      },
+      {
+        "seq_no": 13,
+        "schema_version": "2025-05-17",
+        "id": "REQ-012-HLJ-Chunk_2-Item_3-v1.0",
+        "title": "Upgrade self-service portal for GST-compliant invoice and tax summary downloads",
+        "summary": "Enhance the self-service portal to allow users to download GST-compliant invoices and tax summaries. Upgrades must ensure that downloaded documents reflect current provincial GST rules and support user-friendly access to tax breakdowns.",
+        "tags": [
+          "portal",
+          "usability",
+          "gst",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Billing",
+          "UX"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 43\u201344",
+        "reasoning": {
+          "source_summary_fragment": "Accurate GST application is required for each invoice based on billing address, service location, and exemptions, with line-item breakdowns for federal and provincial portions.",
+          "tag_metadata_reference": [
+            {
+              "tag": "portal",
+              "confidence": 0.9
+            },
+            {
+              "tag": "usability",
+              "confidence": 0.87
+            },
+            {
+              "tag": "gst",
+              "confidence": 0.94
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "GST-compliant invoice download",
+            "user-facing tax summaries"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-012"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "",
+    "DATA": []
+  },
+  "errors": []
+}

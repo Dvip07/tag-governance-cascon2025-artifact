@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "opus4",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Upgrade authentication and session services for location awareness",
+  "summary": "Enhance authentication and session management services to incorporate location-aware capabilities. Must support real-time Geo-IP resolution and maintain location state throughout user sessions for feature flag evaluation.",
+  "tags_v1": [
+    "authentication",
+    "infrastructure",
+    "backend"
+  ],
+  "tags_v2": [
+    "authentication"
+  ],
+  "tags_v3": [
+    "authentication",
+    "rollback",
+    "user_experience",
+    "infrastructure"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7344566583633423,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7338593602180481,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollouts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7384456396102905,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user experience",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "infrastructure",
+      "aliases": [],
+      "cluster_id": "all_268",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7149278521537781,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "infrastructure",
+      "method": "dedup_canonical"
+    }
+  ]
+}

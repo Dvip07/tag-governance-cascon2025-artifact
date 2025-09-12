@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-014-HLJ-Chunk_2-Item_12-v1.0",
+  "model": "meta70b",
+  "req_id": "req-014",
+  "domain": "FinTech",
+  "title": "Log all fee queries and confirmations for future troubleshooting and audit",
+  "summary": "The system should log all fee queries and confirmations for future troubleshooting and audit purposes.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "fee query"
+  ],
+  "tags_v2": [
+    "logs",
+    "audit"
+  ],
+  "tags_v3": [
+    "audit",
+    "logging",
+    "fee query"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7262743711471558,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7224370241165161,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fee query",
+      "aliases": [],
+      "cluster_id": "all_380",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7597866654396057,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fee query",
+      "method": "dedup_canonical"
+    }
+  ]
+}

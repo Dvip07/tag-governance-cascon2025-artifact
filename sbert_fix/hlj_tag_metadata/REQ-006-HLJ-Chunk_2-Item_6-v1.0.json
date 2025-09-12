@@ -1,0 +1,91 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Provide sandbox environments for client testing under new limits",
+  "summary": "Develop and provide sandbox environments where clients can safely test API calls subject to new rate limit tiers. This improves testing, reduces misconfiguration risk, and enhances developer experience.",
+  "tags_v1": [
+    "usability",
+    "testing",
+    "[INFERRED] developer-experience"
+  ],
+  "tags_v2": [
+    "testing"
+  ],
+  "tags_v3": [
+    "deployment",
+    "testing",
+    "developer-experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6794148683547974,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deployment",
+      "aliases": [],
+      "cluster_id": "all_136",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7092603445053101,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deployment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7204066514968872,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "developer-experience",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7238757610321045,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "developer-experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

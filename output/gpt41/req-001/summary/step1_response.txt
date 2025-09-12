@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-001",
+  "summary": "Develop a RESTful API endpoint (GET /api/v2/transactions/history) to provide customers unified access to their transaction history from all integrated partner banks. The API must offer pagination, filters (date range, transaction type, partner institution), and conform to latest OpenAPI specifications. Ensure deduplication, consistent formatting, normalization of timestamps to UTC (with original timezone metadata), and harmonization of transaction types/statuses. Secure all requests with OAuth 2.0 and log access events for audit trails per ISO 27001. On partner bank outage, deliver partial results and log the issue. Meet performance targets (≤1.5s for up to 24 months’ history), and cap data caching at 5 minutes. Deliver comprehensive documentation and integration with at least five major banks. Mandatory compliance review required before deployment."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["OpenBanking", "TransactionHistory"],
+  "canonical_tags": ["api", "compliance", "security"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-001-HLJ-Chunk_1",
+      "focus": "Unified Transaction History API implementation (all functional & non-functional requirements)",
+      "items": [
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design and implement GET /api/v2/transactions/history endpoint",
+          "domain": "FinTech",
+          "subdomain": ["OpenBanking", "TransactionHistory"],
+          "tags": ["api", "rest", "spec"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 6–11"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement pagination and filtering (date range, type, institution)",
+          "domain": "FinTech",
+          "subdomain": ["OpenBanking", "TransactionHistory"],
+          "tags": ["api", "filtering", "pagination"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10–12"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure OpenAPI (Swagger) 3.x compliance for requests/responses",
+          "domain": "FinTech",
+          "subdomain": ["APIDesign", "Compliance"],
+          "tags": ["openapi", "spec", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 12"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Deduplicate transactions and harmonize transaction schemas",
+          "domain": "FinTech",
+          "subdomain": ["DataIntegration", "TransactionHistory"],
+          "tags": ["deduplication", "schema", "data"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 14–16"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Normalize transaction timestamps to UTC and add original timezone metadata",
+          "domain": "FinTech",
+          "subdomain": ["DataIntegration", "TimestampHandling"],
+          "tags": ["timezone", "data", "metadata"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Authenticate API with OAuth 2.0 and enforce per-customer tokens",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Authentication"],
+          "tags": ["oauth", "security", "authentication"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Log access events and enable ISO 27001-compliant audit trails",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Compliance"],
+          "tags": ["logging", "compliance", "audit"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20–21"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Gracefully handle bank API outages and provide partial results with error logging",
+          "domain": "FinTech",
+          "subdomain": ["Resilience", "ErrorHandling"],
+          "tags": ["availability", "error", "logging"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24–27"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Meet API response performance target (≤1.5s for up to 24 months’ data)",
+          "domain": "FinTech",
+          "subdomain": ["Performance", "Scalability"],
+          "tags": ["performance", "latency", "scalability"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 30–31"
+        },
+        {
+          "id": "REQ-001-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Deliver documentation and support channels, and enforce compliance/caching/integration constraints",
+          "domain": "FinTech",
+          "subdomain": ["Documentation", "Compliance", "Integration"],
+          "tags": ["documentation", "integration", "support"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33–39"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

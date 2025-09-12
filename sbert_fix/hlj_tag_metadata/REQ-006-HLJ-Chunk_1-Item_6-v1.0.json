@@ -1,0 +1,126 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Log all rate limiting actions and breaches per tenant for compliance",
+  "summary": "Record all rate limit enforcement actions and any policy breaches on a per-tenant basis for regulatory audit and internal compliance. Logs must be accessible for compliance reviews.",
+  "tags_v1": [
+    "compliance",
+    "logging"
+  ],
+  "tags_v2": [
+    "compliance",
+    "logs"
+  ],
+  "tags_v3": [
+    "compliance",
+    "logging",
+    "monitoring",
+    "api",
+    "rate-limiting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7282061576843262,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v2",
+      "score": 3,
+      "confidence": 0.7325600981712341,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7340998649597168,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7321836352348328,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8008444309234619,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate limiting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

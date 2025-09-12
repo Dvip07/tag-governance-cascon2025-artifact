@@ -1,0 +1,132 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Design and implement GET /api/v2/transactions/history endpoint",
+  "summary": "Develop the unified transactions history REST API endpoint for customers to access consolidated historical data from all integrated partner banks. The implementation should ensure a robust and scalable backbone for subsequent features like filtering, pagination, and compliance. It is foundational for user-facing data aggregation in the OpenBanking domain.",
+  "tags_v1": [
+    "api",
+    "rest",
+    "spec"
+  ],
+  "tags_v2": [
+    "api",
+    "rest"
+  ],
+  "tags_v3": [
+    "api",
+    "endpoint",
+    "openbanking",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7370489835739136,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rest",
+      "aliases": [
+        "restful"
+      ],
+      "cluster_id": "all_68",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.6717740297317505,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "rest",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "endpoint",
+      "aliases": [],
+      "cluster_id": "all_273",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7124336957931519,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "endpoint",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "openbanking",
+      "aliases": [],
+      "cluster_id": "all_365",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.803164541721344,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "openbanking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6892681121826172,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "spec",
+      "aliases": [],
+      "cluster_id": "all_69",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6799967288970947,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "spec",
+      "method": "dedup_canonical"
+    }
+  ]
+}

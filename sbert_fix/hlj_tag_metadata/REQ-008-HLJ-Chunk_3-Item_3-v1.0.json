@@ -1,0 +1,74 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_3-Item_3-v1.0",
+  "model": "opus4",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Build earnings summary display with dispute option",
+  "summary": "Create an earnings summary interface displaying aggregated income from all connected platforms with breakdown by source, time periods, and trends. Include dispute mechanism for users to flag incorrect data with supporting documentation upload.",
+  "tags_v1": [
+    "ux",
+    "earnings",
+    "display"
+  ],
+  "tags_v2": [
+    "earnings",
+    "display"
+  ],
+  "tags_v3": [
+    "earnings",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "earnings",
+      "aliases": [
+        "earnings summary"
+      ],
+      "cluster_id": "all_262",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7476381659507751,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "earnings",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "display",
+      "aliases": [],
+      "cluster_id": "all_263",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6784875392913818,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "display",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7015775442123413,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

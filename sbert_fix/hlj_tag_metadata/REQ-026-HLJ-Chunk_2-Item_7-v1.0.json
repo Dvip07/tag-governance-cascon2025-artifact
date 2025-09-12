@@ -1,0 +1,54 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+  "model": "meta70b",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Integrate NPS results with CRM and customer support workflows",
+  "summary": "Integrate NPS results with CRM and customer support workflows to streamline customer feedback and issue resolution.",
+  "tags_v1": [
+    "nps",
+    "crm_integration",
+    "customer_support"
+  ],
+  "tags_v2": [
+    "nps"
+  ],
+  "tags_v3": [
+    "nps",
+    "customer_support"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7509176731109619,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "customer_support",
+      "aliases": [],
+      "cluster_id": "all_448",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7493595480918884,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "customer_support",
+      "method": "dedup_canonical"
+    }
+  ]
+}

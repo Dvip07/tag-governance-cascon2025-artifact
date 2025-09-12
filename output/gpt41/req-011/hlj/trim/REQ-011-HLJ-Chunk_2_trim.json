@@ -1,0 +1,147 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Comply with relevant lending and privacy laws in data flow (FCRA, GDPR, etc.)",
+    "summary": "Ensure all customer data handling and EMI-related processes fully adhere to applicable lending and privacy laws (such as FCRA and GDPR), covering data collection, processing, transmission, and storage activities in the EMI workflow.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] privacy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "DataSecurity"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 34\u201335",
+    "reasoning": {
+      "source_summary_fragment": "Full compliance with lending/privacy laws (e.g., FCRA, GDPR), user consent, and auditable logging are required.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "FCRA",
+        "GDPR",
+        "privacy laws",
+        "data flow"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "privacy",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Log all decision engine inputs and outputs for audit and regulatory review",
+    "summary": "Capture and retain comprehensive logs of all data inputs and resulting outputs from the decision engine to support regulatory audits and ensure traceability of decisions made during EMI eligibility and offer processing.",
+    "tags": [
+      "audit",
+      "compliance",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 38\u201339",
+    "reasoning": {
+      "source_summary_fragment": "auditable logging are required. Monitoring adoption rates, analytics for Product/Risk, and review logs are in scope.",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "logging",
+        "audit trail",
+        "regulatory review"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Monitor EMI adoption rates, declines, and band-shifting; provide analytics",
+    "summary": "Continuously monitor and report on the EMI adoption rates, instances of declines, and shifts between EMI bands, providing analytics dashboards for Product and Risk stakeholders to support decision-making and improvement of EMI offerings.",
+    "tags": [
+      "monitoring",
+      "analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Analytics",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 41\u201342",
+    "reasoning": {
+      "source_summary_fragment": "Monitoring adoption rates, analytics for Product/Risk, and review logs are in scope.",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.95
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "EMI analytics",
+        "adoption monitoring",
+        "band-shifting"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-011"
+  }
+]

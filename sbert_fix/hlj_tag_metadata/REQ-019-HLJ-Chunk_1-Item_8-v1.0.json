@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Handle duplicate cohort membership for users in overlapping cohorts",
+  "summary": "Ensure correct handling of users present in multiple overlapping cohorts, preventing double-counting or logic errors in retention and activity calculations.",
+  "tags_v1": [
+    "edge-case",
+    "cohorts",
+    "[INFERRED] deduplication"
+  ],
+  "tags_v2": [
+    "cohorts"
+  ],
+  "tags_v3": [
+    "cohorts",
+    "compatibility",
+    "analytics_data_store"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "cohorts",
+      "aliases": [
+        "cohort_definition"
+      ],
+      "cluster_id": "all_211",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7598385214805603,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohorts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compatibility",
+      "aliases": [],
+      "cluster_id": "all_63",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6952524185180664,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compatibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logic",
+      "aliases": [],
+      "cluster_id": "all_328",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6743602752685547,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "logic",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics_data_store",
+      "aliases": [],
+      "cluster_id": "all_446",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.779816210269928,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics_data_store",
+      "method": "dedup_canonical"
+    }
+  ]
+}

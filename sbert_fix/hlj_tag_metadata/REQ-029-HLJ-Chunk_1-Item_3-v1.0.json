@@ -1,0 +1,114 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Implement role-based query interface for audit logs with filters (role, resource, action type)",
+  "summary": "Develop an audit log query interface that enables compliance and admin users to filter logs by user role, resource, and action type. This supports investigation, monitoring, and policy enforcement across complex operations.",
+  "tags_v1": [
+    "compliance",
+    "usability",
+    "[INFERRED] query-interface"
+  ],
+  "tags_v2": [
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "filter",
+    "query",
+    "query-interface",
+    "data analysis"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7024006247520447,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "all_70",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7142675518989563,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filtering",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "query",
+      "aliases": [],
+      "cluster_id": "all_274",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7100515961647034,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "query",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "query-interface",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7211489081382751,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "query-interface",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data analysis",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6884960532188416,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data analysis",
+      "method": "dedup_canonical"
+    }
+  ]
+}

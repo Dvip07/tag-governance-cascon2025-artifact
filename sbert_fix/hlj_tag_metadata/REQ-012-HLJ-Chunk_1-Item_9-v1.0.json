@@ -1,0 +1,85 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Log all tax rate changes, overrides, and manual adjustments with user metadata",
+  "summary": "The module must maintain comprehensive logs for all GST rate changes—automatic or manual—including overrides and user-triggered adjustments. Audit trails should include user metadata to ensure traceability, supporting both compliance and internal controls.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "logs",
+    "audit"
+  ],
+  "tags_v3": [
+    "audit",
+    "logging",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7551948428153992,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7363848686218262,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7115052342414856,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

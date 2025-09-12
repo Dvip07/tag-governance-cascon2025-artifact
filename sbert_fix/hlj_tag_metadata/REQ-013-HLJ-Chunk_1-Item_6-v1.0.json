@@ -1,0 +1,54 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Allow retry of failed individual payout transactions",
+  "summary": "Enable retries for failed individual payout entries within a batch, allowing resolution of transient errors and partial recovery without requiring full batch rollback. Track retry history and escalation paths as needed.",
+  "tags_v1": [
+    "retry",
+    "partial",
+    "[INFERRED] recovery"
+  ],
+  "tags_v2": [
+    "retry",
+    "partial"
+  ],
+  "tags_v3": [
+    "retry"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "retry",
+      "aliases": [],
+      "cluster_id": "all_95",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.72567218542099,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retry",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "partial",
+      "aliases": [],
+      "cluster_id": "all_109",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.670066237449646,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "partial",
+      "method": "dedup_canonical"
+    }
+  ]
+}

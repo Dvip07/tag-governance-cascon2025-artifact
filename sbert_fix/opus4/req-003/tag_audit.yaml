@@ -1,0 +1,612 @@
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755064Z'
+  original_tags:
+  - fraud
+  - rules
+  - detection
+  - '[INFERRED] configuration'
+  validated_tags:
+  - fraud
+  - rules
+  - detection
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] configuration'
+  tags_kept:
+  - fraud
+  - rules
+  - detection
+  validation_details:
+  - original_tag: fraud
+    canonical_tag: fraud
+    matched_tag: fraud
+    tag_origin_cluster_id: fraud
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:59.892984Z'
+  - original_tag: rules
+    canonical_tag: rules
+    matched_tag: rules
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:59.896177Z'
+  - original_tag: detection
+    canonical_tag: detection
+    matched_tag: detection
+    tag_origin_cluster_id: detection
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:59.899273Z'
+  - original_tag: '[INFERRED] configuration'
+    canonical_tag: '[INFERRED] configuration'
+    matched_tag: '[INFERRED] configuration'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.026801Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755074Z'
+  original_tags:
+  - fraud
+  - patterns
+  - detection
+  validated_tags:
+  - fraud
+  - patterns
+  - detection
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - fraud
+  - patterns
+  - detection
+  validation_details:
+  - original_tag: fraud
+    canonical_tag: fraud
+    matched_tag: fraud
+    tag_origin_cluster_id: fraud
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.093471Z'
+  - original_tag: patterns
+    canonical_tag: patterns
+    matched_tag: patterns
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.106785Z'
+  - original_tag: detection
+    canonical_tag: detection
+    matched_tag: detection
+    tag_origin_cluster_id: detection
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.110335Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755076Z'
+  original_tags:
+  - fraud
+  - rules
+  - ml
+  validated_tags:
+  - fraud
+  - rules
+  tags_added: []
+  tags_dropped:
+  - ml
+  tags_kept:
+  - fraud
+  - rules
+  validation_details:
+  - original_tag: fraud
+    canonical_tag: fraud
+    matched_tag: fraud
+    tag_origin_cluster_id: fraud
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.120198Z'
+  - original_tag: rules
+    canonical_tag: rules
+    matched_tag: rules
+    tag_origin_cluster_id: null
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.128920Z'
+  - original_tag: ml
+    canonical_tag: ml
+    matched_tag: ml
+    tag_origin_cluster_id: ml
+    original_confidence: 0.86
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.258140Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755078Z'
+  original_tags:
+  - alerts
+  - realtime
+  - fraud
+  validated_tags:
+  - alert
+  - fraud
+  tags_added:
+  - alert
+  tags_dropped:
+  - alerts
+  - realtime
+  tags_kept:
+  - fraud
+  validation_details:
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.262341Z'
+  - original_tag: realtime
+    canonical_tag: realtime
+    matched_tag: realtime
+    tag_origin_cluster_id: realtime
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.394272Z'
+  - original_tag: fraud
+    canonical_tag: fraud
+    matched_tag: fraud
+    tag_origin_cluster_id: fraud
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.398550Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755079Z'
+  original_tags:
+  - integration
+  - slack
+  - alerts
+  validated_tags:
+  - integration
+  - slack
+  - alert
+  tags_added:
+  - alert
+  tags_dropped:
+  - alerts
+  tags_kept:
+  - integration
+  - slack
+  validation_details:
+  - original_tag: integration
+    canonical_tag: integration
+    matched_tag: integration
+    tag_origin_cluster_id: integration
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.413469Z'
+  - original_tag: slack
+    canonical_tag: slack
+    matched_tag: slack
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.416141Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.418799Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755081Z'
+  original_tags:
+  - integration
+  - email
+  - alerts
+  validated_tags:
+  - email
+  - alert
+  tags_added:
+  - alert
+  tags_dropped:
+  - integration
+  - alerts
+  tags_kept:
+  - email
+  validation_details:
+  - original_tag: integration
+    canonical_tag: integration
+    matched_tag: integration
+    tag_origin_cluster_id: integration
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.546775Z'
+  - original_tag: email
+    canonical_tag: email
+    matched_tag: email
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.550293Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.553407Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755083Z'
+  original_tags:
+  - dashboard
+  - ui
+  - alerts
+  validated_tags:
+  - dashboard
+  - alert
+  tags_added:
+  - alert
+  tags_dropped:
+  - ui
+  - alerts
+  tags_kept:
+  - dashboard
+  validation_details:
+  - original_tag: dashboard
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.556467Z'
+  - original_tag: ui
+    canonical_tag: ui
+    matched_tag: ui
+    tag_origin_cluster_id: ui
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.683488Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.693530Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755085Z'
+  original_tags:
+  - data
+  - alerts
+  - security
+  validated_tags:
+  - data
+  - alert
+  - security
+  tags_added:
+  - alert
+  tags_dropped:
+  - alerts
+  tags_kept:
+  - data
+  - security
+  validation_details:
+  - original_tag: data
+    canonical_tag: data
+    matched_tag: data
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.703623Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.707508Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.768956Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755086Z'
+  original_tags:
+  - ml
+  - logging
+  - optimization
+  validated_tags:
+  - logs
+  tags_added:
+  - logs
+  tags_dropped:
+  - ml
+  - logging
+  - optimization
+  tags_kept: []
+  validation_details:
+  - original_tag: ml
+    canonical_tag: ml
+    matched_tag: ml
+    tag_origin_cluster_id: ml
+    original_confidence: 0.89
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:00.896334Z'
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:59:00.959397Z'
+  - original_tag: optimization
+    canonical_tag: optimization
+    matched_tag: optimization
+    tag_origin_cluster_id: optimization
+    original_confidence: 0.87
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.096390Z'
+- hlj_id: REQ-003-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755088Z'
+  original_tags:
+  - performance
+  - alerts
+  - ratelimit
+  validated_tags:
+  - alert
+  tags_added:
+  - alert
+  tags_dropped:
+  - performance
+  - alerts
+  - ratelimit
+  tags_kept: []
+  validation_details:
+  - original_tag: performance
+    canonical_tag: performance
+    matched_tag: performance
+    tag_origin_cluster_id: performance
+    original_confidence: 0.89
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.228511Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:01.232856Z'
+  - original_tag: ratelimit
+    canonical_tag: ratelimit
+    matched_tag: ratelimit
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.362969Z'
+- hlj_id: REQ-003-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755090Z'
+  original_tags:
+  - audit
+  - compliance
+  - logging
+  validated_tags:
+  - audit
+  - compliance
+  - logs
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  tags_kept:
+  - audit
+  - compliance
+  validation_details:
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.367248Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.376809Z'
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-05-31T23:59:01.388221Z'
+- hlj_id: REQ-003-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-003
+  model: opus4
+  timestamp: '2025-06-01T00:11:32.755091Z'
+  original_tags:
+  - security
+  - privacy
+  - compliance
+  - '[INFERRED] fraud'
+  validated_tags:
+  - security
+  - privacy
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] fraud'
+  tags_kept:
+  - security
+  - privacy
+  - compliance
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.447368Z'
+  - original_tag: privacy
+    canonical_tag: privacy
+    matched_tag: privacy
+    tag_origin_cluster_id: privacy
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.450651Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.463417Z'
+  - original_tag: '[INFERRED] fraud'
+    canonical_tag: '[INFERRED] fraud'
+    matched_tag: '[INFERRED] fraud'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:01.598259Z'

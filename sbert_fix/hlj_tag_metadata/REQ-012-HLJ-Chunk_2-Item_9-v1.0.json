@@ -1,0 +1,60 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "meta70b",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Provide audit-ready exports for finance and compliance teams",
+  "summary": "The system should provide audit-ready exports for finance and compliance teams, ensuring compliance with tax regulations and reducing audit risks.",
+  "tags_v1": [
+    "gst",
+    "compliance"
+  ],
+  "tags_v2": [
+    "gst",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "gst"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.717477023601532,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7582753896713257,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    }
+  ]
+}

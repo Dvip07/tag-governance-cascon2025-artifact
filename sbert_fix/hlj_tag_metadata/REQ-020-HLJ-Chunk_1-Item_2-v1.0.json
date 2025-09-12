@@ -1,0 +1,159 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Build initial contact import with dry run showing potential duplicates",
+  "summary": "Develop an initial import tool for contacts from major CRMs that allows a dry run mode, previewing potential duplicate records before final import. This enables users to safely review matches and prevents accidental data duplication during onboarding.",
+  "tags_v1": [
+    "import",
+    "duplicates",
+    "[INFERRED] onboarding"
+  ],
+  "tags_v2": [
+    "import",
+    "duplicates"
+  ],
+  "tags_v3": [
+    "hubspot",
+    "import",
+    "oauth",
+    "duplicates",
+    "crm",
+    "dryrun",
+    "onboarding"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "hubspot",
+      "aliases": [],
+      "cluster_id": "all_335",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.695963978767395,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "hubspot",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6729658246040344,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "import",
+      "aliases": [],
+      "cluster_id": "all_239",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7038954496383667,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "import",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "oauth",
+      "aliases": [],
+      "cluster_id": "all_78",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6931051015853882,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "oauth",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "duplicates",
+      "aliases": [],
+      "cluster_id": "all_240",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7188990116119385,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7434079647064209,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dryrun",
+      "aliases": [],
+      "cluster_id": "all_453",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7154624462127686,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dryrun",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "onboarding",
+      "aliases": [],
+      "cluster_id": "all_82",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6908677816390991,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "onboarding",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,61 @@
+# 📝 Changelog for `req-027` — **meta70b**
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['rtl', 'layout', '[INFERRED] globalization']`
+**Validated tags:** `['rtl', 'layout']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] globalization']`
+**Tags kept:** `['rtl', 'layout']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] globalization | dropped | none | 0.0 | None | 2025-05-31T23:58:11.607624Z |
+| layout | kept | direct | 1.0 | title | 2025-05-31T23:58:11.450149Z |
+| rtl | kept | direct | 1.0 | title | 2025-05-31T23:58:11.447461Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['rtl', 'components', '[INFERRED] ui_rendering']`
+**Validated tags:** `['rtl', 'components']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] ui_rendering']`
+**Tags kept:** `['rtl', 'components']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] ui_rendering | dropped | none | 0.0 | None | 2025-05-31T23:58:11.829079Z |
+| components | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:58:11.690759Z |
+| rtl | kept | direct | 1.0 | summary | 2025-05-31T23:58:11.617128Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['rtl', 'preview', '[INFERRED] layout']`
+**Validated tags:** `['rtl', 'preview']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] layout']`
+**Tags kept:** `['rtl', 'preview']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] layout | dropped | none | 0.0 | None | 2025-05-31T23:58:11.980133Z |
+| preview | kept | direct | 1.0 | title | 2025-05-31T23:58:11.836878Z |
+| rtl | kept | direct | 1.0 | title | 2025-05-31T23:58:11.833374Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['rtl', 'translation', '[INFERRED] localization']`
+**Validated tags:** `['rtl', 'translation']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] localization']`
+**Tags kept:** `['rtl', 'translation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] localization | dropped | none | 0.0 | None | 2025-05-31T23:58:12.128637Z |
+| rtl | kept | direct | 1.0 | source_fragment | 2025-05-31T23:58:11.991976Z |
+| translation | kept | direct | 1.0 | title | 2025-05-31T23:58:11.994857Z |

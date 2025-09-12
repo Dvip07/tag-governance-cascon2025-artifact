@@ -1,0 +1,76 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Create reassignment prompt when tags affecting rules are removed",
+  "summary": "Implement validation system that detects when tag removal affects existing assignment rules. Prompt users to reassign emails or update rules to maintain workflow integrity when critical tags are modified or removed.",
+  "tags_v1": [
+    "rules",
+    "validation",
+    "workflow"
+  ],
+  "tags_v2": [
+    "rules",
+    "validation",
+    "workflow"
+  ],
+  "tags_v3": [
+    "rules",
+    "workflow",
+    "validation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7620362639427185,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8061482906341553,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7815519571304321,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,245 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-006-HLJ-Chunk_1",
+      "focus": "Rate Limiting Design & Configuration",
+      "items": [
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Define configurable rate limit tiers per tenant",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-15"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement burst and sustained rate limits",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16-20"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Allow real-time updates to tenant rate limit configurations",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21-25"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Integrate rate limiting logic at API gateway or ingress controller layer",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 26-30"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Provide instant feedback to clients when limits are approached or exceeded",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 31-35"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log rate limiting actions and breaches per tenant",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 36-40"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement dashboards and alerting mechanisms for rate limit breaches",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 41-45"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Expose per-tenant usage metrics via API and/or developer portal",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 46-50"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Generate monthly usage and rate limit breach reports",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 51-55"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Detect and mitigate attempts to circumvent limits",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rate limiting"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 56-60"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-006-HLJ-Chunk_2",
+      "focus": "Security, Compliance, and Rollout",
+      "items": [
+        {
+          "id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Ensure rate limiting logic is resilient to spoofing of tenant IDs or credentials",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management",
+            "Security"
+          ],
+          "tags": [
+            "api",
+            "security"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 61-65"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Require multi-factor approval for high-tier tenants",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management",
+            "Security"
+          ],
+          "tags": [
+            "api",
+            "security"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 66-70"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Conduct phased rollout by tenant segment",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "rollout"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 71-75"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Provide sandbox environments for clients to test behavior under new rate limits",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "testing"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 76-80"
+        },
+        {
+          "id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Update developer documentation and FAQs to explain new rate limit policies",
+          "domain": "FinTech",
+          "subdomain": [
+            "API Management"
+          ],
+          "tags": [
+            "api",
+            "documentation"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 81-85"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Implement rate limiting for log export functionality to prevent abuse",
+  "summary": "Add rate limiting controls to the log export API endpoints to prevent system abuse and resource exhaustion. This includes implementing per-user and per-role export quotas with configurable thresholds.",
+  "tags_v1": [
+    "rate-limiting",
+    "security",
+    "performance"
+  ],
+  "tags_v2": [
+    "security"
+  ],
+  "tags_v3": [
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7065049409866333,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

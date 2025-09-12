@@ -1,0 +1,188 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-006-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-006",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-006-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-006-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-006 (FinTech)
+
+FT-006: Per-Tenant API Rate Limits for B2B Developer Platform
+Title:
+Implementation of Per-Tenant API Rate Limiting for B2B Developer Platform
+
+Background & Business Objective:
+As the developer platform expands to support a growing number of B2B clients, ensuring fair usage and stability of shared APIs becomes increasingly critical. Current system-wide rate limiting does not adequately address the risk of a single tenant monopolizing resources or causing service degradation for others. Implementing fine-grained, per-tenant rate limiting is essential to uphold performance SLAs, prevent abuse, and improve transparency for clients integrating with our APIs.
+
+This requirement outlines the need to introduce scalable, configurable per-tenant API rate limits for all external developer APIs, enabling granular control and monitoring at the tenant (customer organization) level.
+
+Scope of Requirement:
+
+Rate Limiting Design & Configuration:
+
+Define and implement configurable rate limit tiers per tenant (e.g., Standard: 1000 req/min; Premium: 5000 req/min), with the ability to customize limits based on contract terms.
+
+Support both burst (short-term spike) and sustained (long-term average) rate limits, with clear, documented fallback behavior if limits are exceeded.
+
+Allow for real-time updates to tenant rate limit configurations via an internal admin portal.
+
+API Gateway & Enforcement:
+
+Integrate rate limiting logic at the API gateway or ingress controller layer, ensuring all inbound requests are checked and counted per tenant ID.
+
+Provide instant feedback to clients when limits are approached or exceeded (HTTP 429 with reason details), and include “retry-after” headers for compliant backoff.
+
+All rate limiting actions and breaches must be logged per tenant for compliance and monitoring.
+
+Monitoring, Alerting, & Reporting:
+
+Implement dashboards and alerting mechanisms to notify both internal teams and affected tenants of rate limit breaches, near-misses, and unusual activity patterns.
+
+Expose per-tenant usage metrics via API and/or developer portal, allowing clients to self-monitor their consumption and plan for scaling needs.
+
+Generate monthly usage and rate limit breach reports for billing, compliance, and support analysis.
+
+Edge Case & Abuse Handling:
+
+Detect and mitigate attempts to circumvent limits (e.g., using multiple API keys, rotating IPs, or automated bots).
+
+Provide mechanisms to temporarily lift limits for incident response or high-priority support cases, with audit logs and auto-reversion to normal limits.
+
+Handle API gateway outages or rate limiter backend failures gracefully, defaulting to system-wide limits if tenant context is unavailable.
+
+Security & Compliance:
+
+Ensure all rate limiting logic is resilient to spoofing of tenant IDs or credentials.
+
+All rate limit configuration changes must require multi-factor approval for high-tier tenants and be fully auditable.
+
+Testing, Rollout & Support:
+
+Conduct phased rollout by tenant segment, beginning with low-risk tenants and gradually expanding coverage.
+
+Provide sandbox environments for clients to test behavior under new rate limits.
+
+Update developer documentation and FAQs to clearly explain new rate limit policies and self-service tools.
+
+Dependencies & Constraints:
+
+Requires upgrade of current API gateway infrastructure; legacy APIs must be retrofitted or phased out.
+
+Must not add more than 10ms latency per API call under peak loads.
+
+Coordination required with legal and customer success teams for communication and contract updates.
+
+Deliverables:
+
+Updated gateway and backend systems
+
+Rate limit management UI
+
+Monitoring dashboards
+
+Rollout and migration plan
+
+Communication templates for clients
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

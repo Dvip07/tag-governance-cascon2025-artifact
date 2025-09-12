@@ -1,0 +1,1513 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design GET /api/v2/transactions/history endpoint",
+    "summary": "Create a RESTful endpoint that retrieves unified transaction history across multiple partner banks. The endpoint must support standard HTTP GET operations and return a consolidated view of customer transactions.",
+    "tags": [
+      "api",
+      "endpoint",
+      "rest"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "API"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "Develop a RESTful API endpoint (GET /api/v2/transactions/history)",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.98
+        },
+        {
+          "tag": "endpoint",
+          "confidence": 0.96
+        },
+        {
+          "tag": "rest",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "RESTful API",
+        "transaction history",
+        "unified view"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "endpoint",
+      "rest"
+    ],
+    "tags_v2": [
+      "api",
+      "endpoint"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.163310Z"
+      },
+      {
+        "original_tag": "endpoint",
+        "canonical_tag": "endpoint",
+        "matched_tag": "endpoint",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.166407Z"
+      },
+      {
+        "original_tag": "rest",
+        "canonical_tag": "rest",
+        "matched_tag": "rest",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.307185Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement pagination for transaction history results",
+    "summary": "Add pagination support to handle large transaction datasets efficiently. This ensures API performance remains optimal when retrieving extensive transaction histories spanning multiple years.",
+    "tags": [
+      "api",
+      "pagination",
+      "performance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "API"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "pagination, date/type/institution filtering",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.92
+        },
+        {
+          "tag": "pagination",
+          "confidence": 0.97
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "pagination",
+        "performance optimization",
+        "large datasets"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "pagination",
+      "performance"
+    ],
+    "tags_v2": [
+      "api",
+      "pagination",
+      "performance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.318613Z"
+      },
+      {
+        "original_tag": "pagination",
+        "canonical_tag": "pagination",
+        "matched_tag": "pagination",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.321347Z"
+      },
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.329363Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Add filtering by date range, transaction type, and partner institution",
+    "summary": "Implement comprehensive filtering capabilities allowing users to refine transaction results by specific date ranges, transaction types, and source financial institutions. This enables targeted data retrieval for better user experience.",
+    "tags": [
+      "api",
+      "filtering",
+      "query"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "API"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "date/type/institution filtering",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.91
+        },
+        {
+          "tag": "filtering",
+          "confidence": 0.96
+        },
+        {
+          "tag": "query",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "query parameters",
+        "data filtering",
+        "multiple criteria"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "filtering",
+      "query"
+    ],
+    "tags_v2": [
+      "api",
+      "query"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.400424Z"
+      },
+      {
+        "original_tag": "filtering",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:26.540904Z"
+      },
+      {
+        "original_tag": "query",
+        "canonical_tag": "query",
+        "matched_tag": "query",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.559005Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Ensure API adheres to latest OpenAPI (Swagger) specifications",
+    "summary": "Configure the API to comply with current OpenAPI standards for documentation and interoperability. This includes proper schema definitions, request/response models, and automated documentation generation.",
+    "tags": [
+      "api",
+      "openapi",
+      "standards"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "API"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "OpenAPI compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.94
+        },
+        {
+          "tag": "openapi",
+          "confidence": 0.98
+        },
+        {
+          "tag": "standards",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "OpenAPI specification",
+        "API documentation",
+        "standards compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "openapi",
+      "standards"
+    ],
+    "tags_v2": [
+      "api",
+      "openapi",
+      "standards"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.563622Z"
+      },
+      {
+        "original_tag": "openapi",
+        "canonical_tag": "openapi",
+        "matched_tag": "openapi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.567179Z"
+      },
+      {
+        "original_tag": "standards",
+        "canonical_tag": "standards",
+        "matched_tag": "standards",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.576939Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement transaction data de-duplication across partner banks",
+    "summary": "Develop logic to identify and remove duplicate transactions when the same transaction appears in multiple partner bank feeds. This ensures accurate transaction history without redundant entries from inter-bank transfers.",
+    "tags": [
+      "data",
+      "deduplication",
+      "consistency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "DataProcessing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "de-duplication",
+      "tag_metadata_reference": [
+        {
+          "tag": "data",
+          "confidence": 0.92
+        },
+        {
+          "tag": "deduplication",
+          "confidence": 0.97
+        },
+        {
+          "tag": "consistency",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "data integrity",
+        "duplicate detection",
+        "cross-bank reconciliation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "data",
+      "deduplication",
+      "consistency"
+    ],
+    "tags_v2": [
+      "data",
+      "deduplication",
+      "consistency"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data",
+        "canonical_tag": "data",
+        "matched_tag": "data",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.580080Z"
+      },
+      {
+        "original_tag": "deduplication",
+        "canonical_tag": "deduplication",
+        "matched_tag": "deduplication",
+        "tag_origin_cluster_id": "deduplication",
+        "original_confidence": 0.97,
+        "validation_status": "semantic",
+        "similarity": 0.8975560069084167,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.687557Z"
+      },
+      {
+        "original_tag": "consistency",
+        "canonical_tag": "consistency",
+        "matched_tag": "consistency",
+        "tag_origin_cluster_id": "consistency",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.757256Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Normalize all timestamps to UTC with original timezone metadata",
+    "summary": "Convert all transaction timestamps to UTC while preserving the original timezone information as metadata. This ensures consistent temporal ordering across different geographical regions and partner institutions.",
+    "tags": [
+      "data",
+      "timestamp",
+      "normalization"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "DataProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "UTC timestamp normalization",
+      "tag_metadata_reference": [
+        {
+          "tag": "data",
+          "confidence": 0.9
+        },
+        {
+          "tag": "timestamp",
+          "confidence": 0.96
+        },
+        {
+          "tag": "normalization",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "UTC conversion",
+        "timezone handling",
+        "data standardization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "data",
+      "timestamp",
+      "normalization"
+    ],
+    "tags_v2": [
+      "data",
+      "timestamp",
+      "normalization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data",
+        "canonical_tag": "data",
+        "matched_tag": "data",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.770705Z"
+      },
+      {
+        "original_tag": "timestamp",
+        "canonical_tag": "timestamp",
+        "matched_tag": "timestamp",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.780998Z"
+      },
+      {
+        "original_tag": "normalization",
+        "canonical_tag": "normalization",
+        "matched_tag": "normalization",
+        "tag_origin_cluster_id": "normalization",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.791181Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Implement OAuth 2.0 authentication with per-customer access tokens",
+    "summary": "Set up OAuth 2.0 authentication mechanism that generates and validates individual access tokens for each customer. This provides secure, standardized authentication for API access control.",
+    "tags": [
+      "security",
+      "oauth",
+      "authentication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "OAuth 2.0 authentication",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "oauth",
+          "confidence": 0.98
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "OAuth 2.0",
+        "access tokens",
+        "authentication flow"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "security",
+      "oauth",
+      "authentication"
+    ],
+    "tags_v2": [
+      "security",
+      "oauth",
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.859039Z"
+      },
+      {
+        "original_tag": "oauth",
+        "canonical_tag": "oauth",
+        "matched_tag": "oauth",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.862378Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.865414Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Log all API access events per ISO 27001 requirements",
+    "summary": "Implement comprehensive audit logging for all API access events to meet ISO 27001 compliance standards. This includes recording user identity, timestamp, accessed resources, and response status for security auditing.",
+    "tags": [
+      "security",
+      "logging",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "ISO 27001 audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "ISO 27001",
+        "audit trails",
+        "compliance logging"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "security",
+      "logging",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.874848Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:27.010140Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.021623Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Handle discrepancies in transaction types/status between institutions",
+    "summary": "Create mapping logic to reconcile different transaction categorizations and status codes used by various partner banks. This ensures consistent transaction representation despite varying bank-specific nomenclatures.",
+    "tags": [
+      "data",
+      "normalization",
+      "edge-cases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "DataProcessing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "Handle discrepancies in transaction types/status",
+      "tag_metadata_reference": [
+        {
+          "tag": "data",
+          "confidence": 0.91
+        },
+        {
+          "tag": "normalization",
+          "confidence": 0.93
+        },
+        {
+          "tag": "edge-cases",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "data mapping",
+        "standardization",
+        "heterogeneous sources"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "data",
+      "normalization",
+      "edge-cases"
+    ],
+    "tags_v2": [
+      "data"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data",
+        "canonical_tag": "data",
+        "matched_tag": "data",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.036800Z"
+      },
+      {
+        "original_tag": "normalization",
+        "canonical_tag": "normalization",
+        "matched_tag": "normalization",
+        "tag_origin_cluster_id": "normalization",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.174309Z"
+      },
+      {
+        "original_tag": "edge-cases",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:27.314843Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Return partial results when partner bank API is unavailable",
+    "summary": "Implement graceful degradation to return available transaction data from responsive banks when one or more partner APIs are down. Include clear indicators about which data sources are temporarily unavailable.",
+    "tags": [
+      "api",
+      "resilience",
+      "availability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "ErrorHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "Handle partner API outages gracefully with partial results",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.9
+        },
+        {
+          "tag": "resilience",
+          "confidence": 0.94
+        },
+        {
+          "tag": "availability",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "fault tolerance",
+        "partial responses",
+        "graceful degradation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "resilience",
+      "availability"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.319156Z"
+      },
+      {
+        "original_tag": "resilience",
+        "canonical_tag": "resilience",
+        "matched_tag": "resilience",
+        "tag_origin_cluster_id": "resilience",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.457444Z"
+      },
+      {
+        "original_tag": "availability",
+        "canonical_tag": "availability",
+        "matched_tag": "availability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.611248Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Achieve 1.5 second response time for 24 months of transaction data",
+    "summary": "Implement performance optimizations to ensure API endpoint responds within 1.5 seconds when retrieving 24 months of historical transaction data across all partner banks. This requires efficient query strategies and potentially asynchronous processing.",
+    "tags": [
+      "performance",
+      "api",
+      "optimization"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 44",
+    "reasoning": {
+      "source_summary_fragment": "Performance requirement: 1.5s response time for 24 months of data",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "api",
+          "confidence": 0.96
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "response time threshold",
+        "historical data retrieval",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.94,
+      "method": "performance_critical_path"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "performance",
+      "api",
+      "optimization"
+    ],
+    "tags_v2": [
+      "performance",
+      "api",
+      "optimization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.623699Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.633613Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.648918Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Create comprehensive API documentation with examples",
+    "summary": "Develop complete API documentation following OpenAPI specification, including request/response examples, error codes, and integration guides for the transaction history endpoint to support developer adoption.",
+    "tags": [
+      "documentation",
+      "api",
+      "support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "OpenAPI compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "api",
+          "confidence": 0.93
+        },
+        {
+          "tag": "support",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "OpenAPI spec",
+        "developer documentation",
+        "API examples"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.88,
+      "method": "documentation_standard"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "documentation",
+      "api",
+      "support"
+    ],
+    "tags_v2": [
+      "documentation",
+      "api",
+      "support"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.651429Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.653915Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.662160Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Integrate with five major partner banks' APIs",
+    "summary": "Establish secure API integrations with at least five major banking partners to retrieve transaction data, implementing appropriate authentication, error handling, and data normalization for each bank's unique API format.",
+    "tags": [
+      "integration",
+      "partners",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Integration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "Requires integration with 5+ major banks",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.97
+        },
+        {
+          "tag": "partners",
+          "confidence": 0.94
+        },
+        {
+          "tag": "api",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "multi-bank integration",
+        "partner API connectivity",
+        "data aggregation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.91,
+      "method": "integration_complexity"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "integration",
+      "partners",
+      "api"
+    ],
+    "tags_v2": [
+      "integration",
+      "partners",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.673603Z"
+      },
+      {
+        "original_tag": "partners",
+        "canonical_tag": "partners",
+        "matched_tag": "partners",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.682335Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.691217Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement data caching with 5-minute freshness window",
+    "summary": "Design and implement a caching layer that maintains transaction data freshness within a 5-minute window, balancing performance requirements with data accuracy while reducing load on partner bank APIs.",
+    "tags": [
+      "caching",
+      "performance",
+      "data"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 54",
+    "reasoning": {
+      "source_summary_fragment": "5-minute cache freshness limit",
+      "tag_metadata_reference": [
+        {
+          "tag": "caching",
+          "confidence": 0.96
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "data",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "cache invalidation",
+        "data freshness",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.86,
+      "method": "cache_strategy"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "caching",
+      "performance",
+      "data"
+    ],
+    "tags_v2": [
+      "caching",
+      "performance",
+      "data"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "caching",
+        "canonical_tag": "caching",
+        "matched_tag": "caching",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.694246Z"
+      },
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.703077Z"
+      },
+      {
+        "original_tag": "data",
+        "canonical_tag": "data",
+        "matched_tag": "data",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.706049Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Complete compliance review before production deployment",
+    "summary": "Conduct thorough compliance review ensuring the API meets all regulatory requirements including ISO 27001 audit logging standards, data privacy regulations, and Open Banking compliance before releasing to production.",
+    "tags": [
+      "compliance",
+      "review",
+      "deployment",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.7,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "compliance review before production",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "review",
+          "confidence": 0.92
+        },
+        {
+          "tag": "deployment",
+          "confidence": 0.88
+        },
+        {
+          "tag": "security",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "ISO 27001",
+        "regulatory compliance",
+        "pre-production review"
+      ]
+    },
+    "low_confidence_reason": "Difficulty confidence clamped to minimum threshold as compliance complexity may vary",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "compliance",
+      "review",
+      "deployment",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "review",
+      "deployment"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.708593Z"
+      },
+      {
+        "original_tag": "review",
+        "canonical_tag": "review",
+        "matched_tag": "review",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.711129Z"
+      },
+      {
+        "original_tag": "deployment",
+        "canonical_tag": "deployment",
+        "matched_tag": "deployment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.713609Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:27.849039Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

@@ -1,0 +1,131 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Coordinate component updates involving third-party vendors",
+  "summary": "Establish coordination protocols and communication processes with third-party vendors to manage updates and ensure all integrated components comply with RTL, localization, and accessibility requirements. Tracking and validation mechanisms should be in place to minimize risk of regressions or non-compliance.",
+  "tags_v1": [
+    "vendor",
+    "update",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "vendor",
+    "update"
+  ],
+  "tags_v3": [
+    "translation",
+    "rtl",
+    "vendor",
+    "update",
+    "localization",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "translation",
+      "aliases": [],
+      "cluster_id": "all_233",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7378474473953247,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "translation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rtl",
+      "aliases": [],
+      "cluster_id": "all_227",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7933837175369263,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rtl",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "vendor",
+      "aliases": [],
+      "cluster_id": "all_237",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7618526220321655,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "vendor",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "update",
+      "aliases": [
+        "updates"
+      ],
+      "cluster_id": "all_238",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7417479157447815,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "update",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "localization",
+      "aliases": [],
+      "cluster_id": "all_220",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7564523220062256,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "localization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7458626627922058,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

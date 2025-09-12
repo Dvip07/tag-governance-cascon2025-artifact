@@ -1,0 +1,59 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Log and mark partial batch payout successes and exceptions",
+  "summary": "Track and log both successful and exceptional (failed) payouts within a batch, explicitly marking partial success states. Exception logs must facilitate downstream audits and error analytics.",
+  "tags_v1": [
+    "logging",
+    "exception",
+    "[INFERRED] traceability"
+  ],
+  "tags_v2": [
+    "logs",
+    "exception"
+  ],
+  "tags_v3": [
+    "exception",
+    "logging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "exception",
+      "aliases": [],
+      "cluster_id": "all_110",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.704910397529602,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exception",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.735619306564331,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    }
+  ]
+}

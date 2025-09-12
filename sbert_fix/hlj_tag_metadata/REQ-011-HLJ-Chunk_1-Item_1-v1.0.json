@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Integrate with internal and third-party credit bureaus for real-time score retrieval",
+  "summary": "Establish real-time integration with both internal and external credit bureaus to retrieve and update customer credit scores during the checkout process. This ensures that EMI offerings are based on up-to-date and accurate creditworthiness information. Interfaces must comply with relevant legal, privacy, and audit requirements.",
+  "tags_v1": [
+    "integration",
+    "creditworthiness",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "integration",
+    "creditworthiness"
+  ],
+  "tags_v3": [
+    "creditworthiness",
+    "integration",
+    "checkout",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "creditworthiness",
+      "aliases": [],
+      "cluster_id": "all_249",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7864943146705627,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "creditworthiness",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7240104079246521,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "checkout",
+      "aliases": [],
+      "cluster_id": "all_462",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7543553709983826,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "checkout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.725074827671051,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

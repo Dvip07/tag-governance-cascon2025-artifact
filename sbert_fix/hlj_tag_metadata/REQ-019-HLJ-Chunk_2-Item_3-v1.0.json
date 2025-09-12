@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "opus4",
+  "req_id": "req-019",
+  "domain": "SaaS",
+  "title": "Implement CSV export functionality for cohort analysis",
+  "summary": "Add CSV export feature allowing users to download cohort analysis data including raw retention values, time-decayed metrics, and metadata. Export must support filtering by date range and cohort selection.",
+  "tags_v1": [
+    "export",
+    "csv",
+    "reporting"
+  ],
+  "tags_v2": [
+    "export",
+    "csv"
+  ],
+  "tags_v3": [
+    "csv",
+    "export",
+    "reporting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "csv",
+      "aliases": [],
+      "cluster_id": "all_292",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.74608314037323,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "csv",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7236877679824829,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6879918575286865,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

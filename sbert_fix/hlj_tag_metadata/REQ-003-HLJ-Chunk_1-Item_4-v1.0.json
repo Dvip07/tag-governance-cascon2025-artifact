@@ -1,0 +1,161 @@
+{
+  "hlj_id": "REQ-003-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-003",
+  "domain": "FinTech",
+  "title": "Generate real-time alerts to Fraud Operations via Slack, email, and dashboard widget",
+  "summary": "Configure the system to provide instant notifications to Fraud Operations using multiple channels, including Slack, email, and internal dashboards. This ensures timely awareness and rapid response to fraud events as they are detected.",
+  "tags_v1": [
+    "alert",
+    "notification",
+    "[INFERRED] real-time"
+  ],
+  "tags_v2": [
+    "alert",
+    "notification"
+  ],
+  "tags_v3": [
+    "alert",
+    "notification",
+    "audit",
+    "fraud",
+    "reporting",
+    "compliance",
+    "real-time"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7472161054611206,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alert",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7625153064727783,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7293291687965393,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fraud",
+      "aliases": [],
+      "cluster_id": "all_13",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7513090968132019,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fraud",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.715843677520752,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7031171321868896,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "all_49",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7365663647651672,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    }
+  ]
+}

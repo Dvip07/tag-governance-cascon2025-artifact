@@ -1,0 +1,116 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Maintain compliance with PCI DSS, SOC 2, and applicable regulations",
+  "summary": "Review and adjust freeze/unfreeze features and processes to ensure full compliance with PCI DSS, SOC 2, and any other financial data security and privacy regulations applicable to card operations. Document controls and monitor ongoing compliance.",
+  "tags_v1": [
+    "compliance",
+    "regulation"
+  ],
+  "tags_v2": [
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "api",
+    "integration",
+    "virtualcard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7298036813735962,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7122101783752441,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6964162588119507,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "conflict",
+      "aliases": [],
+      "cluster_id": "all_242",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6751724481582642,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "conflict",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7498902082443237,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,236 @@
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-008-HLJ-Chunk_1",
+      "focus": "Platform API connectivity, income aggregation, and eligibility logic",
+      "items": [
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate with major gig economy platform APIs for earnings retrieval",
+          "domain": "FinTech",
+          "subdomain": [
+            "APIIntegration"
+          ],
+          "tags": [
+            "integration",
+            "gig-economy"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 8\u201310"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Aggregate and normalize income data from multiple sources",
+          "domain": "FinTech",
+          "subdomain": [
+            "APIIntegration",
+            "DataProcessing"
+          ],
+          "tags": [
+            "aggregation",
+            "data-normalization"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 11\u201312"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Design dynamic eligibility rules for assessing gig income",
+          "domain": "FinTech",
+          "subdomain": [
+            "Lending",
+            "RiskAssessment"
+          ],
+          "tags": [
+            "eligibility",
+            "risk"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 14\u201315"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement admin controls for adjusting eligibility logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "AdminPanel",
+            "Lending"
+          ],
+          "tags": [
+            "admin",
+            "rule-management"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Handle eligibility edge cases: zero earnings, unsupported currencies",
+          "domain": "FinTech",
+          "subdomain": [
+            "Lending",
+            "EdgeCaseHandling"
+          ],
+          "tags": [
+            "edge-case",
+            "eligibility"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 17\u201318"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Require KYC and AML checks for all applicants",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "FraudPrevention"
+          ],
+          "tags": [
+            "kyc",
+            "aml"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20\u201321"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement fraud detection for anomalous or inflated reported income",
+          "domain": "FinTech",
+          "subdomain": [
+            "FraudPrevention"
+          ],
+          "tags": [
+            "fraud",
+            "detection"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Design user consent workflows and feedback for API data connection",
+          "domain": "FinTech",
+          "subdomain": [
+            "UX",
+            "APIIntegration"
+          ],
+          "tags": [
+            "consent",
+            "user-experience"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24\u201326"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Display earnings summaries and user documentation dispute flows",
+          "domain": "FinTech",
+          "subdomain": [
+            "UX"
+          ],
+          "tags": [
+            "user-interface",
+            "dispute"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 27"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure compliance with local lending laws and privacy regulations",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "privacy"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29\u201331"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-008-HLJ-Chunk_2",
+      "focus": "Security, auditability, monitoring, edge case handling, dependencies, and deliverables",
+      "items": [
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Secure data in transit and at rest with encryption and RBAC",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security"
+          ],
+          "tags": [
+            "encryption",
+            "rbac"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 32"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Provide dashboards for operations and compliance monitoring",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reporting",
+            "Compliance"
+          ],
+          "tags": [
+            "dashboard",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 34\u201336"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Log API activity, eligibility checks, and manual interventions for audit",
+          "domain": "FinTech",
+          "subdomain": [
+            "Audit",
+            "Reporting"
+          ],
+          "tags": [
+            "logging",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-008-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Handle unsupported platforms and incomplete data edge cases",
+          "domain": "FinTech",
+          "subdomain": [
+            "EdgeCaseHandling"
+          ],
+          "tags": [
+            "edge-case",
+            "error-handling"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 39\u201341"
+        }
+      ]
+    }
+  ]
+}

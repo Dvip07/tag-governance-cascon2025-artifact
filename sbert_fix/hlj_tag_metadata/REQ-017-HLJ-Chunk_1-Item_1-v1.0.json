@@ -1,0 +1,89 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Calculate prorated credit and new plan charges on mid-cycle upgrade",
+  "summary": "Determine and apply a prorated credit for unused time on a user's current plan when upgrading mid-cycle, then calculate charges for the new plan, ensuring financial accuracy in billing. This forms the core logic to enable seamless plan upgrades with clear proration. The system must support both monthly and annual plans.",
+  "tags_v1": [
+    "proration",
+    "billing",
+    "[INFERRED] finance"
+  ],
+  "tags_v2": [
+    "billing"
+  ],
+  "tags_v3": [
+    "billing",
+    "calculations",
+    "prorated upgrades",
+    "proration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "billing",
+      "aliases": [],
+      "cluster_id": "all_200",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.748734712600708,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "calculations",
+      "aliases": [],
+      "cluster_id": "all_314",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7140600085258484,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "calculations",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "prorated upgrades",
+      "aliases": [],
+      "cluster_id": "all_430",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8295693397521973,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "prorated upgrades",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "proration",
+      "aliases": [],
+      "cluster_id": "all_199",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7351835370063782,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "proration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

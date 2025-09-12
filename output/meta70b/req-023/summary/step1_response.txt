@@ -1,0 +1,164 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-023",
+  "summary": "Implement a geo-targeted feature flag system with real-time analytics for progressive delivery, supporting user segmentation, percentage-based rollouts, and immediate effect adjustments. The system must integrate with a real-time Geo-IP resolution service, handle edge cases, and respect regional data residency and privacy laws."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Feature Flag Management", "Geo-Targeting", "Real-Time Analytics"],
+  "canonical_tags": ["geo-targeting", "feature flags", "real-time analytics"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-023-HLJ-Chunk_1",
+      "focus": "Feature Flag Framework and Geo-IP Integration",
+      "items": [
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement scalable feature flag system",
+          "domain": "SaaS",
+          "subdomain": ["Feature Flag Management"],
+          "tags": ["feature flags", "scalability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-12"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Integrate with real-time Geo-IP resolution service",
+          "domain": "SaaS",
+          "subdomain": ["Geo-Targeting"],
+          "tags": ["geo-targeting", "geo-ip"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Handle users on VPNs, proxies, or with missing geo-data",
+          "domain": "SaaS",
+          "subdomain": ["Edge Case Handling"],
+          "tags": ["edge cases", "geo-ip"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 20-22"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement percentage-based rollouts",
+          "domain": "SaaS",
+          "subdomain": ["Feature Flag Management"],
+          "tags": ["feature flags", "rollouts"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12-14"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Allow dynamic adjustments via admin portal",
+          "domain": "SaaS",
+          "subdomain": ["Feature Flag Management"],
+          "tags": ["feature flags", "admin portal"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 14-15"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-023-HLJ-Chunk_2",
+      "focus": "Real-Time Analytics, User Experience, and Compliance",
+      "items": [
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Provide dashboards for adoption metrics and error rates",
+          "domain": "SaaS",
+          "subdomain": ["Real-Time Analytics"],
+          "tags": ["real-time analytics", "dashboards"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25-27"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Trigger automated alerts for negative impact",
+          "domain": "SaaS",
+          "subdomain": ["Real-Time Analytics"],
+          "tags": ["real-time analytics", "alerts"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 28-30"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Inform users of beta or staged rollouts",
+          "domain": "SaaS",
+          "subdomain": ["User Experience"],
+          "tags": ["user experience", "rollouts"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 32-34"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Ensure compliance with regional data residency and privacy laws",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["compliance", "privacy laws"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 35-37"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Create onboarding material for product managers and developers",
+          "domain": "SaaS",
+          "subdomain": ["Documentation"],
+          "tags": ["documentation", "onboarding"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 40-42"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_11-v1.0",
+          "title": "Maintain a change log of flag adjustments and rollouts",
+          "domain": "SaaS",
+          "subdomain": ["Documentation"],
+          "tags": ["documentation", "change log"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 43-45"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_12-v1.0",
+          "title": "Upgrade authentication and session services for location awareness",
+          "domain": "SaaS",
+          "subdomain": ["Infrastructure"],
+          "tags": ["infrastructure", "location awareness"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 45-47"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+!!CONSTRAINT_BROKEN!!

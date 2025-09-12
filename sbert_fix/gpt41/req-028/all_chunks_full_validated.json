@@ -1,0 +1,1151 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate NLP sentiment analysis to classify incoming tickets",
+    "summary": "Implement Natural Language Processing (NLP) to automatically classify incoming helpdesk tickets as positive, neutral, or negative. This enables efficient routing and provides foundational data for analytics on sentiment distribution.",
+    "tags": [
+      "nlp",
+      "classification",
+      "[INFERRED] sentiment"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 09\u201311",
+    "reasoning": {
+      "source_summary_fragment": "Integrate an NLP engine to auto-classify tickets as positive, neutral, or negative.",
+      "tag_metadata_reference": [
+        {
+          "tag": "nlp",
+          "confidence": 0.96
+        },
+        {
+          "tag": "classification",
+          "confidence": 0.94
+        },
+        {
+          "tag": "sentiment",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "automatic sentiment assignment",
+        "NLP classification",
+        "ticket intake triage"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "sentiment",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "nlp",
+      "classification",
+      "[INFERRED] sentiment"
+    ],
+    "tags_v2": [
+      "nlp",
+      "classification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nlp",
+        "canonical_tag": "nlp",
+        "matched_tag": "nlp",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:15.772320Z"
+      },
+      {
+        "original_tag": "classification",
+        "canonical_tag": "classification",
+        "matched_tag": "classification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:15.791263Z"
+      },
+      {
+        "original_tag": "[INFERRED] sentiment",
+        "canonical_tag": "[INFERRED] sentiment",
+        "matched_tag": "[INFERRED] sentiment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:15.962059Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement urgency detection model to flag critical tickets",
+    "summary": "Deploy an automated model to detect and flag urgent or critical tickets at intake using NLP analysis. This enables prioritization and rapid routing to senior agents or specialized queues.",
+    "tags": [
+      "nlp",
+      "urgency",
+      "[INFERRED] escalation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 12\u201313",
+    "reasoning": {
+      "source_summary_fragment": "detect urgent cases at intake, enabling fast routing: negative/urgent tickets go to senior agents or escalation",
+      "tag_metadata_reference": [
+        {
+          "tag": "nlp",
+          "confidence": 0.95
+        },
+        {
+          "tag": "urgency",
+          "confidence": 0.93
+        },
+        {
+          "tag": "escalation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "urgency detection",
+        "priority ticket flagging",
+        "AI triage escalation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "escalation",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "nlp",
+      "urgency",
+      "[INFERRED] escalation"
+    ],
+    "tags_v2": [
+      "nlp",
+      "urgency"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nlp",
+        "canonical_tag": "nlp",
+        "matched_tag": "nlp",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:15.980922Z"
+      },
+      {
+        "original_tag": "urgency",
+        "canonical_tag": "urgency",
+        "matched_tag": "urgency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:15.984136Z"
+      },
+      {
+        "original_tag": "[INFERRED] escalation",
+        "canonical_tag": "[INFERRED] escalation",
+        "matched_tag": "[INFERRED] escalation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.154085Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Auto-route negative or urgent tickets to senior agents or escalation queues",
+    "summary": "Automatically direct tickets identified as negative or urgent to senior agents or specialized escalation queues, minimizing manual effort and reducing response time for critical issues.",
+    "tags": [
+      "routing",
+      "priority",
+      "[INFERRED] escalation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 15\u201316",
+    "reasoning": {
+      "source_summary_fragment": "negative/urgent tickets go to senior agents or escalation",
+      "tag_metadata_reference": [
+        {
+          "tag": "routing",
+          "confidence": 0.92
+        },
+        {
+          "tag": "priority",
+          "confidence": 0.91
+        },
+        {
+          "tag": "escalation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "urgent/negative triage",
+        "escalated routing",
+        "senior agent auto-assign"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "escalation",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "routing",
+      "priority",
+      "[INFERRED] escalation"
+    ],
+    "tags_v2": [
+      "routing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "routing",
+        "canonical_tag": "routing",
+        "matched_tag": "routing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.174535Z"
+      },
+      {
+        "original_tag": "priority",
+        "canonical_tag": "priority",
+        "matched_tag": "priority",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.317111Z"
+      },
+      {
+        "original_tag": "[INFERRED] escalation",
+        "canonical_tag": "[INFERRED] escalation",
+        "matched_tag": "[INFERRED] escalation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.479872Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Route routine helpdesk inquiries to self-service or standard agents",
+    "summary": "Direct routine or low-complexity helpdesk inquiries to self-service options or standard agents, increasing efficiency and ensuring that advanced cases receive expert attention.",
+    "tags": [
+      "routing",
+      "efficiency",
+      "[INFERRED] self-service"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "routine ones to standard or self-service",
+      "tag_metadata_reference": [
+        {
+          "tag": "routing",
+          "confidence": 0.9
+        },
+        {
+          "tag": "efficiency",
+          "confidence": 0.83
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "routine ticket triage",
+        "self-service workflows",
+        "resource optimization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "self-service",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "routing",
+      "efficiency",
+      "[INFERRED] self-service"
+    ],
+    "tags_v2": [
+      "routing",
+      "efficiency"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "routing",
+        "canonical_tag": "routing",
+        "matched_tag": "routing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.554423Z"
+      },
+      {
+        "original_tag": "efficiency",
+        "canonical_tag": "efficiency",
+        "matched_tag": "efficiency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.83,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.563294Z"
+      },
+      {
+        "original_tag": "[INFERRED] self-service",
+        "canonical_tag": "[INFERRED] self-service",
+        "matched_tag": "[INFERRED] self-service",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.717358Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Detect and handle sarcasm or ambiguous tone using secondary cues",
+    "summary": "Enable the system to recognize sarcasm or ambiguous tones in tickets by leveraging secondary linguistic or contextual cues, improving accuracy in sentiment classification and routing.",
+    "tags": [
+      "nlp",
+      "edge-case",
+      "[INFERRED] tone-analysis"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 23\u201325",
+    "reasoning": {
+      "source_summary_fragment": "Handle edge cases like sarcasm",
+      "tag_metadata_reference": [
+        {
+          "tag": "nlp",
+          "confidence": 0.94
+        },
+        {
+          "tag": "edge-case",
+          "confidence": 0.92
+        },
+        {
+          "tag": "tone-analysis",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "sarcasm detection",
+        "secondary NLP cues",
+        "ambiguous sentiment resolution"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "tone-analysis",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "nlp",
+      "edge-case",
+      "[INFERRED] tone-analysis"
+    ],
+    "tags_v2": [
+      "nlp"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nlp",
+        "canonical_tag": "nlp",
+        "matched_tag": "nlp",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.735053Z"
+      },
+      {
+        "original_tag": "edge-case",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:16.913000Z"
+      },
+      {
+        "original_tag": "[INFERRED] tone-analysis",
+        "canonical_tag": "[INFERRED] tone-analysis",
+        "matched_tag": "[INFERRED] tone-analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.124528Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Allow agent reclassification of sentiment/urgency with feedback into model learning",
+    "summary": "Permit agents to reclassify the sentiment or urgency of tickets, feeding their inputs back into the learning model. This supports continuous improvement and adapts the model to real-world edge cases.",
+    "tags": [
+      "feedback",
+      "continuous-learning",
+      "[INFERRED] retraining"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 26\u201328",
+    "reasoning": {
+      "source_summary_fragment": "allow agents to correct classifications, supporting continuous model learning",
+      "tag_metadata_reference": [
+        {
+          "tag": "feedback",
+          "confidence": 0.93
+        },
+        {
+          "tag": "continuous-learning",
+          "confidence": 0.92
+        },
+        {
+          "tag": "retraining",
+          "confidence": 0.84
+        }
+      ],
+      "mapped_concepts": [
+        "agent feedback loops",
+        "real-time model retraining",
+        "sentiment/urgency correction"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "retraining",
+      "confidence": 0.84,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "feedback",
+      "continuous-learning",
+      "[INFERRED] retraining"
+    ],
+    "tags_v2": [
+      "feedback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.129525Z"
+      },
+      {
+        "original_tag": "continuous-learning",
+        "canonical_tag": "continuous-learning",
+        "matched_tag": "continuous-learning",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.289299Z"
+      },
+      {
+        "original_tag": "[INFERRED] retraining",
+        "canonical_tag": "[INFERRED] retraining",
+        "matched_tag": "[INFERRED] retraining",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.504629Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Ensure ticket processing latency does not exceed 500ms per ticket",
+    "summary": "Guarantee the ticket processing system achieves a latency of no more than 500 milliseconds per ticket, maintaining high performance and meeting user expectations for real-time interaction.",
+    "tags": [
+      "performance",
+      "[INFERRED] latency"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "System must process each ticket in under 500ms",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.96
+        },
+        {
+          "tag": "latency",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "ticket throughput",
+        "real-time processing",
+        "latency control"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "latency",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "performance",
+      "[INFERRED] latency"
+    ],
+    "tags_v2": [
+      "performance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.617234Z"
+      },
+      {
+        "original_tag": "[INFERRED] latency",
+        "canonical_tag": "[INFERRED] latency",
+        "matched_tag": "[INFERRED] latency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:17.847287Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Secure support leadership buy-in and team training for rollout",
+    "summary": "Obtain buy-in from support leadership and conduct team training sessions to facilitate successful rollout and adoption of the AI-driven helpdesk routing system.",
+    "tags": [
+      "usability",
+      "change-management",
+      "[INFERRED] training"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 41",
+    "reasoning": {
+      "source_summary_fragment": "leadership buy-in and team training for rollout",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.85
+        },
+        {
+          "tag": "change-management",
+          "confidence": 0.87
+        },
+        {
+          "tag": "training",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "organizational enablement",
+        "onboarding training",
+        "deployment readiness"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "training",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "usability",
+      "change-management",
+      "[INFERRED] training"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.85,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.005570Z"
+      },
+      {
+        "original_tag": "change-management",
+        "canonical_tag": "change-management",
+        "matched_tag": "change-management",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.178350Z"
+      },
+      {
+        "original_tag": "[INFERRED] training",
+        "canonical_tag": "[INFERRED] training",
+        "matched_tag": "[INFERRED] training",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.346842Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Track resolution times and customer satisfaction by sentiment/urgency class",
+    "summary": "Monitor and report helpdesk resolution times and customer satisfaction metrics segmented by sentiment and urgency, supporting operational improvements and accountability.",
+    "tags": [
+      "reporting",
+      "analytics",
+      "[INFERRED] kpi"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 18\u201319",
+    "reasoning": {
+      "source_summary_fragment": "Provide reporting on resolution time, satisfaction by class",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.92
+        },
+        {
+          "tag": "kpi",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "segmented agent performance",
+        "resolution KPI tracking",
+        "customer satisfaction metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "kpi",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "reporting",
+      "analytics",
+      "[INFERRED] kpi"
+    ],
+    "tags_v2": [
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.360942Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.514121Z"
+      },
+      {
+        "original_tag": "[INFERRED] kpi",
+        "canonical_tag": "[INFERRED] kpi",
+        "matched_tag": "[INFERRED] kpi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:18.870645Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Surface sentiment/urgency ticket trends for product/ops review",
+    "summary": "Generate trend analysis reports that highlight sentiment and urgency patterns in helpdesk tickets, providing insights for product and operations teams to inform improvements.",
+    "tags": [
+      "analytics",
+      "trend",
+      "[INFERRED] reporting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 20\u201321",
+    "reasoning": {
+      "source_summary_fragment": "trend surfacing for ops review",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.92
+        },
+        {
+          "tag": "trend",
+          "confidence": 0.9
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "trend surfacing",
+        "ops review insights",
+        "sentiment trend reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reporting",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "analytics",
+      "trend",
+      "[INFERRED] reporting"
+    ],
+    "tags_v2": [
+      "trend"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.020688Z"
+      },
+      {
+        "original_tag": "trend",
+        "canonical_tag": "trend",
+        "matched_tag": "trend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.031270Z"
+      },
+      {
+        "original_tag": "[INFERRED] reporting",
+        "canonical_tag": "[INFERRED] reporting",
+        "matched_tag": "[INFERRED] reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.187142Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Log all classification decisions and routing actions for audit",
+    "summary": "Every decision made by the AI classifier, as well as subsequent routing actions, must be logged in an auditable format. This ensures traceability of automated processes for compliance, analysis, and incident investigation purposes. Audit logs should cover edge cases and serve for ongoing model monitoring.",
+    "tags": [
+      "compliance",
+      "audit",
+      "[INFERRED] traceability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 30\u201331",
+    "reasoning": {
+      "source_summary_fragment": "logging all decisions/actions, offering opt-out for users, and supplying documentation for agents and customers",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.93
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit log",
+        "decision trace",
+        "routing action transparency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "compliance",
+      "audit",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "compliance",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.201500Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.205015Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.429197Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-028-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Provide user opt-out from automated sentiment classification",
+    "summary": "Users must be able to opt out from automated sentiment analysis and classification when submitting helpdesk tickets. This supports privacy, consent, and regulatory requirements, ensuring users retain control over the use of AI-driven ticket handling on their cases.",
+    "tags": [
+      "compliance",
+      "consent",
+      "[INFERRED] privacy"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Helpdesk",
+      "AI Routing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "Ensure compliance by ... offering opt-out for users",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "consent",
+          "confidence": 0.92
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user preferences",
+        "privacy opt-out",
+        "user consent controls"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "privacy",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-028",
+    "tags_v1": [
+      "compliance",
+      "consent",
+      "[INFERRED] privacy"
+    ],
+    "tags_v2": [
+      "compliance",
+      "consent"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.446368Z"
+      },
+      {
+        "original_tag": "consent",
+        "canonical_tag": "consent",
+        "matched_tag": "consent",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.458256Z"
+      },
+      {
+        "original_tag": "[INFERRED] privacy",
+        "canonical_tag": "[INFERRED] privacy",
+        "matched_tag": "[INFERRED] privacy",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:19.637198Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

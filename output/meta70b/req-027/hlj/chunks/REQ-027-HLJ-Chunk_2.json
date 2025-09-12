@@ -1,0 +1,109 @@
+{
+  "CHUNK_ID": "REQ-027-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Allow instant preview of layouts in LTR and RTL modes (Ln 20-21)",
+    "Integrate with translation memory services (Ln 25-26)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-027-HLJ-Chunk_2-Item_1-v1.0",
+        "title": "Allow instant preview of layouts in LTR and RTL modes",
+        "summary": "The visual builder should provide an instant preview of layouts in both LTR and RTL modes to ensure accurate design and implementation.",
+        "tags": [
+          "rtl",
+          "preview",
+          "[INFERRED] layout"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Visual Builder",
+          "RTL Support"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 20-21",
+        "reasoning": {
+          "source_summary_fragment": "Implement comprehensive RTL layout and mirrored UI support",
+          "tag_metadata_reference": [
+            {
+              "tag": "rtl",
+              "confidence": 0.95
+            },
+            {
+              "tag": "preview",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "RTL layout",
+            "LTR mode"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "layout",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-027-HLJ-Chunk_2-Item_2-v1.0",
+        "title": "Integrate with translation memory services",
+        "summary": "Integrating the visual builder with translation memory services will enhance the efficiency of translating and localizing content.",
+        "tags": [
+          "rtl",
+          "translation",
+          "[INFERRED] localization"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Visual Builder",
+          "RTL Support"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.95,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 25-26",
+        "reasoning": {
+          "source_summary_fragment": "Implement comprehensive RTL layout and mirrored UI support",
+          "tag_metadata_reference": [
+            {
+              "tag": "rtl",
+              "confidence": 0.95
+            },
+            {
+              "tag": "translation",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "translation memory",
+            "RTL support"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "localization",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-027"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-027-HLJ-Chunk_3",
+    "DATA": []
+  },
+  "errors": []
+}

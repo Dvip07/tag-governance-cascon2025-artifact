@@ -1,0 +1,211 @@
+[
+  {
+    "seq_no": 21,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_3-Item_1-v1.0",
+    "title": "Ensure PCI DSS compliance for card freeze/unfreeze functionality",
+    "summary": "Implement and validate PCI DSS compliance for the card freeze/unfreeze feature, ensuring secure handling of cardholder data, proper encryption of card operations, and adherence to all applicable PCI DSS requirements for mobile applications.",
+    "tags": [
+      "compliance",
+      "security",
+      "pci"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "PCI DSS/SOC 2 compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "pci",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "PCI DSS compliance",
+        "cardholder data protection",
+        "mobile security"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.96,
+      "method": "direct_mapping_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 22,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_3-Item_2-v1.0",
+    "title": "Validate SOC 2 compliance requirements for new feature",
+    "summary": "Perform SOC 2 compliance validation for the card freeze/unfreeze feature, documenting security controls, data handling processes, and ensuring alignment with SOC 2 Type II audit requirements for financial services.",
+    "tags": [
+      "compliance",
+      "security",
+      "audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "PCI DSS/SOC 2 compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "SOC 2 compliance",
+        "security controls",
+        "audit requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.95,
+      "method": "direct_mapping_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 23,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_3-Item_3-v1.0",
+    "title": "Build customer support override tools for exceptional freeze/unfreeze cases",
+    "summary": "Develop administrative tools enabling customer support to manually override card freeze/unfreeze states in exceptional circumstances, with proper authentication, authorization controls, and comprehensive audit logging of all support actions.",
+    "tags": [
+      "support",
+      "tools",
+      "operations",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Operations",
+      "Support"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "customer support tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "support",
+          "confidence": 0.96
+        },
+        {
+          "tag": "tools",
+          "confidence": 0.94
+        },
+        {
+          "tag": "operations",
+          "confidence": 0.91
+        },
+        {
+          "tag": "security",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "support override",
+        "administrative tools",
+        "exceptional cases"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.89,
+      "method": "context_inference_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 24,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_3-Item_4-v1.0",
+    "title": "Conduct pilot testing with select user cohorts before general release",
+    "summary": "Execute controlled pilot testing of the card freeze/unfreeze feature with carefully selected user cohorts, monitoring performance metrics, gathering user feedback, and validating system stability before proceeding to general availability rollout.",
+    "tags": [
+      "testing",
+      "pilot",
+      "rollout"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing",
+      "Operations"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 44",
+    "reasoning": {
+      "source_summary_fragment": "phased rollout with pilot testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        },
+        {
+          "tag": "pilot",
+          "confidence": 0.97
+        },
+        {
+          "tag": "rollout",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "pilot testing",
+        "user cohorts",
+        "phased deployment"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.95,
+      "method": "direct_mapping_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  }
+]

@@ -1,0 +1,378 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement mandatory 2FA enforcement for Admin, Finance, and DevOps roles",
+    "summary": "Develop mandatory two-factor authentication enforcement system for high-privilege roles including Admin, Finance, and DevOps. System must prevent login without 2FA setup for these roles and enforce policy retroactively for existing users.",
+    "tags": [
+      "2fa",
+      "rbac",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Authentication"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "Admin, Finance, and DevOps roles require mandatory 2FA",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "rbac",
+          "confidence": 0.96
+        },
+        {
+          "tag": "security",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "mandatory enforcement",
+        "role-based access",
+        "authentication security"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Build optional 2FA enablement for User and Viewer roles",
+    "summary": "Create opt-in two-factor authentication capability for standard User and Viewer roles. System should encourage but not require 2FA setup, allowing users to enable at their discretion through account settings.",
+    "tags": [
+      "2fa",
+      "rbac",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Authentication"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "User and Viewer roles can opt-in",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "rbac",
+          "confidence": 0.95
+        },
+        {
+          "tag": "security",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "optional 2FA",
+        "user choice",
+        "role-based policy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Create dynamic 2FA policy update system triggered by role changes",
+    "summary": "Implement automated system that dynamically updates 2FA enforcement policies when users' roles change. System must immediately apply appropriate 2FA requirements based on new role assignments, including enforcing mandatory 2FA if promoted to Admin/Finance/DevOps.",
+    "tags": [
+      "2fa",
+      "rbac",
+      "automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Authentication"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "System must dynamically update policies on role changes",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.96
+        },
+        {
+          "tag": "rbac",
+          "confidence": 0.97
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "dynamic policy updates",
+        "role change triggers",
+        "automated enforcement"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement mobile app 2FA exemption for mandatory enforcement",
+    "summary": "Create temporary exemption mechanism for mobile app users from mandatory 2FA enforcement due to technical limitations. System must recognize mobile app authentication and bypass 2FA requirements while maintaining security audit trail.",
+    "tags": [
+      "2fa",
+      "mobile",
+      "exemption"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Authentication"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "Mobile app temporarily exempt due to technical limitations",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.95
+        },
+        {
+          "tag": "mobile",
+          "confidence": 0.98
+        },
+        {
+          "tag": "exemption",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "mobile exemption",
+        "technical constraints",
+        "temporary bypass"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Design 2FA setup notification and instruction system at login",
+    "summary": "Build clear UX notification system that prompts users to set up 2FA based on their role requirements. Include step-by-step instructions, support links, and graceful handling of setup flows to prevent user confusion or lockouts.",
+    "tags": [
+      "2fa",
+      "ux",
+      "notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "UX"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "provide clear UX notifications",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.93
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.96
+        },
+        {
+          "tag": "notification",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "user notifications",
+        "setup guidance",
+        "login flow"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Build policy exception logging and tracking system",
+    "summary": "Implement comprehensive logging system to track all 2FA policy exceptions and exemptions. System must record exemption reasons, timestamps, user details, and maintain audit trail for security compliance and monitoring purposes.",
+    "tags": [
+      "logging",
+      "security",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Monitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "track/report exemptions",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.94
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "exception tracking",
+        "audit logging",
+        "compliance monitoring"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create security compliance report showing exempted/non-compliant users",
+    "summary": "Develop reporting functionality that generates security compliance reports highlighting users who are exempted from 2FA or non-compliant with policy. Reports should include role breakdown, exemption reasons, and risk assessment metrics.",
+    "tags": [
+      "reporting",
+      "compliance",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Reporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "track/report exemptions",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "compliance reporting",
+        "exemption tracking",
+        "security metrics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Update help documentation and admin guides for 2FA policy changes",
+    "summary": "Revise all help documentation, admin guides, and support materials to reflect new 2FA enforcement policies. Include role-specific requirements, setup instructions, exemption procedures, and troubleshooting guides for common issues.",
+    "tags": [
+      "documentation",
+      "support",
+      "2fa"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "Support"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.93,
+    "priority": "low",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 42",
+    "reasoning": {
+      "source_summary_fragment": "Requires mobile team coordination for future 2FA support",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.98
+        },
+        {
+          "tag": "support",
+          "confidence": 0.95
+        },
+        {
+          "tag": "2fa",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "documentation updates",
+        "admin guidance",
+        "support materials"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-016"
+  }
+]

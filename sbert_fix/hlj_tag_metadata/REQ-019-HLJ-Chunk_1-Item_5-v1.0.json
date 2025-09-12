@@ -1,0 +1,150 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Develop visualizations including trend lines and cohort heatmaps",
+  "summary": "Create interactive visualizations that display user retention and activity trends, including trend lines and cohort heatmaps, to allow in-depth analysis of cohort behavior over time.",
+  "tags_v1": [
+    "visualization",
+    "heatmap",
+    "[INFERRED] trends"
+  ],
+  "tags_v2": [
+    "visualization"
+  ],
+  "tags_v3": [
+    "visualization",
+    "decay",
+    "edge_cases",
+    "metrics",
+    "cohort_analysis",
+    "trend",
+    "heatmap"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "visualization",
+      "aliases": [],
+      "cluster_id": "all_33",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7400356531143188,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "decay",
+      "aliases": [],
+      "cluster_id": "all_327",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7410706281661987,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "decay",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "edge_cases",
+      "aliases": [
+        "edge-case",
+        "edge case",
+        "edge cases"
+      ],
+      "cluster_id": "all_258",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7118614912033081,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "edge_cases",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7651546001434326,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "cohort_analysis",
+      "aliases": [
+        "cohort_membership"
+      ],
+      "cluster_id": "all_443",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7984966039657593,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohort_membership",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "trend",
+      "aliases": [
+        "trends"
+      ],
+      "cluster_id": "all_198",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7438967823982239,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "trends",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "heatmap",
+      "aliases": [],
+      "cluster_id": "all_215",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7696025967597961,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "heatmap",
+      "method": "dedup_canonical"
+    }
+  ]
+}

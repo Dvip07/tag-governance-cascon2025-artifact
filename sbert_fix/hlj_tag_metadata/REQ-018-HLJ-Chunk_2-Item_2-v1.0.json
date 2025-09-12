@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Create search/filter interface by tag, assignment, and status",
+  "summary": "Design and implement advanced search interface allowing users to filter emails by multiple criteria including tags, assignment status, team member, and handling status. Include saved search functionality and export capabilities for filtered results.",
+  "tags_v1": [
+    "search",
+    "filter",
+    "ui"
+  ],
+  "tags_v2": [
+    "search",
+    "filter"
+  ],
+  "tags_v3": [
+    "search",
+    "filter",
+    "ui"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "search",
+      "aliases": [],
+      "cluster_id": "all_226",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7667041420936584,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "search",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "all_70",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.771934449672699,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filter",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7357620596885681,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    }
+  ]
+}

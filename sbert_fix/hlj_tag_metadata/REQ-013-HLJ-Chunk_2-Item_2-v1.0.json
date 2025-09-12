@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Notify sellers upon payout rollback with rescheduling info",
+  "summary": "Send notifications to sellers when a payout is rolled back, clearly stating the rollback event and providing details about payout rescheduling or next steps. This ensures sellers are promptly informed of payout changes.",
+  "tags_v1": [
+    "notification",
+    "rollback"
+  ],
+  "tags_v2": [
+    "notification",
+    "rollback"
+  ],
+  "tags_v3": [
+    "rollback",
+    "notification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7722862958908081,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6755491495132446,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7208953499794006,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    }
+  ]
+}

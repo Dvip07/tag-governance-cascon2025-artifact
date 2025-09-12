@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Classify log entries as personal or operational data per GDPR v2",
+  "summary": "Develop mechanisms to automatically classify each audit log entry as either personal or operational data, enabling regulatory filtering and correct application of deletion or retention rules under GDPR v2.",
+  "tags_v1": [
+    "gdpr",
+    "classification"
+  ],
+  "tags_v2": [
+    "gdpr",
+    "classification"
+  ],
+  "tags_v3": [
+    "gdpr",
+    "privacy",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7183330059051514,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "classification",
+      "aliases": [],
+      "cluster_id": "all_169",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6779513359069824,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "classification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7383403182029724,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7205883264541626,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

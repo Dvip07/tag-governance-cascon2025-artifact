@@ -1,0 +1,439 @@
+[
+  {
+    "CHUNK_ID": "REQ-017-HLJ-Chunk_1",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Design upgrade logic for mid-cycle plan changes (Ln 10-15)",
+      "Implement billing history preservation for upgrades (Ln 16-20)",
+      "Handle edge cases for upgrades involving monthly and annual plans (Ln 21-25)",
+      "Develop notifications for users and admins on upgrades and unusual patterns (Ln 26-30)",
+      "Update support scripts and customer FAQs for common upgrade scenarios (Ln 31-35)",
+      "Ensure payment processor integrations support prorated upgrades (Ln 36-40)",
+      "Implement local taxes/VAT support in upgrade calculations (Ln 41-45)",
+      "Design invoice breakdown for upgrades, including refunds and new charges (Ln 46-50)",
+      "Flag downgrades during the same cycle for manual review (Ln 51-55)",
+      "Conduct testing for prorated upgrades and billing history preservation (Ln 56-60)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.92,
+      "DATA": [
+        {
+          "seq_no": 1,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design upgrade logic for mid-cycle plan changes",
+          "summary": "Develop logic to handle mid-cycle plan upgrades, ensuring accurate billing and minimal disruption to customers.",
+          "tags": [
+            "prorated upgrades",
+            "billing",
+            "[INFERRED] compliance"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Subscription Plans"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.85,
+          "priority": "high",
+          "priority_confidence": 0.91,
+          "line_source": "Ln 10-15",
+          "reasoning": {
+            "source_summary_fragment": "mid-cycle plan upgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "prorated upgrades",
+                "confidence": 0.93
+              }
+            ],
+            "mapped_concepts": [
+              "prorated upgrades",
+              "billing"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.94,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 2,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement billing history preservation for upgrades",
+          "summary": "Develop a system to preserve billing history when upgrades occur, ensuring accurate records and compliance.",
+          "tags": [
+            "billing history",
+            "upgrades",
+            "[INFERRED] compliance"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing and Payments"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.88,
+          "priority": "high",
+          "priority_confidence": 0.95,
+          "line_source": "Ln 16-20",
+          "reasoning": {
+            "source_summary_fragment": "billing history preservation",
+            "tag_metadata_reference": [
+              {
+                "tag": "billing history",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "billing history",
+              "upgrades"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.94,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 3,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Handle edge cases for upgrades involving monthly and annual plans",
+          "summary": "Develop logic to handle edge cases when upgrading between monthly and annual plans, ensuring accurate billing and minimal disruption.",
+          "tags": [
+            "edge cases",
+            "upgrades",
+            "[INFERRED] billing"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Subscription Plans"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.82,
+          "priority": "medium",
+          "priority_confidence": 0.89,
+          "line_source": "Ln 21-25",
+          "reasoning": {
+            "source_summary_fragment": "edge cases for upgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "edge cases",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "edge cases",
+              "upgrades"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "billing",
+            "confidence": 0.93,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 4,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Develop notifications for users and admins on upgrades and unusual patterns",
+          "summary": "Create a notification system to inform users and admins of upgrades and unusual patterns, ensuring timely awareness and action.",
+          "tags": [
+            "notifications",
+            "user experience",
+            "[INFERRED] alerts"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Notifications"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.79,
+          "priority": "low",
+          "priority_confidence": 0.85,
+          "line_source": "Ln 26-30",
+          "reasoning": {
+            "source_summary_fragment": "notifications for upgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "notifications",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "notifications",
+              "user experience"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "alerts",
+            "confidence": 0.92,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 5,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Update support scripts and customer FAQs for common upgrade scenarios",
+          "summary": "Update support scripts and customer FAQs to reflect common upgrade scenarios, ensuring accurate information and efficient support.",
+          "tags": [
+            "support",
+            "documentation",
+            "[INFERRED] knowledge base"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Support and Documentation"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.78,
+          "priority": "low",
+          "priority_confidence": 0.84,
+          "line_source": "Ln 31-35",
+          "reasoning": {
+            "source_summary_fragment": "support scripts and FAQs",
+            "tag_metadata_reference": [
+              {
+                "tag": "support",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "support",
+              "documentation"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "knowledge base",
+            "confidence": 0.91,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 6,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Ensure payment processor integrations support prorated upgrades",
+          "summary": "Verify that payment processor integrations support prorated upgrades, ensuring seamless and accurate billing.",
+          "tags": [
+            "payment processing",
+            "integrations",
+            "[INFERRED] prorated upgrades"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Payment Processing"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.81,
+          "priority": "high",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 36-40",
+          "reasoning": {
+            "source_summary_fragment": "payment processor integrations",
+            "tag_metadata_reference": [
+              {
+                "tag": "payment processing",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "payment processing",
+              "integrations"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "prorated upgrades",
+            "confidence": 0.94,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 7,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Implement local taxes/VAT support in upgrade calculations",
+          "summary": "Develop a system to handle local taxes and VAT in upgrade calculations, ensuring compliance and accurate billing.",
+          "tags": [
+            "taxation",
+            "compliance",
+            "[INFERRED] VAT"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Taxation and Compliance"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.86,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 41-45",
+          "reasoning": {
+            "source_summary_fragment": "local taxes and VAT",
+            "tag_metadata_reference": [
+              {
+                "tag": "taxation",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "taxation",
+              "compliance"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "VAT",
+            "confidence": 0.93,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 8,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Design invoice breakdown for upgrades, including refunds and new charges",
+          "summary": "Create an invoice breakdown system to handle upgrades, including refunds and new charges, ensuring accurate and transparent billing.",
+          "tags": [
+            "invoicing",
+            "billing",
+            "[INFERRED] refunds"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing and Invoicing"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.83,
+          "priority": "medium",
+          "priority_confidence": 0.88,
+          "line_source": "Ln 46-50",
+          "reasoning": {
+            "source_summary_fragment": "invoice breakdown for upgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "invoicing",
+                "confidence": 0.9
+              }
+            ],
+            "mapped_concepts": [
+              "invoicing",
+              "billing"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "refunds",
+            "confidence": 0.92,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 9,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Flag downgrades during the same cycle for manual review",
+          "summary": "Develop a system to flag downgrades during the same cycle for manual review, ensuring accurate handling and minimal disruption.",
+          "tags": [
+            "downgrades",
+            "manual review",
+            "[INFERRED] flags"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Subscription Plans"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.8,
+          "priority": "low",
+          "priority_confidence": 0.86,
+          "line_source": "Ln 51-55",
+          "reasoning": {
+            "source_summary_fragment": "flag downgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "downgrades",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "downgrades",
+              "manual review"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "flags",
+            "confidence": 0.91,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 10,
+          "schema_version": "2025-05-28",
+          "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Conduct testing for prorated upgrades and billing history preservation",
+          "summary": "Develop a testing system to verify prorated upgrades and billing history preservation, ensuring accurate and reliable billing.",
+          "tags": [
+            "testing",
+            "quality assurance",
+            "[INFERRED] prorated upgrades"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Testing and Quality Assurance"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.87,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 56-60",
+          "reasoning": {
+            "source_summary_fragment": "testing for prorated upgrades",
+            "tag_metadata_reference": [
+              {
+                "tag": "testing",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "testing",
+              "quality assurance"
+            ]
+          },
+          "low_confidence_reason": null,
+          "inference_notes": {
+            "tag_added": "prorated upgrades",
+            "confidence": 0.94,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": null,
+      "DATA": []
+    },
+    "errors": []
+  }
+]

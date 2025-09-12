@@ -1,0 +1,263 @@
+{
+  "CHUNK_ID": "REQ-026-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Visualize response rates, NPS scores, and trends by cohort (Ln 28-30)",
+    "Integrate NPS results with CRM and customer support workflows (Ln 31-32)",
+    "Ensure survey data compliance with privacy standards (Ln 33-34)",
+    "Allow users to opt out of feedback requests (Ln 35-36)",
+    "Coordinate survey prompts across multiple devices (Ln 37-38)",
+    "Prioritize conflicting triggers by recency or highest-value action (Ln 39-40)",
+    "Update product training and onboarding materials for NPS insights (Ln 41-42)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "title": "Visualize response rates, NPS scores, and trends by cohort",
+        "summary": "Create a dashboard to display response rates, NPS scores, and trends by cohort, enabling data-driven decisions.",
+        "tags": [
+          "nps",
+          "analytics",
+          "visualization"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Analytics"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 28-30",
+        "reasoning": {
+          "source_summary_fragment": "Visualize response rates and NPS scores",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "cohort_analysis",
+            "nps_trends"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "visualization",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        }
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_7-v1.0",
+        "title": "Integrate NPS results with CRM and customer support workflows",
+        "summary": "Integrate NPS results with CRM and customer support workflows to streamline customer feedback and issue resolution.",
+        "tags": [
+          "nps",
+          "crm_integration",
+          "customer_support"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Customer Support"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 31-32",
+        "reasoning": {
+          "source_summary_fragment": "Integrate NPS results with CRM",
+          "tag_metadata_reference": [
+            {
+              "tag": "crm_integration",
+              "confidence": 0.98
+            }
+          ],
+          "mapped_concepts": [
+            "customer_feedback",
+            "issue_resolution"
+          ]
+        }
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_8-v1.0",
+        "title": "Ensure survey data compliance with privacy standards",
+        "summary": "Implement measures to ensure survey data compliance with privacy standards, such as GDPR and CCPA.",
+        "tags": [
+          "nps",
+          "compliance",
+          "privacy"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Compliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.99,
+        "line_source": "Ln 33-34",
+        "reasoning": {
+          "source_summary_fragment": "Ensure survey data compliance",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.99
+            }
+          ],
+          "mapped_concepts": [
+            "privacy_standards",
+            "gdpr"
+          ]
+        }
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_9-v1.0",
+        "title": "Allow users to opt out of feedback requests",
+        "summary": "Provide users with the option to opt out of feedback requests, ensuring transparency and user control.",
+        "tags": [
+          "nps",
+          "user_experience",
+          "opt_out"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "User Experience"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "low",
+        "priority_confidence": 0.7,
+        "line_source": "Ln 35-36",
+        "reasoning": {
+          "source_summary_fragment": "Allow users to opt out",
+          "tag_metadata_reference": [
+            {
+              "tag": "user_experience",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "user_control",
+            "transparency"
+          ]
+        }
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_10-v1.0",
+        "title": "Coordinate survey prompts across multiple devices",
+        "summary": "Coordinate survey prompts across multiple devices to ensure a seamless user experience.",
+        "tags": [
+          "nps",
+          "edge_cases",
+          "device_coordination"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Edge Cases"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 37-38",
+        "reasoning": {
+          "source_summary_fragment": "Coordinate survey prompts",
+          "tag_metadata_reference": [
+            {
+              "tag": "edge_cases",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "device_coordination",
+            "user_experience"
+          ]
+        }
+      },
+      {
+        "seq_no": 11,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_11-v1.0",
+        "title": "Prioritize conflicting triggers by recency or highest-value action",
+        "summary": "Prioritize conflicting triggers by recency or highest-value action to optimize NPS survey delivery.",
+        "tags": [
+          "nps",
+          "edge_cases",
+          "trigger_prioritization"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Edge Cases"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 39-40",
+        "reasoning": {
+          "source_summary_fragment": "Prioritize conflicting triggers",
+          "tag_metadata_reference": [
+            {
+              "tag": "edge_cases",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "trigger_prioritization",
+            "nps_survey_delivery"
+          ]
+        }
+      },
+      {
+        "seq_no": 12,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_2-Item_12-v1.0",
+        "title": "Update product training and onboarding materials for NPS insights",
+        "summary": "Update product training and onboarding materials to incorporate NPS insights and improve user adoption.",
+        "tags": [
+          "nps",
+          "documentation",
+          "onboarding"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Documentation"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "low",
+        "priority_confidence": 0.7,
+        "line_source": "Ln 41-42",
+        "reasoning": {
+          "source_summary_fragment": "Update product training and onboarding",
+          "tag_metadata_reference": [
+            {
+              "tag": "documentation",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "user_adoption",
+            "nps_insights"
+          ]
+        }
+      }
+    ]
+  },
+  "errors": []
+}

@@ -1,0 +1,480 @@
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320411Z'
+  original_tags:
+  - logging
+  - security
+  - '[INFERRED] traceability'
+  validated_tags:
+  - logs
+  - security
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  - '[INFERRED] traceability'
+  tags_kept:
+  - security
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-06-01T00:00:34.243098Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.324909Z'
+  - original_tag: '[INFERRED] traceability'
+    canonical_tag: '[INFERRED] traceability'
+    matched_tag: '[INFERRED] traceability'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.495673Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320422Z'
+  original_tags:
+  - logging
+  - compliance
+  - '[INFERRED] session-tracking'
+  validated_tags:
+  - logs
+  - compliance
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  - '[INFERRED] session-tracking'
+  tags_kept:
+  - compliance
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-06-01T00:00:34.511065Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.522710Z'
+  - original_tag: '[INFERRED] session-tracking'
+    canonical_tag: '[INFERRED] session-tracking'
+    matched_tag: '[INFERRED] session-tracking'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.704174Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320425Z'
+  original_tags:
+  - compliance
+  - usability
+  - '[INFERRED] query-interface'
+  validated_tags:
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - usability
+  - '[INFERRED] query-interface'
+  tags_kept:
+  - compliance
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.718257Z'
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:34.869752Z'
+  - original_tag: '[INFERRED] query-interface'
+    canonical_tag: '[INFERRED] query-interface'
+    matched_tag: '[INFERRED] query-interface'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.035962Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320426Z'
+  original_tags:
+  - usability
+  - compliance
+  - '[INFERRED] advanced-filtering'
+  validated_tags:
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - usability
+  - '[INFERRED] advanced-filtering'
+  tags_kept:
+  - compliance
+  validation_details:
+  - original_tag: usability
+    canonical_tag: usability
+    matched_tag: usability
+    tag_origin_cluster_id: usability
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.177622Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.189048Z'
+  - original_tag: '[INFERRED] advanced-filtering'
+    canonical_tag: '[INFERRED] advanced-filtering'
+    matched_tag: '[INFERRED] advanced-filtering'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.331742Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320428Z'
+  original_tags:
+  - security
+  - compliance
+  - '[INFERRED] role-consistency'
+  validated_tags:
+  - security
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] role-consistency'
+  tags_kept:
+  - security
+  - compliance
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.414297Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.487064Z'
+  - original_tag: '[INFERRED] role-consistency'
+    canonical_tag: '[INFERRED] role-consistency'
+    matched_tag: '[INFERRED] role-consistency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.648981Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320430Z'
+  original_tags:
+  - security
+  - compliance
+  - '[INFERRED] anomaly-detection'
+  validated_tags:
+  - security
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] anomaly-detection'
+  tags_kept:
+  - security
+  - compliance
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.661177Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.671487Z'
+  - original_tag: '[INFERRED] anomaly-detection'
+    canonical_tag: '[INFERRED] anomaly-detection'
+    matched_tag: '[INFERRED] anomaly-detection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.821700Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320432Z'
+  original_tags:
+  - compliance
+  - export
+  - '[INFERRED] data-integrity'
+  validated_tags:
+  - compliance
+  - export
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] data-integrity'
+  tags_kept:
+  - compliance
+  - export
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.830729Z'
+  - original_tag: export
+    canonical_tag: export
+    matched_tag: export
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.835378Z'
+  - original_tag: '[INFERRED] data-integrity'
+    canonical_tag: '[INFERRED] data-integrity'
+    matched_tag: '[INFERRED] data-integrity'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:35.987315Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320433Z'
+  original_tags:
+  - reporting
+  - compliance
+  - '[INFERRED] periodic-summaries'
+  validated_tags:
+  - reporting
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] periodic-summaries'
+  tags_kept:
+  - reporting
+  - compliance
+  validation_details:
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.86
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.006444Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.016168Z'
+  - original_tag: '[INFERRED] periodic-summaries'
+    canonical_tag: '[INFERRED] periodic-summaries'
+    matched_tag: '[INFERRED] periodic-summaries'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.169957Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320435Z'
+  original_tags:
+  - compliance
+  - security
+  - '[INFERRED] data-retention'
+  validated_tags:
+  - compliance
+  - security
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] data-retention'
+  tags_kept:
+  - compliance
+  - security
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.252328Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.325753Z'
+  - original_tag: '[INFERRED] data-retention'
+    canonical_tag: '[INFERRED] data-retention'
+    matched_tag: '[INFERRED] data-retention'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.479583Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-029
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.320437Z'
+  original_tags:
+  - compliance
+  - security
+  - '[INFERRED] regulatory'
+  validated_tags:
+  - compliance
+  - security
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] regulatory'
+  tags_kept:
+  - compliance
+  - security
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.493697Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.498045Z'
+  - original_tag: '[INFERRED] regulatory'
+    canonical_tag: '[INFERRED] regulatory'
+    matched_tag: '[INFERRED] regulatory'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:36.672392Z'

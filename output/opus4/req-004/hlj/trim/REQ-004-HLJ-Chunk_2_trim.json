@@ -1,0 +1,262 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Build compliance team APIs for deletion operation review",
+    "summary": "Develop RESTful APIs enabling compliance teams to review, approve, and track GDPR RtE deletion requests with audit trails and role-based access control.",
+    "tags": [
+      "api",
+      "compliance",
+      "gdpr"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "API"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "implementing automated RtE workflows with full deletion and partial redaction modes",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "gdpr",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "RtE workflows",
+        "deletion operation review",
+        "compliance APIs"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement RtE compliance dashboard and reporting system",
+    "summary": "Create real-time dashboard for monitoring GDPR RtE request processing, compliance metrics, and automated reporting capabilities for regulatory audits.",
+    "tags": [
+      "dashboard",
+      "reporting",
+      "gdpr"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Monitoring",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 50",
+    "reasoning": {
+      "source_summary_fragment": "building compliance dashboards and reporting",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.94
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "gdpr",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "compliance dashboards",
+        "RtE reporting",
+        "monitoring system"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Create secure meta-log storage with access controls",
+    "summary": "Implement tamper-evident meta-logging infrastructure with cryptographic integrity checks and granular access controls for audit trail protection.",
+    "tags": [
+      "security",
+      "storage",
+      "audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security",
+      "AuditLogging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "adding cryptographic integrity checks and tamper-evident meta-logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "storage",
+          "confidence": 0.89
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "meta-logging",
+        "cryptographic integrity",
+        "access controls"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Develop integration tests for ghost data persistence validation",
+    "summary": "Build comprehensive test suite to validate complete data erasure across all systems, ensuring no residual 'ghost' data persists after GDPR deletion requests.",
+    "tags": [
+      "testing",
+      "validation",
+      "gdpr"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing",
+      "DataPrivacy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "ensuring no performance degradation during peak loads",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.94
+        },
+        {
+          "tag": "validation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "gdpr",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "integration tests",
+        "data persistence",
+        "ghost data validation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Create edge case simulation and fail-loud alert system",
+    "summary": "Implement comprehensive edge case testing framework with automatic alert system for multi-user logs, legal retention conflicts, and other complex GDPR scenarios.",
+    "tags": [
+      "testing",
+      "alerts",
+      "monitoring",
+      "[INFERRED] edge-cases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing",
+      "Monitoring"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 58",
+    "reasoning": {
+      "source_summary_fragment": "handling edge cases like multi-user logs and legal retention conflicts",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.92
+        },
+        {
+          "tag": "alerts",
+          "confidence": 0.91
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.88
+        },
+        {
+          "tag": "edge-cases",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge case simulation",
+        "fail-loud alerts",
+        "conflict handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "edge-cases",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  }
+]

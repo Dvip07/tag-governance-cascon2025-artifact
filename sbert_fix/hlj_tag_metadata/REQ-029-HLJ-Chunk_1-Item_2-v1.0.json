@@ -1,0 +1,137 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Store a record of role changes within active user sessions",
+  "summary": "Track and persist all user role changes occurring during active sessions to ensure the audit log reflects every context shift. This ensures session logs are historically accurate for compliance and forensic review.",
+  "tags_v1": [
+    "logging",
+    "compliance",
+    "[INFERRED] session-tracking"
+  ],
+  "tags_v2": [
+    "logs",
+    "compliance"
+  ],
+  "tags_v3": [
+    "logging",
+    "compliance",
+    "query",
+    "session-tracking",
+    "access-control",
+    "rbac"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.739384114742279,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6943156719207764,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "query",
+      "aliases": [],
+      "cluster_id": "all_274",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6843914985656738,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "query",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "session-tracking",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7862947583198547,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "session-tracking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access-control",
+      "aliases": [
+        "access control"
+      ],
+      "cluster_id": "all_174",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6948193311691284,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access control",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rbac",
+      "aliases": [],
+      "cluster_id": "all_21",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6842283010482788,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rbac",
+      "method": "dedup_canonical"
+    }
+  ]
+}

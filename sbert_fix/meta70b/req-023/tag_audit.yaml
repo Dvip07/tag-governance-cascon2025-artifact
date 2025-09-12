@@ -1,0 +1,517 @@
+- hlj_id: REQ-023-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171220Z'
+  original_tags:
+  - feature flags
+  - scalability
+  validated_tags:
+  - feature flags
+  - scalable
+  tags_added:
+  - scalable
+  tags_dropped:
+  - scalability
+  tags_kept:
+  - feature flags
+  validation_details:
+  - original_tag: feature flags
+    canonical_tag: feature flags
+    matched_tag: feature flags
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.243610Z'
+  - original_tag: scalability
+    canonical_tag: scalable
+    matched_tag: scalable
+    tag_origin_cluster_id: scalable
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:57:37.246531Z'
+- hlj_id: REQ-023-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171230Z'
+  original_tags:
+  - geo-targeting
+  - geo-ip
+  validated_tags:
+  - geo-targeting
+  - geo-ip
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - geo-targeting
+  - geo-ip
+  validation_details:
+  - original_tag: geo-targeting
+    canonical_tag: geo-targeting
+    matched_tag: geo-targeting
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.260793Z'
+  - original_tag: geo-ip
+    canonical_tag: geo-ip
+    matched_tag: geo-ip
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.263943Z'
+- hlj_id: REQ-023-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171232Z'
+  original_tags:
+  - edge cases
+  - geo-ip
+  validated_tags:
+  - edge case
+  - geo-ip
+  tags_added:
+  - edge case
+  tags_dropped:
+  - edge cases
+  tags_kept:
+  - geo-ip
+  validation_details:
+  - original_tag: edge cases
+    canonical_tag: edge case
+    matched_tag: edge case
+    tag_origin_cluster_id: edge case
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:37.277623Z'
+  - original_tag: geo-ip
+    canonical_tag: geo-ip
+    matched_tag: geo-ip
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.361891Z'
+- hlj_id: REQ-023-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171234Z'
+  original_tags:
+  - feature flags
+  - rollouts
+  validated_tags:
+  - feature flags
+  - rollout
+  tags_added:
+  - rollout
+  tags_dropped:
+  - rollouts
+  tags_kept:
+  - feature flags
+  validation_details:
+  - original_tag: feature flags
+    canonical_tag: feature flags
+    matched_tag: feature flags
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.445163Z'
+  - original_tag: rollouts
+    canonical_tag: rollout
+    matched_tag: rollout
+    tag_origin_cluster_id: rollout
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:37.528749Z'
+- hlj_id: REQ-023-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171235Z'
+  original_tags:
+  - feature flags
+  - admin portal
+  validated_tags:
+  - feature flags
+  tags_added: []
+  tags_dropped:
+  - admin portal
+  tags_kept:
+  - feature flags
+  validation_details:
+  - original_tag: feature flags
+    canonical_tag: feature flags
+    matched_tag: feature flags
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.611025Z'
+  - original_tag: admin portal
+    canonical_tag: admin portal
+    matched_tag: admin portal
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.755721Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_6-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171237Z'
+  original_tags:
+  - real-time analytics
+  - dashboards
+  - '[INFERRED] metrics'
+  validated_tags:
+  - real-time analytics
+  tags_added: []
+  tags_dropped:
+  - dashboards
+  - '[INFERRED] metrics'
+  tags_kept:
+  - real-time analytics
+  validation_details:
+  - original_tag: real-time analytics
+    canonical_tag: real-time analytics
+    matched_tag: real-time analytics
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:37.765361Z'
+  - original_tag: dashboards
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:37.920147Z'
+  - original_tag: '[INFERRED] metrics'
+    canonical_tag: '[INFERRED] metrics'
+    matched_tag: '[INFERRED] metrics'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.074534Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_7-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171239Z'
+  original_tags:
+  - real-time analytics
+  - alerts
+  - '[INFERRED] monitoring'
+  validated_tags:
+  - real-time analytics
+  tags_added: []
+  tags_dropped:
+  - alerts
+  - '[INFERRED] monitoring'
+  tags_kept:
+  - real-time analytics
+  validation_details:
+  - original_tag: real-time analytics
+    canonical_tag: real-time analytics
+    matched_tag: real-time analytics
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.087006Z'
+  - original_tag: alerts
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:38.234974Z'
+  - original_tag: '[INFERRED] monitoring'
+    canonical_tag: '[INFERRED] monitoring'
+    matched_tag: '[INFERRED] monitoring'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.405724Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_8-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171240Z'
+  original_tags:
+  - user experience
+  - rollouts
+  - '[INFERRED] transparency'
+  validated_tags:
+  - user experience
+  - rollout
+  tags_added:
+  - rollout
+  tags_dropped:
+  - rollouts
+  - '[INFERRED] transparency'
+  tags_kept:
+  - user experience
+  validation_details:
+  - original_tag: user experience
+    canonical_tag: user experience
+    matched_tag: user experience
+    tag_origin_cluster_id: user experience
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.491105Z'
+  - original_tag: rollouts
+    canonical_tag: rollout
+    matched_tag: rollout
+    tag_origin_cluster_id: rollout
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:38.574565Z'
+  - original_tag: '[INFERRED] transparency'
+    canonical_tag: '[INFERRED] transparency'
+    matched_tag: '[INFERRED] transparency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.738273Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_9-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171242Z'
+  original_tags:
+  - compliance
+  - privacy laws
+  - '[INFERRED] data protection'
+  validated_tags:
+  - compliance
+  - privacy laws
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] data protection'
+  tags_kept:
+  - compliance
+  - privacy laws
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.742336Z'
+  - original_tag: privacy laws
+    canonical_tag: privacy laws
+    matched_tag: privacy laws
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.745746Z'
+  - original_tag: '[INFERRED] data protection'
+    canonical_tag: '[INFERRED] data protection'
+    matched_tag: '[INFERRED] data protection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.892752Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_10-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171244Z'
+  original_tags:
+  - documentation
+  - onboarding
+  - '[INFERRED] training'
+  validated_tags:
+  - documentation
+  - onboarding
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] training'
+  tags_kept:
+  - documentation
+  - onboarding
+  validation_details:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.906541Z'
+  - original_tag: onboarding
+    canonical_tag: onboarding
+    matched_tag: onboarding
+    tag_origin_cluster_id: onboarding
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:38.909340Z'
+  - original_tag: '[INFERRED] training'
+    canonical_tag: '[INFERRED] training'
+    matched_tag: '[INFERRED] training'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.053142Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_11-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171245Z'
+  original_tags:
+  - documentation
+  - change log
+  - '[INFERRED] version control'
+  validated_tags:
+  - documentation
+  - change log
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] version control'
+  tags_kept:
+  - documentation
+  - change log
+  validation_details:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.066823Z'
+  - original_tag: change log
+    canonical_tag: change log
+    matched_tag: change log
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7072391510009766
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.191173Z'
+  - original_tag: '[INFERRED] version control'
+    canonical_tag: '[INFERRED] version control'
+    matched_tag: '[INFERRED] version control'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.338808Z'
+- hlj_id: REQ-023-HLJ-Chunk_2-Item_12-v1.0
+  requirement: req-023
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.171247Z'
+  original_tags:
+  - infrastructure
+  - location awareness
+  - '[INFERRED] geolocation'
+  validated_tags:
+  - infrastructure
+  - location awareness
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] geolocation'
+  tags_kept:
+  - infrastructure
+  - location awareness
+  validation_details:
+  - original_tag: infrastructure
+    canonical_tag: infrastructure
+    matched_tag: infrastructure
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.353478Z'
+  - original_tag: location awareness
+    canonical_tag: location awareness
+    matched_tag: location awareness
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.356294Z'
+  - original_tag: '[INFERRED] geolocation'
+    canonical_tag: '[INFERRED] geolocation'
+    matched_tag: '[INFERRED] geolocation'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:39.501716Z'

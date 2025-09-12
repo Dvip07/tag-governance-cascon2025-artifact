@@ -1,0 +1,449 @@
+{
+  "estimated_hlj_count": 25,
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_1",
+      "focus": "UI/UX and Core Scheduling Features",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design cross-border payment scheduling UI component",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "UserInterface"
+          ],
+          "tags": [
+            "ui",
+            "scheduling",
+            "payments"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement FX rate preview display for scheduled payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "UserInterface"
+          ],
+          "tags": [
+            "fx-rates",
+            "ui",
+            "preview"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Create FX rate lock option with 24-hour window",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "RateManagement"
+          ],
+          "tags": [
+            "fx-rates",
+            "rate-lock",
+            "timing"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Build rate expiry countdown timer component",
+          "domain": "FinTech",
+          "subdomain": [
+            "UserInterface",
+            "ForeignExchange"
+          ],
+          "tags": [
+            "ui",
+            "timer",
+            "fx-rates"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Design rate lock conditions display interface",
+          "domain": "FinTech",
+          "subdomain": [
+            "UserInterface",
+            "ForeignExchange"
+          ],
+          "tags": [
+            "ui",
+            "fx-rates",
+            "compliance"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement payment execution date selector",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "UserInterface"
+          ],
+          "tags": [
+            "ui",
+            "scheduling",
+            "payments"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create scheduled payment cancellation workflow",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "payments",
+            "cancellation",
+            "workflow"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Build refund logic for cancelled scheduled payments",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "payments",
+            "refunds",
+            "cancellation"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Design beta rollout feature toggle system",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "SystemConfiguration"
+          ],
+          "tags": [
+            "beta",
+            "feature-toggle",
+            "deployment"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 61"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Create beta user feedback collection framework",
+          "domain": "FinTech",
+          "subdomain": [
+            "CrossBorderPayments",
+            "UserResearch"
+          ],
+          "tags": [
+            "beta",
+            "feedback",
+            "analytics"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 68"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_2",
+      "focus": "FX Integration and Rate Management",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Integrate real-time FX rate provider APIs",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "APIIntegration"
+          ],
+          "tags": [
+            "fx-rates",
+            "api",
+            "integration"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement FX rate lock commitment management system",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "RateManagement"
+          ],
+          "tags": [
+            "fx-rates",
+            "rate-lock",
+            "database"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Build automatic rate reversion on funding failure",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "fx-rates",
+            "automation",
+            "payments"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 27"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Create rate lock metadata storage schema",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "DataManagement"
+          ],
+          "tags": [
+            "database",
+            "fx-rates",
+            "metadata"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Implement rate lock expiry timestamp tracking",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "RateManagement"
+          ],
+          "tags": [
+            "fx-rates",
+            "timing",
+            "database"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Build FX provider unavailability handling logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "ErrorHandling"
+          ],
+          "tags": [
+            "fx-rates",
+            "error-handling",
+            "availability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 53"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Create rate validation at payment execution time",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "fx-rates",
+            "validation",
+            "payments"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Implement new rate confirmation workflow for expired locks",
+          "domain": "FinTech",
+          "subdomain": [
+            "ForeignExchange",
+            "UserInterface"
+          ],
+          "tags": [
+            "fx-rates",
+            "workflow",
+            "ui"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_3",
+      "focus": "Compliance, Notifications, and Monitoring",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_1-v1.0",
+          "title": "Build rate lock abuse prevention controls",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "RiskManagement"
+          ],
+          "tags": [
+            "compliance",
+            "risk",
+            "fx-rates"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 41"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_2-v1.0",
+          "title": "Implement cross-border payment regulatory compliance checks",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "CrossBorderPayments"
+          ],
+          "tags": [
+            "compliance",
+            "regulation",
+            "payments"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 43"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_3-v1.0",
+          "title": "Create large-value transfer documentation system",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Documentation"
+          ],
+          "tags": [
+            "compliance",
+            "documentation",
+            "payments"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 43"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_4-v1.0",
+          "title": "Build comprehensive audit logging for all payment events",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "AuditLogging"
+          ],
+          "tags": [
+            "audit",
+            "logging",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 45"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_5-v1.0",
+          "title": "Implement multi-channel notification system (email/SMS/in-app)",
+          "domain": "FinTech",
+          "subdomain": [
+            "Notifications",
+            "CrossBorderPayments"
+          ],
+          "tags": [
+            "notifications",
+            "messaging",
+            "payments"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 49"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_6-v1.0",
+          "title": "Create finance team monitoring dashboard",
+          "domain": "FinTech",
+          "subdomain": [
+            "Reporting",
+            "Monitoring"
+          ],
+          "tags": [
+            "dashboard",
+            "monitoring",
+            "reporting"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 51"
+        },
+        {
+          "id": "REQ-009-HLJ-Chunk_3-Item_7-v1.0",
+          "title": "Build orphaned payment auto-cancellation logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentProcessing",
+            "ErrorHandling"
+          ],
+          "tags": [
+            "payments",
+            "automation",
+            "error-handling"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 55"
+        }
+      ]
+    }
+  ]
+}

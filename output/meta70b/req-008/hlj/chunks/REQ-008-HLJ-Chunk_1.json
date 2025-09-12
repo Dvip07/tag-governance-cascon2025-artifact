@@ -1,0 +1,236 @@
+{
+  "CHUNK_ID": "REQ-008-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Build API integrations with major gig economy platforms (Ln 10-13)",
+    "Define dynamic eligibility rules for gig income (Ln 20-23)",
+    "Implement KYC and AML screening for applicants (Ln 30-33)",
+    "Guide users through data connection process (Ln 40-43)",
+    "Display summary of imported earnings and allow user disputes (Ln 50-53)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-28",
+        "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Build API integrations with major gig economy platforms",
+        "summary": "Design and integrate APIs with prominent gig economy platforms to aggregate income data, streamlining loan applications for gig workers.",
+        "tags": [
+          "api integration",
+          "gig workers",
+          "[INFERRED] platform connectivity"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Loan Origination",
+          "Gig Economy"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 10-13",
+        "reasoning": {
+          "source_summary_fragment": "integrating with major platforms",
+          "tag_metadata_reference": [
+            {
+              "tag": "api integration",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "API",
+            "gig economy"
+          ]
+        },
+        "low_confidence_reason": "Initial confidence assignment",
+        "inference_notes": {
+          "tag_added": "platform connectivity",
+          "confidence": 0.94,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-008"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-28",
+        "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Define dynamic eligibility rules for gig income",
+        "summary": "Develop and implement rules to assess gig income eligibility, considering variability in earnings and employment statuses.",
+        "tags": [
+          "eligibility rules",
+          "gig income",
+          "[INFERRED] income verification"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Loan Origination",
+          "Gig Economy"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 20-23",
+        "reasoning": {
+          "source_summary_fragment": "dynamic eligibility rules",
+          "tag_metadata_reference": [
+            {
+              "tag": "eligibility rules",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "eligibility",
+            "gig income"
+          ]
+        },
+        "low_confidence_reason": "Initial confidence assignment",
+        "inference_notes": {
+          "tag_added": "income verification",
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-008"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Implement KYC and AML screening for applicants",
+        "summary": "Integrate Know Your Customer (KYC) and Anti-Money Laundering (AML) checks into the loan application process to ensure compliance and security.",
+        "tags": [
+          "kyc",
+          "aml",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Loan Origination",
+          "Gig Economy"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.82,
+        "priority": "high",
+        "priority_confidence": 0.96,
+        "line_source": "Ln 30-33",
+        "reasoning": {
+          "source_summary_fragment": "KYC and AML screening",
+          "tag_metadata_reference": [
+            {
+              "tag": "kyc",
+              "confidence": 0.91
+            },
+            {
+              "tag": "aml",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "KYC",
+            "AML",
+            "compliance"
+          ]
+        },
+        "low_confidence_reason": "Initial confidence assignment",
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-008"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Guide users through data connection process",
+        "summary": "Design an intuitive process for users to connect their data sources, ensuring a seamless experience and reducing friction in the loan application process.",
+        "tags": [
+          "user experience",
+          "data connection"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Loan Origination",
+          "Gig Economy"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "medium",
+        "priority_confidence": 0.85,
+        "line_source": "Ln 40-43",
+        "reasoning": {
+          "source_summary_fragment": "guide users through data connection",
+          "tag_metadata_reference": [
+            {
+              "tag": "user experience",
+              "confidence": 0.89
+            }
+          ],
+          "mapped_concepts": [
+            "user experience",
+            "data connection"
+          ]
+        },
+        "low_confidence_reason": "Initial confidence assignment",
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-008"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-28",
+        "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Display summary of imported earnings and allow user disputes",
+        "summary": "Provide a clear summary of imported earnings data and implement a process for users to dispute any inaccuracies, ensuring transparency and user trust.",
+        "tags": [
+          "user experience",
+          "earnings summary",
+          "[INFERRED] data accuracy"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Loan Origination",
+          "Gig Economy"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.78,
+        "priority": "medium",
+        "priority_confidence": 0.83,
+        "line_source": "Ln 50-53",
+        "reasoning": {
+          "source_summary_fragment": "display summary of imported earnings",
+          "tag_metadata_reference": [
+            {
+              "tag": "user experience",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "user experience",
+            "earnings summary"
+          ]
+        },
+        "low_confidence_reason": "Initial confidence assignment",
+        "inference_notes": {
+          "tag_added": "data accuracy",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-008"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": null
+  },
+  "errors": []
+}

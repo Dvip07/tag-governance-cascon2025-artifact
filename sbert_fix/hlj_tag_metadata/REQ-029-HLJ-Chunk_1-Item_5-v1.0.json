@@ -1,0 +1,94 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Maintain clear timeline and consistency of user roles for all actions within a session",
+  "summary": "Ensure the audit trail preserves a consistent and clear timeline of user roles linked to each action during a session. This underpins accurate audits and supports the detection of irregular role-based privilege use.",
+  "tags_v1": [
+    "security",
+    "compliance",
+    "[INFERRED] role-consistency"
+  ],
+  "tags_v2": [
+    "security",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "role-consistency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.6920108795166016,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7053910493850708,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "anomaly",
+      "aliases": [],
+      "cluster_id": "all_130",
+      "domains": [
+        "Compliance and Security",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6748956441879272,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "anomaly",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "role-consistency",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7768291234970093,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "role-consistency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

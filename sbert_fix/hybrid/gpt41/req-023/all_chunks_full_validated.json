@@ -1,0 +1,2061 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Build scalable feature flag platform supporting geo-segmentation",
+    "summary": "Design and build a robust, scalable feature flag system capable of handling multiple geo-segments at scale. The platform must support country, region, and city-level segmentation to enable targeted feature deployment while maintaining performance under high load.",
+    "tags": [
+      "feature-flags",
+      "scalable",
+      "[INFERRED] geo-segmentation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "GeoTargeting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.98,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 09–11",
+    "reasoning": {
+      "source_summary_fragment": "scalable feature flag system enabling geo-targeted, progressive rollout of platform features, using real-time Geo-IP segmentation at country, region, and city level",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature-flags",
+          "confidence": 0.99
+        },
+        {
+          "tag": "scalable",
+          "confidence": 0.97
+        },
+        {
+          "tag": "geo-segmentation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "high-availability",
+        "large-scale segmentation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "geo-segmentation",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "feature-flags",
+      "scalable",
+      "[INFERRED] geo-segmentation"
+    ],
+    "tags_v2": [
+      "scalable"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "feature-flags",
+        "canonical_tag": "feature-flags",
+        "matched_tag": "feature-flags",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.99,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.818758Z"
+      },
+      {
+        "original_tag": "scalable",
+        "canonical_tag": "scalable",
+        "matched_tag": "scalable",
+        "tag_origin_cluster_id": "scalable",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:44.822629Z"
+      },
+      {
+        "original_tag": "[INFERRED] geo-segmentation",
+        "canonical_tag": "[INFERRED] geo-segmentation",
+        "matched_tag": "[INFERRED] geo-segmentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.005002Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "feature-flags",
+      "scalable",
+      "segmentation",
+      "geo-segmentation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature-flags",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8049007654190063,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "scalable",
+        "original_tag": "scalable",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7865890264511108,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "segmentation",
+        "original_tag": "segmentation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7571690082550049,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-segmentation",
+        "original_tag": "geo-segmentation",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7874163389205933,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Enable percentage-based feature rollouts to geo-segments",
+    "summary": "Implement mechanisms to allow administrators to roll out features to a specified percentage of users within defined geo-segments. Supports gradual and controlled feature adoption while reducing risk of issues during deployment.",
+    "tags": [
+      "feature-flags",
+      "deployment",
+      "[INFERRED] progressive-rollout"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "GeoTargeting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 12–12",
+    "reasoning": {
+      "source_summary_fragment": "Admins must control flags from a portal, enabling percentage-based and dynamic rollouts, with immediate global effect",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature-flags",
+          "confidence": 0.97
+        },
+        {
+          "tag": "deployment",
+          "confidence": 0.93
+        },
+        {
+          "tag": "progressive-rollout",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "gradual rollout",
+        "geo-segment targeting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "progressive-rollout",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "feature-flags",
+      "deployment",
+      "[INFERRED] progressive-rollout"
+    ],
+    "tags_v2": [
+      "deployment"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "feature-flags",
+        "canonical_tag": "feature-flags",
+        "matched_tag": "feature-flags",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.191532Z"
+      },
+      {
+        "original_tag": "deployment",
+        "canonical_tag": "deployment",
+        "matched_tag": "deployment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.203273Z"
+      },
+      {
+        "original_tag": "[INFERRED] progressive-rollout",
+        "canonical_tag": "[INFERRED] progressive-rollout",
+        "matched_tag": "[INFERRED] progressive-rollout",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.388830Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "feature-flags",
+      "geo-ip",
+      "deployment",
+      "rollback",
+      "geo-targeting",
+      "progressive-rollout"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature-flags",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7879266738891602,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7599501013755798,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "deployment",
+        "original_tag": "deployment",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7689542770385742,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7602578401565552,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-targeting",
+        "original_tag": "geo-targeting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7948911190032959,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "progressive-rollout",
+        "original_tag": "progressive-rollout",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8140031695365906,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop admin portal for dynamic feature flag adjustment with instant effect",
+    "summary": "Create an intuitive admin portal that enables authorized users to dynamically adjust feature flags and see instant effects across the platform. Provides centralized management and granular control for feature deployment.",
+    "tags": [
+      "admin",
+      "feature-flags",
+      "[INFERRED] portal"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "AdminPortal"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 13–14",
+    "reasoning": {
+      "source_summary_fragment": "Admins must control flags from a portal, enabling percentage-based and dynamic rollouts, with immediate global effect.",
+      "tag_metadata_reference": [
+        {
+          "tag": "admin",
+          "confidence": 0.95
+        },
+        {
+          "tag": "feature-flags",
+          "confidence": 0.97
+        },
+        {
+          "tag": "portal",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "admin UI",
+        "real-time flag changes"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "portal",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "admin",
+      "feature-flags",
+      "[INFERRED] portal"
+    ],
+    "tags_v2": [
+      "admin"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "admin",
+        "canonical_tag": "admin",
+        "matched_tag": "admin",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.393591Z"
+      },
+      {
+        "original_tag": "feature-flags",
+        "canonical_tag": "feature-flags",
+        "matched_tag": "feature-flags",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.574335Z"
+      },
+      {
+        "original_tag": "[INFERRED] portal",
+        "canonical_tag": "[INFERRED] portal",
+        "matched_tag": "[INFERRED] portal",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.764053Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "feature-flags",
+      "admin",
+      "geo-ip",
+      "portal",
+      "edge_cases"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature-flags",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7920347452163696,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "admin",
+        "original_tag": "admin",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7606252431869507,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7608165144920349,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "portal",
+        "original_tag": "portal",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7465662956237793,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "edge_cases",
+        "original_tag": "edge case",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v2",
+        "method": "dedup_canonical",
+        "confidence": 0.7282673120498657,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate real-time Geo-IP resolution for user location at feature evaluation",
+    "summary": "Implement real-time Geo-IP resolution to precisely determine user locations during feature evaluation. Supports granular targeting and ensures that features are enabled or disabled appropriately based on user geography.",
+    "tags": [
+      "geo-ip",
+      "real-time",
+      "[INFERRED] location-resolution"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "GeoTargeting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 16–17",
+    "reasoning": {
+      "source_summary_fragment": "using real-time Geo-IP segmentation at country, region, and city level.",
+      "tag_metadata_reference": [
+        {
+          "tag": "geo-ip",
+          "confidence": 0.98
+        },
+        {
+          "tag": "real-time",
+          "confidence": 0.96
+        },
+        {
+          "tag": "location-resolution",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "location detection",
+        "geo-aware feature logic"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "location-resolution",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "geo-ip",
+      "real-time",
+      "[INFERRED] location-resolution"
+    ],
+    "tags_v2": [
+      "geo-ip"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "geo-ip",
+        "canonical_tag": "geo-ip",
+        "matched_tag": "geo-ip",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:45.769246Z"
+      },
+      {
+        "original_tag": "real-time",
+        "canonical_tag": "realtime",
+        "matched_tag": "realtime",
+        "tag_origin_cluster_id": "realtime",
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:46.021738Z"
+      },
+      {
+        "original_tag": "[INFERRED] location-resolution",
+        "canonical_tag": "[INFERRED] location-resolution",
+        "matched_tag": "[INFERRED] location-resolution",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.188680Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "geo-ip",
+      "feature-flags",
+      "integration",
+      "rollback",
+      "location-resolution",
+      "real-time"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7845550775527954,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature flags",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7794778347015381,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7303217053413391,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollouts",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7415189743041992,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "location-resolution",
+        "original_tag": "location-resolution",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7600835561752319,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "real-time",
+        "original_tag": "real-time",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7606920003890991,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement fallback handling for ambiguous geo-data (VPN, proxies, missing info)",
+    "summary": "Introduce robust fallback strategies for cases when Geo-IP data is ambiguous or unavailable, such as users with VPNs, proxies, or missing IP information. Ensures feature targeting stability and user experience consistency.",
+    "tags": [
+      "fault-tolerance",
+      "geo-ip",
+      "[INFERRED] fallback"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "GeoTargeting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 18–19",
+    "reasoning": {
+      "source_summary_fragment": "The system must robustly handle users with ambiguous or mismatched geo-data",
+      "tag_metadata_reference": [
+        {
+          "tag": "fault-tolerance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "geo-ip",
+          "confidence": 0.96
+        },
+        {
+          "tag": "fallback",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "VPNs",
+        "proxy detection",
+        "IP fallback logic"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "fallback",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "fault-tolerance",
+      "geo-ip",
+      "[INFERRED] fallback"
+    ],
+    "tags_v2": [
+      "geo-ip"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fault-tolerance",
+        "canonical_tag": "fault tolerance",
+        "matched_tag": "fault tolerance",
+        "tag_origin_cluster_id": "fault tolerance",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.366382Z"
+      },
+      {
+        "original_tag": "geo-ip",
+        "canonical_tag": "geo-ip",
+        "matched_tag": "geo-ip",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.379295Z"
+      },
+      {
+        "original_tag": "[INFERRED] fallback",
+        "canonical_tag": "[INFERRED] fallback",
+        "matched_tag": "[INFERRED] fallback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.550615Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "geo-ip",
+      "feature-flags",
+      "fallback",
+      "admin portal"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7849505543708801,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature flags",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7758883237838745,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7658436894416809,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "admin portal",
+        "original_tag": "admin portal",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.730276882648468,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Deliver real-time analytics dashboards showing feature adoption, error rates, conversion KPIs by geography/cohort",
+    "summary": "Create analytics dashboards that provide real-time insights into feature adoption, error rates, and conversion KPIs, broken down by geography and user cohorts. Enables data-driven monitoring and measurement of feature flag impact.",
+    "tags": [
+      "dashboard",
+      "real-time-analytics",
+      "[INFERRED] kpi-tracking"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 21–22",
+    "reasoning": {
+      "source_summary_fragment": "Integration with real-time analytics is required to monitor adoption, error rates, and conversion KPIs by geography and cohort, with dashboards ...",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.97
+        },
+        {
+          "tag": "real-time-analytics",
+          "confidence": 0.98
+        },
+        {
+          "tag": "kpi-tracking",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "analytics dashboard",
+        "KPI metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "kpi-tracking",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "dashboard",
+      "real-time-analytics",
+      "[INFERRED] kpi-tracking"
+    ],
+    "tags_v2": [
+      "dashboard",
+      "real-time-analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dashboard",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.573423Z"
+      },
+      {
+        "original_tag": "real-time-analytics",
+        "canonical_tag": "real-time-analytics",
+        "matched_tag": "real-time-analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "semantic",
+        "similarity": 0.6984751224517822,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.744288Z"
+      },
+      {
+        "original_tag": "[INFERRED] kpi-tracking",
+        "canonical_tag": "[INFERRED] kpi-tracking",
+        "matched_tag": "[INFERRED] kpi-tracking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:46.910959Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "dashboard",
+      "real-time-analytics",
+      "analytics",
+      "kpi-tracking"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7735511660575867,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "real-time-analytics",
+        "original_tag": "real-time-analytics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8277665376663208,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7977417707443237,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "kpi-tracking",
+        "original_tag": "kpi-tracking",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7721369862556458,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Automate alerts and enable one-click rollback for negative rollout impact",
+    "summary": "Build automated alerting mechanisms for negative effects, such as error spikes, during feature rollout. Provide a one-click rollback capability that instantly reverses changes system-wide, with full traceability.",
+    "tags": [
+      "alerting",
+      "rollback",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 23–24",
+    "reasoning": {
+      "source_summary_fragment": "with dashboards and automated alerts for negative impacts like error spikes. One-click rollback with instant system-wide effect and full traceability is mandatory.",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.97
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "automatic response",
+        "rollback workflow"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "alerting",
+      "rollback",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:47.101983Z"
+      },
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.106565Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.295415Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rollback",
+      "monitoring",
+      "analytics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7972331047058105,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.750711977481842,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7537155151367188,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Notify users of beta/staged rollout participation and offer opt-out",
+    "summary": "Introduce user notifications to inform individuals about their involvement in beta or staged feature rollouts and give them the ability to opt out. Enhances user experience and transparency during feature launches.",
+    "tags": [
+      "communication",
+      "user-option",
+      "[INFERRED] user-notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserExperience"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 26–27",
+    "reasoning": {
+      "source_summary_fragment": "User experience needs include notification of staged or beta participation, opt-out options ...",
+      "tag_metadata_reference": [
+        {
+          "tag": "communication",
+          "confidence": 0.94
+        },
+        {
+          "tag": "user-option",
+          "confidence": 0.92
+        },
+        {
+          "tag": "user-notification",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user opt-out",
+        "rollout communications"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "user-notification",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "communication",
+      "user-option",
+      "[INFERRED] user-notification"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "communication",
+        "canonical_tag": "communication",
+        "matched_tag": "communication",
+        "tag_origin_cluster_id": "communication",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.510145Z"
+      },
+      {
+        "original_tag": "user-option",
+        "canonical_tag": "user-option",
+        "matched_tag": "user-option",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.713549Z"
+      },
+      {
+        "original_tag": "[INFERRED] user-notification",
+        "canonical_tag": "[INFERRED] user-notification",
+        "matched_tag": "[INFERRED] user-notification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.897183Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "alert",
+      "monitoring",
+      "notification"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7255797982215881,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.750423789024353,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "user-notification",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7702059745788574,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Ensure compliance with regional data privacy laws (GDPR, CCPA) for geo-targeted features",
+    "summary": "Guarantee that all geo-targeted platform features conform to regional data privacy requirements, including GDPR and CCPA. Enforce necessary privacy controls and provide documentation to support regulatory compliance.",
+    "tags": [
+      "compliance",
+      "privacy",
+      "[INFERRED] data-protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 28–29",
+    "reasoning": {
+      "source_summary_fragment": "compliance with regional data privacy laws (GDPR/CCPA)",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.99
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.97
+        },
+        {
+          "tag": "data-protection",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "GDPR",
+        "CCPA",
+        "privacy-by-design"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-protection",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "compliance",
+      "privacy",
+      "[INFERRED] data-protection"
+    ],
+    "tags_v2": [
+      "compliance",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.902647Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:47.907424Z"
+      },
+      {
+        "original_tag": "[INFERRED] data-protection",
+        "canonical_tag": "[INFERRED] data-protection",
+        "matched_tag": "[INFERRED] data-protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.212723Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "privacy",
+      "rollback",
+      "feature-flags"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7265825271606445,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7293506860733032,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7301294803619385,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "feature-flags",
+        "original_tag": "feature-flags",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7612783312797546,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Flag and audit toggle events for geo-IP mismatches and border crossings",
+    "summary": "Develop mechanisms to detect, flag, and audit feature flag events that occur due to geographic mismatches or border crossings identified via Geo-IP. Enables traceability and accountability for feature access changes.",
+    "tags": [
+      "audit",
+      "geo-ip",
+      "[INFERRED] event-logging"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 31–32",
+    "reasoning": {
+      "source_summary_fragment": "support audit trails, and create comprehensive documentation for product and developer enablement.",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "geo-ip",
+          "confidence": 0.9
+        },
+        {
+          "tag": "event-logging",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "geographic event recording"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "event-logging",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "audit",
+      "geo-ip",
+      "[INFERRED] event-logging"
+    ],
+    "tags_v2": [
+      "audit",
+      "geo-ip"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.218389Z"
+      },
+      {
+        "original_tag": "geo-ip",
+        "canonical_tag": "geo-ip",
+        "matched_tag": "geo-ip",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.222622Z"
+      },
+      {
+        "original_tag": "[INFERRED] event-logging",
+        "canonical_tag": "[INFERRED] event-logging",
+        "matched_tag": "[INFERRED] event-logging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.413627Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "notification",
+      "geo-ip"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7494518756866455,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7542911767959595,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7854835987091064,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement instant rollback with full traceability for feature flags",
+    "summary": "Enable an immediate, one-click rollback mechanism for feature flags with system-wide effect, ensuring that all changes are fully recorded for audit purposes. Track the complete history and context behind each change to maintain accountability and compliance. Ensure rollback operations do not introduce latency or service degradation.",
+    "tags": [
+      "rollback",
+      "traceability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 33–33",
+    "reasoning": {
+      "source_summary_fragment": "One-click rollback with instant system-wide effect and full traceability is mandatory.",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "instant rollback",
+        "system auditability",
+        "full event tracing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "rollback",
+      "traceability",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "rollback",
+      "traceability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.418111Z"
+      },
+      {
+        "original_tag": "traceability",
+        "canonical_tag": "traceability",
+        "matched_tag": "traceability",
+        "tag_origin_cluster_id": "traceability",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.422050Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.710729Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "rollback",
+      "traceability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7153422236442566,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7980545163154602,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "traceability",
+        "original_tag": "traceability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7739473581314087,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Develop onboarding materials and documentation for feature flag usage and analytics",
+    "summary": "Create comprehensive user and technical documentation for feature flag management, focusing on best practices and analytics integration. Develop onboarding guides and training content to support adoption by both product and development teams. Ensure clarity in explaining progressive rollout, real-time monitoring, and compliance aspects.",
+    "tags": [
+      "documentation",
+      "training",
+      "[INFERRED] enablement"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "Enablement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 35–36",
+    "reasoning": {
+      "source_summary_fragment": "create comprehensive documentation for product and developer enablement",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "training",
+          "confidence": 0.9
+        },
+        {
+          "tag": "enablement",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "onboarding support",
+        "analytics documentation",
+        "feature flag best practices"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "enablement",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "documentation",
+      "training",
+      "[INFERRED] enablement"
+    ],
+    "tags_v2": [
+      "documentation",
+      "training"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.716365Z"
+      },
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.731911Z"
+      },
+      {
+        "original_tag": "[INFERRED] enablement",
+        "canonical_tag": "[INFERRED] enablement",
+        "matched_tag": "[INFERRED] enablement",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.936893Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "documentation",
+      "gdpr",
+      "training",
+      "enablement"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7381428480148315,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7510548830032349,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "gdpr",
+        "original_tag": "gdpr",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.748064398765564,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "training",
+        "original_tag": "training",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7348926067352295,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "enablement",
+        "original_tag": "enablement",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7530580163002014,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Maintain changelog of all flag adjustments, rollouts, and rollbacks for audits",
+    "summary": "Establish a complete changelog to record every feature flag adjustment, rollout, and rollback event for audit and compliance needs. Ensure audit trails are detailed, tamper-proof, and accessible for inspection by authorized parties. Support compliance verification and incident investigations with granular change history.",
+    "tags": [
+      "audit",
+      "changelog",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Audit",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 37–38",
+    "reasoning": {
+      "source_summary_fragment": "The system must robustly handle users with ambiguous... support audit trails",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.95
+        },
+        {
+          "tag": "changelog",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "event changelog",
+        "rollback tracking"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023",
+    "tags_v1": [
+      "audit",
+      "changelog",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "audit",
+      "changelog"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.956322Z"
+      },
+      {
+        "original_tag": "changelog",
+        "canonical_tag": "changelog",
+        "matched_tag": "changelog",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:48.960759Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:49.218990Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "geo-ip",
+      "changelog",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7548855543136597,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "geo-ip",
+        "original_tag": "geo-ip",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7477110028266907,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "changelog",
+        "original_tag": "changelog",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.776702880859375,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-023"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7234150171279907,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-023"
+      }
+    ]
+  }
+]

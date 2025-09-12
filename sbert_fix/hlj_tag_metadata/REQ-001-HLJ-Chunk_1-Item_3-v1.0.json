@@ -1,0 +1,139 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Ensure OpenAPI (Swagger) 3.x compliance for requests/responses",
+  "summary": "Guarantee that all API requests and responses conform to the OpenAPI (Swagger) 3.x specification. This allows for standardized client integrations and enhances interoperability between systems and documentation tooling.",
+  "tags_v1": [
+    "openapi",
+    "spec",
+    "compliance"
+  ],
+  "tags_v2": [
+    "openapi",
+    "compliance"
+  ],
+  "tags_v3": [
+    "openapi",
+    "query",
+    "compliance",
+    "api",
+    "spec",
+    "filter"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "openapi",
+      "aliases": [],
+      "cluster_id": "all_72",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7804386615753174,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "openapi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "query",
+      "aliases": [],
+      "cluster_id": "all_274",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6997714042663574,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "query",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7282924652099609,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7549698352813721,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "spec",
+      "aliases": [],
+      "cluster_id": "all_69",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7116069197654724,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "spec",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "all_70",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.693158745765686,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filtering",
+      "method": "dedup_canonical"
+    }
+  ]
+}

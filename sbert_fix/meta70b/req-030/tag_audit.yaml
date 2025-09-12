@@ -1,0 +1,190 @@
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-030
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.050642Z'
+  original_tags:
+  - ui_testing
+  - browser_coverage
+  - '[INFERRED] compatibility'
+  validated_tags:
+  - ui_testing
+  tags_added: []
+  tags_dropped:
+  - browser_coverage
+  - '[INFERRED] compatibility'
+  tags_kept:
+  - ui_testing
+  validation_details:
+  - original_tag: ui_testing
+    canonical_tag: ui_testing
+    matched_tag: ui_testing
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: semantic
+    similarity: 0.742706835269928
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.031866Z'
+  - original_tag: browser_coverage
+    canonical_tag: browser_coverage
+    matched_tag: browser_coverage
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.174342Z'
+  - original_tag: '[INFERRED] compatibility'
+    canonical_tag: '[INFERRED] compatibility'
+    matched_tag: '[INFERRED] compatibility'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.345731Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-030
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.050647Z'
+  original_tags:
+  - ci_cd
+  - deployment
+  - '[INFERRED] quality_assurance'
+  validated_tags:
+  - ci_cd
+  - deployment
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] quality_assurance'
+  tags_kept:
+  - ci_cd
+  - deployment
+  validation_details:
+  - original_tag: ci_cd
+    canonical_tag: ci_cd
+    matched_tag: ci_cd
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: semantic
+    similarity: 0.7367551326751709
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.590432Z'
+  - original_tag: deployment
+    canonical_tag: deployment
+    matched_tag: deployment
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.665197Z'
+  - original_tag: '[INFERRED] quality_assurance'
+    canonical_tag: '[INFERRED] quality_assurance'
+    matched_tag: '[INFERRED] quality_assurance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:14.895025Z'
+- hlj_id: REQ-030-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-030
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.050649Z'
+  original_tags:
+  - error_reporting
+  - debugging
+  - '[INFERRED] quality_assurance'
+  validated_tags:
+  - debugging
+  tags_added: []
+  tags_dropped:
+  - error_reporting
+  - '[INFERRED] quality_assurance'
+  tags_kept:
+  - debugging
+  validation_details:
+  - original_tag: error_reporting
+    canonical_tag: error_reporting
+    matched_tag: error_reporting
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:15.801844Z'
+  - original_tag: debugging
+    canonical_tag: debugging
+    matched_tag: debugging
+    tag_origin_cluster_id: debugging
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:15.851997Z'
+  - original_tag: '[INFERRED] quality_assurance'
+    canonical_tag: '[INFERRED] quality_assurance'
+    matched_tag: '[INFERRED] quality_assurance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.068148Z'
+- hlj_id: REQ-030-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-030
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.050651Z'
+  original_tags:
+  - security
+  - compliance
+  - '[INFERRED] data_protection'
+  validated_tags:
+  - security
+  - compliance
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] data_protection'
+  tags_kept:
+  - security
+  - compliance
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.084011Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.091744Z'
+  - original_tag: '[INFERRED] data_protection'
+    canonical_tag: '[INFERRED] data_protection'
+    matched_tag: '[INFERRED] data_protection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:16.251721Z'

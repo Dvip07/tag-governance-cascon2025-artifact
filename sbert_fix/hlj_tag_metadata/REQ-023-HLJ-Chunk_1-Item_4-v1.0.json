@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Integrate real-time Geo-IP resolution for user location at feature evaluation",
+  "summary": "Implement real-time Geo-IP resolution to precisely determine user locations during feature evaluation. Supports granular targeting and ensures that features are enabled or disabled appropriately based on user geography.",
+  "tags_v1": [
+    "geo-ip",
+    "real-time",
+    "[INFERRED] location-resolution"
+  ],
+  "tags_v2": [
+    "geo-ip"
+  ],
+  "tags_v3": [
+    "geo-ip",
+    "feature-flags",
+    "integration",
+    "rollback",
+    "location-resolution",
+    "real-time"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "geo-ip",
+      "aliases": [],
+      "cluster_id": "all_139",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7845550775527954,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-ip",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "all_133",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7794778347015381,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature flags",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7303217053413391,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7415189743041992,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollouts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "location-resolution",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7600835561752319,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "location-resolution",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "all_49",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7606920003890991,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    }
+  ]
+}

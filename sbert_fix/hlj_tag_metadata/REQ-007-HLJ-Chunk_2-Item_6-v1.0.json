@@ -1,0 +1,102 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "opus4",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Create data retention and purging policies per regulations",
+  "summary": "Establish automated data lifecycle management for KYC/AML records to comply with varying international retention requirements. System must track retention periods and securely purge data according to regulatory timelines.",
+  "tags_v1": [
+    "privacy",
+    "compliance",
+    "data",
+    "[INFERRED] gdpr"
+  ],
+  "tags_v2": [
+    "privacy",
+    "compliance",
+    "data"
+  ],
+  "tags_v3": [
+    "compliance",
+    "privacy",
+    "data",
+    "gdpr"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7300037741661072,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7094800472259521,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6890523433685303,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7054816484451294,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    }
+  ]
+}

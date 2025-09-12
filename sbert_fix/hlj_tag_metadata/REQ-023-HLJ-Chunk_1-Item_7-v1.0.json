@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Automate alerts and enable one-click rollback for negative rollout impact",
+  "summary": "Build automated alerting mechanisms for negative effects, such as error spikes, during feature rollout. Provide a one-click rollback capability that instantly reverses changes system-wide, with full traceability.",
+  "tags_v1": [
+    "alerting",
+    "rollback",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "rollback"
+  ],
+  "tags_v3": [
+    "rollback",
+    "monitoring",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7972331047058105,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.750711977481842,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7537155151367188,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

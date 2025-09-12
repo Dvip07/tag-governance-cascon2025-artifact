@@ -1,0 +1,1363 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design multi-step digital onboarding for minors with essential info capture",
+    "summary": "Develop a stepwise digital onboarding workflow specifically for minors under 18. Only essential information is collected from the minor to meet compliance needs, minimizing data while ensuring eligibility and onboarding flow continuity.",
+    "tags": [
+      "usability",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DigitalOnboarding",
+      "ChildAccounts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 07–11",
+    "reasoning": {
+      "source_summary_fragment": "multi-step process collects only essential minor info",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "age-appropriate onboarding",
+        "data minimization"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "usability",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.465977Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.477045Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "onboarding",
+      "compliance",
+      "workflow",
+      "ux",
+      "minor"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7752959728240967,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7211901545524597,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7256162762641907,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6901334524154663,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "minor",
+        "original_tag": "minor",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7395822405815125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Trigger legal guardian KYC step and collect guardian info during onboarding",
+    "summary": "As part of onboarding, initiate Know Your Customer (KYC) procedures for the minor’s legal guardian. Collect key information to verify the guardian’s identity in compliance with applicable child data protection regulations.",
+    "tags": [
+      "compliance",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC",
+      "DigitalOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 12–13",
+    "reasoning": {
+      "source_summary_fragment": "triggers KYC verification for the legal guardian",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        },
+        {
+          "tag": "security",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "guardian KYC",
+        "identity verification"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "compliance",
+      "security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.488567Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.560919Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "guardian",
+      "compliance",
+      "kyc",
+      "onboarding",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "guardian",
+        "original_tag": "guardian",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7207414507865906,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7243244647979736,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7295206785202026,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7705366611480713,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7328213453292847,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Support session/device hand-off between minor and guardian in onboarding",
+    "summary": "Enable seamless transition for session or device hand-off during digital onboarding, facilitating information entry by both minor and guardian as needed. This supports compliant onboarding flows and improves overall user experience.",
+    "tags": [
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DigitalOnboarding"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "permits device/session handoff and dynamic switching of guardians",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "multi-party onboarding",
+        "session continuity"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.733097Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.896432Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "onboarding",
+      "compliance",
+      "session",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7798668742179871,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7211989164352417,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "session",
+        "original_tag": "session",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7021452784538269,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7283832430839539,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate with real-time certified third-party guardian KYC providers",
+    "summary": "Connect onboarding workflows to certified third-party KYC providers for real-time identity verification of guardians. Ensure these integrations are with compliance-approved vendors to meet regulatory standards.",
+    "tags": [
+      "compliance",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC",
+      "Integrations"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 16–18, 33",
+    "reasoning": {
+      "source_summary_fragment": "Certified, compliance-approved KYC providers are mandatory",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "third-party KYC integration",
+        "vendor certification"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "compliance",
+      "security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:58.972527Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.045035Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "kyc",
+      "compliance",
+      "integration",
+      "api",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7320176362991333,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7347962856292725,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698319673538208,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6887049674987793,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7311726212501526,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Provide immediate feedback and next steps to both users on KYC fail or pending",
+    "summary": "Inform both the minor and guardian promptly if the guardian KYC step fails or is pending, guiding users with clear next steps to resolve issues or continue the onboarding process efficiently.",
+    "tags": [
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DigitalOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "clear fail/pending feedback",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "real-time feedback",
+        "onboarding guidance"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "usability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.203558Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "kyc",
+      "feedback",
+      "onboarding",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7303959131240845,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6923819184303284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7733885049819946,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.722159743309021,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Handle mid-process guardian switch with KYC restart and event logging",
+    "summary": "Allow dynamic switching of the guardian during onboarding, restarting KYC checks for the new guardian and recording all related events. This maintains auditability and compliance within the onboarding flow.",
+    "tags": [
+      "maintainability",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DigitalOnboarding",
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 22–23",
+    "reasoning": {
+      "source_summary_fragment": "permitting ... dynamic switching of guardians with full audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "maintainability",
+          "confidence": 0.86
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "guardian change handling",
+        "onboarding audit logs"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "maintainability",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "maintainability",
+        "canonical_tag": "maintainability",
+        "matched_tag": "maintainability",
+        "tag_origin_cluster_id": "maintainability",
+        "original_confidence": 0.86,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.371920Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.383455Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "guardian",
+      "kyc",
+      "compliance",
+      "workflow"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "guardian",
+        "original_tag": "guardian",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7294427156448364,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7349593639373779,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7247623205184937,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7307686805725098,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Prevent duplicate minor onboarding attempts using unique identity checks",
+    "summary": "Implement unique identity verification to prevent minors from onboarding twice. This ensures regulatory compliance by avoiding multiple account attempts for the same individual.",
+    "tags": [
+      "security",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "DigitalOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "prevention of duplicate minor onboarding",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate prevention",
+        "identity uniqueness"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "security",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.455439Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.464972Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "compliance",
+      "identity",
+      "validation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7355564832687378,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7250863313674927,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "identity",
+        "original_tag": "identity",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7023630738258362,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "validation",
+        "original_tag": "validation",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7181878089904785,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Encrypt all sensitive data at rest and in transit per compliance",
+    "summary": "Apply robust encryption standards to all sensitive information related to minors and guardians, ensuring data is secure both at rest and during transmission as mandated by compliance regulations.",
+    "tags": [
+      "security",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 27–28",
+    "reasoning": {
+      "source_summary_fragment": "all sensitive data encrypted at rest and in transit",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "encryption at rest",
+        "encryption in transit"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.96,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "security",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.537560Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.541118Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "coppa"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7337366342544556,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7460954189300537,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "coppa",
+        "original_tag": "coppa",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6993701457977295,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Maintain audit trails with minor record flags for all onboarding attempts",
+    "summary": "Record detailed audit logs of every onboarding attempt, flagging records involving minors to support compliance checks, investigations, and system maintainability in line with regional laws.",
+    "tags": [
+      "compliance",
+      "maintainability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Auditing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 29–30",
+    "reasoning": {
+      "source_summary_fragment": "full audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "maintainability",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging",
+        "minor flagging"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "compliance",
+      "maintainability"
+    ],
+    "tags_v2": [
+      "compliance",
+      "maintainability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.550459Z"
+      },
+      {
+        "original_tag": "maintainability",
+        "canonical_tag": "maintainability",
+        "matched_tag": "maintainability",
+        "tag_origin_cluster_id": "maintainability",
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.559635Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "maintainability",
+      "gdpr"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7245156168937683,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7330825924873352,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "maintainability",
+        "original_tag": "maintainability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6850007176399231,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "gdpr",
+        "original_tag": "gdpr",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6981467008590698,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Update onboarding documentation and support scripts for customer representatives",
+    "summary": "Revise onboarding documentation and customer support scripts to cover new processes for minor onboarding, KYC procedures, and escalation paths. Ensure customer representatives have accurate, accessible resources for supporting minors and guardians.",
+    "tags": [
+      "maintainability",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.81,
+    "line_source": "Ln 35–36",
+    "reasoning": {
+      "source_summary_fragment": "updating documentation and support scripts",
+      "tag_metadata_reference": [
+        {
+          "tag": "maintainability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "support resources",
+        "documentation updates"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002",
+    "tags_v1": [
+      "maintainability",
+      "usability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "maintainability",
+        "canonical_tag": "maintainability",
+        "matched_tag": "maintainability",
+        "tag_origin_cluster_id": "maintainability",
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.716291Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:59.878359Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "encryption",
+      "security",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6874744892120361,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7306039333343506,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-002"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7252295017242432,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-002"
+      }
+    ]
+  }
+]

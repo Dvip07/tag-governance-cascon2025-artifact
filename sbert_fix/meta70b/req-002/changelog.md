@@ -1,0 +1,177 @@
+# 📝 Changelog for `req-002` — **meta70b**
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['onboarding', 'minor', 'compliance']`
+**Validated tags:** `['onboarding', 'minor', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['onboarding', 'minor', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:46.408024Z |
+| minor | kept | direct | 1.0 | title | 2025-05-31T23:57:46.399931Z |
+| onboarding | kept | direct | 1.0 | title | 2025-05-31T23:57:46.397717Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['kyc', 'guardian', 'compliance']`
+**Validated tags:** `['kyc', 'guardian', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['kyc', 'guardian', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.423334Z |
+| guardian | kept | direct | 1.0 | title | 2025-05-31T23:57:46.412450Z |
+| kyc | kept | direct | 1.0 | title | 2025-05-31T23:57:46.410316Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['onboarding', 'handoff', 'compliance']`
+**Validated tags:** `['onboarding', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['handoff']`
+**Tags kept:** `['onboarding', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.603472Z |
+| handoff | dropped | none | 0.0 | None | 2025-05-31T23:57:46.587074Z |
+| onboarding | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.436389Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['kyc', 'integration', 'compliance']`
+**Validated tags:** `['kyc', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['integration']`
+**Tags kept:** `['kyc', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.781747Z |
+| integration | dropped | none | 0.0 | None | 2025-05-31T23:57:46.768500Z |
+| kyc | kept | direct | 1.0 | title | 2025-05-31T23:57:46.606941Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['onboarding', 'edgecase', 'compliance']`
+**Validated tags:** `['onboarding', 'edgecase', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['onboarding', 'edgecase', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.927247Z |
+| edgecase | kept | semantic | 0.7631263732910156 | source_fragment | 2025-05-31T23:57:46.914574Z |
+| onboarding | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.793706Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['compliance', 'regulation', '[INFERRED] child_protection']`
+**Validated tags:** `['compliance', 'regulation']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] child_protection']`
+**Tags kept:** `['compliance', 'regulation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] child_protection | dropped | none | 0.0 | None | 2025-05-31T23:57:47.114265Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:46.930173Z |
+| regulation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:46.941576Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['security', 'encryption']`
+**Validated tags:** `['security', 'encryption']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['security', 'encryption']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| encryption | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:47.196609Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:47.184348Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_8-v1.0`
+
+**Original tags:** `['compliance', 'auditing']`
+**Validated tags:** `['compliance', 'audit']`
+**Tags added:** `['audit']`
+**Tags dropped:** `['auditing']`
+**Tags kept:** `['compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| audit | added | direct | 1.0 | title | 2025-05-31T23:57:47.270949Z |
+| auditing | dropped | direct | 1.0 | title | 2025-05-31T23:57:47.270949Z |
+| compliance | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:47.267895Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_9-v1.0`
+
+**Original tags:** `['onboarding', 'mobile', '[INFERRED] accessibility']`
+**Validated tags:** `['onboarding', 'mobile']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] accessibility']`
+**Tags kept:** `['onboarding', 'mobile']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] accessibility | dropped | none | 0.0 | None | 2025-05-31T23:57:47.412143Z |
+| mobile | kept | direct | 1.0 | title | 2025-05-31T23:57:47.282070Z |
+| onboarding | kept | direct | 1.0 | summary | 2025-05-31T23:57:47.279329Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_10-v1.0`
+
+**Original tags:** `['documentation', 'onboarding']`
+**Validated tags:** `['documentation', 'onboarding']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'onboarding']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:57:47.416073Z |
+| onboarding | kept | direct | 1.0 | title | 2025-05-31T23:57:47.419090Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_11-v1.0`
+
+**Original tags:** `['onboarding', 'verification']`
+**Validated tags:** `['onboarding', 'verification']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['onboarding', 'verification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| onboarding | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:47.489815Z |
+| verification | kept | direct | 1.0 | title | 2025-05-31T23:57:47.492746Z |
+
+## 🔹 HLJ: `REQ-002-HLJ-Chunk_2-Item_12-v1.0`
+
+**Original tags:** `['compliance', 'kyc']`
+**Validated tags:** `['compliance', 'kyc']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['compliance', 'kyc']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:47.500873Z |
+| kyc | kept | direct | 1.0 | title | 2025-05-31T23:57:47.503445Z |

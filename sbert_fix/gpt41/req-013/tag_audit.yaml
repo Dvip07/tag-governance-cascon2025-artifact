@@ -1,0 +1,650 @@
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008962Z'
+  original_tags:
+  - engine
+  - batch
+  - '[INFERRED] compliance'
+  validated_tags:
+  - engine
+  - batch
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] compliance'
+  tags_kept:
+  - engine
+  - batch
+  validation_details:
+  - original_tag: engine
+    canonical_tag: engine
+    matched_tag: engine
+    tag_origin_cluster_id: engine
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:36.317502Z'
+  - original_tag: batch
+    canonical_tag: batch
+    matched_tag: batch
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:36.321135Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:36.521333Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008970Z'
+  original_tags:
+  - logging
+  - audit
+  - '[INFERRED] traceability'
+  validated_tags:
+  - logs
+  - audit
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  - '[INFERRED] traceability'
+  tags_kept:
+  - audit
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-05-31T23:59:36.532830Z'
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:36.719914Z'
+  - original_tag: '[INFERRED] traceability'
+    canonical_tag: '[INFERRED] traceability'
+    matched_tag: '[INFERRED] traceability'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:36.958685Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008972Z'
+  original_tags:
+  - scheduling
+  - batch
+  - '[INFERRED] flexibility'
+  validated_tags:
+  - batch
+  tags_added: []
+  tags_dropped:
+  - scheduling
+  - '[INFERRED] flexibility'
+  tags_kept:
+  - batch
+  validation_details:
+  - original_tag: scheduling
+    canonical_tag: scheduling
+    matched_tag: scheduling
+    tag_origin_cluster_id: scheduling
+    original_confidence: 0.97
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.135055Z'
+  - original_tag: batch
+    canonical_tag: batch
+    matched_tag: batch
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.139812Z'
+  - original_tag: '[INFERRED] flexibility'
+    canonical_tag: '[INFERRED] flexibility'
+    matched_tag: '[INFERRED] flexibility'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.329111Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008974Z'
+  original_tags:
+  - failure
+  - rollback
+  - '[INFERRED] reliability'
+  validated_tags:
+  - failure
+  - rollback
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] reliability'
+  tags_kept:
+  - failure
+  - rollback
+  validation_details:
+  - original_tag: failure
+    canonical_tag: failure
+    matched_tag: failure
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.332588Z'
+  - original_tag: rollback
+    canonical_tag: rollback
+    matched_tag: rollback
+    tag_origin_cluster_id: rollback
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.425247Z'
+  - original_tag: '[INFERRED] reliability'
+    canonical_tag: '[INFERRED] reliability'
+    matched_tag: '[INFERRED] reliability'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.608306Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008976Z'
+  original_tags:
+  - atomicity
+  - rollback
+  - '[INFERRED] consistency'
+  validated_tags:
+  - atomicity
+  - rollback
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] consistency'
+  tags_kept:
+  - atomicity
+  - rollback
+  validation_details:
+  - original_tag: atomicity
+    canonical_tag: atomicity
+    matched_tag: atomicity
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.620914Z'
+  - original_tag: rollback
+    canonical_tag: rollback
+    matched_tag: rollback
+    tag_origin_cluster_id: rollback
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.623898Z'
+  - original_tag: '[INFERRED] consistency'
+    canonical_tag: '[INFERRED] consistency'
+    matched_tag: '[INFERRED] consistency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.786925Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008978Z'
+  original_tags:
+  - retry
+  - partial
+  - '[INFERRED] recovery'
+  validated_tags:
+  - retry
+  - partial
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] recovery'
+  tags_kept:
+  - retry
+  - partial
+  validation_details:
+  - original_tag: retry
+    canonical_tag: retry
+    matched_tag: retry
+    tag_origin_cluster_id: retry
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.790551Z'
+  - original_tag: partial
+    canonical_tag: partial
+    matched_tag: partial
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.802286Z'
+  - original_tag: '[INFERRED] recovery'
+    canonical_tag: '[INFERRED] recovery'
+    matched_tag: '[INFERRED] recovery'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.959157Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008980Z'
+  original_tags:
+  - logging
+  - exception
+  - '[INFERRED] traceability'
+  validated_tags:
+  - logs
+  - exception
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  - '[INFERRED] traceability'
+  tags_kept:
+  - exception
+  validation_details:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-05-31T23:59:37.971939Z'
+  - original_tag: exception
+    canonical_tag: exception
+    matched_tag: exception
+    tag_origin_cluster_id: exception
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:37.982093Z'
+  - original_tag: '[INFERRED] traceability'
+    canonical_tag: '[INFERRED] traceability'
+    matched_tag: '[INFERRED] traceability'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.142425Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008981Z'
+  original_tags:
+  - audit
+  - logging
+  - '[INFERRED] compliance'
+  validated_tags:
+  - audit
+  - logs
+  tags_added:
+  - logs
+  tags_dropped:
+  - logging
+  - '[INFERRED] compliance'
+  tags_kept:
+  - audit
+  validation_details:
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.146783Z'
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:38.150515Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.315534Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008983Z'
+  original_tags:
+  - reporting
+  - exception
+  - '[INFERRED] analytics'
+  validated_tags:
+  - reporting
+  - exception
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] analytics'
+  tags_kept:
+  - reporting
+  - exception
+  validation_details:
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.332675Z'
+  - original_tag: exception
+    canonical_tag: exception
+    matched_tag: exception
+    tag_origin_cluster_id: exception
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.335640Z'
+  - original_tag: '[INFERRED] analytics'
+    canonical_tag: '[INFERRED] analytics'
+    matched_tag: '[INFERRED] analytics'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.511813Z'
+- hlj_id: REQ-013-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008985Z'
+  original_tags:
+  - dashboard
+  - admin
+  - '[INFERRED] monitoring'
+  validated_tags:
+  - dashboard
+  - admin
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] monitoring'
+  tags_kept:
+  - dashboard
+  - admin
+  validation_details:
+  - original_tag: dashboard
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.516246Z'
+  - original_tag: admin
+    canonical_tag: admin
+    matched_tag: admin
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.520048Z'
+  - original_tag: '[INFERRED] monitoring'
+    canonical_tag: '[INFERRED] monitoring'
+    matched_tag: '[INFERRED] monitoring'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.686927Z'
+- hlj_id: REQ-013-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008987Z'
+  original_tags:
+  - notification
+  - status
+  - '[INFERRED] transparency'
+  validated_tags:
+  - notification
+  - status
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] transparency'
+  tags_kept:
+  - notification
+  - status
+  validation_details:
+  - original_tag: notification
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.700382Z'
+  - original_tag: status
+    canonical_tag: status
+    matched_tag: status
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.704050Z'
+  - original_tag: '[INFERRED] transparency'
+    canonical_tag: '[INFERRED] transparency'
+    matched_tag: '[INFERRED] transparency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.872391Z'
+- hlj_id: REQ-013-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008988Z'
+  original_tags:
+  - notification
+  - rollback
+  validated_tags:
+  - notification
+  - rollback
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - notification
+  - rollback
+  validation_details:
+  - original_tag: notification
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.962415Z'
+  - original_tag: rollback
+    canonical_tag: rollback
+    matched_tag: rollback
+    tag_origin_cluster_id: rollback
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.965350Z'
+- hlj_id: REQ-013-HLJ-Chunk_2-Item_3-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008990Z'
+  original_tags:
+  - compliance
+  - security
+  - '[INFERRED] audit'
+  validated_tags:
+  - compliance
+  - security
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] audit'
+  tags_kept:
+  - compliance
+  - security
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:38.968549Z'
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:39.061047Z'
+  - original_tag: '[INFERRED] audit'
+    canonical_tag: '[INFERRED] audit'
+    matched_tag: '[INFERRED] audit'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:39.359505Z'
+- hlj_id: REQ-013-HLJ-Chunk_2-Item_4-v1.0
+  requirement: req-013
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.008991Z'
+  original_tags:
+  - security
+  - access
+  validated_tags:
+  - security
+  - access
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - security
+  - access
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:39.372712Z'
+  - original_tag: access
+    canonical_tag: access
+    matched_tag: access
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:39.383933Z'

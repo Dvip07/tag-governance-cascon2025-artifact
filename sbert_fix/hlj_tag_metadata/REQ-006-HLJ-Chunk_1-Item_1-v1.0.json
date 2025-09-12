@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Define configurable per-tenant rate limit tiers with contract-based customization",
+  "summary": "Establish rate limit tiers for each tenant, allowing contract-driven customization for flexibility (e.g., Standard, Premium). Configuration is managed per tenant within the FinTech Developer Platform environment.",
+  "tags_v1": [
+    "rate-limiting",
+    "configuration",
+    "[INFERRED] customization"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "api",
+    "rate-limiting",
+    "tenant management",
+    "configuration"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7411007881164551,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7986961603164673,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tenant management",
+      "aliases": [],
+      "cluster_id": "all_357",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7323718070983887,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tenant management",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "configuration",
+      "aliases": [
+        "config"
+      ],
+      "cluster_id": "all_48",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7385562658309937,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "configuration",
+      "method": "dedup_canonical"
+    }
+  ]
+}

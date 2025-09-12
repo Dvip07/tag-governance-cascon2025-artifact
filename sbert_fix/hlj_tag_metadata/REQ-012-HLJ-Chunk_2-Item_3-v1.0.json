@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Upgrade self-service portal for GST-compliant invoice and tax summary downloads",
+  "summary": "Enhance the self-service portal to allow users to download GST-compliant invoices and tax summaries. Upgrades must ensure that downloaded documents reflect current provincial GST rules and support user-friendly access to tax breakdowns.",
+  "tags_v1": [
+    "portal",
+    "usability",
+    "gst",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "portal",
+    "gst"
+  ],
+  "tags_v3": [
+    "gst",
+    "portal",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7580527067184448,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "portal",
+      "aliases": [],
+      "cluster_id": "all_138",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6962770223617554,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "portal",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7045959830284119,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

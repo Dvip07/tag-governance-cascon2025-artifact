@@ -1,0 +1,165 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Aggregate and normalize income data from multiple sources",
+  "summary": "Develop data processing logic to combine, standardize, and reconcile varying income records from several gig platforms. This ensures a consistent, unified dataset for downstream eligibility and compliance evaluation.",
+  "tags_v1": [
+    "aggregation",
+    "data-normalization",
+    "[INFERRED] reconciliation"
+  ],
+  "tags_v2": [
+    "aggregation",
+    "normalization"
+  ],
+  "tags_v3": [
+    "api",
+    "doordash",
+    "integration",
+    "aggregation",
+    "normalization",
+    "gig income",
+    "eligibility",
+    "income verification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7244728803634644,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "doordash",
+      "aliases": [],
+      "cluster_id": "all_253",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7059941291809082,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "doordash",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7124037742614746,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aggregation",
+      "aliases": [],
+      "cluster_id": "all_3",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.735950231552124,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aggregation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "normalization",
+      "aliases": [
+        "data-normalization"
+      ],
+      "cluster_id": "all_4",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7233450412750244,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-normalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gig income",
+      "aliases": [],
+      "cluster_id": "all_351",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7726941704750061,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gig income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "all_5",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7376130819320679,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "income verification",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7915946841239929,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income verification",
+      "method": "dedup_canonical"
+    }
+  ]
+}

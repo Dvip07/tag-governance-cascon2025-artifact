@@ -1,0 +1,560 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Run UI regression tests on supported browsers",
+    "summary": "Automate UI testing across various browsers to ensure compatibility and identify potential issues before deployment.",
+    "tags": [
+      "ui_testing",
+      "browser_coverage",
+      "[INFERRED] compatibility"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UI Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "Automate UI testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "ui_testing",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "UI regression testing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compatibility",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030",
+    "tags_v1": [
+      "ui_testing",
+      "browser_coverage",
+      "[INFERRED] compatibility"
+    ],
+    "tags_v2": [
+      "ui_testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ui_testing",
+        "canonical_tag": "ui_testing",
+        "matched_tag": "ui_testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.742706835269928,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.031866Z"
+      },
+      {
+        "original_tag": "browser_coverage",
+        "canonical_tag": "browser_coverage",
+        "matched_tag": "browser_coverage",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.174342Z"
+      },
+      {
+        "original_tag": "[INFERRED] compatibility",
+        "canonical_tag": "[INFERRED] compatibility",
+        "matched_tag": "[INFERRED] compatibility",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.345731Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui_testing",
+      "staging",
+      "browser_coverage"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui_testing",
+        "original_tag": "ui_testing",
+        "score": 3,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7528842091560364,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "staging",
+        "original_tag": "staging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6927516460418701,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "parallel",
+        "original_tag": "parallel",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6731351613998413,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "browser_coverage",
+        "original_tag": "browser_coverage",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8013390302658081,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-030"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Integrate with CI/CD pipeline to block deployments",
+    "summary": "Integrate automated UI testing with the CI/CD pipeline to prevent deployments in case of test failures, ensuring the quality and reliability of the software.",
+    "tags": [
+      "ci_cd",
+      "deployment",
+      "[INFERRED] quality_assurance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Automated Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 13-14",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with CI/CD pipeline",
+      "tag_metadata_reference": [
+        {
+          "tag": "ci_cd",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "CI/CD integration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "quality_assurance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030",
+    "tags_v1": [
+      "ci_cd",
+      "deployment",
+      "[INFERRED] quality_assurance"
+    ],
+    "tags_v2": [
+      "ci_cd",
+      "deployment"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ci_cd",
+        "canonical_tag": "ci_cd",
+        "matched_tag": "ci_cd",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "semantic",
+        "similarity": 0.7367551326751709,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.590432Z"
+      },
+      {
+        "original_tag": "deployment",
+        "canonical_tag": "deployment",
+        "matched_tag": "deployment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.665197Z"
+      },
+      {
+        "original_tag": "[INFERRED] quality_assurance",
+        "canonical_tag": "[INFERRED] quality_assurance",
+        "matched_tag": "[INFERRED] quality_assurance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:14.895025Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ci/cd",
+      "blocking",
+      "deployment"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ci/cd",
+        "original_tag": "ci-cd",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7019069194793701,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "blocking",
+        "original_tag": "blocking",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6928859353065491,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "deployment",
+        "original_tag": "deployment",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7486473917961121,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-030"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Capture logs, screenshots, and video recordings for failed tests",
+    "summary": "Automate the collection of logs, screenshots, and video recordings for failed UI tests to facilitate debugging and improvement.",
+    "tags": [
+      "error_reporting",
+      "debugging",
+      "[INFERRED] quality_assurance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Error Reporting"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "Automate UI testing with browser coverage analytics",
+      "tag_metadata_reference": [
+        {
+          "tag": "error_reporting",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "UI testing",
+        "error reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "quality_assurance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030",
+    "tags_v1": [
+      "error_reporting",
+      "debugging",
+      "[INFERRED] quality_assurance"
+    ],
+    "tags_v2": [
+      "debugging"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "error_reporting",
+        "canonical_tag": "error_reporting",
+        "matched_tag": "error_reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:15.801844Z"
+      },
+      {
+        "original_tag": "debugging",
+        "canonical_tag": "debugging",
+        "matched_tag": "debugging",
+        "tag_origin_cluster_id": "debugging",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:15.851997Z"
+      },
+      {
+        "original_tag": "[INFERRED] quality_assurance",
+        "canonical_tag": "[INFERRED] quality_assurance",
+        "matched_tag": "[INFERRED] quality_assurance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:16.068148Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "debugging",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6980718374252319,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "artifacts",
+        "original_tag": "artifacts",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6751489639282227,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "debugging",
+        "original_tag": "debugging",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7301281690597534,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6907682418823242,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-030"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Ensure test artifacts are retained securely",
+    "summary": "Implement a secure retention policy for test artifacts, ensuring compliance with regulatory standards and protecting sensitive data.",
+    "tags": [
+      "security",
+      "compliance",
+      "[INFERRED] data_protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30-31",
+    "reasoning": {
+      "source_summary_fragment": "integrating with CI/CD pipeline, and ensuring security",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "security",
+        "compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data_protection",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030",
+    "tags_v1": [
+      "security",
+      "compliance",
+      "[INFERRED] data_protection"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:16.084011Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:16.091744Z"
+      },
+      {
+        "original_tag": "[INFERRED] data_protection",
+        "canonical_tag": "[INFERRED] data_protection",
+        "matched_tag": "[INFERRED] data_protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:16.251721Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "accessibility"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7309233546257019,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7404251098632812,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-030"
+      },
+      {
+        "tag": "accessibility",
+        "original_tag": "accessibility",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7172090411186218,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-030"
+      }
+    ]
+  }
+]

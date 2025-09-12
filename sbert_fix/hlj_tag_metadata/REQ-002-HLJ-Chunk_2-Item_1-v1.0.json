@@ -1,0 +1,80 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Configure data encryption in transit for all communications",
+  "summary": "Implement TLS 1.3+ encryption for all API endpoints and data transfers between client applications, internal services, and third-party KYC providers. Ensure certificate pinning and proper key rotation for guardian-minor data exchanges.",
+  "tags_v1": [
+    "security",
+    "encryption",
+    "compliance"
+  ],
+  "tags_v2": [
+    "security",
+    "encryption",
+    "compliance"
+  ],
+  "tags_v3": [
+    "encryption",
+    "security",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "all_20",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7240712642669678,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7374078035354614,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7216485738754272,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

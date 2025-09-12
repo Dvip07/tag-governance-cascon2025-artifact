@@ -1,0 +1,107 @@
+# 📝 Changelog for `req-003` — **meta70b**
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['detection', 'rules', '[INFERRED] microtransactions']`
+**Validated tags:** `['detection', 'rules']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] microtransactions']`
+**Tags kept:** `['detection', 'rules']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] microtransactions | dropped | none | 0.0 | None | 2025-05-31T23:57:55.787586Z |
+| detection | kept | direct | 1.0 | title | 2025-05-31T23:57:55.652202Z |
+| rules | kept | direct | 1.0 | title | 2025-05-31T23:57:55.655449Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['alerting', 'realtime', '[INFERRED] notification']`
+**Validated tags:** `['alert']`
+**Tags added:** `['alert']`
+**Tags dropped:** `['alerting', 'realtime', '[INFERRED] notification']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] notification | dropped | none | 0.0 | None | 2025-05-31T23:57:56.053143Z |
+| alert | added | direct | 1.0 | title | 2025-05-31T23:57:55.791863Z |
+| alerting | dropped | direct | 1.0 | title | 2025-05-31T23:57:55.791863Z |
+| realtime | dropped | none | 0.0 | None | 2025-05-31T23:57:55.921575Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['edgecases', 'falsepositives', '[INFERRED] accuracy']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['edgecases', 'falsepositives', '[INFERRED] accuracy']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] accuracy | dropped | none | 0.0 | None | 2025-05-31T23:57:56.428955Z |
+| edgecases | dropped | none | 0.0 | None | 2025-05-31T23:57:56.179705Z |
+| falsepositives | dropped | none | 0.0 | None | 2025-05-31T23:57:56.306079Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['audit', 'reporting', '[INFERRED] compliance']`
+**Validated tags:** `['audit', 'reporting']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['audit', 'reporting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:56.567238Z |
+| audit | kept | direct | 1.0 | title | 2025-05-31T23:57:56.432779Z |
+| reporting | kept | direct | 1.0 | title | 2025-05-31T23:57:56.435823Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['security', 'privacy', '[INFERRED] data_protection']`
+**Validated tags:** `['security', 'privacy']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] data_protection']`
+**Tags kept:** `['security', 'privacy']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] data_protection | dropped | none | 0.0 | None | 2025-05-31T23:57:56.700875Z |
+| privacy | kept | direct | 1.0 | title | 2025-05-31T23:57:56.575554Z |
+| security | kept | direct | 1.0 | title | 2025-05-31T23:57:56.571874Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['integration', 'infrastructure', '[INFERRED] interoperability']`
+**Validated tags:** `['integration', 'infrastructure']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] interoperability']`
+**Tags kept:** `['integration', 'infrastructure']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] interoperability | dropped | none | 0.0 | None | 2025-05-31T23:57:56.843555Z |
+| infrastructure | kept | direct | 1.0 | title | 2025-05-31T23:57:56.718860Z |
+| integration | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:56.715731Z |
+
+## 🔹 HLJ: `REQ-003-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['regulation', 'compliance', '[INFERRED] governance']`
+**Validated tags:** `['regulation', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] governance']`
+**Tags kept:** `['regulation', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] governance | dropped | none | 0.0 | None | 2025-05-31T23:57:56.994515Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:56.862877Z |
+| regulation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:56.859556Z |

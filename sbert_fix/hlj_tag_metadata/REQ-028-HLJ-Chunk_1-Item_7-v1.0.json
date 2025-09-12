@@ -1,0 +1,89 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Ensure ticket processing latency does not exceed 500ms per ticket",
+  "summary": "Guarantee the ticket processing system achieves a latency of no more than 500 milliseconds per ticket, maintaining high performance and meeting user expectations for real-time interaction.",
+  "tags_v1": [
+    "performance",
+    "[INFERRED] latency"
+  ],
+  "tags_v2": [
+    "performance"
+  ],
+  "tags_v3": [
+    "performance",
+    "documentation",
+    "customer",
+    "guidelines"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7375913858413696,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7144749164581299,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "customer",
+      "aliases": [],
+      "cluster_id": "all_424",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7442220449447632,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "customer",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "guidelines",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7052395343780518,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "guidelines",
+      "method": "dedup_canonical"
+    }
+  ]
+}

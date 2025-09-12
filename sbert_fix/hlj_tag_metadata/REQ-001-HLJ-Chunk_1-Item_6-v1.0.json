@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Authenticate API with OAuth 2.0 and enforce per-customer tokens",
+  "summary": "Protect the API by implementing OAuth 2.0 authentication, ensuring that each customer holds and uses an individual token for secure access. This upholds best practices in fintech security and regulatory compliance.",
+  "tags_v1": [
+    "oauth",
+    "security",
+    "authentication"
+  ],
+  "tags_v2": [
+    "oauth",
+    "security",
+    "authentication"
+  ],
+  "tags_v3": [
+    "security",
+    "timestamp",
+    "oauth",
+    "normalization",
+    "authentication",
+    "data"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7455379366874695,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timestamp",
+      "aliases": [],
+      "cluster_id": "all_276",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7233043909072876,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timestamp",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "oauth",
+      "aliases": [],
+      "cluster_id": "all_78",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7714718580245972,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "oauth",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "normalization",
+      "aliases": [
+        "data-normalization"
+      ],
+      "cluster_id": "all_4",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6930506229400635,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "normalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authentication",
+      "aliases": [],
+      "cluster_id": "all_79",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7489515542984009,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authentication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6899425387382507,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    }
+  ]
+}

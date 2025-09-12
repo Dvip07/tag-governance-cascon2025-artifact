@@ -1,0 +1,151 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Enable compliance/security roles to export access logs (CSV/JSON)",
+  "summary": "Grant users with Compliance or Security roles the ability to export access logs in CSV or JSON format. This export functionality is restricted by role and supports compliance reviews and external reporting needs.",
+  "tags_v1": [
+    "export",
+    "roles",
+    "[INFERRED] security"
+  ],
+  "tags_v2": [
+    "export",
+    "roles"
+  ],
+  "tags_v3": [
+    "compliance",
+    "export",
+    "export_controls",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "roles",
+      "aliases": [],
+      "cluster_id": "all_127",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6769894361495972,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "roles",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7052329182624817,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7129230499267578,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retention",
+      "aliases": [],
+      "cluster_id": "all_124",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6481152772903442,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "retention",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "storage",
+      "aliases": [],
+      "cluster_id": "all_291",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6647211313247681,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "storage",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export_controls",
+      "aliases": [],
+      "cluster_id": "all_388",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7506547570228577,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export_controls",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7170639634132385,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

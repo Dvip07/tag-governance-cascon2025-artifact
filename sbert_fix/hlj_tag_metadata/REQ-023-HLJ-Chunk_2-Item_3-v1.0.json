@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Maintain changelog of all flag adjustments, rollouts, and rollbacks for audits",
+  "summary": "Establish a complete changelog to record every feature flag adjustment, rollout, and rollback event for audit and compliance needs. Ensure audit trails are detailed, tamper-proof, and accessible for inspection by authorized parties. Support compliance verification and incident investigations with granular change history.",
+  "tags_v1": [
+    "audit",
+    "changelog",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "audit",
+    "changelog"
+  ],
+  "tags_v3": [
+    "audit",
+    "geo-ip",
+    "changelog",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7548855543136597,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geo-ip",
+      "aliases": [],
+      "cluster_id": "all_139",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7477110028266907,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-ip",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "changelog",
+      "aliases": [],
+      "cluster_id": "all_145",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.776702880859375,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "changelog",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7234150171279907,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

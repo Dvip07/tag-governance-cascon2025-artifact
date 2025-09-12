@@ -1,0 +1,107 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Design and implement operational ledger for real-time posting and holds",
+  "summary": "Establish a core operational ledger that enables instant transaction posting, supports account holds, and manages real-time funds movements. The design must prioritize high availability and precise balance segregation to facilitate rapid transaction processing. The ledger should integrate smoothly with downstream systems while retaining operational reliability.",
+  "tags_v1": [
+    "operational",
+    "real-time",
+    "dual-ledger"
+  ],
+  "tags_v2": [
+    "operational",
+    "dual-ledger"
+  ],
+  "tags_v3": [
+    "dual-ledger",
+    "operational",
+    "operational-ledger",
+    "real-time posting",
+    "real-time"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "dual-ledger",
+      "aliases": [],
+      "cluster_id": "all_180",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.8329885601997375,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dual-ledger",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "operational",
+      "aliases": [],
+      "cluster_id": "all_165",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7379324436187744,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "operational",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "operational-ledger",
+      "aliases": [],
+      "cluster_id": "all_412",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8175051212310791,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "operational-ledger",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time posting",
+      "aliases": [],
+      "cluster_id": "all_413",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7645525932312012,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time posting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "all_49",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7592455148696899,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    }
+  ]
+}

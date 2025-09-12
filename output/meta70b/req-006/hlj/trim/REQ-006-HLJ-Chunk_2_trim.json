@@ -1,0 +1,204 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Ensure rate limiting logic is resilient to spoofing of tenant IDs or credentials",
+    "summary": "Implement secure rate limiting to prevent spoofing of tenant IDs or credentials, ensuring the stability and security of the B2B developer platform.",
+    "tags": [
+      "api",
+      "security",
+      "rate limiting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "API Management",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 61-65",
+    "reasoning": {
+      "source_summary_fragment": "rate limiting logic resilient to spoofing",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "secure rate limiting",
+        "prevent spoofing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "rate limiting",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Require multi-factor approval for high-tier tenants",
+    "summary": "Implement multi-factor approval for high-tier tenants to enhance security and prevent unauthorized access to the B2B developer platform.",
+    "tags": [
+      "api",
+      "security",
+      "multi-factor approval"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "API Management",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 66-70",
+    "reasoning": {
+      "source_summary_fragment": "multi-factor approval for high-tier tenants",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "enhance security",
+        "prevent unauthorized access"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "multi-factor approval",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Conduct phased rollout by tenant segment",
+    "summary": "Conduct a phased rollout of the new rate limiting feature by tenant segment to ensure a smooth and stable transition for all tenants.",
+    "tags": [
+      "api",
+      "rollout",
+      "tenant segment"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 71-75",
+    "reasoning": {
+      "source_summary_fragment": "phased rollout by tenant segment",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollout",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "smooth transition",
+        "stable rollout"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "rollout",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Provide sandbox environments for clients to test behavior under new rate limits",
+    "summary": "Provide sandbox environments for clients to test and evaluate the behavior of their applications under the new rate limits, ensuring a seamless integration.",
+    "tags": [
+      "api",
+      "testing",
+      "sandbox environments"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 76-80",
+    "reasoning": {
+      "source_summary_fragment": "sandbox environments for testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "seamless integration",
+        "application testing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "testing",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Update developer documentation and FAQs to explain new rate limit policies",
+    "summary": "Update the developer documentation and FAQs to clearly explain the new rate limit policies, ensuring that developers have the necessary information to adapt their applications.",
+    "tags": [
+      "api",
+      "documentation",
+      "rate limit policies"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 81-85",
+    "reasoning": {
+      "source_summary_fragment": "update developer documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.8
+        }
+      ],
+      "mapped_concepts": [
+        "clear explanations",
+        "developer support"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "documentation",
+      "confidence": 0.78,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006"
+  }
+]

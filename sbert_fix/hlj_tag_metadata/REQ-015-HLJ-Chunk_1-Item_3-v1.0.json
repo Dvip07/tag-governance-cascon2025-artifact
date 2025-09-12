@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Enable per-client custom field mapping in webhook payloads",
+  "summary": "Allow each client integration to define custom data fields within webhook payloads, enabling tailored data delivery to suit client-specific requirements and systems. Support mapping and management of custom fields on a per-client basis.",
+  "tags_v1": [
+    "customization",
+    "webhooks",
+    "[INFERRED] usability"
+  ],
+  "tags_v2": [
+    "webhook"
+  ],
+  "tags_v3": [
+    "webhook",
+    "reliability",
+    "customization",
+    "fault-tolerance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.8044834733009338,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhooks",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7439620494842529,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "customization",
+      "aliases": [],
+      "cluster_id": "all_161",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7560824155807495,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "customization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fault-tolerance",
+      "aliases": [],
+      "cluster_id": "all_403",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7218821048736572,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fault-tolerance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

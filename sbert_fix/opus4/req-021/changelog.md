@@ -1,0 +1,230 @@
+# 📝 Changelog for `req-021` — **opus4**
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['pdf', 'highlighting', 'ux']`
+**Validated tags:** `['pdf', 'highlighting']`
+**Tags added:** `[]`
+**Tags dropped:** `['ux']`
+**Tags kept:** `['pdf', 'highlighting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| highlighting | kept | direct | 1.0 | title | 2025-05-31T23:59:02.871328Z |
+| pdf | kept | direct | 1.0 | summary | 2025-05-31T23:59:02.868599Z |
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:59:02.983858Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['pdf', 'commenting', 'ux']`
+**Validated tags:** `['pdf', 'commenting']`
+**Tags added:** `[]`
+**Tags dropped:** `['ux']`
+**Tags kept:** `['pdf', 'commenting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| commenting | kept | direct | 1.0 | summary | 2025-05-31T23:59:03.000055Z |
+| pdf | kept | direct | 1.0 | title | 2025-05-31T23:59:02.988113Z |
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:59:03.125875Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['threading', 'comments', 'backend']`
+**Validated tags:** `['comments', 'backend']`
+**Tags added:** `[]`
+**Tags dropped:** `['threading']`
+**Tags kept:** `['comments', 'backend']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | kept | direct | 1.0 | summary | 2025-05-31T23:59:03.264069Z |
+| comments | kept | direct | 1.0 | summary | 2025-05-31T23:59:03.253181Z |
+| threading | dropped | none | 0.0 | None | 2025-05-31T23:59:03.240522Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['status', 'workflow', 'backend']`
+**Validated tags:** `['status', 'backend']`
+**Tags added:** `[]`
+**Tags dropped:** `['workflow']`
+**Tags kept:** `['status', 'backend']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | kept | direct | 1.0 | summary | 2025-05-31T23:59:03.391735Z |
+| status | kept | direct | 1.0 | title | 2025-05-31T23:59:03.266867Z |
+| workflow | dropped | none | 0.0 | None | 2025-05-31T23:59:03.380662Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['filtering', 'ui', 'ux']`
+**Validated tags:** `['filter', 'ui']`
+**Tags added:** `['filter']`
+**Tags dropped:** `['filtering', 'ux']`
+**Tags kept:** `['ui']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| filter | added | direct | 1.0 | summary | 2025-05-31T23:59:03.402049Z |
+| filtering | dropped | direct | 1.0 | summary | 2025-05-31T23:59:03.402049Z |
+| ui | kept | direct | 1.0 | summary | 2025-05-31T23:59:03.411841Z |
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:59:03.525603Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['notifications', 'messaging', 'backend']`
+**Validated tags:** `['notification']`
+**Tags added:** `['notification']`
+**Tags dropped:** `['notifications', 'messaging', 'backend']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:59:03.758761Z |
+| messaging | dropped | none | 0.0 | None | 2025-05-31T23:59:03.643256Z |
+| notification | added | direct | 1.0 | title | 2025-05-31T23:59:03.529417Z |
+| notifications | dropped | direct | 1.0 | title | 2025-05-31T23:59:03.529417Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['deeplink', 'pdf', 'navigation']`
+**Validated tags:** `['pdf', 'navigation']`
+**Tags added:** `[]`
+**Tags dropped:** `['deeplink']`
+**Tags kept:** `['pdf', 'navigation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| deeplink | dropped | none | 0.0 | None | 2025-05-31T23:59:03.873575Z |
+| navigation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:03.893018Z |
+| pdf | kept | direct | 1.0 | title | 2025-05-31T23:59:03.877253Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['notifications', 'workflow', 'events']`
+**Validated tags:** `['notification', 'events']`
+**Tags added:** `['notification']`
+**Tags dropped:** `['notifications', 'workflow']`
+**Tags kept:** `['events']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| events | kept | direct | 1.0 | title | 2025-05-31T23:59:04.010602Z |
+| notification | added | direct | 1.0 | title | 2025-05-31T23:59:03.895774Z |
+| notifications | dropped | direct | 1.0 | title | 2025-05-31T23:59:03.895774Z |
+| workflow | dropped | none | 0.0 | None | 2025-05-31T23:59:04.006933Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['versioning', 'migration', 'backend']`
+**Validated tags:** `['migration']`
+**Tags added:** `[]`
+**Tags dropped:** `['versioning', 'backend']`
+**Tags kept:** `['migration']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:59:04.319441Z |
+| migration | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:04.207516Z |
+| versioning | dropped | none | 0.0 | None | 2025-05-31T23:59:04.189515Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['validation', 'warnings', 'ux']`
+**Validated tags:** `['validation', 'warnings']`
+**Tags added:** `[]`
+**Tags dropped:** `['ux']`
+**Tags kept:** `['validation', 'warnings']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| ux | dropped | none | 0.0 | None | 2025-05-31T23:59:04.463619Z |
+| validation | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:04.336923Z |
+| warnings | kept | direct | 1.0 | summary | 2025-05-31T23:59:04.346847Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['validation', 'collision', 'frontend']`
+**Validated tags:** `['validation', 'collision']`
+**Tags added:** `[]`
+**Tags dropped:** `['frontend']`
+**Tags kept:** `['validation', 'collision']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| collision | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:04.489360Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:59:04.613933Z |
+| validation | kept | direct | 1.0 | summary | 2025-05-31T23:59:04.474591Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['documentation', 'guide', 'content']`
+**Validated tags:** `['documentation', 'guide']`
+**Tags added:** `[]`
+**Tags dropped:** `['content']`
+**Tags kept:** `['documentation', 'guide']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| content | dropped | none | 0.0 | None | 2025-05-31T23:59:04.736883Z |
+| documentation | kept | direct | 1.0 | summary | 2025-05-31T23:59:04.625433Z |
+| guide | kept | direct | 1.0 | title | 2025-05-31T23:59:04.628269Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['documentation', 'workflow', 'content', '[INFERRED] collaboration']`
+**Validated tags:** `['documentation']`
+**Tags added:** `[]`
+**Tags dropped:** `['workflow', 'content', '[INFERRED] collaboration']`
+**Tags kept:** `['documentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] collaboration | dropped | none | 0.0 | None | 2025-05-31T23:59:05.088351Z |
+| content | dropped | none | 0.0 | None | 2025-05-31T23:59:04.967655Z |
+| documentation | kept | direct | 1.0 | summary | 2025-05-31T23:59:04.747843Z |
+| workflow | dropped | none | 0.0 | None | 2025-05-31T23:59:04.856367Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['compatibility', 'testing', 'frontend']`
+**Validated tags:** `['compatibility', 'testing']`
+**Tags added:** `[]`
+**Tags dropped:** `['frontend']`
+**Tags kept:** `['compatibility', 'testing']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compatibility | kept | direct | 1.0 | title | 2025-05-31T23:59:05.092044Z |
+| frontend | dropped | none | 0.0 | None | 2025-05-31T23:59:05.217899Z |
+| testing | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:05.108503Z |
+
+## 🔹 HLJ: `REQ-021-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['performance', 'optimization', 'scalability']`
+**Validated tags:** `['performance', 'optimization']`
+**Tags added:** `[]`
+**Tags dropped:** `['scalability']`
+**Tags kept:** `['performance', 'optimization']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| optimization | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:05.238673Z |
+| performance | kept | direct | 1.0 | title | 2025-05-31T23:59:05.222127Z |
+| scalability | dropped | none | 0.0 | None | 2025-05-31T23:59:05.351906Z |

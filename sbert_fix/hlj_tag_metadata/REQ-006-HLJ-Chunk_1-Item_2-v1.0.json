@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Support both burst and sustained rate limits with fallback behavior",
+  "summary": "Implement dual-layered rate limiting, managing both burst (short-term spikes) and sustained (ongoing) usage per tenant. Ensure proper fallback logic to maintain reliability during outages or misconfigurations.",
+  "tags_v1": [
+    "rate-limiting",
+    "[INFERRED] resilience"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "rate-limiting",
+    "api",
+    "burst limits"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.8104022741317749,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7429052591323853,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "burst limits",
+      "aliases": [],
+      "cluster_id": "all_358",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7935096025466919,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "burst limits",
+      "method": "dedup_canonical"
+    }
+  ]
+}

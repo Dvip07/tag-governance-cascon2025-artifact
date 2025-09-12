@@ -1,0 +1,56 @@
+{
+  "hlj_id": "REQ-014-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-014",
+  "domain": "FinTech",
+  "title": "Disable transaction confirmation if estimation unavailable",
+  "summary": "Automatically block or disable transaction confirmation when fee estimation fails or is unavailable, ensuring users cannot unknowingly proceed with potentially incorrect costs. This measure protects users and prevents critical mistakes arising from missing fee data.",
+  "tags_v1": [
+    "security",
+    "blocking"
+  ],
+  "tags_v2": [
+    "security",
+    "blocking"
+  ],
+  "tags_v3": [
+    "security",
+    "blocking"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6999790072441101,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "blocking",
+      "aliases": [],
+      "cluster_id": "all_30",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7029489874839783,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "blocking",
+      "method": "dedup_canonical"
+    }
+  ]
+}

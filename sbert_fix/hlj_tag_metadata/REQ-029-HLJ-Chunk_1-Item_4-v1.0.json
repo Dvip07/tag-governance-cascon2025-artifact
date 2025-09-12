@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Support advanced filter options on log queries (e.g., by department and time)",
+  "summary": "Add enhanced filtering to audit log queries, enabling users to filter data by department, specific time ranges, and other dimensions. This increases precision in compliance reviews and operational audits.",
+  "tags_v1": [
+    "usability",
+    "compliance",
+    "[INFERRED] advanced-filtering"
+  ],
+  "tags_v2": [
+    "compliance"
+  ],
+  "tags_v3": [
+    "session",
+    "compliance",
+    "consistency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "session",
+      "aliases": [],
+      "cluster_id": "all_300",
+      "domains": [
+        "Compliance and Security",
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7082054615020752,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "session",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6925012469291687,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "consistency",
+      "aliases": [],
+      "cluster_id": "all_108",
+      "domains": [
+        "Compliance and Security",
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6946773529052734,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consistency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

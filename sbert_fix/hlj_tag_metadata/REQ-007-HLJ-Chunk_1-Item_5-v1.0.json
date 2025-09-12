@@ -1,0 +1,135 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Set pending state and notify Compliance on fallback trigger",
+  "summary": "Upon fallback activation, place customer accounts into a pending status and immediately notify the Compliance team. This ensures oversight during any deviation from the normal screening workflow and mitigates regulatory risk.",
+  "tags_v1": [
+    "aml",
+    "notification",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "aml",
+    "notification"
+  ],
+  "tags_v3": [
+    "compliance",
+    "aml",
+    "notification",
+    "workflow",
+    "ui",
+    "state"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7281811237335205,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aml",
+      "aliases": [],
+      "cluster_id": "all_11",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6930340528488159,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.741532027721405,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7344062328338623,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6807529926300049,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "state",
+      "aliases": [],
+      "cluster_id": "all_280",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6890525221824646,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "state",
+      "method": "dedup_canonical"
+    }
+  ]
+}

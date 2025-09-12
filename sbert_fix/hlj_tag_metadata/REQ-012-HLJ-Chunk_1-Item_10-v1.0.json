@@ -1,0 +1,61 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Integrate with government tax rate APIs for automatic updates",
+  "summary": "Develop integration connectors with official government APIs to automatically fetch and apply updated GST rates. This helps the system remain current and compliant with regulatory changes without introducing operational lag or manual intervention.",
+  "tags_v1": [
+    "integration",
+    "api",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "integration",
+    "api"
+  ],
+  "tags_v3": [
+    "integration",
+    "api"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7054500579833984,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7194021940231323,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    }
+  ]
+}

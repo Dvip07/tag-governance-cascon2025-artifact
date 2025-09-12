@@ -1,0 +1,174 @@
+# 📝 Changelog for `req-017` — **opus4**
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['billing', 'calculations']`
+**Validated tags:** `['billing', 'calculations']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['billing', 'calculations']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| billing | kept | direct | 1.0 | summary | 2025-05-31T23:59:01.628105Z |
+| calculations | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:01.642591Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['billing', 'credits']`
+**Validated tags:** `['billing', 'credits']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['billing', 'credits']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| billing | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:01.655446Z |
+| credits | kept | direct | 1.0 | source_fragment | 2025-05-31T23:59:01.666073Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['subscriptions', 'upgrades']`
+**Validated tags:** `['upgrade']`
+**Tags added:** `['upgrade']`
+**Tags dropped:** `['subscriptions', 'upgrades']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| subscriptions | dropped | none | 0.0 | None | 2025-05-31T23:59:01.787311Z |
+| upgrade | added | direct | 1.0 | title | 2025-05-31T23:59:01.791542Z |
+| upgrades | dropped | direct | 1.0 | title | 2025-05-31T23:59:01.791542Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['billing', 'history']`
+**Validated tags:** `['billing', 'history']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['billing', 'history']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| billing | kept | direct | 1.0 | title | 2025-05-31T23:59:01.794753Z |
+| history | kept | direct | 1.0 | title | 2025-05-31T23:59:01.797733Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['billing', 'invoices']`
+**Validated tags:** `['billing', 'invoice']`
+**Tags added:** `['invoice']`
+**Tags dropped:** `['invoices']`
+**Tags kept:** `['billing']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| billing | kept | direct | 1.0 | summary | 2025-05-31T23:59:01.807552Z |
+| invoice | added | direct | 1.0 | source_fragment | 2025-05-31T23:59:01.819641Z |
+| invoices | dropped | direct | 1.0 | source_fragment | 2025-05-31T23:59:01.819641Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['subscriptions', 'edge-cases']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['subscriptions', 'edge-cases']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| edge-cases | dropped | none | 0.0 | None | 2025-05-31T23:59:02.070706Z |
+| subscriptions | dropped | none | 0.0 | None | 2025-05-31T23:59:01.939852Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['subscriptions', 'fraud-prevention']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['subscriptions', 'fraud-prevention']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| fraud-prevention | dropped | none | 0.0 | None | 2025-05-31T23:59:02.317039Z |
+| subscriptions | dropped | none | 0.0 | None | 2025-05-31T23:59:02.193551Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['billing', 'compliance']`
+**Validated tags:** `['billing', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['billing', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| billing | kept | direct | 1.0 | summary | 2025-05-31T23:59:02.326929Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:59:02.335488Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['payments', 'integrations']`
+**Validated tags:** `['integration']`
+**Tags added:** `['integration']`
+**Tags dropped:** `['payments', 'integrations']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| integration | added | direct | 1.0 | source_fragment | 2025-05-31T23:59:02.466540Z |
+| integrations | dropped | direct | 1.0 | source_fragment | 2025-05-31T23:59:02.466540Z |
+| payments | dropped | none | 0.0 | None | 2025-05-31T23:59:02.454106Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['notifications', 'email']`
+**Validated tags:** `['notification', 'email']`
+**Tags added:** `['notification']`
+**Tags dropped:** `['notifications']`
+**Tags kept:** `['email']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| email | kept | direct | 1.0 | title | 2025-05-31T23:59:02.574540Z |
+| notification | added | semantic | 0.695723295211792 | source_fragment | 2025-05-31T23:59:02.570416Z |
+| notifications | dropped | semantic | 0.695723295211792 | source_fragment | 2025-05-31T23:59:02.570416Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['notifications', 'monitoring', '[INFERRED] analytics']`
+**Validated tags:** `['monitoring']`
+**Tags added:** `[]`
+**Tags dropped:** `['notifications', '[INFERRED] analytics']`
+**Tags kept:** `['monitoring']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] analytics | dropped | none | 0.0 | None | 2025-05-31T23:59:02.830478Z |
+| monitoring | kept | direct | 1.0 | summary | 2025-05-31T23:59:02.708817Z |
+| notifications | dropped | none | 0.0 | None | 2025-05-31T23:59:02.698366Z |
+
+## 🔹 HLJ: `REQ-017-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['documentation', 'support']`
+**Validated tags:** `['documentation', 'support']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'support']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | summary | 2025-05-31T23:59:02.840879Z |
+| support | kept | direct | 1.0 | title | 2025-05-31T23:59:02.843825Z |

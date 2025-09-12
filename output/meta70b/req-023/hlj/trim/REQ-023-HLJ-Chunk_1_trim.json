@@ -1,0 +1,192 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement scalable feature flag system",
+    "summary": "The system should implement a scalable feature flag system to enable efficient management of features.",
+    "tags": [
+      "feature flags",
+      "scalability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Feature Flag Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "Implement a geo-targeted feature flag system",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature flags",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "feature flag management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Integrate with real-time Geo-IP resolution service",
+    "summary": "The system should integrate with a real-time Geo-IP resolution service for accurate geolocation.",
+    "tags": [
+      "geo-targeting",
+      "geo-ip"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Geo-Targeting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "integrate with a real-time Geo-IP resolution service",
+      "tag_metadata_reference": [
+        {
+          "tag": "geo-ip",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "geo-targeting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Handle users on VPNs, proxies, or with missing geo-data",
+    "summary": "The system should handle users on VPNs, proxies, or with missing geo-data for robustness.",
+    "tags": [
+      "edge cases",
+      "geo-ip"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Edge Case Handling"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge cases",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "edge case handling"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement percentage-based rollouts",
+    "summary": "The system should implement percentage-based rollouts for controlled feature releases.",
+    "tags": [
+      "feature flags",
+      "rollouts"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Feature Flag Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 12-14",
+    "reasoning": {
+      "source_summary_fragment": "implement percentage-based rollouts",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature flags",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "feature flag management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Allow dynamic adjustments via admin portal",
+    "summary": "The system should allow dynamic adjustments via the admin portal for flexibility.",
+    "tags": [
+      "feature flags",
+      "admin portal"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Feature Flag Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 14-15",
+    "reasoning": {
+      "source_summary_fragment": "allow dynamic adjustments via admin portal",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature flags",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "feature flag management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-023"
+  }
+]

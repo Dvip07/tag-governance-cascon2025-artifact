@@ -1,0 +1,114 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Preserve comment positions or warn users when uploading new PDF versions",
+  "summary": "When a new version of a PDF is uploaded, the system should attempt to retain comment locations or alert users about potential position shifts. This maintains accuracy and context in feedback.",
+  "tags_v1": [
+    "comments",
+    "ux"
+  ],
+  "tags_v2": [
+    "comments"
+  ],
+  "tags_v3": [
+    "notification",
+    "performance",
+    "comments",
+    "optimization",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7342729568481445,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6980526447296143,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "comments",
+      "aliases": [
+        "commenting"
+      ],
+      "cluster_id": "all_209",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7798527479171753,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "comments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "optimization",
+      "aliases": [],
+      "cluster_id": "all_277",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7047621011734009,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "optimization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7000041007995605,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

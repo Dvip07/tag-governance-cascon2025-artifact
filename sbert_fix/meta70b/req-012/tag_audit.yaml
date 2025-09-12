@@ -1,0 +1,439 @@
+- hlj_id: REQ-012-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201715Z'
+  original_tags:
+  - gst
+  - taxation
+  - provincial tax
+  validated_tags:
+  - gst
+  - tax
+  - provincial tax
+  tags_added:
+  - tax
+  tags_dropped:
+  - taxation
+  tags_kept:
+  - gst
+  - provincial tax
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:41.766733Z'
+  - original_tag: taxation
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:57:41.770060Z'
+  - original_tag: provincial tax
+    canonical_tag: provincial tax
+    matched_tag: provincial tax
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.8212892413139343
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.428372Z'
+- hlj_id: REQ-012-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201726Z'
+  original_tags:
+  - gst
+  - provincial tax
+  - dual-gst
+  validated_tags:
+  - gst
+  - dual-gst
+  tags_added: []
+  tags_dropped:
+  - provincial tax
+  tags_kept:
+  - gst
+  - dual-gst
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.438648Z'
+  - original_tag: provincial tax
+    canonical_tag: provincial tax
+    matched_tag: provincial tax
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.601921Z'
+  - original_tag: dual-gst
+    canonical_tag: dual-gst
+    matched_tag: dual-gst
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.605973Z'
+- hlj_id: REQ-012-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201728Z'
+  original_tags:
+  - gst
+  - invoicing
+  - taxation
+  validated_tags:
+  - gst
+  - tax
+  tags_added:
+  - tax
+  tags_dropped:
+  - invoicing
+  - taxation
+  tags_kept:
+  - gst
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.609123Z'
+  - original_tag: invoicing
+    canonical_tag: invoicing
+    matched_tag: invoicing
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.787633Z'
+  - original_tag: taxation
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-05-31T23:57:42.798624Z'
+- hlj_id: REQ-012-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201730Z'
+  original_tags:
+  - gst
+  - invoicing
+  - taxation
+  validated_tags:
+  - gst
+  - tax
+  tags_added:
+  - tax
+  tags_dropped:
+  - invoicing
+  - taxation
+  tags_kept:
+  - gst
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.802200Z'
+  - original_tag: invoicing
+    canonical_tag: invoicing
+    matched_tag: invoicing
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:42.982612Z'
+  - original_tag: taxation
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:43.070275Z'
+- hlj_id: REQ-012-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201732Z'
+  original_tags:
+  - gst
+  - taxation
+  - multiple tax rates
+  validated_tags:
+  - gst
+  - tax
+  - multiple tax rates
+  tags_added:
+  - tax
+  tags_dropped:
+  - taxation
+  tags_kept:
+  - gst
+  - multiple tax rates
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.078085Z'
+  - original_tag: taxation
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:57:43.081244Z'
+  - original_tag: multiple tax rates
+    canonical_tag: multiple tax rates
+    matched_tag: multiple tax rates
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.084355Z'
+- hlj_id: REQ-012-HLJ-Chunk_2-Item_6-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201733Z'
+  original_tags:
+  - gst
+  - exemptions
+  - '[INFERRED] compliance'
+  validated_tags:
+  - gst
+  - exemption
+  tags_added:
+  - exemption
+  tags_dropped:
+  - exemptions
+  - '[INFERRED] compliance'
+  tags_kept:
+  - gst
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.171466Z'
+  - original_tag: exemptions
+    canonical_tag: exemption
+    matched_tag: exemption
+    tag_origin_cluster_id: exemption
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: true
+    timestamp: '2025-05-31T23:57:43.188637Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.358856Z'
+- hlj_id: REQ-012-HLJ-Chunk_2-Item_7-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201735Z'
+  original_tags:
+  - gst
+  - fallback
+  validated_tags:
+  - gst
+  - fallback
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - gst
+  - fallback
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.448461Z'
+  - original_tag: fallback
+    canonical_tag: fallback
+    matched_tag: fallback
+    tag_origin_cluster_id: fallback
+    original_confidence: 0.85
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.451380Z'
+- hlj_id: REQ-012-HLJ-Chunk_2-Item_8-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201737Z'
+  original_tags:
+  - gst
+  - reporting
+  validated_tags:
+  - gst
+  - reporting
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - gst
+  - reporting
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.454036Z'
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.466037Z'
+- hlj_id: REQ-012-HLJ-Chunk_2-Item_9-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201738Z'
+  original_tags:
+  - gst
+  - compliance
+  validated_tags:
+  - gst
+  - compliance
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - gst
+  - compliance
+  validation_details:
+  - original_tag: gst
+    canonical_tag: gst
+    matched_tag: gst
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.551770Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.555284Z'
+- hlj_id: REQ-012-HLJ-Chunk_2-Item_10-v1.0
+  requirement: req-012
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.201740Z'
+  original_tags:
+  - security
+  - privacy
+  validated_tags:
+  - security
+  - privacy
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - security
+  - privacy
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.662270Z'
+  - original_tag: privacy
+    canonical_tag: privacy
+    matched_tag: privacy
+    tag_origin_cluster_id: privacy
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:43.753049Z'

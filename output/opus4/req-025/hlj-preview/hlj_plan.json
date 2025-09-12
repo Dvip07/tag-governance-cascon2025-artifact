@@ -1,0 +1,266 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-025-HLJ-Chunk_1",
+      "focus": "Instrumentation and Visualization",
+      "items": [
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement widget load time instrumentation for all dashboard widgets",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "analytics",
+            "performance",
+            "instrumentation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Capture render and interactive readiness times per widget instance",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "analytics",
+            "performance",
+            "instrumentation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Report timing data with user, device, and browser context metadata",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "analytics",
+            "performance",
+            "telemetry"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 15"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Build engineering dashboard with widget performance breakdowns",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "UserExperience"
+          ],
+          "tags": [
+            "analytics",
+            "dashboard",
+            "visualization"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Create user segment and time window filtering for performance data",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "UserExperience"
+          ],
+          "tags": [
+            "analytics",
+            "dashboard",
+            "filtering"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement outlier detection and regression flagging system",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "analytics",
+            "performance",
+            "alerting"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Enable drill-down to root cause analysis (CDN lag, third-party scripts)",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring",
+            "DashboardAnalytics"
+          ],
+          "tags": [
+            "analytics",
+            "performance",
+            "diagnostics"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Configure alerts for widgets breaching 2s load time at 95th percentile",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "alerting",
+            "performance",
+            "sla"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Integrate performance monitoring with CI/CD deployment pipeline",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "ci-cd",
+            "performance",
+            "automation"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Block deployments causing performance regressions automatically",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "ci-cd",
+            "performance",
+            "automation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-025-HLJ-Chunk_2",
+      "focus": "Edge Cases, Compliance, and Documentation",
+      "items": [
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Monitor external service widget fallback performance metrics",
+          "domain": "SaaS",
+          "subdomain": [
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "performance",
+            "resilience",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement user prompts for widget hiding when performance budget exceeded",
+          "domain": "SaaS",
+          "subdomain": [
+            "UserExperience",
+            "PerformanceMonitoring"
+          ],
+          "tags": [
+            "performance",
+            "ux",
+            "dashboard"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Anonymize all telemetry data for privacy compliance",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics"
+          ],
+          "tags": [
+            "privacy",
+            "compliance",
+            "security"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Create user-facing performance data transparency interface with opt-out",
+          "domain": "SaaS",
+          "subdomain": [
+            "UserExperience"
+          ],
+          "tags": [
+            "privacy",
+            "ux",
+            "compliance"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35"
+        },
+        {
+          "id": "REQ-025-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Build self-service analytics portal for product owners",
+          "domain": "SaaS",
+          "subdomain": [
+            "DashboardAnalytics",
+            "UserExperience"
+          ],
+          "tags": [
+            "analytics",
+            "dashboard",
+            "self-service"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 39"
+        }
+      ]
+    }
+  ]
+}

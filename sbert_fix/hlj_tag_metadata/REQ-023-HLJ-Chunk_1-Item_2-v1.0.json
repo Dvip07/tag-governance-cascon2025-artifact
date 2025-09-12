@@ -1,0 +1,127 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Enable percentage-based feature rollouts to geo-segments",
+  "summary": "Implement mechanisms to allow administrators to roll out features to a specified percentage of users within defined geo-segments. Supports gradual and controlled feature adoption while reducing risk of issues during deployment.",
+  "tags_v1": [
+    "feature-flags",
+    "deployment",
+    "[INFERRED] progressive-rollout"
+  ],
+  "tags_v2": [
+    "deployment"
+  ],
+  "tags_v3": [
+    "feature-flags",
+    "geo-ip",
+    "deployment",
+    "rollback",
+    "geo-targeting",
+    "progressive-rollout"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "all_133",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7879266738891602,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature-flags",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geo-ip",
+      "aliases": [],
+      "cluster_id": "all_139",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7599501013755798,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-ip",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deployment",
+      "aliases": [],
+      "cluster_id": "all_136",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7689542770385742,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deployment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7602578401565552,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geo-targeting",
+      "aliases": [],
+      "cluster_id": "all_389",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7948911190032959,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-targeting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "progressive-rollout",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8140031695365906,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "progressive-rollout",
+      "method": "dedup_canonical"
+    }
+  ]
+}

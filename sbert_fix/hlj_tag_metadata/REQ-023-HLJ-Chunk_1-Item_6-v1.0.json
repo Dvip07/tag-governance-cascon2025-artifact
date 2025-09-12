@@ -1,0 +1,95 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Deliver real-time analytics dashboards showing feature adoption, error rates, conversion KPIs by geography/cohort",
+  "summary": "Create analytics dashboards that provide real-time insights into feature adoption, error rates, and conversion KPIs, broken down by geography and user cohorts. Enables data-driven monitoring and measurement of feature flag impact.",
+  "tags_v1": [
+    "dashboard",
+    "real-time-analytics",
+    "[INFERRED] kpi-tracking"
+  ],
+  "tags_v2": [
+    "dashboard",
+    "real-time-analytics"
+  ],
+  "tags_v3": [
+    "dashboard",
+    "real-time-analytics",
+    "analytics",
+    "kpi-tracking"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7735511660575867,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time-analytics",
+      "aliases": [
+        "real-time analytics",
+        "real-time monitoring"
+      ],
+      "cluster_id": "all_141",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8277665376663208,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time-analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7977417707443237,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "kpi-tracking",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7721369862556458,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "kpi-tracking",
+      "method": "dedup_canonical"
+    }
+  ]
+}

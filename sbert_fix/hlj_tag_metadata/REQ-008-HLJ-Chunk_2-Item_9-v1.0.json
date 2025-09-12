@@ -1,0 +1,62 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "meta70b",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Log all API calls, eligibility checks, and manual interventions",
+  "summary": "Log all API calls, eligibility checks, and manual interventions to ensure auditability and compliance with regulatory requirements.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "[INFERRED] tracking"
+  ],
+  "tags_v2": [
+    "logs",
+    "audit"
+  ],
+  "tags_v3": [
+    "audit",
+    "logging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7428786754608154,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7025116682052612,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    }
+  ]
+}

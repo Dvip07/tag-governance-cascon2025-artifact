@@ -1,0 +1,36 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Implement rate limiting for high-frequency webhook clients and notify on threshold breaches",
+  "summary": "Introduce rate limiting controls on webhook endpoints to mitigate abuse and ensure reliability for all users. Clients exceeding configured thresholds must be notified promptly, supporting policy transparency and proactive correction.",
+  "tags_v1": [
+    "rate-limiting",
+    "performance",
+    "[INFERRED] reliability"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "reliability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7518475651741028,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

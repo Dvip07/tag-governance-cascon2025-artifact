@@ -1,0 +1,190 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-010-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-010",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-010-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-010-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-010 (FinTech)
+
+FT-010: Dual-Ledger Posting with Reconcilable Phantom Balances
+Title:
+Enable Dual-Ledger Transaction Posting With Reconcilable Phantom Balances
+
+Background & Objective:
+The evolution of our financial product suite—including multi-currency wallets and complex B2B services—has exposed gaps in current ledger reconciliation, especially for advanced use cases such as pre-authorizations, holds, and merchant settlements. Our current single-ledger architecture cannot efficiently support "phantom" (temporary or pending) transactions and real-time reconciliation between operational and reporting ledgers.
+
+This requirement targets the design and implementation of a dual-ledger posting mechanism, introducing a robust structure for phantom balances, real-time reconciliation, and audit-ready transparency.
+
+Scope of Requirement:
+
+Dual-Ledger Structure:
+
+Implement two parallel ledgers:
+a) Operational Ledger – for real-time posting, holds, and day-to-day transactional logic
+b) Reporting Ledger – for financial reporting, regulatory filings, and month-end reconciliation
+
+All transactions must be posted to both ledgers, with metadata linking corresponding entries.
+
+Phantom balances (temporary holds or pending transactions) must be tracked in the operational ledger, clearly differentiated from settled balances.
+
+Phantom Balance Management:
+
+Develop logic for creating, updating, and expiring phantom transactions, including clear rules for conversion to settled or reversal status.
+
+Phantom balances should be immediately visible to customers (e.g., “pending” status in UI), and to internal teams via dashboard.
+
+Provide scheduled batch processes to reconcile phantom vs. settled balances daily, with exception reporting for mismatches.
+
+Reconciliation & Exception Handling:
+
+Build reconciliation tools to detect and resolve mismatches between operational and reporting ledgers, flagging exceptions for review.
+
+Allow manual and automated resolution workflows, with full audit trails for all actions.
+
+In the case of reversals or adjustments (e.g., expired authorizations), propagate changes to both ledgers with historical tracking.
+
+Security & Compliance:
+
+Ensure all postings, updates, and reversals are logged with immutable audit trails.
+
+Access to ledger data must be role-based and enforce least-privilege principles.
+
+Meet or exceed regulatory standards for ledger management, including SOX and PCI-DSS.
+
+Edge Case Handling:
+
+Handle cases of “phantom reversals” (phantom balance is reversed before settlement), with clear UI and reporting logic.
+
+Support for multi-currency transactions, including conversion logic for reporting ledger entries.
+
+If batch reconciliation fails, trigger alerts and restrict further settlement actions until resolved.
+
+Testing, Monitoring, & Documentation:
+
+Develop comprehensive test plans covering creation, settlement, reversal, and reconciliation scenarios.
+
+Monitor all ledger activities, flagging anomalies in near real time.
+
+Deliver updated API documentation, data model diagrams, and reconciliation SOPs.
+
+Dependencies & Constraints:
+
+May require phased migration from legacy single-ledger architecture.
+
+Performance overhead must remain within 10% of current posting throughput.
+
+Requires sign-off from Finance, Risk, and Compliance teams.
+
+Deliverables:
+
+Updated ledgers, APIs, and monitoring tools
+
+Exception management dashboards
+
+Migration and rollback plan
+
+Documentation and training materials
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

@@ -1,0 +1,76 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Allow agent reclassification of sentiment/urgency with feedback into model learning",
+  "summary": "Permit agents to reclassify the sentiment or urgency of tickets, feeding their inputs back into the learning model. This supports continuous improvement and adapts the model to real-world edge cases.",
+  "tags_v1": [
+    "feedback",
+    "continuous-learning",
+    "[INFERRED] retraining"
+  ],
+  "tags_v2": [
+    "feedback"
+  ],
+  "tags_v3": [
+    "feedback",
+    "transparency",
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "feedback",
+      "aliases": [],
+      "cluster_id": "all_51",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7345815896987915,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feedback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "transparency",
+      "aliases": [],
+      "cluster_id": "all_123",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7090577483177185,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "transparency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7387993335723877,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

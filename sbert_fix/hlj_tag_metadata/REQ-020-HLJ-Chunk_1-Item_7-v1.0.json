@@ -1,0 +1,106 @@
+{
+  "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-020",
+  "domain": "SaaS",
+  "title": "Track and log all merges and changes with per-contact history",
+  "summary": "Create logging mechanisms that record all merge and update events at a per-contact level, enabling detailed history tracking and auditability. This supports maintainability and troubleshooting by offering visibility into all changes.",
+  "tags_v1": [
+    "logging",
+    "history"
+  ],
+  "tags_v2": [
+    "history"
+  ],
+  "tags_v3": [
+    "duplicate-detection",
+    "crm",
+    "webhook",
+    "fuzzy-matching"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "duplicate-detection",
+      "aliases": [],
+      "cluster_id": "all_338",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.720417320728302,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "duplicate-detection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "crm",
+      "aliases": [],
+      "cluster_id": "all_219",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7459269762039185,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "crm",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "history",
+      "aliases": [],
+      "cluster_id": "all_202",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6671410799026489,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "history",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "webhook",
+      "aliases": [
+        "webhooks"
+      ],
+      "cluster_id": "all_159",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7105033993721008,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "webhook",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fuzzy-matching",
+      "aliases": [],
+      "cluster_id": "all_340",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6976916193962097,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fuzzy-matching",
+      "method": "dedup_canonical"
+    }
+  ]
+}

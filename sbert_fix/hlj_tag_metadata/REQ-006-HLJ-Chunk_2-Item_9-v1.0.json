@@ -1,0 +1,93 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Ensure added rate limiting logic does not exceed 10ms API latency at peak loads",
+  "summary": "Rate limiting logic should be optimized to add no more than 10ms latency to API requests, even at high traffic volumes. Continual monitoring and performance tuning will ensure a responsive developer experience.",
+  "tags_v1": [
+    "performance",
+    "[INFERRED] latency"
+  ],
+  "tags_v2": [
+    "performance"
+  ],
+  "tags_v3": [
+    "performance",
+    "infrastructure",
+    "upgrade",
+    "latency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7306214570999146,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "infrastructure",
+      "aliases": [],
+      "cluster_id": "all_268",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7186449766159058,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "infrastructure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "upgrade",
+      "aliases": [
+        "upgrades"
+      ],
+      "cluster_id": "all_201",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7086674571037292,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "upgrade",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "latency",
+      "aliases": [],
+      "cluster_id": "all_66",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7663203477859497,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "latency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

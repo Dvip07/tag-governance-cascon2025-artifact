@@ -1,0 +1,144 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-005",
+  "summary": "The FinTech company aims to implement a user-controlled virtual card freeze/unfreeze feature via their mobile app, focusing on security, usability, and cross-system synchronization. The feature should allow customers to instantly freeze or unfreeze their virtual cards, with clear UI feedback and strong authentication. The implementation must comply with applicable payment network and regulatory requirements."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["VirtualCardManagement", "MobileApp"],
+  "canonical_tags": ["virtualcard", "freezeunfreeze", "mobileapp"],
+  "difficulty": "medium",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_1",
+      "focus": "User Experience & Interface",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement Freeze/Unfreeze Card Toggle",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "MobileApp"],
+          "tags": ["virtualcard", "freezeunfreeze"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Display Clear UI Feedback",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "MobileApp"],
+          "tags": ["virtualcard", "ui"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 14-16"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Provide Context-Sensitive Help",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "MobileApp"],
+          "tags": ["virtualcard", "help"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 17-19"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement Instant Feedback for Freeze/Unfreeze Operations",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "MobileApp"],
+          "tags": ["virtualcard", "feedback"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20-23"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Handle Edge Cases for Freeze/Unfreeze Operations",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "MobileApp"],
+          "tags": ["virtualcard", "edgecases"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24-27"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_2",
+      "focus": "Backend Logic & Synchronization",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Implement RESTful Endpoints for Freeze/Unfreeze Requests",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "Backend"],
+          "tags": ["virtualcard", "restful"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30-33"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Ensure Atomicity and Idempotence of Freeze/Unfreeze Operations",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "Backend"],
+          "tags": ["virtualcard", "atomicity"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 34-37"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Log Freeze/Unfreeze Actions with Timestamp and User/Device Metadata",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "Backend"],
+          "tags": ["virtualcard", "logging"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 38-41"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Implement Queueing for Freeze/Unfreeze Requests During Backend Maintenance",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "Backend"],
+          "tags": ["virtualcard", "queueing"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 42-45"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Handle Conflicting Freeze/Unfreeze Requests",
+          "domain": "FinTech",
+          "subdomain": ["VirtualCardManagement", "Backend"],
+          "tags": ["virtualcard", "conflict"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 46-49"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===
+!!CONSTRAINT_BROKEN!!

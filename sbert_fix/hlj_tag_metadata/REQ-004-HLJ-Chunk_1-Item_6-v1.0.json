@@ -1,0 +1,155 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Enable partial deletion/redaction in situations impacting auditability",
+  "summary": "Provide mechanisms for redacting or partially deleting specific fields in log entries to balance privacy requirements with audit and legal obligations, especially when full deletion could compromise auditability.",
+  "tags_v1": [
+    "redaction",
+    "right-to-erasure",
+    "[INFERRED] auditability"
+  ],
+  "tags_v2": [
+    "redaction",
+    "right-to-erasure"
+  ],
+  "tags_v3": [
+    "redaction",
+    "gdpr",
+    "privacy",
+    "right-to-erasure",
+    "auditlogs",
+    "audit",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "redaction",
+      "aliases": [],
+      "cluster_id": "all_172",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7419983148574829,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "redaction",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7097787261009216,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749366044998169,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "right-to-erasure",
+      "aliases": [],
+      "cluster_id": "all_170",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7441554069519043,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "right-to-erasure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auditlogs",
+      "aliases": [
+        "auditing"
+      ],
+      "cluster_id": "all_408",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8103433847427368,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditlogs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7663344144821167,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7215858697891235,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

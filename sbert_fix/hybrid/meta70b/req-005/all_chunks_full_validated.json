@@ -1,0 +1,1590 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement Freeze/Unfreeze Card Toggle",
+    "summary": "The system should allow users to instantly freeze or unfreeze their virtual cards, enhancing security and control.",
+    "tags": [
+      "virtualcard",
+      "freezeunfreeze"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled virtual card freeze/unfreeze feature",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.93
+        },
+        {
+          "tag": "freezeunfreeze",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "virtual card management",
+        "mobile app security"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "virtualcard",
+      "freezeunfreeze"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:47.732101Z"
+      },
+      {
+        "original_tag": "freezeunfreeze",
+        "canonical_tag": "freezeunfreeze",
+        "matched_tag": "freezeunfreeze",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:47.926335Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "mobile",
+      "usability",
+      "virtualcard",
+      "freezeunfreeze",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7109225988388062,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7348175048828125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7324526906013489,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6744087934494019,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7555456161499023,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "freezeunfreeze",
+        "original_tag": "freezeunfreeze",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7768524885177612,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7462018132209778,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Display Clear UI Feedback",
+    "summary": "The system should provide clear and timely feedback to users about the status of their virtual card freeze/unfreeze operations.",
+    "tags": [
+      "virtualcard",
+      "ui"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 14-16",
+    "reasoning": {
+      "source_summary_fragment": "clear UI feedback for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.91
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "virtualcard",
+      "ui"
+    ],
+    "tags_v2": [
+      "virtualcard",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "semantic",
+        "similarity": 0.7655507922172546,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.124544Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.127637Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "mobile",
+      "usability",
+      "virtualcard",
+      "feedback",
+      "design"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7350966930389404,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7451443076133728,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7553701400756836,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7677263021469116,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7259037494659424,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6935997605323792,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Provide Context-Sensitive Help",
+    "summary": "The system should offer context-sensitive help to users, enhancing their understanding and effective use of the virtual card freeze/unfreeze feature.",
+    "tags": [
+      "virtualcard",
+      "help"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 17-19",
+    "reasoning": {
+      "source_summary_fragment": "context-sensitive help for virtual card management",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.9
+        },
+        {
+          "tag": "help",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user support",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "support",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "virtualcard",
+      "help"
+    ],
+    "tags_v2": [
+      "virtualcard",
+      "help"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "semantic",
+        "similarity": 0.7327313423156738,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.315695Z"
+      },
+      {
+        "original_tag": "help",
+        "canonical_tag": "help",
+        "matched_tag": "help",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.319226Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "usability",
+      "mobile",
+      "virtualcard",
+      "help"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7369824647903442,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7590637803077698,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7552474737167358,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7800171375274658,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "help",
+        "original_tag": "help",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7247587442398071,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement Instant Feedback for Freeze/Unfreeze Operations",
+    "summary": "The system should provide instant feedback to users upon the completion of freeze/unfreeze operations, ensuring transparency and user trust.",
+    "tags": [
+      "virtualcard",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "instant feedback for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.92
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "instant feedback",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "transparency",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "virtualcard",
+      "feedback"
+    ],
+    "tags_v2": [
+      "feedback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.518529Z"
+      },
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.522928Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "ui",
+      "feedback",
+      "usability",
+      "mobile",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6987279653549194,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7188012599945068,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.726996660232544,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7419335842132568,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7317901849746704,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7536620497703552,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Handle Edge Cases for Freeze/Unfreeze Operations",
+    "summary": "The system should be able to handle edge cases and unexpected scenarios that may arise during freeze/unfreeze operations, ensuring system reliability and user trust.",
+    "tags": [
+      "virtualcard",
+      "edgecases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 24-27",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.91
+        },
+        {
+          "tag": "edgecases",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge case handling",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "virtualcard",
+      "edgecases"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:48.722245Z"
+      },
+      {
+        "original_tag": "edgecases",
+        "canonical_tag": "edgecase",
+        "matched_tag": "edgecase",
+        "tag_origin_cluster_id": "edgecase",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:48.940553Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "authentication",
+      "security",
+      "operational",
+      "mobile",
+      "usability",
+      "virtualcard",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7264580726623535,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7490023374557495,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "operational",
+        "original_tag": "operational",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7017824649810791,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7387462258338928,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.739723801612854,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7564245462417603,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6972217559814453,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Implement RESTful Endpoints for Freeze/Unfreeze Requests",
+    "summary": "Design and implement RESTful API endpoints for handling freeze and unfreeze requests of virtual cards, ensuring secure, scalable, and efficient operations.",
+    "tags": [
+      "virtualcard",
+      "restful",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled virtual card freeze/unfreeze feature",
+      "tag_metadata_reference": [
+        {
+          "tag": "restful",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "virtual card management",
+        "RESTful API"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "virtualcard",
+      "restful",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "restful"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.136711Z"
+      },
+      {
+        "original_tag": "restful",
+        "canonical_tag": "restful",
+        "matched_tag": "restful",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.140457Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.326310Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "queue",
+      "rest",
+      "backend",
+      "virtualcard",
+      "rollback",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "queue",
+        "original_tag": "queue",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7166594862937927,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "rest",
+        "original_tag": "restful",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7095297574996948,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7466108798980713,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7589366436004639,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7172441482543945,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7509816884994507,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Ensure Atomicity and Idempotence of Freeze/Unfreeze Operations",
+    "summary": "Ensure that freeze and unfreeze operations on virtual cards are atomic and idempotent, providing a consistent and reliable user experience.",
+    "tags": [
+      "virtualcard",
+      "atomicity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 34-37",
+    "reasoning": {
+      "source_summary_fragment": "instant freeze or unfreeze their virtual cards",
+      "tag_metadata_reference": [
+        {
+          "tag": "atomicity",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "atomic operations",
+        "idempotence"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "virtualcard",
+      "atomicity"
+    ],
+    "tags_v2": [
+      "atomicity"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.527389Z"
+      },
+      {
+        "original_tag": "atomicity",
+        "canonical_tag": "atomicity",
+        "matched_tag": "atomicity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.531660Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "atomicity",
+      "backend",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "atomicity",
+        "original_tag": "atomicity",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7427713871002197,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7291920781135559,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7589959502220154,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Log Freeze/Unfreeze Actions with Timestamp and User/Device Metadata",
+    "summary": "Log all freeze and unfreeze actions on virtual cards with timestamps and relevant user and device metadata for auditing and security purposes.",
+    "tags": [
+      "virtualcard",
+      "logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 38-41",
+    "reasoning": {
+      "source_summary_fragment": "clear UI feedback and strong authentication",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging",
+        "security metadata"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "virtualcard",
+      "logging"
+    ],
+    "tags_v2": [
+      "logs"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:49.737148Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:49.851824Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "encryption",
+      "authentication",
+      "api",
+      "logging",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7467161417007446,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6988574266433716,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7293692827224731,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7080142498016357,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7223865389823914,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.748326301574707,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Implement Queueing for Freeze/Unfreeze Requests During Backend Maintenance",
+    "summary": "Implement a queueing system for freeze and unfreeze requests when the backend is under maintenance to ensure requests are not lost and are processed once the system is available.",
+    "tags": [
+      "virtualcard",
+      "queueing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 42-45",
+    "reasoning": {
+      "source_summary_fragment": "security, usability, and cross-system synchronization",
+      "tag_metadata_reference": [
+        {
+          "tag": "queueing",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "request queueing",
+        "backend maintenance"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "virtualcard",
+      "queueing"
+    ],
+    "tags_v2": [
+      "queue"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:50.096630Z"
+      },
+      {
+        "original_tag": "queueing",
+        "canonical_tag": "queue",
+        "matched_tag": "queue",
+        "tag_origin_cluster_id": "queue",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:50.213185Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "monitoring",
+      "encryption",
+      "integration",
+      "queue",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7418590784072876,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7278069257736206,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7041060924530029,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6888377666473389,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "queue",
+        "original_tag": "queueing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7495980262756348,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7374536991119385,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Handle Conflicting Freeze/Unfreeze Requests",
+    "summary": "Develop a mechanism to handle conflicting freeze and unfreeze requests for virtual cards, ensuring that the system maintains a consistent state and provides clear feedback to users.",
+    "tags": [
+      "virtualcard",
+      "conflict"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 46-49",
+    "reasoning": {
+      "source_summary_fragment": "instantly freeze or unfreeze their virtual cards",
+      "tag_metadata_reference": [
+        {
+          "tag": "conflict",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "conflict resolution",
+        "virtual card state management"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "virtualcard",
+      "conflict"
+    ],
+    "tags_v2": [
+      "conflict"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "virtualcard",
+        "canonical_tag": "virtualcard",
+        "matched_tag": "virtualcard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:50.455823Z"
+      },
+      {
+        "original_tag": "conflict",
+        "canonical_tag": "conflict",
+        "matched_tag": "conflict",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:50.472551Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "api",
+      "integration",
+      "conflict",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7035696506500244,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.722419261932373,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.695502519607544,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "conflict",
+        "original_tag": "conflict",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7078653573989868,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7623960971832275,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  }
+]

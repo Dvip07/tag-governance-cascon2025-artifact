@@ -1,0 +1,109 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Implement instant failure feedback and retry/cancel for toggle action",
+  "summary": "When a freeze/unfreeze operation fails, immediately notify the user with a clear error message and present options to retry the action or cancel. Design feedback and action flows to minimize confusion and reduce user friction.",
+  "tags_v1": [
+    "usability",
+    "error_handling"
+  ],
+  "tags_v2": [
+    "usability"
+  ],
+  "tags_v3": [
+    "ui",
+    "usability",
+    "mobile",
+    "virtualcard",
+    "help"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7348122000694275,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7595402002334595,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7454037666320801,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "virtualcard",
+      "aliases": [],
+      "cluster_id": "all_406",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7543497085571289,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "virtualcard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "help",
+      "aliases": [],
+      "cluster_id": "all_330",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7053098082542419,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "help",
+      "method": "dedup_canonical"
+    }
+  ]
+}

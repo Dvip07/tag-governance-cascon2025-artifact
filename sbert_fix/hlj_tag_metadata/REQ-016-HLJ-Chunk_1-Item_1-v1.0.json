@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Enforce mandatory 2FA for Admin, Finance, and DevOps roles",
+  "summary": "Ensure that users with Admin, Finance, or DevOps roles are required to use Two-Factor Authentication when accessing the SaaS platform. This enforcement helps reduce risk by securing privileged account access in compliance-sensitive environments.",
+  "tags_v1": [
+    "security",
+    "compliance"
+  ],
+  "tags_v2": [
+    "security",
+    "compliance"
+  ],
+  "tags_v3": [
+    "2fa",
+    "security",
+    "compliance",
+    "rolebasedaccess",
+    "securitycompliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "2fa",
+      "aliases": [],
+      "cluster_id": "all_348",
+      "domains": [
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7276219725608826,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "2fa",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7430006265640259,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7118825912475586,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rolebasedaccess",
+      "aliases": [],
+      "cluster_id": "all_459",
+      "domains": [
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7383211255073547,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rolebasedaccess",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "securitycompliance",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.755618691444397,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "securitycompliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

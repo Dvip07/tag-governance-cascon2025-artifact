@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Enable audit log export in CSV, JSON, and PDF with compliance headers and digital signatures",
+  "summary": "Support export of audit logs in CSV, JSON, and PDF formats, including compliance-specific headers and digital signatures for each export. This feature facilitates external audits and regulatory reporting requirements.",
+  "tags_v1": [
+    "compliance",
+    "export",
+    "[INFERRED] data-integrity"
+  ],
+  "tags_v2": [
+    "compliance",
+    "export"
+  ],
+  "tags_v3": [
+    "compliance",
+    "export",
+    "data-integrity"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7133650779724121,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.708730161190033,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-integrity",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7425527572631836,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-integrity",
+      "method": "dedup_canonical"
+    }
+  ]
+}

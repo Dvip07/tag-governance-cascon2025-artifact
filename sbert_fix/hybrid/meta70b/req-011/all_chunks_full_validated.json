@@ -1,0 +1,1210 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate with internal and external credit bureaus",
+    "summary": "Integrate the system with internal and external credit bureaus to assess customer creditworthiness in real-time.",
+    "tags": [
+      "creditworthiness",
+      "checkout",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "credit bureaus",
+      "tag_metadata_reference": [
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "creditworthiness",
+        "CustomerOnboarding"
+      ]
+    },
+    "low_confidence_reason": "insufficient data",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "creditworthiness",
+      "checkout",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "creditworthiness",
+      "checkout"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "creditworthiness",
+        "canonical_tag": "creditworthiness",
+        "matched_tag": "creditworthiness",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.318805Z"
+      },
+      {
+        "original_tag": "checkout",
+        "canonical_tag": "checkout",
+        "matched_tag": "checkout",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.407879Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.567281Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "creditworthiness",
+      "integration",
+      "checkout",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "creditworthiness",
+        "original_tag": "creditworthiness",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7833153009414673,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720711350440979,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "checkout",
+        "original_tag": "checkout",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.750872015953064,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7151143550872803,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement decision engine to map credit score bands to EMI plans",
+    "summary": "Develop a decision engine that maps credit score bands to suitable EMI plans, ensuring personalized payment options for customers.",
+    "tags": [
+      "emi",
+      "creditworthiness"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PaymentProcessing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 13-15",
+    "reasoning": {
+      "source_summary_fragment": "credit score bands",
+      "tag_metadata_reference": [
+        {
+          "tag": "emi",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "emi",
+        "PaymentProcessing"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "emi",
+      "creditworthiness"
+    ],
+    "tags_v2": [
+      "emi",
+      "creditworthiness"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.571944Z"
+      },
+      {
+        "original_tag": "creditworthiness",
+        "canonical_tag": "creditworthiness",
+        "matched_tag": "creditworthiness",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.661194Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "emi",
+      "creditworthiness",
+      "decisioning",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7605330944061279,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "creditworthiness",
+        "original_tag": "creditworthiness",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7762769460678101,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "decisioning",
+        "original_tag": "decisioning",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7381575107574463,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7144260406494141,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Ensure all scoring and eligibility checks are completed within 2 seconds",
+    "summary": "Optimize the system to complete all scoring and eligibility checks within 2 seconds, ensuring a seamless customer experience.",
+    "tags": [
+      "performance",
+      "checkout"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 16-17",
+    "reasoning": {
+      "source_summary_fragment": "scoring and eligibility checks",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "performance",
+        "Performance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "performance",
+      "checkout"
+    ],
+    "tags_v2": [
+      "performance",
+      "checkout"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.673089Z"
+      },
+      {
+        "original_tag": "checkout",
+        "canonical_tag": "checkout",
+        "matched_tag": "checkout",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.759279Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "creditworthiness",
+      "checkout"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.736848771572113,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "creditworthiness",
+        "original_tag": "creditworthiness",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7705456018447876,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "checkout",
+        "original_tag": "checkout",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7552251815795898,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Handle edge cases for 'borderline' customers",
+    "summary": "Develop strategies to handle edge cases for 'borderline' customers, ensuring fair treatment and compliance with regulations.",
+    "tags": [
+      "creditworthiness",
+      "edgecases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "edge cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "creditworthiness",
+        "CustomerOnboarding"
+      ]
+    },
+    "low_confidence_reason": "insufficient data",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "creditworthiness",
+      "edgecases"
+    ],
+    "tags_v2": [
+      "creditworthiness",
+      "edgecase"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "creditworthiness",
+        "canonical_tag": "creditworthiness",
+        "matched_tag": "creditworthiness",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.771462Z"
+      },
+      {
+        "original_tag": "edgecases",
+        "canonical_tag": "edgecase",
+        "matched_tag": "edgecase",
+        "tag_origin_cluster_id": "edgecase",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.8273082375526428,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:15.904933Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "emi",
+      "creditworthiness",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7519079446792603,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "creditworthiness",
+        "original_tag": "creditworthiness",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7826340794563293,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7328846454620361,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement manual override by support staff for borderline customers",
+    "summary": "Develop a manual override feature for support staff to handle borderline customers, ensuring flexibility and customer satisfaction.",
+    "tags": [
+      "overrides",
+      "support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerSupport"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "manual override",
+      "tag_metadata_reference": [
+        {
+          "tag": "overrides",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "overrides",
+        "CustomerSupport"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.0,
+      "method": ""
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "overrides",
+      "support"
+    ],
+    "tags_v2": [
+      "override",
+      "support"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "overrides",
+        "canonical_tag": "override",
+        "matched_tag": "override",
+        "tag_origin_cluster_id": "override",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:15.908913Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.912434Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "emi",
+      "override",
+      "support",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7456924915313721,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "override",
+        "original_tag": "overrides",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.747165858745575,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7279751300811768,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7243430614471436,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Display eligible EMI plans with clear disclosure of terms",
+    "summary": "The system should display all eligible EMI plans to the user with clear disclosure of terms and conditions.",
+    "tags": [
+      "emi",
+      "disclosure",
+      "[INFERRED] transparency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PaymentProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 22-24",
+    "reasoning": {
+      "source_summary_fragment": "eligible EMI plans",
+      "tag_metadata_reference": [
+        {
+          "tag": "emi",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "emi",
+        "checkout"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "transparency",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "emi",
+      "disclosure",
+      "[INFERRED] transparency"
+    ],
+    "tags_v2": [
+      "emi",
+      "disclosure"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.916025Z"
+      },
+      {
+        "original_tag": "disclosure",
+        "canonical_tag": "disclosure",
+        "matched_tag": "disclosure",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.919317Z"
+      },
+      {
+        "original_tag": "[INFERRED] transparency",
+        "canonical_tag": "[INFERRED] transparency",
+        "matched_tag": "[INFERRED] transparency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.076360Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "emi",
+      "disclosure",
+      "transparency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7569103240966797,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "disclosure",
+        "original_tag": "disclosure",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7213268876075745,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "transparency",
+        "original_tag": "transparency",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6976227760314941,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Provide EMI calculator in the checkout flow",
+    "summary": "The system should provide an EMI calculator in the checkout flow to help users calculate their monthly payments.",
+    "tags": [
+      "emi",
+      "calculator"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "UserExperience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 25-26",
+    "reasoning": {
+      "source_summary_fragment": "EMI calculator",
+      "tag_metadata_reference": [
+        {
+          "tag": "emi",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "emi",
+        "calculator"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "emi",
+      "calculator"
+    ],
+    "tags_v2": [
+      "emi",
+      "calculator"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.080016Z"
+      },
+      {
+        "original_tag": "calculator",
+        "canonical_tag": "calculator",
+        "matched_tag": "calculator",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.083103Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "emi",
+      "calculator"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7536341547966003,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "calculator",
+        "original_tag": "calculator",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7491419911384583,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Present terms in plain language, including prepayment penalties",
+    "summary": "The system should present terms and conditions in plain language, including prepayment penalties, to ensure user understanding.",
+    "tags": [
+      "compliance",
+      "transparency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 27-29",
+    "reasoning": {
+      "source_summary_fragment": "plain language",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "compliance",
+        "terms"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "compliance",
+      "transparency"
+    ],
+    "tags_v2": [
+      "compliance",
+      "transparency"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.095653Z"
+      },
+      {
+        "original_tag": "transparency",
+        "canonical_tag": "transparency",
+        "matched_tag": "transparency",
+        "tag_origin_cluster_id": "transparency",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.182009Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "transparency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7337254285812378,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "transparency",
+        "original_tag": "transparency",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7046999931335449,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Ensure user consent is obtained for all credit checks",
+    "summary": "The system should ensure that user consent is obtained for all credit checks to comply with regulatory requirements.",
+    "tags": [
+      "compliance",
+      "consent"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.99,
+    "line_source": "Ln 30-31",
+    "reasoning": {
+      "source_summary_fragment": "user consent",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "compliance",
+        "consent"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "compliance",
+      "consent"
+    ],
+    "tags_v2": [
+      "compliance",
+      "consent"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.193433Z"
+      },
+      {
+        "original_tag": "consent",
+        "canonical_tag": "consent",
+        "matched_tag": "consent",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.196448Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "consent"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7391667366027832,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "consent",
+        "original_tag": "consent",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7332171201705933,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-011-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Monitor EMI adoption rates and approval declines",
+    "summary": "The system should monitor EMI adoption rates and approval declines to improve the overall user experience and optimize the EMI offering.",
+    "tags": [
+      "analytics",
+      "emi"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 32-33",
+    "reasoning": {
+      "source_summary_fragment": "EMI adoption rates",
+      "tag_metadata_reference": [
+        {
+          "tag": "analytics",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "analytics",
+        "emi"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "analytics",
+      "emi"
+    ],
+    "tags_v2": [
+      "analytics",
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.207750Z"
+      },
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:16.210297Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "analytics",
+      "emi"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.716706395149231,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-011"
+      },
+      {
+        "tag": "emi",
+        "original_tag": "emi",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7590968608856201,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-011-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-011"
+      }
+    ]
+  }
+]

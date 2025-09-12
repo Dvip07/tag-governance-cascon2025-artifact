@@ -1,0 +1,104 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Auto-route negative or urgent tickets to senior agents or escalation queues",
+  "summary": "Automatically direct tickets identified as negative or urgent to senior agents or specialized escalation queues, minimizing manual effort and reducing response time for critical issues.",
+  "tags_v1": [
+    "routing",
+    "priority",
+    "[INFERRED] escalation"
+  ],
+  "tags_v2": [
+    "routing"
+  ],
+  "tags_v3": [
+    "routing",
+    "escalation",
+    "priority",
+    "ai",
+    "logic"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "routing",
+      "aliases": [],
+      "cluster_id": "all_194",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7383737564086914,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "routing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "escalation",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7431356310844421,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "escalation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "priority",
+      "aliases": [],
+      "cluster_id": "all_195",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7428690195083618,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "priority",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ai",
+      "aliases": [],
+      "cluster_id": "all_422",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7053148746490479,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ai",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logic",
+      "aliases": [],
+      "cluster_id": "all_328",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6974806189537048,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logic",
+      "method": "dedup_canonical"
+    }
+  ]
+}

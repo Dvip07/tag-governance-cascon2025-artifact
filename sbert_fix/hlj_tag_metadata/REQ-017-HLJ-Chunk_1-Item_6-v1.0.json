@@ -1,0 +1,126 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Flag downgrades during same cycle for manual review to prevent abuse",
+  "summary": "Monitor and detect potential abuse by flagging subscription downgrades that occur within the same billing cycle as recent upgrades for manual administrative review. This measure discourages fraudulent use of premium features and helps prevent revenue leakage.",
+  "tags_v1": [
+    "abuse",
+    "review",
+    "[INFERRED] fraud"
+  ],
+  "tags_v2": [
+    "abuse",
+    "review"
+  ],
+  "tags_v3": [
+    "abuse",
+    "review",
+    "payment processing",
+    "prorated upgrades",
+    "subscriptions"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "abuse",
+      "aliases": [],
+      "cluster_id": "all_132",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7077696323394775,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "abuse",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "review",
+      "aliases": [],
+      "cluster_id": "all_207",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7044152617454529,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "review",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payment processing",
+      "aliases": [],
+      "cluster_id": "all_432",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7222074866294861,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payment processing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "prorated upgrades",
+      "aliases": [],
+      "cluster_id": "all_430",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.807052493095398,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "prorated upgrades",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "subscriptions",
+      "aliases": [],
+      "cluster_id": "all_316",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7352381944656372,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "subscriptions",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6695568561553955,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "integrations",
+      "method": "dedup_canonical"
+    }
+  ]
+}

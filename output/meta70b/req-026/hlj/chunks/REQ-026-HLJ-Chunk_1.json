@@ -1,0 +1,217 @@
+{
+  "CHUNK_ID": "REQ-026-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Define flexible rules for auto-triggering NPS surveys (Ln 15-17)",
+    "Embed NPS prompt natively in web and mobile apps (Ln 20-22)",
+    "Implement logic to delay or suppress surveys for churn signs (Ln 18-19)",
+    "Retry survey prompt after cooling-off period (Ln 23-24)",
+    "Suppress further prompts for 30 days after ignore/dismissal (Ln 25-26)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Define flexible rules for auto-triggering NPS surveys",
+        "summary": "Create a system to trigger NPS surveys based on user behavior and preferences, ensuring timely and relevant feedback collection.",
+        "tags": [
+          "nps",
+          "behavioral_intelligence"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Customer Success"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 15-17",
+        "reasoning": {
+          "source_summary_fragment": "Auto-triggering NPS surveys",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.98
+            }
+          ],
+          "mapped_concepts": [
+            "NPS survey triggering"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Embed NPS prompt natively in web and mobile apps",
+        "summary": "Integrate NPS surveys directly into web and mobile applications, providing a seamless user experience and increasing response rates.",
+        "tags": [
+          "nps",
+          "user_experience"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "User Experience"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.98,
+        "line_source": "Ln 20-22",
+        "reasoning": {
+          "source_summary_fragment": "NPS prompt in web and mobile apps",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.99
+            }
+          ],
+          "mapped_concepts": [
+            "NPS survey integration"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Implement logic to delay or suppress surveys for churn signs",
+        "summary": "Develop a system to detect early warning signs of customer churn and adjust NPS survey timing accordingly, preventing unnecessary prompts and improving user satisfaction.",
+        "tags": [
+          "nps",
+          "churn_prevention"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Customer Success"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 18-19",
+        "reasoning": {
+          "source_summary_fragment": "Delay or suppress surveys for churn signs",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.97
+            }
+          ],
+          "mapped_concepts": [
+            "Churn prevention"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Retry survey prompt after cooling-off period",
+        "summary": "Implement a mechanism to retry NPS survey prompts after a predetermined cooling-off period, allowing users to provide feedback when they are more likely to be receptive.",
+        "tags": [
+          "nps",
+          "user_experience"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "User Experience"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "low",
+        "priority_confidence": 0.85,
+        "line_source": "Ln 23-24",
+        "reasoning": {
+          "source_summary_fragment": "Retry survey prompt after cooling-off period",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "NPS survey retry"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-28",
+        "id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Suppress further prompts for 30 days after ignore/dismissal",
+        "summary": "Develop a system to suppress NPS survey prompts for a 30-day period after a user ignores or dismisses a prompt, preventing unnecessary disturbances and improving user experience.",
+        "tags": [
+          "nps",
+          "user_experience"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "User Experience"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.82,
+        "priority": "low",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 25-26",
+        "reasoning": {
+          "source_summary_fragment": "Suppress further prompts for 30 days",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "NPS survey suppression"
+          ]
+        },
+        "low_confidence_reason": null,
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-026"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": null
+  },
+  "errors": []
+}

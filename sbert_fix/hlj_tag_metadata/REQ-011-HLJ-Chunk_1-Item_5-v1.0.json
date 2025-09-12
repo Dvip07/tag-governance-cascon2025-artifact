@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Trigger re-validation of eligibility if credit band changes prior to disbursement",
+  "summary": "If a customer's credit band changes before loan disbursement, the system should automatically trigger a re-validation of their EMI eligibility, ensuring decisions reflect the most current credit information and risk policies.",
+  "tags_v1": [
+    "revalidation",
+    "emi",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "emi"
+  ],
+  "tags_v3": [
+    "emi",
+    "override",
+    "support",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "emi",
+      "aliases": [],
+      "cluster_id": "all_251",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7557008266448975,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "emi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "override",
+      "aliases": [
+        "overrides"
+      ],
+      "cluster_id": "all_231",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7062757015228271,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "overrides",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7162961959838867,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7163163423538208,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

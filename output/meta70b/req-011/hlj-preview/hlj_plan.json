@@ -1,0 +1,168 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-011-HLJ-Chunk_1",
+      "focus": "Real-Time Creditworthiness Assessment",
+      "items": [
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate with internal and external credit bureaus",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding"
+          ],
+          "tags": [
+            "creditworthiness",
+            "checkout"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-12"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement decision engine to map credit score bands to EMI plans",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "emi",
+            "creditworthiness"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13-15"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Ensure all scoring and eligibility checks are completed within 2 seconds",
+          "domain": "FinTech",
+          "subdomain": [
+            "Performance"
+          ],
+          "tags": [
+            "performance",
+            "checkout"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16-17"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Handle edge cases for 'borderline' customers",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding"
+          ],
+          "tags": [
+            "creditworthiness",
+            "edgecases"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18-19"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement manual override by support staff for borderline customers",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerSupport"
+          ],
+          "tags": [
+            "overrides",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 20-21"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-011-HLJ-Chunk_2",
+      "focus": "Dynamic EMI Offering and User Experience",
+      "items": [
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Display eligible EMI plans with clear disclosure of terms",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentProcessing"
+          ],
+          "tags": [
+            "emi",
+            "disclosure"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 22-24"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Provide EMI calculator in the checkout flow",
+          "domain": "FinTech",
+          "subdomain": [
+            "UserExperience"
+          ],
+          "tags": [
+            "emi",
+            "calculator"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 25-26"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Present terms in plain language, including prepayment penalties",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "transparency"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 27-29"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Ensure user consent is obtained for all credit checks",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "consent"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 30-31"
+        },
+        {
+          "id": "REQ-011-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Monitor EMI adoption rates and approval declines",
+          "domain": "FinTech",
+          "subdomain": [
+            "Analytics"
+          ],
+          "tags": [
+            "analytics",
+            "emi"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 32-33"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Flag and report anomalous or rapid mid-session role switching",
+  "summary": "Detect and notify administrators of unusual or rapid changes in user roles during active sessions. This monitoring helps identify suspicious behavior and strengthens compliance with security policy.",
+  "tags_v1": [
+    "security",
+    "compliance",
+    "[INFERRED] anomaly-detection"
+  ],
+  "tags_v2": [
+    "security",
+    "compliance"
+  ],
+  "tags_v3": [
+    "security",
+    "compliance",
+    "anomaly-detection"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7122173309326172,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6896573901176453,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "anomaly-detection",
+      "aliases": [],
+      "cluster_id": "all_246",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7350858449935913,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "anomaly-detection",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,164 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-018-HLJ-Chunk_1",
+      "focus": "Shared inbox design, tagging, assignment rules, collision handling, search, reporting, edge cases, documentation, integration, non-functional constraints",
+      "items": [
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design shared inbox interface with team visibility",
+          "domain": "SaaS",
+          "subdomain": [
+            "SharedInbox"
+          ],
+          "tags": [
+            "email",
+            "inbox"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 7\u20139"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement email tagging with support for multiple tags",
+          "domain": "SaaS",
+          "subdomain": [
+            "SharedInbox",
+            "Tagging"
+          ],
+          "tags": [
+            "tagging",
+            "email"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10\u201311"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Develop automatic email assignment rules based on tags",
+          "domain": "SaaS",
+          "subdomain": [
+            "AssignmentRules"
+          ],
+          "tags": [
+            "assignment",
+            "automation"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13\u201315"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Support manual email reassignment and unassigned status",
+          "domain": "SaaS",
+          "subdomain": [
+            "AssignmentRules"
+          ],
+          "tags": [
+            "assignment",
+            "manually"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement collision handling to prevent duplicate replies",
+          "domain": "SaaS",
+          "subdomain": [
+            "CollisionHandling"
+          ],
+          "tags": [
+            "concurrency",
+            "locking"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 18\u201320"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Mark emails as handled after reply and notify other users",
+          "domain": "SaaS",
+          "subdomain": [
+            "CollisionHandling"
+          ],
+          "tags": [
+            "notification",
+            "email"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Enable search and filtering by tag, assignment, and status",
+          "domain": "SaaS",
+          "subdomain": [
+            "Search",
+            "Reporting"
+          ],
+          "tags": [
+            "search",
+            "filtering"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 23"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Generate reports on response times, tag volume, and workload",
+          "domain": "SaaS",
+          "subdomain": [
+            "Reporting"
+          ],
+          "tags": [
+            "reporting",
+            "analytics"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Handle edge cases for concurrent assignment and tag removal",
+          "domain": "SaaS",
+          "subdomain": [
+            "EdgeCases"
+          ],
+          "tags": [
+            "edge-case",
+            "assignment"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 26\u201330"
+        },
+        {
+          "id": "REQ-018-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Document tagging and assignment logic for onboarding/support",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "onboarding"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 32"
+        }
+      ]
+    }
+  ]
+}

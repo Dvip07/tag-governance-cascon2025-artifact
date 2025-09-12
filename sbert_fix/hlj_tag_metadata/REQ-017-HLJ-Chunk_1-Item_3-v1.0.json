@@ -1,0 +1,150 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Record upgrade events, credits, and charges in customer's billing history",
+  "summary": "Automatically log all subscription upgrade events, applied credits, and new charges into the user's billing history. This creates a transparent audit trail for users and support teams to view all key subscription changes and financial transactions.",
+  "tags_v1": [
+    "history",
+    "events",
+    "[INFERRED] audit"
+  ],
+  "tags_v2": [
+    "history"
+  ],
+  "tags_v3": [
+    "upgrade",
+    "history",
+    "edge_cases",
+    "billing",
+    "subscriptions",
+    "audit",
+    "events"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "upgrade",
+      "aliases": [
+        "upgrades"
+      ],
+      "cluster_id": "all_201",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7527375221252441,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "upgrades",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "history",
+      "aliases": [],
+      "cluster_id": "all_202",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6826801300048828,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "history",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "edge_cases",
+      "aliases": [
+        "edge-case",
+        "edge case",
+        "edge cases"
+      ],
+      "cluster_id": "all_258",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6910892128944397,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "edge cases",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "billing",
+      "aliases": [],
+      "cluster_id": "all_200",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7399721741676331,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "subscriptions",
+      "aliases": [],
+      "cluster_id": "all_316",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.739350438117981,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "subscriptions",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7141568660736084,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "events",
+      "aliases": [],
+      "cluster_id": "all_203",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6881704330444336,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "events",
+      "method": "dedup_canonical"
+    }
+  ]
+}

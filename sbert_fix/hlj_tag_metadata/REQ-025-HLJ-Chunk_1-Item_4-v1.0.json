@@ -1,0 +1,150 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Implement outlier and regression flagging with root-cause drill-downs",
+  "summary": "The system must automatically detect and flag performance outliers and regressions, providing tools for root-cause drill-down investigation to assist in diagnostics.",
+  "tags_v1": [
+    "alerting",
+    "diagnostics",
+    "[INFERRED] regression"
+  ],
+  "tags_v2": [
+    "alert",
+    "diagnostics"
+  ],
+  "tags_v3": [
+    "alert",
+    "dashboard",
+    "analytics",
+    "visualization",
+    "diagnostics",
+    "debugging",
+    "regression"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7101365923881531,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7642209529876709,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7587260007858276,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "visualization",
+      "aliases": [],
+      "cluster_id": "all_33",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7048279047012329,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "diagnostics",
+      "aliases": [],
+      "cluster_id": "all_117",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7512792944908142,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "diagnostics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "debugging",
+      "aliases": [],
+      "cluster_id": "all_356",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7313731908798218,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "debugging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regression",
+      "aliases": [],
+      "cluster_id": "all_118",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7157444953918457,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regression",
+      "method": "dedup_canonical"
+    }
+  ]
+}

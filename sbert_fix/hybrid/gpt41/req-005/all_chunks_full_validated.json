@@ -1,0 +1,3286 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate Freeze/Unfreeze toggle in virtual card management UI",
+    "summary": "Build a secure, real-time toggle in the app’s card management screen, allowing users to instantly freeze or unfreeze any eligible virtual debit or credit card through a clear and intuitive UI. Leverage robust authentication and ensure seamless backend orchestration for atomic state changes.",
+    "tags": [
+      "usability",
+      "frontend",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 12–14",
+    "reasoning": {
+      "source_summary_fragment": "feature enabling users to freeze or unfreeze eligible virtual debit and credit cards through the mobile app in real time",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.93
+        },
+        {
+          "tag": "frontend",
+          "confidence": 0.9
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "stateful UI toggle",
+        "atomic freeze/unfreeze",
+        "strong authentication"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "usability",
+      "frontend",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.012841Z"
+      },
+      {
+        "original_tag": "frontend",
+        "canonical_tag": "frontend",
+        "matched_tag": "frontend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.222671Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.429735Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "mobile",
+      "usability",
+      "design",
+      "virtualcard",
+      "freezeunfreeze",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7284583449363708,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7460805177688599,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7463852763175964,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6875348687171936,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7617733478546143,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "freezeunfreeze",
+        "original_tag": "freezeunfreeze",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7752636671066284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7497150897979736,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Display real-time status (Frozen/Active) with visual cues in UI",
+    "summary": "The card management UI must present the card’s current status (Frozen or Active) using clear, distinct visual cues, updating instantly after user action to reflect state changes. Visual feedback should align with accessibility standards and be intuitively understood.",
+    "tags": [
+      "usability",
+      "feedback",
+      "[INFERRED] accessibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 15–16",
+    "reasoning": {
+      "source_summary_fragment": "UI must display card status with clear feedback ... handle failed operations with retries",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.9
+        },
+        {
+          "tag": "accessibility",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "real-time UI update",
+        "distinct visual indicators",
+        "status feedback"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "accessibility",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "usability",
+      "feedback",
+      "[INFERRED] accessibility"
+    ],
+    "tags_v2": [
+      "usability",
+      "feedback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.549758Z"
+      },
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.562096Z"
+      },
+      {
+        "original_tag": "[INFERRED] accessibility",
+        "canonical_tag": "[INFERRED] accessibility",
+        "matched_tag": "[INFERRED] accessibility",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:00.973691Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "mobile",
+      "usability",
+      "virtualcard",
+      "feedback",
+      "design"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7618538737297058,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.762963056564331,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7752170562744141,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7861732840538025,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7326100468635559,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7156096696853638,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement instant failure feedback and retry/cancel for toggle action",
+    "summary": "When a freeze/unfreeze operation fails, immediately notify the user with a clear error message and present options to retry the action or cancel. Design feedback and action flows to minimize confusion and reduce user friction.",
+    "tags": [
+      "usability",
+      "error_handling"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 17–18",
+    "reasoning": {
+      "source_summary_fragment": "handle failed operations with retries ... offer contextual help",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "error_handling",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "real-time error feedback",
+        "retry/cancel UX",
+        "failure scenarios"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "usability",
+      "error_handling"
+    ],
+    "tags_v2": [
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.175225Z"
+      },
+      {
+        "original_tag": "error_handling",
+        "canonical_tag": "error_handling",
+        "matched_tag": "error_handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.449639Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "usability",
+      "mobile",
+      "virtualcard",
+      "help"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7348122000694275,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7595402002334595,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7454037666320801,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7543497085571289,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "help",
+        "original_tag": "help",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7053098082542419,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Add contextual help/tooltips explaining freeze/unfreeze implications",
+    "summary": "Embed contextual help or tooltips in the card management interface to educate users about the effects and constraints of freezing or unfreezing a card. Content must clarify, for example, impacts on recurring transactions and resuming card activity.",
+    "tags": [
+      "usability",
+      "documentation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "offer contextual help ... exceptions (recurring transactions)",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.9
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "tooltips",
+        "contextual guidance",
+        "effects of freeze/unfreeze"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "usability",
+      "documentation"
+    ],
+    "tags_v2": [
+      "usability",
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.571995Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.699762Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "ui",
+      "feedback",
+      "usability",
+      "mobile",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7289328575134277,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7442312240600586,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7126132845878601,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7587337493896484,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7570077180862427,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7807133793830872,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Provide customer support with real-time card status and override tools",
+    "summary": "Enhance support dashboards to include real-time status visibility for virtual cards, and offer tools for authorized override of freeze/unfreeze operations. These tools must log actions for auditing and comply with internal access policies.",
+    "tags": [
+      "operational",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "SupportTools"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 44–45",
+    "reasoning": {
+      "source_summary_fragment": "Customer support tools and notifications must be updated ... log all actions for auditing",
+      "tag_metadata_reference": [
+        {
+          "tag": "operational",
+          "confidence": 0.94
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "support override tools",
+        "real-time support visibility",
+        "auditing, log tracking"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "operational",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "operational",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "operational",
+        "canonical_tag": "operational",
+        "matched_tag": "operational",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.818034Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:01.938597Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.140451Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "authentication",
+      "security",
+      "operational",
+      "mobile",
+      "usability",
+      "virtualcard",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7319259643554688,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7514839172363281,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "operational",
+        "original_tag": "operational",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7113841772079468,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7332234382629395,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7317320704460144,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7615747451782227,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7000365257263184,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Integrate freeze/unfreeze events with notification channels (push/SMS/email)",
+    "summary": "Ensure that whenever a card is frozen or unfrozen, event triggers seamlessly send user notifications through push, SMS, and email channels. Messages must be securely transmitted and clearly reflect current card status changes.",
+    "tags": [
+      "usability",
+      "operational",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "Integrate freeze/unfreeze events with notification channels (push/SMS/email) ... encryption of communications",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "operational",
+          "confidence": 0.93
+        },
+        {
+          "tag": "security",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel notifications",
+        "event-driven messages",
+        "secure notification transmission"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "usability",
+      "operational",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "usability",
+      "operational"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.336111Z"
+      },
+      {
+        "original_tag": "operational",
+        "canonical_tag": "operational",
+        "matched_tag": "operational",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.458580Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.682447Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "operational",
+      "ui",
+      "mobile",
+      "usability",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7625762224197388,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "operational",
+        "original_tag": "operational",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6895430684089661,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7093909978866577,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7389933466911316,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7246273756027222,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.743902325630188,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Update user guides and help center for new freeze/unfreeze feature",
+    "summary": "Revise existing user-facing guides and online help center documentation to clearly describe how to use the freeze/unfreeze feature, including coverage of security, limitations, and troubleshooting.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "User guides and help content must be revised",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user guide revision",
+        "feature documentation",
+        "online help update"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "documentation",
+      "usability"
+    ],
+    "tags_v2": [
+      "documentation",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.694795Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:02.915212Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "ui",
+      "usability",
+      "mobile"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7213115096092224,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7190760374069214,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7414519786834717,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7374139428138733,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Update in-app messaging regarding card freeze/unfreeze",
+    "summary": "Improve and clarify in-app messages relating to freezing and unfreezing cards, providing timely, accurate, and user-friendly guidance throughout the feature flow. Ensure consistency with help and notification content.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "User guides and help content must be revised ... in-app messaging regarding card freeze/unfreeze",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "messaging update",
+        "clear terminology",
+        "in-app guidance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "documentation",
+      "usability"
+    ],
+    "tags_v2": [
+      "documentation",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.034604Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.155901Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "integration",
+      "documentation",
+      "mobile",
+      "usability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7479156851768494,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6897587776184082,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.707274317741394,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7418639659881592,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7415951490402222,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Pilot feature with selected cohorts and collect user feedback",
+    "summary": "Deploy the freeze/unfreeze capability to limited user groups for pilot testing. Collect feedback, monitor feature adoption and performance, and document issues to guide improvements before broader release.",
+    "tags": [
+      "operational",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "the rollout should include a pilot phase and feedback loop",
+      "tag_metadata_reference": [
+        {
+          "tag": "operational",
+          "confidence": 0.89
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "pilot rollout",
+        "user feedback gathering",
+        "phased deployment"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "operational",
+      "feedback"
+    ],
+    "tags_v2": [
+      "operational",
+      "feedback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "operational",
+        "canonical_tag": "operational",
+        "matched_tag": "operational",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.288468Z"
+      },
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.291924Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "support",
+      "feedback",
+      "mobile",
+      "operational"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697806715965271,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7185409069061279,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7168440818786621,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7319515347480774,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "operational",
+        "original_tag": "operational",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7136054635047913,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Iterate on feature based on pilot user feedback before general release",
+    "summary": "Analyze feedback and issues from pilot cohorts, prioritizing fixes and enhancements to improve the freeze/unfreeze experience. Make all necessary adjustments in usability, messaging, and performance prior to general availability.",
+    "tags": [
+      "feedback",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "Iterate on feature based on pilot user feedback before general release",
+      "tag_metadata_reference": [
+        {
+          "tag": "feedback",
+          "confidence": 0.9
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "post-pilot iteration",
+        "feature refinement",
+        "release preparation"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "feedback",
+      "usability"
+    ],
+    "tags_v2": [
+      "feedback",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "feedback",
+        "canonical_tag": "feedback",
+        "matched_tag": "feedback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.295475Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.305799Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "messaging",
+      "usability",
+      "mobile",
+      "feedback",
+      "ui"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "messaging",
+        "original_tag": "messaging",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7189932465553284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7551866769790649,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "mobile",
+        "original_tag": "mobile",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7420046329498291,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7264537811279297,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.731429398059845,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Develop REST API endpoints for freeze/unfreeze with atomic, idempotent operations",
+    "summary": "Design and implement RESTful API endpoints to manage card freeze and unfreeze actions, ensuring all operations are atomic and idempotent to prevent race conditions and duplicate processing. Clients must reliably obtain consistent state regardless of network errors or repeat requests.",
+    "tags": [
+      "backend",
+      "api",
+      "security",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Backend"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 22–24",
+    "reasoning": {
+      "source_summary_fragment": "…backend services must provide atomic, idempotent RESTful endpoints…",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.93
+        },
+        {
+          "tag": "security",
+          "confidence": 0.91
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "idempotent operations",
+        "atomicity",
+        "REST endpoint",
+        "card freeze/unfreeze"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "backend",
+      "api",
+      "security",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [
+      "backend",
+      "api",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.423882Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.427854Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.548188Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:03.952435Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "backend",
+      "security",
+      "design"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7501733899116516,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7494958639144897,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7534197568893433,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "design",
+        "original_tag": "design",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6898353099822998,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Ensure instant card status sync across card processor, fraud, authorization systems",
+    "summary": "Implement mechanisms for immediate synchronization of card status updates across card processing, fraud detection, and authorization platforms. Guarantee that system-of-record status changes propagate in real-time to prevent inconsistencies or delay.",
+    "tags": [
+      "integration",
+      "synchronization",
+      "[INFERRED] consistency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Backend"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 25–26",
+    "reasoning": {
+      "source_summary_fragment": "…ensure instant status sync across all systems…",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.92
+        },
+        {
+          "tag": "synchronization",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "instant state propagation",
+        "cross-system sync",
+        "realtime event distribution"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "consistency",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "integration",
+      "synchronization",
+      "[INFERRED] consistency"
+    ],
+    "tags_v2": [
+      "synchronization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.150427Z"
+      },
+      {
+        "original_tag": "synchronization",
+        "canonical_tag": "synchronization",
+        "matched_tag": "synchronization",
+        "tag_origin_cluster_id": "synchronization",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.163078Z"
+      },
+      {
+        "original_tag": "[INFERRED] consistency",
+        "canonical_tag": "[INFERRED] consistency",
+        "matched_tag": "[INFERRED] consistency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.355264Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "backend",
+      "sync",
+      "api"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7295762896537781,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "synchronization",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7550375461578369,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7211382985115051,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Block transaction authorizations on frozen cards except for whitelisted exceptions",
+    "summary": "Enforce transaction authorization logic to decline any attempts on frozen cards, with exceptions allowed for predefined whitelisted scenarios. This mechanism prevents unauthorized spending while allowing specific critical or recurring transactions if expressly permitted.",
+    "tags": [
+      "security",
+      "backend",
+      "[INFERRED] authorization"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Authorization"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 27–28",
+    "reasoning": {
+      "source_summary_fragment": "…handle exceptions (e.g., recurring transactions), and robustly log all actions for auditing.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.9
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "authorization blocking",
+        "whitelisting",
+        "frozen card enforcement"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "authorization",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "security",
+      "backend",
+      "[INFERRED] authorization"
+    ],
+    "tags_v2": [
+      "security",
+      "backend"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.472711Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.588926Z"
+      },
+      {
+        "original_tag": "[INFERRED] authorization",
+        "canonical_tag": "[INFERRED] authorization",
+        "matched_tag": "[INFERRED] authorization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.799332Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "security",
+      "backend",
+      "authorization",
+      "real-time"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6769596338272095,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7098627686500549,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7397242784500122,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7137683033943176,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "authorization",
+        "original_tag": "authorization",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7377461194992065,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "real-time",
+        "original_tag": "real-time",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7142859697341919,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Log all freeze/unfreeze actions with timestamp, user/device, and outcome for audit",
+    "summary": "Capture detailed audit logs for every freeze and unfreeze operation, including timestamp, user or device identity, and action outcome. These records facilitate regulatory audits and support forensic investigations.",
+    "tags": [
+      "compliance",
+      "audit",
+      "[INFERRED] logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 29–30",
+    "reasoning": {
+      "source_summary_fragment": "…robustly log all actions for auditing.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "event logging",
+        "timestamp/user context"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "logging",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "compliance",
+      "audit",
+      "[INFERRED] logging"
+    ],
+    "tags_v2": [
+      "compliance",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.924617Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:04.931467Z"
+      },
+      {
+        "original_tag": "[INFERRED] logging",
+        "canonical_tag": "[INFERRED] logging",
+        "matched_tag": "[INFERRED] logging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:05.157148Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "authorization",
+      "security",
+      "compliance",
+      "audit",
+      "api"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "authorization",
+        "original_tag": "authorization",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7154735326766968,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7475237846374512,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6966139078140259,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7458112239837646,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7077711820602417,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Queue requests and notify users if backend/API is under maintenance",
+    "summary": "Provide a queueing mechanism to hold freeze/unfreeze requests during backend or API maintenance, and proactively notify users about delays, ensuring clarity and robust user experience even when services are temporarily unavailable.",
+    "tags": [
+      "availability",
+      "resilience",
+      "[INFERRED] user-notification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 32–33",
+    "reasoning": {
+      "source_summary_fragment": "…Requests during maintenance must be queued and user-notified…",
+      "tag_metadata_reference": [
+        {
+          "tag": "availability",
+          "confidence": 0.88
+        },
+        {
+          "tag": "resilience",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "maintenance-mode queue",
+        "API downtime UX",
+        "user notification"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "user-notification",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "availability",
+      "resilience",
+      "[INFERRED] user-notification"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "availability",
+        "canonical_tag": "availability",
+        "matched_tag": "availability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:05.364782Z"
+      },
+      {
+        "original_tag": "resilience",
+        "canonical_tag": "resilience",
+        "matched_tag": "resilience",
+        "tag_origin_cluster_id": "resilience",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:05.611423Z"
+      },
+      {
+        "original_tag": "[INFERRED] user-notification",
+        "canonical_tag": "[INFERRED] user-notification",
+        "matched_tag": "[INFERRED] user-notification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:05.821715Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "security",
+      "availability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6970198154449463,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6791207790374756,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7258927822113037,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.741693913936615,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Rollback state and inform user if freeze/unfreeze fails at third-party processor",
+    "summary": "Build mechanisms to detect third-party processor failures and roll back any partial state changes, ensuring system and user states remain synchronized. Notify users promptly in the event of failures, supporting trust and operational integrity.",
+    "tags": [
+      "consistency",
+      "error_handling",
+      "[INFERRED] rollback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Backend"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 34–36",
+    "reasoning": {
+      "source_summary_fragment": "…failures at third parties must roll back and inform users.",
+      "tag_metadata_reference": [
+        {
+          "tag": "consistency",
+          "confidence": 0.91
+        },
+        {
+          "tag": "error_handling",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "state rollback",
+        "third-party failure detection",
+        "user notification"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "rollback",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "consistency",
+      "error_handling",
+      "[INFERRED] rollback"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "consistency",
+        "canonical_tag": "consistency",
+        "matched_tag": "consistency",
+        "tag_origin_cluster_id": "consistency",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:06.024564Z"
+      },
+      {
+        "original_tag": "error_handling",
+        "canonical_tag": "error_handling",
+        "matched_tag": "error_handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:06.229496Z"
+      },
+      {
+        "original_tag": "[INFERRED] rollback",
+        "canonical_tag": "[INFERRED] rollback",
+        "matched_tag": "[INFERRED] rollback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:06.431406Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "queue",
+      "rest",
+      "backend",
+      "virtualcard",
+      "rollback",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "queue",
+        "original_tag": "queue",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7082042694091797,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "rest",
+        "original_tag": "restful",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6889286041259766,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7364952564239502,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7529622912406921,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7495110034942627,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7500781416893005,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Prevent conflicting freeze/unfreeze requests and alert user if detected",
+    "summary": "Introduce safeguards to detect and block conflicting freeze or unfreeze actions on the same card, minimizing race conditions, with immediate user alerts in cases of concurrent or contradictory intent.",
+    "tags": [
+      "consistency",
+      "error_handling",
+      "[INFERRED] concurrency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 37–38",
+    "reasoning": {
+      "source_summary_fragment": "…Prevent conflicting freeze/unfreeze requests and alert user if detected…",
+      "tag_metadata_reference": [
+        {
+          "tag": "consistency",
+          "confidence": 0.9
+        },
+        {
+          "tag": "error_handling",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "concurrency control",
+        "operational safety",
+        "user feedback"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "concurrency",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "consistency",
+      "error_handling",
+      "[INFERRED] concurrency"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "consistency",
+        "canonical_tag": "consistency",
+        "matched_tag": "consistency",
+        "tag_origin_cluster_id": "consistency",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:06.630633Z"
+      },
+      {
+        "original_tag": "error_handling",
+        "canonical_tag": "error_handling",
+        "matched_tag": "error_handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:06.823991Z"
+      },
+      {
+        "original_tag": "[INFERRED] concurrency",
+        "canonical_tag": "[INFERRED] concurrency",
+        "matched_tag": "[INFERRED] concurrency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.038643Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "atomicity",
+      "backend",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "atomicity",
+        "original_tag": "atomicity",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6998739242553711,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7147983312606812,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7455014586448669,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Require strong authentication (biometric, PIN, or MFA) for freeze/unfreeze actions",
+    "summary": "Mandate strong authentication methods, including biometrics, PIN, or MFA, for users performing freeze or unfreeze actions to ensure that only authorized individuals can initiate sensitive state changes on card accounts.",
+    "tags": [
+      "security",
+      "authentication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "…Strong authentication (biometrics, PIN, MFA)…",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "MFA enforcement",
+        "user biometrics",
+        "action gating"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "security",
+      "authentication"
+    ],
+    "tags_v2": [
+      "security",
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.157658Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.162323Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "encryption",
+      "authentication",
+      "api",
+      "logging",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7604589462280273,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.715910017490387,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.762474775314331,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7224156260490417,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.696543276309967,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.752773642539978,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Encrypt API calls and logs end-to-end for this feature",
+    "summary": "Ensure all API communications and log storage pertaining to card freeze/unfreeze functionality are encrypted end-to-end. This guards against data leaks and meets best practices and regulatory demands for sensitive financial data.",
+    "tags": [
+      "security",
+      "encryption"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 41",
+    "reasoning": {
+      "source_summary_fragment": "…encryption of communications and logs…",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "end-to-end encryption",
+        "secure logging",
+        "PCI DSS controls"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "security",
+      "encryption"
+    ],
+    "tags_v2": [
+      "security",
+      "encryption"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.287826Z"
+      },
+      {
+        "original_tag": "encryption",
+        "canonical_tag": "encryption",
+        "matched_tag": "encryption",
+        "tag_origin_cluster_id": "encryption",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.306775Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "monitoring",
+      "encryption",
+      "integration",
+      "queue",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7512468695640564,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7144502401351929,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "encryption",
+        "original_tag": "encryption",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7277909517288208,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6830666065216064,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "queue",
+        "original_tag": "queueing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698933482170105,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7410653829574585,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Maintain compliance with PCI DSS, SOC 2, and applicable regulations",
+    "summary": "Review and adjust freeze/unfreeze features and processes to ensure full compliance with PCI DSS, SOC 2, and any other financial data security and privacy regulations applicable to card operations. Document controls and monitor ongoing compliance.",
+    "tags": [
+      "compliance",
+      "regulation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 42–43",
+    "reasoning": {
+      "source_summary_fragment": "…Maintain compliance with PCI DSS, SOC 2, and applicable regulations…",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "regulation",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "PCI DSS",
+        "SOC 2",
+        "regulatory mapping"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005",
+    "tags_v1": [
+      "compliance",
+      "regulation"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.310006Z"
+      },
+      {
+        "original_tag": "regulation",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:07.516681Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "api",
+      "integration",
+      "virtualcard"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7298036813735962,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7122101783752441,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6964162588119507,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "conflict",
+        "original_tag": "conflict",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6751724481582642,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      },
+      {
+        "tag": "virtualcard",
+        "original_tag": "virtualcard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7498902082443237,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-005"
+      }
+    ]
+  }
+]

@@ -1,0 +1,229 @@
+# 📝 Changelog for `req-004` — **meta70b**
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['metadata', 'auditlogs', '[INFERRED] compliance']`
+**Validated tags:** `['metadata', 'auditlogs']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['metadata', 'auditlogs']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:50.832894Z |
+| auditlogs | kept | semantic | 0.785558819770813 | source_fragment | 2025-05-31T23:57:50.654616Z |
+| metadata | kept | direct | 1.0 | title | 2025-05-31T23:57:50.487708Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['gdpr', 'dataclassification', '[INFERRED] compliance']`
+**Validated tags:** `['gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `['dataclassification', '[INFERRED] compliance']`
+**Tags kept:** `['gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:51.225401Z |
+| dataclassification | dropped | none | 0.0 | None | 2025-05-31T23:57:51.022213Z |
+| gdpr | kept | direct | 1.0 | summary | 2025-05-31T23:57:50.840876Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['datalineage', 'auditlogs', '[INFERRED] compliance']`
+**Validated tags:** `[]`
+**Tags added:** `[]`
+**Tags dropped:** `['datalineage', 'auditlogs', '[INFERRED] compliance']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:51.785530Z |
+| auditlogs | dropped | none | 0.0 | None | 2025-05-31T23:57:51.607712Z |
+| datalineage | dropped | none | 0.0 | None | 2025-05-31T23:57:51.401362Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['gdpr', 'righttoerasure', '[INFERRED] compliance']`
+**Validated tags:** `['gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `['righttoerasure', '[INFERRED] compliance']`
+**Tags kept:** `['gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:52.155772Z |
+| gdpr | kept | direct | 1.0 | summary | 2025-05-31T23:57:51.793695Z |
+| righttoerasure | dropped | none | 0.0 | None | 2025-05-31T23:57:51.973495Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['gdpr', 'datadeletion', '[INFERRED] compliance']`
+**Validated tags:** `['gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `['datadeletion', '[INFERRED] compliance']`
+**Tags kept:** `['gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:52.638087Z |
+| datadeletion | dropped | none | 0.0 | None | 2025-05-31T23:57:52.450129Z |
+| gdpr | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:52.271483Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['gdpr', 'auditlogs', '[INFERRED] compliance']`
+**Validated tags:** `['gdpr']`
+**Tags added:** `[]`
+**Tags dropped:** `['auditlogs', '[INFERRED] compliance']`
+**Tags kept:** `['gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:53.112487Z |
+| auditlogs | dropped | none | 0.0 | None | 2025-05-31T23:57:52.930793Z |
+| gdpr | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:52.752884Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['gdpr', 'edgecases', '[INFERRED] compliance']`
+**Validated tags:** `['gdpr', 'edgecase']`
+**Tags added:** `['edgecase']`
+**Tags dropped:** `['edgecases', '[INFERRED] compliance']`
+**Tags kept:** `['gdpr']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:53.537350Z |
+| edgecase | added | semantic | 0.7508949041366577 | title | 2025-05-31T23:57:53.355706Z |
+| edgecases | dropped | semantic | 0.7508949041366577 | title | 2025-05-31T23:57:53.355706Z |
+| gdpr | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:53.225162Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['security', 'integrity', '[INFERRED] compliance']`
+**Validated tags:** `['security', 'integrity']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['security', 'integrity']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:57:53.717981Z |
+| integrity | kept | direct | 1.0 | title | 2025-05-31T23:57:53.543068Z |
+| security | kept | direct | 1.0 | title | 2025-05-31T23:57:53.540527Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['compliance', 'apis', '[INFERRED] gdpr']`
+**Validated tags:** `['compliance', 'api']`
+**Tags added:** `['api']`
+**Tags dropped:** `['apis', '[INFERRED] gdpr']`
+**Tags kept:** `['compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] gdpr | dropped | none | 0.0 | None | 2025-05-31T23:57:54.049998Z |
+| api | added | direct | 1.0 | raw_requirement | 2025-05-31T23:57:53.862314Z |
+| apis | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:57:53.862314Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:53.721516Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['compliance', 'reporting', '[INFERRED] analytics']`
+**Validated tags:** `['compliance', 'reporting']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] analytics']`
+**Tags kept:** `['compliance', 'reporting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] analytics | dropped | none | 0.0 | None | 2025-05-31T23:57:54.361838Z |
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:57:54.056958Z |
+| reporting | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:54.175422Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['testing', 'validation', '[INFERRED] integration']`
+**Validated tags:** `['testing', 'validation']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] integration']`
+**Tags kept:** `['testing', 'validation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] integration | dropped | none | 0.0 | None | 2025-05-31T23:57:54.690191Z |
+| testing | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:54.375291Z |
+| validation | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:57:54.503232Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['testing', 'edgecases', '[INFERRED] simulation']`
+**Validated tags:** `['testing']`
+**Tags added:** `[]`
+**Tags dropped:** `['edgecases', '[INFERRED] simulation']`
+**Tags kept:** `['testing']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] simulation | dropped | none | 0.0 | None | 2025-05-31T23:57:55.063075Z |
+| edgecases | dropped | none | 0.0 | None | 2025-05-31T23:57:54.880925Z |
+| testing | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:57:54.703302Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['compliance', 'training', '[INFERRED] officertraining']`
+**Validated tags:** `['compliance', 'training']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] officertraining']`
+**Tags kept:** `['compliance', 'training']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] officertraining | dropped | none | 0.0 | None | 2025-05-31T23:57:55.250200Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:57:55.066789Z |
+| training | kept | direct | 1.0 | title | 2025-05-31T23:57:55.069961Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['documentation', 'apis', '[INFERRED] updatedlogs']`
+**Validated tags:** `['documentation', 'api']`
+**Tags added:** `['api']`
+**Tags dropped:** `['apis', '[INFERRED] updatedlogs']`
+**Tags kept:** `['documentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] updatedlogs | dropped | none | 0.0 | None | 2025-05-31T23:57:55.439263Z |
+| api | added | direct | 1.0 | title | 2025-05-31T23:57:55.257093Z |
+| apis | dropped | direct | 1.0 | title | 2025-05-31T23:57:55.257093Z |
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:57:55.253932Z |
+
+## 🔹 HLJ: `REQ-004-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['implementation', 'migration', '[INFERRED] transitionplan']`
+**Validated tags:** `['implementation', 'migration']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] transitionplan']`
+**Tags kept:** `['implementation', 'migration']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] transitionplan | dropped | none | 0.0 | None | 2025-05-31T23:57:55.624494Z |
+| implementation | kept | direct | 1.0 | title | 2025-05-31T23:57:55.442917Z |
+| migration | kept | direct | 1.0 | title | 2025-05-31T23:57:55.445932Z |

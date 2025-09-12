@@ -1,0 +1,80 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_3-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Ensure PCI DSS compliance for card freeze/unfreeze functionality",
+  "summary": "Implement and validate PCI DSS compliance for the card freeze/unfreeze feature, ensuring secure handling of cardholder data, proper encryption of card operations, and adherence to all applicable PCI DSS requirements for mobile applications.",
+  "tags_v1": [
+    "compliance",
+    "security",
+    "pci"
+  ],
+  "tags_v2": [
+    "compliance",
+    "security",
+    "pci"
+  ],
+  "tags_v3": [
+    "pci",
+    "compliance",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "pci",
+      "aliases": [],
+      "cluster_id": "all_307",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7352712154388428,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pci",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7032837867736816,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.750965416431427,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

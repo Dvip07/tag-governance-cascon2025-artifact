@@ -1,0 +1,151 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement instant rollback with full traceability for feature flags",
+    "summary": "Enable an immediate, one-click rollback mechanism for feature flags with system-wide effect, ensuring that all changes are fully recorded for audit purposes. Track the complete history and context behind each change to maintain accountability and compliance. Ensure rollback operations do not introduce latency or service degradation.",
+    "tags": [
+      "rollback",
+      "traceability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 33\u201333",
+    "reasoning": {
+      "source_summary_fragment": "One-click rollback with instant system-wide effect and full traceability is mandatory.",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "instant rollback",
+        "system auditability",
+        "full event tracing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Develop onboarding materials and documentation for feature flag usage and analytics",
+    "summary": "Create comprehensive user and technical documentation for feature flag management, focusing on best practices and analytics integration. Develop onboarding guides and training content to support adoption by both product and development teams. Ensure clarity in explaining progressive rollout, real-time monitoring, and compliance aspects.",
+    "tags": [
+      "documentation",
+      "training",
+      "[INFERRED] enablement"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "Enablement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 35\u201336",
+    "reasoning": {
+      "source_summary_fragment": "create comprehensive documentation for product and developer enablement",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "training",
+          "confidence": 0.9
+        },
+        {
+          "tag": "enablement",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "onboarding support",
+        "analytics documentation",
+        "feature flag best practices"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "enablement",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Maintain changelog of all flag adjustments, rollouts, and rollbacks for audits",
+    "summary": "Establish a complete changelog to record every feature flag adjustment, rollout, and rollback event for audit and compliance needs. Ensure audit trails are detailed, tamper-proof, and accessible for inspection by authorized parties. Support compliance verification and incident investigations with granular change history.",
+    "tags": [
+      "audit",
+      "changelog",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Audit",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 37\u201338",
+    "reasoning": {
+      "source_summary_fragment": "The system must robustly handle users with ambiguous... support audit trails",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.95
+        },
+        {
+          "tag": "changelog",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "event changelog",
+        "rollback tracking"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  }
+]

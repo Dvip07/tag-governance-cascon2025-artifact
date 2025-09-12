@@ -1,0 +1,432 @@
+{
+  "estimated_hlj_count": 24,
+  "chunk_count": 3,
+  "chunks": [
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_1",
+      "focus": "UI/UX and Frontend Implementation",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design freeze/unfreeze toggle UI component for card management screen",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "design"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14-15"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement visual status indicators (Frozen/Active) with color/icon changes",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "design"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Build error handling UI for failed freeze/unfreeze operations with retry/cancel",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "error-handling"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Create context-sensitive help tooltips explaining freeze implications",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "documentation"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement biometric/PIN/MFA authentication flow before freeze/unfreeze actions",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "mobile",
+            "authentication"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Design queuing notification UI for maintenance period requests",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "notification"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Build request locking mechanism UI to prevent rapid toggle conflicts",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "concurrency"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Integrate freeze/unfreeze events with push/SMS/email notification channels",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "Notifications"
+          ],
+          "tags": [
+            "notification",
+            "mobile",
+            "integration"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 41"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update mobile app help center articles with freeze/unfreeze documentation",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "mobile",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 43"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement in-app messaging for feature education and updates",
+          "domain": "FinTech",
+          "subdomain": [
+            "MobileBanking",
+            "CardManagement"
+          ],
+          "tags": [
+            "ui",
+            "mobile",
+            "messaging"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 43"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_2",
+      "focus": "Backend API and System Integration",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Design RESTful API endpoints for freeze/unfreeze card operations",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "CardManagement"
+          ],
+          "tags": [
+            "api",
+            "backend",
+            "design"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Implement atomic and idempotent freeze/unfreeze operation logic",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "CardManagement"
+          ],
+          "tags": [
+            "api",
+            "backend",
+            "reliability"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Build real-time status synchronization across card processor systems",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Integration"
+          ],
+          "tags": [
+            "integration",
+            "api",
+            "real-time"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Implement transaction blocking for frozen cards with merchant whitelist exceptions",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "CardManagement"
+          ],
+          "tags": [
+            "security",
+            "api",
+            "authorization"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 23"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Create comprehensive audit logging with timestamp and metadata capture",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Compliance"
+          ],
+          "tags": [
+            "logging",
+            "compliance",
+            "security"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+          "title": "Build request queuing system for maintenance period operations",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "CardManagement"
+          ],
+          "tags": [
+            "backend",
+            "reliability",
+            "queue"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+          "title": "Implement rollback mechanism for third-party processor failures",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Integration"
+          ],
+          "tags": [
+            "backend",
+            "error-handling",
+            "reliability"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 29"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+          "title": "Configure end-to-end encryption for all API calls and logs",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "encryption",
+            "api"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 37"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+          "title": "Integrate with existing fraud monitoring systems for status updates",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Security"
+          ],
+          "tags": [
+            "integration",
+            "security",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+          "title": "Establish card processor API integration for freeze/unfreeze commands",
+          "domain": "FinTech",
+          "subdomain": [
+            "PaymentSystems",
+            "Integration"
+          ],
+          "tags": [
+            "integration",
+            "api",
+            "dependency"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 47"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-005-HLJ-Chunk_3",
+      "focus": "Testing, Compliance, and Operations",
+      "items": [
+        {
+          "id": "REQ-005-HLJ-Chunk_3-Item_1-v1.0",
+          "title": "Ensure PCI DSS compliance for card freeze/unfreeze functionality",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Security"
+          ],
+          "tags": [
+            "compliance",
+            "security",
+            "pci"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 38"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_3-Item_2-v1.0",
+          "title": "Validate SOC 2 compliance requirements for new feature",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Security"
+          ],
+          "tags": [
+            "compliance",
+            "security",
+            "audit"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 38"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_3-Item_3-v1.0",
+          "title": "Build customer support override tools for exceptional freeze/unfreeze cases",
+          "domain": "FinTech",
+          "subdomain": [
+            "Operations",
+            "Support"
+          ],
+          "tags": [
+            "support",
+            "tools",
+            "operations"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-005-HLJ-Chunk_3-Item_4-v1.0",
+          "title": "Conduct pilot testing with select user cohorts before general release",
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "Operations"
+          ],
+          "tags": [
+            "testing",
+            "pilot",
+            "rollout"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 44"
+        }
+      ]
+    }
+  ]
+}

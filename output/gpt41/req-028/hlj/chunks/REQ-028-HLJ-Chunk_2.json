@@ -1,0 +1,119 @@
+{
+  "CHUNK_ID": "REQ-028-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Log all classification decisions and routing actions for audit (Ln 30\u201331)",
+    "Provide user opt-out from automated sentiment classification (Ln 32)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 11,
+        "schema_version": "2025-05-17",
+        "id": "REQ-028-HLJ-Chunk_2-Item_1-v1.0",
+        "title": "Log all classification decisions and routing actions for audit",
+        "summary": "Every decision made by the AI classifier, as well as subsequent routing actions, must be logged in an auditable format. This ensures traceability of automated processes for compliance, analysis, and incident investigation purposes. Audit logs should cover edge cases and serve for ongoing model monitoring.",
+        "tags": [
+          "compliance",
+          "audit",
+          "[INFERRED] traceability"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Helpdesk",
+          "AI Routing"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 30\u201331",
+        "reasoning": {
+          "source_summary_fragment": "logging all decisions/actions, offering opt-out for users, and supplying documentation for agents and customers",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.95
+            },
+            {
+              "tag": "audit",
+              "confidence": 0.93
+            },
+            {
+              "tag": "traceability",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "audit log",
+            "decision trace",
+            "routing action transparency"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "traceability",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-028"
+      },
+      {
+        "seq_no": 12,
+        "schema_version": "2025-05-17",
+        "id": "REQ-028-HLJ-Chunk_2-Item_2-v1.0",
+        "title": "Provide user opt-out from automated sentiment classification",
+        "summary": "Users must be able to opt out from automated sentiment analysis and classification when submitting helpdesk tickets. This supports privacy, consent, and regulatory requirements, ensuring users retain control over the use of AI-driven ticket handling on their cases.",
+        "tags": [
+          "compliance",
+          "consent",
+          "[INFERRED] privacy"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Helpdesk",
+          "AI Routing"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 32",
+        "reasoning": {
+          "source_summary_fragment": "Ensure compliance by ... offering opt-out for users",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.94
+            },
+            {
+              "tag": "consent",
+              "confidence": 0.92
+            },
+            {
+              "tag": "privacy",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "user preferences",
+            "privacy opt-out",
+            "user consent controls"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "privacy",
+          "confidence": 0.9,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-028"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-028-HLJ-Chunk_3",
+    "DATA": []
+  },
+  "errors": []
+}

@@ -1,0 +1,153 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Hold and require manual review for ambiguous or near match results",
+  "summary": "When AML screening results are ambiguous or close matches, suspend the onboarding process and mandate manual review. This ensures careful human vetting of potential watchlist matches, reducing the risk of onboarding flagged individuals.",
+  "tags_v1": [
+    "aml",
+    "manualreview",
+    "[INFERRED] exception"
+  ],
+  "tags_v2": [
+    "aml"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "matching",
+    "monitoring",
+    "aml",
+    "workflow",
+    "alert"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.728430449962616,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.740952730178833,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "matching",
+      "aliases": [],
+      "cluster_id": "all_281",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7196172475814819,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "matching",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7534235715866089,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aml",
+      "aliases": [],
+      "cluster_id": "all_11",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7151627540588379,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7388478517532349,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7133851051330566,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

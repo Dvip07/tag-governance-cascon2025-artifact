@@ -1,0 +1,61 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Provide an admin report listing all users out of 2FA compliance or exempted",
+  "summary": "Develop a reporting feature for administrators to list users who are out of compliance with 2FA policies or officially exempted, supporting regular security and governance reviews.",
+  "tags_v1": [
+    "compliance",
+    "security"
+  ],
+  "tags_v2": [
+    "compliance",
+    "security"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7252475023269653,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.741576075553894,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ]
+}

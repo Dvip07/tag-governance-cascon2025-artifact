@@ -1,0 +1,257 @@
+# 📝 Changelog for `req-019` — **opus4**
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['database', 'cohorts', 'schema']`
+**Validated tags:** `['database', 'cohorts', 'schema']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['database', 'cohorts', 'schema']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| cohorts | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:05.431832Z |
+| database | kept | direct | 1.0 | title | 2025-05-31T23:59:05.377251Z |
+| schema | kept | direct | 1.0 | title | 2025-05-31T23:59:05.434573Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['api', 'cohorts', 'backend']`
+**Validated tags:** `['api', 'cohorts']`
+**Tags added:** `[]`
+**Tags dropped:** `['backend']`
+**Tags kept:** `['api', 'cohorts']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| api | kept | direct | 1.0 | title | 2025-05-31T23:59:05.437240Z |
+| backend | dropped | none | 0.0 | None | 2025-05-31T23:59:05.570555Z |
+| cohorts | kept | direct | 1.0 | summary | 2025-05-31T23:59:05.445499Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['api', 'cohorts', 'events']`
+**Validated tags:** `['api', 'cohorts', 'events']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['api', 'cohorts', 'events']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| api | kept | direct | 1.0 | title | 2025-05-31T23:59:05.574241Z |
+| cohorts | kept | direct | 1.0 | summary | 2025-05-31T23:59:05.584099Z |
+| events | kept | direct | 1.0 | title | 2025-05-31T23:59:05.587041Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['automation', 'cohorts', 'updates']`
+**Validated tags:** `['cohorts', 'updates']`
+**Tags added:** `[]`
+**Tags dropped:** `['automation']`
+**Tags kept:** `['cohorts', 'updates']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| automation | dropped | none | 0.0 | None | 2025-05-31T23:59:05.704628Z |
+| cohorts | kept | direct | 1.0 | summary | 2025-05-31T23:59:05.714520Z |
+| updates | kept | direct | 1.0 | source_fragment | 2025-05-31T23:59:05.725238Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['algorithms', 'metrics', 'decay']`
+**Validated tags:** `['metrics', 'decay']`
+**Tags added:** `[]`
+**Tags dropped:** `['algorithms']`
+**Tags kept:** `['metrics', 'decay']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| algorithms | dropped | none | 0.0 | None | 2025-05-31T23:59:05.847094Z |
+| decay | kept | direct | 1.0 | summary | 2025-05-31T23:59:05.859860Z |
+| metrics | kept | direct | 1.0 | title | 2025-05-31T23:59:05.850806Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['algorithms', 'metrics', 'decay']`
+**Validated tags:** `['metrics', 'decay']`
+**Tags added:** `[]`
+**Tags dropped:** `['algorithms']`
+**Tags kept:** `['metrics', 'decay']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| algorithms | dropped | none | 0.0 | None | 2025-05-31T23:59:05.979296Z |
+| decay | kept | direct | 1.0 | summary | 2025-05-31T23:59:05.991742Z |
+| metrics | kept | direct | 1.0 | title | 2025-05-31T23:59:05.982876Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['settings', 'ui', 'configuration']`
+**Validated tags:** `['settings', 'ui']`
+**Tags added:** `[]`
+**Tags dropped:** `['configuration']`
+**Tags kept:** `['settings', 'ui']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| configuration | dropped | none | 0.0 | None | 2025-05-31T23:59:06.123135Z |
+| settings | kept | direct | 1.0 | title | 2025-05-31T23:59:05.994663Z |
+| ui | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:06.008689Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['cohorts', 'deduplication', 'logic']`
+**Validated tags:** `['cohorts', 'logic']`
+**Tags added:** `[]`
+**Tags dropped:** `['deduplication']`
+**Tags kept:** `['cohorts', 'logic']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| cohorts | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:06.178873Z |
+| deduplication | dropped | none | 0.0 | None | 2025-05-31T23:59:06.295762Z |
+| logic | kept | direct | 1.0 | title | 2025-05-31T23:59:06.299232Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['validation', 'warnings', 'ux']`
+**Validated tags:** `['validation', 'warnings', 'ux']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['validation', 'warnings', 'ux']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| ux | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:06.321054Z |
+| validation | kept | direct | 1.0 | title | 2025-05-31T23:59:06.302923Z |
+| warnings | kept | direct | 1.0 | title | 2025-05-31T23:59:06.306319Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['performance', 'optimization', 'database']`
+**Validated tags:** `['performance', 'optimization', 'database']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['performance', 'optimization', 'database']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| database | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.353631Z |
+| optimization | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:06.344917Z |
+| performance | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.330371Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['visualization', 'charts', 'ui']`
+**Validated tags:** `['visualization', 'charts']`
+**Tags added:** `[]`
+**Tags dropped:** `['ui']`
+**Tags kept:** `['visualization', 'charts']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| charts | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.367352Z |
+| ui | dropped | none | 0.0 | None | 2025-05-31T23:59:06.488803Z |
+| visualization | kept | direct | 1.0 | title | 2025-05-31T23:59:06.356768Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['visualization', 'heatmap', 'ui']`
+**Validated tags:** `['visualization', 'heatmap']`
+**Tags added:** `[]`
+**Tags dropped:** `['ui']`
+**Tags kept:** `['visualization', 'heatmap']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| heatmap | kept | direct | 1.0 | title | 2025-05-31T23:59:06.495554Z |
+| ui | dropped | none | 0.0 | None | 2025-05-31T23:59:06.616732Z |
+| visualization | kept | direct | 1.0 | title | 2025-05-31T23:59:06.492529Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['export', 'csv', 'reporting']`
+**Validated tags:** `['export', 'csv']`
+**Tags added:** `[]`
+**Tags dropped:** `['reporting']`
+**Tags kept:** `['export', 'csv']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| csv | kept | direct | 1.0 | title | 2025-05-31T23:59:06.623332Z |
+| export | kept | direct | 1.0 | title | 2025-05-31T23:59:06.620386Z |
+| reporting | dropped | none | 0.0 | None | 2025-05-31T23:59:06.745318Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_4-v1.0`
+
+**Original tags:** `['export', 'pdf', 'reporting']`
+**Validated tags:** `['export', 'pdf']`
+**Tags added:** `[]`
+**Tags dropped:** `['reporting']`
+**Tags kept:** `['export', 'pdf']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| export | kept | direct | 1.0 | title | 2025-05-31T23:59:06.748987Z |
+| pdf | kept | direct | 1.0 | title | 2025-05-31T23:59:06.752002Z |
+| reporting | dropped | none | 0.0 | None | 2025-05-31T23:59:06.872869Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_5-v1.0`
+
+**Original tags:** `['documentation', 'support', 'help']`
+**Validated tags:** `['documentation', 'support', 'help']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'support', 'help']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.883778Z |
+| help | kept | direct | 1.0 | title | 2025-05-31T23:59:06.941444Z |
+| support | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:06.938290Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_6-v1.0`
+
+**Original tags:** `['documentation', 'algorithms', 'help', '[INFERRED] configuration']`
+**Validated tags:** `['documentation', 'algorithms', 'help']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] configuration']`
+**Tags kept:** `['documentation', 'algorithms', 'help']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] configuration | dropped | none | 0.0 | None | 2025-05-31T23:59:07.128458Z |
+| algorithms | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.959301Z |
+| documentation | kept | direct | 1.0 | summary | 2025-05-31T23:59:06.950585Z |
+| help | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:07.013885Z |
+
+## 🔹 HLJ: `REQ-019-HLJ-Chunk_2-Item_7-v1.0`
+
+**Original tags:** `['integration', 'database', 'backend']`
+**Validated tags:** `['integration', 'backend']`
+**Tags added:** `[]`
+**Tags dropped:** `['database']`
+**Tags kept:** `['integration', 'backend']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| backend | kept | direct | 1.0 | summary | 2025-05-31T23:59:07.268400Z |
+| database | dropped | none | 0.0 | None | 2025-05-31T23:59:07.258441Z |
+| integration | kept | direct | 1.0 | summary | 2025-05-31T23:59:07.139532Z |

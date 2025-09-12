@@ -1,0 +1,182 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-011-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-011",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-011-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-011-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-011 (FinTech)
+
+FT-011: Flexible EMI Options at Checkout Based on Creditworthiness
+Title:
+Implementation of Dynamic EMI (Equated Monthly Installments) Options at Checkout Based on Real-Time Creditworthiness Assessment
+
+Background & Objective:
+To increase conversion rates and customer loyalty, we aim to offer flexible EMI options directly at checkout. The available EMI tenures and interest rates should be personalized in real time based on each customer’s creditworthiness, determined by internal and third-party credit scoring systems. This will provide a competitive edge in e-commerce and point-of-sale channels.
+
+Scope of Requirement:
+
+Real-Time Creditworthiness Assessment:
+
+Integrate with internal and external credit bureaus to retrieve up-to-date credit scores for customers at the time of checkout.
+
+Implement a decision engine to map credit score bands to eligible EMI plans (e.g., 3, 6, 12 months) and corresponding interest rates.
+
+All scoring and eligibility checks must be completed within 2 seconds to avoid checkout friction.
+
+Dynamic EMI Offering:
+
+Display only the EMI plans the customer qualifies for, with clear disclosure of monthly payment amounts, APR, and total cost.
+
+If a customer's credit band changes post-approval (e.g., due to rapid repayment activity), trigger re-validation before funds disbursement.
+
+Edge Case Handling:
+
+For “borderline” customers (on the edge between two bands), allow manual override by support staff with appropriate justification.
+
+If credit score lookup fails or times out, offer default EMI options with conservative limits and flag the transaction for post-settlement review.
+
+User Experience & Transparency:
+
+Provide an EMI calculator in the checkout flow for users to explore options before selecting.
+
+Present all terms in plain language, including prepayment penalties, missed payment consequences, and dispute resolution process.
+
+Compliance & Security:
+
+All data sharing and storage must comply with applicable lending and privacy laws (e.g., FCRA, GDPR).
+
+Ensure user consent is obtained for all credit checks.
+
+Log all decision engine inputs and outputs for audit and regulatory review.
+
+Monitoring & Reporting:
+
+Monitor EMI adoption rates, approval declines, and band-shifting events, providing regular analytics to Product and Risk teams.
+
+Maintain an override log with reviewer, justification, and resolution details.
+
+Dependencies & Constraints:
+
+Agreements must be in place with credit scoring partners for real-time API access.
+
+Any changes to EMI logic must go through Product, Legal, and Compliance review.
+
+Requires updates to checkout UI and backend payment orchestration.
+
+Deliverables:
+
+Checkout and EMI calculator updates
+
+Decision engine logic and integration docs
+
+Analytics dashboard
+
+User and support documentation
+
+Audit and override logs
+
+
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

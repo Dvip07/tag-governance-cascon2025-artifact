@@ -1,0 +1,212 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Perform integration and regression tests",
+    "summary": "Carry out integration and regression tests to ensure the system functions as expected after updates.",
+    "tags": [
+      "testing",
+      "validation",
+      "[INFERRED] integration"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing",
+      "Validation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 60-63",
+    "reasoning": {
+      "source_summary_fragment": "Perform integration and regression tests",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "integration testing",
+        "regression testing"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "integration",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Simulate edge cases",
+    "summary": "Simulate edge cases to ensure the system behaves correctly under extreme conditions.",
+    "tags": [
+      "testing",
+      "edgecases",
+      "[INFERRED] simulation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing",
+      "EdgeCases"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 65-68",
+    "reasoning": {
+      "source_summary_fragment": "Simulate edge cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge case simulation",
+        "extreme condition testing"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "simulation",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Provide training materials for compliance officers",
+    "summary": "Provide training materials for compliance officers to ensure they understand the new system.",
+    "tags": [
+      "compliance",
+      "training",
+      "[INFERRED] officertraining"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Training"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.75,
+    "priority": "low",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 70-73",
+    "reasoning": {
+      "source_summary_fragment": "Provide training materials for compliance officers",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "compliance training",
+        "officer training"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "officertraining",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Deliver updated log schemas and API documentation",
+    "summary": "Deliver updated log schemas and API documentation to ensure proper system integration.",
+    "tags": [
+      "documentation",
+      "apis",
+      "[INFERRED] updatedlogs"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation",
+      "APIs"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.7,
+    "priority": "low",
+    "priority_confidence": 0.75,
+    "line_source": "Ln 75-78",
+    "reasoning": {
+      "source_summary_fragment": "Deliver updated log schemas and API documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.8
+        }
+      ],
+      "mapped_concepts": [
+        "log schema update",
+        "API documentation"
+      ]
+    },
+    "low_confidence_reason": "Clamped to 0.70",
+    "inference_notes": {
+      "tag_added": "updatedlogs",
+      "confidence": 0.78,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-004-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Provide implementation plan and migration guide",
+    "summary": "Provide an implementation plan and migration guide to ensure a smooth transition.",
+    "tags": [
+      "implementation",
+      "migration",
+      "[INFERRED] transitionplan"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Implementation",
+      "Migration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 80-83",
+    "reasoning": {
+      "source_summary_fragment": "Provide implementation plan and migration guide",
+      "tag_metadata_reference": [
+        {
+          "tag": "implementation",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "implementation plan",
+        "migration guide"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "transitionplan",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-004"
+  }
+]

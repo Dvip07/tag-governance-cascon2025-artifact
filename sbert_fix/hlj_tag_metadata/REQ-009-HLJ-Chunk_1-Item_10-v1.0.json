@@ -1,0 +1,135 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Support regulatory documentation for large-value cross-border payments",
+  "summary": "Implement workflows to collect and manage regulatory documentation for high-value cross-border transfers, ensuring adherence to compliance requirements and enabling smooth audit processes.",
+  "tags_v1": [
+    "compliance",
+    "documentation",
+    "[INFERRED] regulatory reporting"
+  ],
+  "tags_v2": [
+    "compliance",
+    "documentation"
+  ],
+  "tags_v3": [
+    "compliance",
+    "beta",
+    "documentation",
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7227752208709717,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feedback",
+      "aliases": [],
+      "cluster_id": "all_51",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.678505539894104,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "feedback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "beta",
+      "aliases": [],
+      "cluster_id": "all_97",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6839622855186462,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "beta",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.705672025680542,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6690593361854553,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7398748397827148,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

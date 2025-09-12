@@ -1,0 +1,195 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Roll out features in phased manner starting with low-risk tenants",
+  "summary": "Reduce operational risk by deploying new rate limiting features initially to low-risk tenants, gathering feedback before wider rollout. This controlled approach ensures stability while validating the system in production.",
+  "tags_v1": [
+    "rollout",
+    "availability",
+    "[INFERRED] safety"
+  ],
+  "tags_v2": [
+    "rollout"
+  ],
+  "tags_v3": [
+    "mfa",
+    "security",
+    "rollback",
+    "audit",
+    "documentation",
+    "rate-limiting",
+    "api",
+    "availability",
+    "access-control"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "mfa",
+      "aliases": [],
+      "cluster_id": "all_270",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6883008480072021,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mfa",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7249759435653687,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.704393744468689,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.700469970703125,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "all_40",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7104419469833374,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8107864856719971,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate limit policies",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7440981864929199,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "all_57",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7284345030784607,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access-control",
+      "aliases": [
+        "access control"
+      ],
+      "cluster_id": "all_174",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7334872484207153,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access-control",
+      "method": "dedup_canonical"
+    }
+  ]
+}

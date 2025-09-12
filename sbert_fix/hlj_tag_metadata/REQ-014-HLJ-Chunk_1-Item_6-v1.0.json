@@ -1,0 +1,57 @@
+{
+  "hlj_id": "REQ-014-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-014",
+  "domain": "FinTech",
+  "title": "Warn users and suggest actions if fee data is delayed or inaccurate",
+  "summary": "Implement logic to warn users if gas fee data is outdated or cannot be reliably fetched, and offer suggestions such as retrying later or reviewing network status. This improves reliability by preventing misinformed confirmations and enhances trust by actively addressing data uncertainty.",
+  "tags_v1": [
+    "usability",
+    "reliability"
+  ],
+  "tags_v2": [
+    "usability",
+    "reliability"
+  ],
+  "tags_v3": [
+    "usability",
+    "reliability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7240173816680908,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7515822052955627,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    }
+  ]
+}

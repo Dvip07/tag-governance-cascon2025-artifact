@@ -1,0 +1,183 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-013",
+  "summary": "Build a robust batch payout engine for marketplace sellers that supports both scheduled and on-demand payouts, detailed transaction tracking, and failure handling with partial or complete rollback. All batch operations must log transaction details (IDs, metadata) and support configuration of batch size, currency, and payout timing. In case of any transaction failure (e.g., bank error, compliance hold), provide atomic rollback for entire batches or allow retrying failed transactions, while recording exceptions and maintaining audit trails. The solution includes an admin dashboard for monitoring, rollback, and reporting; automated notifications to sellers (email, in-app, SMS) with reasons for failures; compliance enforcement (AML, KYC, audit logging, access control); support for mixed currencies, split payments, and outage handling; performance and security safeguards; and integration with payment processors and internal seller systems. Deliverables cover the payout engine, admin UI, exception/audit logic, and documentation."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["PayoutProcessing", "Marketplace"],
+  "canonical_tags": ["payouts", "rollback", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-013-HLJ-Chunk_1",
+      "focus": "Core batch payout functionality and failure handling",
+      "items": [
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design batch payout engine for multi-seller transactions",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "Marketplace"],
+          "tags": ["engine", "batch"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 6–11"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement detailed transaction logging with unique IDs and metadata",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing"],
+          "tags": ["logging", "audit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12–13"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Enable scheduled and on-demand configurable batch payouts",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing"],
+          "tags": ["scheduling", "batch"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14–16"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement failure handling logic for batch payout transactions",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "ErrorHandling"],
+          "tags": ["failure", "rollback"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 18–26"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Support atomic rollback for failed batch payouts",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "ErrorHandling"],
+          "tags": ["atomicity", "rollback"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Allow retry of failed individual payout transactions",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing"],
+          "tags": ["retry", "partial"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Log and mark partial batch payout successes and exceptions",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "ErrorHandling"],
+          "tags": ["logging", "exception"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 23–24"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Record audit logs for all batch operations and manual overrides",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "Audit"],
+          "tags": ["audit", "logging"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 28–29"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Generate exception and summary reports for payouts",
+          "domain": "FinTech",
+          "subdomain": ["Reporting"],
+          "tags": ["reporting", "exception"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 30–31"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Develop admin dashboard for batch status and payout drill-down",
+          "domain": "FinTech",
+          "subdomain": ["PayoutProcessing", "AdminUI"],
+          "tags": ["dashboard", "admin"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 32–33"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-013-HLJ-Chunk_2",
+      "focus": "Notifications, compliance, edge cases, and delivery scope",
+      "items": [
+        {
+          "id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Implement seller notifications with detailed payout status and reasons",
+          "domain": "FinTech",
+          "subdomain": ["Notification"],
+          "tags": ["notification", "status"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 35–38"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Notify sellers upon payout rollback with rescheduling info",
+          "domain": "FinTech",
+          "subdomain": ["Notification"],
+          "tags": ["notification", "rollback"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 39–41"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Enforce financial compliance (AML, KYC, audit, retention)",
+          "domain": "FinTech",
+          "subdomain": ["Compliance"],
+          "tags": ["compliance", "security"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 43–47"
+        },
+        {
+          "id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Restrict sensitive operations to authorized personnel",
+          "domain": "FinTech",
+          "subdomain": ["Security"],
+          "tags": ["security", "access"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 46"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

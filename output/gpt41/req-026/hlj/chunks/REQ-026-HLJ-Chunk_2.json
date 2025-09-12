@@ -1,0 +1,302 @@
+{
+  "CHUNK_ID": "REQ-026-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Visualize NPS response rates, scores, and trends by cohort and event (Ln 19\u201321)",
+    "Integrate NPS results with CRM and support for proactive outreach (Ln 22\u201323)",
+    "Ensure survey data storage and audit per privacy standards (Ln 24)",
+    "Integrate with analytics, CRM, and support ticketing platforms (Ln 36)",
+    "Localize surveys for key markets (Ln 37)",
+    "Monitor and enforce KPIs: >20% response rate, 90% mapping, <24h follow-up (Ln 39\u201342)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 11,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_1-v1.0",
+        "title": "Visualize NPS response rates, scores, and trends by cohort and event",
+        "summary": "Create analytics dashboards that display NPS response rates, scores, and temporal trends grouped by user cohort and triggering event. Enable insight into feedback reception and behavioral drivers of NPS within the SaaS product.",
+        "tags": [
+          "nps",
+          "analytics"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Analytics"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 19\u201321",
+        "reasoning": {
+          "source_summary_fragment": "Analytics must visualize response rates and trends by cohort and event",
+          "tag_metadata_reference": [
+            {
+              "tag": "nps",
+              "confidence": 0.92
+            },
+            {
+              "tag": "analytics",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "dashboard",
+            "cohort analysis",
+            "NPS trend reporting"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 12,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_2-v1.0",
+        "title": "Integrate NPS results with CRM and support for proactive outreach",
+        "summary": "Connect NPS survey results to CRM and support systems to enable proactive customer engagement based on feedback. Triggers can automate outreach to users at risk or those providing critical feedback.",
+        "tags": [
+          "crm",
+          "support",
+          "[INFERRED] integration"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Integration"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 22\u201323",
+        "reasoning": {
+          "source_summary_fragment": "NPS data must integrate with CRM/support workflows.",
+          "tag_metadata_reference": [
+            {
+              "tag": "crm",
+              "confidence": 0.92
+            },
+            {
+              "tag": "support",
+              "confidence": 0.92
+            },
+            {
+              "tag": "integration",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "NPS-CRM linkage",
+            "proactive outreach workflows",
+            "customer support automation"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "integration",
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 13,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_3-v1.0",
+        "title": "Ensure survey data storage and audit per privacy standards",
+        "summary": "Implement survey data storage, retention, and audit processes to adhere to privacy regulations and user opt-out requirements. Ensure traceability and regulatory compliance for all stored NPS feedback.",
+        "tags": [
+          "compliance",
+          "privacy",
+          "[INFERRED] auditability"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Compliance"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.93,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 24",
+        "reasoning": {
+          "source_summary_fragment": "Compliance with privacy regulations is required, including auditability and user opt-outs.",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.96
+            },
+            {
+              "tag": "privacy",
+              "confidence": 0.95
+            },
+            {
+              "tag": "auditability",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "survey data retention",
+            "privacy law compliance",
+            "auditing of feedback records"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "auditability",
+          "confidence": 0.92,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 14,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_4-v1.0",
+        "title": "Integrate with analytics, CRM, and support ticketing platforms",
+        "summary": "Establish robust two-way integrations with analytics platforms, CRM, and support ticketing systems to synchronize NPS data and workflow actions. Facilitates holistic feedback management and operational response.",
+        "tags": [
+          "integration",
+          "nps",
+          "[INFERRED] automation"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Integration"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.9,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 36",
+        "reasoning": {
+          "source_summary_fragment": "Integration with analytics, CRM, and support platforms is required",
+          "tag_metadata_reference": [
+            {
+              "tag": "integration",
+              "confidence": 0.97
+            },
+            {
+              "tag": "nps",
+              "confidence": 0.9
+            },
+            {
+              "tag": "automation",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "system interoperability",
+            "ticketing integration",
+            "feedback data exchange"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "automation",
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 15,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_5-v1.0",
+        "title": "Localize surveys for key markets",
+        "summary": "Provide localized NPS surveys to accommodate multiple markets, ensuring linguistic and cultural accuracy. This supports better response rates and compliance with regional requirements.",
+        "tags": [
+          "localization",
+          "[INFERRED] compliance"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Localization"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "medium",
+        "priority_confidence": 0.88,
+        "line_source": "Ln 37",
+        "reasoning": {
+          "source_summary_fragment": "surveys must be localized",
+          "tag_metadata_reference": [
+            {
+              "tag": "localization",
+              "confidence": 0.96
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "multilingual survey design",
+            "market adaptation",
+            "regulatory localization"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      },
+      {
+        "seq_no": 16,
+        "schema_version": "2025-05-17",
+        "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+        "title": "Monitor and enforce KPIs: >20% response rate, 90% mapping, <24h follow-up",
+        "summary": "Continuously track and enforce KPIs such as survey response rates above 20%, NPS mapping coverage over 90%, and ensuring follow-up actions occur within 24 hours. Automate alerts and operational checks on these metrics.",
+        "tags": [
+          "kpi",
+          "[INFERRED] automation"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Analytics",
+          "Support"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.92,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 39\u201342",
+        "reasoning": {
+          "source_summary_fragment": "KPIs specify survey response rates (>20%), NPS mapping, and fast follow-up (<24h)",
+          "tag_metadata_reference": [
+            {
+              "tag": "kpi",
+              "confidence": 0.98
+            },
+            {
+              "tag": "automation",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "KPI enforcement",
+            "real-time monitoring",
+            "alerting automation"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "automation",
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-026"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

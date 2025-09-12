@@ -1,0 +1,207 @@
+[
+  {
+    "seq_no": 21,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_1-v1.0",
+    "title": "Implement nighttime detection and automatic rescheduling",
+    "summary": "Develop timezone-aware notification scheduling that detects recipient's nighttime hours and automatically reschedules messages to appropriate delivery times. System must respect user preferences and local regulations while maintaining delivery reliability.",
+    "tags": [
+      "scheduling",
+      "ux",
+      "timezone",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases like nighttime scheduling",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduling",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.87
+        },
+        {
+          "tag": "timezone",
+          "confidence": 0.94
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "timezone-aware delays",
+        "edge case handling",
+        "automated rescheduling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 22,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_2-v1.0",
+    "title": "Build duplicate notification prevention system",
+    "summary": "Create a deduplication mechanism to prevent sending identical notifications across multiple channels or within specified time windows. Must track message fingerprints and enforce cooldown periods while maintaining system performance.",
+    "tags": [
+      "deduplication",
+      "reliability",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "duplicate prevention",
+      "tag_metadata_reference": [
+        {
+          "tag": "deduplication",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.88
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate prevention",
+        "edge cases",
+        "system reliability"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 23,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_3-v1.0",
+    "title": "Create quickstart guides for marketing team",
+    "summary": "Develop user-friendly documentation and tutorials enabling marketing teams to quickly onboard and utilize the notification engine. Include template creation guides, campaign setup workflows, and best practices for engagement.",
+    "tags": [
+      "documentation",
+      "training",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "template management",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "training",
+          "confidence": 0.89
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "marketing team enablement",
+        "template management",
+        "quickstart guides"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024"
+  },
+  {
+    "seq_no": 24,
+    "schema_version": "2025-05-28",
+    "id": "REQ-024-HLJ-Chunk_3-Item_4-v1.0",
+    "title": "Write detailed integration documentation for engineers",
+    "summary": "Create comprehensive technical documentation covering API endpoints, SDK usage, webhook implementations, and integration patterns for Twilio, SendGrid, and FCM. Include code examples, error handling guidance, and performance optimization tips.",
+    "tags": [
+      "documentation",
+      "api",
+      "integration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "NotificationSystem"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "Must integrate with Twilio, SendGrid, FCM",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "api",
+          "confidence": 0.91
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "API documentation",
+        "third-party integrations",
+        "technical guides"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-024"
+  }
+]

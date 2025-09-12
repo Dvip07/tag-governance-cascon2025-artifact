@@ -1,0 +1,698 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Instrument dashboard widgets for load and render times",
+    "summary": "Enhance dashboard performance by measuring load and render times for widgets.",
+    "tags": [
+      "instrumentation",
+      "performance",
+      "[INFERRED] optimization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Performance Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "Measure load and render times for widgets",
+      "tag_metadata_reference": [
+        {
+          "tag": "instrumentation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "widget performance",
+        "dashboard optimization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "optimization",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "instrumentation",
+      "performance",
+      "[INFERRED] optimization"
+    ],
+    "tags_v2": [
+      "instrumentation",
+      "performance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "instrumentation",
+        "canonical_tag": "instrumentation",
+        "matched_tag": "instrumentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:33.588627Z"
+      },
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:33.595088Z"
+      },
+      {
+        "original_tag": "[INFERRED] optimization",
+        "canonical_tag": "[INFERRED] optimization",
+        "matched_tag": "[INFERRED] optimization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:33.729149Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Report timing data per widget instance, user, device, and browser context",
+    "summary": "Analyze timing data for widgets across different contexts to identify performance bottlenecks.",
+    "tags": [
+      "reporting",
+      "analytics",
+      "[INFERRED] metrics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Performance Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 14-15",
+    "reasoning": {
+      "source_summary_fragment": "Analyze timing data for widgets",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "widget performance",
+        "data analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "metrics",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "reporting",
+      "analytics",
+      "[INFERRED] metrics"
+    ],
+    "tags_v2": [
+      "reporting",
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:33.801603Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:33.871662Z"
+      },
+      {
+        "original_tag": "[INFERRED] metrics",
+        "canonical_tag": "[INFERRED] metrics",
+        "matched_tag": "[INFERRED] metrics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.007398Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Provide engineering dashboards with breakdowns by widget, user segment, and time window",
+    "summary": "Create dashboards for engineers to visualize widget performance across different segments and time windows.",
+    "tags": [
+      "visualization",
+      "dashboards",
+      "[INFERRED] engineering"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Visualization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 16-17",
+    "reasoning": {
+      "source_summary_fragment": "Create dashboards for engineers",
+      "tag_metadata_reference": [
+        {
+          "tag": "visualization",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "dashboard creation",
+        "widget performance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "engineering",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "visualization",
+      "dashboards",
+      "[INFERRED] engineering"
+    ],
+    "tags_v2": [
+      "visualization",
+      "dashboard"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "visualization",
+        "canonical_tag": "visualization",
+        "matched_tag": "visualization",
+        "tag_origin_cluster_id": "visualization",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.080261Z"
+      },
+      {
+        "original_tag": "dashboards",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:34.093134Z"
+      },
+      {
+        "original_tag": "[INFERRED] engineering",
+        "canonical_tag": "[INFERRED] engineering",
+        "matched_tag": "[INFERRED] engineering",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.227562Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Flag outliers and regressions, with drill-down to root cause",
+    "summary": "Identify and investigate outliers and regressions in widget performance to determine root causes.",
+    "tags": [
+      "alerting",
+      "Root Cause Analysis",
+      "[INFERRED] debugging"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Performance Analytics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "Identify and investigate outliers",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "outlier detection",
+        "root cause analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "debugging",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "alerting",
+      "Root Cause Analysis",
+      "[INFERRED] debugging"
+    ],
+    "tags_v2": [
+      "alert",
+      "Root Cause Analysis"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:34.301664Z"
+      },
+      {
+        "original_tag": "Root Cause Analysis",
+        "canonical_tag": "Root Cause Analysis",
+        "matched_tag": "Root Cause Analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7526103258132935,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.413938Z"
+      },
+      {
+        "original_tag": "[INFERRED] debugging",
+        "canonical_tag": "[INFERRED] debugging",
+        "matched_tag": "[INFERRED] debugging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.545473Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Trigger alerts for widgets breaching performance SLAs",
+    "summary": "Set up alerts for widgets that fail to meet performance service level agreements.",
+    "tags": [
+      "alerting",
+      "SLA",
+      "[INFERRED] notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Automated Alerting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "Set up alerts for widgets",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "alert setup",
+        "SLA monitoring"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "notification",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "alerting",
+      "SLA",
+      "[INFERRED] notification"
+    ],
+    "tags_v2": [
+      "alert",
+      "SLA"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:34.559208Z"
+      },
+      {
+        "original_tag": "SLA",
+        "canonical_tag": "SLA",
+        "matched_tag": "SLA",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.571080Z"
+      },
+      {
+        "original_tag": "[INFERRED] notification",
+        "canonical_tag": "[INFERRED] notification",
+        "matched_tag": "[INFERRED] notification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.708731Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Integrate with CI/CD to block deployment of code that causes performance regressions",
+    "summary": "Integrate performance monitoring with CI/CD pipelines to prevent deployment of code that causes regressions.",
+    "tags": [
+      "CI/CD",
+      "optimization",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Automated Optimization"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.99,
+    "line_source": "Ln 22-23",
+    "reasoning": {
+      "source_summary_fragment": "Integrate performance monitoring with CI/CD",
+      "tag_metadata_reference": [
+        {
+          "tag": "CI/CD",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "CI/CD integration",
+        "performance optimization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "CI/CD",
+      "optimization",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "ci/cd",
+      "optimization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "CI/CD",
+        "canonical_tag": "ci/cd",
+        "matched_tag": "ci/cd",
+        "tag_origin_cluster_id": "ci/cd",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.713754Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.728386Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.862551Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Monitor fallback performance and alert on persistent issues for widgets loading from external services",
+    "summary": "Monitor the performance of widgets that load data from external services and alert on persistent issues.",
+    "tags": [
+      "fallback",
+      "external services",
+      "[INFERRED] reliability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Edge Cases"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 24-25",
+    "reasoning": {
+      "source_summary_fragment": "Monitor fallback performance",
+      "tag_metadata_reference": [
+        {
+          "tag": "fallback",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "fallback monitoring",
+        "external services"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "fallback",
+      "external services",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [
+      "fallback",
+      "external services"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fallback",
+        "canonical_tag": "fallback",
+        "matched_tag": "fallback",
+        "tag_origin_cluster_id": "fallback",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.867480Z"
+      },
+      {
+        "original_tag": "external services",
+        "canonical_tag": "external services",
+        "matched_tag": "external services",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:34.871564Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.001876Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Anonymize telemetry data and comply with user privacy agreements",
+    "summary": "Ensure that telemetry data is anonymized and complies with user privacy agreements to protect user data.",
+    "tags": [
+      "privacy",
+      "compliance",
+      "[INFERRED] data protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.99,
+    "line_source": "Ln 26-27",
+    "reasoning": {
+      "source_summary_fragment": "Anonymize telemetry data",
+      "tag_metadata_reference": [
+        {
+          "tag": "privacy",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "data anonymization",
+        "privacy compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data protection",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "tags_v1": [
+      "privacy",
+      "compliance",
+      "[INFERRED] data protection"
+    ],
+    "tags_v2": [
+      "privacy",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.006043Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.019480Z"
+      },
+      {
+        "original_tag": "[INFERRED] data protection",
+        "canonical_tag": "[INFERRED] data protection",
+        "matched_tag": "[INFERRED] data protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.152103Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

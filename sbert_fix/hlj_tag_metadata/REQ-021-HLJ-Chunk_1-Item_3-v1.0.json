@@ -1,0 +1,94 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Implement nested replies with at least two levels of threading",
+  "summary": "Introduce support for multi-level comment threads, allowing users to reply within replies up to at least two nesting levels. Enables focused discussions and detailed feedback chains.",
+  "tags_v1": [
+    "comments"
+  ],
+  "tags_v2": [
+    "comments"
+  ],
+  "tags_v3": [
+    "comments",
+    "backend",
+    "threading",
+    "filter"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "comments",
+      "aliases": [
+        "commenting"
+      ],
+      "cluster_id": "all_209",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.780796229839325,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "comments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7120218276977539,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "threading",
+      "aliases": [],
+      "cluster_id": "all_320",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7503039240837097,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "threading",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "all_70",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.697400689125061,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filters",
+      "method": "dedup_canonical"
+    }
+  ]
+}

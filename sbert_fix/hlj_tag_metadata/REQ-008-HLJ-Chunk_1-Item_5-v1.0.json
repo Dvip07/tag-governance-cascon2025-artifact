@@ -1,0 +1,130 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Handle eligibility edge cases: zero earnings, unsupported currencies",
+  "summary": "Develop processes and checks for scenarios where applicants have zero recorded earnings or submit income in unsupported currencies. Provides robust edge case coverage to maintain system dependability and regulatory compliance.",
+  "tags_v1": [
+    "edge-case",
+    "eligibility",
+    "[INFERRED] validation"
+  ],
+  "tags_v2": [
+    "eligibility"
+  ],
+  "tags_v3": [
+    "income",
+    "aggregation",
+    "data",
+    "eligibility",
+    "earnings",
+    "user_experience"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "income",
+      "aliases": [],
+      "cluster_id": "all_256",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7243355512619019,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aggregation",
+      "aliases": [],
+      "cluster_id": "all_3",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6942410469055176,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aggregation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.687973141670227,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "all_5",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7431004643440247,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "earnings",
+      "aliases": [
+        "earnings summary"
+      ],
+      "cluster_id": "all_262",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7290166616439819,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "earnings summary",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.703809380531311,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user experience",
+      "method": "dedup_canonical"
+    }
+  ]
+}

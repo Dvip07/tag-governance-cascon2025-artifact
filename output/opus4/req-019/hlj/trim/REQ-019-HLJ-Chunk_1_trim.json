@@ -1,0 +1,472 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design database schema for custom cohort definitions",
+    "summary": "Create database schema to store custom cohort definitions supporting flexible criteria based on signup dates and product usage events. Schema must enable efficient querying and automatic updates.",
+    "tags": [
+      "database",
+      "cohorts",
+      "schema"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "DataModeling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 14-15",
+    "reasoning": {
+      "source_summary_fragment": "support custom cohort creation based on signup dates/events",
+      "tag_metadata_reference": [
+        {
+          "tag": "database",
+          "confidence": 0.95
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.96
+        },
+        {
+          "tag": "schema",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "cohort definitions",
+        "database design",
+        "data modeling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement cohort creation API supporting signup date criteria",
+    "summary": "Develop RESTful API endpoint for creating cohorts based on user signup date ranges. API should support flexible date filtering and integrate with existing analytics datastore.",
+    "tags": [
+      "api",
+      "cohorts",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "API"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "custom cohort creation based on signup dates",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.94
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.96
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "cohort creation",
+        "signup date filtering",
+        "API development"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement cohort creation API supporting product usage events",
+    "summary": "Build API functionality to create cohorts based on specific product usage events and behaviors. Must support event filtering, aggregation, and seamless integration with event tracking system.",
+    "tags": [
+      "api",
+      "cohorts",
+      "events"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "API"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 14",
+    "reasoning": {
+      "source_summary_fragment": "custom cohort creation based on signup dates/events",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.94
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.96
+        },
+        {
+          "tag": "events",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "product usage events",
+        "event-based cohorts",
+        "behavioral analytics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Build automatic cohort update system for new matching users",
+    "summary": "Implement background job system that automatically adds new users to existing cohorts when they match defined criteria. System should run efficiently without impacting dashboard performance.",
+    "tags": [
+      "automation",
+      "cohorts",
+      "updates"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "BackgroundJobs"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "automatic cohort updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "automation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "cohorts",
+          "confidence": 0.96
+        },
+        {
+          "tag": "updates",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "background processing",
+        "automatic updates",
+        "cohort membership"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement exponential time-decay function for metrics",
+    "summary": "Create exponential decay algorithm for weighting user retention metrics over time. Function must be mathematically sound and integrate with existing analytics calculation engine.",
+    "tags": [
+      "algorithms",
+      "metrics",
+      "decay"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Algorithms"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "adjustable time-decay functions (exponential/linear)",
+      "tag_metadata_reference": [
+        {
+          "tag": "algorithms",
+          "confidence": 0.93
+        },
+        {
+          "tag": "metrics",
+          "confidence": 0.91
+        },
+        {
+          "tag": "decay",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "exponential decay",
+        "time-based weighting",
+        "retention metrics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement linear time-decay function for metrics",
+    "summary": "Develop linear decay function as alternative to exponential decay for retention metric weighting. Must support same integration points and parameter adjustments as exponential function.",
+    "tags": [
+      "algorithms",
+      "metrics",
+      "decay"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Algorithms"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "adjustable time-decay functions (exponential/linear)",
+      "tag_metadata_reference": [
+        {
+          "tag": "algorithms",
+          "confidence": 0.93
+        },
+        {
+          "tag": "metrics",
+          "confidence": 0.91
+        },
+        {
+          "tag": "decay",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "linear decay",
+        "metric calculation",
+        "decay functions"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create settings interface for adjustable decay function parameters",
+    "summary": "Build user interface allowing analysts to configure and adjust decay function parameters including decay rate and function type. Interface should provide real-time preview of decay curve.",
+    "tags": [
+      "settings",
+      "ui",
+      "configuration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "UI"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "adjustable time-decay functions",
+      "tag_metadata_reference": [
+        {
+          "tag": "settings",
+          "confidence": 0.9
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.92
+        },
+        {
+          "tag": "configuration",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "parameter adjustment",
+        "settings UI",
+        "decay configuration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Handle duplicate cohort membership logic",
+    "summary": "Implement logic to properly handle cases where users qualify for multiple overlapping cohorts. System should prevent duplication while maintaining accurate analytics calculations.",
+    "tags": [
+      "cohorts",
+      "deduplication",
+      "logic"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "DataProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "handle duplicate cohort memberships",
+      "tag_metadata_reference": [
+        {
+          "tag": "cohorts",
+          "confidence": 0.96
+        },
+        {
+          "tag": "deduplication",
+          "confidence": 0.92
+        },
+        {
+          "tag": "logic",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate handling",
+        "cohort membership",
+        "data integrity"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Implement validation for aggressive decay parameters with user warnings",
+    "summary": "Create validation system that detects potentially problematic decay parameter configurations and displays appropriate warnings to users. Should prevent settings that would render metrics meaningless.",
+    "tags": [
+      "validation",
+      "warnings",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Validation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "provide user warnings for aggressive decay parameters",
+      "tag_metadata_reference": [
+        {
+          "tag": "validation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "warnings",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "parameter validation",
+        "user warnings",
+        "UX safeguards"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Optimize queries to maintain \u226420% dashboard load time increase",
+    "summary": "Optimize database queries and caching strategies to ensure cohort analysis features do not increase dashboard load times by more than 20%. Include performance monitoring and alerting.",
+    "tags": [
+      "performance",
+      "optimization",
+      "database"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 41",
+    "reasoning": {
+      "source_summary_fragment": "maintain dashboard performance (\u226420% load time increase)",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.96
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.94
+        },
+        {
+          "tag": "database",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "query optimization",
+        "performance constraints",
+        "load time monitoring"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-019"
+  }
+]

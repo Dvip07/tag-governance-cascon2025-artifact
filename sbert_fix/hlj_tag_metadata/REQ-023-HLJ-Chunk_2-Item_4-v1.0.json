@@ -1,0 +1,62 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "opus4",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Build rollback traceability system with full change history",
+  "summary": "Develop complete rollback traceability infrastructure maintaining full change history for all feature flag modifications. System must enable one-click rollback within 30 seconds and preserve complete audit trail.",
+  "tags_v1": [
+    "audit",
+    "rollback",
+    "backend"
+  ],
+  "tags_v2": [
+    "audit",
+    "rollback"
+  ],
+  "tags_v3": [
+    "rollback",
+    "audit"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "all_59",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7887213230133057,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.729777455329895,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    }
+  ]
+}

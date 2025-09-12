@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_2-Item_10-v1.0",
+  "model": "meta70b",
+  "req_id": "req-029",
+  "domain": "Compliance and Security",
+  "title": "Ensure zero compliance violations due to audit log gaps",
+  "summary": "Ensure that there are no compliance violations due to gaps in audit log data, including monitoring and reporting.",
+  "tags_v1": [
+    "compliance",
+    "violation",
+    "audit log gaps"
+  ],
+  "tags_v2": [
+    "compliance",
+    "audit log gaps"
+  ],
+  "tags_v3": [
+    "compliance",
+    "audit log gaps"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7150782942771912,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit log gaps",
+      "aliases": [],
+      "cluster_id": "all_458",
+      "domains": [
+        "Compliance and Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8280478119850159,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit log gaps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "violation",
+      "aliases": [],
+      "cluster_id": "all_457",
+      "domains": [
+        "Compliance and Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6632003784179688,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "violation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

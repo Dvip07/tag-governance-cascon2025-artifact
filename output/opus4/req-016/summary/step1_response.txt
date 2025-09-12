@@ -1,0 +1,117 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-016",
+  "summary": "Implement role-based 2FA enforcement with app-specific overrides. Admin, Finance, and DevOps roles require mandatory 2FA, while User and Viewer roles can opt-in. Mobile app temporarily exempt due to technical limitations. System must dynamically update policies on role changes, provide clear UX notifications, track/report exemptions, and avoid user lockouts during migration. Requires mobile team coordination for future 2FA support."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Security", "Authentication"],
+  "canonical_tags": ["2fa", "rbac", "security"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 8,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-016-HLJ-Chunk_1",
+      "focus": "Role-based 2FA enforcement system with app overrides",
+      "items": [
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement mandatory 2FA enforcement for Admin, Finance, and DevOps roles",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Authentication"],
+          "tags": ["2fa", "rbac", "security"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-16"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Build optional 2FA enablement for User and Viewer roles",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Authentication"],
+          "tags": ["2fa", "rbac", "security"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Create dynamic 2FA policy update system triggered by role changes",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Authentication"],
+          "tags": ["2fa", "rbac", "automation"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement mobile app 2FA exemption for mandatory enforcement",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Authentication"],
+          "tags": ["2fa", "mobile", "exemption"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Design 2FA setup notification and instruction system at login",
+          "domain": "SaaS",
+          "subdomain": ["Security", "UX"],
+          "tags": ["2fa", "ux", "notification"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 30"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Build policy exception logging and tracking system",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Monitoring"],
+          "tags": ["logging", "security", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 36"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Create security compliance report showing exempted/non-compliant users",
+          "domain": "SaaS",
+          "subdomain": ["Security", "Reporting"],
+          "tags": ["reporting", "compliance", "security"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 38"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Update help documentation and admin guides for 2FA policy changes",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Support"],
+          "tags": ["documentation", "support", "2fa"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 42"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

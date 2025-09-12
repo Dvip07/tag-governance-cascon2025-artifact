@@ -1,0 +1,148 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Gracefully handle API gateway or limiter failures with system-wide fallback logic",
+  "summary": "To maintain system availability, implement fallback mechanisms at the API gateway when encountering rate limiter failures. The system should avoid hard outages and provide stable, predictable behavior, mitigating widespread disruption.",
+  "tags_v1": [
+    "availability",
+    "resilience",
+    "[INFERRED] fallback"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "audit",
+    "override",
+    "security",
+    "api",
+    "multi-factor approval",
+    "availability",
+    "fallback"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6802780628204346,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "override",
+      "aliases": [
+        "overrides"
+      ],
+      "cluster_id": "all_231",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6801878213882446,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "override",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7108533382415771,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7396096587181091,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-factor approval",
+      "aliases": [],
+      "cluster_id": "all_362",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7324052453041077,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-factor approval",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "all_57",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7323462963104248,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "all_58",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7242861390113831,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    }
+  ]
+}

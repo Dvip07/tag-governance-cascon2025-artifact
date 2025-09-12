@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-021",
+  "summary": "Enable users to add inline, threaded comments directly within uploaded PDFs, supporting at least two nesting levels for replies. Users must be able to highlight text or click to start threads, distinguishing unresolved and resolved comments with filters. Notifications—including direct links—shall be sent to document owners and participants when comments or threads are added, replied to, or resolved. Upon PDF version updates, the system should attempt to preserve comment positions or warn of shifts; overlapping/duplicate highlights must be prevented. The feature must support major browsers and PDF viewers, handle large PDFs (100+ pages) without performance degradation, and include a quickstart guide and feedback best practices. Non-functional focus: performance, usability, and compatibility."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["DocumentManagement"],
+  "canonical_tags": ["comments", "ux", "notifications"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-021-HLJ-Chunk_1",
+      "focus": "Inline Commenting, Thread Management, Notifications, UX, Support, Compatibility",
+      "items": [
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Enable inline commenting on uploaded PDFs",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments", "ux"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 7–9"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Support highlighted text or click-anywhere to start threads",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments", "ux"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11–12"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement nested replies with at least two levels of threading",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Provide filter for unresolved vs. resolved comment status",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments", "ux"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 14"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Notify owners and participants on comment, reply, or resolution with direct links",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["notifications"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16–19"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Preserve comment positions or warn users when uploading new PDF versions",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments", "ux"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Prevent overlapping or duplicate comment highlights",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["comments", "ux"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 23"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Add quickstart guide for PDF commenting features",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["support", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Document best practices for effective feedback",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["support", "usability"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-021-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure performance, compatibility, and scalability for large PDFs and major browsers",
+          "domain": "SaaS",
+          "subdomain": ["DocumentManagement"],
+          "tags": ["performance", "compatibility"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 28–30"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

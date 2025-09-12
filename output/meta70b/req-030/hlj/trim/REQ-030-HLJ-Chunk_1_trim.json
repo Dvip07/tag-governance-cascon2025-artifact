@@ -1,0 +1,80 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Run UI regression tests on supported browsers",
+    "summary": "Automate UI testing across various browsers to ensure compatibility and identify potential issues before deployment.",
+    "tags": [
+      "ui_testing",
+      "browser_coverage",
+      "[INFERRED] compatibility"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UI Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "Automate UI testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "ui_testing",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "UI regression testing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compatibility",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Integrate with CI/CD pipeline to block deployments",
+    "summary": "Integrate automated UI testing with the CI/CD pipeline to prevent deployments in case of test failures, ensuring the quality and reliability of the software.",
+    "tags": [
+      "ci_cd",
+      "deployment",
+      "[INFERRED] quality_assurance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Automated Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 13-14",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with CI/CD pipeline",
+      "tag_metadata_reference": [
+        {
+          "tag": "ci_cd",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "CI/CD integration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "quality_assurance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-030"
+  }
+]

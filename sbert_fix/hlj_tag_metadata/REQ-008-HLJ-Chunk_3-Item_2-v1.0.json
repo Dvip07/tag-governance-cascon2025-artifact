@@ -1,0 +1,95 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_3-Item_2-v1.0",
+  "model": "opus4",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Create data connection guidance with feedback for success/failure",
+  "summary": "Implement clear guidance and feedback mechanisms for platform data connections, showing real-time status, success confirmations, and detailed error messages. Include troubleshooting steps and support options for connection failures.",
+  "tags_v1": [
+    "ux",
+    "feedback",
+    "connection",
+    "[INFERRED] api"
+  ],
+  "tags_v2": [
+    "feedback",
+    "connection"
+  ],
+  "tags_v3": [
+    "feedback",
+    "connection",
+    "api",
+    "ux"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "feedback",
+      "aliases": [],
+      "cluster_id": "all_51",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7141527533531189,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feedback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "connection",
+      "aliases": [],
+      "cluster_id": "all_261",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7168072462081909,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "connection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7371410727500916,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ux",
+      "aliases": [],
+      "cluster_id": "all_210",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7105469703674316,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ux",
+      "method": "dedup_canonical"
+    }
+  ]
+}

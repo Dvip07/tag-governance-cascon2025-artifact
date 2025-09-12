@@ -1,0 +1,91 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Implement parallel UI regression test execution on major browsers in staging",
+  "summary": "Enable parallel execution of UI regression tests on Chrome, Firefox, Safari, and Edge within the staging environment. Significantly reduce test run time and maximize coverage across critical browser configurations. Ensure tests are integrated to run concurrently and reliably before deployment.",
+  "tags_v1": [
+    "ui-testing",
+    "parallel",
+    "staging"
+  ],
+  "tags_v2": [
+    "parallel",
+    "staging"
+  ],
+  "tags_v3": [
+    "ui_testing",
+    "staging",
+    "parallel",
+    "browser_coverage"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui_testing",
+      "aliases": [
+        "ui-testing"
+      ],
+      "cluster_id": "all_26",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7374933958053589,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui_testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "staging",
+      "aliases": [],
+      "cluster_id": "all_28",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7010999321937561,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "staging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "parallel",
+      "aliases": [],
+      "cluster_id": "all_27",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6950010657310486,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "parallel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "browser_coverage",
+      "aliases": [],
+      "cluster_id": "all_355",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7915442585945129,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "browser_coverage",
+      "method": "dedup_canonical"
+    }
+  ]
+}

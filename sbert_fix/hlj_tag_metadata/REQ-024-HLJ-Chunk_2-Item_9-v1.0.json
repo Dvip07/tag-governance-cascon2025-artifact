@@ -1,0 +1,96 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_2-Item_9-v1.0",
+  "model": "opus4",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Build compliance tracking for CAN-SPAM, CASL, GDPR regulations",
+  "summary": "Develop a comprehensive compliance tracking system that ensures adherence to international regulations including CAN-SPAM, CASL, and GDPR with automated consent management and regulatory reporting.",
+  "tags_v1": [
+    "compliance",
+    "legal",
+    "tracking"
+  ],
+  "tags_v2": [
+    "compliance",
+    "tracking"
+  ],
+  "tags_v3": [
+    "compliance",
+    "unsubscribe",
+    "tracking",
+    "opt-out"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7311006784439087,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "unsubscribe",
+      "aliases": [],
+      "cluster_id": "all_397",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7306079864501953,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "unsubscribe",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tracking",
+      "aliases": [],
+      "cluster_id": "all_298",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7202489972114563,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tracking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "opt-out",
+      "aliases": [],
+      "cluster_id": "all_151",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7036334276199341,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "opt-out",
+      "method": "dedup_canonical"
+    }
+  ]
+}

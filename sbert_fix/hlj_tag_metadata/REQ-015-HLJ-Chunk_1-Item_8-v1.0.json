@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-015-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-015",
+  "domain": "FinTech",
+  "title": "Provide clients with delivery status and logs via API or dashboard",
+  "summary": "Expose webhook delivery status and logs to clients through an API or dashboard, supporting transparency, troubleshooting, and operational visibility for ongoing integrations.",
+  "tags_v1": [
+    "usability",
+    "monitoring"
+  ],
+  "tags_v2": [
+    "monitoring"
+  ],
+  "tags_v3": [
+    "monitoring",
+    "training",
+    "support"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.746672511100769,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "training",
+      "aliases": [],
+      "cluster_id": "all_143",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.687772274017334,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "training",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "support",
+      "aliases": [],
+      "cluster_id": "all_56",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7342472076416016,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "support",
+      "method": "dedup_canonical"
+    }
+  ]
+}

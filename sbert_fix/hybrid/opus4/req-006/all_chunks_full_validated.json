@@ -1,0 +1,3604 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design configurable rate limit tiers (Standard: 1000 req/min, Premium: 5000 req/min)",
+    "summary": "Create a configurable rate limiting system supporting multiple tiers with Standard tier at 1000 requests/minute and Premium tier at 5000 requests/minute. System must allow dynamic tier assignment and configuration updates without service restarts.",
+    "tags": [
+      "rate-limiting",
+      "configuration",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 18-19",
+    "reasoning": {
+      "source_summary_fragment": "configurable rate tiers (Standard: 1000 req/min, Premium: 5000 req/min)",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.95
+        },
+        {
+          "tag": "configuration",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "tier configuration",
+        "rate limits",
+        "multi-tenant"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "rate-limiting",
+      "configuration",
+      "api"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rate-limiting",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:20.090397Z"
+      },
+      {
+        "original_tag": "configuration",
+        "canonical_tag": "config",
+        "matched_tag": "config",
+        "tag_origin_cluster_id": "config",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:20.276606Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:20.395051Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "rate-limiting",
+      "tenant management",
+      "configuration"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7445269823074341,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate-limiting",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8064944744110107,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "tenant management",
+        "original_tag": "tenant management",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.726081371307373,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "configuration",
+        "original_tag": "configuration",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7269465923309326,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement burst and sustained rate limit logic with fallback behavior",
+    "summary": "Develop sophisticated rate limiting logic supporting both burst traffic handling and sustained rate enforcement. Include fallback mechanisms for graceful degradation when limits are exceeded, ensuring service reliability.",
+    "tags": [
+      "rate-limiting",
+      "burst-control",
+      "api",
+      "[INFERRED] resilience"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 21-22",
+    "reasoning": {
+      "source_summary_fragment": "burst/sustained limits, and real-time configuration updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.94
+        },
+        {
+          "tag": "burst-control",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.89
+        },
+        {
+          "tag": "resilience",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "burst handling",
+        "sustained rates",
+        "fallback logic"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "resilience",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "rate-limiting",
+      "burst-control",
+      "api",
+      "[INFERRED] resilience"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rate-limiting",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:20.587234Z"
+      },
+      {
+        "original_tag": "burst-control",
+        "canonical_tag": "burst-control",
+        "matched_tag": "burst-control",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:20.771833Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:20.886858Z"
+      },
+      {
+        "original_tag": "[INFERRED] resilience",
+        "canonical_tag": "[INFERRED] resilience",
+        "matched_tag": "[INFERRED] resilience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:21.076308Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rate-limiting",
+      "api",
+      "burst limits"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate-limiting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8200727105140686,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7562390565872192,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "burst limits",
+        "original_tag": "burst limits",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7945897579193115,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build internal admin portal for real-time rate limit configuration updates",
+    "summary": "Create administrative web interface enabling real-time rate limit configuration changes per tenant. Portal must support MFA authentication, audit logging, and instant propagation of changes across the API gateway infrastructure.",
+    "tags": [
+      "admin-portal",
+      "configuration",
+      "real-time"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "real-time configuration updates. Security requires MFA for config changes",
+      "tag_metadata_reference": [
+        {
+          "tag": "admin-portal",
+          "confidence": 0.93
+        },
+        {
+          "tag": "configuration",
+          "confidence": 0.91
+        },
+        {
+          "tag": "real-time",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "admin UI",
+        "MFA security",
+        "config management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "admin-portal",
+      "configuration",
+      "real-time"
+    ],
+    "tags_v2": [
+      "config"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "admin-portal",
+        "canonical_tag": "admin-portal",
+        "matched_tag": "admin-portal",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:21.262234Z"
+      },
+      {
+        "original_tag": "configuration",
+        "canonical_tag": "config",
+        "matched_tag": "config",
+        "tag_origin_cluster_id": "config",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:21.277696Z"
+      },
+      {
+        "original_tag": "real-time",
+        "canonical_tag": "realtime",
+        "matched_tag": "realtime",
+        "tag_origin_cluster_id": "realtime",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:21.457010Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "configuration",
+      "api",
+      "real-time",
+      "real-time updates",
+      "rate-limiting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "configuration",
+        "original_tag": "configuration",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7319954633712769,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7486078143119812,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "real-time",
+        "original_tag": "real-time",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7360015511512756,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "real-time updates",
+        "original_tag": "real-time updates",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7472897171974182,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.797799289226532,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate rate limiting at API gateway/ingress controller layer",
+    "summary": "Implement rate limiting enforcement at the API gateway or ingress controller layer to ensure minimal latency impact (<10ms). Integration must support distributed caching for rate limit counters across multiple gateway instances.",
+    "tags": [
+      "api-gateway",
+      "rate-limiting",
+      "infrastructure"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "API gateway enforcement with HTTP 429 responses... <10ms latency impact",
+      "tag_metadata_reference": [
+        {
+          "tag": "api-gateway",
+          "confidence": 0.94
+        },
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "infrastructure",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "gateway integration",
+        "distributed caching",
+        "latency constraints"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "api-gateway",
+      "rate-limiting",
+      "infrastructure"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "api-gateway",
+        "canonical_tag": "api-gateway",
+        "matched_tag": "api-gateway",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:21.646061Z"
+      },
+      {
+        "original_tag": "rate-limiting",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:21.829885Z"
+      },
+      {
+        "original_tag": "infrastructure",
+        "canonical_tag": "infrastructure",
+        "matched_tag": "infrastructure",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.013812Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rate-limiting",
+      "api-gateway",
+      "enforcement",
+      "api",
+      "infrastructure"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate-limiting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8181047439575195,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api-gateway",
+        "original_tag": "api gateway",
+        "score": 3,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7698748111724854,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "enforcement",
+        "original_tag": "enforcement",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7099611759185791,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7515884637832642,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "infrastructure",
+        "original_tag": "infrastructure",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7359756231307983,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement HTTP 429 responses with retry-after headers for rate limit breaches",
+    "summary": "Configure API gateway to return properly formatted HTTP 429 (Too Many Requests) responses when rate limits are exceeded. Include Retry-After headers with accurate wait times to facilitate client-side retry logic.",
+    "tags": [
+      "http-429",
+      "rate-limiting",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "API gateway enforcement with HTTP 429 responses",
+      "tag_metadata_reference": [
+        {
+          "tag": "http-429",
+          "confidence": 0.95
+        },
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.92
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "HTTP status codes",
+        "retry headers",
+        "client communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "http-429",
+      "rate-limiting",
+      "api"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "http-429",
+        "canonical_tag": "http-429",
+        "matched_tag": "http-429",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.246542Z"
+      },
+      {
+        "original_tag": "rate-limiting",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:22.424598Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.437189Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "api",
+      "feedback",
+      "rate-limiting",
+      "instant feedback"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 5,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7500283718109131,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6895318031311035,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate-limiting",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8062033653259277,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "instant feedback",
+        "original_tag": "instant feedback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6961369514465332,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Create per-tenant rate limiting action and breach logging system",
+    "summary": "Implement comprehensive logging system capturing all rate limiting actions and breaches on a per-tenant basis. Logs must include timestamps, API endpoints, breach counts, and be retained for compliance purposes.",
+    "tags": [
+      "logging",
+      "compliance",
+      "monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "audit logging... monthly usage and rate limit breach reports for billing/compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "compliance retention",
+        "per-tenant tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "logging",
+      "compliance",
+      "monitoring"
+    ],
+    "tags_v2": [
+      "logs",
+      "compliance",
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:22.448272Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.458148Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.570099Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "logging",
+      "monitoring",
+      "api",
+      "rate-limiting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7190216779708862,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logs",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v2",
+        "method": "dedup_canonical",
+        "confidence": 0.7468673586845398,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7393265962600708,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.73917555809021,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7982659339904785,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Build monitoring dashboards for rate limit breaches and near-misses",
+    "summary": "Develop real-time monitoring dashboards displaying rate limit breach patterns, near-miss events (>80% threshold), and usage trends. Dashboards must support filtering by tenant, time range, and API endpoint.",
+    "tags": [
+      "monitoring",
+      "dashboard",
+      "alerting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive monitoring/alerting, tenant usage dashboards",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.94
+        },
+        {
+          "tag": "dashboard",
+          "confidence": 0.92
+        },
+        {
+          "tag": "alerting",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "real-time visualization",
+        "threshold monitoring",
+        "usage analytics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "monitoring",
+      "dashboard",
+      "alerting"
+    ],
+    "tags_v2": [
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.573735Z"
+      },
+      {
+        "original_tag": "dashboard",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:22.758098Z"
+      },
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:22.943736Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "monitoring",
+      "api",
+      "alert",
+      "dashboard",
+      "rate-limiting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7658582925796509,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.752841591835022,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7151688933372498,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.752661943435669,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8119195103645325,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Develop alerting mechanisms for internal teams and affected tenants",
+    "summary": "Create multi-channel alerting system notifying internal teams of rate limit breaches and abuse patterns. Include tenant-facing notifications for approaching limits and breach events via email and webhook integrations.",
+    "tags": [
+      "alerting",
+      "monitoring",
+      "notification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive monitoring/alerting... abuse detection",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.89
+        },
+        {
+          "tag": "notification",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel alerts",
+        "tenant communication",
+        "abuse detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "alerting",
+      "monitoring",
+      "notification"
+    ],
+    "tags_v2": [
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:23.133412Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.247647Z"
+      },
+      {
+        "original_tag": "notification",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.424803Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "monitoring",
+      "api",
+      "usage metrics",
+      "rate-limiting",
+      "self-service",
+      "alert"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7562723755836487,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7443604469299316,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "usage metrics",
+        "original_tag": "usage metrics",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7361603379249573,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8063089847564697,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "self-service",
+        "original_tag": "self-service",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7046242952346802,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7259497046470642,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Expose per-tenant usage metrics via API for self-monitoring",
+    "summary": "Provide API endpoints enabling tenants to query their own usage metrics, rate limit status, and historical consumption patterns. API must include current usage percentages and time until limit reset.",
+    "tags": [
+      "api",
+      "metrics",
+      "self-service"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "tenant usage dashboards... Expose per-tenant usage metrics",
+      "tag_metadata_reference": [
+        {
+          "tag": "api",
+          "confidence": 0.92
+        },
+        {
+          "tag": "metrics",
+          "confidence": 0.9
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "usage API",
+        "self-monitoring",
+        "tenant autonomy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "api",
+      "metrics",
+      "self-service"
+    ],
+    "tags_v2": [
+      "api",
+      "metrics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.429319Z"
+      },
+      {
+        "original_tag": "metrics",
+        "canonical_tag": "metrics",
+        "matched_tag": "metrics",
+        "tag_origin_cluster_id": "metrics",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.432889Z"
+      },
+      {
+        "original_tag": "self-service",
+        "canonical_tag": "self service",
+        "matched_tag": "self service",
+        "tag_origin_cluster_id": "self service",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.622482Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reporting",
+      "api",
+      "compliance",
+      "metrics",
+      "rate-limiting",
+      "self-service"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6970667839050293,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7523818612098694,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6973697543144226,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7306134700775146,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8023675680160522,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "self-service",
+        "original_tag": "self-service",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7139061093330383,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Generate monthly usage and rate limit breach reports for billing/compliance",
+    "summary": "Produce automated monthly reports detailing per-tenant API usage, rate limit breaches, and billing-relevant metrics. Reports must be stored securely and include compliance attestations for audit purposes.",
+    "tags": [
+      "reporting",
+      "billing",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "monthly usage and rate limit breach reports for billing/compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.93
+        },
+        {
+          "tag": "billing",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "monthly reports",
+        "billing integration",
+        "audit trail"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "reporting",
+      "billing",
+      "compliance"
+    ],
+    "tags_v2": [
+      "reporting",
+      "billing",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.737899Z"
+      },
+      {
+        "original_tag": "billing",
+        "canonical_tag": "billing",
+        "matched_tag": "billing",
+        "tag_origin_cluster_id": "billing",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.753218Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.762404Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "reporting",
+      "compliance",
+      "billing",
+      "api",
+      "rate-limiting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7276879549026489,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7199792861938477,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7149878740310669,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "billing",
+        "original_tag": "billing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7310648560523987,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7431100606918335,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7916938066482544,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement circumvention detection for multiple API keys/rotating IPs/bots",
+    "summary": "Deploy advanced detection algorithms to identify and block attempts to circumvent rate limits through use of multiple API keys, rotating IP addresses, or automated bot traffic, ensuring fair resource allocation across all tenants.",
+    "tags": [
+      "security",
+      "abuse-detection",
+      "monitoring",
+      "[INFERRED] analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 44",
+    "reasoning": {
+      "source_summary_fragment": "abuse detection",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "abuse-detection",
+          "confidence": 0.97
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.93
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "circumvention detection",
+        "bot protection",
+        "IP rotation detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "security",
+      "abuse-detection",
+      "monitoring",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "security",
+      "abuse-detection",
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:23.873336Z"
+      },
+      {
+        "original_tag": "abuse-detection",
+        "canonical_tag": "abuse-detection",
+        "matched_tag": "abuse-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "semantic",
+        "similarity": 0.9857207536697388,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.031926Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.157542Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.353380Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "abuse-detection",
+      "support",
+      "monitoring",
+      "api",
+      "rate-limiting",
+      "audit"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7155781984329224,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "abuse-detection",
+        "original_tag": "abuse-detection",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7368336915969849,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6898784637451172,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7195181846618652,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7397470474243164,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limiting",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8016982078552246,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6869560480117798,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Create temporary limit override mechanism with audit logs and auto-reversion",
+    "summary": "Build a controlled override system allowing temporary rate limit adjustments for specific tenants during incidents or special circumstances, with mandatory audit logging and automatic reversion to prevent permanent unauthorized changes.",
+    "tags": [
+      "incident-response",
+      "audit",
+      "override"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "temporary limit override mechanism with audit logs",
+      "tag_metadata_reference": [
+        {
+          "tag": "incident-response",
+          "confidence": 0.9
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.96
+        },
+        {
+          "tag": "override",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "temporary override",
+        "auto-reversion",
+        "audit trail"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "incident-response",
+      "audit",
+      "override"
+    ],
+    "tags_v2": [
+      "audit",
+      "override"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "incident-response",
+        "canonical_tag": "incident-response",
+        "matched_tag": "incident-response",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.630543Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.635075Z"
+      },
+      {
+        "original_tag": "override",
+        "canonical_tag": "override",
+        "matched_tag": "override",
+        "tag_origin_cluster_id": "override",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.638744Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "override",
+      "security",
+      "api",
+      "multi-factor approval",
+      "availability",
+      "fallback"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7126152515411377,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "override",
+        "original_tag": "override",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7299605011940002,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7235713005065918,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7404873371124268,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "multi-factor approval",
+        "original_tag": "multi-factor approval",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7487389445304871,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7208607196807861,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7035303115844727,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Design graceful fallback to system-wide limits during gateway/backend failures",
+    "summary": "Architect resilient fallback mechanisms that automatically apply conservative system-wide rate limits when specific tenant limit lookups fail due to gateway or backend service outages, maintaining API availability while protecting infrastructure.",
+    "tags": [
+      "resilience",
+      "fallback",
+      "availability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "graceful fallback to system-wide limits during gateway/backend failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "resilience",
+          "confidence": 0.95
+        },
+        {
+          "tag": "fallback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "availability",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "graceful degradation",
+        "failure handling",
+        "system-wide defaults"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "resilience",
+      "fallback",
+      "availability"
+    ],
+    "tags_v2": [
+      "fallback",
+      "availability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "resilience",
+        "canonical_tag": "resilience",
+        "matched_tag": "resilience",
+        "tag_origin_cluster_id": "resilience",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.825170Z"
+      },
+      {
+        "original_tag": "fallback",
+        "canonical_tag": "fallback",
+        "matched_tag": "fallback",
+        "tag_origin_cluster_id": "fallback",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.829965Z"
+      },
+      {
+        "original_tag": "availability",
+        "canonical_tag": "availability",
+        "matched_tag": "availability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.841045Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fallback",
+      "security",
+      "availability",
+      "rollback",
+      "tenant segment",
+      "api"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7340189218521118,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71601802110672,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7276164889335632,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7099599242210388,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "tenant segment",
+        "original_tag": "tenant segment",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7147335410118103,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7467712163925171,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement tenant ID spoofing protection in rate limiting logic",
+    "summary": "Strengthen rate limiting security by implementing cryptographic validation and authentication checks to prevent malicious actors from spoofing tenant IDs to access higher rate limits or bypass restrictions entirely.",
+    "tags": [
+      "security",
+      "authentication",
+      "anti-spoofing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "tenant ID spoofing protection",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.95
+        },
+        {
+          "tag": "anti-spoofing",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "tenant validation",
+        "ID spoofing prevention",
+        "authentication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "security",
+      "authentication",
+      "anti-spoofing"
+    ],
+    "tags_v2": [
+      "security",
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.851039Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:24.859777Z"
+      },
+      {
+        "original_tag": "anti-spoofing",
+        "canonical_tag": "anti-spoofing",
+        "matched_tag": "anti-spoofing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.040312Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "authentication",
+      "compliance",
+      "testing",
+      "api",
+      "sandbox environments",
+      "audit"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7493594884872437,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7434442043304443,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7114665508270264,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6921619176864624,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7358484268188477,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "sandbox environments",
+        "original_tag": "sandbox environments",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6983781456947327,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.703903079032898,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Require MFA approval for high-tier tenant rate limit configuration changes",
+    "summary": "Enforce multi-factor authentication requirements for any configuration changes affecting premium or high-tier tenant rate limits, adding an additional security layer to prevent unauthorized modifications to critical usage parameters.",
+    "tags": [
+      "security",
+      "mfa",
+      "audit",
+      "[INFERRED] access-control"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 54",
+    "reasoning": {
+      "source_summary_fragment": "MFA approval for high-tier tenant rate limit configuration",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "mfa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "access-control",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "MFA enforcement",
+        "configuration security",
+        "high-tier protection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "access-control",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "security",
+      "mfa",
+      "audit",
+      "[INFERRED] access-control"
+    ],
+    "tags_v2": [
+      "security",
+      "mfa",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.053339Z"
+      },
+      {
+        "original_tag": "mfa",
+        "canonical_tag": "mfa",
+        "matched_tag": "mfa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.056961Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.168772Z"
+      },
+      {
+        "original_tag": "[INFERRED] access-control",
+        "canonical_tag": "[INFERRED] access-control",
+        "matched_tag": "[INFERRED] access-control",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.352465Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "mfa",
+      "security",
+      "audit",
+      "documentation",
+      "rate-limiting",
+      "api",
+      "availability",
+      "access-control"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "mfa",
+        "original_tag": "mfa",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6998770833015442,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7283657789230347,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6712466478347778,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6937772035598755,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6984528303146362,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate limit policies",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7974642515182495,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7360196113586426,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711539089679718,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "access-control",
+        "original_tag": "access-control",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7313737869262695,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Execute phased rollout starting with low-risk tenants",
+    "summary": "Implement a controlled deployment strategy beginning with low-risk tenant segments to validate rate limiting functionality and performance before expanding to critical or high-volume customers, minimizing potential business impact.",
+    "tags": [
+      "deployment",
+      "rollout",
+      "risk-management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 58",
+    "reasoning": {
+      "source_summary_fragment": "phased rollout starting with low-risk tenants",
+      "tag_metadata_reference": [
+        {
+          "tag": "deployment",
+          "confidence": 0.94
+        },
+        {
+          "tag": "rollout",
+          "confidence": 0.96
+        },
+        {
+          "tag": "risk-management",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "phased deployment",
+        "risk mitigation",
+        "gradual rollout"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "deployment",
+      "rollout",
+      "risk-management"
+    ],
+    "tags_v2": [
+      "deployment",
+      "rollout"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "deployment",
+        "canonical_tag": "deployment",
+        "matched_tag": "deployment",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.364419Z"
+      },
+      {
+        "original_tag": "rollout",
+        "canonical_tag": "rollout",
+        "matched_tag": "rollout",
+        "tag_origin_cluster_id": "rollout",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.367829Z"
+      },
+      {
+        "original_tag": "risk-management",
+        "canonical_tag": "riskmanagement",
+        "matched_tag": "riskmanagement",
+        "tag_origin_cluster_id": "riskmanagement",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:25.548992Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rollback",
+      "deployment",
+      "testing",
+      "developer-experience"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7084125280380249,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "deployment",
+        "original_tag": "deployment",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7385720610618591,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7065241932868958,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "developer-experience",
+        "original_tag": "developer-experience",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7207581996917725,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Provide sandbox environments for client rate limit testing",
+    "summary": "Establish dedicated sandbox environments where B2B clients can safely test and validate their applications against various rate limit configurations without impacting production systems or consuming actual quota allocations.",
+    "tags": [
+      "testing",
+      "sandbox",
+      "client-support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 60",
+    "reasoning": {
+      "source_summary_fragment": "sandbox environments for client rate limit testing",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        },
+        {
+          "tag": "sandbox",
+          "confidence": 0.97
+        },
+        {
+          "tag": "client-support",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "test environment",
+        "client validation",
+        "sandbox isolation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "testing",
+      "sandbox",
+      "client-support"
+    ],
+    "tags_v2": [
+      "testing",
+      "sandbox"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.552933Z"
+      },
+      {
+        "original_tag": "sandbox",
+        "canonical_tag": "sandbox",
+        "matched_tag": "sandbox",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.556108Z"
+      },
+      {
+        "original_tag": "client-support",
+        "canonical_tag": "client-support",
+        "matched_tag": "client-support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.737283Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "sandbox",
+      "documentation",
+      "testing",
+      "client-support"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "sandbox",
+        "original_tag": "sandbox",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7593695521354675,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7121396064758301,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.723243236541748,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "client-support",
+        "original_tag": "client-support",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7407164573669434,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Update developer documentation with rate limit policies and self-service tools",
+    "summary": "Create comprehensive developer documentation detailing rate limit policies, tier structures, and usage guidelines, while providing self-service tools for monitoring consumption and managing rate limit configurations independently.",
+    "tags": [
+      "documentation",
+      "self-service",
+      "communication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 62",
+    "reasoning": {
+      "source_summary_fragment": "developer documentation with rate limit policies and self-service tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.97
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.94
+        },
+        {
+          "tag": "communication",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "developer docs",
+        "self-service portal",
+        "policy documentation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "documentation",
+      "self-service",
+      "communication"
+    ],
+    "tags_v2": [
+      "documentation",
+      "communication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.741671Z"
+      },
+      {
+        "original_tag": "self-service",
+        "canonical_tag": "self service",
+        "matched_tag": "self service",
+        "tag_origin_cluster_id": "self service",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:25.976670Z"
+      },
+      {
+        "original_tag": "communication",
+        "canonical_tag": "communication",
+        "matched_tag": "communication",
+        "tag_origin_cluster_id": "communication",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.091637Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation",
+      "migration",
+      "compatibility",
+      "communication",
+      "legacy",
+      "self-service"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7345452308654785,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "migration",
+        "original_tag": "migration",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.69058758020401,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compatibility",
+        "original_tag": "compatibility",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7047629952430725,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "communication",
+        "original_tag": "communication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.681739091873169,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "legacy",
+        "original_tag": "legacy",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6951252222061157,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "self-service",
+        "original_tag": "self-service",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.726958692073822,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Upgrade API gateway infrastructure ensuring <10ms latency impact",
+    "summary": "Execute critical infrastructure upgrades to API gateway systems to support rate limiting functionality while maintaining strict performance requirements of less than 10 milliseconds additional latency per request.",
+    "tags": [
+      "infrastructure",
+      "performance",
+      "upgrade"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 66-67",
+    "reasoning": {
+      "source_summary_fragment": "API gateway infrastructure ensuring <10ms latency impact",
+      "tag_metadata_reference": [
+        {
+          "tag": "infrastructure",
+          "confidence": 0.96
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "upgrade",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "gateway upgrade",
+        "latency constraints",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "infrastructure",
+      "performance",
+      "upgrade"
+    ],
+    "tags_v2": [
+      "infrastructure",
+      "performance",
+      "upgrade"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "infrastructure",
+        "canonical_tag": "infrastructure",
+        "matched_tag": "infrastructure",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.095067Z"
+      },
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.103827Z"
+      },
+      {
+        "original_tag": "upgrade",
+        "canonical_tag": "upgrade",
+        "matched_tag": "upgrade",
+        "tag_origin_cluster_id": "upgrade",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.106916Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "infrastructure",
+      "upgrade",
+      "latency"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7162775993347168,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "infrastructure",
+        "original_tag": "infrastructure",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7231043577194214,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "upgrade",
+        "original_tag": "upgrade",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7254968881607056,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "latency",
+        "original_tag": "latency",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7515376806259155,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-28",
+    "id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Retrofit or phase out legacy APIs for rate limit compatibility",
+    "summary": "Assess and modify legacy API endpoints to support new rate limiting mechanisms, or develop migration strategies to phase out incompatible services while ensuring minimal disruption to existing B2B client integrations.",
+    "tags": [
+      "legacy",
+      "migration",
+      "compatibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "B2B Developer Platform",
+      "API Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 66",
+    "reasoning": {
+      "source_summary_fragment": "Retrofit or phase out legacy APIs for rate limit compatibility",
+      "tag_metadata_reference": [
+        {
+          "tag": "legacy",
+          "confidence": 0.95
+        },
+        {
+          "tag": "migration",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compatibility",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "legacy system retrofit",
+        "API migration",
+        "backward compatibility"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-006",
+    "tags_v1": [
+      "legacy",
+      "migration",
+      "compatibility"
+    ],
+    "tags_v2": [
+      "legacy",
+      "migration",
+      "compatibility"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "legacy",
+        "canonical_tag": "legacy",
+        "matched_tag": "legacy",
+        "tag_origin_cluster_id": "legacy",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.110108Z"
+      },
+      {
+        "original_tag": "migration",
+        "canonical_tag": "migration",
+        "matched_tag": "migration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.119046Z"
+      },
+      {
+        "original_tag": "compatibility",
+        "canonical_tag": "compatibility",
+        "matched_tag": "compatibility",
+        "tag_origin_cluster_id": "compatibility",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:26.122109Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "legacy",
+      "compliance",
+      "compatibility",
+      "migration"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "legacy",
+        "original_tag": "legacy",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7189199924468994,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7035999298095703,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "compatibility",
+        "original_tag": "compatibility",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7173651456832886,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "migration",
+        "original_tag": "migration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6980816125869751,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "legal",
+        "original_tag": "legal",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6688343286514282,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      },
+      {
+        "tag": "communication",
+        "original_tag": "communication",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6657156944274902,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-006-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-006"
+      }
+    ]
+  }
+]

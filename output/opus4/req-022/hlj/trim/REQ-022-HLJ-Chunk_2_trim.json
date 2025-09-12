@@ -1,0 +1,102 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement rate limiting for log export functionality to prevent abuse",
+    "summary": "Add rate limiting controls to the log export API endpoints to prevent system abuse and resource exhaustion. This includes implementing per-user and per-role export quotas with configurable thresholds.",
+    "tags": [
+      "rate-limiting",
+      "security",
+      "performance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "include rate-limiting for exports while meeting geographic data protection requirements",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.95
+        },
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "export rate limiting",
+        "abuse prevention",
+        "API throttling"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.91,
+      "method": "direct_mapping_v1"
+    },
+    "source_hlj_id": "REQ-022"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Update admin documentation with log export and retention guidelines",
+    "summary": "Create comprehensive documentation for administrators covering log export procedures, data retention policies, and compliance guidelines. Include role-based access permissions and geographic data protection requirements.",
+    "tags": [
+      "documentation",
+      "compliance",
+      "admin"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.94,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 33",
+    "reasoning": {
+      "source_summary_fragment": "System must log all resource access... with 1-year retention, provide CSV/JSON export for Compliance/Security roles",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "admin",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "admin guidelines",
+        "retention policies",
+        "export documentation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.93,
+      "method": "direct_mapping_v1"
+    },
+    "source_hlj_id": "REQ-022"
+  }
+]

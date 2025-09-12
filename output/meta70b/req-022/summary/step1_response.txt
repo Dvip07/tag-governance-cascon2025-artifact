@@ -1,0 +1,111 @@
+### === SUMMARY START ===
+{
+  "requirement_id": "REQ-022",
+  "summary": "Implement per-resource access logs with export functionality for Compliance and Security roles, including logging of user ID, timestamp, IP, access type, and context, with filters and rate limiting, while meeting data protection and privacy requirements."
+}
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+{
+  "domain": "SaaS",
+  "subdomain": ["Security", "Compliance"],
+  "canonical_tags": ["access_logs", "export_controls", "compliance"],
+  "difficulty": "medium",
+  "priority": "high"
+}
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+{
+  "estimated_hlj_count": 8,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-022-HLJ-Chunk_1",
+      "focus": "Access Logging and Export",
+      "items": [
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Design access log schema",
+          "domain": "SaaS",
+          "subdomain": ["Security"],
+          "tags": ["access_logs", "schema"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement logging for key resources",
+          "domain": "SaaS",
+          "subdomain": ["Security"],
+          "tags": ["access_logs", "implementation"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Develop export functionality for Compliance and Security roles",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["export_controls", "roles"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement filters for log exports",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["export_controls", "filters"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18-20"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Mask sensitive data on export",
+          "domain": "SaaS",
+          "subdomain": ["Security"],
+          "tags": ["data_protection", "masking"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 22-24"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Implement rate limiting for log exports",
+          "domain": "SaaS",
+          "subdomain": ["Security"],
+          "tags": ["rate_limiting", "export_controls"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25-27"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Notify compliance team leads of large-volume exports or unusual access patterns",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["notifications", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 29-31"
+        },
+        {
+          "id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Update admin docs and compliance playbooks with export and retention guidelines",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["documentation", "compliance"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 33-35"
+        }
+      ]
+    }
+  ]
+}
+### === HLJ_PLAN END ===

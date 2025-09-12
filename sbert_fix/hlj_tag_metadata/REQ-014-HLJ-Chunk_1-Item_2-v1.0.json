@@ -1,0 +1,109 @@
+{
+  "hlj_id": "REQ-014-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-014",
+  "domain": "FinTech",
+  "title": "Display dynamic min/expected/max gas fee estimates in UI pre-confirmation",
+  "summary": "Provide users with real-time minimum, expected, and maximum gas fee estimates in the user interface before transaction confirmation. The UI must update these values dynamically, improving transparency and predictability for users prior to finalizing blockchain transactions. This enhances trust and allows informed user decisions regarding transaction costs.",
+  "tags_v1": [
+    "usability",
+    "ui"
+  ],
+  "tags_v2": [
+    "usability",
+    "ui"
+  ],
+  "tags_v3": [
+    "usability",
+    "gas-fee",
+    "ui",
+    "estimation",
+    "real-time"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "all_94",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7300357818603516,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gas-fee",
+      "aliases": [],
+      "cluster_id": "all_369",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.794933557510376,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gas-fee",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7190018892288208,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "estimation",
+      "aliases": [],
+      "cluster_id": "all_370",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7317922115325928,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "estimation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "all_49",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7492561340332031,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    }
+  ]
+}

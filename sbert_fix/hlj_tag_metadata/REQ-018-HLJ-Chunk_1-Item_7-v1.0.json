@@ -1,0 +1,127 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Enable search and filtering by tag, assignment, and status",
+  "summary": "Provide advanced search and filtering functionality based on tags, assignment, and status to help users locate and organize emails efficiently.",
+  "tags_v1": [
+    "search",
+    "filtering"
+  ],
+  "tags_v2": [
+    "search"
+  ],
+  "tags_v3": [
+    "search",
+    "status",
+    "assignment",
+    "integration",
+    "email",
+    "workflow"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "search",
+      "aliases": [],
+      "cluster_id": "all_226",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.751654863357544,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "search",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "status",
+      "aliases": [],
+      "cluster_id": "all_111",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7425115704536438,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "status",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "assignment",
+      "aliases": [],
+      "cluster_id": "all_223",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7486966848373413,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "assignment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7248346209526062,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "email",
+      "aliases": [],
+      "cluster_id": "all_208",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7893540263175964,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "email",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7754325866699219,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    }
+  ]
+}

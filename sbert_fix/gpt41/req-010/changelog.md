@@ -1,0 +1,194 @@
+# 📝 Changelog for `req-010` — **gpt41**
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['operational', 'real-time', 'dual-ledger']`
+**Validated tags:** `['operational', 'dual-ledger']`
+**Tags added:** `[]`
+**Tags dropped:** `['real-time']`
+**Tags kept:** `['operational', 'dual-ledger']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| dual-ledger | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:12.342159Z |
+| operational | kept | direct | 1.0 | title | 2025-06-01T00:00:12.017699Z |
+| real-time | dropped | none | 0.0 | None | 2025-06-01T00:00:12.227645Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['reporting', 'regulatory', '[INFERRED] compliance']`
+**Validated tags:** `['reporting']`
+**Tags added:** `[]`
+**Tags dropped:** `['regulatory', '[INFERRED] compliance']`
+**Tags kept:** `['reporting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-06-01T00:00:12.820584Z |
+| regulatory | dropped | none | 0.0 | None | 2025-06-01T00:00:12.636183Z |
+| reporting | kept | direct | 1.0 | title | 2025-06-01T00:00:12.346150Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['synchronization', 'metadata']`
+**Validated tags:** `['metadata']`
+**Tags added:** `[]`
+**Tags dropped:** `['synchronization']`
+**Tags kept:** `['metadata']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| metadata | kept | direct | 1.0 | summary | 2025-06-01T00:00:13.063526Z |
+| synchronization | dropped | none | 0.0 | None | 2025-06-01T00:00:13.048854Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['phantom-balance', 'segregation']`
+**Validated tags:** `['phantom balance', 'segregation']`
+**Tags added:** `['phantom balance']`
+**Tags dropped:** `['phantom-balance']`
+**Tags kept:** `['segregation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| phantom balance | added | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.173646Z |
+| phantom-balance | dropped | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.173646Z |
+| segregation | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:13.190571Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['phantom-balance', 'lifecycle']`
+**Validated tags:** `['phantom balance', 'lifecycle']`
+**Tags added:** `['phantom balance']`
+**Tags dropped:** `['phantom-balance']`
+**Tags kept:** `['lifecycle']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| lifecycle | kept | direct | 1.0 | title | 2025-06-01T00:00:13.338121Z |
+| phantom balance | added | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.333191Z |
+| phantom-balance | dropped | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.333191Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['visibility', 'ui']`
+**Validated tags:** `['ui']`
+**Tags added:** `[]`
+**Tags dropped:** `['visibility']`
+**Tags kept:** `['ui']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| ui | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:13.564688Z |
+| visibility | dropped | none | 0.0 | None | 2025-06-01T00:00:13.542362Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['batch', 'phantom-balance', '[INFERRED] reconciliation']`
+**Validated tags:** `['batch', 'phantom balance']`
+**Tags added:** `['phantom balance']`
+**Tags dropped:** `['phantom-balance', '[INFERRED] reconciliation']`
+**Tags kept:** `['batch']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reconciliation | dropped | none | 0.0 | None | 2025-06-01T00:00:13.896940Z |
+| batch | kept | direct | 1.0 | title | 2025-06-01T00:00:13.569404Z |
+| phantom balance | added | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.685677Z |
+| phantom-balance | dropped | direct | 1.0 | raw_requirement | 2025-06-01T00:00:13.685677Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['exception', 'reporting']`
+**Validated tags:** `['exception', 'reporting']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['exception', 'reporting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| exception | kept | direct | 1.0 | summary | 2025-06-01T00:00:13.908837Z |
+| reporting | kept | direct | 1.0 | summary | 2025-06-01T00:00:13.919742Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['tooling', 'mismatch', '[INFERRED] reconciliation']`
+**Validated tags:** `['mismatch']`
+**Tags added:** `[]`
+**Tags dropped:** `['tooling', '[INFERRED] reconciliation']`
+**Tags kept:** `['mismatch']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] reconciliation | dropped | none | 0.0 | None | 2025-06-01T00:00:14.355626Z |
+| mismatch | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:14.155155Z |
+| tooling | dropped | none | 0.0 | None | 2025-06-01T00:00:14.136041Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['workflow', 'audit', '[INFERRED] compliance']`
+**Validated tags:** `['audit']`
+**Tags added:** `[]`
+**Tags dropped:** `['workflow', '[INFERRED] compliance']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-06-01T00:00:14.731939Z |
+| audit | kept | direct | 1.0 | title | 2025-06-01T00:00:14.549739Z |
+| workflow | dropped | none | 0.0 | None | 2025-06-01T00:00:14.545361Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['logging', 'audit', '[INFERRED] immutable']`
+**Validated tags:** `['audit']`
+**Tags added:** `[]`
+**Tags dropped:** `['logging', '[INFERRED] immutable']`
+**Tags kept:** `['audit']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] immutable | dropped | none | 0.0 | None | 2025-06-01T00:00:15.142926Z |
+| audit | kept | direct | 1.0 | title | 2025-06-01T00:00:14.944845Z |
+| logging | dropped | none | 0.0 | None | 2025-06-01T00:00:14.940406Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['rbac', 'access-control', '[INFERRED] least-privilege']`
+**Validated tags:** `['rbac']`
+**Tags added:** `[]`
+**Tags dropped:** `['access-control', '[INFERRED] least-privilege']`
+**Tags kept:** `['rbac']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] least-privilege | dropped | none | 0.0 | None | 2025-06-01T00:00:15.548529Z |
+| access-control | dropped | none | 0.0 | None | 2025-06-01T00:00:15.353447Z |
+| rbac | kept | direct | 1.0 | summary | 2025-06-01T00:00:15.156754Z |
+
+## 🔹 HLJ: `REQ-010-HLJ-Chunk_2-Item_3-v1.0`
+
+**Original tags:** `['sox', 'pci-dss', '[INFERRED] compliance']`
+**Validated tags:** `['sox', 'pci-dss']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['sox', 'pci-dss']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-06-01T00:00:15.749489Z |
+| pci-dss | kept | direct | 1.0 | title | 2025-06-01T00:00:15.556511Z |
+| sox | kept | direct | 1.0 | title | 2025-06-01T00:00:15.552785Z |

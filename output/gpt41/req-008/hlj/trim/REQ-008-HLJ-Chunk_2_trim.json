@@ -1,0 +1,199 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-008-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Secure data in transit and at rest with encryption and RBAC",
+    "summary": "Implement data protection across all layers by encrypting sensitive information both in transit and at rest, and restrict system access using robust role-based access control. These controls protect user privacy and financial data, fulfilling critical fintech security requirements.",
+    "tags": [
+      "encryption",
+      "rbac",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "Secure all data using encryption and role-based access",
+      "tag_metadata_reference": [
+        {
+          "tag": "encryption",
+          "confidence": 0.98
+        },
+        {
+          "tag": "rbac",
+          "confidence": 0.94
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "data encryption",
+        "RBAC",
+        "security compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-008-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Provide dashboards for operations and compliance monitoring",
+    "summary": "Develop interactive dashboards that allow operational teams and compliance officers to monitor key metrics, review workflow statuses, and ensure regulatory reporting obligations are met. Dashboards must support real-time visibility into system state and compliance adherence.",
+    "tags": [
+      "dashboard",
+      "monitoring",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 34\u201336",
+    "reasoning": {
+      "source_summary_fragment": "provide dashboards for operations/compliance monitoring",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.95
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "real-time dashboards",
+        "regulatory compliance reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-008-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Log API activity, eligibility checks, and manual interventions for audit",
+    "summary": "Configure system logging to capture API calls, eligibility rule applications, and any manual overrides or adjustments for full auditability and traceability. Comprehensive logging supports compliance and enables post-event investigation by auditors.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Audit",
+      "Reporting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 37",
+    "reasoning": {
+      "source_summary_fragment": "log all key activity",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.97
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "API activity logs",
+        "compliance evidence"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-008-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Handle unsupported platforms and incomplete data edge cases",
+    "summary": "Ensure robust edge case handling for situations involving unsupported gig platforms or incomplete/missing data, including error messaging and fallback mechanisms. This minimizes application disruptions and user friction, maintaining process integrity.",
+    "tags": [
+      "edge-case",
+      "error-handling",
+      "[INFERRED] resilience"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "EdgeCaseHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 39\u201341",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases like missing data or unsupported currencies",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge-case",
+          "confidence": 0.94
+        },
+        {
+          "tag": "error-handling",
+          "confidence": 0.91
+        },
+        {
+          "tag": "resilience",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "platform support validation",
+        "data completeness checks",
+        "exception handling"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "resilience",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008"
+  }
+]

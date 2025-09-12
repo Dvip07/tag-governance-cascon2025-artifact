@@ -1,0 +1,198 @@
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-017-HLJ-Chunk_1",
+      "focus": "Core upgrade logic and billing calculations",
+      "items": [
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Calculate unused plan value for mid-cycle upgrades",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "billing",
+            "calculations"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Apply unused value as credit toward new plan",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "billing",
+            "credits"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13-14"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement immediate upgrade activation with original renewal date alignment",
+          "domain": "SaaS",
+          "subdomain": [
+            "SubscriptionManagement"
+          ],
+          "tags": [
+            "subscriptions",
+            "upgrades"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Record upgrade events in customer billing history",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "billing",
+            "history"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Generate invoices with refund/credit/charge/tax breakdown",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "billing",
+            "invoices"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Handle monthly-to-annual and annual-to-monthly plan upgrades",
+          "domain": "SaaS",
+          "subdomain": [
+            "SubscriptionManagement"
+          ],
+          "tags": [
+            "subscriptions",
+            "edge-cases"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Flag same-cycle downgrades for manual review",
+          "domain": "SaaS",
+          "subdomain": [
+            "SubscriptionManagement"
+          ],
+          "tags": [
+            "subscriptions",
+            "fraud-prevention"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Support local taxes and VAT in all calculations",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "billing",
+            "compliance"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 42"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update payment processor integrations for prorated billing",
+          "domain": "SaaS",
+          "subdomain": [
+            "BillingManagement"
+          ],
+          "tags": [
+            "payments",
+            "integrations"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Email upgrade summary with calculations and new renewal date",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationSystem"
+          ],
+          "tags": [
+            "notifications",
+            "email"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 32"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-017-HLJ-Chunk_2",
+      "focus": "Admin notifications and support documentation",
+      "items": [
+        {
+          "id": "REQ-017-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Notify admins of unusual upgrade/downgrade patterns",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationSystem"
+          ],
+          "tags": [
+            "notifications",
+            "monitoring"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 34"
+        },
+        {
+          "id": "REQ-017-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Update support scripts and FAQs for upgrade scenarios",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 38"
+        }
+      ]
+    }
+  ]
+}

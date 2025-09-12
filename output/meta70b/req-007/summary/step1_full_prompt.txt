@@ -1,0 +1,178 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-007-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-007",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-007-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-007-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-007 (FinTech)
+
+FT-007: Real-Time KYC/AML Watchlist Screening During Signup
+Title:
+Real-Time Customer Screening Against Sanctions and AML Watchlists in Signup Workflow
+
+Background & Objective:
+With growing regulatory pressure and the expansion into international markets, our platform must strengthen its anti-money laundering (AML) and sanctions compliance mechanisms. A key component is the automated screening of all new customer signups against up-to-date AML and sanctions watchlists, in real time, during the onboarding process. This enhancement is critical for both compliance risk mitigation and operational efficiency, and is required to maintain relationships with partner banks and regulatory bodies.
+
+Scope of Requirement:
+
+Screening Integration:
+
+Integrate a real-time screening service that checks customer-provided identity information (name, date of birth, government ID, etc.) against relevant watchlists, including but not limited to OFAC, EU, UN, and local regulatory lists.
+
+The screening must occur before account activation and must not introduce perceptible delays (target: < 3 seconds per check).
+
+The solution must allow for vendor-agnostic integration, supporting switchable screening providers.
+
+Fallback Handling:
+
+In the event of primary screening service downtime or latency exceeding 5 seconds, trigger a fallback protocol:
+
+Allow signup to proceed to a “pending” state and notify Compliance for manual screening.
+
+Log all fallback events and their resolution path.
+
+For ambiguous or “near match” results, present a hold state and require additional manual verification.
+
+Auditability & Traceability:
+
+Record all screening attempts, input data, results, and resolution actions in a secure audit log, ensuring immutability and privacy controls.
+
+Provide Compliance with dashboard views and ad-hoc reporting capabilities for all screening outcomes.
+
+User Experience:
+
+Clearly communicate screening status to users (e.g., “Your account is being verified for compliance. This usually takes less than 5 minutes.”).
+
+In case of delays or holds, provide context-sensitive next steps and a support contact.
+
+Compliance & Security:
+
+Ensure that screening logic, data retention, and access patterns meet applicable local and international AML and privacy regulations.
+
+Sensitive information must be encrypted in transit and at rest; logs must be purged per data minimization policies.
+
+Testing & Monitoring:
+
+Develop test cases for successful matches, false positives, ambiguous results, and downtime scenarios.
+
+Set up monitoring and alerting for unusual patterns (e.g., spikes in near matches or provider downtime).
+
+Dependencies & Constraints:
+
+Fallback provider(s) must be pre-vetted and approved by Compliance.
+
+Implementation requires close collaboration with Legal and Customer Support for edge-case handling.
+
+Deliverables:
+
+Updated onboarding flow (UI, backend, audit logs)
+
+Screening provider integration and fallback documentation
+
+Compliance and monitoring dashboard
+
+Training for manual review procedures
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

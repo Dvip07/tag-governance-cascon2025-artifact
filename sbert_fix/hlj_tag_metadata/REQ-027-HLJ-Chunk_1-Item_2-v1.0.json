@@ -1,0 +1,69 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Ensure accurate RTL rendering for component libraries, icons, navigation",
+  "summary": "Guarantee that all reusable component libraries, icon sets, and navigation elements render correctly and mirror accurately when switched to RTL mode. Address edge-cases and visual fidelity to uphold consistent user experiences in regionally mirrored layouts.",
+  "tags_v1": [
+    "rtl",
+    "components"
+  ],
+  "tags_v2": [
+    "rtl",
+    "components"
+  ],
+  "tags_v3": [
+    "rtl",
+    "components",
+    "ui_rendering"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rtl",
+      "aliases": [],
+      "cluster_id": "all_227",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7944512963294983,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rtl",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "components",
+      "aliases": [],
+      "cluster_id": "all_229",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.731142520904541,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "components",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui_rendering",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7696057558059692,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui_rendering",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,83 @@
+{
+  "hlj_id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-029",
+  "domain": "SaaS",
+  "title": "Ensure audit logs meet SOC2, GDPR, and HIPAA security and retention requirements",
+  "summary": "Design audit logging to satisfy SOC2, GDPR, and HIPAA requirements for security, access controls, and data retention policies. The solution must provide demonstrable compliance for all stored and exported log data.",
+  "tags_v1": [
+    "compliance",
+    "security",
+    "[INFERRED] regulatory"
+  ],
+  "tags_v2": [
+    "compliance",
+    "security"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "regulation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7219966650009155,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7298774123191833,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.694000780582428,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulatory",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,625 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Enforce 2FA for Admin, Finance, and DevOps roles",
+    "summary": "Enforce two-factor authentication for administrative, financial, and DevOps roles to enhance security.",
+    "tags": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] securitycompliance"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Authorization"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 10-12",
+    "reasoning": {
+      "source_summary_fragment": "Enhance security for admin roles",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "2FA enforcement",
+        "Admin roles"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "securitycompliance",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] securitycompliance"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:13.904680Z"
+      },
+      {
+        "original_tag": "rolebasedaccess",
+        "canonical_tag": "rolebasedaccess",
+        "matched_tag": "rolebasedaccess",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.033194Z"
+      },
+      {
+        "original_tag": "[INFERRED] securitycompliance",
+        "canonical_tag": "[INFERRED] securitycompliance",
+        "matched_tag": "[INFERRED] securitycompliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.160850Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Make 2FA optional for User and Viewer roles",
+    "summary": "Allow users and viewers to opt-in for two-factor authentication, enhancing flexibility while maintaining security.",
+    "tags": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] usability"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Authorization"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 13-14",
+    "reasoning": {
+      "source_summary_fragment": "Opt-in 2FA for users and viewers",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "2FA option",
+        "User roles"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] usability"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.164603Z"
+      },
+      {
+        "original_tag": "rolebasedaccess",
+        "canonical_tag": "rolebasedaccess",
+        "matched_tag": "rolebasedaccess",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.289768Z"
+      },
+      {
+        "original_tag": "[INFERRED] usability",
+        "canonical_tag": "[INFERRED] usability",
+        "matched_tag": "[INFERRED] usability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.417030Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Dynamically update 2FA policy based on user role changes",
+    "summary": "Automatically adjust two-factor authentication policies as user roles change, ensuring consistent security posture.",
+    "tags": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] adaptability"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Authorization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "Update 2FA policy with role changes",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "Dynamic 2FA",
+        "Role changes"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "adaptability",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "rolebasedaccess",
+      "[INFERRED] adaptability"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.421449Z"
+      },
+      {
+        "original_tag": "rolebasedaccess",
+        "canonical_tag": "rolebasedaccess",
+        "matched_tag": "rolebasedaccess",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.546560Z"
+      },
+      {
+        "original_tag": "[INFERRED] adaptability",
+        "canonical_tag": "[INFERRED] adaptability",
+        "matched_tag": "[INFERRED] adaptability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.678614Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Exempt mobile app from mandatory 2FA enforcement",
+    "summary": "Allow the mobile application to bypass mandatory two-factor authentication for enhanced user experience.",
+    "tags": [
+      "2fa",
+      "appspecificoverrides"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Authorization"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 17-18",
+    "reasoning": {
+      "source_summary_fragment": "Exempt mobile app from 2FA",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "2FA exemption",
+        "Mobile app"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "appspecificoverrides"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.682391Z"
+      },
+      {
+        "original_tag": "appspecificoverrides",
+        "canonical_tag": "appspecificoverrides",
+        "matched_tag": "appspecificoverrides",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.809346Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Notify users about 2FA enforcement at login",
+    "summary": "Inform users about the enforcement of two-factor authentication upon login, enhancing transparency and security awareness.",
+    "tags": [
+      "2fa",
+      "usernotification"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "UserExperience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 19-20",
+    "reasoning": {
+      "source_summary_fragment": "Notify users about 2FA at login",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "2FA notification",
+        "Login process"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "usernotification"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.813110Z"
+      },
+      {
+        "original_tag": "usernotification",
+        "canonical_tag": "usernotification",
+        "matched_tag": "usernotification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.938542Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Provide clear 2FA setup instructions",
+    "summary": "Offer concise and understandable setup instructions for two-factor authentication to facilitate user adoption.",
+    "tags": [
+      "2fa",
+      "userguidance"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "UserExperience"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 21-22",
+    "reasoning": {
+      "source_summary_fragment": "Provide clear 2FA setup instructions",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "2FA setup",
+        "User guidance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "userguidance"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:14.942191Z"
+      },
+      {
+        "original_tag": "userguidance",
+        "canonical_tag": "userguidance",
+        "matched_tag": "userguidance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.069911Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Track and log policy exceptions",
+    "summary": "Monitor and record exceptions to the two-factor authentication policy for auditing and compliance purposes.",
+    "tags": [
+      "2fa",
+      "exceptiontracking"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 23-24",
+    "reasoning": {
+      "source_summary_fragment": "Track and log policy exceptions",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "Policy exceptions",
+        "Logging"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "exceptiontracking"
+    ],
+    "tags_v2": [
+      "2fa"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.131653Z"
+      },
+      {
+        "original_tag": "exceptiontracking",
+        "canonical_tag": "exceptiontracking",
+        "matched_tag": "exceptiontracking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.270568Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Expose report for security/admins listing non-compliant or exempted users",
+    "summary": "Generate a report for security administrators listing users who are not compliant with or are exempt from two-factor authentication policies.",
+    "tags": [
+      "2fa",
+      "complianceReporting"
+    ],
+    "domain": "Security",
+    "subdomain": [
+      "Authentication",
+      "Reporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 25-26",
+    "reasoning": {
+      "source_summary_fragment": "Report non-compliant or exempted users",
+      "tag_metadata_reference": [
+        {
+          "tag": "2fa",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "Compliance report",
+        "2FA"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "2fa",
+      "complianceReporting"
+    ],
+    "tags_v2": [
+      "2fa",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "2fa",
+        "canonical_tag": "2fa",
+        "matched_tag": "2fa",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:15.286703Z"
+      },
+      {
+        "original_tag": "complianceReporting",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:15.300654Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

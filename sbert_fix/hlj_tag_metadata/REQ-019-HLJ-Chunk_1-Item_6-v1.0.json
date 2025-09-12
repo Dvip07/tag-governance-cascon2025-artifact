@@ -1,0 +1,128 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Allow overlay of standard and time-decayed metrics in visualizations",
+  "summary": "Support visualization overlays to compare traditional metrics with their time-decayed counterparts on the same chart, enhancing interpretability and comparative analysis for end users.",
+  "tags_v1": [
+    "visualization",
+    "overlay",
+    "[INFERRED] comparison"
+  ],
+  "tags_v2": [
+    "visualization",
+    "overlay"
+  ],
+  "tags_v3": [
+    "visualization",
+    "decay",
+    "overlay",
+    "user_experience",
+    "metrics",
+    "decay_parameters"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "visualization",
+      "aliases": [],
+      "cluster_id": "all_33",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7249473333358765,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "decay",
+      "aliases": [],
+      "cluster_id": "all_327",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7364189624786377,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "decay",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "overlay",
+      "aliases": [],
+      "cluster_id": "all_216",
+      "domains": [
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7479041814804077,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "overlay",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "user_experience",
+      "aliases": [
+        "user-experience",
+        "user experience"
+      ],
+      "cluster_id": "all_16",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7022712230682373,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user_experience",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7607792019844055,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "decay_parameters",
+      "aliases": [],
+      "cluster_id": "all_444",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7659882307052612,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "decay_parameters",
+      "method": "dedup_canonical"
+    }
+  ]
+}

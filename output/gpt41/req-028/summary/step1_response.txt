@@ -1,0 +1,163 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-028",
+  "summary": "Implement AI-driven sentiment and urgency classification for helpdesk ticket routing. Integrate an NLP engine to auto-classify tickets as positive, neutral, or negative and to detect urgent cases at intake, enabling fast routing: negative/urgent tickets go to senior agents or escalation, routine ones to standard or self-service. Handle edge cases like sarcasm and allow agents to correct classifications, supporting continuous model learning. Provide reporting on resolution time, satisfaction by class, and trend surfacing for ops review. Ensure compliance by logging all decisions/actions, offering opt-out for users, and supplying documentation for agents and customers. System must process each ticket in under 500ms, achieve 85% model accuracy on labeled data, and target a 30% reduction in resolution time for negative/urgent tickets with 90% agent satisfaction on routing."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["Helpdesk", "AI Routing"],
+  "canonical_tags": ["nlp", "ticket-routing", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-028-HLJ-Chunk_1",
+      "focus": "Ticket classification logic, routing, and edge cases",
+      "items": [
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate NLP sentiment analysis to classify incoming tickets",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["nlp", "classification"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9–11"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Implement urgency detection model to flag critical tickets",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["nlp", "urgency"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12–13"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Auto-route negative or urgent tickets to senior agents or escalation queues",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["routing", "priority"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15–16"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Route routine helpdesk inquiries to self-service or standard agents",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["routing", "efficiency"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 17"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Detect and handle sarcasm or ambiguous tone using secondary cues",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["nlp", "edge-case"],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 23–25"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Allow agent reclassification of sentiment/urgency with feedback into model learning",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["feedback", "continuous-learning"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 26–28"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Ensure ticket processing latency does not exceed 500ms per ticket",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["performance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 40"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Secure support leadership buy-in and team training for rollout",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["usability", "change-management"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 41"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Track resolution times and customer satisfaction by sentiment/urgency class",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["reporting", "analytics"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18–19"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Surface sentiment/urgency ticket trends for product/ops review",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["analytics", "trend"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 20–21"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-028-HLJ-Chunk_2",
+      "focus": "Compliance, transparency, documentation, and KPIs",
+      "items": [
+        {
+          "id": "REQ-028-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Log all classification decisions and routing actions for audit",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["compliance", "audit"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 30–31"
+        },
+        {
+          "id": "REQ-028-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Provide user opt-out from automated sentiment classification",
+          "domain": "SaaS",
+          "subdomain": ["Helpdesk", "AI Routing"],
+          "tags": ["compliance", "consent"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 32"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

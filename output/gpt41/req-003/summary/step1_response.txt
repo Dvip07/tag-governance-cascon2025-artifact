@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-003",
+  "summary": "Develop an automated fraud alert system targeting micro-transactions (transactions <$1) to address evolving fraud patterns not caught by standard thresholds. The system must support configurable rules (based on transaction frequency, merchant type, device, customer, and time), triggering real-time alerts to the Fraud Operations team via Slack, email, and dashboard upon suspicious detection. Alerts require contextual transaction, customer, merchant, and triggered rule details. Prevent alert flooding by rate-limiting per customer. false positives (e.g., app store micropayments, donations) must be logged for rule refinement, with all alerts, investigations, and outcomes audited. Periodic summary reports should be generated for compliance/risk review. Enforce privacy by limiting sensitive data exposure in alerts. Integrate with existing fraud monitoring/alert infrastructure, with the initial ruleset to be risk/compliance-approved pre-launch. Key non-functional aspects: security, compliance, auditability, usability, maintainability, and availability."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "FinTech",
+  "subdomain": ["FraudDetection", "Alerting"],
+  "canonical_tags": ["fraud", "micro-transaction", "alert"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-003-HLJ-Chunk_1",
+      "focus": "Automated detection, alerting, reporting, compliance, and security for micro-transaction fraud",
+      "items": [
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement configurable detection rules for micro-transaction patterns",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["fraud", "micro-transaction"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 8–13"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Support rule customization by transaction frequency, merchant type, and time of day",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["fraud", "rules"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 11–13"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Detect suspicious micro-transaction activity per customer or device in 24-hour window",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection"],
+          "tags": ["micro-transaction", "detection"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10–12"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Generate real-time alerts to Fraud Operations via Slack, email, and dashboard widget",
+          "domain": "FinTech",
+          "subdomain": ["Alerting"],
+          "tags": ["alert", "notification"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15–17"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Include transaction, customer, merchant, and triggered rule details in alerts",
+          "domain": "FinTech",
+          "subdomain": ["Alerting"],
+          "tags": ["alert", "details"],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 18–19"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log false positives and use data to refine detection rules continuously",
+          "domain": "FinTech",
+          "subdomain": ["FraudDetection", "Maintainability"],
+          "tags": ["false-positive", "logging"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21–24"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Rate-limit notifications per customer to prevent alert spam",
+          "domain": "FinTech",
+          "subdomain": ["Alerting"],
+          "tags": ["rate-limiting", "usability"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25–26"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Maintain logs of triggered alerts, investigations, and outcomes for audit",
+          "domain": "FinTech",
+          "subdomain": ["Audit", "Compliance"],
+          "tags": ["audit", "logging"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 28–30"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide periodic summary reports for compliance and risk review",
+          "domain": "FinTech",
+          "subdomain": ["Compliance", "Reporting"],
+          "tags": ["reporting", "compliance"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 31–32"
+        },
+        {
+          "id": "REQ-003-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure sensitive customer data is excluded from alert payloads beyond investigation need",
+          "domain": "FinTech",
+          "subdomain": ["Security", "Privacy"],
+          "tags": ["security", "privacy"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 34–36"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

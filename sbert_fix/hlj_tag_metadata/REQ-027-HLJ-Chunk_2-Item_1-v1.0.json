@@ -1,0 +1,112 @@
+{
+  "hlj_id": "REQ-027-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-027",
+  "domain": "SaaS",
+  "title": "Host webinars or workshops to upskill internal teams and partners",
+  "summary": "Deliver live webinars or hands-on workshops tailored to enhancing the knowledge and skills of internal teams and external partners regarding RTL features, accessibility, and compliance guidelines. These sessions aim to facilitate successful adoption and best practices for the SaaS Visual Builder’s new capabilities. Feedback mechanisms and recordings should be provided to maximize knowledge retention.",
+  "tags_v1": [
+    "training",
+    "enablement",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "enablement"
+  ],
+  "tags_v3": [
+    "rtl",
+    "preview",
+    "enablement",
+    "layout",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rtl",
+      "aliases": [],
+      "cluster_id": "all_227",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7835900187492371,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rtl",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preview",
+      "aliases": [],
+      "cluster_id": "all_230",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7393278479576111,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "preview",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "enablement",
+      "aliases": [],
+      "cluster_id": "all_144",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7589967846870422,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "enablement",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "layout",
+      "aliases": [],
+      "cluster_id": "all_228",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7618626356124878,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "layout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7461276054382324,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

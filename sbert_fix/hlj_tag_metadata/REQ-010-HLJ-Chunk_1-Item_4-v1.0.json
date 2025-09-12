@@ -1,0 +1,89 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Track and differentiate phantom balances within operational ledger",
+  "summary": "Implement mechanisms to accurately track phantom or pending balances within the operational ledger and clearly distinguish them from settled balances. This distinction is necessary to prevent errors in fund availability and to support compliance with reconciliation protocols.",
+  "tags_v1": [
+    "phantom-balance",
+    "segregation"
+  ],
+  "tags_v2": [
+    "phantom balance",
+    "segregation"
+  ],
+  "tags_v3": [
+    "phantom-balance",
+    "reconciliation",
+    "segregation",
+    "ledger-management"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "phantom-balance",
+      "aliases": [
+        "phantom-balances",
+        "phantom balance"
+      ],
+      "cluster_id": "all_181",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8148045539855957,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "phantom-balance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7610844969749451,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "segregation",
+      "aliases": [],
+      "cluster_id": "all_182",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6908562183380127,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "segregation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ledger-management",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7949568033218384,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ledger management",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,493 @@
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903126Z'
+  original_tags:
+  - ui-testing
+  - parallel
+  - staging
+  validated_tags:
+  - parallel
+  - staging
+  tags_added: []
+  tags_dropped:
+  - ui-testing
+  tags_kept:
+  - parallel
+  - staging
+  validation_details:
+  - original_tag: ui-testing
+    canonical_tag: ui-testing
+    matched_tag: ui-testing
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:16.974396Z'
+  - original_tag: parallel
+    canonical_tag: parallel
+    matched_tag: parallel
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:16.978801Z'
+  - original_tag: staging
+    canonical_tag: staging
+    matched_tag: staging
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:16.982688Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903136Z'
+  original_tags:
+  - ci-cd
+  - blocking
+  - critical-path
+  validated_tags:
+  - ci/cd
+  - blocking
+  tags_added:
+  - ci/cd
+  tags_dropped:
+  - ci-cd
+  - critical-path
+  tags_kept:
+  - blocking
+  validation_details:
+  - original_tag: ci-cd
+    canonical_tag: ci/cd
+    matched_tag: ci/cd
+    tag_origin_cluster_id: ci/cd
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:59:16.986594Z'
+  - original_tag: blocking
+    canonical_tag: blocking
+    matched_tag: blocking
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.062109Z'
+  - original_tag: critical-path
+    canonical_tag: critical-path
+    matched_tag: critical-path
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.210546Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903139Z'
+  original_tags:
+  - coverage
+  - analytics
+  validated_tags:
+  - coverage
+  - analytics
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - coverage
+  - analytics
+  validation_details:
+  - original_tag: coverage
+    canonical_tag: coverage
+    matched_tag: coverage
+    tag_origin_cluster_id: coverage
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.216359Z'
+  - original_tag: analytics
+    canonical_tag: analytics
+    matched_tag: analytics
+    tag_origin_cluster_id: analytics
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.220624Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903140Z'
+  original_tags:
+  - coverage
+  - visualization
+  validated_tags:
+  - coverage
+  - visualization
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - coverage
+  - visualization
+  validation_details:
+  - original_tag: coverage
+    canonical_tag: coverage
+    matched_tag: coverage
+    tag_origin_cluster_id: coverage
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.223722Z'
+  - original_tag: visualization
+    canonical_tag: visualization
+    matched_tag: visualization
+    tag_origin_cluster_id: visualization
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.240612Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903142Z'
+  original_tags:
+  - logs
+  - screenshots
+  - video
+  - '[INFERRED] artifact-retention'
+  validated_tags:
+  - logs
+  - screenshots
+  - video
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] artifact-retention'
+  tags_kept:
+  - logs
+  - screenshots
+  - video
+  validation_details:
+  - original_tag: logs
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.314725Z'
+  - original_tag: screenshots
+    canonical_tag: screenshots
+    matched_tag: screenshots
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.319057Z'
+  - original_tag: video
+    canonical_tag: video
+    matched_tag: video
+    tag_origin_cluster_id: null
+    original_confidence: 0.86
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.322908Z'
+  - original_tag: '[INFERRED] artifact-retention'
+    canonical_tag: '[INFERRED] artifact-retention'
+    matched_tag: '[INFERRED] artifact-retention'
+    tag_origin_cluster_id: null
+    original_confidence: 0.85
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.473039Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903144Z'
+  original_tags:
+  - flakiness
+  - recommendations
+  validated_tags:
+  - flakiness
+  - recommendations
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - flakiness
+  - recommendations
+  validation_details:
+  - original_tag: flakiness
+    canonical_tag: flakiness
+    matched_tag: flakiness
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.476833Z'
+  - original_tag: recommendations
+    canonical_tag: recommendations
+    matched_tag: recommendations
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.486189Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903146Z'
+  original_tags:
+  - flakiness
+  - headless
+  validated_tags:
+  - flakiness
+  - headless
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - flakiness
+  - headless
+  validation_details:
+  - original_tag: flakiness
+    canonical_tag: flakiness
+    matched_tag: flakiness
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.503044Z'
+  - original_tag: headless
+    canonical_tag: headless
+    matched_tag: headless
+    tag_origin_cluster_id: null
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.506318Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903147Z'
+  original_tags:
+  - quarantine
+  - flakiness
+  validated_tags:
+  - quarantine
+  - flakiness
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - quarantine
+  - flakiness
+  validation_details:
+  - original_tag: quarantine
+    canonical_tag: quarantine
+    matched_tag: quarantine
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.516709Z'
+  - original_tag: flakiness
+    canonical_tag: flakiness
+    matched_tag: flakiness
+    tag_origin_cluster_id: null
+    original_confidence: 0.87
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.588350Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903149Z'
+  original_tags:
+  - documentation
+  - testing-guides
+  validated_tags:
+  - documentation
+  tags_added: []
+  tags_dropped:
+  - testing-guides
+  tags_kept:
+  - documentation
+  validation_details:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.592451Z'
+  - original_tag: testing-guides
+    canonical_tag: testing-guides
+    matched_tag: testing-guides
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.759267Z'
+- hlj_id: REQ-030-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903151Z'
+  original_tags:
+  - browser-matrix
+  - communication
+  validated_tags:
+  - browser-matrix
+  - communication
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - browser-matrix
+  - communication
+  validation_details:
+  - original_tag: browser-matrix
+    canonical_tag: browser-matrix
+    matched_tag: browser-matrix
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: semantic
+    similarity: 0.7607663869857788
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.893030Z'
+  - original_tag: communication
+    canonical_tag: communication
+    matched_tag: communication
+    tag_origin_cluster_id: communication
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.904395Z'
+- hlj_id: REQ-030-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903152Z'
+  original_tags:
+  - security
+  - artifacts
+  - '[INFERRED] compliance'
+  validated_tags:
+  - security
+  - artifacts
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] compliance'
+  tags_kept:
+  - security
+  - artifacts
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.917915Z'
+  - original_tag: artifacts
+    canonical_tag: artifacts
+    matched_tag: artifacts
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:59:17.929776Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:59:18.113249Z'
+- hlj_id: REQ-030-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-030
+  model: gpt41
+  timestamp: '2025-06-01T00:11:32.903154Z'
+  original_tags:
+  - accessibility
+  - compliance
+  validated_tags:
+  - accessibility
+  - compliance
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - accessibility
+  - compliance
+  validation_details:
+  - original_tag: accessibility
+    canonical_tag: accessibility
+    matched_tag: accessibility
+    tag_origin_cluster_id: accessibility
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:18.117424Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:59:18.120994Z'

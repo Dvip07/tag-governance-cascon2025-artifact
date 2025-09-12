@@ -1,0 +1,1664 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement OAuth and API key one-click sync for major CRMs",
+    "summary": "Develop integration supporting OAuth and API key authentication to enable seamless, one-click synchronization with major CRM systems. This streamlines setup for users and enforces modern security standards. The feature must work across supported CRM APIs while preserving data integrity and compliance.",
+    "tags": [
+      "sync",
+      "oauth",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRMIntegration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 05–08",
+    "reasoning": {
+      "source_summary_fragment": "Design and implement a CRM contact sync feature supporting major third-party CRMs (e.g., Salesforce, HubSpot) using OAuth and API keys.",
+      "tag_metadata_reference": [
+        {
+          "tag": "sync",
+          "confidence": 0.97
+        },
+        {
+          "tag": "oauth",
+          "confidence": 0.95
+        },
+        {
+          "tag": "security",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "OAuth authentication",
+        "API key flow",
+        "CRM integration",
+        "data security"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "sync",
+      "oauth",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "sync",
+      "oauth"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "sync",
+        "canonical_tag": "sync",
+        "matched_tag": "sync",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:32.855043Z"
+      },
+      {
+        "original_tag": "oauth",
+        "canonical_tag": "oauth",
+        "matched_tag": "oauth",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:32.859581Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.006639Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "oauth",
+      "salesforce",
+      "sync",
+      "authentication",
+      "crm",
+      "api"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "oauth",
+        "original_tag": "oauth",
+        "score": 6,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7339919805526733,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "salesforce",
+        "original_tag": "salesforce",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7181771993637085,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "sync",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7215015888214111,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7050144672393799,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7427833676338196,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6986728310585022,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Build initial contact import with dry run showing potential duplicates",
+    "summary": "Develop an initial import tool for contacts from major CRMs that allows a dry run mode, previewing potential duplicate records before final import. This enables users to safely review matches and prevents accidental data duplication during onboarding.",
+    "tags": [
+      "import",
+      "duplicates",
+      "[INFERRED] onboarding"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRMIntegration",
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 10–12",
+    "reasoning": {
+      "source_summary_fragment": "Enable one-click import with a dry run to preview potential duplicates...",
+      "tag_metadata_reference": [
+        {
+          "tag": "import",
+          "confidence": 0.95
+        },
+        {
+          "tag": "duplicates",
+          "confidence": 0.93
+        },
+        {
+          "tag": "onboarding",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "CRM data import",
+        "dry run validation",
+        "duplicate detection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "onboarding",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "import",
+      "duplicates",
+      "[INFERRED] onboarding"
+    ],
+    "tags_v2": [
+      "import",
+      "duplicates"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "import",
+        "canonical_tag": "import",
+        "matched_tag": "import",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.011088Z"
+      },
+      {
+        "original_tag": "duplicates",
+        "canonical_tag": "duplicates",
+        "matched_tag": "duplicates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.014750Z"
+      },
+      {
+        "original_tag": "[INFERRED] onboarding",
+        "canonical_tag": "[INFERRED] onboarding",
+        "matched_tag": "[INFERRED] onboarding",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.161689Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "hubspot",
+      "import",
+      "oauth",
+      "duplicates",
+      "crm",
+      "dryrun",
+      "onboarding"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "hubspot",
+        "original_tag": "hubspot",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.695963978767395,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6729658246040344,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "import",
+        "original_tag": "import",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7038954496383667,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "oauth",
+        "original_tag": "oauth",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6931051015853882,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "duplicates",
+        "original_tag": "duplicates",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7188990116119385,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7434079647064209,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "dryrun",
+        "original_tag": "dryrun",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7154624462127686,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6908677816390991,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Create configurable duplicate detection rules (email, phone, fuzzy name)",
+    "summary": "Enable users to define and adjust duplicate detection rules based on email, phone number, and fuzzy name matching. Configurability allows tailored duplicate handling for diverse organization needs and improves accuracy during contact management operations.",
+    "tags": [
+      "duplicates",
+      "configurable"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 14–16",
+    "reasoning": {
+      "source_summary_fragment": "provide configurable duplicate detection (email, phone, fuzzy name).",
+      "tag_metadata_reference": [
+        {
+          "tag": "duplicates",
+          "confidence": 0.97
+        },
+        {
+          "tag": "configurable",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate detection",
+        "fuzzy matching",
+        "rule-driven configuration"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "duplicates",
+      "configurable"
+    ],
+    "tags_v2": [
+      "duplicates",
+      "configurable"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "duplicates",
+        "canonical_tag": "duplicates",
+        "matched_tag": "duplicates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.226551Z"
+      },
+      {
+        "original_tag": "configurable",
+        "canonical_tag": "configurable",
+        "matched_tag": "configurable",
+        "tag_origin_cluster_id": "configurable",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.230603Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "duplicates",
+      "authentication",
+      "configurable",
+      "crm",
+      "detection",
+      "crm-sync"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "duplicates",
+        "original_tag": "duplicates",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7187690734863281,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "authentication",
+        "original_tag": "authentication",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6846023201942444,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "configurable",
+        "original_tag": "configurable",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7346290349960327,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7472099661827087,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "detection",
+        "original_tag": "detection",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6859443187713623,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm-sync",
+        "original_tag": "crm-sync",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8092750310897827,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Enable user review and resolution of duplicate matches",
+    "summary": "Provide a user interface for reviewing detected duplicate contacts and selecting appropriate resolutions (merge, keep separate, or ignore). The feature facilitates high data quality and gives users control over how to handle matching records.",
+    "tags": [
+      "usability",
+      "duplicates"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 17–18",
+    "reasoning": {
+      "source_summary_fragment": "Allow users to review matches, merge, keep separate, or ignore...",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.95
+        },
+        {
+          "tag": "duplicates",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "manual duplicate review",
+        "user decision flow",
+        "merge/ignore actions"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "usability",
+      "duplicates"
+    ],
+    "tags_v2": [
+      "duplicates"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.374396Z"
+      },
+      {
+        "original_tag": "duplicates",
+        "canonical_tag": "duplicates",
+        "matched_tag": "duplicates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.437452Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "duplicates",
+      "crm",
+      "contacts"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "duplicates",
+        "original_tag": "duplicates",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7186533808708191,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7429330945014954,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "contacts",
+        "original_tag": "contacts",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7178382873535156,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "import",
+        "original_tag": "import",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6787364482879639,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6689341068267822,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Provide side-by-side diff UI for resolving conflicting contact data",
+    "summary": "Design a user interface that displays conflicting contact data in a side-by-side comparison, enabling informed field-level decisions during merge operations. Enhances transparency and accuracy in resolving data conflicts.",
+    "tags": [
+      "usability",
+      "conflict"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "with a field-level diff for conflict resolution.",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.95
+        },
+        {
+          "tag": "conflict",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "UI diff view",
+        "conflict resolution",
+        "field-level comparison"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "usability",
+      "conflict"
+    ],
+    "tags_v2": [
+      "conflict"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.603465Z"
+      },
+      {
+        "original_tag": "conflict",
+        "canonical_tag": "conflict",
+        "matched_tag": "conflict",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.620439Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "email",
+      "duplicate-detection",
+      "conflict",
+      "crm",
+      "matching",
+      "merge"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6887262463569641,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "duplicate-detection",
+        "original_tag": "duplicate-detection",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7363986372947693,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "conflict",
+        "original_tag": "conflict",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7241410613059998,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7498229742050171,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "matching",
+        "original_tag": "matching",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7075875997543335,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "merge",
+        "original_tag": "merge",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7568706274032593,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement ongoing sync to auto-merge new duplicates by saved user rules",
+    "summary": "Deploy a background sync engine that automatically merges new duplicate records in accordance with user-defined rules. This ensures ongoing data hygiene with minimal user intervention, increasing automation and productivity.",
+    "tags": [
+      "sync",
+      "automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRMIntegration",
+      "ContactManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 22–23",
+    "reasoning": {
+      "source_summary_fragment": "Apply ongoing sync with auto-merging based on user preferences...",
+      "tag_metadata_reference": [
+        {
+          "tag": "sync",
+          "confidence": 0.96
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "background syncing",
+        "auto-merge logic",
+        "user rule persistence"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "sync",
+      "automation"
+    ],
+    "tags_v2": [
+      "sync",
+      "automation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "sync",
+        "canonical_tag": "sync",
+        "matched_tag": "sync",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.624812Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.636579Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "sync",
+      "duplicate-detection",
+      "automation",
+      "crm"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "phone",
+        "original_tag": "phone",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6432374119758606,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "sync",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.725115954875946,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "duplicate-detection",
+        "original_tag": "duplicate-detection",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7118849754333496,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7107102870941162,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "matching",
+        "original_tag": "matching",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6794776916503906,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7371787428855896,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Track and log all merges and changes with per-contact history",
+    "summary": "Create logging mechanisms that record all merge and update events at a per-contact level, enabling detailed history tracking and auditability. This supports maintainability and troubleshooting by offering visibility into all changes.",
+    "tags": [
+      "logging",
+      "history"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 24–25",
+    "reasoning": {
+      "source_summary_fragment": "log all changes per contact...",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.97
+        },
+        {
+          "tag": "history",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "per-entity audit trail",
+        "event logging",
+        "change history"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "logging",
+      "history"
+    ],
+    "tags_v2": [
+      "history"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-06-01T00:00:33.786649Z"
+      },
+      {
+        "original_tag": "history",
+        "canonical_tag": "history",
+        "matched_tag": "history",
+        "tag_origin_cluster_id": "history",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.790963Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "duplicate-detection",
+      "crm",
+      "webhook",
+      "fuzzy-matching"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "duplicate-detection",
+        "original_tag": "duplicate-detection",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720417320728302,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7459269762039185,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "history",
+        "original_tag": "history",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6671410799026489,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "webhook",
+        "original_tag": "webhook",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7105033993721008,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "fuzzy-matching",
+        "original_tag": "fuzzy-matching",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6976916193962097,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Warn and pause sync if merging would cause webhook update conflicts",
+    "summary": "Introduce safeguards that detect potential webhook update conflicts during merges, warning users and pausing synchronization if issues are detected. This prevents data inconsistency and maintains reliable integration workflows.",
+    "tags": [
+      "conflict",
+      "sync"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRMIntegration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 27–28",
+    "reasoning": {
+      "source_summary_fragment": "warn/hold sync if webhook conflicts arise.",
+      "tag_metadata_reference": [
+        {
+          "tag": "conflict",
+          "confidence": 0.95
+        },
+        {
+          "tag": "sync",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "webhook event conflict",
+        "sync abort",
+        "user warning"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "conflict",
+      "sync"
+    ],
+    "tags_v2": [
+      "conflict",
+      "sync"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "conflict",
+        "canonical_tag": "conflict",
+        "matched_tag": "conflict",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.808603Z"
+      },
+      {
+        "original_tag": "sync",
+        "canonical_tag": "sync",
+        "matched_tag": "sync",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.812109Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "conflict",
+      "sync",
+      "crm",
+      "rollback",
+      "duplicate-resolution"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "conflict",
+        "original_tag": "conflict",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706663966178894,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6616370677947998,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "sync",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7286907434463501,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.727170467376709,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6972970962524414,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "duplicate-resolution",
+        "original_tag": "duplicate-resolution",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7113062143325806,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Support rollback of accidental merges within 24 hours",
+    "summary": "Enable users to undo accidental merge operations within a 24-hour window, restoring the state of contacts prior to the merge. This improves user confidence and system reliability by making error recovery straightforward.",
+    "tags": [
+      "rollback",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "ContactManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 29–30",
+    "reasoning": {
+      "source_summary_fragment": "Support rollback on accidental merges within 24 hours.",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.97
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "merge undo",
+        "temporal operations",
+        "user-initiated recovery"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "rollback",
+      "usability"
+    ],
+    "tags_v2": [
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.814852Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:33.950434Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rollback",
+      "crm",
+      "data-merge",
+      "conflict-resolution"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7096089720726013,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6526052951812744,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7298045754432678,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6494510769844055,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "data-merge",
+        "original_tag": "data-merge",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7596016526222229,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "conflict-resolution",
+        "original_tag": "conflict-resolution",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6965245008468628,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Update onboarding guide with CRM sync and duplicate management steps",
+    "summary": "Revise the onboarding guide to include clear instructions for CRM synchronization workflows and duplicate management. Ensures new users can efficiently connect CRMs and handle duplicate contacts, reducing onboarding friction.",
+    "tags": [
+      "docs",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRMIntegration",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "low",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 32–33",
+    "reasoning": {
+      "source_summary_fragment": "Update onboarding documentation and ensure compliance with provider API rate limits...",
+      "tag_metadata_reference": [
+        {
+          "tag": "docs",
+          "confidence": 0.97
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "documentation updates",
+        "onboarding guidance",
+        "sync feature instructions"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "docs",
+      "usability"
+    ],
+    "tags_v2": [
+      "docs"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "docs",
+        "canonical_tag": "docs",
+        "matched_tag": "docs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.015472Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-06-01T00:00:34.153024Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "docs",
+      "sync",
+      "crm",
+      "auto-merge"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "docs",
+        "original_tag": "docs",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6842527985572815,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "sync",
+        "original_tag": "sync",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7259184718132019,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "crm",
+        "original_tag": "crm",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7315806150436401,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "preferences",
+        "original_tag": "preferences",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6589683890342712,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6753772497177124,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      },
+      {
+        "tag": "auto-merge",
+        "original_tag": "auto-merge",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7497528791427612,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-020"
+      }
+    ]
+  }
+]

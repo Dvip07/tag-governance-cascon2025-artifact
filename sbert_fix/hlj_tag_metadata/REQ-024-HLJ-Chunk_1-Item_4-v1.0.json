@@ -1,0 +1,163 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Automatically select optimal delivery channel based on preferences and history",
+  "summary": "Enables automated selection of the most suitable delivery channel for each notification, leveraging user preferences and historical data. Maximizes message efficacy and user response by adapting to proven communication habits. Reduces manual configuration for campaign managers.",
+  "tags_v1": [
+    "automation",
+    "multi-channel",
+    "[INFERRED] notification"
+  ],
+  "tags_v2": [
+    "multi-channel"
+  ],
+  "tags_v3": [
+    "multi-channel",
+    "messaging",
+    "channel",
+    "preferences",
+    "notification",
+    "personalization",
+    "automation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6760943531990051,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-channel",
+      "aliases": [],
+      "cluster_id": "all_150",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7440080046653748,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-channel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "all_296",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7255454063415527,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "channel",
+      "aliases": [],
+      "cluster_id": "all_394",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7171272039413452,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "channel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preferences",
+      "aliases": [],
+      "cluster_id": "all_345",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6876469850540161,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "preferences",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "all_83",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7533091306686401,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "all_148",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7071311473846436,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7302125692367554,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

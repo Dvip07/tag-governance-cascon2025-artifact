@@ -1,0 +1,483 @@
+[
+  {
+    "CHUNK_ID": "REQ-017-HLJ-Chunk_1",
+    "is_final_chunk": true,
+    "TASK_SUMMARY": [
+      "Calculate prorated credit and new plan charges on mid-cycle upgrade (Ln 07\u201313)",
+      "Activate upgraded plan immediately while preserving original billing cycle dates (Ln 11\u201313)",
+      "Record upgrade events, credits, and charges in customer's billing history (Ln 15\u201317)",
+      "Ensure invoices show itemized old plan refund, new plan charge, and taxes (Ln 18\u201320)",
+      "Handle monthly and annual plan upgrades, including overlapping billing periods (Ln 22\u201324)",
+      "Flag downgrades during same cycle for manual review to prevent abuse (Ln 25\u201327)",
+      "Send users email summary of upgrade: calculations, credits, renewal date (Ln 29\u201331)",
+      "Notify admins on detection of unusual upgrade or downgrade patterns (Ln 32\u201333)",
+      "Update support scripts and FAQs for common upgrade scenarios (Ln 35\u201337)",
+      "Integrate solution with payment processors and correctly apply local taxes/VAT (Ln 39\u201341)"
+    ],
+    "PREVIOUS_CHUNKS": [],
+    "CURRENT_CHUNK": {
+      "chunk_coherence": 0.93,
+      "DATA": [
+        {
+          "seq_no": 1,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Calculate prorated credit and new plan charges on mid-cycle upgrade",
+          "summary": "Determine and apply a prorated credit for unused time on a user's current plan when upgrading mid-cycle, then calculate charges for the new plan, ensuring financial accuracy in billing. This forms the core logic to enable seamless plan upgrades with clear proration. The system must support both monthly and annual plans.",
+          "tags": [
+            "proration",
+            "billing",
+            "[INFERRED] finance"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "Subscriptions"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.93,
+          "priority": "high",
+          "priority_confidence": 0.94,
+          "line_source": "Ln 07\u201313",
+          "reasoning": {
+            "source_summary_fragment": "When upgrading, calculate unused time on current plan and apply as credit to upgraded plan.",
+            "tag_metadata_reference": [
+              {
+                "tag": "proration",
+                "confidence": 0.97
+              },
+              {
+                "tag": "billing",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "mid-cycle upgrade",
+              "prorated credit",
+              "financial calculations"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "finance",
+            "confidence": 0.87,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 2,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Activate upgraded plan immediately while preserving original billing cycle dates",
+          "summary": "Deploy immediate activation of the new subscription plan upon upgrade while maintaining the original billing cycle dates, preserving seamless billing periods for customers. This ensures users benefit from their upgrade without disrupting financial tracking cycles.",
+          "tags": [
+            "upgrade",
+            "billing",
+            "[INFERRED] scheduling"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Subscriptions"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.89,
+          "priority": "high",
+          "priority_confidence": 0.91,
+          "line_source": "Ln 11\u201313",
+          "reasoning": {
+            "source_summary_fragment": "The new plan activates immediately, but the billing cycle remains unchanged.",
+            "tag_metadata_reference": [
+              {
+                "tag": "upgrade",
+                "confidence": 0.94
+              },
+              {
+                "tag": "billing",
+                "confidence": 0.91
+              }
+            ],
+            "mapped_concepts": [
+              "activation timing",
+              "billing cycle preservation"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "scheduling",
+            "confidence": 0.82,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 3,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Record upgrade events, credits, and charges in customer's billing history",
+          "summary": "Automatically log all subscription upgrade events, applied credits, and new charges into the user's billing history. This creates a transparent audit trail for users and support teams to view all key subscription changes and financial transactions.",
+          "tags": [
+            "history",
+            "events",
+            "[INFERRED] audit"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "History"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 15\u201317",
+          "reasoning": {
+            "source_summary_fragment": "All upgrade events, credits, and charges (including taxes) must be recorded and clearly itemized in billing history.",
+            "tag_metadata_reference": [
+              {
+                "tag": "history",
+                "confidence": 0.96
+              },
+              {
+                "tag": "events",
+                "confidence": 0.88
+              }
+            ],
+            "mapped_concepts": [
+              "event logging",
+              "audit trail",
+              "billing history"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "audit",
+            "confidence": 0.86,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 4,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Ensure invoices show itemized old plan refund, new plan charge, and taxes",
+          "summary": "Present customers invoices that clearly itemize any old plan refunds, new plan charges, and applicable taxes. This ensures full transparency in billing so users understand the composition of payments after a plan change.",
+          "tags": [
+            "invoice",
+            "tax",
+            "[INFERRED] transparency"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "Invoices"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.91,
+          "priority": "high",
+          "priority_confidence": 0.92,
+          "line_source": "Ln 18\u201320",
+          "reasoning": {
+            "source_summary_fragment": "All upgrade events, credits, and charges (including taxes) must be... clearly itemized in... invoices.",
+            "tag_metadata_reference": [
+              {
+                "tag": "invoice",
+                "confidence": 0.97
+              },
+              {
+                "tag": "tax",
+                "confidence": 0.92
+              }
+            ],
+            "mapped_concepts": [
+              "invoice itemization",
+              "payment transparency"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "transparency",
+            "confidence": 0.81,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 5,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Handle monthly and annual plan upgrades, including overlapping billing periods",
+          "summary": "Support upgrades between both monthly and annual plans, ensuring that any overlapping billing periods are managed correctly and that credits and charges are applied without error. This reduces ambiguity for users switching across different billing cycles.",
+          "tags": [
+            "plans",
+            "dates",
+            "[INFERRED] period-alignment"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "Subscriptions"
+          ],
+          "difficulty": "medium",
+          "difficulty_confidence": 0.88,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 22\u201324",
+          "low_confidence_reason": "Priority confidence clamped from estimated 1.00 to 0.90.",
+          "reasoning": {
+            "source_summary_fragment": "Support upgrades across monthly and annual plans and handle overlapping periods appropriately.",
+            "tag_metadata_reference": [
+              {
+                "tag": "plans",
+                "confidence": 0.89
+              },
+              {
+                "tag": "dates",
+                "confidence": 0.84
+              }
+            ],
+            "mapped_concepts": [
+              "billing frequency change",
+              "overlapping cycles"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "period-alignment",
+            "confidence": 0.76,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 6,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Flag downgrades during same cycle for manual review to prevent abuse",
+          "summary": "Monitor and detect potential abuse by flagging subscription downgrades that occur within the same billing cycle as recent upgrades for manual administrative review. This measure discourages fraudulent use of premium features and helps prevent revenue leakage.",
+          "tags": [
+            "abuse",
+            "review",
+            "[INFERRED] fraud"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "AbuseDetection"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.85,
+          "priority": "high",
+          "priority_confidence": 0.91,
+          "line_source": "Ln 25\u201327",
+          "reasoning": {
+            "source_summary_fragment": "Downgrades in the same cycle should be flagged for manual review to prevent abuse.",
+            "tag_metadata_reference": [
+              {
+                "tag": "abuse",
+                "confidence": 0.93
+              },
+              {
+                "tag": "review",
+                "confidence": 0.86
+              }
+            ],
+            "mapped_concepts": [
+              "manual review",
+              "abuse prevention"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "fraud",
+            "confidence": 0.84,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 7,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Send users email summary of upgrade: calculations, credits, renewal date",
+          "summary": "After an upgrade, send users an email summarizing the upgrade details, including credit calculations, final charges, and the next renewal date. This ensures clear communication and transparency regarding each account update.",
+          "tags": [
+            "notification",
+            "email",
+            "[INFERRED] communication"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Notifications"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.87,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 29\u201331",
+          "low_confidence_reason": "Priority confidence clamped from estimated 1.00 to 0.90.",
+          "reasoning": {
+            "source_summary_fragment": "Send users email notifications summarizing upgrade calculations and changes.",
+            "tag_metadata_reference": [
+              {
+                "tag": "notification",
+                "confidence": 0.91
+              },
+              {
+                "tag": "email",
+                "confidence": 0.94
+              }
+            ],
+            "mapped_concepts": [
+              "user notification",
+              "upgrade summary"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "communication",
+            "confidence": 0.77,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 8,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Notify admins on detection of unusual upgrade or downgrade patterns",
+          "summary": "Alert administrators via notification when the system detects anomalous user activity related to frequent or irregular upgrades or downgrades. This enables proactive oversight and rapid investigation of potential misuse.",
+          "tags": [
+            "admin",
+            "alert",
+            "[INFERRED] anomaly-detection"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Notifications",
+            "AbuseDetection"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.89,
+          "priority": "medium",
+          "priority_confidence": 0.9,
+          "line_source": "Ln 32\u201333",
+          "low_confidence_reason": "Priority confidence clamped from estimated 1.00 to 0.90.",
+          "reasoning": {
+            "source_summary_fragment": "Alert admins to anomalous upgrade/downgrade activity.",
+            "tag_metadata_reference": [
+              {
+                "tag": "admin",
+                "confidence": 0.89
+              },
+              {
+                "tag": "alert",
+                "confidence": 0.93
+              }
+            ],
+            "mapped_concepts": [
+              "anomaly detection",
+              "admin notifications"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "anomaly-detection",
+            "confidence": 0.81,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 9,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Update support scripts and FAQs for common upgrade scenarios",
+          "summary": "Revise and enhance support documentation, scripts, and FAQs to address common questions regarding plan upgrades, proration, charges, and credits. This improves customer experience and enables faster support response.",
+          "tags": [
+            "support",
+            "documentation",
+            "[INFERRED] enablement"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Support",
+            "Documentation"
+          ],
+          "difficulty": "low",
+          "difficulty_confidence": 0.85,
+          "priority": "medium",
+          "priority_confidence": 0.88,
+          "line_source": "Ln 35\u201337",
+          "reasoning": {
+            "source_summary_fragment": "Update support materials (scripts, FAQs) to address common upgrade questions.",
+            "tag_metadata_reference": [
+              {
+                "tag": "support",
+                "confidence": 0.92
+              },
+              {
+                "tag": "documentation",
+                "confidence": 0.89
+              }
+            ],
+            "mapped_concepts": [
+              "customer self-service",
+              "support documentation"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "enablement",
+            "confidence": 0.74,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        },
+        {
+          "seq_no": 10,
+          "schema_version": "2025-05-17",
+          "id": "REQ-017-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Integrate solution with payment processors and correctly apply local taxes/VAT",
+          "summary": "Add robust integration with third-party payment processors and implement correct application of local taxes and VAT to all relevant transactions. Ensures legal compliance and reliable financial workflow for upgraded subscription plans.",
+          "tags": [
+            "integration",
+            "tax",
+            "[INFERRED] compliance"
+          ],
+          "domain": "SaaS",
+          "subdomain": [
+            "Billing",
+            "Payments"
+          ],
+          "difficulty": "high",
+          "difficulty_confidence": 0.92,
+          "priority": "high",
+          "priority_confidence": 0.93,
+          "line_source": "Ln 39\u201341",
+          "reasoning": {
+            "source_summary_fragment": "Solution must integrate with payment processors... and correctly calculate local taxes/VAT.",
+            "tag_metadata_reference": [
+              {
+                "tag": "integration",
+                "confidence": 0.97
+              },
+              {
+                "tag": "tax",
+                "confidence": 0.97
+              }
+            ],
+            "mapped_concepts": [
+              "payment integration",
+              "tax compliance",
+              "VAT"
+            ]
+          },
+          "inference_notes": {
+            "tag_added": "compliance",
+            "confidence": 0.88,
+            "method": "sem_tag_synth_v1"
+          },
+          "source_hlj_id": "REQ-017"
+        }
+      ]
+    },
+    "NEXT_CHUNKS": {
+      "CHUNK_ID": "",
+      "DATA": []
+    },
+    "errors": []
+  }
+]

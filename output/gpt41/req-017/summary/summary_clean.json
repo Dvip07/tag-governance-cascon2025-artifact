@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-017",
+  "summary": "Enable mid-cycle subscription plan upgrades for SaaS customers with prorated billing. When upgrading, calculate unused time on the current plan and apply it as a credit to the upgraded plan; the new plan activates immediately, but the billing cycle remains unchanged. All upgrade events, credits, and charges (including taxes) must be recorded and clearly itemized in billing history and invoices. Support upgrades across monthly and annual plans and handle overlapping periods appropriately. Downgrades in the same cycle should be flagged for manual review to prevent abuse. Send users email notifications summarizing upgrade calculations and changes, and alert admins to anomalous upgrade/downgrade activity. Update support materials (scripts, FAQs) to address common upgrade questions. Solution must integrate with payment processors as needed and correctly calculate local taxes/VAT."
+}

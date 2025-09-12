@@ -1,0 +1,1240 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design cohort definition interface",
+    "summary": "Develop an interface for defining custom cohorts based on user criteria.",
+    "tags": [
+      "cohort_definition",
+      "user_interface"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "cohort definition interface",
+      "tag_metadata_reference": [
+        {
+          "tag": "cohort_definition",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "cohort_definition",
+        "user界面"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "user_interface",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "cohort_definition",
+      "user_interface"
+    ],
+    "tags_v2": [
+      "cohort_definition"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "cohort_definition",
+        "canonical_tag": "cohort_definition",
+        "matched_tag": "cohort_definition",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.773253Z"
+      },
+      {
+        "original_tag": "user_interface",
+        "canonical_tag": "user_interface",
+        "matched_tag": "user_interface",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.895409Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "cohorts",
+      "analytics",
+      "database",
+      "schema",
+      "persistence"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "cohorts",
+        "original_tag": "cohorts",
+        "score": 6,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7727461457252502,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7779269814491272,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "database",
+        "original_tag": "database",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7170121669769287,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "schema",
+        "original_tag": "schema",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6819629073143005,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "persistence",
+        "original_tag": "persistence",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.721793532371521,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement automatic cohort updates",
+    "summary": "Develop a system for automatically updating cohorts based on user interactions.",
+    "tags": [
+      "cohort_updates",
+      "automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 14-15",
+    "reasoning": {
+      "source_summary_fragment": "automatic cohort updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "cohort_updates",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "cohort_updates",
+        "automation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "cohort_updates",
+      "automation"
+    ],
+    "tags_v2": [
+      "cohort_updates",
+      "automation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "cohort_updates",
+        "canonical_tag": "cohort_updates",
+        "matched_tag": "cohort_updates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.908589Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.918723Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "cohorts",
+      "api",
+      "cohort_updates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "cohorts",
+        "original_tag": "cohorts",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.754826009273529,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6968761086463928,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "cohort_updates",
+        "original_tag": "cohort_updates",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8101260662078857,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop time-decay metrics functionality",
+    "summary": "Create a system for calculating time-decay metrics for cohort analysis.",
+    "tags": [
+      "time_decay",
+      "metrics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Retention"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 16-19",
+    "reasoning": {
+      "source_summary_fragment": "time-decay metrics functionality",
+      "tag_metadata_reference": [
+        {
+          "tag": "time_decay",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "time_decay",
+        "metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "metrics",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "time_decay",
+      "metrics"
+    ],
+    "tags_v2": [
+      "time_decay",
+      "metrics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "time_decay",
+        "canonical_tag": "time_decay",
+        "matched_tag": "time_decay",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.929853Z"
+      },
+      {
+        "original_tag": "metrics",
+        "canonical_tag": "metrics",
+        "matched_tag": "metrics",
+        "tag_origin_cluster_id": "metrics",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.932360Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "analytics",
+      "cohorts",
+      "retention",
+      "api",
+      "events",
+      "time_decay",
+      "metrics",
+      "weighting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7640266418457031,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "cohorts",
+        "original_tag": "cohorts",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7439255118370056,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "retention",
+        "original_tag": "retention",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7180566191673279,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6811679601669312,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "events",
+        "original_tag": "events",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.681601345539093,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "time_decay",
+        "original_tag": "time_decay",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7840436100959778,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.751380443572998,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "weighting",
+        "original_tag": "weighting",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7320481538772583,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create visualization for cohort analysis results",
+    "summary": "Develop a visualization system for displaying cohort analysis results.",
+    "tags": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "visualization for cohort analysis results",
+      "tag_metadata_reference": [
+        {
+          "tag": "data_visualization",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "data_visualization",
+        "cohort_analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_analysis",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "tags_v2": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data_visualization",
+        "canonical_tag": "data_visualization",
+        "matched_tag": "data_visualization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.942524Z"
+      },
+      {
+        "original_tag": "cohort_analysis",
+        "canonical_tag": "cohort_analysis",
+        "matched_tag": "cohort_analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.952498Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "cohorts",
+      "settings",
+      "data_visualization",
+      "update",
+      "cohort_analysis"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "cohorts",
+        "original_tag": "cohorts",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7642119526863098,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "settings",
+        "original_tag": "settings",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7000102996826172,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "data_visualization",
+        "original_tag": "data_visualization",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.772318959236145,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "update",
+        "original_tag": "updates",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7151051163673401,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "cohort_analysis",
+        "original_tag": "cohort_analysis",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8110626935958862,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Handle duplicate cohort membership",
+    "summary": "Develop a system for handling duplicate cohort membership.",
+    "tags": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 23-24",
+    "reasoning": {
+      "source_summary_fragment": "duplicate cohort membership",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge_cases",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "edge_cases",
+        "cohort_membership"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_membership",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "tags_v2": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edge_cases",
+        "canonical_tag": "edge_cases",
+        "matched_tag": "edge_cases",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.962675Z"
+      },
+      {
+        "original_tag": "cohort_membership",
+        "canonical_tag": "cohort_membership",
+        "matched_tag": "cohort_membership",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.971698Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "visualization",
+      "decay",
+      "edge_cases",
+      "metrics",
+      "cohort_analysis",
+      "trend",
+      "heatmap"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "visualization",
+        "original_tag": "visualization",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697948157787323,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "decay",
+        "original_tag": "decay",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.730900764465332,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "edge_cases",
+        "original_tag": "edge_cases",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7287254333496094,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7539412975311279,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "cohort_analysis",
+        "original_tag": "cohort_membership",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7934849858283997,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "trend",
+        "original_tag": "trends",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7106136083602905,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "heatmap",
+        "original_tag": "heatmap",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71394944190979,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement decay parameter adjustment prompt",
+    "summary": "Develop a system for adjusting decay parameters.",
+    "tags": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Retention"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 25-26",
+    "reasoning": {
+      "source_summary_fragment": "decay parameter adjustment prompt",
+      "tag_metadata_reference": [
+        {
+          "tag": "user_experience",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "user_experience",
+        "decay_parameters"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "decay_parameters",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "tags_v2": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.981512Z"
+      },
+      {
+        "original_tag": "decay_parameters",
+        "canonical_tag": "decay_parameters",
+        "matched_tag": "decay_parameters",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.990597Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "visualization",
+      "decay",
+      "overlay",
+      "user_experience",
+      "metrics",
+      "decay_parameters"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "visualization",
+        "original_tag": "visualization",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6955019235610962,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "decay",
+        "original_tag": "decay",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7487075328826904,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "overlay",
+        "original_tag": "overlay",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7013245820999146,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "user_experience",
+        "original_tag": "user_experience",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712681233882904,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7491066455841064,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "decay_parameters",
+        "original_tag": "decay_parameters",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7998576164245605,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create help article for cohort analysis",
+    "summary": "Develop a help article for cohort analysis.",
+    "tags": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "low",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 27-28",
+    "reasoning": {
+      "source_summary_fragment": "help article for cohort analysis",
+      "tag_metadata_reference": [
+        {
+          "tag": "help_article",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "help_article",
+        "cohort_analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_analysis",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "tags_v2": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "help_article",
+        "canonical_tag": "help_article",
+        "matched_tag": "help_article",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.000244Z"
+      },
+      {
+        "original_tag": "cohort_analysis",
+        "canonical_tag": "cohort_analysis",
+        "matched_tag": "cohort_analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.009702Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "export",
+      "help_article",
+      "ui",
+      "reporting",
+      "settings",
+      "cohort_analysis"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.694359302520752,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "help_article",
+        "original_tag": "help_article",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7134795188903809,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6931558847427368,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7021169662475586,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "settings",
+        "original_tag": "settings",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.690015435218811,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "cohort_analysis",
+        "original_tag": "cohort_analysis",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7994077205657959,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Ensure compatibility with existing analytics data store",
+    "summary": "Ensure the cohort analysis feature is compatible with the existing analytics data store.",
+    "tags": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Infrastructure"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 29-30",
+    "reasoning": {
+      "source_summary_fragment": "compatibility with existing analytics data store",
+      "tag_metadata_reference": [
+        {
+          "tag": "compatibility",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "compatibility",
+        "analytics_data_store"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics_data_store",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "tags_v2": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compatibility",
+        "canonical_tag": "compatibility",
+        "matched_tag": "compatibility",
+        "tag_origin_cluster_id": "compatibility",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.012347Z"
+      },
+      {
+        "original_tag": "analytics_data_store",
+        "canonical_tag": "analytics_data_store",
+        "matched_tag": "analytics_data_store",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:07.024062Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "cohorts",
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "cohorts",
+        "original_tag": "cohorts",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7496581077575684,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "compatibility",
+        "original_tag": "compatibility",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7205398678779602,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "logic",
+        "original_tag": "logic",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6598215699195862,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-019"
+      },
+      {
+        "tag": "analytics_data_store",
+        "original_tag": "analytics_data_store",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7917705774307251,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-019"
+      }
+    ]
+  }
+]

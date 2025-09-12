@@ -1,0 +1,167 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Provide engineering dashboards with breakdowns by widget, user segment, and time window",
+  "summary": "Engineering dashboards must display performance metrics with granular breakdowns by widget, user segment, and configurable time windows to support monitoring and analysis activities.",
+  "tags_v1": [
+    "metrics",
+    "visualization",
+    "[INFERRED] analytics"
+  ],
+  "tags_v2": [
+    "metrics",
+    "visualization"
+  ],
+  "tags_v3": [
+    "visualization",
+    "analytics",
+    "telemetry",
+    "metrics",
+    "performance",
+    "dashboard",
+    "privacy",
+    "engineering"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "visualization",
+      "aliases": [],
+      "cluster_id": "all_33",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7090528607368469,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.7637761235237122,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "telemetry",
+      "aliases": [],
+      "cluster_id": "all_289",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7644392848014832,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "telemetry",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7523467540740967,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.747970461845398,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7748548984527588,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboards",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "all_18",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6886197328567505,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "engineering",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7107588052749634,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "engineering",
+      "method": "dedup_canonical"
+    }
+  ]
+}

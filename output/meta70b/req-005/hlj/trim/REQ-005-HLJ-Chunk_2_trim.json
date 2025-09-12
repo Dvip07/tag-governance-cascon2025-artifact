@@ -1,0 +1,187 @@
+[
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Implement RESTful Endpoints for Freeze/Unfreeze Requests",
+    "summary": "Design and implement RESTful API endpoints for handling freeze and unfreeze requests of virtual cards, ensuring secure, scalable, and efficient operations.",
+    "tags": [
+      "virtualcard",
+      "restful",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled virtual card freeze/unfreeze feature",
+      "tag_metadata_reference": [
+        {
+          "tag": "restful",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "virtual card management",
+        "RESTful API"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Ensure Atomicity and Idempotence of Freeze/Unfreeze Operations",
+    "summary": "Ensure that freeze and unfreeze operations on virtual cards are atomic and idempotent, providing a consistent and reliable user experience.",
+    "tags": [
+      "virtualcard",
+      "atomicity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 34-37",
+    "reasoning": {
+      "source_summary_fragment": "instant freeze or unfreeze their virtual cards",
+      "tag_metadata_reference": [
+        {
+          "tag": "atomicity",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "atomic operations",
+        "idempotence"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Log Freeze/Unfreeze Actions with Timestamp and User/Device Metadata",
+    "summary": "Log all freeze and unfreeze actions on virtual cards with timestamps and relevant user and device metadata for auditing and security purposes.",
+    "tags": [
+      "virtualcard",
+      "logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 38-41",
+    "reasoning": {
+      "source_summary_fragment": "clear UI feedback and strong authentication",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging",
+        "security metadata"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Implement Queueing for Freeze/Unfreeze Requests During Backend Maintenance",
+    "summary": "Implement a queueing system for freeze and unfreeze requests when the backend is under maintenance to ensure requests are not lost and are processed once the system is available.",
+    "tags": [
+      "virtualcard",
+      "queueing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 42-45",
+    "reasoning": {
+      "source_summary_fragment": "security, usability, and cross-system synchronization",
+      "tag_metadata_reference": [
+        {
+          "tag": "queueing",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "request queueing",
+        "backend maintenance"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Handle Conflicting Freeze/Unfreeze Requests",
+    "summary": "Develop a mechanism to handle conflicting freeze and unfreeze requests for virtual cards, ensuring that the system maintains a consistent state and provides clear feedback to users.",
+    "tags": [
+      "virtualcard",
+      "conflict"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "Backend"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 46-49",
+    "reasoning": {
+      "source_summary_fragment": "instantly freeze or unfreeze their virtual cards",
+      "tag_metadata_reference": [
+        {
+          "tag": "conflict",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "conflict resolution",
+        "virtual card state management"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  }
+]

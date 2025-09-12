@@ -1,0 +1,163 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-030",
+  "summary": "Automate UI regression tests in the staging environment on Chrome, Firefox, Safari, and Edge browsers, integrating with the CI/CD pipeline to block deployments if critical tests fail. Provide real-time browser/platform/screen-size coverage analytics with visualized gaps. Collect full logs, screenshots, and videos for failed cases, and summarize flakiness trends with stabilization recommendations. Detect flaky tests only in headless mode and flag for review; allow QA to quarantine unrepeatable failures with notification instead of blocking deployments. Maintain updated testing/triage guides, and share browser support matrices. Secure test artifacts, restrict access to authorized personnel, and enforce accessibility (WCAG) compliance. Limit added CI/CD build time to 10 minutes. KPIs: 99% coverage, <5% flake rate, <12hr bug fix time. Depend on cloud-based browser farm infrastructure."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["TestingAutomation", "CI/CD", "Analytics"],
+  "canonical_tags": ["ui-testing", "coverage", "ci-cd"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 12,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-030-HLJ-Chunk_1",
+      "focus": "Automated UI test execution, coverage analytics, and deployment blocking",
+      "items": [
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement parallel UI regression test execution on major browsers in staging",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation"],
+          "tags": ["ui-testing", "parallel", "staging"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9–11"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Integrate UI tests with CI/CD to block deployment on critical failures",
+          "domain": "SaaS",
+          "subdomain": ["CI/CD", "TestingAutomation"],
+          "tags": ["ci-cd", "blocking", "critical-path"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12–12"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Generate real-time browser, platform, and screen-size test coverage analytics",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "TestingAutomation"],
+          "tags": ["coverage", "analytics"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 14–15"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Visualize coverage gaps highlighting unsupported and failing configurations",
+          "domain": "SaaS",
+          "subdomain": ["Analytics"],
+          "tags": ["coverage", "visualization"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Capture and store full logs, screenshots, and video for failed tests",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation", "Logging"],
+          "tags": ["logs", "screenshots", "video"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Summarize flakiness trends and recommend stabilization actions",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation", "Analytics"],
+          "tags": ["flakiness", "recommendations"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Flag tests flaky only in headless mode for additional review",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation"],
+          "tags": ["flakiness", "headless"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 24–25"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Provide 'quarantine' option for unreproducible failures with QA notification",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation", "CI/CD"],
+          "tags": ["quarantine", "flakiness"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 26–27"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Maintain up-to-date testing and triage documentation for engineering and QA",
+          "domain": "SaaS",
+          "subdomain": ["Documentation"],
+          "tags": ["documentation", "testing-guides"],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 29–30"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Share browser support matrix with product and support teams",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Support"],
+          "tags": ["browser-matrix", "communication"],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 31–31"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-030-HLJ-Chunk_2",
+      "focus": "Security, compliance, infrastructure, and performance KPIs",
+      "items": [
+        {
+          "id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Securely retain test artifacts, restricting access to authorized personnel",
+          "domain": "SaaS",
+          "subdomain": ["Security", "TestingAutomation"],
+          "tags": ["security", "artifacts"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 33–34"
+        },
+        {
+          "id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Track and enforce accessibility (WCAG) compliance in the test suite",
+          "domain": "SaaS",
+          "subdomain": ["TestingAutomation", "Compliance"],
+          "tags": ["accessibility", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 35–35"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

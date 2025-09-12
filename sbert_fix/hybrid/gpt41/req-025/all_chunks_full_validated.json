@@ -1,0 +1,2225 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Instrument all dashboard widgets for load, render, and interactive readiness timing",
+    "summary": "Instrument each dashboard widget to measure key performance timings, including load, render, and when interactive. Data collection should have minimal performance overhead and support observability for first- and third-party widgets.",
+    "tags": [
+      "instrumentation",
+      "timing",
+      "[INFERRED] performance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserDashboard",
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 08–10",
+    "reasoning": {
+      "source_summary_fragment": "instrumenting widgets to capture load, render, and interactive readiness times; ... no analytics degradation of dashboard performance",
+      "tag_metadata_reference": [
+        {
+          "tag": "instrumentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "timing",
+          "confidence": 0.93
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "performance instrumentation",
+        "real-time timing analytics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "instrumentation",
+      "timing",
+      "[INFERRED] performance"
+    ],
+    "tags_v2": [
+      "instrumentation",
+      "timing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "instrumentation",
+        "canonical_tag": "instrumentation",
+        "matched_tag": "instrumentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.423818Z"
+      },
+      {
+        "original_tag": "timing",
+        "canonical_tag": "timing",
+        "matched_tag": "timing",
+        "tag_origin_cluster_id": "timing",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.427453Z"
+      },
+      {
+        "original_tag": "[INFERRED] performance",
+        "canonical_tag": "[INFERRED] performance",
+        "matched_tag": "[INFERRED] performance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.597676Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "instrumentation",
+      "performance",
+      "analytics",
+      "timing",
+      "optimization"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "instrumentation",
+        "original_tag": "instrumentation",
+        "score": 6,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7300928235054016,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 5,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7503515481948853,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7559216022491455,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "timing",
+        "original_tag": "timing",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7290871143341064,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "optimization",
+        "original_tag": "optimization",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704578697681427,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Capture and report widget timing data per user, device, and browser context",
+    "summary": "Collect and report detailed timing data for each widget, segmented by user, device type, and browser context. Enables data-driven performance analysis and targeting of optimizations.",
+    "tags": [
+      "reporting",
+      "segmentation",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 11–12",
+    "reasoning": {
+      "source_summary_fragment": "reporting per widget, user, device, and browser",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.94
+        },
+        {
+          "tag": "segmentation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "performance segmentation",
+        "multi-dimensional analytics"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "reporting",
+      "segmentation",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "reporting",
+      "segmentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.613234Z"
+      },
+      {
+        "original_tag": "segmentation",
+        "canonical_tag": "segmentation",
+        "matched_tag": "segmentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.629065Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.790093Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "analytics",
+      "reporting",
+      "performance",
+      "segmentation",
+      "instrumentation",
+      "metrics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 5,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7608144879341125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7131174206733704,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7427421808242798,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "segmentation",
+        "original_tag": "segmentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7010720372200012,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "instrumentation",
+        "original_tag": "instrumentation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7015098929405212,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7399572134017944,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Provide engineering dashboards with breakdowns by widget, user segment, and time window",
+    "summary": "Engineering dashboards must display performance metrics with granular breakdowns by widget, user segment, and configurable time windows to support monitoring and analysis activities.",
+    "tags": [
+      "metrics",
+      "visualization",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "UserDashboard"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 14–15",
+    "reasoning": {
+      "source_summary_fragment": "providing engineering dashboards with breakdowns",
+      "tag_metadata_reference": [
+        {
+          "tag": "metrics",
+          "confidence": 0.92
+        },
+        {
+          "tag": "visualization",
+          "confidence": 0.91
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "dashboard breakdowns",
+        "analytics views"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "metrics",
+      "visualization",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "metrics",
+      "visualization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "metrics",
+        "canonical_tag": "metrics",
+        "matched_tag": "metrics",
+        "tag_origin_cluster_id": "metrics",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.802040Z"
+      },
+      {
+        "original_tag": "visualization",
+        "canonical_tag": "visualization",
+        "matched_tag": "visualization",
+        "tag_origin_cluster_id": "visualization",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.873618Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.030956Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "visualization",
+      "analytics",
+      "telemetry",
+      "metrics",
+      "performance",
+      "dashboard",
+      "privacy",
+      "engineering"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "visualization",
+        "original_tag": "visualization",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7090528607368469,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7637761235237122,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "telemetry",
+        "original_tag": "telemetry",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7644392848014832,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "metrics",
+        "original_tag": "metrics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7523467540740967,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.747970461845398,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboards",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7748548984527588,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6886197328567505,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "engineering",
+        "original_tag": "engineering",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7107588052749634,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement outlier and regression flagging with root-cause drill-downs",
+    "summary": "The system must automatically detect and flag performance outliers and regressions, providing tools for root-cause drill-down investigation to assist in diagnostics.",
+    "tags": [
+      "alerting",
+      "diagnostics",
+      "[INFERRED] regression"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 16–17",
+    "reasoning": {
+      "source_summary_fragment": "breakdowns and root-cause drilldowns; automated alerting for SLA breaches",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.92
+        },
+        {
+          "tag": "diagnostics",
+          "confidence": 0.9
+        },
+        {
+          "tag": "regression",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "performance regression flagging",
+        "root-cause analysis"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "regression",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "alerting",
+      "diagnostics",
+      "[INFERRED] regression"
+    ],
+    "tags_v2": [
+      "alert",
+      "diagnostics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:40.115001Z"
+      },
+      {
+        "original_tag": "diagnostics",
+        "canonical_tag": "diagnostics",
+        "matched_tag": "diagnostics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.126178Z"
+      },
+      {
+        "original_tag": "[INFERRED] regression",
+        "canonical_tag": "[INFERRED] regression",
+        "matched_tag": "[INFERRED] regression",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.294559Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "alert",
+      "dashboard",
+      "analytics",
+      "visualization",
+      "diagnostics",
+      "debugging",
+      "regression"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7101365923881531,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7642209529876709,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7587260007858276,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "visualization",
+        "original_tag": "visualization",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7048279047012329,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "diagnostics",
+        "original_tag": "diagnostics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7512792944908142,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "debugging",
+        "original_tag": "debugging",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7313731908798218,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "regression",
+        "original_tag": "regression",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7157444953918457,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Trigger automated alerts for widgets exceeding performance SLAs",
+    "summary": "Automated alerting must be set up to notify stakeholders when widget performance metrics breach defined SLAs such as 95th percentile thresholds, supporting rapid incident response.",
+    "tags": [
+      "alerting",
+      "sla",
+      "[INFERRED] performance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "automated alerting for SLA breaches (e.g., 95th percentile >2s);",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.94
+        },
+        {
+          "tag": "sla",
+          "confidence": 0.9
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "performance SLAs",
+        "automated incident notification"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "alerting",
+      "sla",
+      "[INFERRED] performance"
+    ],
+    "tags_v2": [
+      "alert",
+      "sla"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:40.376475Z"
+      },
+      {
+        "original_tag": "sla",
+        "canonical_tag": "sla",
+        "matched_tag": "sla",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.389885Z"
+      },
+      {
+        "original_tag": "[INFERRED] performance",
+        "canonical_tag": "[INFERRED] performance",
+        "matched_tag": "[INFERRED] performance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.547688Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "alert",
+      "sla",
+      "dashboard",
+      "analytics",
+      "filter",
+      "performance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7286378741264343,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "sla",
+        "original_tag": "sla",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7125905752182007,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7479881048202515,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7318665981292725,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filtering",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6802682876586914,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7328059673309326,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Integrate performance checks with CI/CD for deployment blocking/regression prevention",
+    "summary": "Integrate automated performance testing into the CI/CD pipeline to block deployments in case of regressions, ensuring substandard updates do not affect production.",
+    "tags": [
+      "cicd",
+      "regression",
+      "[INFERRED] performance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "PerformanceMonitoring",
+      "DevOps"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 21–22",
+    "reasoning": {
+      "source_summary_fragment": "CI/CD integration to prevent performance regressions",
+      "tag_metadata_reference": [
+        {
+          "tag": "cicd",
+          "confidence": 0.93
+        },
+        {
+          "tag": "regression",
+          "confidence": 0.92
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "continuous integration",
+        "regression prevention",
+        "CI/CD performance gate"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "cicd",
+      "regression",
+      "[INFERRED] performance"
+    ],
+    "tags_v2": [
+      "regression"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "cicd",
+        "canonical_tag": "cicd",
+        "matched_tag": "cicd",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.795419Z"
+      },
+      {
+        "original_tag": "regression",
+        "canonical_tag": "regression",
+        "matched_tag": "regression",
+        "tag_origin_cluster_id": "regression",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.813923Z"
+      },
+      {
+        "original_tag": "[INFERRED] performance",
+        "canonical_tag": "[INFERRED] performance",
+        "matched_tag": "[INFERRED] performance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.959714Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "ci/cd",
+      "alert",
+      "regression",
+      "analytics",
+      "optimization"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7397387027740479,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "ci/cd",
+        "original_tag": "ci/cd",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6981091499328613,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6911045908927917,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "regression",
+        "original_tag": "regression",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6981893181800842,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7404385805130005,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "optimization",
+        "original_tag": "optimization",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7048735022544861,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Suggest automated remediation steps for detected performance regressions",
+    "summary": "Upon detecting performance regressions, automatically suggest remediation actions such as configuration adjustments, rollbacks, or code fixes to facilitate swift resolution.",
+    "tags": [
+      "remediation",
+      "automation",
+      "[INFERRED] regression"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "regression fixes in 48h",
+      "tag_metadata_reference": [
+        {
+          "tag": "remediation",
+          "confidence": 0.91
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.89
+        },
+        {
+          "tag": "regression",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "automated remediation",
+        "regression handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "regression",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "remediation",
+      "automation",
+      "[INFERRED] regression"
+    ],
+    "tags_v2": [
+      "remediation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "remediation",
+        "canonical_tag": "remediation",
+        "matched_tag": "remediation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:40.963393Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.128693Z"
+      },
+      {
+        "original_tag": "[INFERRED] regression",
+        "canonical_tag": "[INFERRED] regression",
+        "matched_tag": "[INFERRED] regression",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.282660Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "remediation",
+      "analytics",
+      "fallback",
+      "external services",
+      "diagnostics",
+      "regression"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7453433275222778,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "remediation",
+        "original_tag": "remediation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7203344106674194,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7493223547935486,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7007496356964111,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "external services",
+        "original_tag": "external services",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7121677398681641,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "diagnostics",
+        "original_tag": "diagnostics",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7397235035896301,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "regression",
+        "original_tag": "regression",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.714181125164032,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Monitor fallback performance of external widgets and alert on persistent issues",
+    "summary": "Continuously monitor the fallback behavior and performance of external widgets, issuing alerts when issues persist to ensure overall dashboard resilience and user experience.",
+    "tags": [
+      "resilience",
+      "external",
+      "[INFERRED] alerting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "PerformanceMonitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 25–26",
+    "reasoning": {
+      "source_summary_fragment": "edge-case handling for external services",
+      "tag_metadata_reference": [
+        {
+          "tag": "resilience",
+          "confidence": 0.92
+        },
+        {
+          "tag": "external",
+          "confidence": 0.87
+        },
+        {
+          "tag": "alerting",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "external widget monitoring",
+        "resilience alerting"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "alerting",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "resilience",
+      "external",
+      "[INFERRED] alerting"
+    ],
+    "tags_v2": [
+      "resilience",
+      "external"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "resilience",
+        "canonical_tag": "resilience",
+        "matched_tag": "resilience",
+        "tag_origin_cluster_id": "resilience",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.294132Z"
+      },
+      {
+        "original_tag": "external",
+        "canonical_tag": "external",
+        "matched_tag": "external",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.298384Z"
+      },
+      {
+        "original_tag": "[INFERRED] alerting",
+        "canonical_tag": "[INFERRED] alerting",
+        "matched_tag": "[INFERRED] alerting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.448572Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "alert",
+      "privacy",
+      "sla",
+      "performance",
+      "resilience",
+      "external",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7140548229217529,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.683457612991333,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "sla",
+        "original_tag": "sla",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6933167576789856,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7419629096984863,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "resilience",
+        "original_tag": "resilience",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7064428925514221,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "external",
+        "original_tag": "external",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6961806416511536,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6983572840690613,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Prompt users to hide/reprioritize widgets if dashboards exceed performance budgets",
+    "summary": "Prompt end users to hide or reprioritize dashboard widgets if overall performance budgets are breached, thereby maintaining usability and allowing personal customization.",
+    "tags": [
+      "prompt",
+      "usability",
+      "[INFERRED] performance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserDashboard",
+      "Usability"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 27–28",
+    "reasoning": {
+      "source_summary_fragment": "user prompt if dashboard is slow",
+      "tag_metadata_reference": [
+        {
+          "tag": "prompt",
+          "confidence": 0.86
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.84
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "user prompting",
+        "performance budget handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "prompt",
+      "usability",
+      "[INFERRED] performance"
+    ],
+    "tags_v2": [
+      "prompt",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "prompt",
+        "canonical_tag": "prompt",
+        "matched_tag": "prompt",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.86,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.453651Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.84,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.465110Z"
+      },
+      {
+        "original_tag": "[INFERRED] performance",
+        "canonical_tag": "[INFERRED] performance",
+        "matched_tag": "[INFERRED] performance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.625507Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "ci/cd",
+      "automation",
+      "prompt",
+      "usability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7567899227142334,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "ci/cd",
+        "original_tag": "ci-cd",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6819018721580505,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "automation",
+        "original_tag": "automation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7226419448852539,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "prompt",
+        "original_tag": "prompt",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7062374353408813,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7293828725814819,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Anonymize performance telemetry and ensure user privacy compliance with opt-out",
+    "summary": "Anonymize all collected performance telemetry, enforce privacy compliance per user agreements, and provide a clear opt-out mechanism to maintain user trust.",
+    "tags": [
+      "privacy",
+      "compliance",
+      "[INFERRED] analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance",
+      "Analytics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30–33",
+    "reasoning": {
+      "source_summary_fragment": "anonymized telemetry data adhering to privacy agreements with user opt-out and transparency",
+      "tag_metadata_reference": [
+        {
+          "tag": "privacy",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "telemetry anonymization",
+        "privacy compliance",
+        "user opt-out"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "privacy",
+      "compliance",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "privacy",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.630205Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.634266Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.789463Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "privacy",
+      "compliance",
+      "performance",
+      "analytics"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7304220199584961,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7158792018890381,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "ci/cd",
+        "original_tag": "ci-cd",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6692409515380859,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7456997632980347,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7567416429519653,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Provide users transparency and option to view and opt-out of data collection",
+    "summary": "Enables SaaS users to view what data is being collected and gives them control to opt-out of anonymized telemetry. Ensures transparent communication and allows compliance with user privacy preferences. This feature supports adherence to privacy standards and regulations.",
+    "tags": [
+      "transparency",
+      "privacy",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserDashboard",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 32–33",
+    "reasoning": {
+      "source_summary_fragment": "anonymized telemetry data adhering to privacy agreements with user opt-out and transparency",
+      "tag_metadata_reference": [
+        {
+          "tag": "transparency",
+          "confidence": 0.95
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "privacy controls",
+        "telemetry opt-out",
+        "user transparency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "transparency",
+      "privacy",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "transparency",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "transparency",
+        "canonical_tag": "transparency",
+        "matched_tag": "transparency",
+        "tag_origin_cluster_id": "transparency",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.793846Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:41.807012Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.036906Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "privacy",
+      "transparency",
+      "performance",
+      "monitoring",
+      "resilience",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7320823669433594,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "transparency",
+        "original_tag": "transparency",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7325908541679382,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7497149705886841,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7542204856872559,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "resilience",
+        "original_tag": "resilience",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6825480461120605,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7170642614364624,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement self-service analytics for product owners to monitor widget health",
+    "summary": "Offers product owners analytics dashboards to independently monitor the health and performance of their widgets. Self-service capabilities include real-time metrics, error rates, and actionable insights, supporting both performance assessment and SLA compliance.",
+    "tags": [
+      "self-service",
+      "analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "UserDashboard"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 35–36",
+    "reasoning": {
+      "source_summary_fragment": "self-service analytics for product owners; reporting per widget, user, device, and browser; engineering dashboards with breakdowns and root-cause drilldowns",
+      "tag_metadata_reference": [
+        {
+          "tag": "self-service",
+          "confidence": 0.93
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "product owner dashboards",
+        "widget health metrics",
+        "real-time reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-025",
+    "tags_v1": [
+      "self-service",
+      "analytics"
+    ],
+    "tags_v2": [
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "self-service",
+        "canonical_tag": "self service",
+        "matched_tag": "self service",
+        "tag_origin_cluster_id": "self service",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.200013Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:42.204449Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "analytics",
+      "dashboard",
+      "performance",
+      "ux",
+      "self-service"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.752824604511261,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7632462382316589,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7445086240768433,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7090500593185425,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-025"
+      },
+      {
+        "tag": "self-service",
+        "original_tag": "self-service",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.740058183670044,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-025-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-025"
+      }
+    ]
+  }
+]

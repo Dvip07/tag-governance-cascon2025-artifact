@@ -1,0 +1,58 @@
+{
+  "hlj_id": "REQ-021-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-021",
+  "domain": "SaaS",
+  "title": "Prevent overlapping or duplicate highlights at same location",
+  "summary": "Implement validation logic to prevent users from creating multiple highlights at the same text location. System should detect existing highlights and either merge them or prompt user to use existing highlight for new comments.",
+  "tags_v1": [
+    "validation",
+    "collision",
+    "frontend"
+  ],
+  "tags_v2": [
+    "validation",
+    "collision"
+  ],
+  "tags_v3": [
+    "validation",
+    "collision"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.752907931804657,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "collision",
+      "aliases": [
+        "collision handling"
+      ],
+      "cluster_id": "all_325",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7266730666160583,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "collision",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,109 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Validate locked rate at execution; require user confirmation if rate expired",
+  "summary": "Upon payment execution, the system must verify the validity of the locked FX rate. If the rate has expired, confirmation from the user is required before proceeding to avoid unintended rate acceptance.",
+  "tags_v1": [
+    "fx",
+    "validation",
+    "[INFERRED] user confirmation"
+  ],
+  "tags_v2": [
+    "fx",
+    "validation"
+  ],
+  "tags_v3": [
+    "cancellation",
+    "payments",
+    "fx",
+    "workflow",
+    "validation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "cancellation",
+      "aliases": [],
+      "cluster_id": "all_93",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7081233263015747,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cancellation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7346082925796509,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "all_88",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6990751624107361,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "workflow",
+      "aliases": [],
+      "cluster_id": "all_186",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6994950771331787,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "workflow",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "validation",
+      "aliases": [],
+      "cluster_id": "all_91",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7113108038902283,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "validation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

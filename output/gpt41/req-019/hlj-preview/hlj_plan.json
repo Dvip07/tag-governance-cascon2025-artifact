@@ -1,0 +1,164 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-019-HLJ-Chunk_1",
+      "focus": "Cohort definition, time-decay logic, visualization, edge case handling, documentation, integration, performance constraints",
+      "items": [
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Implement custom cohort creation and saving",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "CohortAnalysis"
+          ],
+          "tags": [
+            "analytics",
+            "cohorts"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 7\u20139"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Enable auto-updating of cohorts as new users match criteria",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "CohortAnalysis"
+          ],
+          "tags": [
+            "automation",
+            "cohorts"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Apply time-decay weighting to retention and activity metrics",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "RetentionMetrics"
+          ],
+          "tags": [
+            "analytics",
+            "retention"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12\u201313"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Provide adjustable decay function selection (exponential, linear) in settings",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "RetentionMetrics"
+          ],
+          "tags": [
+            "settings",
+            "usability"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 14"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Develop visualizations including trend lines and cohort heatmaps",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "DataVisualization"
+          ],
+          "tags": [
+            "visualization",
+            "heatmap"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Allow overlay of standard and time-decayed metrics in visualizations",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "DataVisualization",
+            "RetentionMetrics"
+          ],
+          "tags": [
+            "visualization",
+            "overlay"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 16\u201317"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Support export of cohort analysis to CSV and PDF formats",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "Reporting"
+          ],
+          "tags": [
+            "export",
+            "reporting"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Handle duplicate cohort membership for users in overlapping cohorts",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "CohortAnalysis"
+          ],
+          "tags": [
+            "edge-case",
+            "cohorts"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Prompt user to adjust if decay parameters cause zeroed metrics",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "RetentionMetrics",
+            "UX"
+          ],
+          "tags": [
+            "usability",
+            "error-handling"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21\u201322"
+        },
+        {
+          "id": "REQ-019-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Provide help article explaining cohort logic and decay weighting",
+          "domain": "SaaS Analytics",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "docs",
+            "support"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 24"
+        }
+      ]
+    }
+  ]
+}

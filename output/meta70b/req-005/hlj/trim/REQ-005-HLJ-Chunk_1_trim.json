@@ -1,0 +1,217 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement Freeze/Unfreeze Card Toggle",
+    "summary": "The system should allow users to instantly freeze or unfreeze their virtual cards, enhancing security and control.",
+    "tags": [
+      "virtualcard",
+      "freezeunfreeze"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled virtual card freeze/unfreeze feature",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.93
+        },
+        {
+          "tag": "freezeunfreeze",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "virtual card management",
+        "mobile app security"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    }
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Display Clear UI Feedback",
+    "summary": "The system should provide clear and timely feedback to users about the status of their virtual card freeze/unfreeze operations.",
+    "tags": [
+      "virtualcard",
+      "ui"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 14-16",
+    "reasoning": {
+      "source_summary_fragment": "clear UI feedback for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.91
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    }
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Provide Context-Sensitive Help",
+    "summary": "The system should offer context-sensitive help to users, enhancing their understanding and effective use of the virtual card freeze/unfreeze feature.",
+    "tags": [
+      "virtualcard",
+      "help"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 17-19",
+    "reasoning": {
+      "source_summary_fragment": "context-sensitive help for virtual card management",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.9
+        },
+        {
+          "tag": "help",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user support",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "support",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    }
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement Instant Feedback for Freeze/Unfreeze Operations",
+    "summary": "The system should provide instant feedback to users upon the completion of freeze/unfreeze operations, ensuring transparency and user trust.",
+    "tags": [
+      "virtualcard",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "instant feedback for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.92
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "instant feedback",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "transparency",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    }
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Handle Edge Cases for Freeze/Unfreeze Operations",
+    "summary": "The system should be able to handle edge cases and unexpected scenarios that may arise during freeze/unfreeze operations, ensuring system reliability and user trust.",
+    "tags": [
+      "virtualcard",
+      "edgecases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "VirtualCardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 24-27",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases for freeze/unfreeze operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "virtualcard",
+          "confidence": 0.91
+        },
+        {
+          "tag": "edgecases",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge case handling",
+        "virtual card management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    }
+  }
+]

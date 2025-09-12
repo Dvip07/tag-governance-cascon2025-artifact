@@ -1,0 +1,76 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-019",
+  "domain": "SaaS Analytics",
+  "title": "Enable auto-updating of cohorts as new users match criteria",
+  "summary": "Automatically update cohort membership to include users who newly satisfy the cohort criteria, ensuring cohort composition stays current without manual intervention.",
+  "tags_v1": [
+    "automation",
+    "cohorts"
+  ],
+  "tags_v2": [
+    "cohorts"
+  ],
+  "tags_v3": [
+    "cohorts",
+    "api",
+    "cohort_updates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "cohorts",
+      "aliases": [
+        "cohort_definition"
+      ],
+      "cluster_id": "all_211",
+      "domains": [
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7538665533065796,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohorts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.68869948387146,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "cohort_updates",
+      "aliases": [],
+      "cluster_id": "all_440",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8052482604980469,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cohort_updates",
+      "method": "dedup_canonical"
+    }
+  ]
+}

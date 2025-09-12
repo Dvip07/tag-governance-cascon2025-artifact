@@ -1,0 +1,80 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Integrate with IMAP, Gmail API, and Office 365 email systems",
+  "summary": "Develop robust email integration layer supporting IMAP protocol, Gmail API, and Office 365 Graph API. Handle authentication, rate limiting, and error recovery while maintaining real-time synchronization with external email systems.",
+  "tags_v1": [
+    "integration",
+    "email",
+    "api"
+  ],
+  "tags_v2": [
+    "integration",
+    "email",
+    "api"
+  ],
+  "tags_v3": [
+    "integration",
+    "email",
+    "api"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7338560819625854,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "email",
+      "aliases": [],
+      "cluster_id": "all_208",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7876181602478027,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "email",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7514644861221313,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Provide instant feedback to clients on rate limits via HTTP 429 and retry-after headers",
+  "summary": "When clients exceed their rate limits, the system must return HTTP 429 with appropriate retry-after headers for clear, actionable feedback. This enhances client experience and allows compliant retry patterns.",
+  "tags_v1": [
+    "usability",
+    "feedback",
+    "[INFERRED] API"
+  ],
+  "tags_v2": [
+    "feedback"
+  ],
+  "tags_v3": [
+    "api",
+    "feedback",
+    "rate-limiting",
+    "instant feedback"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 5,
+      "confidence": 0.7505093216896057,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feedback",
+      "aliases": [],
+      "cluster_id": "all_51",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7091706395149231,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feedback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "all_47",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.8114521503448486,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "instant feedback",
+      "aliases": [],
+      "cluster_id": "all_360",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7208963632583618,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "instant feedback",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-016",
+  "summary": "Implement role-based 2FA enforcement with app-specific overrides. Admin, Finance, and DevOps roles require mandatory 2FA, while User and Viewer roles can opt-in. Mobile app temporarily exempt due to technical limitations. System must dynamically update policies on role changes, provide clear UX notifications, track/report exemptions, and avoid user lockouts during migration. Requires mobile team coordination for future 2FA support."
+}

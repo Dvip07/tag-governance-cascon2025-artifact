@@ -1,0 +1,122 @@
+# 📝 Changelog for `req-016` — **opus4**
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['2fa', 'rbac', 'security']`
+**Validated tags:** `['2fa', 'security']`
+**Tags added:** `[]`
+**Tags dropped:** `['rbac']`
+**Tags kept:** `['2fa', 'security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:12.261228Z |
+| rbac | dropped | none | 0.0 | None | 2025-05-31T23:59:12.396803Z |
+| security | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:12.415915Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['2fa', 'rbac', 'security']`
+**Validated tags:** `['2fa', 'security']`
+**Tags added:** `[]`
+**Tags dropped:** `['rbac']`
+**Tags kept:** `['2fa', 'security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:12.419112Z |
+| rbac | dropped | none | 0.0 | None | 2025-05-31T23:59:12.552894Z |
+| security | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:12.618320Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['2fa', 'rbac', 'automation']`
+**Validated tags:** `['2fa']`
+**Tags added:** `[]`
+**Tags dropped:** `['rbac', 'automation']`
+**Tags kept:** `['2fa']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:12.621537Z |
+| automation | dropped | none | 0.0 | None | 2025-05-31T23:59:12.947889Z |
+| rbac | dropped | none | 0.0 | None | 2025-05-31T23:59:12.810008Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['2fa', 'mobile', 'exemption']`
+**Validated tags:** `['2fa', 'mobile', 'exemption']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['2fa', 'mobile', 'exemption']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:12.951218Z |
+| exemption | kept | direct | 1.0 | title | 2025-05-31T23:59:12.956674Z |
+| mobile | kept | direct | 1.0 | title | 2025-05-31T23:59:12.953974Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['2fa', 'ux', 'notification']`
+**Validated tags:** `['2fa', 'ux', 'notification']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['2fa', 'ux', 'notification']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:12.960024Z |
+| notification | kept | direct | 1.0 | title | 2025-05-31T23:59:12.975401Z |
+| ux | kept | direct | 1.0 | summary | 2025-05-31T23:59:12.972048Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['logging', 'security', 'compliance']`
+**Validated tags:** `['logs', 'security', 'compliance']`
+**Tags added:** `['logs']`
+**Tags dropped:** `['logging']`
+**Tags kept:** `['security', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | summary | 2025-05-31T23:59:13.057820Z |
+| logging | dropped | direct | 1.0 | raw_requirement | 2025-05-31T23:59:13.038873Z |
+| logs | added | direct | 1.0 | raw_requirement | 2025-05-31T23:59:13.038873Z |
+| security | kept | direct | 1.0 | summary | 2025-05-31T23:59:13.048564Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['reporting', 'compliance', 'security']`
+**Validated tags:** `['reporting', 'compliance', 'security']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['reporting', 'compliance', 'security']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:59:13.072230Z |
+| reporting | kept | direct | 1.0 | summary | 2025-05-31T23:59:13.068581Z |
+| security | kept | direct | 1.0 | title | 2025-05-31T23:59:13.075558Z |
+
+## 🔹 HLJ: `REQ-016-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['documentation', 'support', '2fa']`
+**Validated tags:** `['documentation', 'support', '2fa']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'support', '2fa']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| 2fa | kept | direct | 1.0 | title | 2025-05-31T23:59:13.092132Z |
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:59:13.078785Z |
+| support | kept | direct | 1.0 | summary | 2025-05-31T23:59:13.088965Z |

@@ -1,0 +1,55 @@
+2025-07-10 22:38:03,660 [INFO] ===== POS Masking Run Started — Engine: stanza =====
+2025-07-10 22:38:03,660 [INFO] Input: keyword_extract/v1/step_2/filtered
+2025-07-10 22:38:03,661 [INFO] Output: keyword_extract/v1/step_2/pos_masked/stanza
+2025-07-10 22:38:03,661 [INFO] Log: sbert_fix/logs/keyword_extract/v1/step_2_3_posmask_20250710T223803.log
+2025-07-10 22:38:05,518 [INFO] Downloaded file to /Users/dvippatel/stanza_resources/resources.json
+2025-07-10 22:38:05,519 [INFO] Downloading default packages for language: en (English) ...
+2025-07-10 22:38:18,544 [INFO] Downloaded file to /Users/dvippatel/stanza_resources/en/default.zip
+2025-07-10 22:38:20,542 [INFO] Finished downloading models and saved to /Users/dvippatel/stanza_resources
+2025-07-10 22:38:20,542 [INFO] Checking for updates to resources.json in case models have been updated.  Note: this behavior can be turned off with download_method=None or download_method=DownloadMethod.REUSE_RESOURCES
+2025-07-10 22:38:20,592 [INFO] Downloaded file to /Users/dvippatel/stanza_resources/resources.json
+2025-07-10 22:38:20,594 [WARNING] Language en package default expects mwt, which has been added
+2025-07-10 22:38:20,847 [INFO] Loading these models for language: en (English):
+===============================
+| Processor | Package         |
+-------------------------------
+| tokenize  | combined        |
+| mwt       | combined        |
+| pos       | combined_charlm |
+===============================
+
+2025-07-10 22:38:20,847 [INFO] Using device: cpu
+2025-07-10 22:38:20,847 [INFO] Loading: tokenize
+2025-07-10 22:38:21,409 [INFO] Loading: mwt
+2025-07-10 22:38:21,414 [INFO] Loading: pos
+2025-07-10 22:38:22,165 [INFO] Done loading processors!
+2025-07-10 22:38:34,182 [INFO] POS-masked 100 files. (latest: keybert/meta70b/req-023/REQ-023-HLJ-Chunk_1-Item_4-v1.0_keybert.json)
+2025-07-10 22:38:45,257 [INFO] POS-masked 200 files. (latest: keybert/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_8-v1.0_keybert.json)
+2025-07-10 22:38:56,257 [INFO] POS-masked 300 files. (latest: keybert/opus4/req-008/REQ-008-HLJ-Chunk_3-Item_1-v1.0_keybert.json)
+2025-07-10 22:39:16,916 [INFO] POS-masked 400 files. (latest: keybert/opus4/req-025/REQ-025-HLJ-Chunk_2-Item_5-v1.0_keybert.json)
+2025-07-10 22:39:37,366 [INFO] POS-masked 500 files. (latest: keybert/opus4/req-005/REQ-005-HLJ-Chunk_1-Item_7-v1.0_keybert.json)
+2025-07-10 22:39:55,756 [INFO] POS-masked 600 files. (latest: keybert/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_1-v1.0_keybert.json)
+2025-07-10 22:40:17,329 [INFO] POS-masked 700 files. (latest: keybert/gpt41/req-009/REQ-009-HLJ-Chunk_1-Item_6-v1.0_keybert.json)
+2025-07-10 22:40:39,136 [INFO] POS-masked 800 files. (latest: keybert/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_5-v1.0_keybert.json)
+2025-07-10 22:41:00,596 [INFO] POS-masked 900 files. (latest: keybert/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_3-v1.0_keybert.json)
+2025-07-10 22:41:19,687 [INFO] POS-masked 1000 files. (latest: rake/meta70b/req-008/REQ-008-HLJ-Chunk_2-Item_8-v1.0_rake.json)
+2025-07-10 22:41:31,293 [INFO] POS-masked 1100 files. (latest: rake/meta70b/req-023/REQ-023-HLJ-Chunk_2-Item_11-v1.0_rake.json)
+2025-07-10 22:41:42,168 [INFO] POS-masked 1200 files. (latest: rake/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_6-v1.0_rake.json)
+2025-07-10 22:41:53,737 [INFO] POS-masked 1300 files. (latest: rake/opus4/req-008/REQ-008-HLJ-Chunk_2-Item_3-v1.0_rake.json)
+2025-07-10 22:42:10,901 [INFO] POS-masked 1400 files. (latest: rake/opus4/req-025/REQ-025-HLJ-Chunk_1-Item_3-v1.0_rake.json)
+2025-07-10 22:42:31,649 [INFO] POS-masked 1500 files. (latest: rake/opus4/req-005/REQ-005-HLJ-Chunk_3-Item_3-v1.0_rake.json)
+2025-07-10 22:42:47,444 [INFO] POS-masked 1600 files. (latest: rake/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_9-v1.0_rake.json)
+2025-07-10 22:43:04,704 [INFO] POS-masked 1700 files. (latest: rake/gpt41/req-009/REQ-009-HLJ-Chunk_1-Item_6-v1.0_rake.json)
+2025-07-10 22:43:26,266 [INFO] POS-masked 1800 files. (latest: rake/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_2-v1.0_rake.json)
+2025-07-10 22:43:45,044 [INFO] POS-masked 1900 files. (latest: rake/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_7-v1.0_rake.json)
+2025-07-10 22:44:01,641 [INFO] POS-masked 2000 files. (latest: yake/meta70b/req-008/REQ-008-HLJ-Chunk_1-Item_2-v1.0_yake.json)
+2025-07-10 22:44:12,765 [INFO] POS-masked 2100 files. (latest: yake/meta70b/req-023/REQ-023-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 22:44:24,025 [INFO] POS-masked 2200 files. (latest: yake/meta70b/req-028/REQ-028-HLJ-Chunk_1-Item_8-v1.0_yake.json)
+2025-07-10 22:44:33,762 [INFO] POS-masked 2300 files. (latest: yake/opus4/req-008/REQ-008-HLJ-Chunk_3-Item_3-v1.0_yake.json)
+2025-07-10 22:44:44,433 [INFO] POS-masked 2400 files. (latest: yake/opus4/req-025/REQ-025-HLJ-Chunk_1-Item_8-v1.0_yake.json)
+2025-07-10 22:44:54,771 [INFO] POS-masked 2500 files. (latest: yake/opus4/req-004/REQ-004-HLJ-Chunk_1-Item_10-v1.0_yake.json)
+2025-07-10 22:45:05,084 [INFO] POS-masked 2600 files. (latest: yake/opus4/req-020/REQ-020-HLJ-Chunk_1-Item_6-v1.0_yake.json)
+2025-07-10 22:45:14,826 [INFO] POS-masked 2700 files. (latest: yake/gpt41/req-014/REQ-014-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 22:45:24,959 [INFO] POS-masked 2800 files. (latest: yake/gpt41/req-015/REQ-015-HLJ-Chunk_1-Item_4-v1.0_yake.json)
+2025-07-10 22:45:34,582 [INFO] POS-masked 2900 files. (latest: yake/gpt41/req-021/REQ-021-HLJ-Chunk_1-Item_3-v1.0_yake.json)
+2025-07-10 22:45:43,576 [INFO] ✅ POS masking done! Total: 2991. Errors: 0. Log: sbert_fix/logs/keyword_extract/v1/step_2_3_posmask_20250710T223803.log

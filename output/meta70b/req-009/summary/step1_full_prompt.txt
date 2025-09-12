@@ -1,0 +1,184 @@
+# 📜 Strict HLJ Summary & Structure Planning Prompt (Upgraded JSON Version)
+
+> **Parameter:** `MAX_CHUNK_SIZE = 10`
+
+You are a **software-requirements architect** tasked with analyzing a complex stakeholder document and planning its conversion into **High-Level JSON (HLJ)** items.
+
+---
+
+## 🛠️  Global Hard Rules
+
+1. **Length cap** – The summary must be **≤ 40% of the original character count or ≤ 400 tokens**, whichever is *smaller*.
+2. **Fence markers** – **Wrap each section with the exact regex-friendly fences below.** *Do not alter them.*
+3. **Atomicity** – HLJ preview items must describe *one* clear action/output (e.g., “Design `POST /users/signup` endpoint”). Vague entries like “Do stuff” are forbidden.
+4. **Line-number provenance** – Include source line/paragraph numbers in `"line_source": "Ln X–Y"`. If the source span is unclear, use `"line_source": "(unknown)"`.
+5. **Fail-loud quota** – If you cannot meet any numeric constraint or required field, output the token `!!CONSTRAINT_BROKEN!!` at the end of the relevant section.
+6. **Hallucination flag** – Any feature or detail *not* found in the raw text must be prefixed with `[EXTRA]`.
+7. **Non-functional checklist** – Explicitly check for and preserve cues about **performance, security, scalability, usability, compliance/regulation, availability, maintainability** as appropriate.
+
+---
+
+## 🔹 Step 1 – Summary Generation
+
+Generate a **structured, developer-friendly summary** that respects Rules 1–7.
+*Preserve all functional & non-functional aspects, dates, deadlines, dependencies, regulations, stakeholder priorities, and critical terminology.*
+
+---
+
+## 🔹 Step 2 – HLJ Structure Planning (JSON Format)
+
+* **Do *not* generate full HLJs yet.**
+* Estimate the **total number of atomic HLJ items**.
+* If the count exceeds `MAX_CHUNK_SIZE`, split the preview list into sequential **chunks of MAX\_CHUNK\_SIZE items** and assign each chunk a focus.
+* For **each HLJ preview item**, produce a JSON object with:
+
+  * `"id"`
+  * `"title"` (1-line, atomic)
+  * `"domain"`
+  * `"subdomain"` (list)
+  * `"tags"` (max 3, canonical, lowercase)
+  * `"difficulty"` ("low" | "medium" | "high")
+  * `"priority"` ("low" | "medium" | "high")
+  * `"line_source"` (e.g., "Ln 10–13")
+  * (Optional: `"chunk"` and `"chunk_focus"` for easier grouping)
+
+*Assign IDs using this pattern: `REQ-009-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0`.*
+
+---
+
+## ✅  Required Output Format (**fences must stay verbatim**)
+
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-009",
+  "summary": "<your summary here>"
+}
+
+### === SUMMARY END ===
+
+### === HLJ\_META START ===
+
+{
+  "domain": "<Domain>",                 // e.g., "FinTech"
+  "subdomain": ["<Subdomain1>", ...],   // e.g., ["CustomerOnboarding"]
+  "canonical_tags": ["tag1", "tag2"],   // up to 3 tags
+  "difficulty": "<low|medium|high>",
+  "priority": "<low|medium|high>"
+}
+
+### === HLJ\_META END ===
+
+### === HLJ\_PLAN START ===
+
+{
+  "estimated_hlj_count": <integer>,
+  "chunk_count": <integer>,
+  "chunks": [
+    {
+      "chunk_id": "REQ-009-HLJ-Chunk_<chunk#>",
+      "focus": "<focus string or 'unknown'>",
+      "items": [
+        {
+          "id": "REQ-009-HLJ-Chunk_<chunk#>-Item_<item#>-v1.0",
+          "title": "<atomic 1-line title>",
+          "domain": "<Domain>",
+          "subdomain": ["<Subdomain1>", ...],
+          "tags": ["tag1", "tag2"],
+          "difficulty": "<low|medium|high>",
+          "priority": "<low|medium|high>",
+          "line_source": "Ln XX–YY"
+        }
+        // ... more items for this chunk
+      ]
+    }
+    // ... more chunks as needed
+  ]
+}
+
+### === HLJ\_PLAN END ===
+
+*If any rule is violated or information is missing ⇒ append `!!CONSTRAINT_BROKEN!!` on a new line.*
+
+---
+
+## 🔸  Input Placeholder
+
+```
+# Requirement req-009 (FinTech)
+
+FT-009: Scheduled Cross-Border Payments with FX Lock
+Title:
+Implementation of Scheduled Cross-Border Payments With Fluctuating Foreign Exchange Rate Lock
+
+Background & Objective:
+Cross-border payments are often subject to volatile FX rates, making it challenging for users to plan and predict costs for scheduled future transactions. This requirement focuses on implementing a scheduled payments feature for cross-border transfers, where users can “lock in” an FX rate for a defined time window, providing price certainty and transparency.
+
+Scope of Requirement:
+
+User Interface & Workflow:
+
+Extend the payments UI to allow users to schedule cross-border payments, select a desired execution date, and preview the applicable FX rate.
+
+Offer the option to “lock” the quoted FX rate for a predefined time window (e.g., 24 hours) after scheduling.
+
+Clearly display rate expiry details, conditions, and countdown timers.
+
+FX Rate Management:
+
+Integrate with FX rate providers to fetch real-time rates and manage rate lock commitments.
+
+If a user locks an FX rate but fails to fund the payment before expiry, automatically revert to the prevailing market rate and notify the user.
+
+Record all locked rates, associated metadata, and expiry timestamps for reconciliation and audit.
+
+Payment Processing:
+
+At execution time, validate that the original locked rate is still applicable. If expired, inform the user and require confirmation before proceeding at the new rate.
+
+Allow partial or full cancellation of scheduled payments before execution, with appropriate refund and notification logic.
+
+Compliance & Risk:
+
+Implement controls to prevent abuse of rate locks (e.g., repeated lock/cancel cycles to speculate on rates).
+
+Adhere to regulatory requirements for cross-border payments and FX disclosures, including required documentation for large-value transfers.
+
+Maintain audit logs for all scheduling, locking, and execution events.
+
+Notifications & Reporting:
+
+Send users confirmation, reminders, and expiry alerts via email, SMS, and in-app notifications.
+
+Provide dashboards for finance and compliance teams to monitor outstanding scheduled payments, locked rates, and exceptions.
+
+Edge Case Handling:
+
+If the FX provider is temporarily unavailable, restrict scheduling of new payments and clearly communicate the issue to users.
+
+Handle “orphaned” scheduled payments where the user’s account balance is insufficient at execution time (e.g., auto-cancel or retry logic).
+
+Dependencies & Constraints:
+
+Requires contractual agreements and stable APIs with one or more FX providers.
+
+Must ensure no negative impact on payment processing SLAs or regulatory deadlines.
+
+Feature to be rolled out in limited beta before general availability.
+
+Deliverables:
+
+Updated payment scheduling UI and logic
+
+FX provider integration modules
+
+Audit and reporting tools
+
+User and support documentation
+
+Beta rollout plan with feedback collection framework
+
+
+```
+
+**Respond only with text enclosed by the fences above. Do not include any extra commentary or explanation. If information is missing or ambiguous, use `"unknown"` for the value.**

@@ -1,0 +1,79 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "opus4",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Integrate with five major partner banks' APIs",
+  "summary": "Establish secure API integrations with at least five major banking partners to retrieve transaction data, implementing appropriate authentication, error handling, and data normalization for each bank's unique API format.",
+  "tags_v1": [
+    "integration",
+    "partners",
+    "api"
+  ],
+  "tags_v2": [
+    "integration",
+    "partners",
+    "api"
+  ],
+  "tags_v3": [
+    "integration",
+    "api",
+    "partners"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6841962337493896,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731846272945404,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "partners",
+      "aliases": [],
+      "cluster_id": "all_278",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6939952373504639,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "partners",
+      "method": "dedup_canonical"
+    }
+  ]
+}

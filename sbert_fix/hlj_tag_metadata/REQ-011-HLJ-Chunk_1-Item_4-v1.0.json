@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Display only qualified EMI plans at checkout with payment breakdown",
+  "summary": "During checkout, present users exclusively with EMI plans for which they are pre-qualified, including a detailed payment breakdown (principal, interest, tenure). This reduces friction and ensures users understand their financial obligations.",
+  "tags_v1": [
+    "emi",
+    "usability",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "emi"
+  ],
+  "tags_v3": [
+    "emi",
+    "creditworthiness",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "emi",
+      "aliases": [],
+      "cluster_id": "all_251",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7554923295974731,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "emi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "creditworthiness",
+      "aliases": [],
+      "cluster_id": "all_249",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7780352830886841,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "creditworthiness",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7148827314376831,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

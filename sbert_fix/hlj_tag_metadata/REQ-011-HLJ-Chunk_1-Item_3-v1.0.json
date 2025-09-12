@@ -1,0 +1,73 @@
+{
+  "hlj_id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-011",
+  "domain": "FinTech",
+  "title": "Ensure all scoring and eligibility checks complete within 2 seconds",
+  "summary": "All credit scoring retrieval and EMI eligibility checks must complete within a maximum of 2 seconds to ensure a seamless and responsive checkout experience for users. Latency must be continually monitored and optimized.",
+  "tags_v1": [
+    "performance",
+    "creditworthiness"
+  ],
+  "tags_v2": [
+    "performance",
+    "creditworthiness"
+  ],
+  "tags_v3": [
+    "performance",
+    "creditworthiness",
+    "checkout"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7370139956474304,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "creditworthiness",
+      "aliases": [],
+      "cluster_id": "all_249",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7722570300102234,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "creditworthiness",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "checkout",
+      "aliases": [],
+      "cluster_id": "all_462",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7538995146751404,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "checkout",
+      "method": "dedup_canonical"
+    }
+  ]
+}

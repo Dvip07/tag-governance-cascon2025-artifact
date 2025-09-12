@@ -1,0 +1,175 @@
+# 📝 Changelog for `req-030` — **gpt41**
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['ui-testing', 'parallel', 'staging']`
+**Validated tags:** `['parallel', 'staging']`
+**Tags added:** `[]`
+**Tags dropped:** `['ui-testing']`
+**Tags kept:** `['parallel', 'staging']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| parallel | kept | direct | 1.0 | title | 2025-05-31T23:59:16.978801Z |
+| staging | kept | direct | 1.0 | title | 2025-05-31T23:59:16.982688Z |
+| ui-testing | dropped | none | 0.0 | None | 2025-05-31T23:59:16.974396Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['ci-cd', 'blocking', 'critical-path']`
+**Validated tags:** `['ci/cd', 'blocking']`
+**Tags added:** `['ci/cd']`
+**Tags dropped:** `['ci-cd', 'critical-path']`
+**Tags kept:** `['blocking']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| blocking | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:17.062109Z |
+| ci-cd | dropped | direct | 1.0 | title | 2025-05-31T23:59:16.986594Z |
+| ci/cd | added | direct | 1.0 | title | 2025-05-31T23:59:16.986594Z |
+| critical-path | dropped | none | 0.0 | None | 2025-05-31T23:59:17.210546Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['coverage', 'analytics']`
+**Validated tags:** `['coverage', 'analytics']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['coverage', 'analytics']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| analytics | kept | direct | 1.0 | title | 2025-05-31T23:59:17.220624Z |
+| coverage | kept | direct | 1.0 | title | 2025-05-31T23:59:17.216359Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['coverage', 'visualization']`
+**Validated tags:** `['coverage', 'visualization']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['coverage', 'visualization']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| coverage | kept | direct | 1.0 | title | 2025-05-31T23:59:17.223722Z |
+| visualization | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:17.240612Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['logs', 'screenshots', 'video', '[INFERRED] artifact-retention']`
+**Validated tags:** `['logs', 'screenshots', 'video']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] artifact-retention']`
+**Tags kept:** `['logs', 'screenshots', 'video']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] artifact-retention | dropped | none | 0.0 | None | 2025-05-31T23:59:17.473039Z |
+| logs | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:17.314725Z |
+| screenshots | kept | direct | 1.0 | title | 2025-05-31T23:59:17.319057Z |
+| video | kept | direct | 1.0 | title | 2025-05-31T23:59:17.322908Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['flakiness', 'recommendations']`
+**Validated tags:** `['flakiness', 'recommendations']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['flakiness', 'recommendations']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| flakiness | kept | direct | 1.0 | title | 2025-05-31T23:59:17.476833Z |
+| recommendations | kept | direct | 1.0 | summary | 2025-05-31T23:59:17.486189Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['flakiness', 'headless']`
+**Validated tags:** `['flakiness', 'headless']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['flakiness', 'headless']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| flakiness | kept | direct | 1.0 | mapped_concepts | 2025-05-31T23:59:17.503044Z |
+| headless | kept | direct | 1.0 | title | 2025-05-31T23:59:17.506318Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['quarantine', 'flakiness']`
+**Validated tags:** `['quarantine', 'flakiness']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['quarantine', 'flakiness']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| flakiness | kept | direct | 1.0 | raw_requirement | 2025-05-31T23:59:17.588350Z |
+| quarantine | kept | direct | 1.0 | summary | 2025-05-31T23:59:17.516709Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['documentation', 'testing-guides']`
+**Validated tags:** `['documentation']`
+**Tags added:** `[]`
+**Tags dropped:** `['testing-guides']`
+**Tags kept:** `['documentation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | title | 2025-05-31T23:59:17.592451Z |
+| testing-guides | dropped | none | 0.0 | None | 2025-05-31T23:59:17.759267Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['browser-matrix', 'communication']`
+**Validated tags:** `['browser-matrix', 'communication']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['browser-matrix', 'communication']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| browser-matrix | kept | semantic | 0.7607663869857788 | source_fragment | 2025-05-31T23:59:17.893030Z |
+| communication | kept | direct | 1.0 | summary | 2025-05-31T23:59:17.904395Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['security', 'artifacts', '[INFERRED] compliance']`
+**Validated tags:** `['security', 'artifacts']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['security', 'artifacts']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-05-31T23:59:18.113249Z |
+| artifacts | kept | direct | 1.0 | summary | 2025-05-31T23:59:17.929776Z |
+| security | kept | direct | 1.0 | summary | 2025-05-31T23:59:17.917915Z |
+
+## 🔹 HLJ: `REQ-030-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['accessibility', 'compliance']`
+**Validated tags:** `['accessibility', 'compliance']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['accessibility', 'compliance']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| accessibility | kept | direct | 1.0 | title | 2025-05-31T23:59:18.117424Z |
+| compliance | kept | direct | 1.0 | title | 2025-05-31T23:59:18.120994Z |

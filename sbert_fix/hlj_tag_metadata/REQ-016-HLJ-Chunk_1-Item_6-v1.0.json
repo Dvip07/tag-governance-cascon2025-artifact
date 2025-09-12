@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Notify users of 2FA enforcement at login with clear setup instructions",
+  "summary": "On login, display clear, actionable prompts to inform users about 2FA requirements and provide guidance for setup, ensuring all affected users can comply with new or changing security policies.",
+  "tags_v1": [
+    "usability",
+    "compliance"
+  ],
+  "tags_v2": [
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "logging",
+    "security",
+    "2fa"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.723912239074707,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7048197388648987,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7477830052375793,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "2fa",
+      "aliases": [],
+      "cluster_id": "all_348",
+      "domains": [
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7237239480018616,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "2fa",
+      "method": "dedup_canonical"
+    }
+  ]
+}

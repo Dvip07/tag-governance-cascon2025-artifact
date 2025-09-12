@@ -1,0 +1,729 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design multi-step onboarding workflow for minor identity collection",
+    "summary": "Create a comprehensive multi-step onboarding workflow specifically designed for collecting minor identity information. The workflow must guide both minors and their guardians through the registration process with clear step indicators and age-appropriate UX elements.",
+    "tags": [
+      "onboarding",
+      "workflow",
+      "ux"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 15-16",
+    "reasoning": {
+      "source_summary_fragment": "multi-step process with seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.96
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.92
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "multi-step workflow",
+        "minor registration",
+        "user journey"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement guardian information prompt and collection step",
+    "summary": "Develop the guardian information collection interface within the onboarding flow, including necessary form fields, validation rules, and clear instructions for guardians to provide their details for KYC verification purposes.",
+    "tags": [
+      "onboarding",
+      "guardian",
+      "ux"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "guardian-based KYC verification",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.94
+        },
+        {
+          "tag": "guardian",
+          "confidence": 0.97
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "guardian data collection",
+        "form validation",
+        "KYC preparation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build seamless handoff mechanism for device/session switches",
+    "summary": "Create a robust handoff mechanism that allows users to seamlessly switch between devices or sessions during the onboarding process. This includes secure session transfer, progress preservation, and clear communication about the handoff process.",
+    "tags": [
+      "onboarding",
+      "session",
+      "ux",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "onboarding",
+          "confidence": 0.93
+        },
+        {
+          "tag": "session",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.88
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "session management",
+        "device handoff",
+        "state preservation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate third-party KYC provider API for real-time verification",
+    "summary": "Implement comprehensive integration with certified third-party KYC provider APIs to enable real-time identity verification for guardians. This includes API authentication, request/response handling, error management, and timeout configurations.",
+    "tags": [
+      "kyc",
+      "integration",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "third-party KYC provider integration",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.97
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.96
+        },
+        {
+          "tag": "api",
+          "confidence": 0.98
+        }
+      ],
+      "mapped_concepts": [
+        "API integration",
+        "real-time verification",
+        "KYC provider"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement KYC failure/pending status feedback system",
+    "summary": "Develop a comprehensive feedback system that clearly communicates KYC verification status to users, including failure reasons, pending statuses, and next steps. The system should provide actionable guidance for resolution of verification issues.",
+    "tags": [
+      "kyc",
+      "ux",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "KYC",
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 22",
+    "reasoning": {
+      "source_summary_fragment": "real-time guardian KYC processing",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.91
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "status feedback",
+        "error handling",
+        "user communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop guardian switching logic with KYC restart enforcement",
+    "summary": "Create logic to handle guardian switching scenarios where a different guardian needs to complete the verification process. This includes enforcing complete KYC restart for the new guardian and managing state transitions appropriately.",
+    "tags": [
+      "kyc",
+      "guardian",
+      "workflow"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "KYC"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "guardian switching support",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.92
+        },
+        {
+          "tag": "guardian",
+          "confidence": 0.95
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "guardian change",
+        "KYC restart",
+        "state management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create unique identity checking system to prevent duplicates",
+    "summary": "Build a comprehensive identity deduplication system that checks for existing accounts using various identity markers. The system should prevent duplicate registrations while handling edge cases like twins or similar names at the same address.",
+    "tags": [
+      "identity",
+      "validation",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "duplicate prevention",
+      "tag_metadata_reference": [
+        {
+          "tag": "identity",
+          "confidence": 0.93
+        },
+        {
+          "tag": "validation",
+          "confidence": 0.91
+        },
+        {
+          "tag": "security",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "deduplication",
+        "identity matching",
+        "fraud prevention"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Implement COPPA compliance checks and validations",
+    "summary": "Develop comprehensive COPPA (Children's Online Privacy Protection Act) compliance mechanisms including age verification, parental consent collection, and data handling restrictions for users under 13 years of age.",
+    "tags": [
+      "compliance",
+      "coppa",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 29",
+    "reasoning": {
+      "source_summary_fragment": "strict compliance with COPPA/GDPR-K regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "coppa",
+          "confidence": 0.98
+        },
+        {
+          "tag": "security",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "COPPA requirements",
+        "parental consent",
+        "age verification"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Implement GDPR-K compliance checks and validations",
+    "summary": "Build GDPR-K (GDPR for Kids) compliance features ensuring proper data protection for minors in EU jurisdictions, including enhanced consent mechanisms, data minimization, and special safeguards for children's personal data.",
+    "tags": [
+      "compliance",
+      "gdpr",
+      "security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 29",
+    "reasoning": {
+      "source_summary_fragment": "strict compliance with COPPA/GDPR-K regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "gdpr",
+          "confidence": 0.96
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "GDPR-K requirements",
+        "data protection",
+        "minor safeguards"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Configure data encryption at rest for all sensitive information",
+    "summary": "Implement comprehensive encryption at rest for all sensitive data including personal information, KYC documents, and audit logs. This includes selecting appropriate encryption algorithms, key management, and ensuring compliance with financial regulations.",
+    "tags": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "All data must be encrypted at rest/transit",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "encryption at rest",
+        "key management",
+        "data protection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": null,
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Configure data encryption in transit for all communications",
+    "summary": "Implement TLS 1.3+ encryption for all API endpoints and data transfers between client applications, internal services, and third-party KYC providers. Ensure certificate pinning and proper key rotation for guardian-minor data exchanges.",
+    "tags": [
+      "security",
+      "encryption",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "All data must be encrypted at rest/transit",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.98
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "TLS encryption",
+        "data in transit",
+        "GDPR-K compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Build comprehensive audit trail system with minor-specific flags",
+    "summary": "Develop audit logging system capturing all minor account actions, guardian approvals, and KYC verification events. Include immutable timestamps, actor IDs, and compliance flags for COPPA/GDPR-K regulatory reviews.",
+    "tags": [
+      "audit",
+      "compliance",
+      "logging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 31",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive audit trails. Dependencies include certified KYC providers",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit trails",
+        "compliance tracking",
+        "regulatory requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Design mobile-optimized responsive onboarding interface",
+    "summary": "Create responsive UI layouts optimized for mobile devices supporting minor-to-guardian handoff flows. Include touch-friendly controls, progressive disclosure patterns, and seamless transition between minor and guardian screens.",
+    "tags": [
+      "mobile",
+      "ux",
+      "responsive"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "mobile-optimized UX, and comprehensive audit trails",
+      "tag_metadata_reference": [
+        {
+          "tag": "mobile",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.93
+        },
+        {
+          "tag": "responsive",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "mobile optimization",
+        "responsive design",
+        "user experience"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Create jargon-free UI copy for guardian involvement steps",
+    "summary": "Write clear, accessible UI text explaining guardian verification requirements without financial or legal jargon. Focus on simple language suitable for diverse educational backgrounds and age groups.",
+    "tags": [
+      "ux",
+      "content",
+      "accessibility",
+      "[INFERRED] i18n"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 35",
+    "reasoning": {
+      "source_summary_fragment": "seamless minor-to-guardian handoff",
+      "tag_metadata_reference": [
+        {
+          "tag": "ux",
+          "confidence": 0.91
+        },
+        {
+          "tag": "content",
+          "confidence": 0.94
+        },
+        {
+          "tag": "accessibility",
+          "confidence": 0.9
+        },
+        {
+          "tag": "i18n",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "user interface copy",
+        "accessibility",
+        "content strategy"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "i18n",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-002"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-002-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Update user-facing onboarding documentation for minor accounts",
+    "summary": "Create comprehensive help documentation covering minor account creation, guardian verification process, and troubleshooting guides. Include visual aids and step-by-step instructions for both minors and guardians.",
+    "tags": [
+      "documentation",
+      "support",
+      "content"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 38",
+    "reasoning": {
+      "source_summary_fragment": "Digital onboarding workflow enabling minors",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.96
+        },
+        {
+          "tag": "support",
+          "confidence": 0.92
+        },
+        {
+          "tag": "content",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "user documentation",
+        "help content",
+        "support materials"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-002"
+  }
+]

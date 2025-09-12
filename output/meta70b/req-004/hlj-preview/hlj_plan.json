@@ -1,0 +1,257 @@
+{
+  "estimated_hlj_count": 15,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-004-HLJ-Chunk_1",
+      "focus": "Audit Log Infrastructure",
+      "items": [
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Refactor audit logs to include user-specific metadata",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging"
+          ],
+          "tags": [
+            "metadata",
+            "auditlogs"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 10-13"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Classify log entries as personal or operational data",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "GDPRCompliance"
+          ],
+          "tags": [
+            "gdpr",
+            "dataclassification"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 15-17"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement data lineage mechanism",
+          "domain": "FinTech",
+          "subdomain": [
+            "AuditLogging",
+            "DataLineage"
+          ],
+          "tags": [
+            "datalineage",
+            "auditlogs"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 20-22"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Trigger automated right-to-erasure workflow",
+          "domain": "FinTech",
+          "subdomain": [
+            "GDPRCompliance",
+            "RightToErasure"
+          ],
+          "tags": [
+            "gdpr",
+            "righttoerasure"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25-28"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement dual-mode deletion",
+          "domain": "FinTech",
+          "subdomain": [
+            "GDPRCompliance",
+            "DataDeletion"
+          ],
+          "tags": [
+            "gdpr",
+            "datadeletion"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 30-33"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log right-to-erasure actions",
+          "domain": "FinTech",
+          "subdomain": [
+            "GDPRCompliance",
+            "AuditLogging"
+          ],
+          "tags": [
+            "gdpr",
+            "auditlogs"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 35-37"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Handle edge cases",
+          "domain": "FinTech",
+          "subdomain": [
+            "GDPRCompliance",
+            "EdgeCases"
+          ],
+          "tags": [
+            "gdpr",
+            "edgecases"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 40-43"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Ensure security and integrity",
+          "domain": "FinTech",
+          "subdomain": [
+            "Security",
+            "Integrity"
+          ],
+          "tags": [
+            "security",
+            "integrity"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 45-48"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide APIs for compliance teams",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "APIs"
+          ],
+          "tags": [
+            "compliance",
+            "apis"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 50-53"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Implement dashboard views and reports",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Reporting"
+          ],
+          "tags": [
+            "compliance",
+            "reporting"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 55-58"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-004-HLJ-Chunk_2",
+      "focus": "Testing and Validation",
+      "items": [
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Perform integration and regression tests",
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "Validation"
+          ],
+          "tags": [
+            "testing",
+            "validation"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 60-63"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Simulate edge cases",
+          "domain": "FinTech",
+          "subdomain": [
+            "Testing",
+            "EdgeCases"
+          ],
+          "tags": [
+            "testing",
+            "edgecases"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 65-68"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Provide training materials for compliance officers",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Training"
+          ],
+          "tags": [
+            "compliance",
+            "training"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 70-73"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Deliver updated log schemas and API documentation",
+          "domain": "FinTech",
+          "subdomain": [
+            "Documentation",
+            "APIs"
+          ],
+          "tags": [
+            "documentation",
+            "apis"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 75-78"
+        },
+        {
+          "id": "REQ-004-HLJ-Chunk_2-Item_5-v1.0",
+          "title": "Provide implementation plan and migration guide",
+          "domain": "FinTech",
+          "subdomain": [
+            "Implementation",
+            "Migration"
+          ],
+          "tags": [
+            "implementation",
+            "migration"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 80-83"
+        }
+      ]
+    }
+  ]
+}

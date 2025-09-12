@@ -1,0 +1,188 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_11-v1.0",
+    "title": "Create contact merge history logging system with per-contact audit trail",
+    "summary": "Implement comprehensive logging system that tracks all merge operations with detailed per-contact audit trails. System must capture before/after field states, timestamp all changes, and maintain queryable history for compliance and debugging purposes.",
+    "tags": [
+      "logging",
+      "audit",
+      "history",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Data Synchronization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive change logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.94
+        },
+        {
+          "tag": "history",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "change tracking",
+        "data history"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-020"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_12-v1.0",
+    "title": "Implement webhook conflict detection and sync pause mechanism",
+    "summary": "Build conflict detection system for webhook events that identifies synchronization conflicts between CRM and local data. System must automatically pause sync operations when conflicts detected and provide clear warnings to users.",
+    "tags": [
+      "webhooks",
+      "conflict",
+      "sync-control"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Data Synchronization"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases handle webhook conflicts by pausing sync with warnings",
+      "tag_metadata_reference": [
+        {
+          "tag": "webhooks",
+          "confidence": 0.93
+        },
+        {
+          "tag": "conflict",
+          "confidence": 0.92
+        },
+        {
+          "tag": "sync-control",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "conflict detection",
+        "sync pause",
+        "webhook handling"
+      ]
+    },
+    "source_hlj_id": "REQ-020"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_13-v1.0",
+    "title": "Build 24-hour merge rollback functionality",
+    "summary": "Develop rollback capability allowing users to undo contact merge operations within 24-hour window. System must restore pre-merge state for all affected contacts and update any dependent records accordingly.",
+    "tags": [
+      "rollback",
+      "undo",
+      "data-recovery"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 31",
+    "reasoning": {
+      "source_summary_fragment": "24-hour rollback capability",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.94
+        },
+        {
+          "tag": "undo",
+          "confidence": 0.91
+        },
+        {
+          "tag": "data-recovery",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "merge rollback",
+        "time-based undo",
+        "state restoration"
+      ]
+    },
+    "source_hlj_id": "REQ-020"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_14-v1.0",
+    "title": "Update onboarding guide with CRM sync and duplicate management documentation",
+    "summary": "Create comprehensive documentation covering CRM sync setup, authentication process, duplicate detection configuration, and merge workflow best practices. Include troubleshooting guides and common use case examples.",
+    "tags": [
+      "docs",
+      "onboarding",
+      "user-guide"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 35",
+    "reasoning": {
+      "source_summary_fragment": "Includes updated onboarding documentation for CRM sync and duplicate management features",
+      "tag_metadata_reference": [
+        {
+          "tag": "docs",
+          "confidence": 0.95
+        },
+        {
+          "tag": "onboarding",
+          "confidence": 0.93
+        },
+        {
+          "tag": "user-guide",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "documentation update",
+        "user onboarding",
+        "feature guide"
+      ]
+    },
+    "source_hlj_id": "REQ-020"
+  }
+]

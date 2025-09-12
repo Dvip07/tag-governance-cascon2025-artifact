@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-002",
+  "domain": "FinTech",
+  "title": "Maintain audit trails with minor record flags for all onboarding attempts",
+  "summary": "Record detailed audit logs of every onboarding attempt, flagging records involving minors to support compliance checks, investigations, and system maintainability in line with regional laws.",
+  "tags_v1": [
+    "compliance",
+    "maintainability"
+  ],
+  "tags_v2": [
+    "compliance",
+    "maintainability"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "maintainability",
+    "gdpr"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7245156168937683,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7330825924873352,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "maintainability",
+      "aliases": [],
+      "cluster_id": "all_164",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6850007176399231,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "maintainability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6981467008590698,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    }
+  ]
+}

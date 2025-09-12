@@ -1,0 +1,173 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-023",
+  "summary": "This requirement mandates a scalable feature flag system enabling geo-targeted, progressive rollout of platform features, using real-time Geo-IP segmentation at country, region, and city level. Admins must control flags from a portal, enabling percentage-based and dynamic rollouts, with immediate global effect. Integration with real-time analytics is required to monitor adoption, error rates, and conversion KPIs by geography and cohort, with dashboards and automated alerts for negative impacts like error spikes. One-click rollback with instant system-wide effect and full traceability is mandatory. User experience needs include notification of staged or beta participation, opt-out options, and compliance with regional data privacy laws (GDPR/CCPA). The system must robustly handle users with ambiguous or mismatched geo-data, support audit trails, and create comprehensive documentation for product and developer enablement. Dependencies include location-aware authentication/session services and BI integration. KPIs: rollback under 30 seconds, rollout error rate below 0.2%, and adoption per geo-segment measured within 72 hours."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["FeatureManagement", "GeoTargeting", "Analytics"],
+  "canonical_tags": ["feature-flags", "real-time-analytics", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 13,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-023-HLJ-Chunk_1",
+      "focus": "Feature Flag System, Geo Targeting, Admin Control, Real-Time Analytics (Core Functionality & Observability)",
+      "items": [
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Build scalable feature flag platform supporting geo-segmentation",
+          "domain": "SaaS",
+          "subdomain": ["FeatureManagement", "GeoTargeting"],
+          "tags": ["feature-flags", "scalable"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 9–11"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Enable percentage-based feature rollouts to geo-segments",
+          "domain": "SaaS",
+          "subdomain": ["FeatureManagement", "GeoTargeting"],
+          "tags": ["feature-flags", "deployment"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12–12"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Develop admin portal for dynamic feature flag adjustment with instant effect",
+          "domain": "SaaS",
+          "subdomain": ["FeatureManagement", "AdminPortal"],
+          "tags": ["admin", "feature-flags"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 13–14"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Integrate real-time Geo-IP resolution for user location at feature evaluation",
+          "domain": "SaaS",
+          "subdomain": ["GeoTargeting"],
+          "tags": ["geo-ip", "real-time"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Implement fallback handling for ambiguous geo-data (VPN, proxies, missing info)",
+          "domain": "SaaS",
+          "subdomain": ["GeoTargeting"],
+          "tags": ["fault-tolerance", "geo-ip"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 18–19"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Deliver real-time analytics dashboards showing feature adoption, error rates, conversion KPIs by geography/cohort",
+          "domain": "SaaS",
+          "subdomain": ["Analytics"],
+          "tags": ["dashboard", "real-time-analytics"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21–22"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Automate alerts and enable one-click rollback for negative rollout impact",
+          "domain": "SaaS",
+          "subdomain": ["FeatureManagement", "Analytics"],
+          "tags": ["alerting", "rollback"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 23–24"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Notify users of beta/staged rollout participation and offer opt-out",
+          "domain": "SaaS",
+          "subdomain": ["UserExperience"],
+          "tags": ["communication", "user-option"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 26–27"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Ensure compliance with regional data privacy laws (GDPR, CCPA) for geo-targeted features",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["compliance", "privacy"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 28–29"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Flag and audit toggle events for geo-IP mismatches and border crossings",
+          "domain": "SaaS",
+          "subdomain": ["Analytics", "Audit"],
+          "tags": ["audit", "geo-ip"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 31–32"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-023-HLJ-Chunk_2",
+      "focus": "Rollback, Documentation, Dependencies, KPIs, Compliance and Enablement",
+      "items": [
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Implement instant rollback with full traceability for feature flags",
+          "domain": "SaaS",
+          "subdomain": ["FeatureManagement"],
+          "tags": ["rollback", "traceability"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 33–33"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Develop onboarding materials and documentation for feature flag usage and analytics",
+          "domain": "SaaS",
+          "subdomain": ["Documentation", "Enablement"],
+          "tags": ["documentation", "training"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 35–36"
+        },
+        {
+          "id": "REQ-023-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Maintain changelog of all flag adjustments, rollouts, and rollbacks for audits",
+          "domain": "SaaS",
+          "subdomain": ["Audit", "Compliance"],
+          "tags": ["audit", "changelog"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 37–38"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

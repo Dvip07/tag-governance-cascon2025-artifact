@@ -1,0 +1,135 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Provide dashboards for operations and compliance monitoring",
+  "summary": "Develop interactive dashboards that allow operational teams and compliance officers to monitor key metrics, review workflow statuses, and ensure regulatory reporting obligations are met. Dashboards must support real-time visibility into system state and compliance adherence.",
+  "tags_v1": [
+    "dashboard",
+    "monitoring",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "monitoring"
+  ],
+  "tags_v3": [
+    "income",
+    "eligibility",
+    "rules",
+    "monitoring",
+    "compliance",
+    "dashboard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "income",
+      "aliases": [],
+      "cluster_id": "all_256",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7310178279876709,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "all_5",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7506770491600037,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6982587575912476,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.739370584487915,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7362979054450989,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7574746012687683,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

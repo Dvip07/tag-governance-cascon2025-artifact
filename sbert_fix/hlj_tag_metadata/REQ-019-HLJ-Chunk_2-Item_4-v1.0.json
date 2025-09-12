@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-019-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "opus4",
+  "req_id": "req-019",
+  "domain": "SaaS",
+  "title": "Implement PDF export functionality for cohort analysis",
+  "summary": "Create PDF export capability generating formatted reports with cohort visualizations, summary statistics, and time-decay analysis. Reports should include company branding and configurable sections.",
+  "tags_v1": [
+    "export",
+    "pdf",
+    "reporting"
+  ],
+  "tags_v2": [
+    "export",
+    "pdf"
+  ],
+  "tags_v3": [
+    "pdf",
+    "export",
+    "reporting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "pdf",
+      "aliases": [],
+      "cluster_id": "all_318",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7128238677978516,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pdf",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "all_126",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7280640602111816,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7136740684509277,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

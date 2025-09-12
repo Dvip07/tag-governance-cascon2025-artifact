@@ -1,0 +1,52 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_2-Item_5-v1.0",
+  "model": "meta70b",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "If batch reconciliation fails, trigger alerts and restrict further settlement actions until resolved",
+  "summary": "Upon batch reconciliation failure, trigger alerts and restrict further settlement actions until the issue is resolved, ensuring data integrity.",
+  "tags_v1": [
+    "reconciliation",
+    "alerting",
+    "[INFERRED] data-integrity"
+  ],
+  "tags_v2": [
+    "reconciliation"
+  ],
+  "tags_v3": [
+    "reconciliation",
+    "data-integrity"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7573360204696655,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-integrity",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7344104051589966,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-integrity",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Ensure instant card status sync across card processor, fraud, authorization systems",
+  "summary": "Implement mechanisms for immediate synchronization of card status updates across card processing, fraud detection, and authorization platforms. Guarantee that system-of-record status changes propagate in real-time to prevent inconsistencies or delay.",
+  "tags_v1": [
+    "integration",
+    "synchronization",
+    "[INFERRED] consistency"
+  ],
+  "tags_v2": [
+    "synchronization"
+  ],
+  "tags_v3": [
+    "backend",
+    "sync",
+    "api"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7295762896537781,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sync",
+      "aliases": [
+        "synchronization"
+      ],
+      "cluster_id": "all_166",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7550375461578369,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "synchronization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7211382985115051,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    }
+  ]
+}

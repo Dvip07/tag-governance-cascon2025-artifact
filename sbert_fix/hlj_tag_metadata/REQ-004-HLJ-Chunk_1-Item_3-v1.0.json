@@ -1,0 +1,154 @@
+{
+  "hlj_id": "REQ-004-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-004",
+  "domain": "FinTech",
+  "title": "Implement data lineage tracking for log downstream dependencies",
+  "summary": "Introduce tools and schema extensions to enable tracing of each log entry’s downstream usage, supporting understanding of how log data propagates through systems and strengthening traceability for compliance and RtE operations.",
+  "tags_v1": [
+    "traceability",
+    "gdpr"
+  ],
+  "tags_v2": [
+    "traceability",
+    "gdpr"
+  ],
+  "tags_v3": [
+    "traceability",
+    "lineage",
+    "tracking",
+    "audit",
+    "gdpr",
+    "auditlogs",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "traceability",
+      "aliases": [],
+      "cluster_id": "all_84",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7550338506698608,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "traceability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "lineage",
+      "aliases": [],
+      "cluster_id": "all_310",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.713431715965271,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "lineage",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tracking",
+      "aliases": [],
+      "cluster_id": "all_298",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.72017502784729,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tracking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "all_25",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7559183239936829,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "all_168",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7216365933418274,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "auditlogs",
+      "aliases": [
+        "auditing"
+      ],
+      "cluster_id": "all_408",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8089972734451294,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "auditlogs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7222209572792053,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

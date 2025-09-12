@@ -1,0 +1,168 @@
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-016-HLJ-Chunk_1",
+      "focus": "Role-based 2FA logic and multi-app enforcement",
+      "items": [
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Enforce mandatory 2FA for Admin, Finance, and DevOps roles",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication"
+          ],
+          "tags": [
+            "security",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 9\u201310"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Allow optional 2FA opt-in for User and Viewer roles",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication"
+          ],
+          "tags": [
+            "usability",
+            "security"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 11"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Automatically update 2FA enforcement policy on role change",
+          "domain": "SaaS",
+          "subdomain": [
+            "UserManagement",
+            "Authentication"
+          ],
+          "tags": [
+            "security",
+            "maintainability"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 12"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement app-specific override to exempt mobile app users from mandatory 2FA",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication",
+            "Mobile"
+          ],
+          "tags": [
+            "usability",
+            "security"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 15\u201316"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Ensure web and desktop apps always enforce 2FA as configured",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication",
+            "Desktop",
+            "Web"
+          ],
+          "tags": [
+            "security",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Notify users of 2FA enforcement at login with clear setup instructions",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication",
+            "Onboarding"
+          ],
+          "tags": [
+            "usability",
+            "compliance"
+          ],
+          "difficulty": "low",
+          "priority": "high",
+          "line_source": "Ln 20"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Alert users when logging in from unsupported channels and guide next steps",
+          "domain": "SaaS",
+          "subdomain": [
+            "Authentication"
+          ],
+          "tags": [
+            "usability"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Log all policy exceptions, including required 2FA users logging in via mobile",
+          "domain": "SaaS",
+          "subdomain": [
+            "Security",
+            "Logging"
+          ],
+          "tags": [
+            "security",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 24"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide an admin report listing all users out of 2FA compliance or exempted",
+          "domain": "SaaS",
+          "subdomain": [
+            "Reporting",
+            "Security"
+          ],
+          "tags": [
+            "compliance",
+            "security"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 25\u201326"
+        },
+        {
+          "id": "REQ-016-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Update help articles and admin guides for 2FA changes",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "maintainability",
+            "usability"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 28"
+        }
+      ]
+    }
+  ]
+}

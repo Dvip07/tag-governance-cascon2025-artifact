@@ -1,0 +1,75 @@
+{
+  "hlj_id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-026",
+  "domain": "SaaS",
+  "title": "Define configurable behavioral triggers for NPS surveys",
+  "summary": "Enable administrators to specify configurable behavioral triggers that determine when NPS surveys are presented to users, such as after onboarding or key feature adoption. This flexibility ensures targeted and relevant feedback collection based on user actions.",
+  "tags_v1": [
+    "nps",
+    "automation"
+  ],
+  "tags_v2": [
+    "nps",
+    "automation"
+  ],
+  "tags_v3": [
+    "nps",
+    "automation",
+    "behavioral_intelligence"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "nps",
+      "aliases": [],
+      "cluster_id": "all_217",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7583128213882446,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nps",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7472285032272339,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "behavioral_intelligence",
+      "aliases": [
+        "behavioral-intelligence"
+      ],
+      "cluster_id": "all_218",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7377495765686035,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "behavioral_intelligence",
+      "method": "dedup_canonical"
+    }
+  ]
+}

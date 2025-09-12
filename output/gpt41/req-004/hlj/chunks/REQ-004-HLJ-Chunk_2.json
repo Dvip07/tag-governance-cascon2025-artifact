@@ -1,0 +1,165 @@
+{
+  "CHUNK_ID": "REQ-004-HLJ-Chunk_2",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Provide APIs for compliance team review/approval/denial of deletion/redaction actions (Ln 31\u201332)",
+    "Implement dashboards and scheduled reports for RtE monitoring and metrics (Ln 34\u201335)",
+    "Log all RtE actions in real-time to a secure, access-controlled meta-log system (Ln 36)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 11,
+        "schema_version": "2025-05-17",
+        "id": "REQ-004-HLJ-Chunk_2-Item_1-v1.0",
+        "title": "Provide APIs for compliance team review/approval/denial of deletion/redaction actions",
+        "summary": "Develop and expose secure APIs that allow the compliance team to review, approve, or deny deletion and redaction actions as part of the right-to-erasure process. These APIs must enforce access controls and record all review decisions for full auditability.",
+        "tags": [
+          "api",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "AuditLogging",
+          "Compliance"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 31\u201332",
+        "reasoning": {
+          "source_summary_fragment": "include APIs for compliance team review/approval, and enforce access controls",
+          "tag_metadata_reference": [
+            {
+              "tag": "api",
+              "confidence": 0.94
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "review/approval APIs",
+            "compliance workflow control",
+            "access control",
+            "audit log enhancement"
+          ]
+        },
+        "inference_notes": {},
+        "source_hlj_id": "REQ-004"
+      },
+      {
+        "seq_no": 12,
+        "schema_version": "2025-05-17",
+        "id": "REQ-004-HLJ-Chunk_2-Item_2-v1.0",
+        "title": "Implement dashboards and scheduled reports for RtE monitoring and metrics",
+        "summary": "Build dashboards and enable scheduled reporting to monitor right-to-erasure (RtE) operations and related metrics in real time. These tools support operational and compliance oversight, enabling visibility into system actions and exceptions.",
+        "tags": [
+          "dashboard",
+          "monitoring",
+          "[INFERRED] reporting"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "AuditLogging",
+          "Reporting"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "medium",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 34\u201335",
+        "reasoning": {
+          "source_summary_fragment": "Real-time monitoring, dashboarding, and comprehensive operational reporting are required",
+          "tag_metadata_reference": [
+            {
+              "tag": "dashboard",
+              "confidence": 0.93
+            },
+            {
+              "tag": "monitoring",
+              "confidence": 0.92
+            },
+            {
+              "tag": "reporting",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "RtE monitoring",
+            "scheduled reporting",
+            "metrics dashboard"
+          ]
+        },
+        "low_confidence_reason": "",
+        "inference_notes": {
+          "tag_added": "reporting",
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-004"
+      },
+      {
+        "seq_no": 13,
+        "schema_version": "2025-05-17",
+        "id": "REQ-004-HLJ-Chunk_2-Item_3-v1.0",
+        "title": "Log all RtE actions in real-time to a secure, access-controlled meta-log system",
+        "summary": "Ensure that every right-to-erasure (RtE) action is logged in real time to a secure meta-log system with strict access controls. These meta-logs must be tamper-evident, cryptographically validated, and support audit and compliance requirements.",
+        "tags": [
+          "real-time",
+          "meta-log",
+          "[INFERRED] security"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "AuditLogging",
+          "Security"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 36",
+        "reasoning": {
+          "source_summary_fragment": "All deletion/redaction actions must be secure, tamper-evident, and logged with detailed meta-logs, requiring cryptographic validation and hash chaining.",
+          "tag_metadata_reference": [
+            {
+              "tag": "real-time",
+              "confidence": 0.92
+            },
+            {
+              "tag": "meta-log",
+              "confidence": 0.94
+            },
+            {
+              "tag": "security",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "real-time RtE logging",
+            "secure meta-logs",
+            "access control enforcement",
+            "cryptographic chaining"
+          ]
+        },
+        "low_confidence_reason": "",
+        "inference_notes": {
+          "tag_added": "security",
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-004"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "",
+    "DATA": []
+  },
+  "errors": []
+}

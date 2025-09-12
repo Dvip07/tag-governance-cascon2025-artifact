@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Normalize transaction timestamps to UTC and add original timezone metadata",
+  "summary": "Standardize all transaction timestamps to UTC while preserving and flagging the original timezone metadata. This ensures temporal consistency across data from multiple partners and enhances downstream processing reliability.",
+  "tags_v1": [
+    "timezone",
+    "data",
+    "metadata"
+  ],
+  "tags_v2": [
+    "timezone",
+    "data",
+    "metadata"
+  ],
+  "tags_v3": [
+    "data",
+    "deduplication",
+    "timezone",
+    "metadata",
+    "consistency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "all_75",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6930363178253174,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deduplication",
+      "aliases": [],
+      "cluster_id": "all_73",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7016517519950867,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deduplication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timezone",
+      "aliases": [],
+      "cluster_id": "all_76",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7419048547744751,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timezone",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "all_77",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7042086720466614,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "consistency",
+      "aliases": [],
+      "cluster_id": "all_108",
+      "domains": [
+        "Compliance and Security",
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7203634977340698,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consistency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

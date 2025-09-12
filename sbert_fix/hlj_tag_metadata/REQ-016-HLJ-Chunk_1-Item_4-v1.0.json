@@ -1,0 +1,110 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Implement app-specific override to exempt mobile app users from mandatory 2FA",
+  "summary": "Configure a temporary exemption for mobile application users, allowing them to bypass mandatory 2FA until 2FA functionality becomes available on mobile. The override ensures mobile access is not interrupted while bringing the mobile app into compliance.",
+  "tags_v1": [
+    "usability",
+    "security"
+  ],
+  "tags_v2": [
+    "security"
+  ],
+  "tags_v3": [
+    "2fa",
+    "mobile",
+    "exemption",
+    "security",
+    "appspecificoverrides"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "2fa",
+      "aliases": [],
+      "cluster_id": "all_348",
+      "domains": [
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7021318674087524,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "2fa",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "mobile",
+      "aliases": [],
+      "cluster_id": "all_302",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7184910774230957,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "mobile",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "exemption",
+      "aliases": [
+        "exemptions"
+      ],
+      "cluster_id": "all_157",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7112751007080078,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exemption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7302427887916565,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "appspecificoverrides",
+      "aliases": [],
+      "cluster_id": "all_461",
+      "domains": [
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.8048645853996277,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "appspecificoverrides",
+      "method": "dedup_canonical"
+    }
+  ]
+}

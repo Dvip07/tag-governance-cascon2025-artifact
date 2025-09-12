@@ -1,0 +1,156 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Ensure screening completes before account activation with <3s per check",
+  "summary": "Guarantee that all AML and sanctions screening processes are fully completed before activating any customer account. Each check should not exceed three seconds, supporting strong performance and customer experience.",
+  "tags_v1": [
+    "performance",
+    "aml",
+    "[INFERRED] onboarding"
+  ],
+  "tags_v2": [
+    "performance",
+    "aml"
+  ],
+  "tags_v3": [
+    "aml",
+    "compliance",
+    "performance",
+    "api",
+    "risk",
+    "regulation",
+    "onboarding"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "aml",
+      "aliases": [],
+      "cluster_id": "all_11",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6911138296127319,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7137492299079895,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.707374095916748,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.682187557220459,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "risk",
+      "aliases": [],
+      "cluster_id": "all_6",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6920561790466309,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "risk",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7011603116989136,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulatory",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "onboarding",
+      "aliases": [],
+      "cluster_id": "all_82",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7186721563339233,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "onboarding",
+      "method": "dedup_canonical"
+    }
+  ]
+}

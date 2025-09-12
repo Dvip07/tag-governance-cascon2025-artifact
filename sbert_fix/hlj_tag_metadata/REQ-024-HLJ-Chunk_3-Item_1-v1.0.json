@@ -1,0 +1,77 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_3-Item_1-v1.0",
+  "model": "opus4",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Implement nighttime detection and automatic rescheduling",
+  "summary": "Develop timezone-aware notification scheduling that detects recipient's nighttime hours and automatically reschedules messages to appropriate delivery times. System must respect user preferences and local regulations while maintaining delivery reliability.",
+  "tags_v1": [
+    "scheduling",
+    "ux",
+    "timezone",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "scheduling",
+    "timezone"
+  ],
+  "tags_v3": [
+    "scheduling",
+    "timezone",
+    "automation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "scheduling",
+      "aliases": [],
+      "cluster_id": "all_105",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7319082021713257,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduling",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timezone",
+      "aliases": [],
+      "cluster_id": "all_76",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.730831503868103,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timezone",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7192761301994324,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    }
+  ]
+}

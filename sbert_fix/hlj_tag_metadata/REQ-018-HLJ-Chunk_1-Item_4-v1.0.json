@@ -1,0 +1,165 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Support manual email reassignment and unassigned status",
+  "summary": "Allow users to manually reassign emails to different team members or mark emails as unassigned. Ensure reassignment is visible to all relevant users for accountability.",
+  "tags_v1": [
+    "assignment",
+    "manually"
+  ],
+  "tags_v2": [
+    "assignment",
+    "manually"
+  ],
+  "tags_v3": [
+    "assignment",
+    "rules",
+    "routing",
+    "manually",
+    "collision",
+    "lock",
+    "automation",
+    "concurrency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "assignment",
+      "aliases": [],
+      "cluster_id": "all_223",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7571598291397095,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "assignment",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "all_177",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7225968241691589,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "routing",
+      "aliases": [],
+      "cluster_id": "all_194",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.72748863697052,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "routing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "manually",
+      "aliases": [],
+      "cluster_id": "all_224",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7367734313011169,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "manually",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "collision",
+      "aliases": [
+        "collision handling"
+      ],
+      "cluster_id": "all_325",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7186605334281921,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "collision handling",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "lock",
+      "aliases": [
+        "locking"
+      ],
+      "cluster_id": "all_89",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7313957810401917,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "lock",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "all_149",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7659275531768799,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "concurrency",
+      "aliases": [],
+      "cluster_id": "all_225",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7472677230834961,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "concurrency",
+      "method": "dedup_canonical"
+    }
+  ]
+}

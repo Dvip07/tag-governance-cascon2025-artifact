@@ -1,0 +1,448 @@
+{
+  "CHUNK_ID": "REQ-002-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Design multi-step digital onboarding for minors with essential info capture (Ln 07\u201311)",
+    "Trigger legal guardian KYC step and collect guardian info during onboarding (Ln 12\u201313)",
+    "Support session/device hand-off between minor and guardian in onboarding (Ln 14)",
+    "Integrate with real-time certified third-party guardian KYC providers (Ln 16\u201318, 33)",
+    "Provide immediate feedback and next steps to both users on KYC fail or pending (Ln 19\u201320)",
+    "Handle mid-process guardian switch with KYC restart and event logging (Ln 22\u201323)",
+    "Prevent duplicate minor onboarding attempts using unique identity checks (Ln 24)",
+    "Encrypt all sensitive data at rest and in transit per compliance (Ln 27\u201328)",
+    "Maintain audit trails with minor record flags for all onboarding attempts (Ln 29\u201330)",
+    "Update onboarding documentation and support scripts for customer representatives (Ln 35\u201336)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.91,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Design multi-step digital onboarding for minors with essential info capture",
+        "summary": "Develop a stepwise digital onboarding workflow specifically for minors under 18. Only essential information is collected from the minor to meet compliance needs, minimizing data while ensuring eligibility and onboarding flow continuity.",
+        "tags": [
+          "usability",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "DigitalOnboarding",
+          "ChildAccounts"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 07\u201311",
+        "reasoning": {
+          "source_summary_fragment": "multi-step process collects only essential minor info",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.92
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "age-appropriate onboarding",
+            "data minimization"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Trigger legal guardian KYC step and collect guardian info during onboarding",
+        "summary": "As part of onboarding, initiate Know Your Customer (KYC) procedures for the minor\u2019s legal guardian. Collect key information to verify the guardian\u2019s identity in compliance with applicable child data protection regulations.",
+        "tags": [
+          "compliance",
+          "security"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "KYC",
+          "DigitalOnboarding"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 12\u201313",
+        "reasoning": {
+          "source_summary_fragment": "triggers KYC verification for the legal guardian",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.92
+            },
+            {
+              "tag": "security",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "guardian KYC",
+            "identity verification"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Support session/device hand-off between minor and guardian in onboarding",
+        "summary": "Enable seamless transition for session or device hand-off during digital onboarding, facilitating information entry by both minor and guardian as needed. This supports compliant onboarding flows and improves overall user experience.",
+        "tags": [
+          "usability",
+          "[INFERRED] compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "DigitalOnboarding"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.82,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 14",
+        "reasoning": {
+          "source_summary_fragment": "permits device/session handoff and dynamic switching of guardians",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.91
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "multi-party onboarding",
+            "session continuity"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "compliance",
+          "confidence": 0.87,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Integrate with real-time certified third-party guardian KYC providers",
+        "summary": "Connect onboarding workflows to certified third-party KYC providers for real-time identity verification of guardians. Ensure these integrations are with compliance-approved vendors to meet regulatory standards.",
+        "tags": [
+          "compliance",
+          "security"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "KYC",
+          "Integrations"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 16\u201318, 33",
+        "reasoning": {
+          "source_summary_fragment": "Certified, compliance-approved KYC providers are mandatory",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.94
+            },
+            {
+              "tag": "security",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "third-party KYC integration",
+            "vendor certification"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Provide immediate feedback and next steps to both users on KYC fail or pending",
+        "summary": "Inform both the minor and guardian promptly if the guardian KYC step fails or is pending, guiding users with clear next steps to resolve issues or continue the onboarding process efficiently.",
+        "tags": [
+          "usability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "DigitalOnboarding"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.84,
+        "priority": "medium",
+        "priority_confidence": 0.83,
+        "line_source": "Ln 19\u201320",
+        "reasoning": {
+          "source_summary_fragment": "clear fail/pending feedback",
+          "tag_metadata_reference": [
+            {
+              "tag": "usability",
+              "confidence": 0.88
+            }
+          ],
+          "mapped_concepts": [
+            "real-time feedback",
+            "onboarding guidance"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.88,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Handle mid-process guardian switch with KYC restart and event logging",
+        "summary": "Allow dynamic switching of the guardian during onboarding, restarting KYC checks for the new guardian and recording all related events. This maintains auditability and compliance within the onboarding flow.",
+        "tags": [
+          "maintainability",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "DigitalOnboarding",
+          "KYC"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.84,
+        "priority": "medium",
+        "priority_confidence": 0.8,
+        "line_source": "Ln 22\u201323",
+        "reasoning": {
+          "source_summary_fragment": "permitting ... dynamic switching of guardians with full audit logging",
+          "tag_metadata_reference": [
+            {
+              "tag": "maintainability",
+              "confidence": 0.86
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "guardian change handling",
+            "onboarding audit logs"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.91,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Prevent duplicate minor onboarding attempts using unique identity checks",
+        "summary": "Implement unique identity verification to prevent minors from onboarding twice. This ensures regulatory compliance by avoiding multiple account attempts for the same individual.",
+        "tags": [
+          "security",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "DigitalOnboarding"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 24",
+        "reasoning": {
+          "source_summary_fragment": "prevention of duplicate minor onboarding",
+          "tag_metadata_reference": [
+            {
+              "tag": "security",
+              "confidence": 0.92
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "duplicate prevention",
+            "identity uniqueness"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.93,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Encrypt all sensitive data at rest and in transit per compliance",
+        "summary": "Apply robust encryption standards to all sensitive information related to minors and guardians, ensuring data is secure both at rest and during transmission as mandated by compliance regulations.",
+        "tags": [
+          "security",
+          "compliance"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Security"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.91,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 27\u201328",
+        "reasoning": {
+          "source_summary_fragment": "all sensitive data encrypted at rest and in transit",
+          "tag_metadata_reference": [
+            {
+              "tag": "security",
+              "confidence": 0.96
+            },
+            {
+              "tag": "compliance",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "encryption at rest",
+            "encryption in transit"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.96,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Maintain audit trails with minor record flags for all onboarding attempts",
+        "summary": "Record detailed audit logs of every onboarding attempt, flagging records involving minors to support compliance checks, investigations, and system maintainability in line with regional laws.",
+        "tags": [
+          "compliance",
+          "maintainability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Compliance",
+          "Auditing"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "medium",
+        "priority_confidence": 0.85,
+        "line_source": "Ln 29\u201330",
+        "reasoning": {
+          "source_summary_fragment": "full audit logging",
+          "tag_metadata_reference": [
+            {
+              "tag": "compliance",
+              "confidence": 0.94
+            },
+            {
+              "tag": "maintainability",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "audit logging",
+            "minor flagging"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.94,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-17",
+        "id": "REQ-002-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Update onboarding documentation and support scripts for customer representatives",
+        "summary": "Revise onboarding documentation and customer support scripts to cover new processes for minor onboarding, KYC procedures, and escalation paths. Ensure customer representatives have accurate, accessible resources for supporting minors and guardians.",
+        "tags": [
+          "maintainability",
+          "usability"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Documentation"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "medium",
+        "priority_confidence": 0.81,
+        "line_source": "Ln 35\u201336",
+        "reasoning": {
+          "source_summary_fragment": "updating documentation and support scripts",
+          "tag_metadata_reference": [
+            {
+              "tag": "maintainability",
+              "confidence": 0.89
+            },
+            {
+              "tag": "usability",
+              "confidence": 0.87
+            }
+          ],
+          "mapped_concepts": [
+            "support resources",
+            "documentation updates"
+          ]
+        },
+        "inference_notes": {
+          "confidence": 0.89,
+          "method": "sem_tag_synth_v1"
+        },
+        "source_hlj_id": "REQ-002"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-002-HLJ-Chunk_2",
+    "DATA": []
+  },
+  "errors": []
+}

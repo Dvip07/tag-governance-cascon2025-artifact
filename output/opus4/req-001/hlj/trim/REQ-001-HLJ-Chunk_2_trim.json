@@ -1,0 +1,262 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Achieve 1.5 second response time for 24 months of transaction data",
+    "summary": "Implement performance optimizations to ensure API endpoint responds within 1.5 seconds when retrieving 24 months of historical transaction data across all partner banks. This requires efficient query strategies and potentially asynchronous processing.",
+    "tags": [
+      "performance",
+      "api",
+      "optimization"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 44",
+    "reasoning": {
+      "source_summary_fragment": "Performance requirement: 1.5s response time for 24 months of data",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "api",
+          "confidence": 0.96
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "response time threshold",
+        "historical data retrieval",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.94,
+      "method": "performance_critical_path"
+    },
+    "source_hlj_id": "REQ-001"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Create comprehensive API documentation with examples",
+    "summary": "Develop complete API documentation following OpenAPI specification, including request/response examples, error codes, and integration guides for the transaction history endpoint to support developer adoption.",
+    "tags": [
+      "documentation",
+      "api",
+      "support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "OpenAPI compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "api",
+          "confidence": 0.93
+        },
+        {
+          "tag": "support",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "OpenAPI spec",
+        "developer documentation",
+        "API examples"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.88,
+      "method": "documentation_standard"
+    },
+    "source_hlj_id": "REQ-001"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Integrate with five major partner banks' APIs",
+    "summary": "Establish secure API integrations with at least five major banking partners to retrieve transaction data, implementing appropriate authentication, error handling, and data normalization for each bank's unique API format.",
+    "tags": [
+      "integration",
+      "partners",
+      "api"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Integration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "Requires integration with 5+ major banks",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.97
+        },
+        {
+          "tag": "partners",
+          "confidence": 0.94
+        },
+        {
+          "tag": "api",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "multi-bank integration",
+        "partner API connectivity",
+        "data aggregation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.91,
+      "method": "integration_complexity"
+    },
+    "source_hlj_id": "REQ-001"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement data caching with 5-minute freshness window",
+    "summary": "Design and implement a caching layer that maintains transaction data freshness within a 5-minute window, balancing performance requirements with data accuracy while reducing load on partner bank APIs.",
+    "tags": [
+      "caching",
+      "performance",
+      "data"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 54",
+    "reasoning": {
+      "source_summary_fragment": "5-minute cache freshness limit",
+      "tag_metadata_reference": [
+        {
+          "tag": "caching",
+          "confidence": 0.96
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "data",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "cache invalidation",
+        "data freshness",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.86,
+      "method": "cache_strategy"
+    },
+    "source_hlj_id": "REQ-001"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Complete compliance review before production deployment",
+    "summary": "Conduct thorough compliance review ensuring the API meets all regulatory requirements including ISO 27001 audit logging standards, data privacy regulations, and Open Banking compliance before releasing to production.",
+    "tags": [
+      "compliance",
+      "review",
+      "deployment",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "OpenBanking",
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.7,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 56",
+    "reasoning": {
+      "source_summary_fragment": "compliance review before production",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "review",
+          "confidence": 0.92
+        },
+        {
+          "tag": "deployment",
+          "confidence": 0.88
+        },
+        {
+          "tag": "security",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "ISO 27001",
+        "regulatory compliance",
+        "pre-production review"
+      ]
+    },
+    "low_confidence_reason": "Difficulty confidence clamped to minimum threshold as compliance complexity may vary",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001"
+  }
+]

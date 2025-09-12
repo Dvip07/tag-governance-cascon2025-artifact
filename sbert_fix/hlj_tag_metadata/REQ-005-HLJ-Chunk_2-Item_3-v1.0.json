@@ -1,0 +1,131 @@
+{
+  "hlj_id": "REQ-005-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-005",
+  "domain": "FinTech",
+  "title": "Block transaction authorizations on frozen cards except for whitelisted exceptions",
+  "summary": "Enforce transaction authorization logic to decline any attempts on frozen cards, with exceptions allowed for predefined whitelisted scenarios. This mechanism prevents unauthorized spending while allowing specific critical or recurring transactions if expressly permitted.",
+  "tags_v1": [
+    "security",
+    "backend",
+    "[INFERRED] authorization"
+  ],
+  "tags_v2": [
+    "security",
+    "backend"
+  ],
+  "tags_v3": [
+    "api",
+    "security",
+    "backend",
+    "authorization",
+    "real-time"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6769596338272095,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7098627686500549,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7397242784500122,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "all_163",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7137683033943176,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "authorization",
+      "aliases": [],
+      "cluster_id": "all_167",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7377461194992065,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "authorization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "all_49",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7142859697341919,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    }
+  ]
+}

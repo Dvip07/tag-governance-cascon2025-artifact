@@ -1,0 +1,137 @@
+### === SUMMARY START ===
+
+{
+  "requirement_id": "REQ-029",
+  "summary": "Implement audit log enhancements to record every user action with timestamp, resource, session ID, and *role at action time*. Accurately track role changes within user sessions and ensure logs retain historical role context, even if roles shift mid-session. Build a query interface for compliance/admin users, supporting advanced filters by role, resource, and action type. Maintain session-consistent role information for auditability, flag anomalous or rapid role switches, and allow export of logs in CSV, JSON, and PDF formats, including compliance headers and digital signatures. Generate automated reports by role, update documentation and training, and ensure storage meets SOC2, GDPR, and HIPAA standards. System should offer <2s average query for 12 months, full traceability, and no compliance gaps, handling edge cases such as deleted/orphaned users. Backend schema and session logic upgrades may be needed; export must handle high-volume data."
+}
+
+### === SUMMARY END ===
+
+### === HLJ_META START ===
+
+{
+  "domain": "SaaS",
+  "subdomain": ["AuditLog", "Compliance"],
+  "canonical_tags": ["logging", "security", "compliance"],
+  "difficulty": "high",
+  "priority": "high"
+}
+
+### === HLJ_META END ===
+
+### === HLJ_PLAN START ===
+
+{
+  "estimated_hlj_count": 10,
+  "chunk_count": 1,
+  "chunks": [
+    {
+      "chunk_id": "REQ-029-HLJ-Chunk_1",
+      "focus": "Role-based audit log recording, querying, export, and compliance",
+      "items": [
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Log each user action with timestamp, resource, session ID, and role at time of action",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["logging", "security"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 7–9"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Store a record of role changes within active user sessions",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["logging", "compliance"],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 9–10"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Implement role-based query interface for audit logs with filters (role, resource, action type)",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog", "Compliance"],
+          "tags": ["compliance", "usability"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12–14"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Support advanced filter options on log queries (e.g., by department and time)",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["usability", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 14"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Maintain clear timeline and consistency of user roles for all actions within a session",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["security", "compliance"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16–17"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Flag and report anomalous or rapid mid-session role switching",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["security", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 17"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Enable audit log export in CSV, JSON, and PDF with compliance headers and digital signatures",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog", "Compliance"],
+          "tags": ["compliance", "export"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 19–20"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Provide automated weekly/monthly audit summaries by role",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["reporting", "compliance"],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Store logs for deleted users/orphaned actions with anonymized IDs and original role context",
+          "domain": "SaaS",
+          "subdomain": ["AuditLog"],
+          "tags": ["compliance", "security"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 23–24"
+        },
+        {
+          "id": "REQ-029-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Ensure audit logs meet SOC2, GDPR, and HIPAA security and retention requirements",
+          "domain": "SaaS",
+          "subdomain": ["Compliance"],
+          "tags": ["compliance", "security"],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 24–25"
+        }
+      ]
+    }
+  ]
+}
+
+### === HLJ_PLAN END ===

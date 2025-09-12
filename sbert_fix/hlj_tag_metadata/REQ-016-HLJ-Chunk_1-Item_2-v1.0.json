@@ -1,0 +1,73 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Allow optional 2FA opt-in for User and Viewer roles",
+  "summary": "Permit users assigned the User or Viewer roles to activate Two-Factor Authentication voluntarily, while not requiring it by default. This supports improved usability while enabling those users to enhance their account security.",
+  "tags_v1": [
+    "usability",
+    "security"
+  ],
+  "tags_v2": [
+    "usability",
+    "security"
+  ],
+  "tags_v3": [
+    "2fa",
+    "security",
+    "rolebasedaccess"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "2fa",
+      "aliases": [],
+      "cluster_id": "all_348",
+      "domains": [
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7186957597732544,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "2fa",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.741255521774292,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rolebasedaccess",
+      "aliases": [],
+      "cluster_id": "all_459",
+      "domains": [
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.740355908870697,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rolebasedaccess",
+      "method": "dedup_canonical"
+    }
+  ]
+}

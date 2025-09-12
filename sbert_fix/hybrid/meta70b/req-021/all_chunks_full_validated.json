@@ -1,0 +1,1035 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design inline commenting feature for PDFs",
+    "summary": "Design a feature for inline commenting on PDFs to facilitate collaboration and feedback.",
+    "tags": [
+      "pdf",
+      "commenting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 5-7",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "pdf",
+          "confidence": 0.93
+        },
+        {
+          "tag": "commenting",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "inline commenting",
+        "PDF"
+      ]
+    },
+    "tags_v1": [
+      "pdf",
+      "commenting"
+    ],
+    "tags_v2": [
+      "pdf",
+      "commenting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "pdf",
+        "canonical_tag": "pdf",
+        "matched_tag": "pdf",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.290410Z"
+      },
+      {
+        "original_tag": "commenting",
+        "canonical_tag": "commenting",
+        "matched_tag": "commenting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.292940Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "comments",
+      "pdf",
+      "highlighting",
+      "ux"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "comments",
+        "original_tag": "comments",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7774360179901123,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "pdf",
+        "original_tag": "pdf",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.747602641582489,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "highlighting",
+        "original_tag": "highlighting",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7198188304901123,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6986953616142273,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement nested reply system for comments",
+    "summary": "Implement a nested reply system for comments to facilitate threaded discussions.",
+    "tags": [
+      "threaded_discussions",
+      "replies"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 8-9",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "threaded_discussions",
+          "confidence": 0.95
+        },
+        {
+          "tag": "replies",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "nested replies",
+        "threaded discussions"
+      ]
+    },
+    "tags_v1": [
+      "threaded_discussions",
+      "replies"
+    ],
+    "tags_v2": [
+      "threaded_discussions",
+      "replies"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "threaded_discussions",
+        "canonical_tag": "threaded_discussions",
+        "matched_tag": "threaded_discussions",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7502532601356506,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.390346Z"
+      },
+      {
+        "original_tag": "replies",
+        "canonical_tag": "replies",
+        "matched_tag": "replies",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.402098Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "comments",
+      "pdf",
+      "threaded_discussions",
+      "replies",
+      "ux"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "comments",
+        "original_tag": "commenting",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7890487313270569,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "pdf",
+        "original_tag": "pdf",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.74473637342453,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "threaded_discussions",
+        "original_tag": "threaded_discussions",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7840288877487183,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "replies",
+        "original_tag": "replies",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7782955765724182,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.689617395401001,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop comment status tracking with filters",
+    "summary": "Develop a feature to track comment status with filters to facilitate comment management.",
+    "tags": [
+      "commenting",
+      "filters"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 10-11",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "commenting",
+          "confidence": 0.9
+        },
+        {
+          "tag": "filters",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "comment status",
+        "filters"
+      ]
+    },
+    "tags_v1": [
+      "commenting",
+      "filters"
+    ],
+    "tags_v2": [
+      "commenting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "commenting",
+        "canonical_tag": "commenting",
+        "matched_tag": "commenting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.411463Z"
+      },
+      {
+        "original_tag": "filters",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:06.576981Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "comments",
+      "backend",
+      "threading",
+      "filter"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "comments",
+        "original_tag": "comments",
+        "score": 6,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7843906283378601,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7172889709472656,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "threading",
+        "original_tag": "threading",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7448612451553345,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filters",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7286866903305054,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement notification system for new comments and replies",
+    "summary": "Implement a notification system for new comments and replies to facilitate collaboration.",
+    "tags": [
+      "notifications",
+      "commenting"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 12-14",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.92
+        },
+        {
+          "tag": "commenting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "new comments"
+      ]
+    },
+    "tags_v1": [
+      "notifications",
+      "commenting"
+    ],
+    "tags_v2": [
+      "notification",
+      "commenting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:58:06.580426Z"
+      },
+      {
+        "original_tag": "commenting",
+        "canonical_tag": "commenting",
+        "matched_tag": "commenting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.591380Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "comments",
+      "status",
+      "notification",
+      "backend",
+      "ux"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "comments",
+        "original_tag": "comments",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7756865620613098,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "status",
+        "original_tag": "status",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7134450674057007,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7575550079345703,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7028145790100098,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.690422534942627,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Ensure compatibility with major browsers and PDF viewers",
+    "summary": "Ensure compatibility with major browsers and PDF viewers to facilitate accessibility.",
+    "tags": [
+      "compatibility",
+      "browsers"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 20-21",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "compatibility",
+          "confidence": 0.88
+        },
+        {
+          "tag": "browsers",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "browser compatibility",
+        "PDF viewers"
+      ]
+    },
+    "tags_v1": [
+      "compatibility",
+      "browsers"
+    ],
+    "tags_v2": [
+      "compatibility",
+      "browsers"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compatibility",
+        "canonical_tag": "compatibility",
+        "matched_tag": "compatibility",
+        "tag_origin_cluster_id": "compatibility",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.594346Z"
+      },
+      {
+        "original_tag": "browsers",
+        "canonical_tag": "browsers",
+        "matched_tag": "browsers",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.85,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.597438Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "ui",
+      "filter",
+      "compatibility",
+      "browsers",
+      "ux"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7032487392425537,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6912665367126465,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filtering",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6851000189781189,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "compatibility",
+        "original_tag": "compatibility",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7520071268081665,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "browsers",
+        "original_tag": "browsers",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.738444983959198,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6884415149688721,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Optimize performance for large PDFs",
+    "summary": "Optimize performance for large PDFs to facilitate smooth user experience.",
+    "tags": [
+      "performance",
+      "optimization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 22-23",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "performance optimization",
+        "large PDFs"
+      ]
+    },
+    "tags_v1": [
+      "performance",
+      "optimization"
+    ],
+    "tags_v2": [
+      "performance",
+      "optimization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.600414Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.613708Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "performance",
+      "comments",
+      "optimization"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.695632815361023,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7153908610343933,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "comments",
+        "original_tag": "comments",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7507444620132446,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "optimization",
+        "original_tag": "optimization",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720928966999054,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6775819659233093,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create quickstart guide for commenting features",
+    "summary": "Create a quickstart guide for commenting features to facilitate user onboarding.",
+    "tags": [
+      "documentation",
+      "quickstart"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "low",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 24-25",
+    "reasoning": {
+      "source_summary_fragment": "Enable inline commenting and threaded discussions on uploaded PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.86
+        },
+        {
+          "tag": "quickstart",
+          "confidence": 0.83
+        }
+      ],
+      "mapped_concepts": [
+        "quickstart guide",
+        "commenting features"
+      ]
+    },
+    "tags_v1": [
+      "documentation",
+      "quickstart"
+    ],
+    "tags_v2": [
+      "quickstart"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.86,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.749629Z"
+      },
+      {
+        "original_tag": "quickstart",
+        "canonical_tag": "quickstart",
+        "matched_tag": "quickstart",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.83,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:58:06.753503Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "pdf",
+      "navigation",
+      "comments",
+      "quickstart",
+      "documentation",
+      "deeplink",
+      "ux"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "pdf",
+        "original_tag": "pdf",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7285542488098145,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "navigation",
+        "original_tag": "navigation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6970396041870117,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "comments",
+        "original_tag": "comments",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7716391682624817,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "quickstart",
+        "original_tag": "quickstart",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7511921525001526,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7290406823158264,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "deeplink",
+        "original_tag": "deeplink",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7164071202278137,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      },
+      {
+        "tag": "ux",
+        "original_tag": "ux",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6912708282470703,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-021"
+      }
+    ]
+  }
+]

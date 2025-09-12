@@ -1,0 +1,179 @@
+# 📝 Changelog for `req-027` — **gpt41**
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_1-v1.0`
+
+**Original tags:** `['rtl', 'layout', '[INFERRED] engine']`
+**Validated tags:** `['rtl', 'layout']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] engine']`
+**Tags kept:** `['rtl', 'layout']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] engine | dropped | none | 0.0 | None | 2025-06-01T00:00:30.523568Z |
+| layout | kept | direct | 1.0 | title | 2025-06-01T00:00:30.274468Z |
+| rtl | kept | direct | 1.0 | title | 2025-06-01T00:00:30.271638Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_2-v1.0`
+
+**Original tags:** `['rtl', 'components']`
+**Validated tags:** `['rtl', 'components']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['rtl', 'components']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| components | kept | direct | 1.0 | source_fragment | 2025-06-01T00:00:30.545188Z |
+| rtl | kept | direct | 1.0 | title | 2025-06-01T00:00:30.528087Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_3-v1.0`
+
+**Original tags:** `['preview', 'usability', '[INFERRED] tooling']`
+**Validated tags:** `['preview', 'usability']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] tooling']`
+**Tags kept:** `['preview', 'usability']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] tooling | dropped | none | 0.0 | None | 2025-06-01T00:00:30.825857Z |
+| preview | kept | direct | 1.0 | title | 2025-06-01T00:00:30.548449Z |
+| usability | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:30.629411Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_4-v1.0`
+
+**Original tags:** `['override', 'mixed-language', '[INFERRED] flexibility']`
+**Validated tags:** `['override', 'mixed-language']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] flexibility']`
+**Tags kept:** `['override', 'mixed-language']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] flexibility | dropped | none | 0.0 | None | 2025-06-01T00:00:31.032208Z |
+| mixed-language | kept | direct | 1.0 | title | 2025-06-01T00:00:30.855565Z |
+| override | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:30.851474Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_5-v1.0`
+
+**Original tags:** `['localization', 'translation']`
+**Validated tags:** `['localization', 'translation']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['localization', 'translation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| localization | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:31.189450Z |
+| translation | kept | direct | 1.0 | title | 2025-06-01T00:00:31.192755Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_6-v1.0`
+
+**Original tags:** `['localization', 'formatting']`
+**Validated tags:** `['localization', 'formatting']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['localization', 'formatting']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| formatting | kept | direct | 1.0 | title | 2025-06-01T00:00:31.276901Z |
+| localization | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:31.273371Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_7-v1.0`
+
+**Original tags:** `['validation', 'mirror', '[INFERRED] QA']`
+**Validated tags:** `['validation']`
+**Tags added:** `[]`
+**Tags dropped:** `['mirror', '[INFERRED] QA']`
+**Tags kept:** `['validation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] QA | dropped | none | 0.0 | None | 2025-06-01T00:00:31.622141Z |
+| mirror | dropped | none | 0.0 | None | 2025-06-01T00:00:31.457270Z |
+| validation | kept | direct | 1.0 | mapped_concepts | 2025-06-01T00:00:31.292057Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_8-v1.0`
+
+**Original tags:** `['compliance', 'validation', '[INFERRED] accessibility']`
+**Validated tags:** `['compliance', 'validation']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] accessibility']`
+**Tags kept:** `['compliance', 'validation']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] accessibility | dropped | none | 0.0 | None | 2025-06-01T00:00:31.945466Z |
+| compliance | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:31.708225Z |
+| validation | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:31.786903Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_9-v1.0`
+
+**Original tags:** `['logging', 'auditing', '[INFERRED] traceability']`
+**Validated tags:** `['logs', 'audit']`
+**Tags added:** `['logs', 'audit']`
+**Tags dropped:** `['logging', 'auditing', '[INFERRED] traceability']`
+**Tags kept:** `[]`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] traceability | dropped | none | 0.0 | None | 2025-06-01T00:00:32.133786Z |
+| audit | added | direct | 1.0 | source_fragment | 2025-06-01T00:00:31.963096Z |
+| auditing | dropped | direct | 1.0 | source_fragment | 2025-06-01T00:00:31.963096Z |
+| logging | dropped | direct | 1.0 | title | 2025-06-01T00:00:31.949207Z |
+| logs | added | direct | 1.0 | title | 2025-06-01T00:00:31.949207Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_1-Item_10-v1.0`
+
+**Original tags:** `['documentation', 'onboarding']`
+**Validated tags:** `['documentation', 'onboarding']`
+**Tags added:** `[]`
+**Tags dropped:** `[]`
+**Tags kept:** `['documentation', 'onboarding']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| documentation | kept | direct | 1.0 | summary | 2025-06-01T00:00:32.147067Z |
+| onboarding | kept | direct | 1.0 | title | 2025-06-01T00:00:32.151160Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_2-Item_1-v1.0`
+
+**Original tags:** `['training', 'enablement', '[INFERRED] compliance']`
+**Validated tags:** `['enablement']`
+**Tags added:** `[]`
+**Tags dropped:** `['training', '[INFERRED] compliance']`
+**Tags kept:** `['enablement']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-06-01T00:00:32.508642Z |
+| enablement | kept | direct | 1.0 | source_fragment | 2025-06-01T00:00:32.352088Z |
+| training | dropped | none | 0.0 | None | 2025-06-01T00:00:32.328105Z |
+
+## 🔹 HLJ: `REQ-027-HLJ-Chunk_2-Item_2-v1.0`
+
+**Original tags:** `['vendor', 'update', '[INFERRED] compliance']`
+**Validated tags:** `['vendor', 'update']`
+**Tags added:** `[]`
+**Tags dropped:** `['[INFERRED] compliance']`
+**Tags kept:** `['vendor', 'update']`
+
+### 🔍 Tag Changes
+| Tag | Action   | Validation | Similarity | Context           | Timestamp               |
+|-----|----------|------------|------------|-------------------|-------------------------|
+| [INFERRED] compliance | dropped | none | 0.0 | None | 2025-06-01T00:00:32.833164Z |
+| update | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:32.674812Z |
+| vendor | kept | direct | 1.0 | raw_requirement | 2025-06-01T00:00:32.591241Z |

@@ -1,0 +1,193 @@
+{
+  "estimated_hlj_count": 11,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-007-HLJ-Chunk_1",
+      "focus": "Core real-time screening flow and fallback/error protocols",
+      "items": [
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Integrate real-time customer screening with vendor-agnostic provider support",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "AMLScreening"
+          ],
+          "tags": [
+            "aml",
+            "screening"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 7\u201312"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Ensure screening completes before account activation with <3s per check",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "AMLScreening"
+          ],
+          "tags": [
+            "performance",
+            "aml"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12\u201314"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Support switchable screening provider architecture",
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening"
+          ],
+          "tags": [
+            "aml",
+            "integration"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 14\u201315"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Implement fallback flow for screening downtime or latency >5s",
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening",
+            "Compliance"
+          ],
+          "tags": [
+            "availability",
+            "aml"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 16\u201320"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Set pending state and notify Compliance on fallback trigger",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "AMLScreening"
+          ],
+          "tags": [
+            "aml",
+            "notification"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 17\u201318"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Log all fallback events and their resolution path",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Audit"
+          ],
+          "tags": [
+            "audit",
+            "logging"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18\u201319"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Hold and require manual review for ambiguous or near match results",
+          "domain": "FinTech",
+          "subdomain": [
+            "AMLScreening",
+            "Compliance"
+          ],
+          "tags": [
+            "aml",
+            "manualreview"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 20\u201321"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Audit and record all screening attempts and resolution actions securely",
+          "domain": "FinTech",
+          "subdomain": [
+            "Audit",
+            "Compliance"
+          ],
+          "tags": [
+            "audit",
+            "security"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 22\u201324"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Provide Compliance dashboard and ad-hoc reporting on screening outcomes",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Reporting"
+          ],
+          "tags": [
+            "dashboard",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 25\u201326"
+        },
+        {
+          "id": "REQ-007-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Display screening status and next steps to users during onboarding",
+          "domain": "FinTech",
+          "subdomain": [
+            "CustomerOnboarding",
+            "UX"
+          ],
+          "tags": [
+            "usability",
+            "ux"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 27\u201330"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-007-HLJ-Chunk_2",
+      "focus": "Security, compliance, monitoring, and supporting deliverables",
+      "items": [
+        {
+          "id": "REQ-007-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Enforce encryption for sensitive data in transit and at rest per regulations",
+          "domain": "FinTech",
+          "subdomain": [
+            "Compliance",
+            "Security"
+          ],
+          "tags": [
+            "security",
+            "encryption"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 35\u201337"
+        }
+      ]
+    }
+  ]
+}

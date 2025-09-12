@@ -1,0 +1,477 @@
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226791Z'
+  original_tags:
+  - proration
+  - billing
+  - '[INFERRED] finance'
+  validated_tags:
+  - billing
+  tags_added: []
+  tags_dropped:
+  - proration
+  - '[INFERRED] finance'
+  tags_kept:
+  - billing
+  validation_details:
+  - original_tag: proration
+    canonical_tag: proration
+    matched_tag: proration
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:19.868257Z'
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:19.884125Z'
+  - original_tag: '[INFERRED] finance'
+    canonical_tag: '[INFERRED] finance'
+    matched_tag: '[INFERRED] finance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.034374Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226798Z'
+  original_tags:
+  - upgrade
+  - billing
+  - '[INFERRED] scheduling'
+  validated_tags:
+  - upgrade
+  - billing
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] scheduling'
+  tags_kept:
+  - upgrade
+  - billing
+  validation_details:
+  - original_tag: upgrade
+    canonical_tag: upgrade
+    matched_tag: upgrade
+    tag_origin_cluster_id: upgrade
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.047054Z'
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.050565Z'
+  - original_tag: '[INFERRED] scheduling'
+    canonical_tag: '[INFERRED] scheduling'
+    matched_tag: '[INFERRED] scheduling'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.200098Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226800Z'
+  original_tags:
+  - history
+  - events
+  - '[INFERRED] audit'
+  validated_tags:
+  - history
+  tags_added: []
+  tags_dropped:
+  - events
+  - '[INFERRED] audit'
+  tags_kept:
+  - history
+  validation_details:
+  - original_tag: history
+    canonical_tag: history
+    matched_tag: history
+    tag_origin_cluster_id: history
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.204873Z'
+  - original_tag: events
+    canonical_tag: events
+    matched_tag: events
+    tag_origin_cluster_id: null
+    original_confidence: 0.88
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.356525Z'
+  - original_tag: '[INFERRED] audit'
+    canonical_tag: '[INFERRED] audit'
+    matched_tag: '[INFERRED] audit'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.511578Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226801Z'
+  original_tags:
+  - invoice
+  - tax
+  - '[INFERRED] transparency'
+  validated_tags:
+  - invoice
+  tags_added: []
+  tags_dropped:
+  - tax
+  - '[INFERRED] transparency'
+  tags_kept:
+  - invoice
+  validation_details:
+  - original_tag: invoice
+    canonical_tag: invoice
+    matched_tag: invoice
+    tag_origin_cluster_id: invoice
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.533297Z'
+  - original_tag: tax
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.684974Z'
+  - original_tag: '[INFERRED] transparency'
+    canonical_tag: '[INFERRED] transparency'
+    matched_tag: '[INFERRED] transparency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.820508Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226803Z'
+  original_tags:
+  - plans
+  - dates
+  - '[INFERRED] period-alignment'
+  validated_tags:
+  - plans
+  - dates
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] period-alignment'
+  tags_kept:
+  - plans
+  - dates
+  validation_details:
+  - original_tag: plans
+    canonical_tag: plans
+    matched_tag: plans
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.837135Z'
+  - original_tag: dates
+    canonical_tag: dates
+    matched_tag: dates
+    tag_origin_cluster_id: null
+    original_confidence: 0.84
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-06-01T00:00:20.897862Z'
+  - original_tag: '[INFERRED] period-alignment'
+    canonical_tag: '[INFERRED] period-alignment'
+    matched_tag: '[INFERRED] period-alignment'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.031386Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226805Z'
+  original_tags:
+  - abuse
+  - review
+  - '[INFERRED] fraud'
+  validated_tags:
+  - abuse
+  - review
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] fraud'
+  tags_kept:
+  - abuse
+  - review
+  validation_details:
+  - original_tag: abuse
+    canonical_tag: abuse
+    matched_tag: abuse
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.035629Z'
+  - original_tag: review
+    canonical_tag: review
+    matched_tag: review
+    tag_origin_cluster_id: null
+    original_confidence: 0.86
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.039408Z'
+  - original_tag: '[INFERRED] fraud'
+    canonical_tag: '[INFERRED] fraud'
+    matched_tag: '[INFERRED] fraud'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.192608Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226806Z'
+  original_tags:
+  - notification
+  - email
+  - '[INFERRED] communication'
+  validated_tags:
+  - notification
+  - email
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] communication'
+  tags_kept:
+  - notification
+  - email
+  validation_details:
+  - original_tag: notification
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.210817Z'
+  - original_tag: email
+    canonical_tag: email
+    matched_tag: email
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.214964Z'
+  - original_tag: '[INFERRED] communication'
+    canonical_tag: '[INFERRED] communication'
+    matched_tag: '[INFERRED] communication'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.366949Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226808Z'
+  original_tags:
+  - admin
+  - alert
+  - '[INFERRED] anomaly-detection'
+  validated_tags:
+  - admin
+  - alert
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] anomaly-detection'
+  tags_kept:
+  - admin
+  - alert
+  validation_details:
+  - original_tag: admin
+    canonical_tag: admin
+    matched_tag: admin
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.384610Z'
+  - original_tag: alert
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.393994Z'
+  - original_tag: '[INFERRED] anomaly-detection'
+    canonical_tag: '[INFERRED] anomaly-detection'
+    matched_tag: '[INFERRED] anomaly-detection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.530388Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226810Z'
+  original_tags:
+  - support
+  - documentation
+  - '[INFERRED] enablement'
+  validated_tags:
+  - support
+  - documentation
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] enablement'
+  tags_kept:
+  - support
+  - documentation
+  validation_details:
+  - original_tag: support
+    canonical_tag: support
+    matched_tag: support
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.534385Z'
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.552600Z'
+  - original_tag: '[INFERRED] enablement'
+    canonical_tag: '[INFERRED] enablement'
+    matched_tag: '[INFERRED] enablement'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.700307Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-017
+  model: gpt41
+  timestamp: '2025-06-01T00:11:33.226811Z'
+  original_tags:
+  - integration
+  - tax
+  - '[INFERRED] compliance'
+  validated_tags:
+  - integration
+  - tax
+  tags_added: []
+  tags_dropped:
+  - '[INFERRED] compliance'
+  tags_kept:
+  - integration
+  - tax
+  validation_details:
+  - original_tag: integration
+    canonical_tag: integration
+    matched_tag: integration
+    tag_origin_cluster_id: integration
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.714216Z'
+  - original_tag: tax
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.735859Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-06-01T00:00:21.897240Z'

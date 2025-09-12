@@ -1,0 +1,136 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Integrate real-time customer screening with vendor-agnostic provider support",
+  "summary": "Integrate a real-time screening process into the customer onboarding flow, ensuring that the solution supports interchangeable screening providers without vendor lock-in. Provide consistent and timely checks against updated AML and sanctions lists in a modular fashion.",
+  "tags_v1": [
+    "aml",
+    "screening",
+    "[INFERRED] integration"
+  ],
+  "tags_v2": [
+    "aml",
+    "screening"
+  ],
+  "tags_v3": [
+    "aml",
+    "screening",
+    "compliance",
+    "regulation",
+    "integration",
+    "kyc"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "aml",
+      "aliases": [],
+      "cluster_id": "all_11",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6987325549125671,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "screening",
+      "aliases": [],
+      "cluster_id": "all_81",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7442967891693115,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "screening",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7252833843231201,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "all_19",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7049713134765625,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulatory",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "all_0",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.712607741355896,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "kyc",
+      "aliases": [],
+      "cluster_id": "all_10",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7275832891464233,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "kyc",
+      "method": "dedup_canonical"
+    }
+  ]
+}

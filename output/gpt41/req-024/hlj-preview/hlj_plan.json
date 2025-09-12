@@ -1,0 +1,232 @@
+{
+  "estimated_hlj_count": 14,
+  "chunk_count": 2,
+  "chunks": [
+    {
+      "chunk_id": "REQ-024-HLJ-Chunk_1",
+      "focus": "Template management, delivery, personalization, analytics",
+      "items": [
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+          "title": "Centralize notification templates with dynamic fields and multi-language support",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationEngine"
+          ],
+          "tags": [
+            "template",
+            "multi-language"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 8\u20139"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_2-v1.0",
+          "title": "Enable preview and testing of notification templates across all channels",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationEngine"
+          ],
+          "tags": [
+            "usability",
+            "testing"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 10"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_3-v1.0",
+          "title": "Support scheduling of notifications with customizable delays per user timezone",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationEngine",
+            "Delivery"
+          ],
+          "tags": [
+            "timezone",
+            "scheduling"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 12"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+          "title": "Automatically select optimal delivery channel based on preferences and history",
+          "domain": "SaaS",
+          "subdomain": [
+            "NotificationEngine",
+            "Delivery"
+          ],
+          "tags": [
+            "automation",
+            "multi-channel"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 13"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_5-v1.0",
+          "title": "Integrate with user profile and behavior data for personalized notifications",
+          "domain": "SaaS",
+          "subdomain": [
+            "Personalization"
+          ],
+          "tags": [
+            "personalization",
+            "integration"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 15"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_6-v1.0",
+          "title": "Enable A/B testing and automated audience segmentation for targeted campaigns",
+          "domain": "SaaS",
+          "subdomain": [
+            "Personalization"
+          ],
+          "tags": [
+            "a/b testing",
+            "segmentation"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 16"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_7-v1.0",
+          "title": "Provide real-time dashboards showing open, click, and conversion rates per channel and template",
+          "domain": "SaaS",
+          "subdomain": [
+            "Analytics"
+          ],
+          "tags": [
+            "dashboard",
+            "analytics"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 18"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_8-v1.0",
+          "title": "Trigger alerts for abnormal drop-off and deliverability issues with self-healing workflows",
+          "domain": "SaaS",
+          "subdomain": [
+            "Analytics",
+            "Delivery"
+          ],
+          "tags": [
+            "reliability",
+            "automation"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 19"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_9-v1.0",
+          "title": "Ensure all messages include opt-out mechanisms and comply with CAN-SPAM, CASL, GDPR",
+          "domain": "SaaS",
+          "subdomain": [
+            "Compliance"
+          ],
+          "tags": [
+            "compliance",
+            "opt-out"
+          ],
+          "difficulty": "high",
+          "priority": "high",
+          "line_source": "Ln 21"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_1-Item_10-v1.0",
+          "title": "Track and log all opt-outs and message failures for audit purposes",
+          "domain": "SaaS",
+          "subdomain": [
+            "Compliance",
+            "Analytics"
+          ],
+          "tags": [
+            "logging",
+            "compliance"
+          ],
+          "difficulty": "medium",
+          "priority": "high",
+          "line_source": "Ln 22"
+        }
+      ]
+    },
+    {
+      "chunk_id": "REQ-024-HLJ-Chunk_2",
+      "focus": "Edge cases, documentation, integration, KPIs",
+      "items": [
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_1-v1.0",
+          "title": "Handle delay scheduling that overlaps with user nighttime, with reschedule or override",
+          "domain": "SaaS",
+          "subdomain": [
+            "Delivery"
+          ],
+          "tags": [
+            "timezone",
+            "usability"
+          ],
+          "difficulty": "high",
+          "priority": "medium",
+          "line_source": "Ln 25"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_2-v1.0",
+          "title": "Prevent duplicate notifications when a user qualifies for multiple triggers",
+          "domain": "SaaS",
+          "subdomain": [
+            "Delivery"
+          ],
+          "tags": [
+            "reliability",
+            "deduplication"
+          ],
+          "difficulty": "medium",
+          "priority": "medium",
+          "line_source": "Ln 26"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_3-v1.0",
+          "title": "Develop quickstart guides and integration docs for marketers and engineers",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "documentation",
+            "training"
+          ],
+          "difficulty": "low",
+          "priority": "medium",
+          "line_source": "Ln 28"
+        },
+        {
+          "id": "REQ-024-HLJ-Chunk_2-Item_4-v1.0",
+          "title": "Update customer help center with notification preference settings",
+          "domain": "SaaS",
+          "subdomain": [
+            "Documentation"
+          ],
+          "tags": [
+            "usability",
+            "help-center"
+          ],
+          "difficulty": "low",
+          "priority": "low",
+          "line_source": "Ln 29"
+        }
+      ]
+    }
+  ]
+}

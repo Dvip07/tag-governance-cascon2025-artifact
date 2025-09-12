@@ -1,0 +1,205 @@
+{
+  "CHUNK_ID": "REQ-014-HLJ-Chunk_1",
+  "is_final_chunk": false,
+  "TASK_SUMMARY": [
+    "Integrate with blockchain explorers and fee oracles (Ln 15-17)",
+    "Retrieve real-time gas fee estimates for supported networks (Ln 18-20)",
+    "Show a range of estimated gas fees (min/expected/max) (Ln 21-23)",
+    "Update estimates dynamically if user delays confirmation (Ln 24-26)",
+    "Include estimation for various transaction types (Ln 27-29)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-28",
+        "id": "REQ-014-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Integrate with blockchain explorers and fee oracles",
+        "summary": "The platform should integrate with blockchain explorers and fee oracles to provide accurate gas fee estimates.",
+        "tags": [
+          "gas-fee",
+          "estimation",
+          "blockchain"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Blockchain",
+          "Wallet"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.95,
+        "line_source": "Ln 15-17",
+        "reasoning": {
+          "source_summary_fragment": "Integrate with blockchain explorers and fee oracles",
+          "tag_metadata_reference": [
+            {
+              "tag": "gas-fee",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "blockchain",
+            "gas-fee",
+            "estimation"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": "[INFERRED] blockchain",
+          "confidence": 0.94,
+          "method": "sem_tag_synth_v1"
+        }
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-28",
+        "id": "REQ-014-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Retrieve real-time gas fee estimates for supported networks",
+        "summary": "The platform should retrieve real-time gas fee estimates for supported networks to ensure accurate estimation.",
+        "tags": [
+          "gas-fee",
+          "real-time",
+          "estimation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Blockchain",
+          "Network"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.96,
+        "line_source": "Ln 18-20",
+        "reasoning": {
+          "source_summary_fragment": "Retrieve real-time gas fee estimates for supported networks",
+          "tag_metadata_reference": [
+            {
+              "tag": "gas-fee",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "gas-fee",
+            "real-time",
+            "estimation"
+          ]
+        }
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-014-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Show a range of estimated gas fees (min/expected/max)",
+        "summary": "The platform should show a range of estimated gas fees to provide users with a clear understanding of the costs.",
+        "tags": [
+          "gas-fee",
+          "estimation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Blockchain",
+          "Wallet"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.8,
+        "priority": "medium",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 21-23",
+        "reasoning": {
+          "source_summary_fragment": "Show a range of estimated gas fees (min/expected/max)",
+          "tag_metadata_reference": [
+            {
+              "tag": "gas-fee",
+              "confidence": 0.9
+            }
+          ],
+          "mapped_concepts": [
+            "gas-fee",
+            "estimation"
+          ]
+        }
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-014-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Update estimates dynamically if user delays confirmation",
+        "summary": "The platform should update estimates dynamically if the user delays confirmation to ensure accurate estimation.",
+        "tags": [
+          "gas-fee",
+          "dynamic",
+          "estimation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Blockchain",
+          "Wallet"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "medium",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 24-26",
+        "reasoning": {
+          "source_summary_fragment": "Update estimates dynamically if user delays confirmation",
+          "tag_metadata_reference": [
+            {
+              "tag": "gas-fee",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "gas-fee",
+            "dynamic",
+            "estimation"
+          ]
+        }
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-28",
+        "id": "REQ-014-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Include estimation for various transaction types",
+        "summary": "The platform should include estimation for various transaction types to provide accurate estimation for different scenarios.",
+        "tags": [
+          "gas-fee",
+          "transaction",
+          "estimation"
+        ],
+        "domain": "FinTech",
+        "subdomain": [
+          "Blockchain",
+          "Transaction"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.89,
+        "priority": "high",
+        "priority_confidence": 0.97,
+        "line_source": "Ln 27-29",
+        "reasoning": {
+          "source_summary_fragment": "Include estimation for various transaction types",
+          "tag_metadata_reference": [
+            {
+              "tag": "gas-fee",
+              "confidence": 0.95
+            }
+          ],
+          "mapped_concepts": [
+            "gas-fee",
+            "transaction",
+            "estimation"
+          ]
+        }
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": "REQ-014-HLJ-Chunk_2",
+    "DATA": []
+  },
+  "errors": []
+}

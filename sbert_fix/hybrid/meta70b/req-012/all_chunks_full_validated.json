@@ -1,0 +1,1319 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement dynamic tax rate table for supported provinces",
+    "summary": "Create a tax rate table that can be updated dynamically to reflect changes in tax rates for different provinces.",
+    "tags": [
+      "gst",
+      "taxation",
+      "provincial tax"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "GST Support"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "Implement dynamic tax rate table",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.93
+        },
+        {
+          "tag": "taxation",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "tax rate table",
+        "provincial tax rates"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "provincial tax",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "taxation",
+      "provincial tax"
+    ],
+    "tags_v2": [
+      "gst",
+      "tax",
+      "provincial tax"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:41.766733Z"
+      },
+      {
+        "original_tag": "taxation",
+        "canonical_tag": "tax",
+        "matched_tag": "tax",
+        "tag_origin_cluster_id": "tax",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:41.770060Z"
+      },
+      {
+        "original_tag": "provincial tax",
+        "canonical_tag": "provincial tax",
+        "matched_tag": "provincial tax",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.8212892413139343,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.428372Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "rates",
+      "tax",
+      "provincial tax"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7640705108642578,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "rates",
+        "original_tag": "rates",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7358193397521973,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "taxation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7389594316482544,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "provincial tax",
+        "original_tag": "provincial tax",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7916784286499023,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Support dual-GST provinces and ensure correct allocation logic",
+    "summary": "Implement logic to handle dual-GST provinces and ensure correct allocation of GST rates.",
+    "tags": [
+      "gst",
+      "provincial tax",
+      "dual-gst"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "GST Support"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "Support dual-GST provinces",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.93
+        },
+        {
+          "tag": "provincial tax",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "dual-gst",
+        "gst allocation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "dual-gst",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "provincial tax",
+      "dual-gst"
+    ],
+    "tags_v2": [
+      "gst",
+      "dual-gst"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.438648Z"
+      },
+      {
+        "original_tag": "provincial tax",
+        "canonical_tag": "provincial tax",
+        "matched_tag": "provincial tax",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.601921Z"
+      },
+      {
+        "original_tag": "dual-gst",
+        "canonical_tag": "dual-gst",
+        "matched_tag": "dual-gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.605973Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "dual-tax",
+      "dual-gst",
+      "provincial tax"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7721071243286133,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "dual-tax",
+        "original_tag": "dual-tax",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7950983643531799,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "dual-gst",
+        "original_tag": "dual-gst",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8157053589820862,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "provincial tax",
+        "original_tag": "provincial tax",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7826268076896667,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Apply correct GST rate(s) at invoice generation",
+    "summary": "Apply the correct GST rate(s) to invoices based on the tax rate table and dual-GST logic.",
+    "tags": [
+      "gst",
+      "invoicing",
+      "taxation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Invoice Logic"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "Apply correct GST rate(s)",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.93
+        },
+        {
+          "tag": "invoicing",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "gst rate application",
+        "invoice generation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "invoicing",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "invoicing",
+      "taxation"
+    ],
+    "tags_v2": [
+      "gst",
+      "tax"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.609123Z"
+      },
+      {
+        "original_tag": "invoicing",
+        "canonical_tag": "invoicing",
+        "matched_tag": "invoicing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.787633Z"
+      },
+      {
+        "original_tag": "taxation",
+        "canonical_tag": "tax",
+        "matched_tag": "tax",
+        "tag_origin_cluster_id": "tax",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:42.798624Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "invoice",
+      "tax"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7685519456863403,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "invoice",
+        "original_tag": "invoice",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7709837555885315,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "tax",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v2",
+        "method": "dedup_canonical",
+        "confidence": 0.7331621646881104,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Itemize GST components on invoices",
+    "summary": "Break down GST components on invoices to provide transparency and clarity.",
+    "tags": [
+      "gst",
+      "invoicing",
+      "taxation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Invoice Logic"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 25-27",
+    "reasoning": {
+      "source_summary_fragment": "Itemize GST components",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.93
+        },
+        {
+          "tag": "invoicing",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "gst itemization",
+        "invoice clarity"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "invoicing",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "invoicing",
+      "taxation"
+    ],
+    "tags_v2": [
+      "gst",
+      "tax"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.802200Z"
+      },
+      {
+        "original_tag": "invoicing",
+        "canonical_tag": "invoicing",
+        "matched_tag": "invoicing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:42.982612Z"
+      },
+      {
+        "original_tag": "taxation",
+        "canonical_tag": "tax",
+        "matched_tag": "tax",
+        "tag_origin_cluster_id": "tax",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:43.070275Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "invoice",
+      "tax"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7731359004974365,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "invoice",
+        "original_tag": "invoice",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7836201190948486,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "tax",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v2",
+        "method": "dedup_canonical",
+        "confidence": 0.7378107905387878,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Handle scenarios with multiple tax rates on a single invoice",
+    "summary": "Develop logic to handle invoices with multiple tax rates, ensuring accurate GST calculation and allocation.",
+    "tags": [
+      "gst",
+      "taxation",
+      "multiple tax rates"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Invoice Logic"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "Handle multiple tax rates",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.93
+        },
+        {
+          "tag": "taxation",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "multiple tax rates",
+        "gst calculation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "multiple tax rates",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "taxation",
+      "multiple tax rates"
+    ],
+    "tags_v2": [
+      "gst",
+      "tax",
+      "multiple tax rates"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.078085Z"
+      },
+      {
+        "original_tag": "taxation",
+        "canonical_tag": "tax",
+        "matched_tag": "tax",
+        "tag_origin_cluster_id": "tax",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:43.081244Z"
+      },
+      {
+        "original_tag": "multiple tax rates",
+        "canonical_tag": "multiple tax rates",
+        "matched_tag": "multiple tax rates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.084355Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "tax",
+      "multi-rate",
+      "multiple tax rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.768132209777832,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "tax",
+        "original_tag": "taxation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7394025921821594,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "multi-rate",
+        "original_tag": "multi-rate",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7507138252258301,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "multiple tax rates",
+        "original_tag": "multiple tax rates",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.8055947422981262,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Allow for tax-exempt status recording and application",
+    "summary": "The system should allow for the recording and application of tax-exempt status for eligible entities, ensuring compliance with relevant tax regulations.",
+    "tags": [
+      "gst",
+      "exemptions",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Exemption Handling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 35-38",
+    "reasoning": {
+      "source_summary_fragment": "tax-exempt status recording",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.95
+        },
+        {
+          "tag": "exemptions",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "tax exemption",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "initial assignment",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "exemptions",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "gst",
+      "exemption"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.171466Z"
+      },
+      {
+        "original_tag": "exemptions",
+        "canonical_tag": "exemption",
+        "matched_tag": "exemption",
+        "tag_origin_cluster_id": "exemption",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:43.188637Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.358856Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "exemption",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7684280872344971,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "exemption",
+        "original_tag": "exemptions",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7394118309020996,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7222974300384521,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Implement fallback rules for ambiguous addresses",
+    "summary": "The system should implement fallback rules to handle ambiguous addresses, ensuring accurate tax calculations and compliance with tax regulations.",
+    "tags": [
+      "gst",
+      "fallback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Exemption Handling"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "low",
+    "priority_confidence": 0.75,
+    "line_source": "Ln 40-42",
+    "reasoning": {
+      "source_summary_fragment": "fallback rules for ambiguous addresses",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.9
+        },
+        {
+          "tag": "fallback",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "address validation",
+        "tax calculation"
+      ]
+    },
+    "low_confidence_reason": "initial assignment",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "fallback"
+    ],
+    "tags_v2": [
+      "gst",
+      "fallback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.448461Z"
+      },
+      {
+        "original_tag": "fallback",
+        "canonical_tag": "fallback",
+        "matched_tag": "fallback",
+        "tag_origin_cluster_id": "fallback",
+        "original_confidence": 0.85,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.451380Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "fallback"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7678719758987427,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7330261468887329,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Generate GST summary reports per province",
+    "summary": "The system should generate GST summary reports per province, providing insights into tax revenue and compliance with tax regulations.",
+    "tags": [
+      "gst",
+      "reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 45-48",
+    "reasoning": {
+      "source_summary_fragment": "GST summary reports per province",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.95
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "tax reporting",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "initial assignment",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "reporting"
+    ],
+    "tags_v2": [
+      "gst",
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.454036Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.466037Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "gst",
+      "reporting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.760832667350769,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7293566465377808,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Provide audit-ready exports for finance and compliance teams",
+    "summary": "The system should provide audit-ready exports for finance and compliance teams, ensuring compliance with tax regulations and reducing audit risks.",
+    "tags": [
+      "gst",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "audit-ready exports",
+      "tag_metadata_reference": [
+        {
+          "tag": "gst",
+          "confidence": 0.9
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "audit readiness",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "initial assignment",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "gst",
+      "compliance"
+    ],
+    "tags_v2": [
+      "gst",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "gst",
+        "canonical_tag": "gst",
+        "matched_tag": "gst",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.551770Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.555284Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "gst"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717477023601532,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "gst",
+        "original_tag": "gst",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.7582753896713257,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Protect customer and transaction data in line with PIPEDA and GDPR",
+    "summary": "The system should protect customer and transaction data in line with PIPEDA and GDPR, ensuring compliance with data protection regulations.",
+    "tags": [
+      "security",
+      "privacy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security and Privacy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 55-58",
+    "reasoning": {
+      "source_summary_fragment": "protect customer and transaction data",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.9
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "data protection",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "initial assignment",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-012",
+    "tags_v1": [
+      "security",
+      "privacy"
+    ],
+    "tags_v2": [
+      "security",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.662270Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:43.753049Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "privacy",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6933000087738037,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-012"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.6960088610649109,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-012-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-012"
+      }
+    ]
+  }
+]

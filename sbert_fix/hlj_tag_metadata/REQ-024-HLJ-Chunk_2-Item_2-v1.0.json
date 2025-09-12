@@ -1,0 +1,117 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Prevent duplicate notifications when a user qualifies for multiple triggers",
+  "summary": "Design mechanisms to avoid sending users duplicate notifications if they qualify for overlapping triggers, ensuring clarity and improving user experience. This approach addresses deliverability concerns and supports reliability and deduplication of notification events. Compliance is enhanced by minimizing unnecessary contact.",
+  "tags_v1": [
+    "reliability",
+    "deduplication",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "reliability",
+    "deduplication"
+  ],
+  "tags_v3": [
+    "testing",
+    "deduplication",
+    "reliability",
+    "analytics",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "all_60",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6861112117767334,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deduplication",
+      "aliases": [],
+      "cluster_id": "all_73",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7308709621429443,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deduplication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "all_102",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7148499488830566,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7028791308403015,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6978681087493896,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ]
+}

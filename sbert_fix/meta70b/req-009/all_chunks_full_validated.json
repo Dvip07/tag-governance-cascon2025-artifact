@@ -1,0 +1,1308 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Extend payments UI to allow scheduling cross-border payments",
+    "summary": "Enhance the payments UI to enable users to schedule cross-border payments, providing a seamless experience for international transactions.",
+    "tags": [
+      "payments",
+      "ui",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "UserInterface"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "Extend payments UI",
+      "tag_metadata_reference": [
+        {
+          "tag": "payments",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "cross-border payments"
+      ]
+    },
+    "tags_v1": [
+      "payments",
+      "ui",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "payments",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "payments",
+        "canonical_tag": "payments",
+        "matched_tag": "payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.355834Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.359657Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.526627Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement FX rate lock option with countdown timer",
+    "summary": "Introduce an FX rate lock feature with a countdown timer, allowing users to secure favorable exchange rates for their cross-border payments.",
+    "tags": [
+      "fx",
+      "lock",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "ForeignExchange"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "FX rate lock option",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "FX rate lock"
+      ]
+    },
+    "tags_v1": [
+      "fx",
+      "lock",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "fx",
+      "lock"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.530533Z"
+      },
+      {
+        "original_tag": "lock",
+        "canonical_tag": "lock",
+        "matched_tag": "lock",
+        "tag_origin_cluster_id": "lock",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.533682Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.690315Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Display rate expiry details and conditions",
+    "summary": "Clearly display the expiry details and conditions of the FX rate lock to ensure users are aware of the terms and conditions.",
+    "tags": [
+      "payments",
+      "ui",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "UserInterface"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 18-20",
+    "reasoning": {
+      "source_summary_fragment": "Display rate expiry details",
+      "tag_metadata_reference": [
+        {
+          "tag": "payments",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "rate expiry details"
+      ]
+    },
+    "tags_v1": [
+      "payments",
+      "ui",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "payments",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "payments",
+        "canonical_tag": "payments",
+        "matched_tag": "payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.782299Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.872920Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.026099Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate with FX rate providers",
+    "summary": "Integrate the system with reputable FX rate providers to ensure accurate and up-to-date exchange rates.",
+    "tags": [
+      "fx",
+      "integration",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "ForeignExchange"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 22-24",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with FX rate providers",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "FX rate integration"
+      ]
+    },
+    "tags_v1": [
+      "fx",
+      "integration",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "fx",
+      "integration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.029717Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.042473Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.194789Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Manage rate lock commitments and expiry timestamps",
+    "summary": "Develop a system to manage rate lock commitments and expiry timestamps, ensuring that users are notified of any changes or updates.",
+    "tags": [
+      "fx",
+      "lock",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "ForeignExchange"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 25-27",
+    "reasoning": {
+      "source_summary_fragment": "Manage rate lock commitments",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "rate lock management"
+      ]
+    },
+    "tags_v1": [
+      "fx",
+      "lock",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "fx",
+      "lock"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.288279Z"
+      },
+      {
+        "original_tag": "lock",
+        "canonical_tag": "lock",
+        "matched_tag": "lock",
+        "tag_origin_cluster_id": "lock",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.291224Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.485143Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement payment processing with locked FX rate validation",
+    "summary": "Develop a payment processing system that validates locked FX rates, ensuring that users receive the expected exchange rates for their cross-border payments.",
+    "tags": [
+      "payments",
+      "processing",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "PaymentProcessing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 29-31",
+    "reasoning": {
+      "source_summary_fragment": "Implement payment processing",
+      "tag_metadata_reference": [
+        {
+          "tag": "payments",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "payment processing"
+      ]
+    },
+    "tags_v1": [
+      "payments",
+      "processing",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "payments",
+      "processing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "payments",
+        "canonical_tag": "payments",
+        "matched_tag": "payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.578416Z"
+      },
+      {
+        "original_tag": "processing",
+        "canonical_tag": "processing",
+        "matched_tag": "processing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.581722Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.737367Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Allow partial or full cancellation of scheduled payments",
+    "summary": "Develop a system that allows users to cancel scheduled payments partially or fully, providing flexibility and control over their cross-border transactions.",
+    "tags": [
+      "payments",
+      "cancellation",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "PaymentProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 32-34",
+    "reasoning": {
+      "source_summary_fragment": "Allow partial or full cancellation",
+      "tag_metadata_reference": [
+        {
+          "tag": "payments",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "payment cancellation"
+      ]
+    },
+    "tags_v1": [
+      "payments",
+      "cancellation",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "payments",
+      "cancellation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "payments",
+        "canonical_tag": "payments",
+        "matched_tag": "payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.741485Z"
+      },
+      {
+        "original_tag": "cancellation",
+        "canonical_tag": "cancellation",
+        "matched_tag": "cancellation",
+        "tag_origin_cluster_id": "cancellation",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.744450Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.899293Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Implement controls to prevent abuse of rate locks",
+    "summary": "Develop controls to prevent the abuse of rate locks, ensuring that users do not exploit the system for personal gain.",
+    "tags": [
+      "compliance",
+      "risk",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 35-37",
+    "reasoning": {
+      "source_summary_fragment": "Implement controls to prevent abuse",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "abuse prevention"
+      ]
+    },
+    "tags_v1": [
+      "compliance",
+      "risk",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "compliance",
+      "risk"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:26.992203Z"
+      },
+      {
+        "original_tag": "risk",
+        "canonical_tag": "risk",
+        "matched_tag": "risk",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.081737Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.238912Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Adhere to regulatory requirements for cross-border payments",
+    "summary": "Ensure that the system adheres to all regulatory requirements for cross-border payments, maintaining compliance and avoiding potential fines or penalties.",
+    "tags": [
+      "compliance",
+      "regulation",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 38-40",
+    "reasoning": {
+      "source_summary_fragment": "Adhere to regulatory requirements",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance"
+      ]
+    },
+    "tags_v1": [
+      "compliance",
+      "regulation",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "compliance",
+      "regulation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.250398Z"
+      },
+      {
+        "original_tag": "regulation",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7411317825317383,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.384795Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.539118Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Maintain audit logs for all scheduling, locking, and execution events",
+    "summary": "Maintain detailed audit logs for all scheduling, locking, and execution events, ensuring transparency and accountability in the cross-border payment process.",
+    "tags": [
+      "compliance",
+      "audit",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 41-43",
+    "reasoning": {
+      "source_summary_fragment": "Maintain audit logs",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit logs"
+      ]
+    },
+    "tags_v1": [
+      "compliance",
+      "audit",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "compliance",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.636024Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.639928Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.829207Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Send confirmation, reminders, and expiry alerts via email, SMS, and in-app notifications",
+    "summary": "The system should send notifications to users via multiple channels to ensure timely reminders and updates on the status of their scheduled payments, including confirmations, reminders, and expiry alerts.",
+    "tags": [
+      "notifications",
+      "email",
+      "sms",
+      "[INFERRED] reminders"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 45-47",
+    "reasoning": {
+      "source_summary_fragment": "Send confirmation, reminders, and expiry alerts",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.93
+        },
+        {
+          "tag": "email",
+          "confidence": 0.9
+        },
+        {
+          "tag": "sms",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "scheduled payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "reminders",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "notifications",
+      "email",
+      "sms",
+      "[INFERRED] reminders"
+    ],
+    "tags_v2": [
+      "notification",
+      "email",
+      "sms"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:27.932541Z"
+      },
+      {
+        "original_tag": "email",
+        "canonical_tag": "email",
+        "matched_tag": "email",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.937670Z"
+      },
+      {
+        "original_tag": "sms",
+        "canonical_tag": "sms",
+        "matched_tag": "sms",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:27.942207Z"
+      },
+      {
+        "original_tag": "[INFERRED] reminders",
+        "canonical_tag": "[INFERRED] reminders",
+        "matched_tag": "[INFERRED] reminders",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:28.186968Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Provide dashboards for finance and compliance teams to monitor outstanding scheduled payments",
+    "summary": "The system should provide dashboards for finance and compliance teams to track and monitor the status of outstanding scheduled payments, ensuring transparency and control over financial operations.",
+    "tags": [
+      "reporting",
+      "dashboard",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Reporting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 48-50",
+    "reasoning": {
+      "source_summary_fragment": "Provide dashboards for finance and compliance teams",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.96
+        },
+        {
+          "tag": "dashboard",
+          "confidence": 0.95
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "dashboards",
+        "scheduled payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "reporting",
+      "dashboard",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:28.282652Z"
+      },
+      {
+        "original_tag": "dashboard",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:28.500834Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:28.664314Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Handle edge cases such as FX provider unavailability and insufficient account balance",
+    "summary": "The system should be able to handle edge cases such as unavailability of FX providers and insufficient account balances, ensuring robustness and reliability in cross-border payment processing.",
+    "tags": [
+      "edgecases",
+      "fx",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "EdgeCases"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 51-53",
+    "reasoning": {
+      "source_summary_fragment": "Handle edge cases such as FX provider unavailability",
+      "tag_metadata_reference": [
+        {
+          "tag": "edgecases",
+          "confidence": 0.94
+        },
+        {
+          "tag": "fx",
+          "confidence": 0.92
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "edge cases",
+        "cross-border payments"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "edgecases",
+      "fx",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "fx"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edgecases",
+        "canonical_tag": "edgecase",
+        "matched_tag": "edgecase",
+        "tag_origin_cluster_id": "edgecase",
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:28.907602Z"
+      },
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:28.912143Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.077258Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Implement beta rollout plan with feedback collection framework",
+    "summary": "The system should have a beta rollout plan that includes a framework for collecting feedback from users, ensuring that the system meets their needs and is reliable.",
+    "tags": [
+      "rollout",
+      "beta",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 54-56",
+    "reasoning": {
+      "source_summary_fragment": "Implement beta rollout plan with feedback collection",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollout",
+          "confidence": 0.9
+        },
+        {
+          "tag": "beta",
+          "confidence": 0.88
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "beta rollout",
+        "feedback collection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "rollout",
+      "beta",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "rollout",
+      "beta"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rollout",
+        "canonical_tag": "rollout",
+        "matched_tag": "rollout",
+        "tag_origin_cluster_id": "rollout",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.081530Z"
+      },
+      {
+        "original_tag": "beta",
+        "canonical_tag": "beta",
+        "matched_tag": "beta",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.085936Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.85,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.269154Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Deliver updated payment scheduling UI and logic",
+    "summary": "The system should deliver an updated user interface and logic for payment scheduling, enhancing the user experience and ensuring accurate payment processing.",
+    "tags": [
+      "delivery",
+      "ui",
+      "crossborder"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Delivery"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 57-59",
+    "reasoning": {
+      "source_summary_fragment": "Deliver updated payment scheduling UI and logic",
+      "tag_metadata_reference": [
+        {
+          "tag": "delivery",
+          "confidence": 0.95
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.92
+        },
+        {
+          "tag": "crossborder",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "payment scheduling",
+        "user interface"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {},
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "delivery",
+      "ui",
+      "crossborder"
+    ],
+    "tags_v2": [
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "delivery",
+        "canonical_tag": "delivery",
+        "matched_tag": "delivery",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.433845Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.437178Z"
+      },
+      {
+        "original_tag": "crossborder",
+        "canonical_tag": "crossborder",
+        "matched_tag": "crossborder",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:29.615588Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

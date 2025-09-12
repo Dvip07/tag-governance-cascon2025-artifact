@@ -1,0 +1,112 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Instrument all dashboard widgets for load, render, and interactive readiness timing",
+  "summary": "Instrument each dashboard widget to measure key performance timings, including load, render, and when interactive. Data collection should have minimal performance overhead and support observability for first- and third-party widgets.",
+  "tags_v1": [
+    "instrumentation",
+    "timing",
+    "[INFERRED] performance"
+  ],
+  "tags_v2": [
+    "instrumentation",
+    "timing"
+  ],
+  "tags_v3": [
+    "instrumentation",
+    "performance",
+    "analytics",
+    "timing",
+    "optimization"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "instrumentation",
+      "aliases": [],
+      "cluster_id": "all_113",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7300928235054016,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "instrumentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "all_65",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 5,
+      "confidence": 0.7503515481948853,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7559216022491455,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timing",
+      "aliases": [],
+      "cluster_id": "all_114",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7290871143341064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "optimization",
+      "aliases": [],
+      "cluster_id": "all_277",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.704578697681427,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "optimization",
+      "method": "dedup_canonical"
+    }
+  ]
+}

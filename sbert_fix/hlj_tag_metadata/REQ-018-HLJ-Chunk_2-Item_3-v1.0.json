@@ -1,0 +1,78 @@
+{
+  "hlj_id": "REQ-018-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "opus4",
+  "req_id": "req-018",
+  "domain": "SaaS",
+  "title": "Generate response time reports grouped by tags and teams",
+  "summary": "Develop comprehensive reporting module to track and visualize response times grouped by tags and teams. Include metrics like average first response time, resolution time, and workload distribution across team members with exportable dashboards.",
+  "tags_v1": [
+    "reporting",
+    "analytics",
+    "metrics"
+  ],
+  "tags_v2": [
+    "reporting",
+    "metrics"
+  ],
+  "tags_v3": [
+    "reporting",
+    "metrics",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7811702489852905,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metrics",
+      "aliases": [],
+      "cluster_id": "all_116",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7692428827285767,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metrics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7709676623344421,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ]
+}

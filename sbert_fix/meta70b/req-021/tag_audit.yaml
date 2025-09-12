@@ -1,0 +1,251 @@
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347649Z'
+  original_tags:
+  - pdf
+  - commenting
+  validated_tags:
+  - pdf
+  - commenting
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - pdf
+  - commenting
+  validation_details:
+  - original_tag: pdf
+    canonical_tag: pdf
+    matched_tag: pdf
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.290410Z'
+  - original_tag: commenting
+    canonical_tag: commenting
+    matched_tag: commenting
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.292940Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347656Z'
+  original_tags:
+  - threaded_discussions
+  - replies
+  validated_tags:
+  - threaded_discussions
+  - replies
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - threaded_discussions
+  - replies
+  validation_details:
+  - original_tag: threaded_discussions
+    canonical_tag: threaded_discussions
+    matched_tag: threaded_discussions
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: semantic
+    similarity: 0.7502532601356506
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.390346Z'
+  - original_tag: replies
+    canonical_tag: replies
+    matched_tag: replies
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.402098Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347658Z'
+  original_tags:
+  - commenting
+  - filters
+  validated_tags:
+  - commenting
+  tags_added: []
+  tags_dropped:
+  - filters
+  tags_kept:
+  - commenting
+  validation_details:
+  - original_tag: commenting
+    canonical_tag: commenting
+    matched_tag: commenting
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.411463Z'
+  - original_tag: filters
+    canonical_tag: filter
+    matched_tag: filter
+    tag_origin_cluster_id: filter
+    original_confidence: 0.88
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:58:06.576981Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347660Z'
+  original_tags:
+  - notifications
+  - commenting
+  validated_tags:
+  - notification
+  - commenting
+  tags_added:
+  - notification
+  tags_dropped:
+  - notifications
+  tags_kept:
+  - commenting
+  validation_details:
+  - original_tag: notifications
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-05-31T23:58:06.580426Z'
+  - original_tag: commenting
+    canonical_tag: commenting
+    matched_tag: commenting
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.591380Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347661Z'
+  original_tags:
+  - compatibility
+  - browsers
+  validated_tags:
+  - compatibility
+  - browsers
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - compatibility
+  - browsers
+  validation_details:
+  - original_tag: compatibility
+    canonical_tag: compatibility
+    matched_tag: compatibility
+    tag_origin_cluster_id: compatibility
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.594346Z'
+  - original_tag: browsers
+    canonical_tag: browsers
+    matched_tag: browsers
+    tag_origin_cluster_id: null
+    original_confidence: 0.85
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.597438Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347663Z'
+  original_tags:
+  - performance
+  - optimization
+  validated_tags:
+  - performance
+  - optimization
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - performance
+  - optimization
+  validation_details:
+  - original_tag: performance
+    canonical_tag: performance
+    matched_tag: performance
+    tag_origin_cluster_id: performance
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.600414Z'
+  - original_tag: optimization
+    canonical_tag: optimization
+    matched_tag: optimization
+    tag_origin_cluster_id: optimization
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.613708Z'
+- hlj_id: REQ-021-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-021
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.347664Z'
+  original_tags:
+  - documentation
+  - quickstart
+  validated_tags:
+  - quickstart
+  tags_added: []
+  tags_dropped:
+  - documentation
+  tags_kept:
+  - quickstart
+  validation_details:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.86
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.749629Z'
+  - original_tag: quickstart
+    canonical_tag: quickstart
+    matched_tag: quickstart
+    tag_origin_cluster_id: null
+    original_confidence: 0.83
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:06.753503Z'

@@ -1,0 +1,489 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Build scalable feature flag platform supporting geo-segmentation",
+    "summary": "Design and build a robust, scalable feature flag system capable of handling multiple geo-segments at scale. The platform must support country, region, and city-level segmentation to enable targeted feature deployment while maintaining performance under high load.",
+    "tags": [
+      "feature-flags",
+      "scalable",
+      "[INFERRED] geo-segmentation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "GeoTargeting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.98,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 09\u201311",
+    "reasoning": {
+      "source_summary_fragment": "scalable feature flag system enabling geo-targeted, progressive rollout of platform features, using real-time Geo-IP segmentation at country, region, and city level",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature-flags",
+          "confidence": 0.99
+        },
+        {
+          "tag": "scalable",
+          "confidence": 0.97
+        },
+        {
+          "tag": "geo-segmentation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "high-availability",
+        "large-scale segmentation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "geo-segmentation",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Enable percentage-based feature rollouts to geo-segments",
+    "summary": "Implement mechanisms to allow administrators to roll out features to a specified percentage of users within defined geo-segments. Supports gradual and controlled feature adoption while reducing risk of issues during deployment.",
+    "tags": [
+      "feature-flags",
+      "deployment",
+      "[INFERRED] progressive-rollout"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "GeoTargeting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 12\u201312",
+    "reasoning": {
+      "source_summary_fragment": "Admins must control flags from a portal, enabling percentage-based and dynamic rollouts, with immediate global effect",
+      "tag_metadata_reference": [
+        {
+          "tag": "feature-flags",
+          "confidence": 0.97
+        },
+        {
+          "tag": "deployment",
+          "confidence": 0.93
+        },
+        {
+          "tag": "progressive-rollout",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "gradual rollout",
+        "geo-segment targeting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "progressive-rollout",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop admin portal for dynamic feature flag adjustment with instant effect",
+    "summary": "Create an intuitive admin portal that enables authorized users to dynamically adjust feature flags and see instant effects across the platform. Provides centralized management and granular control for feature deployment.",
+    "tags": [
+      "admin",
+      "feature-flags",
+      "[INFERRED] portal"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "AdminPortal"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 13\u201314",
+    "reasoning": {
+      "source_summary_fragment": "Admins must control flags from a portal, enabling percentage-based and dynamic rollouts, with immediate global effect.",
+      "tag_metadata_reference": [
+        {
+          "tag": "admin",
+          "confidence": 0.95
+        },
+        {
+          "tag": "feature-flags",
+          "confidence": 0.97
+        },
+        {
+          "tag": "portal",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "admin UI",
+        "real-time flag changes"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "portal",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate real-time Geo-IP resolution for user location at feature evaluation",
+    "summary": "Implement real-time Geo-IP resolution to precisely determine user locations during feature evaluation. Supports granular targeting and ensures that features are enabled or disabled appropriately based on user geography.",
+    "tags": [
+      "geo-ip",
+      "real-time",
+      "[INFERRED] location-resolution"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "GeoTargeting"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 16\u201317",
+    "reasoning": {
+      "source_summary_fragment": "using real-time Geo-IP segmentation at country, region, and city level.",
+      "tag_metadata_reference": [
+        {
+          "tag": "geo-ip",
+          "confidence": 0.98
+        },
+        {
+          "tag": "real-time",
+          "confidence": 0.96
+        },
+        {
+          "tag": "location-resolution",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "location detection",
+        "geo-aware feature logic"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "location-resolution",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement fallback handling for ambiguous geo-data (VPN, proxies, missing info)",
+    "summary": "Introduce robust fallback strategies for cases when Geo-IP data is ambiguous or unavailable, such as users with VPNs, proxies, or missing IP information. Ensures feature targeting stability and user experience consistency.",
+    "tags": [
+      "fault-tolerance",
+      "geo-ip",
+      "[INFERRED] fallback"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "GeoTargeting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 18\u201319",
+    "reasoning": {
+      "source_summary_fragment": "The system must robustly handle users with ambiguous or mismatched geo-data",
+      "tag_metadata_reference": [
+        {
+          "tag": "fault-tolerance",
+          "confidence": 0.93
+        },
+        {
+          "tag": "geo-ip",
+          "confidence": 0.96
+        },
+        {
+          "tag": "fallback",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "VPNs",
+        "proxy detection",
+        "IP fallback logic"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "fallback",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Deliver real-time analytics dashboards showing feature adoption, error rates, conversion KPIs by geography/cohort",
+    "summary": "Create analytics dashboards that provide real-time insights into feature adoption, error rates, and conversion KPIs, broken down by geography and user cohorts. Enables data-driven monitoring and measurement of feature flag impact.",
+    "tags": [
+      "dashboard",
+      "real-time-analytics",
+      "[INFERRED] kpi-tracking"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 21\u201322",
+    "reasoning": {
+      "source_summary_fragment": "Integration with real-time analytics is required to monitor adoption, error rates, and conversion KPIs by geography and cohort, with dashboards ...",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.97
+        },
+        {
+          "tag": "real-time-analytics",
+          "confidence": 0.98
+        },
+        {
+          "tag": "kpi-tracking",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "analytics dashboard",
+        "KPI metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "kpi-tracking",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Automate alerts and enable one-click rollback for negative rollout impact",
+    "summary": "Build automated alerting mechanisms for negative effects, such as error spikes, during feature rollout. Provide a one-click rollback capability that instantly reverses changes system-wide, with full traceability.",
+    "tags": [
+      "alerting",
+      "rollback",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "FeatureManagement",
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 23\u201324",
+    "reasoning": {
+      "source_summary_fragment": "with dashboards and automated alerts for negative impacts like error spikes. One-click rollback with instant system-wide effect and full traceability is mandatory.",
+      "tag_metadata_reference": [
+        {
+          "tag": "alerting",
+          "confidence": 0.97
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.96
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "automatic response",
+        "rollback workflow"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Notify users of beta/staged rollout participation and offer opt-out",
+    "summary": "Introduce user notifications to inform individuals about their involvement in beta or staged feature rollouts and give them the ability to opt out. Enhances user experience and transparency during feature launches.",
+    "tags": [
+      "communication",
+      "user-option",
+      "[INFERRED] user-notification"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserExperience"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 26\u201327",
+    "reasoning": {
+      "source_summary_fragment": "User experience needs include notification of staged or beta participation, opt-out options ...",
+      "tag_metadata_reference": [
+        {
+          "tag": "communication",
+          "confidence": 0.94
+        },
+        {
+          "tag": "user-option",
+          "confidence": 0.92
+        },
+        {
+          "tag": "user-notification",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "user opt-out",
+        "rollout communications"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "user-notification",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Ensure compliance with regional data privacy laws (GDPR, CCPA) for geo-targeted features",
+    "summary": "Guarantee that all geo-targeted platform features conform to regional data privacy requirements, including GDPR and CCPA. Enforce necessary privacy controls and provide documentation to support regulatory compliance.",
+    "tags": [
+      "compliance",
+      "privacy",
+      "[INFERRED] data-protection"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 28\u201329",
+    "reasoning": {
+      "source_summary_fragment": "compliance with regional data privacy laws (GDPR/CCPA)",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.99
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.97
+        },
+        {
+          "tag": "data-protection",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "GDPR",
+        "CCPA",
+        "privacy-by-design"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "data-protection",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-023-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Flag and audit toggle events for geo-IP mismatches and border crossings",
+    "summary": "Develop mechanisms to detect, flag, and audit feature flag events that occur due to geographic mismatches or border crossings identified via Geo-IP. Enables traceability and accountability for feature access changes.",
+    "tags": [
+      "audit",
+      "geo-ip",
+      "[INFERRED] event-logging"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 31\u201332",
+    "reasoning": {
+      "source_summary_fragment": "support audit trails, and create comprehensive documentation for product and developer enablement.",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "geo-ip",
+          "confidence": 0.9
+        },
+        {
+          "tag": "event-logging",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "geographic event recording"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "event-logging",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-023"
+  }
+]

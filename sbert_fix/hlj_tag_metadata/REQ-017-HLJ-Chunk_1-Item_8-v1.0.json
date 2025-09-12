@@ -1,0 +1,140 @@
+{
+  "hlj_id": "REQ-017-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-017",
+  "domain": "SaaS",
+  "title": "Notify admins on detection of unusual upgrade or downgrade patterns",
+  "summary": "Alert administrators via notification when the system detects anomalous user activity related to frequent or irregular upgrades or downgrades. This enables proactive oversight and rapid investigation of potential misuse.",
+  "tags_v1": [
+    "admin",
+    "alert",
+    "[INFERRED] anomaly-detection"
+  ],
+  "tags_v2": [
+    "admin",
+    "alert"
+  ],
+  "tags_v3": [
+    "billing",
+    "alert",
+    "invoice",
+    "admin",
+    "refund"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "billing",
+      "aliases": [],
+      "cluster_id": "all_200",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7226795554161072,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "billing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.671689510345459,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6888511180877686,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alert",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "invoice",
+      "aliases": [
+        "invoicing",
+        "invoices"
+      ],
+      "cluster_id": "all_155",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.712618887424469,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "invoicing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "admin",
+      "aliases": [],
+      "cluster_id": "all_8",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7091063261032104,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "admin",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "refund",
+      "aliases": [
+        "refunds"
+      ],
+      "cluster_id": "all_92",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7074465751647949,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "refunds",
+      "method": "dedup_canonical"
+    }
+  ]
+}

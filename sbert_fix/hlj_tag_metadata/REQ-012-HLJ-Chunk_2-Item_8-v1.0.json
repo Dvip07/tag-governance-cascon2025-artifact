@@ -1,0 +1,57 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "meta70b",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Generate GST summary reports per province",
+  "summary": "The system should generate GST summary reports per province, providing insights into tax revenue and compliance with tax regulations.",
+  "tags_v1": [
+    "gst",
+    "reporting"
+  ],
+  "tags_v2": [
+    "gst",
+    "reporting"
+  ],
+  "tags_v3": [
+    "gst",
+    "reporting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "all_152",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.760832667350769,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "all_55",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7293566465377808,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    }
+  ]
+}

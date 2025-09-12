@@ -1,0 +1,359 @@
+[
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_1-v1.0",
+    "title": "Build rate lock abuse prevention controls",
+    "summary": "Implement risk controls to prevent FX rate speculation and abuse, including rate lock frequency limits, suspicious pattern detection, and automated blocking mechanisms to maintain system integrity.",
+    "tags": [
+      "compliance",
+      "risk",
+      "fx-rates"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "RiskManagement"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 41",
+    "reasoning": {
+      "source_summary_fragment": "risk controls against rate speculation",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        },
+        {
+          "tag": "risk",
+          "confidence": 0.93
+        },
+        {
+          "tag": "fx-rates",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "rate speculation prevention",
+        "abuse detection",
+        "risk controls"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_2-v1.0",
+    "title": "Implement cross-border payment regulatory compliance checks",
+    "summary": "Build automated compliance validation system for international transfers including sanctions screening, regulatory reporting requirements, and real-time compliance checks before payment execution.",
+    "tags": [
+      "compliance",
+      "regulation",
+      "payments"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "CrossBorderPayments"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 43",
+    "reasoning": {
+      "source_summary_fragment": "maintain compliance with cross-border regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "regulation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "payments",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "cross-border compliance",
+        "regulatory checks",
+        "sanctions screening"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 21,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_3-v1.0",
+    "title": "Create large-value transfer documentation system",
+    "summary": "Develop documentation generation and storage system for high-value international transfers, ensuring regulatory compliance with record-keeping requirements and providing audit-ready documentation.",
+    "tags": [
+      "compliance",
+      "documentation",
+      "payments"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Documentation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 43",
+    "reasoning": {
+      "source_summary_fragment": "maintain compliance with cross-border regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        },
+        {
+          "tag": "payments",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory documentation",
+        "large-value transfers",
+        "audit records"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 22,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_4-v1.0",
+    "title": "Build comprehensive audit logging for all payment events",
+    "summary": "Implement detailed audit trail system capturing all payment lifecycle events including rate locks, schedule modifications, executions, and cancellations with timestamp and user attribution.",
+    "tags": [
+      "audit",
+      "logging",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "AuditLogging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 45",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.94
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audit trails",
+        "event logging",
+        "payment tracking"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 23,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_5-v1.0",
+    "title": "Implement multi-channel notification system (email/SMS/in-app)",
+    "summary": "Build notification framework supporting email, SMS, and in-app alerts for rate expiry warnings, payment status updates, and transaction confirmations with user preference management.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "payments"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notifications",
+      "CrossBorderPayments"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "automated notifications for rate expiry/payment status",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.95
+        },
+        {
+          "tag": "messaging",
+          "confidence": 0.91
+        },
+        {
+          "tag": "payments",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel alerts",
+        "notification preferences",
+        "status updates"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 24,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_6-v1.0",
+    "title": "Create finance team monitoring dashboard",
+    "summary": "Develop real-time monitoring dashboard for finance team displaying scheduled payment volumes, rate lock utilization, processing status, and key performance metrics for cross-border transactions.",
+    "tags": [
+      "dashboard",
+      "monitoring",
+      "reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting",
+      "Monitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 51",
+    "reasoning": {
+      "source_summary_fragment": "reporting tools",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.9
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "finance monitoring",
+        "KPI tracking",
+        "operational dashboard"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  },
+  {
+    "seq_no": 25,
+    "schema_version": "2025-05-28",
+    "id": "REQ-009-HLJ-Chunk_3-Item_7-v1.0",
+    "title": "Build orphaned payment auto-cancellation logic",
+    "summary": "Implement automated cleanup system to identify and cancel orphaned scheduled payments where rate locks have expired or funding conditions are not met, with proper notification and refund processing.",
+    "tags": [
+      "payments",
+      "automation",
+      "error-handling"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PaymentProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 55",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases cover FX provider outages and insufficient funds at execution",
+      "tag_metadata_reference": [
+        {
+          "tag": "payments",
+          "confidence": 0.88
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.9
+        },
+        {
+          "tag": "error-handling",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "orphaned payments",
+        "auto-cancellation",
+        "edge case handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-009"
+  }
+]

@@ -1,0 +1,72 @@
+{
+  "hlj_id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-016",
+  "domain": "SaaS",
+  "title": "Automatically update 2FA enforcement policy on role change",
+  "summary": "The system must dynamically adjust each user's 2FA enforcement requirements whenever their assigned role changes, ensuring policy remains aligned with current privileges and compliance rules.",
+  "tags_v1": [
+    "security",
+    "maintainability"
+  ],
+  "tags_v2": [
+    "security"
+  ],
+  "tags_v3": [
+    "2fa",
+    "security",
+    "rolebasedaccess"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "2fa",
+      "aliases": [],
+      "cluster_id": "all_348",
+      "domains": [
+        "SaaS",
+        "Security"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7191915512084961,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "2fa",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.742444634437561,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rolebasedaccess",
+      "aliases": [],
+      "cluster_id": "all_459",
+      "domains": [
+        "Security"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7404483556747437,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rolebasedaccess",
+      "method": "dedup_canonical"
+    }
+  ]
+}

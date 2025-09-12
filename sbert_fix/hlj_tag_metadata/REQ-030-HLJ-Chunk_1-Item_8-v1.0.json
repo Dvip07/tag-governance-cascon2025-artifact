@@ -1,0 +1,54 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Provide 'quarantine' option for unreproducible failures with QA notification",
+  "summary": "Allow unreproducible or one-off test failures to be placed in 'quarantine', bypassing normal deployment blockage while alerting QA for follow-up. Supports operational continuity without ignoring potential issues.",
+  "tags_v1": [
+    "quarantine",
+    "flakiness"
+  ],
+  "tags_v2": [
+    "quarantine",
+    "flakiness"
+  ],
+  "tags_v3": [
+    "quarantine",
+    "flakiness"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "quarantine",
+      "aliases": [],
+      "cluster_id": "all_39",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7229315042495728,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "quarantine",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "flakiness",
+      "aliases": [],
+      "cluster_id": "all_36",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7128140330314636,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "flakiness",
+      "method": "dedup_canonical"
+    }
+  ]
+}

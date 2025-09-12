@@ -1,0 +1,88 @@
+{
+  "hlj_id": "REQ-010-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-010",
+  "domain": "FinTech",
+  "title": "Enforce role-based access and least-privilege on ledger data",
+  "summary": "Apply strict role-based access controls (RBAC) and least-privilege principles to all ledger data, ensuring users only have permissions necessary for their functions. Protect sensitive transactions and metadata against unauthorized access and privilege escalation.",
+  "tags_v1": [
+    "rbac",
+    "access-control",
+    "[INFERRED] least-privilege"
+  ],
+  "tags_v2": [
+    "rbac"
+  ],
+  "tags_v3": [
+    "rbac",
+    "resolution-workflows",
+    "reconciliation",
+    "least-privilege"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rbac",
+      "aliases": [],
+      "cluster_id": "all_21",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7547110915184021,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rbac",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "resolution-workflows",
+      "aliases": [],
+      "cluster_id": "all_420",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7192367315292358,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "resolution-workflows",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reconciliation",
+      "aliases": [],
+      "cluster_id": "all_184",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7579360008239746,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reconciliation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "least-privilege",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7134487628936768,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "least-privilege",
+      "method": "dedup_canonical"
+    }
+  ]
+}

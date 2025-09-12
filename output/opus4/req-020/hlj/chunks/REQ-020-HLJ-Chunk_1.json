@@ -1,0 +1,519 @@
+{
+  "CHUNK_ID": "REQ-020-HLJ-Chunk_1",
+  "is_final_chunk": true,
+  "TASK_SUMMARY": [
+    "Implement OAuth authentication flow for Salesforce CRM integration (Ln 13)",
+    "Implement OAuth authentication flow for HubSpot CRM integration (Ln 13)",
+    "Build API key authentication mechanism for CRM connections (Ln 13)",
+    "Create contact import service with dry run preview functionality (Ln 15)",
+    "Implement email-based duplicate detection algorithm (Ln 19)",
+    "Implement phone number duplicate detection algorithm (Ln 19)",
+    "Build fuzzy name matching algorithm for duplicate detection (Ln 19)",
+    "Create duplicate review UI with merge/keep/ignore actions (Ln 20)",
+    "Build side-by-side field comparison UI for merge conflicts (Ln 21)",
+    "Implement automatic duplicate merge based on saved user preferences (Ln 25)"
+  ],
+  "PREVIOUS_CHUNKS": [],
+  "CURRENT_CHUNK": {
+    "chunk_coherence": 0.92,
+    "DATA": [
+      {
+        "seq_no": 1,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+        "title": "Implement OAuth authentication flow for Salesforce CRM integration",
+        "summary": "Build OAuth 2.0 authentication flow specifically for Salesforce CRM, handling token refresh, permission scopes, and secure credential storage.",
+        "tags": [
+          "oauth",
+          "salesforce",
+          "authentication"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "CRM Integration"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 13",
+        "reasoning": {
+          "source_summary_fragment": "OAuth/API keys integration with major CRMs (Salesforce, HubSpot)",
+          "tag_metadata_reference": [
+            {
+              "tag": "oauth",
+              "confidence": 0.95
+            },
+            {
+              "tag": "salesforce",
+              "confidence": 0.99
+            },
+            {
+              "tag": "authentication",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "OAuth flow",
+            "CRM integration",
+            "token management"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 2,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+        "title": "Implement OAuth authentication flow for HubSpot CRM integration",
+        "summary": "Build OAuth 2.0 authentication flow for HubSpot CRM, managing access tokens, refresh cycles, and API scope permissions.",
+        "tags": [
+          "oauth",
+          "hubspot",
+          "authentication"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "CRM Integration"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.88,
+        "priority": "high",
+        "priority_confidence": 0.94,
+        "line_source": "Ln 13",
+        "reasoning": {
+          "source_summary_fragment": "OAuth/API keys integration with major CRMs (Salesforce, HubSpot)",
+          "tag_metadata_reference": [
+            {
+              "tag": "oauth",
+              "confidence": 0.95
+            },
+            {
+              "tag": "hubspot",
+              "confidence": 0.99
+            },
+            {
+              "tag": "authentication",
+              "confidence": 0.96
+            }
+          ],
+          "mapped_concepts": [
+            "OAuth flow",
+            "CRM integration",
+            "token management"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 3,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+        "title": "Build API key authentication mechanism for CRM connections",
+        "summary": "Implement secure API key authentication system for CRM integrations, including key validation, rotation, and secure storage.",
+        "tags": [
+          "api-key",
+          "authentication",
+          "crm-sync"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "CRM Integration"
+        ],
+        "difficulty": "low",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.92,
+        "line_source": "Ln 13",
+        "reasoning": {
+          "source_summary_fragment": "OAuth/API keys integration with major CRMs",
+          "tag_metadata_reference": [
+            {
+              "tag": "api-key",
+              "confidence": 0.94
+            },
+            {
+              "tag": "authentication",
+              "confidence": 0.96
+            },
+            {
+              "tag": "crm-sync",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "API key management",
+            "CRM authentication",
+            "security"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 4,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+        "title": "Create contact import service with dry run preview functionality",
+        "summary": "Develop contact import service that provides dry run preview capability, showing potential changes before actual import execution.",
+        "tags": [
+          "import",
+          "dry-run",
+          "contacts"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management",
+          "Data Synchronization"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "high",
+        "priority_confidence": 0.93,
+        "line_source": "Ln 15",
+        "reasoning": {
+          "source_summary_fragment": "user-controlled merge workflows including dry run preview",
+          "tag_metadata_reference": [
+            {
+              "tag": "import",
+              "confidence": 0.92
+            },
+            {
+              "tag": "dry-run",
+              "confidence": 0.96
+            },
+            {
+              "tag": "contacts",
+              "confidence": 0.94
+            }
+          ],
+          "mapped_concepts": [
+            "contact import",
+            "preview functionality",
+            "data validation"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 5,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+        "title": "Implement email-based duplicate detection algorithm",
+        "summary": "Create algorithm to detect duplicate contacts based on email addresses, handling variations and formatting differences.",
+        "tags": [
+          "duplicate-detection",
+          "email",
+          "matching"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 19",
+        "reasoning": {
+          "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+          "tag_metadata_reference": [
+            {
+              "tag": "duplicate-detection",
+              "confidence": 0.95
+            },
+            {
+              "tag": "email",
+              "confidence": 0.97
+            },
+            {
+              "tag": "matching",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "duplicate detection",
+            "email matching",
+            "data quality"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 6,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+        "title": "Implement phone number duplicate detection algorithm",
+        "summary": "Create algorithm to identify duplicate contacts based on phone numbers, handling different formats and international variations.",
+        "tags": [
+          "duplicate-detection",
+          "phone",
+          "matching"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 19",
+        "reasoning": {
+          "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+          "tag_metadata_reference": [
+            {
+              "tag": "duplicate-detection",
+              "confidence": 0.95
+            },
+            {
+              "tag": "phone",
+              "confidence": 0.97
+            },
+            {
+              "tag": "matching",
+              "confidence": 0.92
+            }
+          ],
+          "mapped_concepts": [
+            "duplicate detection",
+            "phone matching",
+            "data normalization"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 7,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+        "title": "Build fuzzy name matching algorithm for duplicate detection",
+        "summary": "Develop advanced fuzzy matching algorithm to detect duplicate contacts based on similar names, accounting for typos and variations.",
+        "tags": [
+          "duplicate-detection",
+          "fuzzy-matching",
+          "names"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management"
+        ],
+        "difficulty": "high",
+        "difficulty_confidence": 0.89,
+        "priority": "medium",
+        "priority_confidence": 0.84,
+        "line_source": "Ln 19",
+        "reasoning": {
+          "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+          "tag_metadata_reference": [
+            {
+              "tag": "duplicate-detection",
+              "confidence": 0.95
+            },
+            {
+              "tag": "fuzzy-matching",
+              "confidence": 0.96
+            },
+            {
+              "tag": "names",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "fuzzy matching",
+            "name similarity",
+            "duplicate detection"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 8,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+        "title": "Create duplicate review UI with merge/keep/ignore actions",
+        "summary": "Build user interface for reviewing detected duplicates, providing clear options to merge, keep, or ignore duplicate contacts.",
+        "tags": [
+          "ui",
+          "duplicate-resolution",
+          "user-action"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.85,
+        "priority": "high",
+        "priority_confidence": 0.9,
+        "line_source": "Ln 20",
+        "reasoning": {
+          "source_summary_fragment": "user-controlled merge workflows",
+          "tag_metadata_reference": [
+            {
+              "tag": "ui",
+              "confidence": 0.94
+            },
+            {
+              "tag": "duplicate-resolution",
+              "confidence": 0.95
+            },
+            {
+              "tag": "user-action",
+              "confidence": 0.91
+            }
+          ],
+          "mapped_concepts": [
+            "UI design",
+            "duplicate management",
+            "user workflow"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 9,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+        "title": "Build side-by-side field comparison UI for merge conflicts",
+        "summary": "Create interface displaying conflicting field values side-by-side during contact merge, allowing users to select preferred values.",
+        "tags": [
+          "ui",
+          "conflict-resolution",
+          "data-merge"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Contact Management"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.86,
+        "priority": "high",
+        "priority_confidence": 0.91,
+        "line_source": "Ln 21",
+        "reasoning": {
+          "source_summary_fragment": "side-by-side field comparison, and conflict resolution",
+          "tag_metadata_reference": [
+            {
+              "tag": "ui",
+              "confidence": 0.94
+            },
+            {
+              "tag": "conflict-resolution",
+              "confidence": 0.96
+            },
+            {
+              "tag": "data-merge",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "field comparison",
+            "conflict UI",
+            "merge workflow"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      },
+      {
+        "seq_no": 10,
+        "schema_version": "2025-05-28",
+        "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+        "title": "Implement automatic duplicate merge based on saved user preferences",
+        "summary": "Develop automated merge system that applies user-defined rules and preferences to handle duplicates without manual intervention.",
+        "tags": [
+          "auto-merge",
+          "preferences",
+          "sync"
+        ],
+        "domain": "SaaS",
+        "subdomain": [
+          "Data Synchronization",
+          "Contact Management"
+        ],
+        "difficulty": "medium",
+        "difficulty_confidence": 0.87,
+        "priority": "medium",
+        "priority_confidence": 0.85,
+        "line_source": "Ln 25",
+        "reasoning": {
+          "source_summary_fragment": "ongoing auto-sync with saved merge preferences",
+          "tag_metadata_reference": [
+            {
+              "tag": "auto-merge",
+              "confidence": 0.94
+            },
+            {
+              "tag": "preferences",
+              "confidence": 0.92
+            },
+            {
+              "tag": "sync",
+              "confidence": 0.93
+            }
+          ],
+          "mapped_concepts": [
+            "automation",
+            "merge rules",
+            "preference management"
+          ]
+        },
+        "inference_notes": {
+          "tag_added": null,
+          "confidence": null,
+          "method": null
+        },
+        "source_hlj_id": "REQ-020"
+      }
+    ]
+  },
+  "NEXT_CHUNKS": {
+    "CHUNK_ID": null,
+    "DATA": []
+  },
+  "errors": []
+}

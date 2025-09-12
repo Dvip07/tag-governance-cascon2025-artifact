@@ -1,0 +1,52 @@
+[
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-007-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Enforce encryption for sensitive data in transit and at rest per regulations",
+    "summary": "All sensitive data, including audit logs and screening reports, must be encrypted both during transmission and while stored, fully aligning with relevant FinTech regulatory requirements. The encryption protocols must cover data at rest and in transit to protect customer information, comply with compliance mandates, and ensure robust privacy and security postures.",
+    "tags": [
+      "security",
+      "encryption",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 35\u201337",
+    "reasoning": {
+      "source_summary_fragment": "All sensitive data ... must be encrypted both during transmission and while stored, fully aligning with ... regulatory requirements.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "encryption",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "encryption at rest",
+        "encryption in transit",
+        "regulatory compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007"
+  }
+]

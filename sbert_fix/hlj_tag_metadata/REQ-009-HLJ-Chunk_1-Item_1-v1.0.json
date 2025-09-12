@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Design scheduling UI to support cross-border payment setup and FX rate previews",
+  "summary": "Create an intuitive user interface enabling users to schedule cross-border payments with upfront FX rate previews. The UI must clearly present scheduling options and ensure transparency in rate selection for international transactions.",
+  "tags_v1": [
+    "scheduled payments",
+    "ui",
+    "[INFERRED] usability"
+  ],
+  "tags_v2": [
+    "scheduled payments",
+    "ui"
+  ],
+  "tags_v3": [
+    "ui",
+    "payments",
+    "scheduled payments",
+    "scheduling"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "all_87",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.7147014141082764,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "all_283",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7482625246047974,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduled payments",
+      "aliases": [],
+      "cluster_id": "all_86",
+      "domains": [
+        "FinTech"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7993158102035522,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduled payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduling",
+      "aliases": [],
+      "cluster_id": "all_105",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7537037134170532,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduling",
+      "method": "dedup_canonical"
+    }
+  ]
+}

@@ -1,0 +1,99 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "opus4",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Build alert system for deliverability issues",
+  "summary": "Implement a proactive alert system that monitors deliverability metrics, detects anomalies in bounce rates or spam complaints, and triggers immediate notifications to prevent reputation damage.",
+  "tags_v1": [
+    "monitoring",
+    "alerts",
+    "reliability"
+  ],
+  "tags_v2": [
+    "monitoring",
+    "alert"
+  ],
+  "tags_v3": [
+    "alert",
+    "monitoring",
+    "analytics",
+    "dashboard"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "all_53",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7249718904495239,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "all_23",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7455815672874451,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "all_32",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7112736105918884,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "all_22",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7118864059448242,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    }
+  ]
+}

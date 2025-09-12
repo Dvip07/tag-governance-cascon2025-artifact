@@ -1,0 +1,704 @@
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_1-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299369Z'
+  original_tags:
+  - dual-ledger
+  - operational-ledger
+  - real-time posting
+  validated_tags:
+  - dual-ledger
+  - operational-ledger
+  - real-time posting
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - dual-ledger
+  - operational-ledger
+  - real-time posting
+  validation_details:
+  - original_tag: dual-ledger
+    canonical_tag: dual-ledger
+    matched_tag: dual-ledger
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.115549Z'
+  - original_tag: operational-ledger
+    canonical_tag: operational-ledger
+    matched_tag: operational-ledger
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7492269277572632
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.235066Z'
+  - original_tag: real-time posting
+    canonical_tag: real-time posting
+    matched_tag: real-time posting
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.238212Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_2-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299378Z'
+  original_tags:
+  - dual-ledger
+  - reporting-ledger
+  - financial reporting
+  validated_tags:
+  - dual-ledger
+  - reporting-ledger
+  - financial reporting
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - dual-ledger
+  - reporting-ledger
+  - financial reporting
+  validation_details:
+  - original_tag: dual-ledger
+    canonical_tag: dual-ledger
+    matched_tag: dual-ledger
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.336858Z'
+  - original_tag: reporting-ledger
+    canonical_tag: reporting-ledger
+    matched_tag: reporting-ledger
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: semantic
+    similarity: 0.848290205001831
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.453085Z'
+  - original_tag: financial reporting
+    canonical_tag: financial reporting
+    matched_tag: financial reporting
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.456149Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_3-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299380Z'
+  original_tags:
+  - phantom-balances
+  - transaction-management
+  - logic development
+  validated_tags:
+  - phantom balance
+  tags_added:
+  - phantom balance
+  tags_dropped:
+  - phantom-balances
+  - transaction-management
+  - logic development
+  tags_kept: []
+  validation_details:
+  - original_tag: phantom-balances
+    canonical_tag: phantom balance
+    matched_tag: phantom balance
+    tag_origin_cluster_id: phantom balance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-05-31T23:57:57.557167Z'
+  - original_tag: transaction-management
+    canonical_tag: transactionmanagement
+    matched_tag: transactionmanagement
+    tag_origin_cluster_id: transactionmanagement
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:57:57.723049Z'
+  - original_tag: logic development
+    canonical_tag: logic development
+    matched_tag: logic development
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.890310Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_4-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299382Z'
+  original_tags:
+  - reconciliation
+  - batch-processing
+  - ledger management
+  validated_tags:
+  - reconciliation
+  - batchprocessing
+  - ledger management
+  tags_added:
+  - batchprocessing
+  tags_dropped:
+  - batch-processing
+  tags_kept:
+  - reconciliation
+  - ledger management
+  validation_details:
+  - original_tag: reconciliation
+    canonical_tag: reconciliation
+    matched_tag: reconciliation
+    tag_origin_cluster_id: reconciliation
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:57.904898Z'
+  - original_tag: batch-processing
+    canonical_tag: batchprocessing
+    matched_tag: batchprocessing
+    tag_origin_cluster_id: batchprocessing
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.6888595819473267
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-05-31T23:57:58.056674Z'
+  - original_tag: ledger management
+    canonical_tag: ledger management
+    matched_tag: ledger management
+    tag_origin_cluster_id: ledger management
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.159109Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_5-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299384Z'
+  original_tags:
+  - testing
+  - test-plans
+  - scenario-based testing
+  validated_tags:
+  - testing
+  - test-plans
+  - scenario-based testing
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - testing
+  - test-plans
+  - scenario-based testing
+  validation_details:
+  - original_tag: testing
+    canonical_tag: testing
+    matched_tag: testing
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.168839Z'
+  - original_tag: test-plans
+    canonical_tag: test-plans
+    matched_tag: test-plans
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.8375732898712158
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.309810Z'
+  - original_tag: scenario-based testing
+    canonical_tag: scenario-based testing
+    matched_tag: scenario-based testing
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.324514Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_6-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299385Z'
+  original_tags:
+  - monitoring
+  - anomaly-detection
+  - real-time monitoring
+  validated_tags:
+  - monitoring
+  - anomaly detection
+  - real-time monitoring
+  tags_added:
+  - anomaly detection
+  tags_dropped:
+  - anomaly-detection
+  tags_kept:
+  - monitoring
+  - real-time monitoring
+  validation_details:
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.332432Z'
+  - original_tag: anomaly-detection
+    canonical_tag: anomaly detection
+    matched_tag: anomaly detection
+    tag_origin_cluster_id: anomaly detection
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.6977492570877075
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.473792Z'
+  - original_tag: real-time monitoring
+    canonical_tag: real-time monitoring
+    matched_tag: real-time monitoring
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.482579Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_7-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299387Z'
+  original_tags:
+  - documentation
+  - api-documentation
+  - reconciliation
+  validated_tags:
+  - documentation
+  - api-documentation
+  - reconciliation
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - documentation
+  - api-documentation
+  - reconciliation
+  validation_details:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.493005Z'
+  - original_tag: api-documentation
+    canonical_tag: api-documentation
+    matched_tag: api-documentation
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7158377170562744
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.635311Z'
+  - original_tag: reconciliation
+    canonical_tag: reconciliation
+    matched_tag: reconciliation
+    tag_origin_cluster_id: reconciliation
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.639340Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_8-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299389Z'
+  original_tags:
+  - security
+  - audit-trails
+  - immutable logging
+  validated_tags:
+  - security
+  - audit-trails
+  - immutable logging
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - security
+  - audit-trails
+  - immutable logging
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.741568Z'
+  - original_tag: audit-trails
+    canonical_tag: audit-trails
+    matched_tag: audit-trails
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.6814429759979248
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.859645Z'
+  - original_tag: immutable logging
+    canonical_tag: immutable logging
+    matched_tag: immutable logging
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.873031Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_9-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299391Z'
+  original_tags:
+  - security
+  - access-control
+  - role-based access
+  validated_tags:
+  - security
+  - access control
+  tags_added:
+  - access control
+  tags_dropped:
+  - access-control
+  - role-based access
+  tags_kept:
+  - security
+  validation_details:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:58.973873Z'
+  - original_tag: access-control
+    canonical_tag: access control
+    matched_tag: access control
+    tag_origin_cluster_id: access control
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7393703460693359
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.120537Z'
+  - original_tag: role-based access
+    canonical_tag: role-based access
+    matched_tag: role-based access
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.286167Z'
+- hlj_id: REQ-010-HLJ-Chunk_1-Item_10-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299392Z'
+  original_tags:
+  - compliance
+  - regulatory-standards
+  - SOX
+  validated_tags:
+  - compliance
+  - regulatory-standards
+  - SOX
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - compliance
+  - regulatory-standards
+  - SOX
+  validation_details:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.297833Z'
+  - original_tag: regulatory-standards
+    canonical_tag: regulatory-standards
+    matched_tag: regulatory-standards
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7700604200363159
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.436300Z'
+  - original_tag: SOX
+    canonical_tag: SOX
+    matched_tag: SOX
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.440648Z'
+- hlj_id: REQ-010-HLJ-Chunk_2-Item_1-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299394Z'
+  original_tags:
+  - reconciliation
+  - mismatch-detection
+  - '[INFERRED] compliance'
+  validated_tags:
+  - reconciliation
+  tags_added: []
+  tags_dropped:
+  - mismatch-detection
+  - '[INFERRED] compliance'
+  tags_kept:
+  - reconciliation
+  validation_details:
+  - original_tag: reconciliation
+    canonical_tag: reconciliation
+    matched_tag: reconciliation
+    tag_origin_cluster_id: reconciliation
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.444387Z'
+  - original_tag: mismatch-detection
+    canonical_tag: mismatch-detection
+    matched_tag: mismatch-detection
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.621976Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.788202Z'
+- hlj_id: REQ-010-HLJ-Chunk_2-Item_2-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299396Z'
+  original_tags:
+  - reconciliation
+  - resolution-workflows
+  validated_tags:
+  - reconciliation
+  - resolution-workflows
+  tags_added: []
+  tags_dropped: []
+  tags_kept:
+  - reconciliation
+  - resolution-workflows
+  validation_details:
+  - original_tag: reconciliation
+    canonical_tag: reconciliation
+    matched_tag: reconciliation
+    tag_origin_cluster_id: reconciliation
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-05-31T23:57:59.890547Z'
+  - original_tag: resolution-workflows
+    canonical_tag: resolution-workflows
+    matched_tag: resolution-workflows
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: semantic
+    similarity: 0.9871299266815186
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.041336Z'
+- hlj_id: REQ-010-HLJ-Chunk_2-Item_3-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299397Z'
+  original_tags:
+  - phantom-reversals
+  - transaction-management
+  - '[INFERRED] ledger-management'
+  validated_tags:
+  - phantom-reversals
+  - '[INFERRED] ledger-management'
+  tags_added: []
+  tags_dropped:
+  - transaction-management
+  tags_kept:
+  - phantom-reversals
+  - '[INFERRED] ledger-management'
+  validation_details:
+  - original_tag: phantom-reversals
+    canonical_tag: phantom-reversals
+    matched_tag: phantom-reversals
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: semantic
+    similarity: 0.7021257877349854
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.163467Z'
+  - original_tag: transaction-management
+    canonical_tag: transactionmanagement
+    matched_tag: transactionmanagement
+    tag_origin_cluster_id: transactionmanagement
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:58:00.326513Z'
+  - original_tag: '[INFERRED] ledger-management'
+    canonical_tag: '[INFERRED] ledger-management'
+    matched_tag: '[INFERRED] ledger-management'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: semantic
+    similarity: 0.7610877156257629
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.473595Z'
+- hlj_id: REQ-010-HLJ-Chunk_2-Item_4-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299399Z'
+  original_tags:
+  - multi-currency
+  - conversion-logic
+  validated_tags:
+  - multi-currency
+  tags_added: []
+  tags_dropped:
+  - conversion-logic
+  tags_kept:
+  - multi-currency
+  validation_details:
+  - original_tag: multi-currency
+    canonical_tag: multi-currency
+    matched_tag: multi-currency
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.477896Z'
+  - original_tag: conversion-logic
+    canonical_tag: conversion-logic
+    matched_tag: conversion-logic
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.639018Z'
+- hlj_id: REQ-010-HLJ-Chunk_2-Item_5-v1.0
+  requirement: req-010
+  model: meta70b
+  timestamp: '2025-06-01T00:11:32.299400Z'
+  original_tags:
+  - reconciliation
+  - alerting
+  - '[INFERRED] data-integrity'
+  validated_tags:
+  - reconciliation
+  tags_added: []
+  tags_dropped:
+  - alerting
+  - '[INFERRED] data-integrity'
+  tags_kept:
+  - reconciliation
+  validation_details:
+  - original_tag: reconciliation
+    canonical_tag: reconciliation
+    matched_tag: reconciliation
+    tag_origin_cluster_id: reconciliation
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.643921Z'
+  - original_tag: alerting
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-05-31T23:58:00.810086Z'
+  - original_tag: '[INFERRED] data-integrity'
+    canonical_tag: '[INFERRED] data-integrity'
+    matched_tag: '[INFERRED] data-integrity'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-05-31T23:58:00.979578Z'

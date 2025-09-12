@@ -1,0 +1,169 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Support 1-year configurable log retention policy",
+  "summary": "Implement a log retention policy with a minimum configurable period of 1 year to ensure auditability and meet compliance demands. The system must allow retention periods to be adjusted based on client policy and relevant regulatory requirements.",
+  "tags_v1": [
+    "retention",
+    "compliance",
+    "[INFERRED] policy"
+  ],
+  "tags_v2": [
+    "retention",
+    "compliance"
+  ],
+  "tags_v3": [
+    "logging",
+    "retention",
+    "compliance",
+    "access_logs",
+    "security",
+    "policy"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "all_24",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7364785671234131,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retention",
+      "aliases": [],
+      "cluster_id": "all_124",
+      "domains": [
+        "FinTech",
+        "SaaS",
+        "SaaS Analytics"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6972114443778992,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retention",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "middleware",
+      "aliases": [],
+      "cluster_id": "all_290",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6694126129150391,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "middleware",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "all_12",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS",
+        "Security"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7131117582321167,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "all_52",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.6758167147636414,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access_logs",
+      "aliases": [],
+      "cluster_id": "all_387",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7749637365341187,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access_logs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "all_44",
+      "domains": [
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7138538956642151,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "policy",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.6803317070007324,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "policy",
+      "method": "dedup_canonical"
+    }
+  ]
+}

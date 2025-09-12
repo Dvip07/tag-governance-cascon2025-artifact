@@ -1,0 +1,106 @@
+{
+  "hlj_id": "REQ-028-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-028",
+  "domain": "SaaS",
+  "title": "Implement urgency detection model to flag critical tickets",
+  "summary": "Deploy an automated model to detect and flag urgent or critical tickets at intake using NLP analysis. This enables prioritization and rapid routing to senior agents or specialized queues.",
+  "tags_v1": [
+    "nlp",
+    "urgency",
+    "[INFERRED] escalation"
+  ],
+  "tags_v2": [
+    "nlp",
+    "urgency"
+  ],
+  "tags_v3": [
+    "urgency",
+    "nlp",
+    "escalation",
+    "ai",
+    "detection"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "urgency",
+      "aliases": [],
+      "cluster_id": "all_192",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.7667297720909119,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "urgency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "nlp",
+      "aliases": [],
+      "cluster_id": "all_190",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7189236879348755,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "nlp",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "escalation",
+      "aliases": [],
+      "cluster_id": null,
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.752941370010376,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "escalation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ai",
+      "aliases": [],
+      "cluster_id": "all_422",
+      "domains": [
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7246024012565613,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ai",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "detection",
+      "aliases": [],
+      "cluster_id": "all_14",
+      "domains": [
+        "Compliance and Security",
+        "FinTech",
+        "SaaS"
+      ],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.7471294403076172,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "detection",
+      "method": "dedup_canonical"
+    }
+  ]
+}

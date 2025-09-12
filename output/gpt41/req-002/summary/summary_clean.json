@@ -1,0 +1,4 @@
+{
+  "requirement_id": "REQ-002",
+  "summary": "REQ-002 defines a digital onboarding workflow enabling minors (under 18) to open accounts in compliance with regional child data protection laws (e.g., COPPA, GDPR-K) by implementing a guardian-based KYC fallback. The multi-step process collects only essential minor info and triggers KYC verification for the legal guardian, permitting device/session handoff and dynamic switching of guardians with full audit logging. Real-time third-party KYC integration for guardians is required, with clear fail/pending feedback, prevention of duplicate minor onboarding, and all sensitive data encrypted at rest and in transit. The workflow must be mobile-optimized, accessible, and provide clear explanations, while ensuring maintainability for future verification extensions and updating documentation and support scripts. Certified, compliance-approved KYC providers are mandatory."
+}

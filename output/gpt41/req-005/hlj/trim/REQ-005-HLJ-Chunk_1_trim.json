@@ -1,0 +1,458 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate Freeze/Unfreeze toggle in virtual card management UI",
+    "summary": "Build a secure, real-time toggle in the app\u2019s card management screen, allowing users to instantly freeze or unfreeze any eligible virtual debit or credit card through a clear and intuitive UI. Leverage robust authentication and ensure seamless backend orchestration for atomic state changes.",
+    "tags": [
+      "usability",
+      "frontend",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 12\u201314",
+    "reasoning": {
+      "source_summary_fragment": "feature enabling users to freeze or unfreeze eligible virtual debit and credit cards through the mobile app in real time",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.93
+        },
+        {
+          "tag": "frontend",
+          "confidence": 0.9
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "stateful UI toggle",
+        "atomic freeze/unfreeze",
+        "strong authentication"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Display real-time status (Frozen/Active) with visual cues in UI",
+    "summary": "The card management UI must present the card\u2019s current status (Frozen or Active) using clear, distinct visual cues, updating instantly after user action to reflect state changes. Visual feedback should align with accessibility standards and be intuitively understood.",
+    "tags": [
+      "usability",
+      "feedback",
+      "[INFERRED] accessibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 15\u201316",
+    "reasoning": {
+      "source_summary_fragment": "UI must display card status with clear feedback ... handle failed operations with retries",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.9
+        },
+        {
+          "tag": "accessibility",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "real-time UI update",
+        "distinct visual indicators",
+        "status feedback"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "accessibility",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement instant failure feedback and retry/cancel for toggle action",
+    "summary": "When a freeze/unfreeze operation fails, immediately notify the user with a clear error message and present options to retry the action or cancel. Design feedback and action flows to minimize confusion and reduce user friction.",
+    "tags": [
+      "usability",
+      "error_handling"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 17\u201318",
+    "reasoning": {
+      "source_summary_fragment": "handle failed operations with retries ... offer contextual help",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "error_handling",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "real-time error feedback",
+        "retry/cancel UX",
+        "failure scenarios"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Add contextual help/tooltips explaining freeze/unfreeze implications",
+    "summary": "Embed contextual help or tooltips in the card management interface to educate users about the effects and constraints of freezing or unfreezing a card. Content must clarify, for example, impacts on recurring transactions and resuming card activity.",
+    "tags": [
+      "usability",
+      "documentation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "MobileApp"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 19\u201320",
+    "reasoning": {
+      "source_summary_fragment": "offer contextual help ... exceptions (recurring transactions)",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.9
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "tooltips",
+        "contextual guidance",
+        "effects of freeze/unfreeze"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Provide customer support with real-time card status and override tools",
+    "summary": "Enhance support dashboards to include real-time status visibility for virtual cards, and offer tools for authorized override of freeze/unfreeze operations. These tools must log actions for auditing and comply with internal access policies.",
+    "tags": [
+      "operational",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "SupportTools"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 44\u201345",
+    "reasoning": {
+      "source_summary_fragment": "Customer support tools and notifications must be updated ... log all actions for auditing",
+      "tag_metadata_reference": [
+        {
+          "tag": "operational",
+          "confidence": 0.94
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "support override tools",
+        "real-time support visibility",
+        "auditing, log tracking"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Integrate freeze/unfreeze events with notification channels (push/SMS/email)",
+    "summary": "Ensure that whenever a card is frozen or unfrozen, event triggers seamlessly send user notifications through push, SMS, and email channels. Messages must be securely transmitted and clearly reflect current card status changes.",
+    "tags": [
+      "usability",
+      "operational",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "Integrate freeze/unfreeze events with notification channels (push/SMS/email) ... encryption of communications",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "operational",
+          "confidence": 0.93
+        },
+        {
+          "tag": "security",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel notifications",
+        "event-driven messages",
+        "secure notification transmission"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Update user guides and help center for new freeze/unfreeze feature",
+    "summary": "Revise existing user-facing guides and online help center documentation to clearly describe how to use the freeze/unfreeze feature, including coverage of security, limitations, and troubleshooting.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "User guides and help content must be revised",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user guide revision",
+        "feature documentation",
+        "online help update"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Update in-app messaging regarding card freeze/unfreeze",
+    "summary": "Improve and clarify in-app messages relating to freezing and unfreezing cards, providing timely, accurate, and user-friendly guidance throughout the feature flow. Ensure consistency with help and notification content.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.81,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 48",
+    "reasoning": {
+      "source_summary_fragment": "User guides and help content must be revised ... in-app messaging regarding card freeze/unfreeze",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "messaging update",
+        "clear terminology",
+        "in-app guidance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Pilot feature with selected cohorts and collect user feedback",
+    "summary": "Deploy the freeze/unfreeze capability to limited user groups for pilot testing. Collect feedback, monitor feature adoption and performance, and document issues to guide improvements before broader release.",
+    "tags": [
+      "operational",
+      "feedback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "the rollout should include a pilot phase and feedback loop",
+      "tag_metadata_reference": [
+        {
+          "tag": "operational",
+          "confidence": 0.89
+        },
+        {
+          "tag": "feedback",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "pilot rollout",
+        "user feedback gathering",
+        "phased deployment"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-005-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Iterate on feature based on pilot user feedback before general release",
+    "summary": "Analyze feedback and issues from pilot cohorts, prioritizing fixes and enhancements to improve the freeze/unfreeze experience. Make all necessary adjustments in usability, messaging, and performance prior to general availability.",
+    "tags": [
+      "feedback",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CardManagement",
+      "Rollout"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "Iterate on feature based on pilot user feedback before general release",
+      "tag_metadata_reference": [
+        {
+          "tag": "feedback",
+          "confidence": 0.9
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "post-pilot iteration",
+        "feature refinement",
+        "release preparation"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-005"
+  }
+]
