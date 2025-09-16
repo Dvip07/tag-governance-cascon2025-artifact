@@ -1,0 +1,82 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Display earnings summaries and user documentation dispute flows",
+  "summary": "Implement clear interfaces to show users their consolidated earnings summaries and facilitate the process for disputing data or submitting extra documentation. Promotes user trust, clarity, and process efficiency.",
+  "tags_v1": [
+    "user-interface",
+    "dispute",
+    "[INFERRED] user-trust"
+  ],
+  "tags_v2": [
+    "dispute"
+  ],
+  "tags_v3": [
+    "security",
+    "api",
+    "dispute"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "20",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.672431,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.716715,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.733697,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dispute",
+      "aliases": [],
+      "cluster_id": "17",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.706401,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dispute",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.951338Z"
+}

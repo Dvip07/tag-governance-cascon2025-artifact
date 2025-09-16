@@ -1,0 +1,86 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Meet API response performance target (≤1.5s for up to 24 months’ data)",
+  "summary": "Ensure the transactions history API responds within 1.5 seconds for data volumes covering up to two years, addressing both scalability and user-experience goals. This is vital for performance consistency and compliance with fintech SLAs.",
+  "tags_v1": [
+    "performance",
+    "latency",
+    "scalability",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "performance",
+    "latency"
+  ],
+  "tags_v3": [
+    "performance",
+    "latency",
+    "data",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "65",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.710223,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "latency",
+      "aliases": [],
+      "cluster_id": "66",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.721801,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "latency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "75",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.682511,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.698106,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.956185Z"
+}

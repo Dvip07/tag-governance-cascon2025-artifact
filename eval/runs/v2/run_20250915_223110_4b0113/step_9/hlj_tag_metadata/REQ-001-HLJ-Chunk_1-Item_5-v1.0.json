@@ -1,0 +1,98 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Normalize transaction timestamps to UTC and add original timezone metadata",
+  "summary": "Standardize all transaction timestamps to UTC while preserving and flagging the original timezone metadata. This ensures temporal consistency across data from multiple partners and enhances downstream processing reliability.",
+  "tags_v1": [
+    "timezone",
+    "data",
+    "metadata"
+  ],
+  "tags_v2": [
+    "timezone",
+    "data",
+    "metadata"
+  ],
+  "tags_v3": [
+    "data",
+    "deduplication",
+    "timezone",
+    "metadata",
+    "consistency"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "75",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.693036,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deduplication",
+      "aliases": [],
+      "cluster_id": "73",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.701652,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deduplication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timezone",
+      "aliases": [],
+      "cluster_id": "76",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.741905,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timezone",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "77",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.704209,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "consistency",
+      "aliases": [],
+      "cluster_id": "108",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.720363,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consistency",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.955787Z"
+}

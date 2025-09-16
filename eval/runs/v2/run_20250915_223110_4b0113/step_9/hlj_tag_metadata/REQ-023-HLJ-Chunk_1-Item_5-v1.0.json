@@ -1,0 +1,83 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Implement fallback handling for ambiguous geo-data (VPN, proxies, missing info)",
+  "summary": "Introduce robust fallback strategies for cases when Geo-IP data is ambiguous or unavailable, such as users with VPNs, proxies, or missing IP information. Ensures feature targeting stability and user experience consistency.",
+  "tags_v1": [
+    "fault-tolerance",
+    "geo-ip",
+    "[INFERRED] fallback"
+  ],
+  "tags_v2": [
+    "geo-ip"
+  ],
+  "tags_v3": [
+    "geo-ip",
+    "feature-flags",
+    "fallback",
+    "admin portal"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "geo-ip",
+      "aliases": [],
+      "cluster_id": "139",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.78495,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-ip",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "133",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.775888,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature flags",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "58",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.765844,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "admin portal",
+      "aliases": [],
+      "cluster_id": "390",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.730277,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "admin portal",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.965431Z"
+}

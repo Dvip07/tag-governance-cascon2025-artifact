@@ -1,0 +1,85 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Implement failure handling logic for batch payout transactions",
+  "summary": "Introduce robust failure handling mechanisms for batch payouts, including detection of processing errors, compliance holds, or bank failures. The system must ensure accurate error capture and support appropriate response actions.",
+  "tags_v1": [
+    "failure",
+    "rollback",
+    "[INFERRED] reliability"
+  ],
+  "tags_v2": [
+    "failure",
+    "rollback"
+  ],
+  "tags_v3": [
+    "failure",
+    "rollback",
+    "reporting",
+    "reliability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "failure",
+      "aliases": [],
+      "cluster_id": "106",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.709632,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "failure",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "59",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.764053,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "55",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.69044,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reliability",
+      "aliases": [],
+      "cluster_id": "102",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.712473,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reliability",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.961464Z"
+}

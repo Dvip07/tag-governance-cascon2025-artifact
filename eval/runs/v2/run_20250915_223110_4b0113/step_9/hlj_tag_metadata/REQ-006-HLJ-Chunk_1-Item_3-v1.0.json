@@ -1,0 +1,104 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Enable real-time updates to tenant rate limits via admin portal",
+  "summary": "Allow administrators to update tenant-specific rate limits dynamically and in real time using the management portal. The update process should propagate changes immediately for effective operational management.",
+  "tags_v1": [
+    "configuration",
+    "usability",
+    "[INFERRED] real-time"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "configuration",
+    "real-time",
+    "api",
+    "real-time updates",
+    "rate-limiting"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "configuration",
+      "aliases": [
+        "config"
+      ],
+      "cluster_id": "48",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.719135,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "configuration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time",
+      "aliases": [],
+      "cluster_id": "49",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.74923,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.741587,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "real-time updates",
+      "aliases": [],
+      "cluster_id": "359",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.779359,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "real-time updates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "47",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.804378,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate limiting",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.953329Z"
+}

@@ -1,0 +1,100 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Prompt users to hide/reprioritize widgets if dashboards exceed performance budgets",
+  "summary": "Prompt end users to hide or reprioritize dashboard widgets if overall performance budgets are breached, thereby maintaining usability and allowing personal customization.",
+  "tags_v1": [
+    "prompt",
+    "usability",
+    "[INFERRED] performance"
+  ],
+  "tags_v2": [
+    "prompt",
+    "usability"
+  ],
+  "tags_v3": [
+    "performance",
+    "ci/cd",
+    "automation",
+    "prompt",
+    "usability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "65",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.75679,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ci/cd",
+      "aliases": [
+        "ci-cd",
+        "ci_cd"
+      ],
+      "cluster_id": "29",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.681902,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ci-cd",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "149",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.722642,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "prompt",
+      "aliases": [],
+      "cluster_id": "122",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.706237,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "prompt",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "94",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.729383,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.963321Z"
+}

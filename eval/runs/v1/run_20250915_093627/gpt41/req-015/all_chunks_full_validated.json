@@ -1,0 +1,1538 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design webhook event framework for claim status notifications",
+    "summary": "Develop a webhook infrastructure to notify clients of insurance claim status changes, including submitted, in review, approved, rejected, and paid statuses. The framework should support standardized event types, extensibility, and integration with claims APIs. Scalability, reliability, and compliance for high-volume financial processing are required.",
+    "tags": [
+      "webhooks",
+      "notifications",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Insurance",
+      "APIs",
+      "Webhooks"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 07\u201310",
+    "reasoning": {
+      "source_summary_fragment": "Implement a webhook-based notification system for insurance API claim status changes (submitted, in review, approved, rejected, paid).",
+      "tag_metadata_reference": [
+        {
+          "tag": "webhooks",
+          "confidence": 0.97
+        },
+        {
+          "tag": "notifications",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.78
+        }
+      ],
+      "mapped_concepts": [
+        "Webhook event architecture",
+        "Claim status change events",
+        "Insurance API integration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.78,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "webhooks",
+      "notifications",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "webhook",
+      "notification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "webhooks",
+        "canonical_tag": "webhook",
+        "matched_tag": "webhook",
+        "tag_origin_cluster_id": "webhook",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.125879Z"
+      },
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.139310Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.246752Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement client endpoint registration with event selection",
+    "summary": "Enable clients to register webhook endpoints and select which claim status events should trigger notifications. The registration process must be secure and support customization for each integration profile.",
+    "tags": [
+      "webhooks",
+      "registration"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Insurance",
+      "APIs"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 11\u201312",
+    "reasoning": {
+      "source_summary_fragment": "Clients must be able to register endpoints, select events, and define custom data fields per integration profile.",
+      "tag_metadata_reference": [
+        {
+          "tag": "webhooks",
+          "confidence": 0.96
+        },
+        {
+          "tag": "registration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "Endpoint registration",
+        "Event type selection",
+        "Integration customization"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "webhooks",
+      "registration"
+    ],
+    "tags_v2": [
+      "webhook",
+      "registration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "webhooks",
+        "canonical_tag": "webhook",
+        "matched_tag": "webhook",
+        "tag_origin_cluster_id": "webhook",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.253644Z"
+      },
+      {
+        "original_tag": "registration",
+        "canonical_tag": "registration",
+        "matched_tag": "registration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.255545Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Enable per-client custom field mapping in webhook payloads",
+    "summary": "Allow each client integration to define custom data fields within webhook payloads, enabling tailored data delivery to suit client-specific requirements and systems. Support mapping and management of custom fields on a per-client basis.",
+    "tags": [
+      "customization",
+      "webhooks",
+      "[INFERRED] usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Insurance",
+      "APIs",
+      "Webhooks"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 13\u201317",
+    "reasoning": {
+      "source_summary_fragment": "Clients must be able to ... define custom data fields per integration profile.",
+      "tag_metadata_reference": [
+        {
+          "tag": "customization",
+          "confidence": 0.93
+        },
+        {
+          "tag": "webhooks",
+          "confidence": 0.91
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.8
+        }
+      ],
+      "mapped_concepts": [
+        "Client-specific payload structure",
+        "Custom field mapping"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "customization",
+      "webhooks",
+      "[INFERRED] usability"
+    ],
+    "tags_v2": [
+      "webhook"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "customization",
+        "canonical_tag": "customization",
+        "matched_tag": "customization",
+        "tag_origin_cluster_id": "customization",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.355061Z"
+      },
+      {
+        "original_tag": "webhooks",
+        "canonical_tag": "webhook",
+        "matched_tag": "webhook",
+        "tag_origin_cluster_id": "webhook",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.357753Z"
+      },
+      {
+        "original_tag": "[INFERRED] usability",
+        "canonical_tag": "[INFERRED] usability",
+        "matched_tag": "[INFERRED] usability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.463882Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Validate custom fields for conflicts, naming, and type constraints",
+    "summary": "Provide validation logic to check custom fields defined by clients for reserved word conflicts, proper naming conventions, and allowed data types in webhook payloads. Ensure data integrity and prevent misconfiguration during client onboarding.",
+    "tags": [
+      "validation",
+      "schema"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIs"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 15\u201317",
+    "reasoning": {
+      "source_summary_fragment": "The system must validate custom fields (check for reserved word conflicts, naming/type constraints)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "validation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "schema",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "Field validation rules",
+        "Schema constraint enforcement"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "validation",
+      "schema"
+    ],
+    "tags_v2": [
+      "validation",
+      "schema"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.471868Z"
+      },
+      {
+        "original_tag": "schema",
+        "canonical_tag": "schema",
+        "matched_tag": "schema",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.483883Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement webhook schema validation and reject conflicts with detailed errors",
+    "summary": "Add webhook schema validation to reject conflicting schemas and provide clients with detailed error messages for resolution. This reduces onboarding errors and improves developer experience.",
+    "tags": [
+      "validation",
+      "error-handling"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Insurance",
+      "Webhooks"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 36\u201337",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases include schema conflicts (reject with detailed errors)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "validation",
+          "confidence": 0.96
+        },
+        {
+          "tag": "error-handling",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "Conflict rejection with error details",
+        "Schema validation workflow"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "validation",
+      "error-handling"
+    ],
+    "tags_v2": [
+      "validation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.486115Z"
+      },
+      {
+        "original_tag": "error-handling",
+        "canonical_tag": "error-handling",
+        "matched_tag": "error-handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.586369Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop retry logic for failed webhook deliveries with exponential backoff",
+    "summary": "Implement robust retry logic for failed webhook deliveries using exponential backoff strategies to maximize successful delivery rates and ensure reliability even during transient outages.",
+    "tags": [
+      "reliability",
+      "delivery"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 18\u201320",
+    "reasoning": {
+      "source_summary_fragment": "Reliability is ensured via retry with exponential backoff...",
+      "tag_metadata_reference": [
+        {
+          "tag": "reliability",
+          "confidence": 0.95
+        },
+        {
+          "tag": "delivery",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "Retry mechanisms",
+        "Webhook delivery robustness"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "reliability",
+      "delivery"
+    ],
+    "tags_v2": [
+      "reliability",
+      "delivery"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reliability",
+        "canonical_tag": "reliability",
+        "matched_tag": "reliability",
+        "tag_origin_cluster_id": "reliability",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.592861Z"
+      },
+      {
+        "original_tag": "delivery",
+        "canonical_tag": "delivery",
+        "matched_tag": "delivery",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.598748Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Notify clients on persistent webhook delivery failures",
+    "summary": "Trigger alerts or notifications to clients when webhook deliveries have failed after all retry attempts, ensuring clients are informed of delivery issues in a timely manner.",
+    "tags": [
+      "notifications",
+      "reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "and notification on persistent failures.",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.96
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "Failure alerting",
+        "Persistent delivery warnings"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "notifications",
+      "reliability"
+    ],
+    "tags_v2": [
+      "notification",
+      "reliability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.606320Z"
+      },
+      {
+        "original_tag": "reliability",
+        "canonical_tag": "reliability",
+        "matched_tag": "reliability",
+        "tag_origin_cluster_id": "reliability",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.658185Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Provide clients with delivery status and logs via API or dashboard",
+    "summary": "Expose webhook delivery status and logs to clients through an API or dashboard, supporting transparency, troubleshooting, and operational visibility for ongoing integrations.",
+    "tags": [
+      "usability",
+      "monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "APIs",
+      "Webhooks"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 21\u201322",
+    "reasoning": {
+      "source_summary_fragment": "Reliability is ensured via ... delivery logs/status (API/dashboard)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.95
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "Transparency of webhook delivery",
+        "API/dashboard logging"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "usability",
+      "monitoring"
+    ],
+    "tags_v2": [
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.758691Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.812877Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Require endpoint verification using shared secret or signed payloads",
+    "summary": "Enforce that webhook endpoints are verified using either a pre-shared secret or cryptographically signed payloads, bolstering security and guarding against spoofed or unauthorized notification delivery.",
+    "tags": [
+      "security",
+      "verification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.99,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "The system must ... enforce endpoint verification (shared secret/signed payloads)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.98
+        },
+        {
+          "tag": "verification",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "Endpoint verification",
+        "Secret-based authentication",
+        "Secure signature validation"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "security",
+      "verification"
+    ],
+    "tags_v2": [
+      "security",
+      "verification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.819714Z"
+      },
+      {
+        "original_tag": "verification",
+        "canonical_tag": "verification",
+        "matched_tag": "verification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.821947Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Allow clients to manage, pause, or revoke webhook registrations via self-service portal",
+    "summary": "Provide a client self-service portal for managing webhook registrations, including pausing or revoking endpoints, supporting operational agility and usability improvements for client teams.",
+    "tags": [
+      "usability",
+      "self-service"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "Portal"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 25\u201326",
+    "reasoning": {
+      "source_summary_fragment": "support managing webhook registrations via a portal.",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.94
+        },
+        {
+          "tag": "self-service",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "Self-service portal",
+        "Webhook registration management"
+      ]
+    },
+    "inference_notes": {},
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "usability",
+      "self-service"
+    ],
+    "tags_v2": [
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.828532Z"
+      },
+      {
+        "original_tag": "self-service",
+        "canonical_tag": "self service",
+        "matched_tag": "self service",
+        "tag_origin_cluster_id": "self service",
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.928825Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Log all webhook events, payloads, and delivery outcomes for compliance and troubleshooting",
+    "summary": "All webhook event activity\u2014including incoming payloads, delivery attempts, and results\u2014must be logged thoroughly to support compliance, auditing, and incident troubleshooting. Logging must be granular enough to reconstruct event flows, trace failures, and demonstrate regulatory adherence.",
+    "tags": [
+      "compliance",
+      "logging",
+      "[INFERRED] auditing"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 27\u201328",
+    "reasoning": {
+      "source_summary_fragment": "Reliability is ensured via retry with exponential backoff, delivery logs/status (API/dashboard), and notification on persistent failures.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "event logging",
+        "webhook delivery tracing",
+        "regulatory troubleshooting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "auditing",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "compliance",
+      "logging",
+      "[INFERRED] auditing"
+    ],
+    "tags_v2": [
+      "compliance",
+      "logs"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:43.931779Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:43.989002Z"
+      },
+      {
+        "original_tag": "[INFERRED] auditing",
+        "canonical_tag": "[INFERRED] auditing",
+        "matched_tag": "[INFERRED] auditing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.092350Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement rate limiting for high-frequency webhook clients and notify on threshold breaches",
+    "summary": "Introduce rate limiting controls on webhook endpoints to mitigate abuse and ensure reliability for all users. Clients exceeding configured thresholds must be notified promptly, supporting policy transparency and proactive correction.",
+    "tags": [
+      "rate-limiting",
+      "performance",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "Performance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 38\u201339",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases include schema conflicts (reject with detailed errors) and rate limiting for high-frequency clients.",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate-limiting",
+          "confidence": 0.97
+        },
+        {
+          "tag": "performance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "rate-limits",
+        "notification on breach",
+        "API protection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "rate-limiting",
+      "performance",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "rate-limiting",
+        "canonical_tag": "rate limit",
+        "matched_tag": "rate limit",
+        "tag_origin_cluster_id": "rate limit",
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:44.190643Z"
+      },
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.291131Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.394441Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Produce and maintain sample payloads, setup guides, and troubleshooting documentation",
+    "summary": "Comprehensive sample payloads, integration setup guides, and troubleshooting documentation must be maintained and updated. These resources improve usability, aid onboarding, and help clients efficiently address common integration issues.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 41\u201342",
+    "reasoning": {
+      "source_summary_fragment": "Non-functionals: ... provide usability features like sample payloads, setup docs, and support team training.",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "sample webhook payloads",
+        "integration documentation",
+        "onboarding"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.9,
+      "method": "plan_match_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "documentation",
+      "usability"
+    ],
+    "tags_v2": [
+      "documentation",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.397246Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.404320Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Train support teams on common webhook integration issues",
+    "summary": "Support teams must receive training focused on typical webhook integration challenges and troubleshooting techniques. This enables effective assistance to clients, reducing time to resolution and support escalations.",
+    "tags": [
+      "training",
+      "support"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Support"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "low",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 43",
+    "reasoning": {
+      "source_summary_fragment": "Non-functionals: ... provide usability features like ... support team training.",
+      "tag_metadata_reference": [
+        {
+          "tag": "training",
+          "confidence": 0.92
+        },
+        {
+          "tag": "support",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "support enablement",
+        "issue troubleshooting",
+        "integration education"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.89,
+      "method": "plan_match_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "training",
+      "support"
+    ],
+    "tags_v2": [
+      "training",
+      "support"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.410593Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.412468Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Upgrade insurance claims processing system and API to support webhooks",
+    "summary": "The insurance claims processing system and its API must be updated to integrate webhook event triggers. This foundational upgrade enables asynchronous claim status notifications and seamless downstream integration.",
+    "tags": [
+      "dependency",
+      "integration"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Insurance",
+      "APIs"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 45",
+    "reasoning": {
+      "source_summary_fragment": "Dependencies include upgrades to core claims processing and API.",
+      "tag_metadata_reference": [
+        {
+          "tag": "dependency",
+          "confidence": 0.92
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "claims processing system upgrade",
+        "API webhook integration"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "dep_analysis_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "dependency",
+      "integration"
+    ],
+    "tags_v2": [
+      "integration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dependency",
+        "canonical_tag": "dependency",
+        "matched_tag": "dependency",
+        "tag_origin_cluster_id": "dependency",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.501488Z"
+      },
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.512589Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Ensure webhook system scalability for high enterprise event volumes",
+    "summary": "The webhook system must be architected and tested for scalability, supporting high enterprise event loads without performance degradation. This ensures continued reliability, even under surge conditions or severe loads.",
+    "tags": [
+      "scalability",
+      "availability",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "Scalability"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "Non-functionals: scale for enterprise event volume, maintain compliance...",
+      "tag_metadata_reference": [
+        {
+          "tag": "scalability",
+          "confidence": 0.97
+        },
+        {
+          "tag": "availability",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "enterprise scale",
+        "load testing",
+        "webhook system reliability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "scalability",
+      "availability",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "scalability",
+        "canonical_tag": "scalable",
+        "matched_tag": "scalable",
+        "tag_origin_cluster_id": "scalable",
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:44.605857Z"
+      },
+      {
+        "original_tag": "availability",
+        "canonical_tag": "availability",
+        "matched_tag": "availability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.700013Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.804194Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Deliver webhook management UI and backend logic",
+    "summary": "Develop a user interface and backend logic to provide clients with the tools necessary for configuring, managing, and monitoring webhook registrations. The solution must prioritize usability and seamless integration with existing enterprise systems.",
+    "tags": [
+      "ui",
+      "backend"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Webhooks",
+      "UI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 49",
+    "reasoning": {
+      "source_summary_fragment": "Clients must be able to register endpoints, select events, and define custom data fields per integration profile.",
+      "tag_metadata_reference": [
+        {
+          "tag": "ui",
+          "confidence": 0.92
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "webhook management portal",
+        "registration management"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.91,
+      "method": "uxdev_match_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "ui",
+      "backend"
+    ],
+    "tags_v2": [
+      "ui",
+      "backend"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.806373Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.808321Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Supply compliance and monitoring scripts for webhook operations",
+    "summary": "Provide scripts designed for compliance audits and operational monitoring of webhook infrastructure. These scripts enable regular health checks, anomaly detection, and fulfilment of regulatory requirements.",
+    "tags": [
+      "compliance",
+      "monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Monitoring"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 51",
+    "reasoning": {
+      "source_summary_fragment": "Supply compliance and monitoring scripts for webhook operations.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.98
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "compliance automation",
+        "health scripts"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "compliance",
+      "monitoring"
+    ],
+    "tags_v2": [
+      "compliance",
+      "monitoring"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.810298Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.812169Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-17",
+    "id": "REQ-015-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Develop and provide client and support training guides",
+    "summary": "Create and share comprehensive training guides tailored for both clients and internal support staff, ensuring effective webhook integration, onboarding efficiency, and empowered troubleshooting.",
+    "tags": [
+      "training",
+      "documentation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Support",
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 52",
+    "reasoning": {
+      "source_summary_fragment": "Non-functionals: ... provide usability features like sample payloads, setup docs, and support team training.",
+      "tag_metadata_reference": [
+        {
+          "tag": "training",
+          "confidence": 0.93
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "client enablement",
+        "onboarding guides",
+        "support training"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.91,
+      "method": "plan_match_v1"
+    },
+    "source_hlj_id": "REQ-015",
+    "tags_v1": [
+      "training",
+      "documentation"
+    ],
+    "tags_v2": [
+      "training",
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.814032Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:44.868154Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

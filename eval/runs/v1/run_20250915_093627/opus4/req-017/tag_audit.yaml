@@ -1,0 +1,364 @@
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_1-v1.0
+  original_tags:
+  - billing
+  - calculations
+  validated_tags:
+  - billing
+  - calculations
+  tag_results:
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:09.905870Z'
+  - original_tag: calculations
+    canonical_tag: calculations
+    matched_tag: calculations
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:09.917018Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:09.917026Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_2-v1.0
+  original_tags:
+  - billing
+  - credits
+  validated_tags:
+  - billing
+  - credits
+  tag_results:
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:09.926699Z'
+  - original_tag: credits
+    canonical_tag: credits
+    matched_tag: credits
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-09-15T10:30:09.934627Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:09.934631Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_3-v1.0
+  original_tags:
+  - subscriptions
+  - upgrades
+  validated_tags:
+  - upgrade
+  tag_results:
+  - original_tag: subscriptions
+    canonical_tag: subscriptions
+    matched_tag: subscriptions
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.033371Z'
+  - original_tag: upgrades
+    canonical_tag: upgrade
+    matched_tag: upgrade
+    tag_origin_cluster_id: upgrade
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.035991Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.035993Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_4-v1.0
+  original_tags:
+  - billing
+  - history
+  validated_tags:
+  - billing
+  - history
+  tag_results:
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.038029Z'
+  - original_tag: history
+    canonical_tag: history
+    matched_tag: history
+    tag_origin_cluster_id: history
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.039993Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.039995Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_5-v1.0
+  original_tags:
+  - billing
+  - invoices
+  validated_tags:
+  - billing
+  - invoice
+  tag_results:
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.046574Z'
+  - original_tag: invoices
+    canonical_tag: invoice
+    matched_tag: invoice
+    tag_origin_cluster_id: invoice
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.055016Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.055019Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_6-v1.0
+  original_tags:
+  - subscriptions
+  - edge-cases
+  validated_tags: []
+  tag_results:
+  - original_tag: subscriptions
+    canonical_tag: subscriptions
+    matched_tag: subscriptions
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.142511Z'
+  - original_tag: edge-cases
+    canonical_tag: edge case
+    matched_tag: edge case
+    tag_origin_cluster_id: edge case
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.237381Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.237387Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_7-v1.0
+  original_tags:
+  - subscriptions
+  - fraud-prevention
+  validated_tags: []
+  tag_results:
+  - original_tag: subscriptions
+    canonical_tag: subscriptions
+    matched_tag: subscriptions
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.313116Z'
+  - original_tag: fraud-prevention
+    canonical_tag: fraud-prevention
+    matched_tag: fraud-prevention
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.390776Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.390781Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_8-v1.0
+  original_tags:
+  - billing
+  - compliance
+  validated_tags:
+  - billing
+  - compliance
+  tag_results:
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.396850Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.402443Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.402445Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_9-v1.0
+  original_tags:
+  - payments
+  - integrations
+  validated_tags:
+  - integration
+  tag_results:
+  - original_tag: payments
+    canonical_tag: payments
+    matched_tag: payments
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.483833Z'
+  - original_tag: integrations
+    canonical_tag: integration
+    matched_tag: integration
+    tag_origin_cluster_id: integration
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.491384Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.491387Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_10-v1.0
+  original_tags:
+  - notifications
+  - email
+  validated_tags:
+  - notification
+  - email
+  tag_results:
+  - original_tag: notifications
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.93
+    validation_status: semantic
+    similarity: 0.6957231163978577
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.556589Z'
+  - original_tag: email
+    canonical_tag: email
+    matched_tag: email
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.559313Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.559315Z'
+- hlj_id: REQ-017-HLJ-Chunk_2-Item_1-v1.0
+  original_tags:
+  - notifications
+  - monitoring
+  - '[INFERRED] analytics'
+  validated_tags:
+  - monitoring
+  tag_results:
+  - original_tag: notifications
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:30:10.656153Z'
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.662809Z'
+  - original_tag: '[INFERRED] analytics'
+    canonical_tag: '[INFERRED] analytics'
+    matched_tag: '[INFERRED] analytics'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.740353Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.740360Z'
+- hlj_id: REQ-017-HLJ-Chunk_2-Item_2-v1.0
+  original_tags:
+  - documentation
+  - support
+  validated_tags:
+  - documentation
+  - support
+  tag_results:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.747048Z'
+  - original_tag: support
+    canonical_tag: support
+    matched_tag: support
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:10.749230Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:10.749233Z'

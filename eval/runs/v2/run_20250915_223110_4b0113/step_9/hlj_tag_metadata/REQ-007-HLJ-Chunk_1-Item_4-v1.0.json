@@ -1,0 +1,116 @@
+{
+  "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-007",
+  "domain": "FinTech",
+  "title": "Implement fallback flow for screening downtime or latency >5s",
+  "summary": "Establish an automatic fallback protocol for scenarios where the primary AML screening service is unavailable or response time exceeds five seconds. The process must ensure business continuity and compliance oversight during such periods.",
+  "tags_v1": [
+    "availability",
+    "aml",
+    "[INFERRED] resilience"
+  ],
+  "tags_v2": [
+    "aml"
+  ],
+  "tags_v3": [
+    "compliance",
+    "fallback",
+    "aml",
+    "reporting",
+    "availability",
+    "regulation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.716145,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "58",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.733622,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aml",
+      "aliases": [],
+      "cluster_id": "11",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.694271,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aml",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "55",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.689322,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "57",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.721101,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regulation",
+      "aliases": [
+        "regulatory"
+      ],
+      "cluster_id": "19",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.707294,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regulatory",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.956980Z"
+}

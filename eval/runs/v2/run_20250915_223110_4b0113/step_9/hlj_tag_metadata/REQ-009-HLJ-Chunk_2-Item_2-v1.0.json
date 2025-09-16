@@ -1,0 +1,116 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Send confirmations, reminders, and expiry alerts via email, SMS, and in-app notifications",
+  "summary": "Establish a multichannel notification system to inform users at key stages in scheduled payments, including confirmations, reminders before execution, and expiry alerts. This maximizes usability and reduces missed transactions.",
+  "tags_v1": [
+    "notifications",
+    "usability",
+    "[INFERRED] messaging"
+  ],
+  "tags_v2": [
+    "notification",
+    "usability"
+  ],
+  "tags_v3": [
+    "reporting",
+    "notification",
+    "usability",
+    "fx-rates",
+    "rate-lock"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "reporting",
+      "aliases": [],
+      "cluster_id": "55",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.685493,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "reporting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749494,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notifications",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "usability",
+      "aliases": [],
+      "cluster_id": "94",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.698674,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "usability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "284",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.772312,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-lock",
+      "aliases": [],
+      "cluster_id": "285",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.768134,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-lock",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "22",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.666404,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.959099Z"
+}

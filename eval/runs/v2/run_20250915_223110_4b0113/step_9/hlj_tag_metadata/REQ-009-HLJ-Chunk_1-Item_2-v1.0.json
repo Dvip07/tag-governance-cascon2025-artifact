@@ -1,0 +1,97 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Implement FX rate lock option with selectable expiry window (e.g., 24h) after scheduling",
+  "summary": "Provide a functionality allowing users to lock in a foreign exchange rate for a fixed, user-selected expiry window after scheduling a payment. This ensures price certainty and risk mitigation against FX fluctuations.",
+  "tags_v1": [
+    "fx",
+    "locking",
+    "[INFERRED] risk management"
+  ],
+  "tags_v2": [
+    "fx",
+    "lock"
+  ],
+  "tags_v3": [
+    "fx",
+    "lock",
+    "fx-rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "88",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.706898,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "lock",
+      "aliases": [
+        "locking"
+      ],
+      "cluster_id": "89",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.730215,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "locking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "87",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.67562,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preview",
+      "aliases": [],
+      "cluster_id": "230",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.675332,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "preview",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "284",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.791395,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.958203Z"
+}

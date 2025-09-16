@@ -1,0 +1,100 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Develop onboarding materials and documentation for feature flag usage and analytics",
+  "summary": "Create comprehensive user and technical documentation for feature flag management, focusing on best practices and analytics integration. Develop onboarding guides and training content to support adoption by both product and development teams. Ensure clarity in explaining progressive rollout, real-time monitoring, and compliance aspects.",
+  "tags_v1": [
+    "documentation",
+    "training",
+    "[INFERRED] enablement"
+  ],
+  "tags_v2": [
+    "documentation",
+    "training"
+  ],
+  "tags_v3": [
+    "compliance",
+    "documentation",
+    "gdpr",
+    "training",
+    "enablement"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.738143,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "40",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.751055,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gdpr",
+      "aliases": [],
+      "cluster_id": "168",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.748064,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gdpr",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "training",
+      "aliases": [],
+      "cluster_id": "143",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.734893,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "training",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "enablement",
+      "aliases": [],
+      "cluster_id": "144",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.753058,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "enablement",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.965981Z"
+}

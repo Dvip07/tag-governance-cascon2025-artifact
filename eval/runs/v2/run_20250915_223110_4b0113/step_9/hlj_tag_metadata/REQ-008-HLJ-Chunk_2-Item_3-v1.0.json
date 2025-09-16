@@ -1,0 +1,119 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Log API activity, eligibility checks, and manual interventions for audit",
+  "summary": "Configure system logging to capture API calls, eligibility rule applications, and any manual overrides or adjustments for full auditability and traceability. Comprehensive logging supports compliance and enables post-event investigation by auditors.",
+  "tags_v1": [
+    "logging",
+    "audit",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "logs",
+    "audit"
+  ],
+  "tags_v3": [
+    "audit",
+    "admin",
+    "rules",
+    "portal",
+    "logging",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "25",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.748835,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "admin",
+      "aliases": [],
+      "cluster_id": "8",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.701739,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "admin",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "177",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.687007,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "portal",
+      "aliases": [],
+      "cluster_id": "138",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.693492,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "portal",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "24",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.724565,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.715556,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.951681Z"
+}

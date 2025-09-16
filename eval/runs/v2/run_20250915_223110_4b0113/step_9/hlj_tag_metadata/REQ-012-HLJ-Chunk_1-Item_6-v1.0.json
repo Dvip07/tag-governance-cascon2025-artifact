@@ -1,0 +1,72 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Enable customer-level tax exemption with validation and documentation capture",
+  "summary": "Build features that permit certain customers to claim GST exemption, provided valid documentation is supplied and verified. The system should track exemption records and maintain auditable evidence to ensure ongoing compliance and defensibility in audits.",
+  "tags_v1": [
+    "gst",
+    "exemption",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "gst",
+    "exemption"
+  ],
+  "tags_v3": [
+    "gst",
+    "exemption",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.766588,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "exemption",
+      "aliases": [
+        "exemptions"
+      ],
+      "cluster_id": "157",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.742934,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "exemption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.72055,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968630Z"
+}

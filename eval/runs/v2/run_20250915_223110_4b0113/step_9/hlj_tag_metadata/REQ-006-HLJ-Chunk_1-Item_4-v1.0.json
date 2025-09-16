@@ -1,0 +1,105 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Integrate rate limiting enforcement at API gateway layer per tenant ID",
+  "summary": "Enforce rate limits at the API gateway level, ensuring each tenant's traffic is independently managed and restricted according to their assigned limits. Enforcement is handled in the platform’s critical control path.",
+  "tags_v1": [
+    "rate-limiting",
+    "enforcement"
+  ],
+  "tags_v2": [
+    "enforcement"
+  ],
+  "tags_v3": [
+    "rate-limiting",
+    "api-gateway",
+    "enforcement",
+    "api",
+    "infrastructure"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "47",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.816154,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api-gateway",
+      "aliases": [
+        "api gateway"
+      ],
+      "cluster_id": "267",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.776287,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api-gateway",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "enforcement",
+      "aliases": [],
+      "cluster_id": "50",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.712166,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "enforcement",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.751419,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "infrastructure",
+      "aliases": [],
+      "cluster_id": "268",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.730766,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "infrastructure",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.953421Z"
+}

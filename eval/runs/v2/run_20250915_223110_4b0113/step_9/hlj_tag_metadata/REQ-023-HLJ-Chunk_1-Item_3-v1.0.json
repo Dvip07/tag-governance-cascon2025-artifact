@@ -1,0 +1,102 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Develop admin portal for dynamic feature flag adjustment with instant effect",
+  "summary": "Create an intuitive admin portal that enables authorized users to dynamically adjust feature flags and see instant effects across the platform. Provides centralized management and granular control for feature deployment.",
+  "tags_v1": [
+    "admin",
+    "feature-flags",
+    "[INFERRED] portal"
+  ],
+  "tags_v2": [
+    "admin"
+  ],
+  "tags_v3": [
+    "feature-flags",
+    "admin",
+    "geo-ip",
+    "portal",
+    "edge_cases"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "133",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.792035,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature-flags",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "admin",
+      "aliases": [],
+      "cluster_id": "8",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.760625,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "admin",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "geo-ip",
+      "aliases": [],
+      "cluster_id": "139",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.760817,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "geo-ip",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "portal",
+      "aliases": [],
+      "cluster_id": "138",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.746566,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "portal",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "edge_cases",
+      "aliases": [
+        "edge-case",
+        "edge case",
+        "edge cases"
+      ],
+      "cluster_id": "258",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v2",
+      "score": 1,
+      "confidence": 0.728267,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "edge case",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.965265Z"
+}

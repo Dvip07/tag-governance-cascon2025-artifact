@@ -1,0 +1,2053 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design batch payout engine for multi-seller transactions",
+    "summary": "Develop a robust batch payout engine capable of processing payouts to multiple sellers within a marketplace. The solution should handle large transaction volumes, ensure secure, auditable transactions, and enable both scheduled and on-demand payout runs.",
+    "tags": [
+      "engine",
+      "batch",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "Marketplace"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.98,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 06–11",
+    "reasoning": {
+      "source_summary_fragment": "Build a robust batch payout engine for marketplace sellers...",
+      "tag_metadata_reference": [
+        {
+          "tag": "engine",
+          "confidence": 0.97
+        },
+        {
+          "tag": "batch",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "batch payout processing",
+        "multi-seller marketplace payments",
+        "configurable payout schedules"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "engine",
+      "batch",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "engine",
+      "batch"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "engine",
+        "canonical_tag": "engine",
+        "matched_tag": "engine",
+        "tag_origin_cluster_id": "engine",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:36.317502Z"
+      },
+      {
+        "original_tag": "batch",
+        "canonical_tag": "batch",
+        "matched_tag": "batch",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:36.321135Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:36.521333Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "batch",
+      "engine",
+      "transaction-management"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "batch",
+        "original_tag": "batch",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.748735,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:23.081270Z"
+      },
+      {
+        "tag": "engine",
+        "original_tag": "engine",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698253,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:24.109227Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.673326,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:25.059431Z"
+      },
+      {
+        "tag": "transaction-management",
+        "original_tag": "transactionmanagement",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.753283,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:26.017768Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement detailed transaction logging with unique IDs and metadata",
+    "summary": "Establish comprehensive logging for each batch payout transaction, capturing unique identifiers, associated metadata, and contextual details. Logs must support traceability, auditing, and downstream reconciliation requirements.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 12–13",
+    "reasoning": {
+      "source_summary_fragment": "All batch operations must log transaction details (IDs, metadata)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.98
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "transaction logging",
+        "unique transaction identifiers",
+        "metadata for audit/reconciliation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "logging",
+      "audit",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "logs",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:36.532830Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:36.719914Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:36.958685Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "audit",
+      "logic",
+      "batch"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.740063,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:31.061833Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.725478,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:32.061157Z"
+      },
+      {
+        "tag": "logic",
+        "original_tag": "logic",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.687335,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:33.070727Z"
+      },
+      {
+        "tag": "batch",
+        "original_tag": "batchprocessing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.743192,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:34.076919Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Enable scheduled and on-demand configurable batch payouts",
+    "summary": "Support both scheduled (automated) and ad-hoc (manual) payout batch runs, allowing configuration of critical parameters such as payout timing, batch size, and currency. This functionality allows marketplaces flexibility in managing payout cycles.",
+    "tags": [
+      "scheduling",
+      "batch",
+      "[INFERRED] flexibility"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 14–16",
+    "reasoning": {
+      "source_summary_fragment": "support configuration of batch size, currency, and payout timing...",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduling",
+          "confidence": 0.97
+        },
+        {
+          "tag": "batch",
+          "confidence": 0.95
+        },
+        {
+          "tag": "flexibility",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "scheduled payouts",
+        "on-demand payouts",
+        "batch parameter configuration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "flexibility",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "scheduling",
+      "batch",
+      "[INFERRED] flexibility"
+    ],
+    "tags_v2": [
+      "batch"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "scheduling",
+        "canonical_tag": "scheduling",
+        "matched_tag": "scheduling",
+        "tag_origin_cluster_id": "scheduling",
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.135055Z"
+      },
+      {
+        "original_tag": "batch",
+        "canonical_tag": "batch",
+        "matched_tag": "batch",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.139812Z"
+      },
+      {
+        "original_tag": "[INFERRED] flexibility",
+        "canonical_tag": "[INFERRED] flexibility",
+        "matched_tag": "[INFERRED] flexibility",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.329111Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "batch",
+      "rollback",
+      "scheduling",
+      "failurehandling"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "batch",
+        "original_tag": "batch",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.741962,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:39.038869Z"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.755787,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:40.014740Z"
+      },
+      {
+        "tag": "scheduling",
+        "original_tag": "scheduling",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.696166,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:40.989767Z"
+      },
+      {
+        "tag": "failurehandling",
+        "original_tag": "failurehandling",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.729876,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:41.957135Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement failure handling logic for batch payout transactions",
+    "summary": "Introduce robust failure handling mechanisms for batch payouts, including detection of processing errors, compliance holds, or bank failures. The system must ensure accurate error capture and support appropriate response actions.",
+    "tags": [
+      "failure",
+      "rollback",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 18–26",
+    "reasoning": {
+      "source_summary_fragment": "In case of any transaction failure (e.g., bank error, compliance hold)...",
+      "tag_metadata_reference": [
+        {
+          "tag": "failure",
+          "confidence": 0.96
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.91
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.72
+        }
+      ],
+      "mapped_concepts": [
+        "failure detection",
+        "payout transaction errors",
+        "handling of compliance and processing failures"
+      ]
+    },
+    "low_confidence_reason": "Inferred 'reliability' tag at minimum threshold due to lack of explicit mention.",
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.72,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "failure",
+      "rollback",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [
+      "failure",
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "failure",
+        "canonical_tag": "failure",
+        "matched_tag": "failure",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.332588Z"
+      },
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.425247Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.608306Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "failure",
+      "rollback",
+      "reporting",
+      "reliability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "failure",
+        "original_tag": "failure",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709632,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:47.120122Z"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.764053,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:48.178523Z"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.69044,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:49.190488Z"
+      },
+      {
+        "tag": "reliability",
+        "original_tag": "reliability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712473,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:50.189605Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Support atomic rollback for failed batch payouts",
+    "summary": "Ensure the payout system supports atomic rollbacks, undoing all transactions in a batch if any individual payout fails due to errors or compliance issues. Atomicity must guard against partial, inconsistent payouts.",
+    "tags": [
+      "atomicity",
+      "rollback",
+      "[INFERRED] consistency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 25–26",
+    "reasoning": {
+      "source_summary_fragment": "provide atomic rollback for entire batches...",
+      "tag_metadata_reference": [
+        {
+          "tag": "atomicity",
+          "confidence": 0.97
+        },
+        {
+          "tag": "rollback",
+          "confidence": 0.94
+        },
+        {
+          "tag": "consistency",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "atomic transaction guarantees",
+        "rollback on batch payout failure",
+        "consistency in financial operations"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "consistency",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "atomicity",
+      "rollback",
+      "[INFERRED] consistency"
+    ],
+    "tags_v2": [
+      "atomicity",
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "atomicity",
+        "canonical_tag": "atomicity",
+        "matched_tag": "atomicity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.620914Z"
+      },
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.623898Z"
+      },
+      {
+        "original_tag": "[INFERRED] consistency",
+        "canonical_tag": "[INFERRED] consistency",
+        "matched_tag": "[INFERRED] consistency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.786925Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "atomicity",
+      "rollback",
+      "consistency",
+      "batch"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "atomicity",
+        "original_tag": "atomicity",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720645,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:55.199212Z"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.782628,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:56.176042Z"
+      },
+      {
+        "tag": "consistency",
+        "original_tag": "consistency",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704227,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:57.191937Z"
+      },
+      {
+        "tag": "batch",
+        "original_tag": "batchpayouts",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.742154,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:58.198816Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Allow retry of failed individual payout transactions",
+    "summary": "Enable retries for failed individual payout entries within a batch, allowing resolution of transient errors and partial recovery without requiring full batch rollback. Track retry history and escalation paths as needed.",
+    "tags": [
+      "retry",
+      "partial",
+      "[INFERRED] recovery"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 21–22",
+    "reasoning": {
+      "source_summary_fragment": "allow retrying failed transactions, while recording exceptions...",
+      "tag_metadata_reference": [
+        {
+          "tag": "retry",
+          "confidence": 0.97
+        },
+        {
+          "tag": "partial",
+          "confidence": 0.95
+        },
+        {
+          "tag": "recovery",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "individual transaction retry",
+        "partial batch payouts",
+        "automated error resolution"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "recovery",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "retry",
+      "partial",
+      "[INFERRED] recovery"
+    ],
+    "tags_v2": [
+      "retry",
+      "partial"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "retry",
+        "canonical_tag": "retry",
+        "matched_tag": "retry",
+        "tag_origin_cluster_id": "retry",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.790551Z"
+      },
+      {
+        "original_tag": "partial",
+        "canonical_tag": "partial",
+        "matched_tag": "partial",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.802286Z"
+      },
+      {
+        "original_tag": "[INFERRED] recovery",
+        "canonical_tag": "[INFERRED] recovery",
+        "matched_tag": "[INFERRED] recovery",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.959157Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "retry"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "retry",
+        "original_tag": "retry",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.725672,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:00:59.177580Z"
+      },
+      {
+        "tag": "partial",
+        "original_tag": "partial",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.670066,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:00.148553Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Log and mark partial batch payout successes and exceptions",
+    "summary": "Track and log both successful and exceptional (failed) payouts within a batch, explicitly marking partial success states. Exception logs must facilitate downstream audits and error analytics.",
+    "tags": [
+      "logging",
+      "exception",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "ErrorHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 23–24",
+    "reasoning": {
+      "source_summary_fragment": "recording exceptions and maintaining audit trails...",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.94
+        },
+        {
+          "tag": "exception",
+          "confidence": 0.96
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "partial batch outcome logging",
+        "exception reporting",
+        "audit of payout events"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "logging",
+      "exception",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "logs",
+      "exception"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:37.971939Z"
+      },
+      {
+        "original_tag": "exception",
+        "canonical_tag": "exception",
+        "matched_tag": "exception",
+        "tag_origin_cluster_id": "exception",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:37.982093Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.142425Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "exception",
+      "logging"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "exception",
+        "original_tag": "exception",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70491,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:01.135077Z"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.735619,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:02.143815Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Record audit logs for all batch operations and manual overrides",
+    "summary": "Create audit logs for every batch operation, including both automated and manually overridden actions. Logging must satisfy regulatory, compliance, and operational traceability requirements.",
+    "tags": [
+      "audit",
+      "logging",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 28–29",
+    "reasoning": {
+      "source_summary_fragment": "audit logging, access control...",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.98
+        },
+        {
+          "tag": "logging",
+          "confidence": 0.98
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail creation",
+        "manual override logs",
+        "regulatory traceability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "audit",
+      "logging",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "audit",
+      "logs"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.146783Z"
+      },
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:38.150515Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.315534Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "logging",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.732755,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:03.157238Z"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.732837,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:04.138484Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697831,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:05.095942Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Generate exception and summary reports for payouts",
+    "summary": "Provide tools to generate exception-focused and summary reports for payout operations. These reports should highlight failed transactions, compliance exceptions, and overall batch outcomes for stakeholder review.",
+    "tags": [
+      "reporting",
+      "exception",
+      "[INFERRED] analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 30–31",
+    "reasoning": {
+      "source_summary_fragment": "exception and summary reports for payouts...",
+      "tag_metadata_reference": [
+        {
+          "tag": "reporting",
+          "confidence": 0.97
+        },
+        {
+          "tag": "exception",
+          "confidence": 0.95
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "exception reporting",
+        "summary outcome reports",
+        "stakeholder analytics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "reporting",
+      "exception",
+      "[INFERRED] analytics"
+    ],
+    "tags_v2": [
+      "reporting",
+      "exception"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.332675Z"
+      },
+      {
+        "original_tag": "exception",
+        "canonical_tag": "exception",
+        "matched_tag": "exception",
+        "tag_origin_cluster_id": "exception",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.335640Z"
+      },
+      {
+        "original_tag": "[INFERRED] analytics",
+        "canonical_tag": "[INFERRED] analytics",
+        "matched_tag": "[INFERRED] analytics",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.511813Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reporting",
+      "exception"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711627,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:06.064472Z"
+      },
+      {
+        "tag": "exception",
+        "original_tag": "exception",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.702444,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:07.100728Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Develop admin dashboard for batch status and payout drill-down",
+    "summary": "Deliver an administrative dashboard displaying real-time batch payout status, enabling drill-down into specific transactions, error cases, and manual overrides. The dashboard supports monitoring, reporting, and operational actions for payout management.",
+    "tags": [
+      "dashboard",
+      "admin",
+      "[INFERRED] monitoring"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PayoutProcessing",
+      "AdminUI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 32–33",
+    "reasoning": {
+      "source_summary_fragment": "admin dashboard for monitoring, rollback, and reporting...",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.98
+        },
+        {
+          "tag": "admin",
+          "confidence": 0.97
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "admin dashboard UI",
+        "batch payout monitoring",
+        "transaction drill-down"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "monitoring",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "dashboard",
+      "admin",
+      "[INFERRED] monitoring"
+    ],
+    "tags_v2": [
+      "dashboard",
+      "admin"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dashboard",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.516246Z"
+      },
+      {
+        "original_tag": "admin",
+        "canonical_tag": "admin",
+        "matched_tag": "admin",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.520048Z"
+      },
+      {
+        "original_tag": "[INFERRED] monitoring",
+        "canonical_tag": "[INFERRED] monitoring",
+        "matched_tag": "[INFERRED] monitoring",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.686927Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "dashboard",
+      "admin"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.729761,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:08.063540Z"
+      },
+      {
+        "tag": "admin",
+        "original_tag": "admin",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.713548,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:09.021318Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Implement seller notifications with detailed payout status and reasons",
+    "summary": "Enable automated notifications to marketplace sellers, conveying payout statuses and explicit reasons for each transaction result. The system should support multiple notification channels (email, in-app, SMS) and ensure clarity in status updates for transparency.",
+    "tags": [
+      "notification",
+      "status",
+      "[INFERRED] transparency"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notification"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 35–38",
+    "reasoning": {
+      "source_summary_fragment": "automated notifications to sellers (email, in-app, SMS) with reasons for failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "notification",
+          "confidence": 0.97
+        },
+        {
+          "tag": "status",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "multi-channel notif",
+        "reason/vendor-facing transparency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "transparency",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "notification",
+      "status",
+      "[INFERRED] transparency"
+    ],
+    "tags_v2": [
+      "notification",
+      "status"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notification",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.700382Z"
+      },
+      {
+        "original_tag": "status",
+        "canonical_tag": "status",
+        "matched_tag": "status",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.704050Z"
+      },
+      {
+        "original_tag": "[INFERRED] transparency",
+        "canonical_tag": "[INFERRED] transparency",
+        "matched_tag": "[INFERRED] transparency",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.872391Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "notification",
+      "compliance",
+      "status",
+      "financialregulations"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.732306,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:14.053617Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.684682,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:15.018459Z"
+      },
+      {
+        "tag": "status",
+        "original_tag": "status",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.690158,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:15.974216Z"
+      },
+      {
+        "tag": "financialregulations",
+        "original_tag": "financialregulations",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706963,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:16.953870Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Notify sellers upon payout rollback with rescheduling info",
+    "summary": "Send notifications to sellers when a payout is rolled back, clearly stating the rollback event and providing details about payout rescheduling or next steps. This ensures sellers are promptly informed of payout changes.",
+    "tags": [
+      "notification",
+      "rollback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notification"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 39–41",
+    "reasoning": {
+      "source_summary_fragment": "failure handling with partial or complete rollback. Automated notifications to sellers… with reasons for failures",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.95
+        },
+        {
+          "tag": "notification",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "payout failure comms",
+        "rescheduling messaging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "notification",
+      "rollback"
+    ],
+    "tags_v2": [
+      "notification",
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notification",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.962415Z"
+      },
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.965350Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rollback",
+      "notification"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rollback",
+        "original_tag": "rollback",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.772286,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:20.823881Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.675549,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:21.794879Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720895,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:22.839946Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Enforce financial compliance (AML, KYC, audit, retention)",
+    "summary": "Institute mechanisms to comply with financial regulations including anti-money laundering (AML), know your customer (KYC), audit logging, and data retention policies. Compliance should be integrated into all payout operations, with clear auditability.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.96,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 43–47",
+    "reasoning": {
+      "source_summary_fragment": "Enforce financial compliance (AML, KYC, audit logging, access control); support for … audit trails.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.94
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "AML",
+        "KYC",
+        "audit-logging",
+        "regulatory reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "audit",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "compliance",
+      "security",
+      "[INFERRED] audit"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:38.968549Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.061047Z"
+      },
+      {
+        "original_tag": "[INFERRED] audit",
+        "canonical_tag": "[INFERRED] audit",
+        "matched_tag": "[INFERRED] audit",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.359505Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "audit"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70741,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:26.599512Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:27.518009Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.736289,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:28.442213Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Restrict sensitive operations to authorized personnel",
+    "summary": "Limit access to high-risk operations within the payout engine so that only users with specific authorization can perform sensitive actions. Implement access controls to enhance security and ensure compliance.",
+    "tags": [
+      "security",
+      "access"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 46",
+    "reasoning": {
+      "source_summary_fragment": "Restrict sensitive operations to authorized personnel. … access control… performance and security safeguards.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "access",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "privileged operations",
+        "RBAC",
+        "authorization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "security",
+      "access"
+    ],
+    "tags_v2": [
+      "security",
+      "access"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.372712Z"
+      },
+      {
+        "original_tag": "access",
+        "canonical_tag": "access",
+        "matched_tag": "access",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:39.383933Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "access",
+      "notification",
+      "payoutstatus"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.729706,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:34.785102Z"
+      },
+      {
+        "tag": "access",
+        "original_tag": "access",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.691975,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:36.291972Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70172,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:37.568408Z"
+      },
+      {
+        "tag": "payoutstatus",
+        "original_tag": "payoutstatus",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.763461,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-013",
+        "timestamp": "2025-09-16T01:01:38.721937Z"
+      }
+    ]
+  }
+]

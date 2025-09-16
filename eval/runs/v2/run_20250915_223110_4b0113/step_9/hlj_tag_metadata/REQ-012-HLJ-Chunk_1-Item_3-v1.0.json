@@ -1,0 +1,71 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Apply province-correct GST rates during invoice generation based on billing address, service location, and exemptions",
+  "summary": "Implement a process in invoice generation to apply the correct GST rates determined by the customer's billing address, service location, and any applicable tax exemptions. This ensures that GST calculations are accurate for every scenario, reducing risk of misapplied tax and supporting regulatory compliance.",
+  "tags_v1": [
+    "gst",
+    "invoice"
+  ],
+  "tags_v2": [
+    "gst",
+    "invoice"
+  ],
+  "tags_v3": [
+    "gst",
+    "invoice",
+    "tax"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.772725,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "invoice",
+      "aliases": [
+        "invoicing",
+        "invoices"
+      ],
+      "cluster_id": "155",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.769147,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "invoicing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tax",
+      "aliases": [
+        "taxation"
+      ],
+      "cluster_id": "204",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.742117,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "taxation",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968418Z"
+}

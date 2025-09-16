@@ -1,0 +1,85 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Securely retain test artifacts, restricting access to authorized personnel",
+  "summary": "Test artifacts such as logs, screenshots, and videos must be securely stored with access limited to authorized personnel. Proper retention policies should be enforced to prevent unauthorized retrieval or leakage. All storage and access controls must be auditable and align with security best practices.",
+  "tags_v1": [
+    "security",
+    "artifacts",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "security",
+    "artifacts"
+  ],
+  "tags_v3": [
+    "security",
+    "artifacts",
+    "debugging",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.745155,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "artifacts",
+      "aliases": [],
+      "cluster_id": "45",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.726381,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "artifacts",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "debugging",
+      "aliases": [],
+      "cluster_id": "356",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.729189,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "debugging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.716894,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.952623Z"
+}

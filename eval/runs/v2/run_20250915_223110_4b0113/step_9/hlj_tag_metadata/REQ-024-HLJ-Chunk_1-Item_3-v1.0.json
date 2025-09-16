@@ -1,0 +1,125 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Support scheduling of notifications with customizable delays per user timezone",
+  "summary": "Implements notification scheduling with the flexibility to set delivery delays based on each user's timezone. Enables timely and context-aware communications, reducing disruption and increasing engagement. Enhances personalization and relevance of notifications.",
+  "tags_v1": [
+    "timezone",
+    "scheduling",
+    "[INFERRED] personalization"
+  ],
+  "tags_v2": [
+    "timezone",
+    "scheduling"
+  ],
+  "tags_v3": [
+    "scheduling",
+    "messaging",
+    "timezone",
+    "preview",
+    "personalization"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "60",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.675051,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduling",
+      "aliases": [],
+      "cluster_id": "105",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.720585,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduling",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "296",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.727937,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "timezone",
+      "aliases": [],
+      "cluster_id": "76",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.717096,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "timezone",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preview",
+      "aliases": [],
+      "cluster_id": "230",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.680204,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "preview",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "87",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.67623,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "148",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.708891,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.966804Z"
+}

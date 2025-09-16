@@ -1,0 +1,407 @@
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_1-v1.0
+  original_tags:
+  - proration
+  - billing
+  - '[INFERRED] finance'
+  validated_tags:
+  - billing
+  tag_results:
+  - original_tag: proration
+    canonical_tag: proration
+    matched_tag: proration
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.284302Z'
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.294152Z'
+  - original_tag: '[INFERRED] finance'
+    canonical_tag: '[INFERRED] finance'
+    matched_tag: '[INFERRED] finance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.380019Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:57.380026Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_2-v1.0
+  original_tags:
+  - upgrade
+  - billing
+  - '[INFERRED] scheduling'
+  validated_tags:
+  - upgrade
+  - billing
+  tag_results:
+  - original_tag: upgrade
+    canonical_tag: upgrade
+    matched_tag: upgrade
+    tag_origin_cluster_id: upgrade
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.387752Z'
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.389958Z'
+  - original_tag: '[INFERRED] scheduling'
+    canonical_tag: '[INFERRED] scheduling'
+    matched_tag: '[INFERRED] scheduling'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.472075Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:57.472080Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_3-v1.0
+  original_tags:
+  - history
+  - events
+  - '[INFERRED] audit'
+  validated_tags:
+  - history
+  tag_results:
+  - original_tag: history
+    canonical_tag: history
+    matched_tag: history
+    tag_origin_cluster_id: history
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.474963Z'
+  - original_tag: events
+    canonical_tag: events
+    matched_tag: events
+    tag_origin_cluster_id: null
+    original_confidence: 0.88
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.572415Z'
+  - original_tag: '[INFERRED] audit'
+    canonical_tag: '[INFERRED] audit'
+    matched_tag: '[INFERRED] audit'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.672877Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:57.672882Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_4-v1.0
+  original_tags:
+  - invoice
+  - tax
+  - '[INFERRED] transparency'
+  validated_tags:
+  - invoice
+  tag_results:
+  - original_tag: invoice
+    canonical_tag: invoice
+    matched_tag: invoice
+    tag_origin_cluster_id: invoice
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.686034Z'
+  - original_tag: tax
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.784326Z'
+  - original_tag: '[INFERRED] transparency'
+    canonical_tag: '[INFERRED] transparency'
+    matched_tag: '[INFERRED] transparency'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.863143Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:57.863148Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_5-v1.0
+  original_tags:
+  - plans
+  - dates
+  - '[INFERRED] period-alignment'
+  validated_tags:
+  - plans
+  - dates
+  tag_results:
+  - original_tag: plans
+    canonical_tag: plans
+    matched_tag: plans
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.873471Z'
+  - original_tag: dates
+    canonical_tag: dates
+    matched_tag: dates
+    tag_origin_cluster_id: null
+    original_confidence: 0.84
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.915510Z'
+  - original_tag: '[INFERRED] period-alignment'
+    canonical_tag: '[INFERRED] period-alignment'
+    matched_tag: '[INFERRED] period-alignment'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:57.999625Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:57.999629Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_6-v1.0
+  original_tags:
+  - abuse
+  - review
+  - '[INFERRED] fraud'
+  validated_tags:
+  - abuse
+  - review
+  tag_results:
+  - original_tag: abuse
+    canonical_tag: abuse
+    matched_tag: abuse
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.002251Z'
+  - original_tag: review
+    canonical_tag: review
+    matched_tag: review
+    tag_origin_cluster_id: null
+    original_confidence: 0.86
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.004562Z'
+  - original_tag: '[INFERRED] fraud'
+    canonical_tag: '[INFERRED] fraud'
+    matched_tag: '[INFERRED] fraud'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.090499Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:58.090503Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_7-v1.0
+  original_tags:
+  - notification
+  - email
+  - '[INFERRED] communication'
+  validated_tags:
+  - notification
+  - email
+  tag_results:
+  - original_tag: notification
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.102291Z'
+  - original_tag: email
+    canonical_tag: email
+    matched_tag: email
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.104837Z'
+  - original_tag: '[INFERRED] communication'
+    canonical_tag: '[INFERRED] communication'
+    matched_tag: '[INFERRED] communication'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.205588Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:58.205593Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_8-v1.0
+  original_tags:
+  - admin
+  - alert
+  - '[INFERRED] anomaly-detection'
+  validated_tags:
+  - admin
+  - alert
+  tag_results:
+  - original_tag: admin
+    canonical_tag: admin
+    matched_tag: admin
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.216320Z'
+  - original_tag: alert
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.222624Z'
+  - original_tag: '[INFERRED] anomaly-detection'
+    canonical_tag: '[INFERRED] anomaly-detection'
+    matched_tag: '[INFERRED] anomaly-detection'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.300250Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:58.300254Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_9-v1.0
+  original_tags:
+  - support
+  - documentation
+  - '[INFERRED] enablement'
+  validated_tags:
+  - support
+  - documentation
+  tag_results:
+  - original_tag: support
+    canonical_tag: support
+    matched_tag: support
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.302790Z'
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.314313Z'
+  - original_tag: '[INFERRED] enablement'
+    canonical_tag: '[INFERRED] enablement'
+    matched_tag: '[INFERRED] enablement'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.398083Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:58.398088Z'
+- hlj_id: REQ-017-HLJ-Chunk_1-Item_10-v1.0
+  original_tags:
+  - integration
+  - tax
+  - '[INFERRED] compliance'
+  validated_tags:
+  - integration
+  - tax
+  tag_results:
+  - original_tag: integration
+    canonical_tag: integration
+    matched_tag: integration
+    tag_origin_cluster_id: integration
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.405321Z'
+  - original_tag: tax
+    canonical_tag: tax
+    matched_tag: tax
+    tag_origin_cluster_id: tax
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.416520Z'
+  - original_tag: '[INFERRED] compliance'
+    canonical_tag: '[INFERRED] compliance'
+    matched_tag: '[INFERRED] compliance'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:30:58.500282Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:30:58.500288Z'

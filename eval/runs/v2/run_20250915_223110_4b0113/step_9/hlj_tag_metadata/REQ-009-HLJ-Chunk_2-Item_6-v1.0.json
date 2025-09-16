@@ -1,0 +1,84 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Integrate with FX provider APIs and validate contractual dependencies",
+  "summary": "Build and verify integration with FX provider APIs, ensuring all contractual obligations are met before enabling live operations. This underpins real-time rate locks and compliance with third-party terms.",
+  "tags_v1": [
+    "fx",
+    "api",
+    "[INFERRED] integrations"
+  ],
+  "tags_v2": [
+    "fx",
+    "api"
+  ],
+  "tags_v3": [
+    "fx",
+    "api",
+    "fx-rates",
+    "availability"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "88",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.712113,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.705932,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "284",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.787276,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "57",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.717467,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.959447Z"
+}

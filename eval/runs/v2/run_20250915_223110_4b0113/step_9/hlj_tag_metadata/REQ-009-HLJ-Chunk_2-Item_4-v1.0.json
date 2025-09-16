@@ -1,0 +1,126 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Restrict new payment scheduling during FX provider outages and notify users of service limitations",
+  "summary": "Implement logic to block scheduling of new payments when FX services are unavailable, and promptly notify users of any service limitations. This prevents failed lock actions and improves system transparency.",
+  "tags_v1": [
+    "fx",
+    "availability",
+    "[INFERRED] outage-handling"
+  ],
+  "tags_v2": [
+    "fx"
+  ],
+  "tags_v3": [
+    "fx",
+    "rollback",
+    "availability",
+    "fx-rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "88",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.689292,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "database",
+      "aliases": [],
+      "cluster_id": "288",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.660407,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "database",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "59",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.689405,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "metadata",
+      "aliases": [],
+      "cluster_id": "77",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.651508,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "metadata",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "beta",
+      "aliases": [],
+      "cluster_id": "97",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.658883,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "beta",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "57",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.724651,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "284",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.766905,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.959274Z"
+}

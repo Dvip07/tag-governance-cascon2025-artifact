@@ -1,0 +1,1479 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design access log schema",
+    "summary": "Create a schema to store access logs, including user ID, timestamp, IP, and access type.",
+    "tags": [
+      "access_logs",
+      "schema",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "access log schema",
+      "tag_metadata_reference": [
+        {
+          "tag": "access_logs",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "access_log",
+        "schema"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "access_logs",
+      "schema",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "access_logs",
+      "schema"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "access_logs",
+        "canonical_tag": "access_logs",
+        "matched_tag": "access_logs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "semantic",
+        "similarity": 0.6923760175704956,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.263657Z"
+      },
+      {
+        "original_tag": "schema",
+        "canonical_tag": "schema",
+        "matched_tag": "schema",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.266354Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.377794Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "audit",
+      "access_logs",
+      "database",
+      "compliance"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.753516,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:04:54.680737Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.721717,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:04:55.552749Z"
+      },
+      {
+        "tag": "access_logs",
+        "original_tag": "access_logs",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.807491,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:04:56.453622Z"
+      },
+      {
+        "tag": "database",
+        "original_tag": "database",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698509,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:04:57.294345Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717837,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:04:58.139608Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement logging for key resources",
+    "summary": "Implement logging for key resources, including user ID, timestamp, IP, and access type.",
+    "tags": [
+      "access_logs",
+      "implementation",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "logging for key resources",
+      "tag_metadata_reference": [
+        {
+          "tag": "access_logs",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "logging",
+        "key_resources"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "access_logs",
+      "implementation",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "access_logs",
+        "canonical_tag": "access_logs",
+        "matched_tag": "access_logs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.491765Z"
+      },
+      {
+        "original_tag": "implementation",
+        "canonical_tag": "implementation",
+        "matched_tag": "implementation",
+        "tag_origin_cluster_id": "implementation",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.609121Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.722064Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "logging",
+      "middleware",
+      "compliance",
+      "api",
+      "access_logs",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.750316,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:11.052346Z"
+      },
+      {
+        "tag": "retention",
+        "original_tag": "retention",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.667371,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:11.913854Z"
+      },
+      {
+        "tag": "middleware",
+        "original_tag": "middleware",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.687001,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:12.771965Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.713676,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:13.632776Z"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.696835,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:14.492432Z"
+      },
+      {
+        "tag": "access_logs",
+        "original_tag": "access_logs",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.796454,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:15.345402Z"
+      },
+      {
+        "tag": "policy",
+        "original_tag": "policy",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.673755,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:16.282113Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.728686,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:17.179347Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop export functionality for Compliance and Security roles",
+    "summary": "Develop export functionality for Compliance and Security roles, including filters and rate limiting.",
+    "tags": [
+      "export_controls",
+      "roles",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "export functionality",
+      "tag_metadata_reference": [
+        {
+          "tag": "export_controls",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "export",
+        "Compliance",
+        "Security"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "export_controls",
+      "roles",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "roles"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "export_controls",
+        "canonical_tag": "export_controls",
+        "matched_tag": "export_controls",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.837096Z"
+      },
+      {
+        "original_tag": "roles",
+        "canonical_tag": "roles",
+        "matched_tag": "roles",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.840791Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:35.953758Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "roles",
+      "compliance",
+      "export",
+      "export_controls",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "roles",
+        "original_tag": "roles",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.683407,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:33.304037Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711004,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:34.026600Z"
+      },
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.723469,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:34.770518Z"
+      },
+      {
+        "tag": "retention",
+        "original_tag": "retention",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.662351,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:35.524978Z"
+      },
+      {
+        "tag": "storage",
+        "original_tag": "storage",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.677123,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:36.315477Z"
+      },
+      {
+        "tag": "export_controls",
+        "original_tag": "export_controls",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.768342,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:37.057464Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.724902,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:37.796554Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement filters for log exports",
+    "summary": "Implement filters for log exports, including user ID, timestamp, IP, and access type.",
+    "tags": [
+      "export_controls",
+      "filters",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 18-20",
+    "reasoning": {
+      "source_summary_fragment": "filters for log exports",
+      "tag_metadata_reference": [
+        {
+          "tag": "export_controls",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "filters",
+        "log_exports"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "export_controls",
+      "filters",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "export_controls",
+        "canonical_tag": "export_controls",
+        "matched_tag": "export_controls",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.066597Z"
+      },
+      {
+        "original_tag": "filters",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:36.175719Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.289495Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "security",
+      "filter",
+      "compliance",
+      "export",
+      "export_controls"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.710576,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:51.755713Z"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filter",
+        "score": 3,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.701107,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:52.584363Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698687,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:53.420780Z"
+      },
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71488,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:54.220940Z"
+      },
+      {
+        "tag": "export_controls",
+        "original_tag": "export_controls",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.760645,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:05:55.128519Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Mask sensitive data on export",
+    "summary": "Mask sensitive data on export, including user ID, timestamp, IP, and access type.",
+    "tags": [
+      "data_protection",
+      "masking",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 22-24",
+    "reasoning": {
+      "source_summary_fragment": "mask sensitive data",
+      "tag_metadata_reference": [
+        {
+          "tag": "data_protection",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "masking",
+        "sensitive_data"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "data_protection",
+      "masking",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "masking"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data_protection",
+        "canonical_tag": "data_protection",
+        "matched_tag": "data_protection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.402634Z"
+      },
+      {
+        "original_tag": "masking",
+        "canonical_tag": "masking",
+        "matched_tag": "masking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.415229Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.528773Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "csv",
+      "privacy",
+      "export",
+      "data-protection",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "csv",
+        "original_tag": "csv",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.719731,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:04.673791Z"
+      },
+      {
+        "tag": "json",
+        "original_tag": "json",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.677057,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:05.422761Z"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71819,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:06.196618Z"
+      },
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.723385,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:06.941504Z"
+      },
+      {
+        "tag": "data-protection",
+        "original_tag": "data_protection",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.747516,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:07.740593Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.72977,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:08.506413Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement rate limiting for log exports",
+    "summary": "Implement rate limiting for log exports, including filters and rate limiting.",
+    "tags": [
+      "rate_limiting",
+      "export_controls",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 25-27",
+    "reasoning": {
+      "source_summary_fragment": "rate limiting",
+      "tag_metadata_reference": [
+        {
+          "tag": "rate_limiting",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "rate_limiting",
+        "log_exports"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "rate_limiting",
+      "export_controls",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "rate_limiting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rate_limiting",
+        "canonical_tag": "rate_limiting",
+        "matched_tag": "rate_limiting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.542412Z"
+      },
+      {
+        "original_tag": "export_controls",
+        "canonical_tag": "export_controls",
+        "matched_tag": "export_controls",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.657520Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.771391Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "rate-limiting",
+      "audit",
+      "filter",
+      "export",
+      "export_controls",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "rate-limiting",
+        "original_tag": "rate_limiting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.739585,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:21.158789Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.696616,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:21.918863Z"
+      },
+      {
+        "tag": "filter",
+        "original_tag": "filtering",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.689214,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:22.773517Z"
+      },
+      {
+        "tag": "export",
+        "original_tag": "export",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.716115,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:23.514054Z"
+      },
+      {
+        "tag": "query",
+        "original_tag": "query",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.652171,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:24.233672Z"
+      },
+      {
+        "tag": "export_controls",
+        "original_tag": "export_controls",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.764703,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:24.946081Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.703742,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:25.638148Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Notify compliance team leads of large-volume exports or unusual access patterns",
+    "summary": "Notify compliance team leads of large-volume exports or unusual access patterns, including filters and rate limiting.",
+    "tags": [
+      "notifications",
+      "compliance",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 29-31",
+    "reasoning": {
+      "source_summary_fragment": "notify compliance team leads",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "notifications",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "notifications",
+      "compliance",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:36.890998Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:36.895644Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:37.010605Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "notification",
+      "privacy",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720588,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:38.741486Z"
+      },
+      {
+        "tag": "masking",
+        "original_tag": "masking",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.657644,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:39.623443Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.713387,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:40.482419Z"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699067,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:41.292718Z"
+      },
+      {
+        "tag": "anomaly",
+        "original_tag": "anomaly",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.668121,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:42.137788Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.718002,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:42.968928Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Update admin docs and compliance playbooks with export and retention guidelines",
+    "summary": "Update admin docs and compliance playbooks with export and retention guidelines, including filters and rate limiting.",
+    "tags": [
+      "documentation",
+      "compliance",
+      "[INFERRED] security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "low",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 33-35",
+    "reasoning": {
+      "source_summary_fragment": "update admin docs",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "documentation",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-022",
+    "tags_v1": [
+      "documentation",
+      "compliance",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "documentation",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:37.024301Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:37.027537Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:37.138774Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "roles",
+      "documentation",
+      "docs",
+      "audit",
+      "security"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71519,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:54.949839Z"
+      },
+      {
+        "tag": "roles",
+        "original_tag": "roles",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.687118,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:55.768058Z"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.691527,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:56.600477Z"
+      },
+      {
+        "tag": "docs",
+        "original_tag": "docs",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.693035,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:57.487467Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711578,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:58.335414Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.708435,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-022-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-022",
+        "timestamp": "2025-09-16T01:06:59.118196Z"
+      }
+    ]
+  }
+]

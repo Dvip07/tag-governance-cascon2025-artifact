@@ -1,0 +1,112 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Display FX lock expiry details and countdown timers in the user interface",
+  "summary": "Surface FX rate lock expiry information and real-time countdowns in the payment UI. This visually alerts users to the remaining validity window for their locked rate, increasing transparency and preventing confusion.",
+  "tags_v1": [
+    "fx",
+    "ui",
+    "[INFERRED] countdown"
+  ],
+  "tags_v2": [
+    "fx",
+    "ui"
+  ],
+  "tags_v3": [
+    "ui",
+    "fx",
+    "payments",
+    "fx-rates",
+    "rate-lock",
+    "countdown"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "87",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.712092,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "88",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731912,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "283",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.748843,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx-rates",
+      "aliases": [],
+      "cluster_id": "284",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.798908,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx-rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-lock",
+      "aliases": [],
+      "cluster_id": "285",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.797693,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-lock",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "countdown",
+      "aliases": [],
+      "cluster_id": "90",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.740555,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "countdown",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.958291Z"
+}

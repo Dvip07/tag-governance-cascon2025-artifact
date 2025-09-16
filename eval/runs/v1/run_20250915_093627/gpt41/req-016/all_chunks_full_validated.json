@@ -1,0 +1,752 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Enforce mandatory 2FA for Admin, Finance, and DevOps roles",
+    "summary": "Ensure that users with Admin, Finance, or DevOps roles are required to use Two-Factor Authentication when accessing the SaaS platform. This enforcement helps reduce risk by securing privileged account access in compliance-sensitive environments.",
+    "tags": [
+      "security",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 09\u201310",
+    "reasoning": {
+      "source_summary_fragment": "Implement dynamic, role-based enforcement of Two-Factor Authentication (2FA), mandating it for Admin, Finance, and DevOps roles",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "role-based 2FA",
+        "privileged account protection"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "role-risk-assessment"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "security",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.174801Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.221145Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Allow optional 2FA opt-in for User and Viewer roles",
+    "summary": "Permit users assigned the User or Viewer roles to activate Two-Factor Authentication voluntarily, while not requiring it by default. This supports improved usability while enabling those users to enhance their account security.",
+    "tags": [
+      "usability",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 11",
+    "reasoning": {
+      "source_summary_fragment": "allowing optional use for User and Viewer roles",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.81
+        },
+        {
+          "tag": "security",
+          "confidence": 0.79
+        }
+      ],
+      "mapped_concepts": [
+        "optional 2FA",
+        "user choice in configuration"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.84,
+      "method": "policy-optionalization"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "usability",
+      "security"
+    ],
+    "tags_v2": [
+      "usability",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.81,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.228753Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.79,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.274023Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Automatically update 2FA enforcement policy on role change",
+    "summary": "The system must dynamically adjust each user's 2FA enforcement requirements whenever their assigned role changes, ensuring policy remains aligned with current privileges and compliance rules.",
+    "tags": [
+      "security",
+      "maintainability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "UserManagement",
+      "Authentication"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 12",
+    "reasoning": {
+      "source_summary_fragment": "Policies must update immediately upon any role change.",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.94
+        },
+        {
+          "tag": "maintainability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "real-time policy update",
+        "role-triggered enforcement"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.91,
+      "method": "role-policy-sync-detection"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "security",
+      "maintainability"
+    ],
+    "tags_v2": [
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.319815Z"
+      },
+      {
+        "original_tag": "maintainability",
+        "canonical_tag": "maintainability",
+        "matched_tag": "maintainability",
+        "tag_origin_cluster_id": "maintainability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.420334Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement app-specific override to exempt mobile app users from mandatory 2FA",
+    "summary": "Configure a temporary exemption for mobile application users, allowing them to bypass mandatory 2FA until 2FA functionality becomes available on mobile. The override ensures mobile access is not interrupted while bringing the mobile app into compliance.",
+    "tags": [
+      "usability",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication",
+      "Mobile"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 15\u201316",
+    "reasoning": {
+      "source_summary_fragment": "Mobile app users are temporarily exempt from mandatory 2FA due to unsupported 2FA functionality",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "platform-specific policy override",
+        "temporary exemption management"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.92,
+      "method": "app-conditional-policy-detection"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "usability",
+      "security"
+    ],
+    "tags_v2": [
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.509760Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.556266Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Ensure web and desktop apps always enforce 2FA as configured",
+    "summary": "For web and desktop applications, assure strict enforcement of 2FA based on current policy without exceptions. This maintains compliance and reduces risk on fully supported channels.",
+    "tags": [
+      "security",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication",
+      "Desktop",
+      "Web"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 17",
+    "reasoning": {
+      "source_summary_fragment": "web and desktop apps must always enforce 2FA",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "channel-specific enforcement",
+        "policy strictness"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "channel-policy-verification"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "security",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.602098Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.608719Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Notify users of 2FA enforcement at login with clear setup instructions",
+    "summary": "On login, display clear, actionable prompts to inform users about 2FA requirements and provide guidance for setup, ensuring all affected users can comply with new or changing security policies.",
+    "tags": [
+      "usability",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication",
+      "Onboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "Users must be notified of enforcement and receive clear setup instructions at login",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.9
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "user notification",
+        "onboarding support"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.89,
+      "method": "ux-onboarding-rule-match"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "usability",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.697851Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.742802Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Alert users when logging in from unsupported channels and guide next steps",
+    "summary": "When users attempt to access the platform from channels lacking 2FA support, present notifications explaining the limitation and provide step-by-step remediation guidance to minimize user friction.",
+    "tags": [
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Authentication"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.81,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "tailored notifications for unsupported channels",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "unsupported channel notification",
+        "user guidance"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.87,
+      "method": "cx-channel-insight"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "usability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.832341Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Log all policy exceptions, including required 2FA users logging in via mobile",
+    "summary": "Track and store audit records for all policy exceptions, such as users bypassing required 2FA due to mobile exemptions, to ensure accountability and support compliance investigations.",
+    "tags": [
+      "security",
+      "compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Security",
+      "Logging"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "The system must track and log policy exceptions",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.94
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "policy exception logging",
+        "audit trail"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.92,
+      "method": "audit-exception-mapping"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "security",
+      "compliance"
+    ],
+    "tags_v2": [
+      "security",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.877095Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.884109Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Provide an admin report listing all users out of 2FA compliance or exempted",
+    "summary": "Develop a reporting feature for administrators to list users who are out of compliance with 2FA policies or officially exempted, supporting regular security and governance reviews.",
+    "tags": [
+      "compliance",
+      "security"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Reporting",
+      "Security"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 25\u201326",
+    "reasoning": {
+      "source_summary_fragment": "generate reports showing users not in compliance or officially exempted",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "security",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "exception reporting",
+        "compliance status dashboard"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.92,
+      "method": "compliance-report-gen"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "compliance",
+      "security"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.886729Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.893093Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-016-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Update help articles and admin guides for 2FA changes",
+    "summary": "Revise and expand end-user help content and administrative guides to accurately reflect all new 2FA enforcement and exception workflows, supporting user understanding and operational readiness.",
+    "tags": [
+      "maintainability",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 28",
+    "reasoning": {
+      "source_summary_fragment": "Help documentation and admin guides should be updated accordingly.",
+      "tag_metadata_reference": [
+        {
+          "tag": "maintainability",
+          "confidence": 0.89
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.8
+        }
+      ],
+      "mapped_concepts": [
+        "documentation update",
+        "user support materials"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.87,
+      "method": "change-comms-mapping"
+    },
+    "source_hlj_id": "REQ-016",
+    "tags_v1": [
+      "maintainability",
+      "usability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "maintainability",
+        "canonical_tag": "maintainability",
+        "matched_tag": "maintainability",
+        "tag_origin_cluster_id": "maintainability",
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:07.982730Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.8,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.068145Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

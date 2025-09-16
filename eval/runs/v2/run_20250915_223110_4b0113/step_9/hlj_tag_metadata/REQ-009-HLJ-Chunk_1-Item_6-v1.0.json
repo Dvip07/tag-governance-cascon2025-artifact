@@ -1,0 +1,113 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Record all locked FX rates, metadata, and expiry data for audit and reconciliation",
+  "summary": "Store all locked FX rates together with full metadata and expiry information to enable complete audit trails and finance reconciliation. The solution must ensure robust, tamper-evident record keeping aligned with audit requirements.",
+  "tags_v1": [
+    "audit",
+    "fx",
+    "[INFERRED] traceability"
+  ],
+  "tags_v2": [
+    "audit",
+    "fx"
+  ],
+  "tags_v3": [
+    "payments",
+    "audit",
+    "fx",
+    "scheduling",
+    "processing"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "283",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.737496,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "audit",
+      "aliases": [
+        "auditability"
+      ],
+      "cluster_id": "25",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.74204,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "audit",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fx",
+      "aliases": [],
+      "cluster_id": "88",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.70614,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fx",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduling",
+      "aliases": [],
+      "cluster_id": "105",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.737221,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduling",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ui",
+      "aliases": [],
+      "cluster_id": "87",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.67833,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ui",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "processing",
+      "aliases": [],
+      "cluster_id": "366",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.699567,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "processing",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.958553Z"
+}

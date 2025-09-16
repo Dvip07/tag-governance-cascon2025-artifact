@@ -1,0 +1,1487 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement text highlighting for comment initiation on PDFs",
+    "summary": "Enable users to highlight text selections within PDF documents to initiate comment threads. The highlighting system must support precise text selection across different PDF rendering engines and maintain visual clarity when overlapping with existing highlights.",
+    "tags": [
+      "pdf",
+      "highlighting",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "UI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "Users can highlight text or click anywhere to start comment threads",
+      "tag_metadata_reference": [
+        {
+          "tag": "pdf",
+          "confidence": 0.95
+        },
+        {
+          "tag": "highlighting",
+          "confidence": 0.94
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "text selection",
+        "visual feedback",
+        "PDF rendering"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "pdf",
+      "highlighting",
+      "ux"
+    ],
+    "tags_v2": [
+      "pdf",
+      "highlighting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "pdf",
+        "canonical_tag": "pdf",
+        "matched_tag": "pdf",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.763073Z"
+      },
+      {
+        "original_tag": "highlighting",
+        "canonical_tag": "highlighting",
+        "matched_tag": "highlighting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.765106Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.839182Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Enable click-anywhere comment placement on PDF pages",
+    "summary": "Implement point-based commenting where users can click any location on a PDF page to place a comment anchor. The system must handle coordinate mapping across different zoom levels and maintain position accuracy when PDFs are rendered on different devices.",
+    "tags": [
+      "pdf",
+      "commenting",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "UI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "click anywhere to start comment threads",
+      "tag_metadata_reference": [
+        {
+          "tag": "pdf",
+          "confidence": 0.95
+        },
+        {
+          "tag": "commenting",
+          "confidence": 0.96
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "coordinate mapping",
+        "click events",
+        "anchor placement"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "pdf",
+      "commenting",
+      "ux"
+    ],
+    "tags_v2": [
+      "pdf",
+      "commenting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "pdf",
+        "canonical_tag": "pdf",
+        "matched_tag": "pdf",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.841748Z"
+      },
+      {
+        "original_tag": "commenting",
+        "canonical_tag": "commenting",
+        "matched_tag": "commenting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.850240Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:10.938324Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build threaded comment system with 2-level nesting support",
+    "summary": "Create a backend architecture supporting hierarchical comment threads with exactly two levels of nesting (parent comments and replies). The system must efficiently handle thread retrieval, enforce nesting limits, and maintain referential integrity across the comment hierarchy.",
+    "tags": [
+      "threading",
+      "comments",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Collaboration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 18",
+    "reasoning": {
+      "source_summary_fragment": "comment threads with 2-level nesting",
+      "tag_metadata_reference": [
+        {
+          "tag": "threading",
+          "confidence": 0.93
+        },
+        {
+          "tag": "comments",
+          "confidence": 0.96
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "hierarchical data",
+        "nesting constraints",
+        "thread management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "threading",
+      "comments",
+      "backend"
+    ],
+    "tags_v2": [
+      "comments",
+      "backend"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "threading",
+        "canonical_tag": "threading",
+        "matched_tag": "threading",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.009831Z"
+      },
+      {
+        "original_tag": "comments",
+        "canonical_tag": "comments",
+        "matched_tag": "comments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.017861Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.025267Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create resolved/unresolved comment status tracking system",
+    "summary": "Implement a status management system to track comment resolution states. The backend must support status transitions, maintain audit trails, and provide efficient queries for filtering comments by their resolution status.",
+    "tags": [
+      "status",
+      "workflow",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Collaboration"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "resolved/unresolved status tracking",
+      "tag_metadata_reference": [
+        {
+          "tag": "status",
+          "confidence": 0.94
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.91
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "state management",
+        "status transitions",
+        "audit logging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "status",
+      "workflow",
+      "backend"
+    ],
+    "tags_v2": [
+      "status",
+      "backend"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "status",
+        "canonical_tag": "status",
+        "matched_tag": "status",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.027176Z"
+      },
+      {
+        "original_tag": "workflow",
+        "canonical_tag": "workflow",
+        "matched_tag": "workflow",
+        "tag_origin_cluster_id": "workflow",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.099060Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.106091Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement quick filters for comment status (resolved/unresolved)",
+    "summary": "Design and implement UI components for rapidly filtering comments by their resolution status. The interface must provide one-click filtering, visual status indicators, and maintain filter state across sessions.",
+    "tags": [
+      "filtering",
+      "ui",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "UI"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "resolved/unresolved status tracking",
+      "tag_metadata_reference": [
+        {
+          "tag": "filtering",
+          "confidence": 0.92
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.93
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "filter UI",
+        "state persistence",
+        "visual indicators"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "filtering",
+      "ui",
+      "ux"
+    ],
+    "tags_v2": [
+      "filter",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "filtering",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:11.113063Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.120213Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.196939Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop notification system for new comments/replies",
+    "summary": "Build a real-time notification system that alerts users when new comments or replies are added to documents they're participating in. The system must support multiple notification channels, user preferences, and batch processing for high-volume scenarios.",
+    "tags": [
+      "notifications",
+      "messaging",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "participant notifications with direct links",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.95
+        },
+        {
+          "tag": "messaging",
+          "confidence": 0.91
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "real-time alerts",
+        "notification channels",
+        "event-driven architecture"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "notifications",
+      "messaging",
+      "backend"
+    ],
+    "tags_v2": [
+      "notification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:11.199239Z"
+      },
+      {
+        "original_tag": "messaging",
+        "canonical_tag": "messaging",
+        "matched_tag": "messaging",
+        "tag_origin_cluster_id": "messaging",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.279565Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.370728Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Generate direct links to commented PDF sections",
+    "summary": "Implement deep linking functionality that creates shareable URLs pointing directly to specific comments within PDFs. Links must navigate to the exact page and scroll position, highlight the relevant comment, and work across different browsers and devices.",
+    "tags": [
+      "deeplink",
+      "pdf",
+      "navigation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Navigation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "direct links",
+      "tag_metadata_reference": [
+        {
+          "tag": "deeplink",
+          "confidence": 0.93
+        },
+        {
+          "tag": "pdf",
+          "confidence": 0.94
+        },
+        {
+          "tag": "navigation",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "URL routing",
+        "anchor navigation",
+        "cross-browser compatibility"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "deeplink",
+      "pdf",
+      "navigation"
+    ],
+    "tags_v2": [
+      "pdf",
+      "navigation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "deeplink",
+        "canonical_tag": "deeplink",
+        "matched_tag": "deeplink",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.442264Z"
+      },
+      {
+        "original_tag": "pdf",
+        "canonical_tag": "pdf",
+        "matched_tag": "pdf",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.444463Z"
+      },
+      {
+        "original_tag": "navigation",
+        "canonical_tag": "navigation",
+        "matched_tag": "navigation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.454811Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Create notification triggers for thread resolution events",
+    "summary": "Configure event-driven notifications specifically for when comment threads are marked as resolved. The system must notify thread participants, support customizable notification preferences, and integrate with the existing notification infrastructure.",
+    "tags": [
+      "notifications",
+      "workflow",
+      "events"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Notifications"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "participant notifications",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.94
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.9
+        },
+        {
+          "tag": "events",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "resolution events",
+        "trigger configuration",
+        "participant tracking"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "notifications",
+      "workflow",
+      "events"
+    ],
+    "tags_v2": [
+      "notification",
+      "events"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:11.456705Z"
+      },
+      {
+        "original_tag": "workflow",
+        "canonical_tag": "workflow",
+        "matched_tag": "workflow",
+        "tag_origin_cluster_id": "workflow",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.529104Z"
+      },
+      {
+        "original_tag": "events",
+        "canonical_tag": "events",
+        "matched_tag": "events",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.531295Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Handle comment preservation during PDF version updates",
+    "summary": "Develop a system to maintain comment positioning and context when PDF documents are updated to new versions. Must implement intelligent mapping algorithms to relocate comments to their correct positions in updated documents and handle cases where original content has been removed.",
+    "tags": [
+      "versioning",
+      "migration",
+      "backend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Versioning"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "comment preservation across PDF version updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "versioning",
+          "confidence": 0.95
+        },
+        {
+          "tag": "migration",
+          "confidence": 0.92
+        },
+        {
+          "tag": "backend",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "version control",
+        "content mapping",
+        "data migration"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "versioning",
+      "migration",
+      "backend"
+    ],
+    "tags_v2": [
+      "migration"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "versioning",
+        "canonical_tag": "versioning",
+        "matched_tag": "versioning",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.641996Z"
+      },
+      {
+        "original_tag": "migration",
+        "canonical_tag": "migration",
+        "matched_tag": "migration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.653620Z"
+      },
+      {
+        "original_tag": "backend",
+        "canonical_tag": "backend",
+        "matched_tag": "backend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.745311Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Implement warning system for shifted comment positions",
+    "summary": "Create a user interface component that displays warnings when comments may have shifted position due to document updates. The system should visually indicate uncertainty about comment placement and provide options for users to manually relocate misaligned comments.",
+    "tags": [
+      "validation",
+      "warnings",
+      "ux"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "UI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "low",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "comment preservation across PDF version updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "validation",
+          "confidence": 0.89
+        },
+        {
+          "tag": "warnings",
+          "confidence": 0.92
+        },
+        {
+          "tag": "ux",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "position validation",
+        "warning UI",
+        "manual adjustment"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "validation",
+      "warnings",
+      "ux"
+    ],
+    "tags_v2": [
+      "validation",
+      "warnings"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.756753Z"
+      },
+      {
+        "original_tag": "warnings",
+        "canonical_tag": "warnings",
+        "matched_tag": "warnings",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.763496Z"
+      },
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.878387Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Prevent overlapping or duplicate highlights at same location",
+    "summary": "Implement validation logic to prevent users from creating multiple highlights at the same text location. System should detect existing highlights and either merge them or prompt user to use existing highlight for new comments.",
+    "tags": [
+      "validation",
+      "collision",
+      "frontend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Validation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "low",
+    "priority_confidence": 0.82,
+    "line_source": "Ln 32",
+    "reasoning": {
+      "source_summary_fragment": "handle edge cases like overlapping highlights",
+      "tag_metadata_reference": [
+        {
+          "tag": "validation",
+          "confidence": 0.92
+        },
+        {
+          "tag": "collision",
+          "confidence": 0.89
+        },
+        {
+          "tag": "frontend",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "highlight collision detection",
+        "UI validation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "validation",
+      "collision",
+      "frontend"
+    ],
+    "tags_v2": [
+      "validation",
+      "collision"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.885848Z"
+      },
+      {
+        "original_tag": "collision",
+        "canonical_tag": "collision",
+        "matched_tag": "collision",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.896745Z"
+      },
+      {
+        "original_tag": "frontend",
+        "canonical_tag": "frontend",
+        "matched_tag": "frontend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.987809Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Create quickstart guide for commenting features",
+    "summary": "Develop comprehensive quickstart documentation covering basic PDF commenting workflows including how to create highlights, start comment threads, reply to comments, and resolve discussions. Include screenshots and step-by-step instructions.",
+    "tags": [
+      "documentation",
+      "guide",
+      "content"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "UserSupport"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.94,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "Includes quickstart documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.96
+        },
+        {
+          "tag": "guide",
+          "confidence": 0.93
+        },
+        {
+          "tag": "content",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "user documentation",
+        "quickstart guide"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "documentation",
+      "guide",
+      "content"
+    ],
+    "tags_v2": [
+      "documentation",
+      "guide"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.995340Z"
+      },
+      {
+        "original_tag": "guide",
+        "canonical_tag": "guide",
+        "matched_tag": "guide",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:11.997234Z"
+      },
+      {
+        "original_tag": "content",
+        "canonical_tag": "content",
+        "matched_tag": "content",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.066930Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Document best practices for feedback workflows",
+    "summary": "Create documentation outlining best practices for using PDF commenting in feedback workflows. Cover topics like comment organization, effective use of threading, notification management, and collaborative review processes.",
+    "tags": [
+      "documentation",
+      "workflow",
+      "content",
+      "[INFERRED] collaboration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation",
+      "UserSupport"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.92,
+    "priority": "low",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "Includes quickstart documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "workflow",
+          "confidence": 0.91
+        },
+        {
+          "tag": "content",
+          "confidence": 0.89
+        },
+        {
+          "tag": "collaboration",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "feedback workflows",
+        "collaborative processes"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "collaboration",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "documentation",
+      "workflow",
+      "content",
+      "[INFERRED] collaboration"
+    ],
+    "tags_v2": [
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.073904Z"
+      },
+      {
+        "original_tag": "workflow",
+        "canonical_tag": "workflow",
+        "matched_tag": "workflow",
+        "tag_origin_cluster_id": "workflow",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.145660Z"
+      },
+      {
+        "original_tag": "content",
+        "canonical_tag": "content",
+        "matched_tag": "content",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.218651Z"
+      },
+      {
+        "original_tag": "[INFERRED] collaboration",
+        "canonical_tag": "[INFERRED] collaboration",
+        "matched_tag": "[INFERRED] collaboration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.304804Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Ensure cross-browser compatibility for PDF commenting",
+    "summary": "Test and ensure full PDF commenting functionality works consistently across major browsers including Chrome, Firefox, Safari, and Edge. Address browser-specific rendering issues, JavaScript compatibility, and PDF.js integration differences.",
+    "tags": [
+      "compatibility",
+      "testing",
+      "frontend"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Compatibility"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 40",
+    "reasoning": {
+      "source_summary_fragment": "across major browsers",
+      "tag_metadata_reference": [
+        {
+          "tag": "compatibility",
+          "confidence": 0.94
+        },
+        {
+          "tag": "testing",
+          "confidence": 0.9
+        },
+        {
+          "tag": "frontend",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "cross-browser testing",
+        "browser compatibility"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "compatibility",
+      "testing",
+      "frontend"
+    ],
+    "tags_v2": [
+      "compatibility",
+      "testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compatibility",
+        "canonical_tag": "compatibility",
+        "matched_tag": "compatibility",
+        "tag_origin_cluster_id": "compatibility",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.307164Z"
+      },
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.318036Z"
+      },
+      {
+        "original_tag": "frontend",
+        "canonical_tag": "frontend",
+        "matched_tag": "frontend",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.387505Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-28",
+    "id": "REQ-021-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Optimize performance for 100+ page PDFs with comments",
+    "summary": "Implement performance optimizations for handling large PDFs with extensive comment threads. Include lazy loading of comments, efficient rendering strategies, memory management, and pagination to maintain smooth user experience on documents exceeding 100 pages.",
+    "tags": [
+      "performance",
+      "optimization",
+      "scalability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "DocumentManagement",
+      "Performance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 42",
+    "reasoning": {
+      "source_summary_fragment": "maintain performance on 100+ page PDFs",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.95
+        },
+        {
+          "tag": "optimization",
+          "confidence": 0.93
+        },
+        {
+          "tag": "scalability",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "large document handling",
+        "performance optimization"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-021",
+    "tags_v1": [
+      "performance",
+      "optimization",
+      "scalability"
+    ],
+    "tags_v2": [
+      "performance",
+      "optimization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.390061Z"
+      },
+      {
+        "original_tag": "optimization",
+        "canonical_tag": "optimization",
+        "matched_tag": "optimization",
+        "tag_origin_cluster_id": "optimization",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:12.400981Z"
+      },
+      {
+        "original_tag": "scalability",
+        "canonical_tag": "scalable",
+        "matched_tag": "scalable",
+        "tag_origin_cluster_id": "scalable",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:12.475485Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

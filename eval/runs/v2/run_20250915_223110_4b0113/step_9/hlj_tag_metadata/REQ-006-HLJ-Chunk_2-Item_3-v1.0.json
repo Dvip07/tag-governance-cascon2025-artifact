@@ -1,0 +1,114 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_3-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Ensure rate limiting is resilient to spoofed tenant IDs or credentials",
+  "summary": "The system should defend against attempts to bypass rate limits with spoofed tenant IDs or credentials. Employ authentication and verification measures to ensure limits are securely enforced and cannot be evaded by malicious actors.",
+  "tags_v1": [
+    "security",
+    "[INFERRED] authentication"
+  ],
+  "tags_v2": [
+    "security"
+  ],
+  "tags_v3": [
+    "fallback",
+    "security",
+    "availability",
+    "api",
+    "tenant segment"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "58",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.694135,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.738851,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "availability",
+      "aliases": [],
+      "cluster_id": "57",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.71769,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "availability",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "59",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.678273,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "rollout",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.742359,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tenant segment",
+      "aliases": [],
+      "cluster_id": "363",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.725235,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tenant segment",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.954274Z"
+}

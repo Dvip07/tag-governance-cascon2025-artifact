@@ -1,0 +1,150 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Aggregate and normalize income data from multiple sources",
+  "summary": "Develop data processing logic to combine, standardize, and reconcile varying income records from several gig platforms. This ensures a consistent, unified dataset for downstream eligibility and compliance evaluation.",
+  "tags_v1": [
+    "aggregation",
+    "data-normalization",
+    "[INFERRED] reconciliation"
+  ],
+  "tags_v2": [
+    "aggregation",
+    "normalization"
+  ],
+  "tags_v3": [
+    "api",
+    "doordash",
+    "integration",
+    "aggregation",
+    "normalization",
+    "eligibility",
+    "gig income",
+    "income verification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.724473,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "doordash",
+      "aliases": [],
+      "cluster_id": "253",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.705994,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "doordash",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "integration",
+      "aliases": [
+        "integrations"
+      ],
+      "cluster_id": "0",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.712404,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "integration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "aggregation",
+      "aliases": [],
+      "cluster_id": "3",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.73595,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "aggregation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "normalization",
+      "aliases": [
+        "data-normalization"
+      ],
+      "cluster_id": "4",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.723345,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data-normalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "5",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.737613,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "gig income",
+      "aliases": [],
+      "cluster_id": "351",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.772694,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gig income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "income verification",
+      "aliases": [],
+      "cluster_id": "352",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.791595,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income verification",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.950711Z"
+}

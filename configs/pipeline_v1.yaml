@@ -1,0 +1,83 @@
+globals:
+  base_eval_dir: eval/runs/v1
+  current_run_id: pipeline_20250915_095209_d5351f
+  run_dir: eval/runs/v1/run_20250915_093627
+  run_id: run_20250915_093627
+outputs:
+  audits_dir: null
+  changelogs_dir: null
+  delta_dir: eval/runs/${run_id}/delta_summaries
+  delta_summary_csv: null
+  delta_summary_md: null
+  dropped_tags: eval/runs/v1/run_20250915_093627/dropped_tags.csv
+  eval_base: eval/runs/v1
+  flagged_csv: null
+  flagged_md: null
+  tag_alias_map: eval/runs/v1/tag_alias_maps/tag_alias_map_pipeline_20250915_095209_d5351f.json
+  tag_alias_maps: eval/runs/v1/tag_alias_maps
+  trends_csv: null
+  trends_md: null
+pipeline_runs:
+  pipeline_20250915_093627_2d0aa8:
+    timestamp: '2025-09-15T09:36:27.315216'
+  pipeline_20250915_093710_c34894:
+    timestamp: '2025-09-15T09:37:10.889635'
+  pipeline_20250915_093724_c1568d:
+    timestamp: '2025-09-15T09:37:24.861052'
+  pipeline_20250915_093913_27ac94:
+    timestamp: '2025-09-15T09:39:13.223858'
+  pipeline_20250915_094125_60fc18:
+    timestamp: '2025-09-15T09:41:25.940119'
+  pipeline_20250915_094218_531ed2:
+    timestamp: '2025-09-15T09:42:18.017095'
+  pipeline_20250915_094316_d62fb8:
+    timestamp: '2025-09-15T09:43:16.627357'
+  pipeline_20250915_094558_128920:
+    timestamp: '2025-09-15T09:45:58.636424'
+  pipeline_20250915_094917_643548:
+    timestamp: '2025-09-15T09:49:17.516196'
+  pipeline_20250915_095026_f6907c:
+    timestamp: '2025-09-15T09:50:26.332843'
+  pipeline_20250915_095135_dc04e5:
+    timestamp: '2025-09-15T09:51:35.389671'
+  pipeline_20250915_095209_d5351f:
+    timestamp: '2025-09-15T09:52:09.326838'
+scripts:
+- args: []
+  script: scripts/step_2/list_dropped_tags.py
+- args:
+  - --top_n
+  - '20'
+  script: scripts/step_2/flagged_case_table.py
+- args: []
+  script: scripts/step_2/tag_alias_mapping.py
+- args: []
+  script: scripts/step_2/validate_hljs.py
+- args: []
+  script: scripts/step_2/generate_audits.py
+- args: []
+  script: scripts/step_2/delta_summary.py
+- args: []
+  script: scripts/step_2/analyze_change_trends.py
+- args: []
+  script: scripts/step_2/generate_changelog.py
+step3:
+  embedding_model: all-MiniLM-L6-v2
+  model_dirs:
+  - output/meta70b
+  - output/opus4
+  - output/gpt41
+  sim_threshold: 0.85
+  target_filename: all_trimmed_hljs.json
+step4:
+  base_output: output
+  domains:
+  - FinTech
+  - SaaS
+  embedding_model: all-MiniLM-L6-v2
+  hlj_subpath: hlj/trim_merged/all_trimmed_hljs.json
+  raw_requirements: raw_requirement
+  sbert_threshold: 0.68
+
+
+# python -m scripts.run_pipeline --config configs/pipeline_v1.yaml

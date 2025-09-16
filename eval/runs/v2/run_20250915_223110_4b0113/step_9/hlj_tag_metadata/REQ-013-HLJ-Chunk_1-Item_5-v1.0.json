@@ -1,0 +1,88 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Support atomic rollback for failed batch payouts",
+  "summary": "Ensure the payout system supports atomic rollbacks, undoing all transactions in a batch if any individual payout fails due to errors or compliance issues. Atomicity must guard against partial, inconsistent payouts.",
+  "tags_v1": [
+    "atomicity",
+    "rollback",
+    "[INFERRED] consistency"
+  ],
+  "tags_v2": [
+    "atomicity",
+    "rollback"
+  ],
+  "tags_v3": [
+    "atomicity",
+    "rollback",
+    "consistency",
+    "batch"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "atomicity",
+      "aliases": [],
+      "cluster_id": "107",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.720645,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "atomicity",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "59",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.782628,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "consistency",
+      "aliases": [],
+      "cluster_id": "108",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.704227,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "consistency",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "batch",
+      "aliases": [
+        "batchprocessing",
+        "batchpayouts"
+      ],
+      "cluster_id": "104",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.742154,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "batchpayouts",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.961536Z"
+}

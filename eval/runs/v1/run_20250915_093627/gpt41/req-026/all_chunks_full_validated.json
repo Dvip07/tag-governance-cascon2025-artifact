@@ -1,0 +1,1274 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Define configurable behavioral triggers for NPS surveys",
+    "summary": "Enable administrators to specify configurable behavioral triggers that determine when NPS surveys are presented to users, such as after onboarding or key feature adoption. This flexibility ensures targeted and relevant feedback collection based on user actions.",
+    "tags": [
+      "nps",
+      "automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CustomerFeedback"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 10\u201312",
+    "reasoning": {
+      "source_summary_fragment": "auto-triggers NPS surveys based on configurable user behaviors (e.g., after onboarding, five logins, key feature adoption)",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.95
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "trigger configuration",
+        "survey automation"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "automation"
+    ],
+    "tags_v2": [
+      "nps",
+      "automation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:00.843866Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:00.856484Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement logic to delay/suppress surveys on churn signals",
+    "summary": "Develop system logic to detect churn risk and accordingly delay or suppress NPS survey prompts to affected users. This ensures surveys are not sent at inappropriate times, enhancing feedback quality and user experience.",
+    "tags": [
+      "nps",
+      "[INFERRED] behavioral-intelligence"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "BehavioralIntelligence"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 13\u201314",
+    "reasoning": {
+      "source_summary_fragment": "logic to delay or suppress prompts if churn risk is detected",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.95
+        },
+        {
+          "tag": "behavioral-intelligence",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "churn prediction",
+        "conditional survey suppression"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "behavioral-intelligence",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "[INFERRED] behavioral-intelligence"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:00.863846Z"
+      },
+      {
+        "original_tag": "[INFERRED] behavioral-intelligence",
+        "canonical_tag": "[INFERRED] behavioral-intelligence",
+        "matched_tag": "[INFERRED] behavioral-intelligence",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:00.967132Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Embed NPS prompt natively in web and mobile apps",
+    "summary": "Integrate NPS survey prompts directly into both web and mobile applications, ensuring users receive feedback requests within the context of their normal workflow. This approach maximizes response rates and minimizes disruption.",
+    "tags": [
+      "nps",
+      "usability",
+      "[INFERRED] embedded-ui"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CustomerFeedback"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "NPS surveys will be natively embedded in web/mobile apps to minimize workflow disruption",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.96
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.93
+        },
+        {
+          "tag": "embedded-ui",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "in-app surveys",
+        "native integration"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "embedded-ui",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "usability",
+      "[INFERRED] embedded-ui"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:00.969753Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.070208Z"
+      },
+      {
+        "original_tag": "[INFERRED] embedded-ui",
+        "canonical_tag": "[INFERRED] embedded-ui",
+        "matched_tag": "[INFERRED] embedded-ui",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.177640Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Design prompt retry and 30-day suppression after dismissal",
+    "summary": "Establish logic to retry showing the NPS prompt if dismissed, while enforcing a 30-day suppression window to avoid user fatigue. This rule controls prompt frequency and improves user satisfaction.",
+    "tags": [
+      "nps",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CustomerFeedback"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 17\u201318",
+    "reasoning": {
+      "source_summary_fragment": "include suppression and retry rules after dismissals",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.94
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "prompt suppression",
+        "feedback frequency control"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "usability"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.185426Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.287272Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Coordinate prompt delivery to prevent duplicates for multi-device users",
+    "summary": "Synchronize NPS survey prompt delivery across multiple devices for the same user to ensure that prompts are not duplicated. This coordination improves user experience and avoids repetitive survey exposure.",
+    "tags": [
+      "nps",
+      "[INFERRED] synchronization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "BehavioralIntelligence"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 28\u201329",
+    "reasoning": {
+      "source_summary_fragment": "coordinate across devices to avoid duplicate prompts",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.93
+        },
+        {
+          "tag": "synchronization",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "cross-device delivery",
+        "prompt deduplication"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "synchronization",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "[INFERRED] synchronization"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.294455Z"
+      },
+      {
+        "original_tag": "[INFERRED] synchronization",
+        "canonical_tag": "[INFERRED] synchronization",
+        "matched_tag": "[INFERRED] synchronization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.400727Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Handle conflicting triggers by prioritization logic",
+    "summary": "Create logic that resolves conflicts when multiple NPS prompt triggers activate simultaneously, using a prioritization scheme to determine which survey, if any, should be delivered. This maintains survey relevance and avoids overload.",
+    "tags": [
+      "nps",
+      "[INFERRED] prioritization"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "BehavioralIntelligence"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 30\u201331",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases cover conflicting triggers and multi-device users",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.94
+        },
+        {
+          "tag": "prioritization",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "trigger conflict",
+        "prompt selection logic"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "prioritization",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "[INFERRED] prioritization"
+    ],
+    "tags_v2": [
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.408271Z"
+      },
+      {
+        "original_tag": "[INFERRED] prioritization",
+        "canonical_tag": "[INFERRED] prioritization",
+        "matched_tag": "[INFERRED] prioritization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.521335Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Ensure NPS prompt is minimally disruptive to user workflow",
+    "summary": "Design the NPS prompt to integrate seamlessly into user workflows, minimizing interruptions and ensuring that feedback collection does not hinder productivity or user satisfaction.",
+    "tags": [
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CustomerFeedback"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 16",
+    "reasoning": {
+      "source_summary_fragment": "to minimize workflow disruption",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "minimally disruptive feedback",
+        "UI/UX"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "usability"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.629358Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Allow users to opt out of feedback requests at any time",
+    "summary": "Implement a mechanism that gives users the ability to opt out of receiving feedback requests at any point, supporting both usability and compliance with privacy regulations.",
+    "tags": [
+      "compliance",
+      "usability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CustomerFeedback",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "Compliance with privacy regulations is required, including auditability and user opt-outs",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "user opt-out",
+        "privacy controls"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "compliance",
+      "usability"
+    ],
+    "tags_v2": [
+      "compliance",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.636072Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.642157Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Update product training and onboarding for NPS insights",
+    "summary": "Revise product training materials and onboarding processes to incorporate new NPS insights for internal and customer-facing teams, ensuring proper usage and interpretation of survey data.",
+    "tags": [
+      "enablement"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 33",
+    "reasoning": {
+      "source_summary_fragment": "Documentation and enablement updates for teams are mandated",
+      "tag_metadata_reference": [
+        {
+          "tag": "enablement",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "training",
+        "onboarding",
+        "NPS data literacy"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "enablement"
+    ],
+    "tags_v2": [
+      "enablement"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "enablement",
+        "canonical_tag": "enablement",
+        "matched_tag": "enablement",
+        "tag_origin_cluster_id": "enablement",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.650119Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Provide internal team feedback mechanism to refine survey rules and content",
+    "summary": "Establish a feedback mechanism for internal teams to suggest changes and improvements to NPS survey rules and content, fostering continuous refinement of feedback processes.",
+    "tags": [
+      "enablement"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 34",
+    "reasoning": {
+      "source_summary_fragment": "a team feedback loop to refine rules",
+      "tag_metadata_reference": [
+        {
+          "tag": "enablement",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "internal feedback",
+        "survey improvement"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "enablement"
+    ],
+    "tags_v2": [
+      "enablement"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "enablement",
+        "canonical_tag": "enablement",
+        "matched_tag": "enablement",
+        "tag_origin_cluster_id": "enablement",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.707754Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Visualize NPS response rates, scores, and trends by cohort and event",
+    "summary": "Create analytics dashboards that display NPS response rates, scores, and temporal trends grouped by user cohort and triggering event. Enable insight into feedback reception and behavioral drivers of NPS within the SaaS product.",
+    "tags": [
+      "nps",
+      "analytics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 19\u201321",
+    "reasoning": {
+      "source_summary_fragment": "Analytics must visualize response rates and trends by cohort and event",
+      "tag_metadata_reference": [
+        {
+          "tag": "nps",
+          "confidence": 0.92
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "dashboard",
+        "cohort analysis",
+        "NPS trend reporting"
+      ]
+    },
+    "inference_notes": {
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "nps",
+      "analytics"
+    ],
+    "tags_v2": [
+      "nps",
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.710948Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.720038Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Integrate NPS results with CRM and support for proactive outreach",
+    "summary": "Connect NPS survey results to CRM and support systems to enable proactive customer engagement based on feedback. Triggers can automate outreach to users at risk or those providing critical feedback.",
+    "tags": [
+      "crm",
+      "support",
+      "[INFERRED] integration"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Integration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 22\u201323",
+    "reasoning": {
+      "source_summary_fragment": "NPS data must integrate with CRM/support workflows.",
+      "tag_metadata_reference": [
+        {
+          "tag": "crm",
+          "confidence": 0.92
+        },
+        {
+          "tag": "support",
+          "confidence": 0.92
+        },
+        {
+          "tag": "integration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "NPS-CRM linkage",
+        "proactive outreach workflows",
+        "customer support automation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "integration",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "crm",
+      "support",
+      "[INFERRED] integration"
+    ],
+    "tags_v2": [
+      "crm",
+      "support"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "crm",
+        "canonical_tag": "crm",
+        "matched_tag": "crm",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.722600Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.725079Z"
+      },
+      {
+        "original_tag": "[INFERRED] integration",
+        "canonical_tag": "[INFERRED] integration",
+        "matched_tag": "[INFERRED] integration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.833808Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Ensure survey data storage and audit per privacy standards",
+    "summary": "Implement survey data storage, retention, and audit processes to adhere to privacy regulations and user opt-out requirements. Ensure traceability and regulatory compliance for all stored NPS feedback.",
+    "tags": [
+      "compliance",
+      "privacy",
+      "[INFERRED] auditability"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 24",
+    "reasoning": {
+      "source_summary_fragment": "Compliance with privacy regulations is required, including auditability and user opt-outs.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.96
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.95
+        },
+        {
+          "tag": "auditability",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "survey data retention",
+        "privacy law compliance",
+        "auditing of feedback records"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "auditability",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "compliance",
+      "privacy",
+      "[INFERRED] auditability"
+    ],
+    "tags_v2": [
+      "compliance",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.841031Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.843238Z"
+      },
+      {
+        "original_tag": "[INFERRED] auditability",
+        "canonical_tag": "[INFERRED] auditability",
+        "matched_tag": "[INFERRED] auditability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.959731Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Integrate with analytics, CRM, and support ticketing platforms",
+    "summary": "Establish robust two-way integrations with analytics platforms, CRM, and support ticketing systems to synchronize NPS data and workflow actions. Facilitates holistic feedback management and operational response.",
+    "tags": [
+      "integration",
+      "nps",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Integration"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 36",
+    "reasoning": {
+      "source_summary_fragment": "Integration with analytics, CRM, and support platforms is required",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.97
+        },
+        {
+          "tag": "nps",
+          "confidence": 0.9
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "system interoperability",
+        "ticketing integration",
+        "feedback data exchange"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "integration",
+      "nps",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "integration",
+      "nps"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.969972Z"
+      },
+      {
+        "original_tag": "nps",
+        "canonical_tag": "nps",
+        "matched_tag": "nps",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:01.976640Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:02.097302Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Localize surveys for key markets",
+    "summary": "Provide localized NPS surveys to accommodate multiple markets, ensuring linguistic and cultural accuracy. This supports better response rates and compliance with regional requirements.",
+    "tags": [
+      "localization",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Localization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 37",
+    "reasoning": {
+      "source_summary_fragment": "surveys must be localized",
+      "tag_metadata_reference": [
+        {
+          "tag": "localization",
+          "confidence": 0.96
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "multilingual survey design",
+        "market adaptation",
+        "regulatory localization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "localization",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "localization"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "localization",
+        "canonical_tag": "localization",
+        "matched_tag": "localization",
+        "tag_origin_cluster_id": "localization",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:02.107147Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:02.218950Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-17",
+    "id": "REQ-026-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Monitor and enforce KPIs: >20% response rate, 90% mapping, <24h follow-up",
+    "summary": "Continuously track and enforce KPIs such as survey response rates above 20%, NPS mapping coverage over 90%, and ensuring follow-up actions occur within 24 hours. Automate alerts and operational checks on these metrics.",
+    "tags": [
+      "kpi",
+      "[INFERRED] automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics",
+      "Support"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 39\u201342",
+    "reasoning": {
+      "source_summary_fragment": "KPIs specify survey response rates (>20%), NPS mapping, and fast follow-up (<24h)",
+      "tag_metadata_reference": [
+        {
+          "tag": "kpi",
+          "confidence": 0.98
+        },
+        {
+          "tag": "automation",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "KPI enforcement",
+        "real-time monitoring",
+        "alerting automation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-026",
+    "tags_v1": [
+      "kpi",
+      "[INFERRED] automation"
+    ],
+    "tags_v2": [
+      "kpi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kpi",
+        "canonical_tag": "kpi",
+        "matched_tag": "kpi",
+        "tag_origin_cluster_id": "kpi",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:02.234027Z"
+      },
+      {
+        "original_tag": "[INFERRED] automation",
+        "canonical_tag": "[INFERRED] automation",
+        "matched_tag": "[INFERRED] automation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:02.346746Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

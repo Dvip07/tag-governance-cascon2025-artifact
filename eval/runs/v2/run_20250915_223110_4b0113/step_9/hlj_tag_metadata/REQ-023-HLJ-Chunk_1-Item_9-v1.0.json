@@ -1,0 +1,92 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_9-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Ensure compliance with regional data privacy laws (GDPR, CCPA) for geo-targeted features",
+  "summary": "Guarantee that all geo-targeted platform features conform to regional data privacy requirements, including GDPR and CCPA. Enforce necessary privacy controls and provide documentation to support regulatory compliance.",
+  "tags_v1": [
+    "compliance",
+    "privacy",
+    "[INFERRED] data-protection"
+  ],
+  "tags_v2": [
+    "compliance",
+    "privacy"
+  ],
+  "tags_v3": [
+    "compliance",
+    "privacy",
+    "rollback",
+    "feature-flags"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.726583,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "18",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.729351,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rollback",
+      "aliases": [
+        "rollout",
+        "rollouts"
+      ],
+      "cluster_id": "59",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.730129,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rollback",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "feature-flags",
+      "aliases": [
+        "feature flags"
+      ],
+      "cluster_id": "133",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.761278,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "feature-flags",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.965729Z"
+}

@@ -1,0 +1,116 @@
+{
+  "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-009",
+  "domain": "FinTech",
+  "title": "Support partial/full cancellation of scheduled payments with refunds and notifications",
+  "summary": "Allow users or system administrators to cancel scheduled payments either partially or in full, ensuring that refunds are processed and users are notified. This feature increases flexibility and user trust in the scheduling system.",
+  "tags_v1": [
+    "scheduled payments",
+    "refund",
+    "[INFERRED] cancellation"
+  ],
+  "tags_v2": [
+    "scheduled payments",
+    "refund"
+  ],
+  "tags_v3": [
+    "refund",
+    "cancellation",
+    "scheduled payments",
+    "compliance",
+    "payments"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "refund",
+      "aliases": [
+        "refunds"
+      ],
+      "cluster_id": "92",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.749456,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "refunds",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "cancellation",
+      "aliases": [],
+      "cluster_id": "93",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.727811,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "cancellation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "scheduled payments",
+      "aliases": [],
+      "cluster_id": "86",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.78653,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "scheduled payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.682708,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "payments",
+      "aliases": [],
+      "cluster_id": "283",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.731125,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "payments",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "risk",
+      "aliases": [],
+      "cluster_id": "6",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.678162,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "risk",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.958722Z"
+}

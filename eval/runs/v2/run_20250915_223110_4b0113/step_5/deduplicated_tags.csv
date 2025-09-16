@@ -1,0 +1,536 @@
+canonical_tag,alias,method,similarity,cluster_id,version
+integration,integrations,cluster+sbert,0.915,0,v3
+integration,integration,self,1.000,0,v3
+gig-economy,gig-economy,self,1.000,1,v3
+data-verification,data-verification,self,1.000,2,v3
+aggregation,aggregation,self,1.000,3,v3
+normalization,data-normalization,cluster+sbert,0.887,4,v3
+normalization,normalization,self,1.000,4,v3
+eligibility,eligibility rules,cluster+sbert,0.865,5,v3
+eligibility,eligibility,self,1.000,5,v3
+risk,risk,self,1.000,6,v3
+rules-engine,rules-engine,self,1.000,7,v3
+admin,admin,self,1.000,8,v3
+rule-management,rule-management,self,1.000,9,v3
+kyc,kyc,self,1.000,10,v3
+aml,aml,self,1.000,11,v3
+compliance,compliancereporting,cluster+sbert,0.858,12,v3
+compliance,compliance monitoring,cluster,0.812,12,v3
+compliance,compliance,self,1.000,12,v3
+fraud,fraud,self,1.000,13,v3
+detection,detection,self,1.000,14,v3
+consent,consent,self,1.000,15,v3
+user_experience,user-experience,cluster,0.817,16,v3
+user_experience,user experience,cluster,0.793,16,v3
+user_experience,user_experience,self,1.000,16,v3
+dispute,dispute,self,1.000,17,v3
+privacy,privacy laws,cluster+sbert,0.836,18,v3
+privacy,privacy,self,1.000,18,v3
+regulation,regulatory,cluster+sbert,0.854,19,v3
+regulation,regulation,self,1.000,19,v3
+encryption,encryption,self,1.000,20,v3
+rbac,rbac,self,1.000,21,v3
+dashboard,dashboards,cluster+sbert,0.926,22,v3
+dashboard,dashboard,self,1.000,22,v3
+monitoring,monitoring,self,1.000,23,v3
+logging,logs,cluster+sbert,0.886,24,v3
+logging,logging,self,1.000,24,v3
+audit,auditability,cluster,0.806,25,v3
+audit,audit,self,1.000,25,v3
+ui_testing,ui-testing,cluster+sbert,0.840,26,v3
+ui_testing,ui_testing,self,1.000,26,v3
+parallel,parallel,self,1.000,27,v3
+staging,staging,self,1.000,28,v3
+ci/cd,ci-cd,cluster+sbert,0.927,29,v3
+ci/cd,ci_cd,cluster+sbert,0.853,29,v3
+ci/cd,ci/cd,self,1.000,29,v3
+blocking,blocking,self,1.000,30,v3
+coverage,coverage,self,1.000,31,v3
+analytics,analytics,self,1.000,32,v3
+visualization,visualization,self,1.000,33,v3
+screenshots,screenshots,self,1.000,34,v3
+video,video,self,1.000,35,v3
+flakiness,flakiness,self,1.000,36,v3
+recommendations,recommendations,self,1.000,37,v3
+headless,headless,self,1.000,38,v3
+quarantine,quarantine,self,1.000,39,v3
+documentation,documentation,self,1.000,40,v3
+testing-guides,testing-guides,self,1.000,41,v3
+browser-matrix,browser-matrix,self,1.000,42,v3
+communication,communication,self,1.000,43,v3
+security,security,self,1.000,44,v3
+artifacts,artifacts,self,1.000,45,v3
+accessibility,accessibility,self,1.000,46,v3
+rate-limiting,rate_limiting,cluster+sbert,0.910,47,v3
+rate-limiting,rate-limit,cluster+sbert,0.939,47,v3
+rate-limiting,rate limiting,cluster+sbert,0.984,47,v3
+rate-limiting,rate limit,cluster+sbert,0.930,47,v3
+rate-limiting,rate limit policies,cluster+sbert,0.831,47,v3
+rate-limiting,rate-limiting,self,1.000,47,v3
+configuration,config,cluster+sbert,0.884,48,v3
+configuration,configuration,self,1.000,48,v3
+real-time,real-time,self,1.000,49,v3
+enforcement,enforcement,self,1.000,50,v3
+feedback,feedback,self,1.000,51,v3
+api,apis,cluster+sbert,0.916,52,v3
+api,api,self,1.000,52,v3
+alert,alerting,cluster+sbert,0.917,53,v3
+alert,alerts,cluster+sbert,0.901,53,v3
+alert,alert,self,1.000,53,v3
+self-service,self-service,self,1.000,54,v3
+reporting,reporting,self,1.000,55,v3
+support,support,self,1.000,56,v3
+availability,availability,self,1.000,57,v3
+fallback,fallback,self,1.000,58,v3
+rollback,rollout,cluster,0.817,59,v3
+rollback,rollouts,cluster,0.780,59,v3
+rollback,rollback,self,1.000,59,v3
+testing,testing,self,1.000,60,v3
+developer-experience,developer-experience,self,1.000,61,v3
+migration,migration,self,1.000,62,v3
+compatibility,compatibility,self,1.000,63,v3
+legacy,legacy,self,1.000,64,v3
+performance,performance,self,1.000,65,v3
+latency,latency,self,1.000,66,v3
+legal,legal,self,1.000,67,v3
+rest,restful,cluster,0.824,68,v3
+rest,rest,self,1.000,68,v3
+spec,spec,self,1.000,69,v3
+filter,filtering,cluster+sbert,0.912,70,v3
+filter,filters,cluster+sbert,0.911,70,v3
+filter,filter,self,1.000,70,v3
+pagination,pagination,self,1.000,71,v3
+openapi,openapi,self,1.000,72,v3
+deduplication,deduplication,self,1.000,73,v3
+schema,schema,self,1.000,74,v3
+data,data,self,1.000,75,v3
+timezone,timezone,self,1.000,76,v3
+metadata,metadata,self,1.000,77,v3
+oauth,oauth,self,1.000,78,v3
+authentication,authentication,self,1.000,79,v3
+error,error,self,1.000,80,v3
+screening,screening,self,1.000,81,v3
+onboarding,onboarding,self,1.000,82,v3
+notification,notifications,cluster+sbert,0.915,83,v3
+notification,user-notification,cluster+sbert,0.860,83,v3
+notification,notification,self,1.000,83,v3
+traceability,traceability,self,1.000,84,v3
+immutable,immutability,cluster+sbert,0.931,85,v3
+immutable,immutable,self,1.000,85,v3
+scheduled payments,scheduled payments,self,1.000,86,v3
+ui,ui,self,1.000,87,v3
+fx,fx,self,1.000,88,v3
+lock,locking,cluster+sbert,0.921,89,v3
+lock,lock,self,1.000,89,v3
+countdown,countdown,self,1.000,90,v3
+validation,validation,self,1.000,91,v3
+refund,refunds,cluster+sbert,0.890,92,v3
+refund,refund,self,1.000,92,v3
+cancellation,cancellation,self,1.000,93,v3
+usability,usability,self,1.000,94,v3
+retry,retry,self,1.000,95,v3
+sla,sla,self,1.000,96,v3
+beta,beta,self,1.000,97,v3
+delivery,delivery,self,1.000,98,v3
+implementation,implementation,self,1.000,99,v3
+oracle,oracle,self,1.000,100,v3
+advanced,advanced,self,1.000,101,v3
+reliability,reliability,self,1.000,102,v3
+engine,engine,self,1.000,103,v3
+batch,batchprocessing,cluster,0.808,104,v3
+batch,batchpayouts,cluster,0.816,104,v3
+batch,batch,self,1.000,104,v3
+scheduling,scheduling,self,1.000,105,v3
+failure,failure,self,1.000,106,v3
+atomicity,atomicity,self,1.000,107,v3
+consistency,consistency,self,1.000,108,v3
+partial,partial,self,1.000,109,v3
+exception,exception,self,1.000,110,v3
+status,status,self,1.000,111,v3
+access,access,self,1.000,112,v3
+instrumentation,instrumentation,self,1.000,113,v3
+timing,timing,self,1.000,114,v3
+segmentation,segmentation,self,1.000,115,v3
+metrics,metrics,self,1.000,116,v3
+diagnostics,diagnostics,self,1.000,117,v3
+regression,regression,self,1.000,118,v3
+remediation,remediation,self,1.000,119,v3
+resilience,resilience,self,1.000,120,v3
+external,external,self,1.000,121,v3
+prompt,prompt,self,1.000,122,v3
+transparency,transparency,self,1.000,123,v3
+retention,retention,self,1.000,124,v3
+policy,policy,self,1.000,125,v3
+export,export,self,1.000,126,v3
+roles,roles,self,1.000,127,v3
+masking,masking,self,1.000,128,v3
+data-protection,data_protection,cluster,0.811,129,v3
+data-protection,data-protection,self,1.000,129,v3
+anomaly,anomaly,self,1.000,130,v3
+docs,docs,self,1.000,131,v3
+abuse,abuse,self,1.000,132,v3
+feature-flags,feature flags,cluster+sbert,0.983,133,v3
+feature-flags,feature-flags,self,1.000,133,v3
+scalable,scalability,cluster+sbert,0.919,134,v3
+scalable,scalable,self,1.000,134,v3
+geo-segmentation,geo-segmentation,self,1.000,135,v3
+deployment,deployment,self,1.000,136,v3
+progressive-rollout,progressive-rollout,self,1.000,137,v3
+portal,portal,self,1.000,138,v3
+geo-ip,geo-ip,self,1.000,139,v3
+location-resolution,location-resolution,self,1.000,140,v3
+real-time-analytics,real-time analytics,cluster+sbert,0.991,141,v3
+real-time-analytics,real-time monitoring,cluster,0.814,141,v3
+real-time-analytics,real-time-analytics,self,1.000,141,v3
+kpi-tracking,kpi-tracking,self,1.000,142,v3
+training,training,self,1.000,143,v3
+enablement,enablement,self,1.000,144,v3
+changelog,changelog,self,1.000,145,v3
+template,template,self,1.000,146,v3
+multi-language,multi-language,self,1.000,147,v3
+personalization,personalization,self,1.000,148,v3
+automation,automation,self,1.000,149,v3
+multi-channel,multi-channel,self,1.000,150,v3
+opt-out,opt-out,self,1.000,151,v3
+gst,gst,self,1.000,152,v3
+rates,rates,self,1.000,153,v3
+dual-tax,dual-tax,self,1.000,154,v3
+invoice,invoicing,cluster+sbert,0.854,155,v3
+invoice,invoices,cluster+sbert,0.891,155,v3
+invoice,invoice,self,1.000,155,v3
+multi-rate,multi-rate,self,1.000,156,v3
+exemption,exemptions,cluster+sbert,0.963,157,v3
+exemption,exemption,self,1.000,157,v3
+retroactive,retroactive,self,1.000,158,v3
+webhook,webhooks,cluster+sbert,0.965,159,v3
+webhook,webhook,self,1.000,159,v3
+registration,registration,self,1.000,160,v3
+customization,customization,self,1.000,161,v3
+verification,verification,self,1.000,162,v3
+backend,backend,self,1.000,163,v3
+maintainability,maintainability,self,1.000,164,v3
+operational,operational,self,1.000,165,v3
+sync,synchronization,cluster,0.805,166,v3
+sync,sync,self,1.000,166,v3
+authorization,authorization,self,1.000,167,v3
+gdpr,gdpr,self,1.000,168,v3
+classification,classification,self,1.000,169,v3
+right-to-erasure,right-to-erasure,self,1.000,170,v3
+deletion,deletion,self,1.000,171,v3
+redaction,redaction,self,1.000,172,v3
+meta-log,meta-log,self,1.000,173,v3
+access-control,access control,cluster+sbert,0.977,174,v3
+access-control,access-control,self,1.000,174,v3
+integrity,integrity,self,1.000,175,v3
+micro-transaction,micro-transaction,self,1.000,176,v3
+rules,rules,self,1.000,177,v3
+details,details,self,1.000,178,v3
+false-positive,false-positive,self,1.000,179,v3
+dual-ledger,dual-ledger,self,1.000,180,v3
+phantom-balance,phantom-balances,cluster+sbert,0.976,181,v3
+phantom-balance,phantom balance,cluster+sbert,0.958,181,v3
+phantom-balance,phantom-balance,self,1.000,181,v3
+segregation,segregation,self,1.000,182,v3
+lifecycle,lifecycle,self,1.000,183,v3
+reconciliation,reconciliation,self,1.000,184,v3
+mismatch,mismatch,self,1.000,185,v3
+workflow,workflow,self,1.000,186,v3
+least-privilege,least-privilege,self,1.000,187,v3
+sox,sox,self,1.000,188,v3
+pci-dss,pci-dss,self,1.000,189,v3
+nlp,nlp,self,1.000,190,v3
+sentiment,sentiment,self,1.000,191,v3
+urgency,urgency,self,1.000,192,v3
+escalation,escalation,self,1.000,193,v3
+routing,routing,self,1.000,194,v3
+priority,priority,self,1.000,195,v3
+efficiency,efficiency,self,1.000,196,v3
+kpi,kpi,self,1.000,197,v3
+trends,trend,cluster,0.819,198,v3
+trends,trends,self,1.000,198,v3
+proration,proration,self,1.000,199,v3
+billing,billing,self,1.000,200,v3
+upgrade,upgrades,cluster+sbert,0.880,201,v3
+upgrade,upgrade,self,1.000,201,v3
+history,history,self,1.000,202,v3
+events,events,self,1.000,203,v3
+tax,taxation,cluster+sbert,0.853,204,v3
+tax,tax,self,1.000,204,v3
+plans,plans,self,1.000,205,v3
+dates,dates,self,1.000,206,v3
+review,review,self,1.000,207,v3
+email,email,self,1.000,208,v3
+comments,commenting,cluster,0.802,209,v3
+comments,comments,self,1.000,209,v3
+ux,ux,self,1.000,210,v3
+cohorts,cohort_definition,cluster+sbert,0.835,211,v3
+cohorts,cohorts,self,1.000,211,v3
+persistence,persistence,self,1.000,212,v3
+weighting,weighting,self,1.000,213,v3
+settings,settings,self,1.000,214,v3
+heatmap,heatmap,self,1.000,215,v3
+overlay,overlay,self,1.000,216,v3
+nps,nps,self,1.000,217,v3
+behavioral-intelligence,behavioral_intelligence,cluster+sbert,0.941,218,v3
+behavioral-intelligence,behavioral-intelligence,self,1.000,218,v3
+crm,crm,self,1.000,219,v3
+localization,localization,self,1.000,220,v3
+inbox,inbox,self,1.000,221,v3
+tagging,tagging,self,1.000,222,v3
+assignment,assignment,self,1.000,223,v3
+manually,manually,self,1.000,224,v3
+concurrency,concurrency,self,1.000,225,v3
+search,search,self,1.000,226,v3
+rtl,rtl,self,1.000,227,v3
+layout,layout,self,1.000,228,v3
+components,components,self,1.000,229,v3
+preview,preview,self,1.000,230,v3
+override,overrides,cluster+sbert,0.935,231,v3
+override,override,self,1.000,231,v3
+mixed-language,mixed-language,self,1.000,232,v3
+translation,translation,self,1.000,233,v3
+formatting,formatting,self,1.000,234,v3
+mirror,mirror,self,1.000,235,v3
+qa,qa,self,1.000,236,v3
+auditlogs,auditing,cluster,0.804,408,v3
+auditlogs,auditlogs,self,1.000,408,v3
+vendor,vendor,self,1.000,237,v3
+update,updates,cluster,0.805,238,v3
+update,update,self,1.000,238,v3
+import,import,self,1.000,239,v3
+duplicates,duplicates,self,1.000,240,v3
+configurable,configurable,self,1.000,241,v3
+conflict,conflict,self,1.000,242,v3
+session-tracking,session-tracking,self,1.000,243,v3
+query-interface,query-interface,self,1.000,244,v3
+role-consistency,role-consistency,self,1.000,245,v3
+anomaly-detection,anomaly-detection,self,1.000,246,v3
+data-integrity,data-integrity,self,1.000,247,v3
+data-retention,data-retention,self,1.000,248,v3
+creditworthiness,creditworthiness,self,1.000,249,v3
+decisioning,decisioning,self,1.000,250,v3
+emi,emi,self,1.000,251,v3
+uber,uber,self,1.000,252,v3
+doordash,doordash,self,1.000,253,v3
+upwork,upwork,self,1.000,254,v3
+fiverr,fiverr,self,1.000,255,v3
+income,income,self,1.000,256,v3
+currency,multi-currency,cluster,0.803,257,v3
+currency,currency,self,1.000,257,v3
+edge_cases,edge-case,cluster+sbert,0.836,258,v3
+edge_cases,edge case,cluster,0.819,258,v3
+edge_cases,edge cases,cluster+sbert,0.849,258,v3
+edge_cases,edge_cases,self,1.000,258,v3
+identity,identity,self,1.000,259,v3
+ml,ml,self,1.000,260,v3
+connection,connection,self,1.000,261,v3
+earnings,earnings summary,cluster,0.819,262,v3
+earnings,earnings,self,1.000,262,v3
+display,display,self,1.000,263,v3
+operations,operations,self,1.000,264,v3
+lending,lending,self,1.000,265,v3
+alternative,alternative,self,1.000,266,v3
+api-gateway,api gateway,cluster+sbert,0.984,267,v3
+api-gateway,api-gateway,self,1.000,267,v3
+infrastructure,infrastructure,self,1.000,268,v3
+abuse-detection,abuse-detection,self,1.000,269,v3
+mfa,mfa,self,1.000,270,v3
+sandbox,sandbox,self,1.000,271,v3
+client-support,client-support,self,1.000,272,v3
+endpoint,endpoint,self,1.000,273,v3
+query,query,self,1.000,274,v3
+standards,standards,self,1.000,275,v3
+timestamp,timestamp,self,1.000,276,v3
+optimization,optimization,self,1.000,277,v3
+partners,partners,self,1.000,278,v3
+caching,caching,self,1.000,279,v3
+state,state,self,1.000,280,v3
+matching,matching,self,1.000,281,v3
+manual,manual,self,1.000,282,v3
+payments,payments,self,1.000,283,v3
+fx-rates,fx-rates,self,1.000,284,v3
+rate-lock,rate-lock,self,1.000,285,v3
+timer,timer,self,1.000,286,v3
+feature-toggle,feature-toggle,self,1.000,287,v3
+database,database,self,1.000,288,v3
+telemetry,telemetry,self,1.000,289,v3
+middleware,middleware,self,1.000,290,v3
+storage,storage,self,1.000,291,v3
+csv,csv,self,1.000,292,v3
+json,json,self,1.000,293,v3
+product,product,self,1.000,294,v3
+developer,developer,self,1.000,295,v3
+messaging,messaging,self,1.000,296,v3
+i18n,i18n,self,1.000,297,v3
+tracking,tracking,self,1.000,298,v3
+guardian,guardian,self,1.000,299,v3
+session,session,self,1.000,300,v3
+coppa,coppa,self,1.000,301,v3
+mobile,mobile,self,1.000,302,v3
+responsive,responsive,self,1.000,303,v3
+content,content,self,1.000,304,v3
+design,design,self,1.000,305,v3
+queue,queueing,cluster+sbert,0.943,306,v3
+queue,queue,self,1.000,306,v3
+pci,pci,self,1.000,307,v3
+tools,tools,self,1.000,308,v3
+pilot,pilot,self,1.000,309,v3
+lineage,lineage,self,1.000,310,v3
+patterns,patterns,self,1.000,311,v3
+slack,slack,self,1.000,312,v3
+ratelimit,ratelimit,self,1.000,313,v3
+calculations,calculations,self,1.000,314,v3
+credits,credits,self,1.000,315,v3
+subscriptions,subscriptions,self,1.000,316,v3
+fraud-prevention,fraud-prevention,self,1.000,317,v3
+pdf,pdf,self,1.000,318,v3
+highlighting,highlighting,self,1.000,319,v3
+threading,threading,self,1.000,320,v3
+deeplink,deeplink,self,1.000,321,v3
+navigation,navigation,self,1.000,322,v3
+versioning,version control,cluster,0.804,323,v3
+versioning,versioning,self,1.000,323,v3
+warnings,warnings,self,1.000,324,v3
+collision,collision handling,cluster+sbert,0.834,325,v3
+collision,collision,self,1.000,325,v3
+guide,guide,self,1.000,326,v3
+decay,decay,self,1.000,327,v3
+logic,logic,self,1.000,328,v3
+charts,charts,self,1.000,329,v3
+help,help,self,1.000,330,v3
+algorithms,algorithms,self,1.000,331,v3
+model,model,self,1.000,332,v3
+setup,setup,self,1.000,333,v3
+salesforce,salesforce,self,1.000,334,v3
+hubspot,hubspot,self,1.000,335,v3
+crm-sync,crm-sync,self,1.000,336,v3
+contacts,contacts,self,1.000,337,v3
+duplicate-detection,duplicate-detection,self,1.000,338,v3
+phone,phone,self,1.000,339,v3
+fuzzy-matching,fuzzy-matching,self,1.000,340,v3
+duplicate-resolution,duplicate-resolution,self,1.000,341,v3
+conflict-resolution,conflict-resolution,self,1.000,342,v3
+data-merge,data-merge,self,1.000,343,v3
+auto-merge,auto-merge,self,1.000,344,v3
+preferences,preferences,self,1.000,345,v3
+sync-control,sync-control,self,1.000,346,v3
+undo,undo,self,1.000,347,v3
+2fa,2fa,self,1.000,348,v3
+api integration,api integration,self,1.000,349,v3
+gig workers,gig workers,self,1.000,350,v3
+gig income,gig income,self,1.000,351,v3
+income verification,income verification,self,1.000,352,v3
+data connection,data connection,self,1.000,353,v3
+regulations,regulations,self,1.000,354,v3
+browser_coverage,browser_coverage,self,1.000,355,v3
+debugging,debugging,self,1.000,356,v3
+tenant management,tenant management,self,1.000,357,v3
+burst limits,burst limits,self,1.000,358,v3
+real-time updates,real-time updates,self,1.000,359,v3
+instant feedback,instant feedback,self,1.000,360,v3
+usage metrics,usage metrics,self,1.000,361,v3
+multi-factor approval,multi-factor approval,self,1.000,362,v3
+tenant segment,tenant segment,self,1.000,363,v3
+sandbox environments,sandbox environments,self,1.000,364,v3
+openbanking,openbanking,self,1.000,365,v3
+processing,processing,self,1.000,366,v3
+sms,sms,self,1.000,367,v3
+reminders,reminders,self,1.000,368,v3
+gas-fee,gas-fee,self,1.000,369,v3
+estimation,estimation,self,1.000,370,v3
+blockchain,blockchain,self,1.000,371,v3
+dynamic,dynamic,self,1.000,372,v3
+transaction,transaction,self,1.000,373,v3
+adjust,adjust,self,1.000,374,v3
+congestion,congestion,self,1.000,375,v3
+fee spike,fee spike,self,1.000,376,v3
+inaccuracy,inaccuracy,self,1.000,377,v3
+confirmation,confirmation,self,1.000,378,v3
+user data,user data,self,1.000,379,v3
+fee query,fee query,self,1.000,380,v3
+transaction-management,transactionmanagement,cluster+sbert,0.874,381,v3
+transaction-management,transaction-management,self,1.000,381,v3
+failurehandling,failurehandling,self,1.000,382,v3
+financialregulations,financialregulations,self,1.000,383,v3
+payoutstatus,payoutstatus,self,1.000,384,v3
+engineering,engineering,self,1.000,385,v3
+external services,external services,self,1.000,386,v3
+access_logs,access_logs,self,1.000,387,v3
+export_controls,export_controls,self,1.000,388,v3
+geo-targeting,geo-targeting,self,1.000,389,v3
+admin portal,admin portal,self,1.000,390,v3
+change log,change log,self,1.000,391,v3
+location awareness,location awareness,self,1.000,392,v3
+geolocation,geolocation,self,1.000,393,v3
+channel,channel,self,1.000,394,v3
+user profiling,user profiling,self,1.000,395,v3
+deliverability,deliverability,self,1.000,396,v3
+unsubscribe,unsubscribe,self,1.000,397,v3
+recipient_experience,recipient_experience,self,1.000,398,v3
+provincial tax,provincial tax,self,1.000,399,v3
+dual-gst,dual-gst,self,1.000,400,v3
+multiple tax rates,multiple tax rates,self,1.000,401,v3
+insurance,insurance,self,1.000,402,v3
+fault-tolerance,fault-tolerance,self,1.000,403,v3
+minor,minor,self,1.000,404,v3
+child_protection,child_protection,self,1.000,405,v3
+virtualcard,virtualcard,self,1.000,406,v3
+freezeunfreeze,freezeunfreeze,self,1.000,407,v3
+datadeletion,datadeletion,self,1.000,409,v3
+updatedlogs,updatedlogs,self,1.000,410,v3
+microtransactions,microtransactions,self,1.000,411,v3
+operational-ledger,operational-ledger,self,1.000,412,v3
+real-time posting,real-time posting,self,1.000,413,v3
+reporting-ledger,reporting-ledger,self,1.000,414,v3
+financial reporting,financial reporting,self,1.000,415,v3
+ledger-management,ledger management,cluster+sbert,0.987,416,v3
+ledger-management,ledger-management,self,1.000,416,v3
+audit-trails,audit-trails,self,1.000,417,v3
+immutable logging,immutable logging,self,1.000,418,v3
+role-based access,role-based access,self,1.000,419,v3
+resolution-workflows,resolution-workflows,self,1.000,420,v3
+phantom-reversals,phantom-reversals,self,1.000,421,v3
+ai,ai,self,1.000,422,v3
+analysis,analysis,self,1.000,423,v3
+customer,customer,self,1.000,424,v3
+satisfaction,satisfaction,self,1.000,425,v3
+guidelines,guidelines,self,1.000,426,v3
+dependencies,dependencies,self,1.000,427,v3
+constraints,constraints,self,1.000,428,v3
+leadership,leadership,self,1.000,429,v3
+prorated upgrades,prorated upgrades,self,1.000,430,v3
+billing history,billing history,self,1.000,431,v3
+payment processing,payment processing,self,1.000,432,v3
+vat,vat,self,1.000,433,v3
+downgrades,downgrades,self,1.000,434,v3
+manual review,manual review,self,1.000,435,v3
+threaded_discussions,threaded_discussions,self,1.000,436,v3
+replies,replies,self,1.000,437,v3
+browsers,browsers,self,1.000,438,v3
+quickstart,quickstart,self,1.000,439,v3
+cohort_updates,cohort_updates,self,1.000,440,v3
+time_decay,time_decay,self,1.000,441,v3
+data_visualization,data_visualization,self,1.000,442,v3
+cohort_analysis,cohort_membership,cluster,0.814,443,v3
+cohort_analysis,cohort_analysis,self,1.000,443,v3
+decay_parameters,decay_parameters,self,1.000,444,v3
+help_article,help_article,self,1.000,445,v3
+analytics_data_store,analytics_data_store,self,1.000,446,v3
+churn_prevention,churn_prevention,self,1.000,447,v3
+customer_support,customer_support,self,1.000,448,v3
+shared inbox,shared inbox,self,1.000,449,v3
+collaboration,collaboration,self,1.000,450,v3
+assignment rules,assignment rules,self,1.000,451,v3
+ui_rendering,ui_rendering,self,1.000,452,v3
+dryrun,dryrun,self,1.000,453,v3
+merge,merge,self,1.000,454,v3
+data analysis,data analysis,self,1.000,455,v3
+best practices,best practices,self,1.000,456,v3
+violation,violation,self,1.000,457,v3
+audit log gaps,audit log gaps,self,1.000,458,v3
+rolebasedaccess,rolebasedaccess,self,1.000,459,v3
+securitycompliance,securitycompliance,self,1.000,460,v3
+appspecificoverrides,appspecificoverrides,self,1.000,461,v3
+checkout,checkout,self,1.000,462,v3
+disclosure,disclosure,self,1.000,463,v3
+calculator,calculator,self,1.000,464,v3

@@ -1,0 +1,1161 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Integrate with internal and third-party credit bureaus for real-time score retrieval",
+    "summary": "Establish real-time integration with both internal and external credit bureaus to retrieve and update customer credit scores during the checkout process. This ensures that EMI offerings are based on up-to-date and accurate creditworthiness information. Interfaces must comply with relevant legal, privacy, and audit requirements.",
+    "tags": [
+      "integration",
+      "creditworthiness",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CreditAssessment"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.95,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 08\u201311",
+    "reasoning": {
+      "source_summary_fragment": "integration with internal and third-party credit bureaus for real-time score retrieval",
+      "tag_metadata_reference": [
+        {
+          "tag": "integration",
+          "confidence": 0.97
+        },
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "credit bureau API",
+        "score retrieval",
+        "real-time eligibility"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "integration",
+      "creditworthiness",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "integration",
+      "creditworthiness"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "integration",
+        "canonical_tag": "integration",
+        "matched_tag": "integration",
+        "tag_origin_cluster_id": "integration",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.083219Z"
+      },
+      {
+        "original_tag": "creditworthiness",
+        "canonical_tag": "creditworthiness",
+        "matched_tag": "creditworthiness",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.092493Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.209337Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Build decision engine to map credit score bands to eligible EMI plans and rates",
+    "summary": "Develop a decision engine that interprets retrieved credit scores and maps them to appropriate EMI plans and interest rates. The logic should be maintainable, transparent, and configurable to ensure regulatory and risk management requirements are met.",
+    "tags": [
+      "decisioning",
+      "emi",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CreditAssessment",
+      "EMI"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 12\u201314",
+    "reasoning": {
+      "source_summary_fragment": "decision engine to map credit score bands to eligible EMI plans and rates",
+      "tag_metadata_reference": [
+        {
+          "tag": "decisioning",
+          "confidence": 0.97
+        },
+        {
+          "tag": "emi",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "score band mapping",
+        "EMI plan selection",
+        "interest rate model"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "decisioning",
+      "emi",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "decisioning",
+        "canonical_tag": "decisioning",
+        "matched_tag": "decisioning",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.327002Z"
+      },
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.330145Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.445018Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Ensure all scoring and eligibility checks complete within 2 seconds",
+    "summary": "All credit scoring retrieval and EMI eligibility checks must complete within a maximum of 2 seconds to ensure a seamless and responsive checkout experience for users. Latency must be continually monitored and optimized.",
+    "tags": [
+      "performance",
+      "creditworthiness"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CreditAssessment"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 15\u201315",
+    "reasoning": {
+      "source_summary_fragment": "scoring and eligibility checks complete within 2 seconds",
+      "tag_metadata_reference": [
+        {
+          "tag": "performance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "creditworthiness",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "latency SLA",
+        "performance targets",
+        "eligibility decision timing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.8,
+      "method": "explicit_no_additional_inference"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "performance",
+      "creditworthiness"
+    ],
+    "tags_v2": [
+      "performance",
+      "creditworthiness"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "performance",
+        "canonical_tag": "performance",
+        "matched_tag": "performance",
+        "tag_origin_cluster_id": "performance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.456587Z"
+      },
+      {
+        "original_tag": "creditworthiness",
+        "canonical_tag": "creditworthiness",
+        "matched_tag": "creditworthiness",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.520849Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Display only qualified EMI plans at checkout with payment breakdown",
+    "summary": "During checkout, present users exclusively with EMI plans for which they are pre-qualified, including a detailed payment breakdown (principal, interest, tenure). This reduces friction and ensures users understand their financial obligations.",
+    "tags": [
+      "emi",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Checkout",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 17\u201318",
+    "reasoning": {
+      "source_summary_fragment": "Display only qualified EMI plans at checkout with payment breakdown",
+      "tag_metadata_reference": [
+        {
+          "tag": "emi",
+          "confidence": 0.96
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "EMI plan visibility",
+        "qualification filter",
+        "transparent payment structure"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.87,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "emi",
+      "usability",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.523499Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.634727Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.748959Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Trigger re-validation of eligibility if credit band changes prior to disbursement",
+    "summary": "If a customer's credit band changes before loan disbursement, the system should automatically trigger a re-validation of their EMI eligibility, ensuring decisions reflect the most current credit information and risk policies.",
+    "tags": [
+      "revalidation",
+      "emi",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CreditAssessment",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 19\u201320",
+    "reasoning": {
+      "source_summary_fragment": "re-validation of eligibility if credit band changes prior to disbursement",
+      "tag_metadata_reference": [
+        {
+          "tag": "revalidation",
+          "confidence": 0.94
+        },
+        {
+          "tag": "emi",
+          "confidence": 0.91
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "ongoing risk assessment",
+        "last-mile eligibility check",
+        "credit update"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "revalidation",
+      "emi",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "revalidation",
+        "canonical_tag": "revalidation",
+        "matched_tag": "revalidation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.863382Z"
+      },
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.871897Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.981702Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Enable manual override for borderline customers with justification logging",
+    "summary": "Support staff should be able to manually approve or reject borderline EMI cases, with a mandatory justification and auditable log. This empowers risk management while maintaining transparency and accountability.",
+    "tags": [
+      "override",
+      "audit",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Support",
+      "CreditAssessment"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 23\u201324",
+    "reasoning": {
+      "source_summary_fragment": "manual override for borderline customers with justification logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "override",
+          "confidence": 0.93
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "manual risk decision",
+        "justified override",
+        "audit trail"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "override",
+      "audit",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "override",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "override",
+        "canonical_tag": "override",
+        "matched_tag": "override",
+        "tag_origin_cluster_id": "override",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.984267Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:08.994558Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.109511Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Default to conservative EMI options and flag if credit lookup fails/times out",
+    "summary": "When real-time credit check fails or times out, provide customers with conservative EMI plan options by default and flag these cases for follow-up review, balancing customer experience and risk.",
+    "tags": [
+      "fallback",
+      "emi"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CreditAssessment",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 25\u201326",
+    "reasoning": {
+      "source_summary_fragment": "Default to conservative EMI options and flag if credit lookup fails/times out",
+      "tag_metadata_reference": [
+        {
+          "tag": "fallback",
+          "confidence": 0.94
+        },
+        {
+          "tag": "emi",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "timeout handling",
+        "default risk policy",
+        "fallback EMI option"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.75,
+      "method": "explicit_no_additional_inference"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "fallback",
+      "emi"
+    ],
+    "tags_v2": [
+      "fallback",
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fallback",
+        "canonical_tag": "fallback",
+        "matched_tag": "fallback",
+        "tag_origin_cluster_id": "fallback",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.121720Z"
+      },
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.124260Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Implement EMI calculator in checkout for users to simulate payment options",
+    "summary": "Integrate an EMI calculator into the checkout, enabling users to simulate different EMI tenures, rates, and outcomes before selection. This promotes user empowerment and decision transparency.",
+    "tags": [
+      "usability",
+      "emi"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Checkout",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 29\u201330",
+    "reasoning": {
+      "source_summary_fragment": "Implement EMI calculator in checkout for users to simulate payment options",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.92
+        },
+        {
+          "tag": "emi",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "payment simulation tool",
+        "EMI planning",
+        "user self-service"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.78,
+      "method": "explicit_no_additional_inference"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "usability",
+      "emi"
+    ],
+    "tags_v2": [
+      "emi"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.230918Z"
+      },
+      {
+        "original_tag": "emi",
+        "canonical_tag": "emi",
+        "matched_tag": "emi",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.233828Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Present all EMI terms and dispute processes in plain language at checkout",
+    "summary": "During checkout, clearly display all EMI terms, conditions, and dispute resolution mechanisms in straightforward, plain language, enhancing customer understanding and regulatory compliance.",
+    "tags": [
+      "usability",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Checkout",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 31\u201332",
+    "reasoning": {
+      "source_summary_fragment": "Present all EMI terms and dispute processes in plain language at checkout",
+      "tag_metadata_reference": [
+        {
+          "tag": "usability",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "plain language terms",
+        "EMI dispute process",
+        "legal clarity"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.93,
+      "method": "explicit_no_additional_inference"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "usability",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.347920Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.411722Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Ensure user consent for all credit checks during EMI selection",
+    "summary": "Obtain and log explicit user consent for all credit bureau checks triggered during the EMI selection process, in alignment with lending and privacy regulations (FCRA, GDPR). Consent records must be auditable.",
+    "tags": [
+      "consent",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "CreditAssessment"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 36\u201337",
+    "reasoning": {
+      "source_summary_fragment": "Ensure user consent for all credit checks during EMI selection",
+      "tag_metadata_reference": [
+        {
+          "tag": "consent",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.99
+        }
+      ],
+      "mapped_concepts": [
+        "user consent capture",
+        "privacy regulation compliance",
+        "audit logging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.97,
+      "method": "explicit_no_additional_inference"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "consent",
+      "compliance"
+    ],
+    "tags_v2": [
+      "consent",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "consent",
+        "canonical_tag": "consent",
+        "matched_tag": "consent",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.414090Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.425179Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Comply with relevant lending and privacy laws in data flow (FCRA, GDPR, etc.)",
+    "summary": "Ensure all customer data handling and EMI-related processes fully adhere to applicable lending and privacy laws (such as FCRA and GDPR), covering data collection, processing, transmission, and storage activities in the EMI workflow.",
+    "tags": [
+      "compliance",
+      "security",
+      "[INFERRED] privacy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "DataSecurity"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.97,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 34\u201335",
+    "reasoning": {
+      "source_summary_fragment": "Full compliance with lending/privacy laws (e.g., FCRA, GDPR), user consent, and auditable logging are required.",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "security",
+          "confidence": 0.92
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "FCRA",
+        "GDPR",
+        "privacy laws",
+        "data flow"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "privacy",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "compliance",
+      "security",
+      "[INFERRED] privacy"
+    ],
+    "tags_v2": [
+      "compliance",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.436839Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.505370Z"
+      },
+      {
+        "original_tag": "[INFERRED] privacy",
+        "canonical_tag": "[INFERRED] privacy",
+        "matched_tag": "[INFERRED] privacy",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.625318Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Log all decision engine inputs and outputs for audit and regulatory review",
+    "summary": "Capture and retain comprehensive logs of all data inputs and resulting outputs from the decision engine to support regulatory audits and ensure traceability of decisions made during EMI eligibility and offer processing.",
+    "tags": [
+      "audit",
+      "compliance",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "Audit"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 38\u201339",
+    "reasoning": {
+      "source_summary_fragment": "auditable logging are required. Monitoring adoption rates, analytics for Product/Risk, and review logs are in scope.",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.97
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.91
+        },
+        {
+          "tag": "traceability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "logging",
+        "audit trail",
+        "regulatory review"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.91,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "audit",
+      "compliance",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "audit",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.627971Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.694125Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.802895Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-011-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Monitor EMI adoption rates, declines, and band-shifting; provide analytics",
+    "summary": "Continuously monitor and report on the EMI adoption rates, instances of declines, and shifts between EMI bands, providing analytics dashboards for Product and Risk stakeholders to support decision-making and improvement of EMI offerings.",
+    "tags": [
+      "monitoring",
+      "analytics"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Analytics",
+      "EMI"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 41\u201342",
+    "reasoning": {
+      "source_summary_fragment": "Monitoring adoption rates, analytics for Product/Risk, and review logs are in scope.",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.95
+        },
+        {
+          "tag": "analytics",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "EMI analytics",
+        "adoption monitoring",
+        "band-shifting"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {},
+    "source_hlj_id": "REQ-011",
+    "tags_v1": [
+      "monitoring",
+      "analytics"
+    ],
+    "tags_v2": [
+      "monitoring",
+      "analytics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.814179Z"
+      },
+      {
+        "original_tag": "analytics",
+        "canonical_tag": "analytics",
+        "matched_tag": "analytics",
+        "tag_origin_cluster_id": "analytics",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:31:09.816798Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

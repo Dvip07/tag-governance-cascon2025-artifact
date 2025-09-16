@@ -1,0 +1,129 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Centralize notification templates with dynamic fields and multi-language support",
+  "summary": "Establishes a central system for managing notification templates that includes dynamic field substitution and support for multiple languages. Ensures reusability, consistency, and adaptability of messaging for diverse user bases. Enables efficient management, updates, and expansion of communication styles.",
+  "tags_v1": [
+    "template",
+    "multi-language",
+    "[INFERRED] notification"
+  ],
+  "tags_v2": [
+    "template",
+    "multi-language"
+  ],
+  "tags_v3": [
+    "template",
+    "messaging",
+    "multi-language",
+    "personalization",
+    "backend",
+    "notification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "template",
+      "aliases": [],
+      "cluster_id": "146",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.720202,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "template",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "296",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.747232,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-language",
+      "aliases": [],
+      "cluster_id": "147",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749474,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-language",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "storage",
+      "aliases": [],
+      "cluster_id": "291",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.676049,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "storage",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "148",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.72465,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "backend",
+      "aliases": [],
+      "cluster_id": "163",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.708496,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "backend",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.77063,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.966546Z"
+}

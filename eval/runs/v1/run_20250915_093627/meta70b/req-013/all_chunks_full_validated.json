@@ -1,0 +1,870 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design Batch Payout Engine",
+    "summary": "The batch payout engine should efficiently process large volumes of transactions, ensuring timely and accurate payments to marketplace sellers.",
+    "tags": [
+      "batchprocessing",
+      "transactionmanagement"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-15",
+    "reasoning": {
+      "source_summary_fragment": "Implement a batch payout engine for marketplace sellers",
+      "tag_metadata_reference": [
+        {
+          "tag": "batchprocessing",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "batch payout engine",
+        "marketplace sellers"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "batchprocessing",
+      "transactionmanagement"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "batchprocessing",
+        "canonical_tag": "batchprocessing",
+        "matched_tag": "batchprocessing",
+        "tag_origin_cluster_id": "batchprocessing",
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.242512Z"
+      },
+      {
+        "original_tag": "transactionmanagement",
+        "canonical_tag": "transactionmanagement",
+        "matched_tag": "transactionmanagement",
+        "tag_origin_cluster_id": "transactionmanagement",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.353940Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Batch Processing Logic",
+    "summary": "The batch processing logic should handle various payout scenarios, including scheduled and on-demand payouts, and ensure compliance with financial regulations.",
+    "tags": [
+      "batchprocessing",
+      "logic"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 15-20",
+    "reasoning": {
+      "source_summary_fragment": "Implement batch processing logic for payout engine",
+      "tag_metadata_reference": [
+        {
+          "tag": "logic",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "batch processing logic",
+        "payout engine"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "batchprocessing",
+      "logic"
+    ],
+    "tags_v2": [
+      "batchprocessing",
+      "logic"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "batchprocessing",
+        "canonical_tag": "batchprocessing",
+        "matched_tag": "batchprocessing",
+        "tag_origin_cluster_id": "batchprocessing",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7782191038131714,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.429879Z"
+      },
+      {
+        "original_tag": "logic",
+        "canonical_tag": "logic",
+        "matched_tag": "logic",
+        "tag_origin_cluster_id": "logic",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.431648Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop Failure Handling and Rollback Mechanism",
+    "summary": "The failure handling and rollback mechanism should ensure that failed transactions are properly handled and rolled back to maintain data consistency and prevent financial losses.",
+    "tags": [
+      "failurehandling",
+      "rollback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 20-25",
+    "reasoning": {
+      "source_summary_fragment": "Develop failure handling and rollback mechanism",
+      "tag_metadata_reference": [
+        {
+          "tag": "failurehandling",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "failure handling",
+        "rollback mechanism"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "failurehandling",
+      "rollback"
+    ],
+    "tags_v2": [
+      "rollback"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "failurehandling",
+        "canonical_tag": "failurehandling",
+        "matched_tag": "failurehandling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.550774Z"
+      },
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.553061Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Implement Audit Trail and Reporting",
+    "summary": "The audit trail and reporting feature should provide a clear and transparent record of all payout transactions, enabling efficient monitoring and auditing.",
+    "tags": [
+      "auditrail",
+      "reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 25-30",
+    "reasoning": {
+      "source_summary_fragment": "Implement audit trail and reporting",
+      "tag_metadata_reference": [
+        {
+          "tag": "auditrail",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "reporting"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "auditrail",
+      "reporting"
+    ],
+    "tags_v2": [
+      "reporting"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "auditrail",
+        "canonical_tag": "auditrail",
+        "matched_tag": "auditrail",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.653887Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.655927Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Design Admin Dashboard for Batch Payouts",
+    "summary": "The admin dashboard should provide an intuitive and user-friendly interface for administrators to manage batch payouts, track transactions, and monitor system performance.",
+    "tags": [
+      "admindashboard",
+      "batchpayouts"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 30-35",
+    "reasoning": {
+      "source_summary_fragment": "Design admin dashboard for batch payouts",
+      "tag_metadata_reference": [
+        {
+          "tag": "admindashboard",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "admin dashboard",
+        "batch payouts"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "admindashboard",
+      "batchpayouts"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "admindashboard",
+        "canonical_tag": "admindashboard",
+        "matched_tag": "admindashboard",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.759965Z"
+      },
+      {
+        "original_tag": "batchpayouts",
+        "canonical_tag": "batchpayouts",
+        "matched_tag": "batchpayouts",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.869373Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Ensure Compliance with Financial Regulations",
+    "summary": "This task involves ensuring that all financial transactions are compliant with the relevant financial regulations, including anti-money laundering and know-your-customer requirements.",
+    "tags": [
+      "compliance",
+      "financialregulations",
+      "[INFERRED] riskmanagement"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 35-40",
+    "reasoning": {
+      "source_summary_fragment": "compliance with financial regulations",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "riskmanagement",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "compliance",
+      "financialregulations",
+      "[INFERRED] riskmanagement"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.871690Z"
+      },
+      {
+        "original_tag": "financialregulations",
+        "canonical_tag": "financialregulations",
+        "matched_tag": "financialregulations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:07.987882Z"
+      },
+      {
+        "original_tag": "[INFERRED] riskmanagement",
+        "canonical_tag": "[INFERRED] riskmanagement",
+        "matched_tag": "[INFERRED] riskmanagement",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.097853Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Implement Security Measures for Sensitive Operations",
+    "summary": "This task involves implementing robust security measures to protect sensitive financial operations from cyber threats and data breaches.",
+    "tags": [
+      "security",
+      "sensitiveoperations",
+      "[INFERRED] cryptography"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 40-45",
+    "reasoning": {
+      "source_summary_fragment": "security measures for sensitive operations",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "Information Security"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cryptography",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "security",
+      "sensitiveoperations",
+      "[INFERRED] cryptography"
+    ],
+    "tags_v2": [
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.100007Z"
+      },
+      {
+        "original_tag": "sensitiveoperations",
+        "canonical_tag": "sensitiveoperations",
+        "matched_tag": "sensitiveoperations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.210477Z"
+      },
+      {
+        "original_tag": "[INFERRED] cryptography",
+        "canonical_tag": "[INFERRED] cryptography",
+        "matched_tag": "[INFERRED] cryptography",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.316140Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Handle Edge Cases for Mixed-Currency Payouts",
+    "summary": "This task involves designing a system to handle edge cases that may arise during mixed-currency payouts, ensuring accurate and efficient transaction processing.",
+    "tags": [
+      "edgecases",
+      "mixedcurrencypayouts"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 45-50",
+    "reasoning": {
+      "source_summary_fragment": "edge cases for mixed-currency payouts",
+      "tag_metadata_reference": [
+        {
+          "tag": "edgecases",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "Transaction Processing"
+      ]
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "edgecases",
+      "mixedcurrencypayouts"
+    ],
+    "tags_v2": [],
+    "tag_validation": [
+      {
+        "original_tag": "edgecases",
+        "canonical_tag": "edgecase",
+        "matched_tag": "edgecase",
+        "tag_origin_cluster_id": "edgecase",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:29:08.422763Z"
+      },
+      {
+        "original_tag": "mixedcurrencypayouts",
+        "canonical_tag": "mixedcurrencypayouts",
+        "matched_tag": "mixedcurrencypayouts",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.538166Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Develop Notification System for Payout Status",
+    "summary": "This task involves developing a notification system to inform users about the status of their payouts, enhancing transparency and user experience.",
+    "tags": [
+      "notifications",
+      "payoutstatus"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "BatchPayouts"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 50-55",
+    "reasoning": {
+      "source_summary_fragment": "notification system for payout status",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "User Experience"
+      ]
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "notifications",
+      "payoutstatus"
+    ],
+    "tags_v2": [
+      "notification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:29:08.540427Z"
+      },
+      {
+        "original_tag": "payoutstatus",
+        "canonical_tag": "payoutstatus",
+        "matched_tag": "payoutstatus",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.645163Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Implement Data Retention and Export for Compliance",
+    "summary": "This task involves implementing a system for data retention and export to ensure compliance with regulatory requirements and facilitate auditing.",
+    "tags": [
+      "dataretention",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 55-60",
+    "reasoning": {
+      "source_summary_fragment": "data retention and export for compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "Regulatory Compliance"
+      ]
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "dataretention",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dataretention",
+        "canonical_tag": "dataretention",
+        "matched_tag": "dataretention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.754018Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.756633Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Develop Documentation and Training Guides",
+    "summary": "This task involves creating comprehensive documentation and training guides to facilitate the onboarding and support of users and stakeholders.",
+    "tags": [
+      "documentation",
+      "training"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "low",
+    "priority_confidence": 0.8,
+    "line_source": "Ln 60-65",
+    "reasoning": {
+      "source_summary_fragment": "documentation and training guides",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "User Onboarding"
+      ]
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "documentation",
+      "training"
+    ],
+    "tags_v2": [
+      "documentation",
+      "training"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.758842Z"
+      },
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.760650Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-013-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Conduct Testing and Quality Assurance",
+    "summary": "This task involves conducting thorough testing and quality assurance to ensure the system meets the required standards and is free from defects.",
+    "tags": [
+      "testing",
+      "qualityassurance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "(unknown)",
+    "reasoning": {
+      "source_summary_fragment": "testing and quality assurance",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "Software Quality"
+      ]
+    },
+    "source_hlj_id": "REQ-013",
+    "tags_v1": [
+      "testing",
+      "qualityassurance"
+    ],
+    "tags_v2": [
+      "testing"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.762683Z"
+      },
+      {
+        "original_tag": "qualityassurance",
+        "canonical_tag": "qualityassurance",
+        "matched_tag": "qualityassurance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:08.880188Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

@@ -1,0 +1,111 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_2-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Retrofit or phase out legacy APIs to support per-tenant rate limiting",
+  "summary": "Legacy APIs must be upgraded or replaced to enforce per-tenant rate limits. Plan systematic migration or sunset of incompatible endpoints to maintain consistent enforcement and prevent circumvention.",
+  "tags_v1": [
+    "migration",
+    "compatibility",
+    "[INFERRED] legacy"
+  ],
+  "tags_v2": [
+    "migration",
+    "compatibility"
+  ],
+  "tags_v3": [
+    "documentation",
+    "migration",
+    "compatibility",
+    "self-service",
+    "legacy"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "documentation",
+      "aliases": [],
+      "cluster_id": "40",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.703679,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "documentation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "migration",
+      "aliases": [],
+      "cluster_id": "62",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.69967,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "migration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compatibility",
+      "aliases": [],
+      "cluster_id": "63",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.71553,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compatibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "communication",
+      "aliases": [],
+      "cluster_id": "43",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.667675,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "communication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "self-service",
+      "aliases": [],
+      "cluster_id": "54",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.690471,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "self-service",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "legacy",
+      "aliases": [],
+      "cluster_id": "64",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.723165,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "legacy",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.954854Z"
+}

@@ -1,0 +1,132 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Implement outlier and regression flagging with root-cause drill-downs",
+  "summary": "The system must automatically detect and flag performance outliers and regressions, providing tools for root-cause drill-down investigation to assist in diagnostics.",
+  "tags_v1": [
+    "alerting",
+    "diagnostics",
+    "[INFERRED] regression"
+  ],
+  "tags_v2": [
+    "alert",
+    "diagnostics"
+  ],
+  "tags_v3": [
+    "alert",
+    "dashboard",
+    "analytics",
+    "visualization",
+    "diagnostics",
+    "regression",
+    "debugging"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "53",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.710136,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dashboard",
+      "aliases": [
+        "dashboards"
+      ],
+      "cluster_id": "22",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.764221,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dashboard",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "32",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.758726,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "visualization",
+      "aliases": [],
+      "cluster_id": "33",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.704828,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "visualization",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "diagnostics",
+      "aliases": [],
+      "cluster_id": "117",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.751279,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "diagnostics",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "regression",
+      "aliases": [],
+      "cluster_id": "118",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.715744,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "regression",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "debugging",
+      "aliases": [],
+      "cluster_id": "356",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.731373,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "debugging",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.962882Z"
+}

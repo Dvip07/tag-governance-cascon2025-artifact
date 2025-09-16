@@ -1,0 +1,800 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Build API integrations with major gig economy platforms",
+    "summary": "Design and integrate APIs with prominent gig economy platforms to aggregate income data, streamlining loan applications for gig workers.",
+    "tags": [
+      "api integration",
+      "gig workers",
+      "[INFERRED] platform connectivity"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "integrating with major platforms",
+      "tag_metadata_reference": [
+        {
+          "tag": "api integration",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "API",
+        "gig economy"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "platform connectivity",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "api integration",
+      "gig workers",
+      "[INFERRED] platform connectivity"
+    ],
+    "tags_v2": [
+      "gig workers"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api integration",
+        "canonical_tag": "api integration",
+        "matched_tag": "api integration",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.641100Z"
+      },
+      {
+        "original_tag": "gig workers",
+        "canonical_tag": "gig workers",
+        "matched_tag": "gig workers",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.647473Z"
+      },
+      {
+        "original_tag": "[INFERRED] platform connectivity",
+        "canonical_tag": "[INFERRED] platform connectivity",
+        "matched_tag": "[INFERRED] platform connectivity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.781505Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Define dynamic eligibility rules for gig income",
+    "summary": "Develop and implement rules to assess gig income eligibility, considering variability in earnings and employment statuses.",
+    "tags": [
+      "eligibility rules",
+      "gig income",
+      "[INFERRED] income verification"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 20-23",
+    "reasoning": {
+      "source_summary_fragment": "dynamic eligibility rules",
+      "tag_metadata_reference": [
+        {
+          "tag": "eligibility rules",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "eligibility",
+        "gig income"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "income verification",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "eligibility rules",
+      "gig income",
+      "[INFERRED] income verification"
+    ],
+    "tags_v2": [
+      "eligibility",
+      "gig income"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "eligibility rules",
+        "canonical_tag": "eligibility",
+        "matched_tag": "eligibility",
+        "tag_origin_cluster_id": "eligibility",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:28:55.783821Z"
+      },
+      {
+        "original_tag": "gig income",
+        "canonical_tag": "gig income",
+        "matched_tag": "gig income",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.785799Z"
+      },
+      {
+        "original_tag": "[INFERRED] income verification",
+        "canonical_tag": "[INFERRED] income verification",
+        "matched_tag": "[INFERRED] income verification",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.924128Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Implement KYC and AML screening for applicants",
+    "summary": "Integrate Know Your Customer (KYC) and Anti-Money Laundering (AML) checks into the loan application process to ensure compliance and security.",
+    "tags": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 30-33",
+    "reasoning": {
+      "source_summary_fragment": "KYC and AML screening",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.91
+        },
+        {
+          "tag": "aml",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "KYC",
+        "AML",
+        "compliance"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "tags_v2": [
+      "kyc",
+      "aml",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.926417Z"
+      },
+      {
+        "original_tag": "aml",
+        "canonical_tag": "aml",
+        "matched_tag": "aml",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.928352Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.934276Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Guide users through data connection process",
+    "summary": "Design an intuitive process for users to connect their data sources, ensuring a seamless experience and reducing friction in the loan application process.",
+    "tags": [
+      "user experience",
+      "data connection"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 40-43",
+    "reasoning": {
+      "source_summary_fragment": "guide users through data connection",
+      "tag_metadata_reference": [
+        {
+          "tag": "user experience",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "data connection"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "user experience",
+      "data connection"
+    ],
+    "tags_v2": [
+      "user experience",
+      "data connection"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user experience",
+        "canonical_tag": "user experience",
+        "matched_tag": "user experience",
+        "tag_origin_cluster_id": "user experience",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:55.998756Z"
+      },
+      {
+        "original_tag": "data connection",
+        "canonical_tag": "data connection",
+        "matched_tag": "data connection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.006300Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Display summary of imported earnings and allow user disputes",
+    "summary": "Provide a clear summary of imported earnings data and implement a process for users to dispute any inaccuracies, ensuring transparency and user trust.",
+    "tags": [
+      "user experience",
+      "earnings summary",
+      "[INFERRED] data accuracy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "display summary of imported earnings",
+      "tag_metadata_reference": [
+        {
+          "tag": "user experience",
+          "confidence": 0.87
+        }
+      ],
+      "mapped_concepts": [
+        "user experience",
+        "earnings summary"
+      ]
+    },
+    "low_confidence_reason": "Initial confidence assignment",
+    "inference_notes": {
+      "tag_added": "data accuracy",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "user experience",
+      "earnings summary",
+      "[INFERRED] data accuracy"
+    ],
+    "tags_v2": [
+      "user experience",
+      "earnings summary"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user experience",
+        "canonical_tag": "user experience",
+        "matched_tag": "user experience",
+        "tag_origin_cluster_id": "user experience",
+        "original_confidence": 0.87,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.073264Z"
+      },
+      {
+        "original_tag": "earnings summary",
+        "canonical_tag": "earnings summary",
+        "matched_tag": "earnings summary",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7248023152351379,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.214832Z"
+      },
+      {
+        "original_tag": "[INFERRED] data accuracy",
+        "canonical_tag": "[INFERRED] data accuracy",
+        "matched_tag": "[INFERRED] data accuracy",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.327050Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Comply with local lending regulations and privacy laws",
+    "summary": "Ensure compliance with local lending regulations and privacy laws to avoid legal issues and maintain customer trust.",
+    "tags": [
+      "compliance",
+      "regulations",
+      "[INFERRED] legal"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 60-63",
+    "reasoning": {
+      "source_summary_fragment": "Comply with local lending regulations and privacy laws",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory compliance"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "legal",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "compliance",
+      "regulations",
+      "[INFERRED] legal"
+    ],
+    "tags_v2": [
+      "compliance",
+      "regulations"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.332670Z"
+      },
+      {
+        "original_tag": "regulations",
+        "canonical_tag": "regulations",
+        "matched_tag": "regulations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.334759Z"
+      },
+      {
+        "original_tag": "[INFERRED] legal",
+        "canonical_tag": "[INFERRED] legal",
+        "matched_tag": "[INFERRED] legal",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.520581Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Secure all data transmissions and storage",
+    "summary": "Secure all data transmissions and storage to protect sensitive customer information and prevent data breaches.",
+    "tags": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "high",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 70-73",
+    "reasoning": {
+      "source_summary_fragment": "Secure all data transmissions and storage",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "data encryption"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "encryption",
+      "confidence": 0.95,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "tags_v2": [
+      "security",
+      "data protection",
+      "[INFERRED] encryption"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.583599Z"
+      },
+      {
+        "original_tag": "data protection",
+        "canonical_tag": "data protection",
+        "matched_tag": "data protection",
+        "tag_origin_cluster_id": "data protection",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7163518071174622,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.692815Z"
+      },
+      {
+        "original_tag": "[INFERRED] encryption",
+        "canonical_tag": "[INFERRED] encryption",
+        "matched_tag": "[INFERRED] encryption",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.6853694915771484,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.790336Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Provide dashboards for operations and compliance teams",
+    "summary": "Provide dashboards for operations and compliance teams to monitor and analyze loan origination data and ensure regulatory compliance.",
+    "tags": [
+      "monitoring",
+      "compliance",
+      "[INFERRED] reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 80-83",
+    "reasoning": {
+      "source_summary_fragment": "Provide dashboards for operations and compliance teams",
+      "tag_metadata_reference": [
+        {
+          "tag": "monitoring",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "compliance monitoring"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "reporting",
+      "confidence": 0.93,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "monitoring",
+      "compliance",
+      "[INFERRED] reporting"
+    ],
+    "tags_v2": [
+      "monitoring",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.799385Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.801293Z"
+      },
+      {
+        "original_tag": "[INFERRED] reporting",
+        "canonical_tag": "[INFERRED] reporting",
+        "matched_tag": "[INFERRED] reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:56.937788Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-008-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Log all API calls, eligibility checks, and manual interventions",
+    "summary": "Log all API calls, eligibility checks, and manual interventions to ensure auditability and compliance with regulatory requirements.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] tracking"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Loan Origination",
+      "Gig Economy"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 90-93",
+    "reasoning": {
+      "source_summary_fragment": "Log all API calls, eligibility checks, and manual interventions",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "tracking",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-008",
+    "tags_v1": [
+      "logging",
+      "audit",
+      "[INFERRED] tracking"
+    ],
+    "tags_v2": [
+      "logs",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.89,
+        "validation_status": "semantic",
+        "similarity": 0.6886088252067566,
+        "context": "mapped_concepts",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:28:57.088386Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:57.098113Z"
+      },
+      {
+        "original_tag": "[INFERRED] tracking",
+        "canonical_tag": "[INFERRED] tracking",
+        "matched_tag": "[INFERRED] tracking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:28:57.210236Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

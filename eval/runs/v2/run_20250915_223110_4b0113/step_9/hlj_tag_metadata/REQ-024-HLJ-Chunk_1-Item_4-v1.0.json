@@ -1,0 +1,143 @@
+{
+  "hlj_id": "REQ-024-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-024",
+  "domain": "SaaS",
+  "title": "Automatically select optimal delivery channel based on preferences and history",
+  "summary": "Enables automated selection of the most suitable delivery channel for each notification, leveraging user preferences and historical data. Maximizes message efficacy and user response by adapting to proven communication habits. Reduces manual configuration for campaign managers.",
+  "tags_v1": [
+    "automation",
+    "multi-channel",
+    "[INFERRED] notification"
+  ],
+  "tags_v2": [
+    "multi-channel"
+  ],
+  "tags_v3": [
+    "multi-channel",
+    "messaging",
+    "channel",
+    "preferences",
+    "automation",
+    "notification",
+    "personalization"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "testing",
+      "aliases": [],
+      "cluster_id": "60",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.676094,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-channel",
+      "aliases": [],
+      "cluster_id": "150",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.744008,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-channel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "messaging",
+      "aliases": [],
+      "cluster_id": "296",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.725545,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "messaging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "channel",
+      "aliases": [],
+      "cluster_id": "394",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.717127,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "channel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "preferences",
+      "aliases": [],
+      "cluster_id": "345",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.687647,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "preferences",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "automation",
+      "aliases": [],
+      "cluster_id": "149",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.730213,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "automation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.753309,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "personalization",
+      "aliases": [],
+      "cluster_id": "148",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.707131,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "personalization",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.966928Z"
+}

@@ -1,0 +1,412 @@
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_1-v1.0
+  original_tags:
+  - logging
+  - compliance
+  - '[INFERRED] security'
+  validated_tags:
+  - logs
+  - compliance
+  tag_results:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: true
+    timestamp: '2025-09-15T10:29:35.158802Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.163131Z'
+  - original_tag: '[INFERRED] security'
+    canonical_tag: '[INFERRED] security'
+    matched_tag: '[INFERRED] security'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.251685Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.251691Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_2-v1.0
+  original_tags:
+  - query
+  - rbac
+  - '[INFERRED] access control'
+  validated_tags:
+  - query
+  tag_results:
+  - original_tag: query
+    canonical_tag: query
+    matched_tag: query
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.253914Z'
+  - original_tag: rbac
+    canonical_tag: rbac
+    matched_tag: rbac
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.343238Z'
+  - original_tag: '[INFERRED] access control'
+    canonical_tag: '[INFERRED] access control'
+    matched_tag: '[INFERRED] access control'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.434942Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.434947Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_3-v1.0
+  original_tags:
+  - filtering
+  - query
+  - '[INFERRED] data analysis'
+  validated_tags:
+  - filter
+  - query
+  tag_results:
+  - original_tag: filtering
+    canonical_tag: filter
+    matched_tag: filter
+    tag_origin_cluster_id: filter
+    original_confidence: 0.9
+    validation_status: semantic
+    similarity: 0.7640365958213806
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-09-15T10:29:35.506888Z'
+  - original_tag: query
+    canonical_tag: query
+    matched_tag: query
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.508940Z'
+  - original_tag: '[INFERRED] data analysis'
+    canonical_tag: '[INFERRED] data analysis'
+    matched_tag: '[INFERRED] data analysis'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.607883Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.607888Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_4-v1.0
+  original_tags:
+  - session
+  - consistency
+  - '[INFERRED] security protocol'
+  validated_tags:
+  - session
+  - consistency
+  tag_results:
+  - original_tag: session
+    canonical_tag: session
+    matched_tag: session
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.609716Z'
+  - original_tag: consistency
+    canonical_tag: consistency
+    matched_tag: consistency
+    tag_origin_cluster_id: consistency
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.611275Z'
+  - original_tag: '[INFERRED] security protocol'
+    canonical_tag: '[INFERRED] security protocol'
+    matched_tag: '[INFERRED] security protocol'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.738767Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.738772Z'
+- hlj_id: REQ-029-HLJ-Chunk_1-Item_5-v1.0
+  original_tags:
+  - anomaly
+  - detection
+  - '[INFERRED] compliance monitoring'
+  validated_tags:
+  - anomaly
+  - detection
+  tag_results:
+  - original_tag: anomaly
+    canonical_tag: anomaly
+    matched_tag: anomaly
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.744972Z'
+  - original_tag: detection
+    canonical_tag: detection
+    matched_tag: detection
+    tag_origin_cluster_id: detection
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.750642Z'
+  - original_tag: '[INFERRED] compliance monitoring'
+    canonical_tag: '[INFERRED] compliance monitoring'
+    matched_tag: '[INFERRED] compliance monitoring'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.833706Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.833714Z'
+- hlj_id: REQ-029-HLJ-Chunk_2-Item_6-v1.0
+  original_tags:
+  - reporting
+  - export
+  - compliance
+  validated_tags:
+  - reporting
+  - export
+  - compliance
+  tag_results:
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.835978Z'
+  - original_tag: export
+    canonical_tag: export
+    matched_tag: export
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.838024Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.842906Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.842909Z'
+- hlj_id: REQ-029-HLJ-Chunk_2-Item_7-v1.0
+  original_tags:
+  - compliance
+  - storage
+  - regulatory
+  validated_tags:
+  - compliance
+  - storage
+  - regulatory
+  tag_results:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.847988Z'
+  - original_tag: storage
+    canonical_tag: storage
+    matched_tag: storage
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.849960Z'
+  - original_tag: regulatory
+    canonical_tag: regulatory
+    matched_tag: regulatory
+    tag_origin_cluster_id: regulatory
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.851805Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.851807Z'
+- hlj_id: REQ-029-HLJ-Chunk_2-Item_8-v1.0
+  original_tags:
+  - documentation
+  - training
+  - best practices
+  validated_tags:
+  - documentation
+  - training
+  - best practices
+  tag_results:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.854019Z'
+  - original_tag: training
+    canonical_tag: training
+    matched_tag: training
+    tag_origin_cluster_id: training
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.856189Z'
+  - original_tag: best practices
+    canonical_tag: best practices
+    matched_tag: best practices
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.858383Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.858385Z'
+- hlj_id: REQ-029-HLJ-Chunk_2-Item_9-v1.0
+  original_tags:
+  - kpi
+  - performance
+  - traceability
+  validated_tags:
+  - performance
+  - traceability
+  tag_results:
+  - original_tag: kpi
+    canonical_tag: kpi
+    matched_tag: kpi
+    tag_origin_cluster_id: kpi
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.948977Z'
+  - original_tag: performance
+    canonical_tag: performance
+    matched_tag: performance
+    tag_origin_cluster_id: performance
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.955046Z'
+  - original_tag: traceability
+    canonical_tag: traceability
+    matched_tag: traceability
+    tag_origin_cluster_id: traceability
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.957375Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:35.957377Z'
+- hlj_id: REQ-029-HLJ-Chunk_2-Item_10-v1.0
+  original_tags:
+  - compliance
+  - violation
+  - audit log gaps
+  validated_tags:
+  - compliance
+  - audit log gaps
+  tag_results:
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.99
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:35.959623Z'
+  - original_tag: violation
+    canonical_tag: violation
+    matched_tag: violation
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:36.050145Z'
+  - original_tag: audit log gaps
+    canonical_tag: audit log gaps
+    matched_tag: audit log gaps
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:36.052740Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:36.052743Z'

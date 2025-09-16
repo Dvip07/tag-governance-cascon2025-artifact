@@ -1,0 +1,593 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design cohort definition interface",
+    "summary": "Develop an interface for defining custom cohorts based on user criteria.",
+    "tags": [
+      "cohort_definition",
+      "user_interface"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "cohort definition interface",
+      "tag_metadata_reference": [
+        {
+          "tag": "cohort_definition",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "cohort_definition",
+        "user\u754c\u9762"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "user_interface",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "cohort_definition",
+      "user_interface"
+    ],
+    "tags_v2": [
+      "cohort_definition"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "cohort_definition",
+        "canonical_tag": "cohort_definition",
+        "matched_tag": "cohort_definition",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.378087Z"
+      },
+      {
+        "original_tag": "user_interface",
+        "canonical_tag": "user_interface",
+        "matched_tag": "user_interface",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.474750Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement automatic cohort updates",
+    "summary": "Develop a system for automatically updating cohorts based on user interactions.",
+    "tags": [
+      "cohort_updates",
+      "automation"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 14-15",
+    "reasoning": {
+      "source_summary_fragment": "automatic cohort updates",
+      "tag_metadata_reference": [
+        {
+          "tag": "cohort_updates",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "cohort_updates",
+        "automation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "automation",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "cohort_updates",
+      "automation"
+    ],
+    "tags_v2": [
+      "cohort_updates",
+      "automation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "cohort_updates",
+        "canonical_tag": "cohort_updates",
+        "matched_tag": "cohort_updates",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.482940Z"
+      },
+      {
+        "original_tag": "automation",
+        "canonical_tag": "automation",
+        "matched_tag": "automation",
+        "tag_origin_cluster_id": "automation",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.489692Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop time-decay metrics functionality",
+    "summary": "Create a system for calculating time-decay metrics for cohort analysis.",
+    "tags": [
+      "time_decay",
+      "metrics"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Retention"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 16-19",
+    "reasoning": {
+      "source_summary_fragment": "time-decay metrics functionality",
+      "tag_metadata_reference": [
+        {
+          "tag": "time_decay",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "time_decay",
+        "metrics"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "metrics",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "time_decay",
+      "metrics"
+    ],
+    "tags_v2": [
+      "time_decay",
+      "metrics"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "time_decay",
+        "canonical_tag": "time_decay",
+        "matched_tag": "time_decay",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.497541Z"
+      },
+      {
+        "original_tag": "metrics",
+        "canonical_tag": "metrics",
+        "matched_tag": "metrics",
+        "tag_origin_cluster_id": "metrics",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.499505Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create visualization for cohort analysis results",
+    "summary": "Develop a visualization system for displaying cohort analysis results.",
+    "tags": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 20-22",
+    "reasoning": {
+      "source_summary_fragment": "visualization for cohort analysis results",
+      "tag_metadata_reference": [
+        {
+          "tag": "data_visualization",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "data_visualization",
+        "cohort_analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_analysis",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "tags_v2": [
+      "data_visualization",
+      "cohort_analysis"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "data_visualization",
+        "canonical_tag": "data_visualization",
+        "matched_tag": "data_visualization",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.506981Z"
+      },
+      {
+        "original_tag": "cohort_analysis",
+        "canonical_tag": "cohort_analysis",
+        "matched_tag": "cohort_analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.514412Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Handle duplicate cohort membership",
+    "summary": "Develop a system for handling duplicate cohort membership.",
+    "tags": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Analytics"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 23-24",
+    "reasoning": {
+      "source_summary_fragment": "duplicate cohort membership",
+      "tag_metadata_reference": [
+        {
+          "tag": "edge_cases",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "edge_cases",
+        "cohort_membership"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_membership",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "tags_v2": [
+      "edge_cases",
+      "cohort_membership"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "edge_cases",
+        "canonical_tag": "edge_cases",
+        "matched_tag": "edge_cases",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.521748Z"
+      },
+      {
+        "original_tag": "cohort_membership",
+        "canonical_tag": "cohort_membership",
+        "matched_tag": "cohort_membership",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.528253Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement decay parameter adjustment prompt",
+    "summary": "Develop a system for adjusting decay parameters.",
+    "tags": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Retention"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 25-26",
+    "reasoning": {
+      "source_summary_fragment": "decay parameter adjustment prompt",
+      "tag_metadata_reference": [
+        {
+          "tag": "user_experience",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "user_experience",
+        "decay_parameters"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "decay_parameters",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "tags_v2": [
+      "user_experience",
+      "decay_parameters"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "user_experience",
+        "canonical_tag": "user_experience",
+        "matched_tag": "user_experience",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.535302Z"
+      },
+      {
+        "original_tag": "decay_parameters",
+        "canonical_tag": "decay_parameters",
+        "matched_tag": "decay_parameters",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.541912Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Create help article for cohort analysis",
+    "summary": "Develop a help article for cohort analysis.",
+    "tags": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "low",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 27-28",
+    "reasoning": {
+      "source_summary_fragment": "help article for cohort analysis",
+      "tag_metadata_reference": [
+        {
+          "tag": "help_article",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "help_article",
+        "cohort_analysis"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "cohort_analysis",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "tags_v2": [
+      "help_article",
+      "cohort_analysis"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "help_article",
+        "canonical_tag": "help_article",
+        "matched_tag": "help_article",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.549514Z"
+      },
+      {
+        "original_tag": "cohort_analysis",
+        "canonical_tag": "cohort_analysis",
+        "matched_tag": "cohort_analysis",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.556503Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-019-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Ensure compatibility with existing analytics data store",
+    "summary": "Ensure the cohort analysis feature is compatible with the existing analytics data store.",
+    "tags": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Infrastructure"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 29-30",
+    "reasoning": {
+      "source_summary_fragment": "compatibility with existing analytics data store",
+      "tag_metadata_reference": [
+        {
+          "tag": "compatibility",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "compatibility",
+        "analytics_data_store"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "analytics_data_store",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-019",
+    "tags_v1": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "tags_v2": [
+      "compatibility",
+      "analytics_data_store"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compatibility",
+        "canonical_tag": "compatibility",
+        "matched_tag": "compatibility",
+        "tag_origin_cluster_id": "compatibility",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.558419Z"
+      },
+      {
+        "original_tag": "analytics_data_store",
+        "canonical_tag": "analytics_data_store",
+        "matched_tag": "analytics_data_store",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:29:31.566237Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

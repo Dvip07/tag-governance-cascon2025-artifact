@@ -1,0 +1,135 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Monitor fallback performance of external widgets and alert on persistent issues",
+  "summary": "Continuously monitor the fallback behavior and performance of external widgets, issuing alerts when issues persist to ensure overall dashboard resilience and user experience.",
+  "tags_v1": [
+    "resilience",
+    "external",
+    "[INFERRED] alerting"
+  ],
+  "tags_v2": [
+    "resilience",
+    "external"
+  ],
+  "tags_v3": [
+    "alert",
+    "privacy",
+    "sla",
+    "performance",
+    "resilience",
+    "external",
+    "compliance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "53",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.714055,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "18",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.683458,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "sla",
+      "aliases": [],
+      "cluster_id": "96",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.693317,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "sla",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "65",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.741963,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "resilience",
+      "aliases": [],
+      "cluster_id": "120",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.706443,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "resilience",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "external",
+      "aliases": [],
+      "cluster_id": "121",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.696181,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "external",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.698357,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.963237Z"
+}

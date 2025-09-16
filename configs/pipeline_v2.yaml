@@ -1,0 +1,167 @@
+globals:
+  base_dir: sbert_fix
+  base_eval_dir: eval/runs/v2
+  current_run_id: pipeline_20250916_031335_2a509e
+  models:
+  - gpt41
+  - opus4
+  - meta70b
+  prev_config: configs/pipeline_v1.yaml
+  prev_eval_dir: eval/runs/v1
+  prev_run_dir: eval/runs/v1/pipeline_20250915_095209_d5351f
+  prev_run_id: pipeline_20250915_095209_d5351f
+  raw_req_base: raw_requirement
+  run_dir: eval/runs/v2/run_20250915_223110_4b0113
+  run_id: run_20250915_223110_4b0113
+outputs:
+  auto_pr_alias_update: null
+  borderline_csv: eval/runs/v2/run_20250915_223110_4b0113/step_7/borderline_nlu_tags.csv
+  canonical_tags: eval/runs/v2/run_20250915_223110_4b0113/step_4/canonical_tags.yaml
+  deduplicated_tags: eval/runs/v2/run_20250915_223110_4b0113/step_5/deduplicated_tags.csv
+  deduplication_audit_log: eval/runs/v2/run_20250915_223110_4b0113/step_5/deduplicate_audit_log.json
+  domain_filtered_csv: eval/runs/v2/run_20250915_223110_4b0113/step_8/domain_filtered_tags_per_hlj.csv
+  domain_filtered_tags: eval/runs/v2/run_20250915_223110_4b0113/step_8/domain_filtered_tags_per_hlj.json
+  domain_filtered_warnlog: eval/runs/v2/run_20250915_223110_4b0113/step_8/all_tag_mismatch_hljs.log
+  gap_warnings_log: eval/runs/v2/run_20250915_223110_4b0113/step_9/canonical_lookup_warnings.log
+  hlj_tag_metadata: eval/runs/v2/run_20250915_223110_4b0113/step_9/hlj_tag_metadata
+  hybrid_dir: eval/runs/v2/run_20250915_223110_4b0113/step_7/hybrid
+  nlu_stats_csv: eval/runs/v2/run_20250915_223110_4b0113/step_7/nlu_validation_stats.csv
+  rejected_tags_log: eval/runs/v2/run_20250915_223110_4b0113/step_9/rejected_tags.log
+  step2_all: eval/runs/v2/run_20250915_223110_4b0113/step_2/final_tags.csv
+  step2_dropped: eval/runs/v2/run_20250915_223110_4b0113/step_2/dropped_tags.csv
+  step2_rescued: eval/runs/v2/run_20250915_223110_4b0113/step_2/rescued_tags.csv
+  tag_alias_map: eval/runs/v2/run_20250915_223110_4b0113/step_4/tag_alias_map.json
+  tag_clusters: eval/runs/v2/run_20250915_223110_4b0113/step_3/tag_clusters.csv
+  tag_clusters_by_model: eval/runs/v2/run_20250915_223110_4b0113/step_3/tag_clusters_by_model.csv
+  tag_clusters_by_version: eval/runs/v2/run_20250915_223110_4b0113/step_3/tag_clusters_by_version.csv
+  tag_drift_report: null
+  tag_eval_report: null
+  tag_eval_stats: null
+  tag_eval_stats_domain: null
+  tags_all: eval/runs/v2/run_20250915_223110_4b0113/step_1/tags_all.csv
+  tags_token_filtered: eval/runs/v2/run_20250915_223110_4b0113/step_2/filtered_tags.csv
+  topk_tags: eval/runs/v2/run_20250915_223110_4b0113/step_6/topk_tags_per_hlj.json
+  validated_tags: null
+pipeline_runs:
+  pipeline_20250915_221700_799651:
+    timestamp: '2025-09-15T22:17:00.958030'
+  pipeline_20250915_221904_aab30d:
+    timestamp: '2025-09-15T22:19:04.170336'
+  pipeline_20250915_222008_38ef3b:
+    timestamp: '2025-09-15T22:20:08.716175'
+  pipeline_20250915_222243_9e7afe:
+    timestamp: '2025-09-15T22:22:43.006781'
+  pipeline_20250915_222830_e8c083:
+    timestamp: '2025-09-15T22:28:30.199470'
+  pipeline_20250915_223110_0265b8:
+    timestamp: '2025-09-15T22:31:10.954546'
+  pipeline_20250915_223444_3e79b2:
+    timestamp: '2025-09-15T22:34:44.135118'
+  pipeline_20250915_223743_41f837:
+    timestamp: '2025-09-15T22:37:43.258015'
+  pipeline_20250915_235136_5a4499:
+    timestamp: '2025-09-15T23:51:36.888880'
+  pipeline_20250915_235322_dd48aa:
+    timestamp: '2025-09-15T23:53:22.440222'
+  pipeline_20250916_000015_b576d2:
+    timestamp: '2025-09-16T00:00:15.052819'
+  pipeline_20250916_000744_090866:
+    timestamp: '2025-09-16T00:07:44.957472'
+  pipeline_20250916_000900_d0b971:
+    timestamp: '2025-09-16T00:09:00.300115'
+  pipeline_20250916_001346_fe3256:
+    timestamp: '2025-09-16T00:13:46.542900'
+  pipeline_20250916_003819_431ba4:
+    timestamp: '2025-09-16T00:38:19.032174'
+  pipeline_20250916_011602_929fbd:
+    timestamp: '2025-09-16T01:16:02.800907'
+  pipeline_20250916_012304_f1549c:
+    timestamp: '2025-09-16T01:23:04.401857'
+  pipeline_20250916_012403_ce5444:
+    timestamp: '2025-09-16T01:24:03.914416'
+  pipeline_20250916_012541_f89397:
+    timestamp: '2025-09-16T01:25:41.269108'
+  pipeline_20250916_012653_3651bf:
+    timestamp: '2025-09-16T01:26:53.177623'
+  pipeline_20250916_030446_e3884d:
+    timestamp: '2025-09-16T03:04:46.470024'
+  pipeline_20250916_030504_4ec75f:
+    timestamp: '2025-09-16T03:05:04.065167'
+  pipeline_20250916_030646_123dae:
+    timestamp: '2025-09-16T03:06:46.223106'
+  pipeline_20250916_030855_b7152c:
+    timestamp: '2025-09-16T03:08:55.651774'
+  pipeline_20250916_031011_b3680e:
+    timestamp: '2025-09-16T03:10:11.869226'
+  pipeline_20250916_031335_2a509e:
+    timestamp: '2025-09-16T03:13:35.763470'
+  run_20250915_223110_4b0113:
+    timestamp: '2025-09-15T22:31:10.992545'
+scripts:
+- args: []
+  script: scripts/step_3/harvest_tags.py
+- args: []
+  script: scripts/step_3/filter_tags_by_token_length.py
+- args: []
+  script: scripts/step_3/cluster_tags_faiss_sbert.py
+- args: []
+  script: scripts/step_3/generate_canonical_labels.py
+- args: []
+  script: scripts/step_3/deduplicate_tags.py
+- args: []
+  script: scripts/step_3/score_tags.py
+- args: []
+  script: scripts/step_3/validate_tags_nlu.py
+- args: []
+  script: scripts/step_3/filter_tags_domain.py
+- args: []
+  script: scripts/step_3/persist_tag_metadata.py
+- args: []
+  script: scripts/step_3/detect_tag_drift.py
+- args: []
+  script: scripts/step_3/evaluate_tag_accuracy.py
+step10:
+  auto_pr_workflow: eval/runs/v2/${run_id}/step_10/auto_pr_alias_update.yml
+  drift_report: eval/runs/v2/${run_id}/step_10/tag_drift_report.yaml
+  out_dir: eval/runs/v2/${run_id}/step_10
+  prev_ctd_path: eval/runs/v2/run_20250915_223110_4b0113/step_4/canonical_tags_with_domain.yaml
+step11:
+  gold_version: v3
+  out_dir: eval/runs/v2/${run_id}/step_11
+  stats_csv: eval/runs/v2/${run_id}/step_11/tag_eval_stats.csv
+  stats_domain_csv: eval/runs/v2/${run_id}/step_11/tag_eval_stats_by_domain.csv
+  stats_md: eval/runs/v2/${run_id}/step_11/tag_eval_report.md
+step2:
+  sbert_model: all-MiniLM-L6-v2
+  sbert_threshold_strong: 0.4
+  sbert_threshold_weak: 0.2
+step3:
+  faiss_threshold: 0.8
+  sbert_model: all-MiniLM-L6-v2
+step4:
+  base_output: eval/runs/v2
+  domain_sources:
+  - tags_v1
+  - tags_v2
+  enrich_domains: true
+  log_samples: 5
+  merge_previous_aliases: true
+  strategy: shortest_then_freq
+step5:
+  deduplication_threshold: 0.83
+  sbert_model: all-MiniLM-L6-v2
+step6:
+  top_k: 9
+step7:
+  borderline_min: 0.6
+  device_preference: auto
+  embedding_model: hkunlp/instructor-xl
+  hybrid_copy: true
+  match_strategy: id_then_source_then_fuzzy
+  prompt_doc: Represent the document for tag matching.
+  prompt_tag: Represent the concept as a tag.
+  sim_threshold: 0.68
+step8:
+  allow_unknown: false
+  enforce_whitelist: true
+  log_all_mismatch: true

@@ -1,0 +1,70 @@
+{
+  "hlj_id": "REQ-023-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-023",
+  "domain": "SaaS",
+  "title": "Notify users of beta/staged rollout participation and offer opt-out",
+  "summary": "Introduce user notifications to inform individuals about their involvement in beta or staged feature rollouts and give them the ability to opt out. Enhances user experience and transparency during feature launches.",
+  "tags_v1": [
+    "communication",
+    "user-option",
+    "[INFERRED] user-notification"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "alert",
+    "monitoring",
+    "notification"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "alert",
+      "aliases": [
+        "alerting",
+        "alerts"
+      ],
+      "cluster_id": "53",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.72558,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "alerting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "monitoring",
+      "aliases": [],
+      "cluster_id": "23",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.750424,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "monitoring",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.770206,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "user-notification",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.965658Z"
+}

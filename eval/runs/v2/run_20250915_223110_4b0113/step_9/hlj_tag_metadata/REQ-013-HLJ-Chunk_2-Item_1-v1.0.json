@@ -1,0 +1,88 @@
+{
+  "hlj_id": "REQ-013-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-013",
+  "domain": "FinTech",
+  "title": "Implement seller notifications with detailed payout status and reasons",
+  "summary": "Enable automated notifications to marketplace sellers, conveying payout statuses and explicit reasons for each transaction result. The system should support multiple notification channels (email, in-app, SMS) and ensure clarity in status updates for transparency.",
+  "tags_v1": [
+    "notification",
+    "status",
+    "[INFERRED] transparency"
+  ],
+  "tags_v2": [
+    "notification",
+    "status"
+  ],
+  "tags_v3": [
+    "notification",
+    "compliance",
+    "status",
+    "financialregulations"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.732306,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.684682,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "status",
+      "aliases": [],
+      "cluster_id": "111",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.690158,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "status",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "financialregulations",
+      "aliases": [],
+      "cluster_id": "383",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.706963,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "financialregulations",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.961995Z"
+}

@@ -1,0 +1,83 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Support multi-rate invoices for split shipments or services",
+  "summary": "Extend invoice and billing logic to handle multiple GST rates in a single invoice, which may arise when shipments or services span multiple tax jurisdictions within the same transaction. The system should accurately segment and calculate GST per applicable region.",
+  "tags_v1": [
+    "gst",
+    "multi-rate"
+  ],
+  "tags_v2": [
+    "gst",
+    "multi-rate"
+  ],
+  "tags_v3": [
+    "gst",
+    "tax",
+    "multi-rate",
+    "multiple tax rates"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.763994,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tax",
+      "aliases": [
+        "taxation"
+      ],
+      "cluster_id": "204",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.732705,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "taxation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multi-rate",
+      "aliases": [],
+      "cluster_id": "156",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.757465,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multi-rate",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "multiple tax rates",
+      "aliases": [],
+      "cluster_id": "401",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.797874,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "multiple tax rates",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968564Z"
+}

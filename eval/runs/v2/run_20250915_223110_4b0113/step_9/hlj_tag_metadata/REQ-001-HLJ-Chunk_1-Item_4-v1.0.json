@@ -1,0 +1,115 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Deduplicate transactions and harmonize transaction schemas",
+  "summary": "Ensure that transactions from all partner banks are deduplicated and that differing schemas are harmonized for uniformity. This improves data consistency and reliability for downstream consumers and reporting processes.",
+  "tags_v1": [
+    "deduplication",
+    "schema",
+    "data"
+  ],
+  "tags_v2": [
+    "deduplication",
+    "schema",
+    "data"
+  ],
+  "tags_v3": [
+    "openapi",
+    "deduplication",
+    "api",
+    "schema",
+    "data",
+    "standards"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "openapi",
+      "aliases": [],
+      "cluster_id": "72",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749928,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "openapi",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deduplication",
+      "aliases": [],
+      "cluster_id": "73",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.714179,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deduplication",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.728355,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "schema",
+      "aliases": [],
+      "cluster_id": "74",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.683774,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "schema",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data",
+      "aliases": [],
+      "cluster_id": "75",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.688503,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "standards",
+      "aliases": [],
+      "cluster_id": "275",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.707295,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "standards",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.955690Z"
+}

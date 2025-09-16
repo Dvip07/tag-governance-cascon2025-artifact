@@ -1,0 +1,147 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Support 1-year configurable log retention policy",
+  "summary": "Implement a log retention policy with a minimum configurable period of 1 year to ensure auditability and meet compliance demands. The system must allow retention periods to be adjusted based on client policy and relevant regulatory requirements.",
+  "tags_v1": [
+    "retention",
+    "compliance",
+    "[INFERRED] policy"
+  ],
+  "tags_v2": [
+    "retention",
+    "compliance"
+  ],
+  "tags_v3": [
+    "logging",
+    "retention",
+    "compliance",
+    "access_logs",
+    "policy",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "logging",
+      "aliases": [
+        "logs"
+      ],
+      "cluster_id": "24",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.736479,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "logging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "retention",
+      "aliases": [],
+      "cluster_id": "124",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.697211,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "retention",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "middleware",
+      "aliases": [],
+      "cluster_id": "290",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.669413,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "middleware",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.713112,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.675817,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "access_logs",
+      "aliases": [],
+      "cluster_id": "387",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.774964,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "access_logs",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "policy",
+      "aliases": [],
+      "cluster_id": "125",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.680332,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "policy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.713854,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.963970Z"
+}

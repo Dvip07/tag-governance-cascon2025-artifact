@@ -1,0 +1,82 @@
+{
+  "hlj_id": "REQ-014-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-014",
+  "domain": "FinTech",
+  "title": "Highlight fee spikes and advise users in case of pending pool congestion",
+  "summary": "The system should detect pending pool congestion and visible fee spikes, alerting users and giving actionable advice prior to confirmation. Notification ensures users are aware of unusual fee situations that could impact cost or transaction timing. This proactive interaction helps prevent user frustration and costly mistakes.",
+  "tags_v1": [
+    "notification"
+  ],
+  "tags_v2": [
+    "notification"
+  ],
+  "tags_v3": [
+    "gas-fee",
+    "notification",
+    "transaction",
+    "estimation"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gas-fee",
+      "aliases": [],
+      "cluster_id": "369",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.783153,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gas-fee",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "notification",
+      "aliases": [
+        "notifications",
+        "user-notification"
+      ],
+      "cluster_id": "83",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.744677,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "notification",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "transaction",
+      "aliases": [],
+      "cluster_id": "373",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.754109,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "transaction",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "estimation",
+      "aliases": [],
+      "cluster_id": "370",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.722408,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "estimation",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.960431Z"
+}

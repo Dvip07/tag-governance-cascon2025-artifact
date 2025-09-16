@@ -1,0 +1,84 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Implement parallel UI regression test execution on major browsers in staging",
+  "summary": "Enable parallel execution of UI regression tests on Chrome, Firefox, Safari, and Edge within the staging environment. Significantly reduce test run time and maximize coverage across critical browser configurations. Ensure tests are integrated to run concurrently and reliably before deployment.",
+  "tags_v1": [
+    "ui-testing",
+    "parallel",
+    "staging"
+  ],
+  "tags_v2": [
+    "parallel",
+    "staging"
+  ],
+  "tags_v3": [
+    "ui_testing",
+    "staging",
+    "parallel",
+    "browser_coverage"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ui_testing",
+      "aliases": [
+        "ui-testing"
+      ],
+      "cluster_id": "26",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.737493,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ui_testing",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "staging",
+      "aliases": [],
+      "cluster_id": "28",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7011,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "staging",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "parallel",
+      "aliases": [],
+      "cluster_id": "27",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.695001,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "parallel",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "browser_coverage",
+      "aliases": [],
+      "cluster_id": "355",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.791544,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "browser_coverage",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.951980Z"
+}

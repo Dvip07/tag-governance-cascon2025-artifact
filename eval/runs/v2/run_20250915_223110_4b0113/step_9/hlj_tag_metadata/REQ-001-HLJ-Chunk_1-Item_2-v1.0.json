@@ -1,0 +1,88 @@
+{
+  "hlj_id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-001",
+  "domain": "FinTech",
+  "title": "Implement pagination and filtering (date range, type, institution)",
+  "summary": "Integrate pagination and filtering capabilities into the transactions history endpoint to allow users efficient navigation and querying by date range, transaction type, and institution. This ensures scalable data delivery and usability for customers accessing large volumes of transactions.",
+  "tags_v1": [
+    "api",
+    "filtering",
+    "pagination"
+  ],
+  "tags_v2": [
+    "api",
+    "filter",
+    "pagination"
+  ],
+  "tags_v3": [
+    "api",
+    "pagination",
+    "filter",
+    "performance"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 6,
+      "confidence": 0.735789,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "pagination",
+      "aliases": [],
+      "cluster_id": "71",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.722069,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "pagination",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "70",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.711524,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filtering",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "65",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.685341,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.955495Z"
+}

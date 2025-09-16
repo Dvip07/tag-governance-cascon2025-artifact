@@ -1,0 +1,51 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_7-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Flag tests flaky only in headless mode for additional review",
+  "summary": "Detect and flag UI tests that exhibit flaky outcomes uniquely in headless browser modes. Notify responsible teams to review these tests for environment-specific issues.",
+  "tags_v1": [
+    "flakiness",
+    "headless"
+  ],
+  "tags_v2": [
+    "flakiness",
+    "headless"
+  ],
+  "tags_v3": [
+    "flakiness",
+    "headless"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "flakiness",
+      "aliases": [],
+      "cluster_id": "36",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.740049,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "flakiness",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "headless",
+      "aliases": [],
+      "cluster_id": "38",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.729174,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "headless",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.952367Z"
+}

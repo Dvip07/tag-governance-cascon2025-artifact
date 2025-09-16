@@ -1,0 +1,356 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design GET /api/v2/transactions/history endpoint",
+    "summary": "The goal is to create an API endpoint for retrieving transaction history, ensuring compliance with financial regulations and data security standards.",
+    "tags": [
+      "api",
+      "openbanking",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "TransactionHistory"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "transaction history API",
+      "tag_metadata_reference": [
+        {
+          "tag": "openbanking",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "GET /api/v2/transactions/history"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "openbanking",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.524996Z"
+      },
+      {
+        "original_tag": "openbanking",
+        "canonical_tag": "openbanking",
+        "matched_tag": "openbanking",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.634404Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.728896Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement pagination and filtering",
+    "summary": "To enhance user experience, implement efficient pagination and filtering mechanisms for the transaction history endpoint, ensuring seamless data retrieval.",
+    "tags": [
+      "api",
+      "filtering",
+      "[INFERRED] performance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "TransactionHistory"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 15-17",
+    "reasoning": {
+      "source_summary_fragment": "pagination and filtering",
+      "tag_metadata_reference": [
+        {
+          "tag": "filtering",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "pagination",
+        "filtering"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "performance",
+      "confidence": 0.9,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "api",
+      "filtering",
+      "[INFERRED] performance"
+    ],
+    "tags_v2": [
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.777600Z"
+      },
+      {
+        "original_tag": "filtering",
+        "canonical_tag": "filter",
+        "matched_tag": "filter",
+        "tag_origin_cluster_id": "filter",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T09:50:40.870646Z"
+      },
+      {
+        "original_tag": "[INFERRED] performance",
+        "canonical_tag": "[INFERRED] performance",
+        "matched_tag": "[INFERRED] performance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.967371Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Authenticate requests using OAuth 2.0",
+    "summary": "Implement OAuth 2.0 authentication to secure FinTech transactions, ensuring confidentiality and integrity of customer data.",
+    "tags": [
+      "oauth",
+      "security",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 25-27",
+    "reasoning": {
+      "source_summary_fragment": "OAuth 2.0 for secure transactions",
+      "tag_metadata_reference": [
+        {
+          "tag": "oauth",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "optional KYC",
+        "POST /onboarding"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.94,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "oauth",
+      "security",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "oauth",
+      "security"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "oauth",
+        "canonical_tag": "oauth",
+        "matched_tag": "oauth",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:40.969479Z"
+      },
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:41.020544Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:41.119568Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-001-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Log access events and support audit trail",
+    "summary": "Develop a logging mechanism to track access events, ensuring compliance with regulatory standards and facilitating audit trails for FinTech transactions.",
+    "tags": [
+      "logging",
+      "audit",
+      "[INFERRED] security"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Security",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 30-32",
+    "reasoning": {
+      "source_summary_fragment": "logging for audit trails",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "optional logging",
+        "GET /transactions"
+      ]
+    },
+    "low_confidence_reason": "",
+    "inference_notes": {
+      "tag_added": "security",
+      "confidence": 0.92,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-001",
+    "tags_v1": [
+      "logging",
+      "audit",
+      "[INFERRED] security"
+    ],
+    "tags_v2": [
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T09:50:41.217787Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:41.220017Z"
+      },
+      {
+        "original_tag": "[INFERRED] security",
+        "canonical_tag": "[INFERRED] security",
+        "matched_tag": "[INFERRED] security",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T09:50:41.320028Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

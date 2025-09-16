@@ -1,0 +1,89 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Define configurable per-tenant rate limit tiers with contract-based customization",
+  "summary": "Establish rate limit tiers for each tenant, allowing contract-driven customization for flexibility (e.g., Standard, Premium). Configuration is managed per tenant within the FinTech Developer Platform environment.",
+  "tags_v1": [
+    "rate-limiting",
+    "configuration",
+    "[INFERRED] customization"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "api",
+    "rate-limiting",
+    "configuration",
+    "tenant management"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.741101,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "47",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.798696,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "configuration",
+      "aliases": [
+        "config"
+      ],
+      "cluster_id": "48",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.738556,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "configuration",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tenant management",
+      "aliases": [],
+      "cluster_id": "357",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.732372,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "tenant management",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.953163Z"
+}

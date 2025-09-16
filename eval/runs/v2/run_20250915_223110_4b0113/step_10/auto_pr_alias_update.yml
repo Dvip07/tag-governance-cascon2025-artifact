@@ -1,0 +1,12 @@
+name: CTD Drift Auto-PR
+'on':
+  workflow_dispatch: null
+jobs:
+  create-pr:
+    runs-on: ubuntu-latest
+    steps:
+    - run: git checkout -b ctd-drift-auto
+    - run: git add .
+    - run: git commit -m "Auto-update CTD for drift"
+    - run: git push origin ctd-drift-auto
+    - run: 'gh pr create --title "CTD Drift: Auto-update" --body "No changes detected."'

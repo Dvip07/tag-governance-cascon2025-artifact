@@ -1,0 +1,70 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Integrate UI tests with CI/CD to block deployment on critical failures",
+  "summary": "Link UI regression tests to the CI/CD pipeline so deployments to production are blocked if critical tests fail. Ensure high-priority tests act as deployment gates and that failure alerts are clearly surfaced to engineering and QA teams.",
+  "tags_v1": [
+    "ci-cd",
+    "blocking",
+    "critical-path"
+  ],
+  "tags_v2": [
+    "ci/cd",
+    "blocking"
+  ],
+  "tags_v3": [
+    "ci/cd",
+    "blocking",
+    "deployment"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "ci/cd",
+      "aliases": [
+        "ci-cd",
+        "ci_cd"
+      ],
+      "cluster_id": "29",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.6977,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "ci-cd",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "blocking",
+      "aliases": [],
+      "cluster_id": "30",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.697991,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "blocking",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "deployment",
+      "aliases": [],
+      "cluster_id": "136",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.755327,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "deployment",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.952052Z"
+}

@@ -1,0 +1,851 @@
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_1-v1.0
+  original_tags:
+  - rate-limiting
+  - configuration
+  - api
+  validated_tags:
+  - api
+  tag_results:
+  - original_tag: rate-limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:40.540165Z'
+  - original_tag: configuration
+    canonical_tag: config
+    matched_tag: config
+    tag_origin_cluster_id: config
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:40.674836Z'
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:40.757457Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:40.757465Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_2-v1.0
+  original_tags:
+  - rate-limiting
+  - burst-control
+  - api
+  - '[INFERRED] resilience'
+  validated_tags:
+  - api
+  tag_results:
+  - original_tag: rate-limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:40.885500Z'
+  - original_tag: burst-control
+    canonical_tag: burst-control
+    matched_tag: burst-control
+    tag_origin_cluster_id: null
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.020763Z'
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.101117Z'
+  - original_tag: '[INFERRED] resilience'
+    canonical_tag: '[INFERRED] resilience'
+    matched_tag: '[INFERRED] resilience'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.232864Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:41.232868Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_3-v1.0
+  original_tags:
+  - admin-portal
+  - configuration
+  - real-time
+  validated_tags:
+  - config
+  tag_results:
+  - original_tag: admin-portal
+    canonical_tag: admin-portal
+    matched_tag: admin-portal
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.361234Z'
+  - original_tag: configuration
+    canonical_tag: config
+    matched_tag: config
+    tag_origin_cluster_id: config
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: source_fragment
+    alias_used: true
+    timestamp: '2025-09-15T10:29:41.371978Z'
+  - original_tag: real-time
+    canonical_tag: realtime
+    matched_tag: realtime
+    tag_origin_cluster_id: realtime
+    original_confidence: 0.88
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:41.501096Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:41.501102Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_4-v1.0
+  original_tags:
+  - api-gateway
+  - rate-limiting
+  - infrastructure
+  validated_tags: []
+  tag_results:
+  - original_tag: api-gateway
+    canonical_tag: api-gateway
+    matched_tag: api-gateway
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.643562Z'
+  - original_tag: rate-limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:41.764786Z'
+  - original_tag: infrastructure
+    canonical_tag: infrastructure
+    matched_tag: infrastructure
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:41.888556Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:41.888562Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_5-v1.0
+  original_tags:
+  - http-429
+  - rate-limiting
+  - api
+  validated_tags:
+  - api
+  tag_results:
+  - original_tag: http-429
+    canonical_tag: http-429
+    matched_tag: http-429
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.056804Z'
+  - original_tag: rate-limiting
+    canonical_tag: rate limit
+    matched_tag: rate limit
+    tag_origin_cluster_id: rate limit
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:42.184023Z'
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.192039Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:42.192042Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_6-v1.0
+  original_tags:
+  - logging
+  - compliance
+  - monitoring
+  validated_tags:
+  - logs
+  - compliance
+  - monitoring
+  tag_results:
+  - original_tag: logging
+    canonical_tag: logs
+    matched_tag: logs
+    tag_origin_cluster_id: logs
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: true
+    timestamp: '2025-09-15T10:29:42.199581Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.206511Z'
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.88
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.287610Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:42.287617Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_7-v1.0
+  original_tags:
+  - monitoring
+  - dashboard
+  - alerting
+  validated_tags:
+  - monitoring
+  tag_results:
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.290231Z'
+  - original_tag: dashboard
+    canonical_tag: dashboard
+    matched_tag: dashboard
+    tag_origin_cluster_id: dashboard
+    original_confidence: 0.92
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.418904Z'
+  - original_tag: alerting
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.87
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:42.565484Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:42.565489Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_8-v1.0
+  original_tags:
+  - alerting
+  - monitoring
+  - notification
+  validated_tags:
+  - monitoring
+  tag_results:
+  - original_tag: alerting
+    canonical_tag: alert
+    matched_tag: alert
+    tag_origin_cluster_id: alert
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:42.695905Z'
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.89
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.776620Z'
+  - original_tag: notification
+    canonical_tag: notification
+    matched_tag: notification
+    tag_origin_cluster_id: notification
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.903230Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:42.903235Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_9-v1.0
+  original_tags:
+  - api
+  - metrics
+  - self-service
+  validated_tags:
+  - api
+  - metrics
+  tag_results:
+  - original_tag: api
+    canonical_tag: api
+    matched_tag: api
+    tag_origin_cluster_id: api
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.905876Z'
+  - original_tag: metrics
+    canonical_tag: metrics
+    matched_tag: metrics
+    tag_origin_cluster_id: metrics
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:42.908281Z'
+  - original_tag: self-service
+    canonical_tag: self service
+    matched_tag: self service
+    tag_origin_cluster_id: self service
+    original_confidence: 0.88
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.038749Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.038753Z'
+- hlj_id: REQ-006-HLJ-Chunk_1-Item_10-v1.0
+  original_tags:
+  - reporting
+  - billing
+  - compliance
+  validated_tags:
+  - reporting
+  - billing
+  - compliance
+  tag_results:
+  - original_tag: reporting
+    canonical_tag: reporting
+    matched_tag: reporting
+    tag_origin_cluster_id: reporting
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.120503Z'
+  - original_tag: billing
+    canonical_tag: billing
+    matched_tag: billing
+    tag_origin_cluster_id: billing
+    original_confidence: 0.91
+    validation_status: direct
+    similarity: 1.0
+    context: mapped_concepts
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.131619Z'
+  - original_tag: compliance
+    canonical_tag: compliance
+    matched_tag: compliance
+    tag_origin_cluster_id: compliance
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.138348Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.138351Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_1-v1.0
+  original_tags:
+  - security
+  - abuse-detection
+  - monitoring
+  - '[INFERRED] analytics'
+  validated_tags:
+  - security
+  - abuse-detection
+  - monitoring
+  tag_results:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.218820Z'
+  - original_tag: abuse-detection
+    canonical_tag: abuse-detection
+    matched_tag: abuse-detection
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: semantic
+    similarity: 0.9857206344604492
+    context: source_fragment
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.329689Z'
+  - original_tag: monitoring
+    canonical_tag: monitoring
+    matched_tag: monitoring
+    tag_origin_cluster_id: monitoring
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.410514Z'
+  - original_tag: '[INFERRED] analytics'
+    canonical_tag: '[INFERRED] analytics'
+    matched_tag: '[INFERRED] analytics'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.539165Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.539170Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_2-v1.0
+  original_tags:
+  - incident-response
+  - audit
+  - override
+  validated_tags:
+  - audit
+  - override
+  tag_results:
+  - original_tag: incident-response
+    canonical_tag: incident-response
+    matched_tag: incident-response
+    tag_origin_cluster_id: null
+    original_confidence: 0.9
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.670993Z'
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.673646Z'
+  - original_tag: override
+    canonical_tag: override
+    matched_tag: override
+    tag_origin_cluster_id: override
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.675964Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.675966Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_3-v1.0
+  original_tags:
+  - resilience
+  - fallback
+  - availability
+  validated_tags:
+  - fallback
+  - availability
+  tag_results:
+  - original_tag: resilience
+    canonical_tag: resilience
+    matched_tag: resilience
+    tag_origin_cluster_id: resilience
+    original_confidence: 0.95
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.804446Z'
+  - original_tag: fallback
+    canonical_tag: fallback
+    matched_tag: fallback
+    tag_origin_cluster_id: fallback
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.807388Z'
+  - original_tag: availability
+    canonical_tag: availability
+    matched_tag: availability
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.814823Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.814833Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_4-v1.0
+  original_tags:
+  - security
+  - authentication
+  - anti-spoofing
+  validated_tags:
+  - security
+  - authentication
+  tag_results:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.821600Z'
+  - original_tag: authentication
+    canonical_tag: authentication
+    matched_tag: authentication
+    tag_origin_cluster_id: authentication
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.828044Z'
+  - original_tag: anti-spoofing
+    canonical_tag: anti-spoofing
+    matched_tag: anti-spoofing
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.955644Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:43.955649Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_5-v1.0
+  original_tags:
+  - security
+  - mfa
+  - audit
+  - '[INFERRED] access-control'
+  validated_tags:
+  - security
+  - mfa
+  - audit
+  tag_results:
+  - original_tag: security
+    canonical_tag: security
+    matched_tag: security
+    tag_origin_cluster_id: security
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.963349Z'
+  - original_tag: mfa
+    canonical_tag: mfa
+    matched_tag: mfa
+    tag_origin_cluster_id: null
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:43.965924Z'
+  - original_tag: audit
+    canonical_tag: audit
+    matched_tag: audit
+    tag_origin_cluster_id: audit
+    original_confidence: 0.92
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.046154Z'
+  - original_tag: '[INFERRED] access-control'
+    canonical_tag: '[INFERRED] access-control'
+    matched_tag: '[INFERRED] access-control'
+    tag_origin_cluster_id: null
+    original_confidence: null
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.175511Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.175516Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_6-v1.0
+  original_tags:
+  - deployment
+  - rollout
+  - risk-management
+  validated_tags:
+  - deployment
+  - rollout
+  tag_results:
+  - original_tag: deployment
+    canonical_tag: deployment
+    matched_tag: deployment
+    tag_origin_cluster_id: null
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.182949Z'
+  - original_tag: rollout
+    canonical_tag: rollout
+    matched_tag: rollout
+    tag_origin_cluster_id: rollout
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.185146Z'
+  - original_tag: risk-management
+    canonical_tag: riskmanagement
+    matched_tag: riskmanagement
+    tag_origin_cluster_id: riskmanagement
+    original_confidence: 0.93
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: true
+    timestamp: '2025-09-15T10:29:44.312431Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.312437Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_7-v1.0
+  original_tags:
+  - testing
+  - sandbox
+  - client-support
+  validated_tags:
+  - testing
+  - sandbox
+  tag_results:
+  - original_tag: testing
+    canonical_tag: testing
+    matched_tag: testing
+    tag_origin_cluster_id: null
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.314724Z'
+  - original_tag: sandbox
+    canonical_tag: sandbox
+    matched_tag: sandbox
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.316684Z'
+  - original_tag: client-support
+    canonical_tag: client-support
+    matched_tag: client-support
+    tag_origin_cluster_id: null
+    original_confidence: 0.91
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.444169Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.444174Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_8-v1.0
+  original_tags:
+  - documentation
+  - self-service
+  - communication
+  validated_tags:
+  - documentation
+  - communication
+  tag_results:
+  - original_tag: documentation
+    canonical_tag: documentation
+    matched_tag: documentation
+    tag_origin_cluster_id: null
+    original_confidence: 0.97
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.446811Z'
+  - original_tag: self-service
+    canonical_tag: self service
+    matched_tag: self service
+    tag_origin_cluster_id: self service
+    original_confidence: 0.94
+    validation_status: none
+    similarity: 0.0
+    context: null
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.608975Z'
+  - original_tag: communication
+    canonical_tag: communication
+    matched_tag: communication
+    tag_origin_cluster_id: communication
+    original_confidence: 0.9
+    validation_status: direct
+    similarity: 1.0
+    context: raw_requirement
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.689309Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.689315Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_9-v1.0
+  original_tags:
+  - infrastructure
+  - performance
+  - upgrade
+  validated_tags:
+  - infrastructure
+  - performance
+  - upgrade
+  tag_results:
+  - original_tag: infrastructure
+    canonical_tag: infrastructure
+    matched_tag: infrastructure
+    tag_origin_cluster_id: null
+    original_confidence: 0.96
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.691722Z'
+  - original_tag: performance
+    canonical_tag: performance
+    matched_tag: performance
+    tag_origin_cluster_id: performance
+    original_confidence: 0.98
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.698051Z'
+  - original_tag: upgrade
+    canonical_tag: upgrade
+    matched_tag: upgrade
+    tag_origin_cluster_id: upgrade
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.700314Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.700316Z'
+- hlj_id: REQ-006-HLJ-Chunk_2-Item_10-v1.0
+  original_tags:
+  - legacy
+  - migration
+  - compatibility
+  validated_tags:
+  - legacy
+  - migration
+  - compatibility
+  tag_results:
+  - original_tag: legacy
+    canonical_tag: legacy
+    matched_tag: legacy
+    tag_origin_cluster_id: legacy
+    original_confidence: 0.95
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.702596Z'
+  - original_tag: migration
+    canonical_tag: migration
+    matched_tag: migration
+    tag_origin_cluster_id: null
+    original_confidence: 0.93
+    validation_status: direct
+    similarity: 1.0
+    context: summary
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.709010Z'
+  - original_tag: compatibility
+    canonical_tag: compatibility
+    matched_tag: compatibility
+    tag_origin_cluster_id: compatibility
+    original_confidence: 0.94
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: false
+    timestamp: '2025-09-15T10:29:44.711190Z'
+  validation_version: v2
+  timestamp: '2025-09-15T10:29:44.711191Z'

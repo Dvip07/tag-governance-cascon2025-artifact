@@ -1,0 +1,115 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_5-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Apply masking for sensitive data on export per policy",
+  "summary": "Ensure that sensitive information in exported logs is masked according to defined policies. The export masking process enforces privacy protection and compliance requirements when data is shared or analyzed externally.",
+  "tags_v1": [
+    "privacy",
+    "masking",
+    "[INFERRED] data-protection"
+  ],
+  "tags_v2": [
+    "privacy",
+    "masking"
+  ],
+  "tags_v3": [
+    "csv",
+    "privacy",
+    "export",
+    "data-protection",
+    "security"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "csv",
+      "aliases": [],
+      "cluster_id": "292",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.708047,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "csv",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "json",
+      "aliases": [],
+      "cluster_id": "293",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.666417,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "json",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "18",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.725805,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "126",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.724115,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "data-protection",
+      "aliases": [
+        "data_protection"
+      ],
+      "cluster_id": "129",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.749902,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "data_protection",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.728042,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.964253Z"
+}

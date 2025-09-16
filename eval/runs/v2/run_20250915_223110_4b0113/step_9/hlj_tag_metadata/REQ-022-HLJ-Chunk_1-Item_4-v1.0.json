@@ -1,0 +1,103 @@
+{
+  "hlj_id": "REQ-022-HLJ-Chunk_1-Item_4-v1.0",
+  "model": "gpt41",
+  "req_id": "req-022",
+  "domain": "SaaS",
+  "title": "Implement export filters: date, user, resource type",
+  "summary": "Add export filtering criteria for access logs, allowing users to filter by date range, user, and resource type during export. These filters improve data manageability and facilitate targeted compliance or forensic queries.",
+  "tags_v1": [
+    "filter",
+    "export",
+    "[INFERRED] usability"
+  ],
+  "tags_v2": [
+    "filter",
+    "export"
+  ],
+  "tags_v3": [
+    "security",
+    "filter",
+    "compliance",
+    "export",
+    "export_controls"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.704025,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "filter",
+      "aliases": [
+        "filtering",
+        "filters"
+      ],
+      "cluster_id": "70",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 3,
+      "confidence": 0.704206,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "filter",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.694084,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export",
+      "aliases": [],
+      "cluster_id": "126",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.70988,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "export_controls",
+      "aliases": [],
+      "cluster_id": "388",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.754584,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "export_controls",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.964168Z"
+}

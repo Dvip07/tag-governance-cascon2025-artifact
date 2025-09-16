@@ -1,0 +1,69 @@
+{
+  "hlj_id": "REQ-030-HLJ-Chunk_2-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-030",
+  "domain": "SaaS",
+  "title": "Track and enforce accessibility (WCAG) compliance in the test suite",
+  "summary": "Implement mechanisms to track, validate, and enforce WCAG accessibility compliance across all automated test cases. Accessibility violations must be reported within the CI/CD pipeline, with actionable feedback provided to development and QA teams. Regular audits should be performed to ensure ongoing compliance.",
+  "tags_v1": [
+    "accessibility",
+    "compliance"
+  ],
+  "tags_v2": [
+    "accessibility",
+    "compliance"
+  ],
+  "tags_v3": [
+    "compliance",
+    "security",
+    "accessibility"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.746255,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "security",
+      "aliases": [],
+      "cluster_id": "44",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.733127,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "security",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "accessibility",
+      "aliases": [],
+      "cluster_id": "46",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.754066,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "accessibility",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.952688Z"
+}

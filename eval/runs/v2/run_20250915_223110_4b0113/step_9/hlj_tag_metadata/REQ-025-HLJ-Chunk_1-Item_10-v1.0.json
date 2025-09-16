@@ -1,0 +1,104 @@
+{
+  "hlj_id": "REQ-025-HLJ-Chunk_1-Item_10-v1.0",
+  "model": "gpt41",
+  "req_id": "req-025",
+  "domain": "SaaS",
+  "title": "Anonymize performance telemetry and ensure user privacy compliance with opt-out",
+  "summary": "Anonymize all collected performance telemetry, enforce privacy compliance per user agreements, and provide a clear opt-out mechanism to maintain user trust.",
+  "tags_v1": [
+    "privacy",
+    "compliance",
+    "[INFERRED] analytics"
+  ],
+  "tags_v2": [
+    "privacy",
+    "compliance"
+  ],
+  "tags_v3": [
+    "privacy",
+    "compliance",
+    "performance",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "privacy",
+      "aliases": [
+        "privacy laws"
+      ],
+      "cluster_id": "18",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.730422,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "privacy",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.715879,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "ci/cd",
+      "aliases": [
+        "ci-cd",
+        "ci_cd"
+      ],
+      "cluster_id": "29",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.669241,
+      "validated": false,
+      "validation_reason": "borderline_similarity",
+      "original_tag": "ci-cd",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "performance",
+      "aliases": [],
+      "cluster_id": "65",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.7457,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "performance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "32",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.756742,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.963396Z"
+}

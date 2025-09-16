@@ -1,0 +1,81 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Develop dual-GST province logic for correct allocation and calculation",
+  "summary": "Establish logic within the system to accurately allocate and calculate GST for provinces operating under dual-GST regimes such as Quebec, ensuring compliance with the specific rules of each affected jurisdiction. This function must clearly distinguish which GST components apply and ensure allocations are compliant with local regulations.",
+  "tags_v1": [
+    "gst",
+    "dual-tax"
+  ],
+  "tags_v2": [
+    "gst",
+    "dual-tax"
+  ],
+  "tags_v3": [
+    "gst",
+    "dual-tax",
+    "dual-gst",
+    "provincial tax"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.771799,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dual-tax",
+      "aliases": [],
+      "cluster_id": "154",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.792818,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dual-tax",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "dual-gst",
+      "aliases": [],
+      "cluster_id": "400",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.810091,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "dual-gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "provincial tax",
+      "aliases": [],
+      "cluster_id": "399",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.795561,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "provincial tax",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968342Z"
+}

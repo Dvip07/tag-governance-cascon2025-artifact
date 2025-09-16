@@ -1,0 +1,70 @@
+paths:
+  base_output: "output"
+  logs_dir: "eval/logging/runs/v0/sbert_fix"
+  prompt_path: "prompts/hlj_fallback_by_sbert_prompt.md"
+  meta_yaml: "output/meta_70b.yaml"
+
+models:
+  sbert: "all-MiniLM-L6-v2"
+  folders: ["gpt41", "meta70b", "opus4"]
+  baseline: "gpt41"
+
+thresholds:
+  confidence: 0.75
+  similarity: 0.75
+  clamp_min: 0.70
+  clamp_max: 0.99
+
+semantic_eval:
+  csv_out: "eval/semantic_eval_results.csv"
+
+plots:
+  value_col: "similarity"
+  index_col: "req_id"
+  columns_col: "model"
+  title: "Semantic Similarity: Model Diff"
+  aliases:
+    "GPT-4.1": "gpt41"
+    "gpt-4.1": "gpt41"
+    "Meta-70B": "meta70b"
+  plots_dir: "eval/plots"
+
+eval_heatmaps:
+  plots:
+    - csv_path: "eval/semantic_eval_results.csv"
+      value_col: "similarity"
+      index_col: "req_id"
+      columns_col: "model"
+      out_path: "output/run/v0/plots/semantic_similarity_heatmap.png"
+      title: "Semantic Similarity Heatmap (SBERT)"
+    # - csv_path: "eval/semantic_eval_results.csv"
+    #   value_col: "f1_score"
+    #   index_col: "field"
+    #   columns_col: "model"
+    #   out_path: "output/run/v0/plots/field_f1_heatmap.png"
+    #   title: "Field-Level F1 Heatmap"
+
+field_eval:
+  meta_yaml: "eval/output/meta_llama70b.yaml"
+  out_csv: "eval/metrics/field_eval.csv"
+  out_md: "eval/metrics/field_eval.md"
+
+
+scripts:
+  - script: scripts/step_1/sbert_confidence_score.py
+    args: ["--config", "configs/pipeline_v0.yaml"]
+
+  - script: scripts/step_1/semantic_eval.py
+    args: ["--config", "configs/pipeline_v0.yaml"]
+
+  - script: scripts/step_1/generate_model_diff_heatmaps.py
+    args: ["--config", "configs/pipeline_v0.yaml"]
+
+  - script: scripts/step_1/generate_eval_heatmaps.py
+    args: ["--config", "configs/pipeline_v0.yaml"]
+
+  # - script: scripts/step_1/field_eval.py
+  #   args: ["--config", "configs/pipeline_v0.yaml"]
+
+
+# python scripts/run_pipeline.py --config configs/pipeline_v0.yaml

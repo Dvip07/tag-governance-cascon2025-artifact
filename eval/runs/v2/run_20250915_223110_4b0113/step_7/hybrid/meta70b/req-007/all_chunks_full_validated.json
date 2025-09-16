@@ -1,0 +1,1907 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design Real-Time Screening Service Integration",
+    "summary": "Integrate real-time KYC/AML screening into the onboarding workflow to ensure regulatory compliance and operational efficiency.",
+    "tags": [
+      "kyc",
+      "aml",
+      "regulatory"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 10-13",
+    "reasoning": {
+      "source_summary_fragment": "KYC/AML screening",
+      "tag_metadata_reference": [
+        {
+          "tag": "kyc",
+          "confidence": 0.95
+        },
+        {
+          "tag": "aml",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "real-time screening"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "kyc",
+      "aml",
+      "regulatory"
+    ],
+    "tags_v2": [
+      "aml"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "kyc",
+        "canonical_tag": "kyc",
+        "matched_tag": "kyc",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.217246Z"
+      },
+      {
+        "original_tag": "aml",
+        "canonical_tag": "aml",
+        "matched_tag": "aml",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.314193Z"
+      },
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:23.479944Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "aml",
+      "screening",
+      "compliance",
+      "kyc",
+      "integration",
+      "regulation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697771,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:25.206805Z"
+      },
+      {
+        "tag": "screening",
+        "original_tag": "screening",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.740628,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:26.293264Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.727171,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:27.351479Z"
+      },
+      {
+        "tag": "kyc",
+        "original_tag": "kyc",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.733018,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:28.363298Z"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.710802,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:29.376629Z"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711116,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:30.464729Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement Fallback Protocol for Primary Service Downtime",
+    "summary": "Develop a fallback protocol to handle primary service downtime, ensuring minimal disruption to the onboarding process.",
+    "tags": [
+      "regulatory",
+      "risk",
+      "recovery"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 20-25",
+    "reasoning": {
+      "source_summary_fragment": "fallback protocol",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.9
+        },
+        {
+          "tag": "risk",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "downtime handling"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] recovery",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "risk",
+      "recovery"
+    ],
+    "tags_v2": [
+      "risk"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:23.664551Z"
+      },
+      {
+        "original_tag": "risk",
+        "canonical_tag": "risk",
+        "matched_tag": "risk",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.777599Z"
+      },
+      {
+        "original_tag": "recovery",
+        "canonical_tag": "recovery",
+        "matched_tag": "recovery",
+        "tag_origin_cluster_id": "recovery",
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:23.937719Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "aml",
+      "compliance",
+      "performance",
+      "api",
+      "risk",
+      "regulation",
+      "onboarding"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.691549,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:44.091059Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.718071,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:45.185632Z"
+      },
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697375,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:46.244859Z"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.685243,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:47.300729Z"
+      },
+      {
+        "tag": "risk",
+        "original_tag": "risk",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.701466,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:48.335901Z"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.708509,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:49.346675Z"
+      },
+      {
+        "tag": "onboarding",
+        "original_tag": "onboarding",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.739701,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:50:50.386036Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Develop Secure Audit Logging for Screening Attempts",
+    "summary": "Implement secure audit logging for all screening attempts, ensuring the ability to track and investigate any issues.",
+    "tags": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.89,
+    "line_source": "Ln 30-32",
+    "reasoning": {
+      "source_summary_fragment": "secure audit logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "privacy",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "audit logging"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] audit",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "tags_v2": [
+      "security",
+      "privacy",
+      "audit"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.031365Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.124661Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.128169Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "performance",
+      "security",
+      "aml",
+      "privacy",
+      "integration",
+      "sla",
+      "audit",
+      "backend"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "performance",
+        "original_tag": "performance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697454,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:06.178550Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.750529,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:07.253906Z"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.692098,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:08.371143Z"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717747,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:09.444231Z"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.69112,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:10.470882Z"
+      },
+      {
+        "tag": "sla",
+        "original_tag": "sla",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.692419,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:11.507742Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.754913,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:12.531347Z"
+      },
+      {
+        "tag": "backend",
+        "original_tag": "backend",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.692341,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:13.564761Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create Compliance Dashboard and Reporting",
+    "summary": "Develop a compliance dashboard and reporting system to track and manage regulatory requirements.",
+    "tags": [
+      "regulatory",
+      "reporting",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.78,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 35-37",
+    "reasoning": {
+      "source_summary_fragment": "compliance dashboard",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.92
+        },
+        {
+          "tag": "reporting",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "compliance management"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] compliance",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "reporting",
+      "compliance"
+    ],
+    "tags_v2": [
+      "reporting",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:24.290455Z"
+      },
+      {
+        "original_tag": "reporting",
+        "canonical_tag": "reporting",
+        "matched_tag": "reporting",
+        "tag_origin_cluster_id": "reporting",
+        "original_confidence": 0.89,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.293879Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.296870Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "fallback",
+      "aml",
+      "reporting",
+      "availability",
+      "regulation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.742069,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:31.536629Z"
+      },
+      {
+        "tag": "fallback",
+        "original_tag": "fallback",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70593,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:32.625021Z"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.692304,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:33.730556Z"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717991,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:34.840319Z"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712391,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:36.024205Z"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.723673,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:37.133315Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement User-Friendly Screening Status Communication",
+    "summary": "Develop a user-friendly system to communicate screening status to customers, ensuring transparency and trust.",
+    "tags": [
+      "ux",
+      "ui",
+      "communication"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.75,
+    "priority": "low",
+    "priority_confidence": 0.83,
+    "line_source": "Ln 40-42",
+    "reasoning": {
+      "source_summary_fragment": "user-friendly communication",
+      "tag_metadata_reference": [
+        {
+          "tag": "ux",
+          "confidence": 0.9
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "customer communication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] communication",
+      "confidence": 0.8,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "ux",
+      "ui",
+      "communication"
+    ],
+    "tags_v2": [
+      "ui",
+      "communication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ux",
+        "canonical_tag": "ux",
+        "matched_tag": "ux",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.456696Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.550603Z"
+      },
+      {
+        "original_tag": "communication",
+        "canonical_tag": "communication",
+        "matched_tag": "communication",
+        "tag_origin_cluster_id": "communication",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.553570Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "aml",
+      "notification",
+      "workflow",
+      "ui",
+      "state"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.730473,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:51.135933Z"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.697609,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:52.261436Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notification",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.728956,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:53.384861Z"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.72149,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:54.438493Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699524,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:55.488611Z"
+      },
+      {
+        "tag": "state",
+        "original_tag": "state",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.683577,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:51:56.529463Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Develop Test Cases for Screening Scenarios",
+    "summary": "Create comprehensive test cases for various screening scenarios to ensure the system's accuracy and reliability.",
+    "tags": [
+      "testing",
+      "quality",
+      "screening"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Testing"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 45-47",
+    "reasoning": {
+      "source_summary_fragment": "test cases",
+      "tag_metadata_reference": [
+        {
+          "tag": "testing",
+          "confidence": 0.95
+        },
+        {
+          "tag": "quality",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "testing scenarios"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] screening",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "testing",
+      "quality",
+      "screening"
+    ],
+    "tags_v2": [
+      "testing",
+      "screening"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "testing",
+        "canonical_tag": "testing",
+        "matched_tag": "testing",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.565276Z"
+      },
+      {
+        "original_tag": "quality",
+        "canonical_tag": "quality",
+        "matched_tag": "quality",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.714956Z"
+      },
+      {
+        "original_tag": "screening",
+        "canonical_tag": "screening",
+        "matched_tag": "screening",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.718407Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "testing",
+      "compliance",
+      "audit",
+      "logging",
+      "workflow",
+      "screening",
+      "notification",
+      "traceability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "testing",
+        "original_tag": "testing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.710023,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:10.378325Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.725801,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:11.452167Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.73699,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:12.548344Z"
+      },
+      {
+        "tag": "logging",
+        "original_tag": "logging",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.707488,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:13.599919Z"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.722915,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:14.640817Z"
+      },
+      {
+        "tag": "screening",
+        "original_tag": "screening",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.745509,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:15.720425Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.719527,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:16.783125Z"
+      },
+      {
+        "tag": "traceability",
+        "original_tag": "traceability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.726554,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:17.936707Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Set Up Monitoring and Alerting for Unusual Patterns",
+    "summary": "Implement monitoring and alerting systems to detect unusual patterns in screening results, enabling quick response to potential issues.",
+    "tags": [
+      "security",
+      "monitoring",
+      "alerting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 50-53",
+    "reasoning": {
+      "source_summary_fragment": "monitoring and alerting",
+      "tag_metadata_reference": [
+        {
+          "tag": "security",
+          "confidence": 0.93
+        },
+        {
+          "tag": "monitoring",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "anomaly detection"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] alerting",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "security",
+      "monitoring",
+      "alerting"
+    ],
+    "tags_v2": [
+      "security",
+      "monitoring",
+      "alert"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "security",
+        "canonical_tag": "security",
+        "matched_tag": "security",
+        "tag_origin_cluster_id": "security",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.810874Z"
+      },
+      {
+        "original_tag": "monitoring",
+        "canonical_tag": "monitoring",
+        "matched_tag": "monitoring",
+        "tag_origin_cluster_id": "monitoring",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:24.813877Z"
+      },
+      {
+        "original_tag": "alerting",
+        "canonical_tag": "alert",
+        "matched_tag": "alert",
+        "tag_origin_cluster_id": "alert",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7007545828819275,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:24.942813Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "security",
+      "matching",
+      "monitoring",
+      "aml",
+      "workflow",
+      "alert"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.715343,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:35.943736Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.738911,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:37.195152Z"
+      },
+      {
+        "tag": "matching",
+        "original_tag": "matching",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.701128,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:38.331849Z"
+      },
+      {
+        "tag": "monitoring",
+        "original_tag": "monitoring",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.764284,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:39.360129Z"
+      },
+      {
+        "tag": "aml",
+        "original_tag": "aml",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.688558,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:40.402772Z"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709572,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:41.473236Z"
+      },
+      {
+        "tag": "alert",
+        "original_tag": "alerting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.719754,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:42.542480Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Ensure Compliance with Local and International Regulations",
+    "summary": "Ensure the system complies with all relevant local and international regulations, including data protection and privacy laws.",
+    "tags": [
+      "regulatory",
+      "compliance",
+      "privacy"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 55-58",
+    "reasoning": {
+      "source_summary_fragment": "regulatory compliance",
+      "tag_metadata_reference": [
+        {
+          "tag": "regulatory",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory requirements"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] privacy",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "regulatory",
+      "compliance",
+      "privacy"
+    ],
+    "tags_v2": [
+      "regulation",
+      "compliance",
+      "privacy"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "regulatory",
+        "canonical_tag": "regulation",
+        "matched_tag": "regulation",
+        "tag_origin_cluster_id": "regulation",
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7411317825317383,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:25.068387Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.071515Z"
+      },
+      {
+        "original_tag": "privacy",
+        "canonical_tag": "privacy",
+        "matched_tag": "privacy",
+        "tag_origin_cluster_id": "privacy",
+        "original_confidence": null,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.078497Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "audit",
+      "regulation",
+      "security",
+      "workflow",
+      "manual",
+      "privacy"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.733577,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:58.703794Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.731801,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:52:59.869887Z"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulatory",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.72651,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:00.932135Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.736621,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:01.999307Z"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.700955,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:03.090381Z"
+      },
+      {
+        "tag": "manual",
+        "original_tag": "manual",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.688182,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:04.149350Z"
+      },
+      {
+        "tag": "privacy",
+        "original_tag": "privacy",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711558,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:05.183825Z"
+      },
+      {
+        "tag": "immutable",
+        "original_tag": "immutability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.659893,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:06.267949Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Collaborate with Legal and Customer Support for Edge-Case Handling",
+    "summary": "Collaborate with legal and customer support teams to develop procedures for handling edge cases and ensuring compliance with regulations.",
+    "tags": [
+      "legal",
+      "support",
+      "edge-cases"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CustomerOnboarding",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 60-62",
+    "reasoning": {
+      "source_summary_fragment": "edge-case handling",
+      "tag_metadata_reference": [
+        {
+          "tag": "legal",
+          "confidence": 0.9
+        },
+        {
+          "tag": "support",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "collaboration"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] edge-cases",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "legal",
+      "support",
+      "edge-cases"
+    ],
+    "tags_v2": [
+      "legal",
+      "support",
+      "edge case"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "legal",
+        "canonical_tag": "legal",
+        "matched_tag": "legal",
+        "tag_origin_cluster_id": "legal",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.082124Z"
+      },
+      {
+        "original_tag": "support",
+        "canonical_tag": "support",
+        "matched_tag": "support",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.085281Z"
+      },
+      {
+        "original_tag": "edge-cases",
+        "canonical_tag": "edge case",
+        "matched_tag": "edge case",
+        "tag_origin_cluster_id": "edge case",
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.8297152519226074,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:57:25.215093Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "audit",
+      "security",
+      "dashboard",
+      "legal",
+      "support",
+      "reporting"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.734134,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:25.874302Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.737193,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:27.016660Z"
+      },
+      {
+        "tag": "security",
+        "original_tag": "security",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.74168,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:28.123527Z"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.694334,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:29.243991Z"
+      },
+      {
+        "tag": "legal",
+        "original_tag": "legal",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.714658,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:30.387675Z"
+      },
+      {
+        "tag": "support",
+        "original_tag": "support",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709226,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:31.498939Z"
+      },
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704782,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-007-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-007",
+        "timestamp": "2025-09-16T00:53:32.621165Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-007-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Document and Train for Manual Review Procedures",
+    "summary": "Develop comprehensive documentation and training programs for manual review procedures to ensure consistency and compliance.",
+    "tags": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.75,
+    "priority": "low",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 65-67",
+    "reasoning": {
+      "source_summary_fragment": "manual review procedures",
+      "tag_metadata_reference": [
+        {
+          "tag": "training",
+          "confidence": 0.9
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "manual review"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "[INFERRED] manual-review",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-007",
+    "tags_v1": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "tags_v2": [
+      "training",
+      "documentation",
+      "manual-review"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "training",
+        "canonical_tag": "training",
+        "matched_tag": "training",
+        "tag_origin_cluster_id": "training",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.222954Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.88,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.229270Z"
+      },
+      {
+        "original_tag": "manual-review",
+        "canonical_tag": "manual-review",
+        "matched_tag": "manual-review",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "semantic",
+        "similarity": 0.7150020599365234,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:57:25.337163Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

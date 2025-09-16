@@ -1,0 +1,132 @@
+{
+  "hlj_id": "REQ-008-HLJ-Chunk_2-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-008",
+  "domain": "FinTech",
+  "title": "Secure data in transit and at rest with encryption and RBAC",
+  "summary": "Implement data protection across all layers by encrypting sensitive information both in transit and at rest, and restrict system access using robust role-based access control. These controls protect user privacy and financial data, fulfilling critical fintech security requirements.",
+  "tags_v1": [
+    "encryption",
+    "rbac",
+    "[INFERRED] compliance"
+  ],
+  "tags_v2": [
+    "encryption",
+    "rbac"
+  ],
+  "tags_v3": [
+    "encryption",
+    "income",
+    "eligibility",
+    "rbac",
+    "rules",
+    "compliance",
+    "analytics"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "encryption",
+      "aliases": [],
+      "cluster_id": "20",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.720423,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "encryption",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "income",
+      "aliases": [],
+      "cluster_id": "256",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.718085,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "income",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "eligibility",
+      "aliases": [
+        "eligibility rules"
+      ],
+      "cluster_id": "5",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.735658,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "eligibility",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rbac",
+      "aliases": [],
+      "cluster_id": "21",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.716266,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rbac",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rules",
+      "aliases": [],
+      "cluster_id": "177",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.688206,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rules",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "compliance",
+      "aliases": [
+        "compliancereporting",
+        "compliance monitoring"
+      ],
+      "cluster_id": "12",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.717194,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "compliance",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "analytics",
+      "aliases": [],
+      "cluster_id": "32",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 1,
+      "confidence": 0.712916,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "analytics",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.951492Z"
+}

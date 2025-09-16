@@ -1,0 +1,71 @@
+{
+  "hlj_id": "REQ-006-HLJ-Chunk_1-Item_2-v1.0",
+  "model": "gpt41",
+  "req_id": "req-006",
+  "domain": "FinTech",
+  "title": "Support both burst and sustained rate limits with fallback behavior",
+  "summary": "Implement dual-layered rate limiting, managing both burst (short-term spikes) and sustained (ongoing) usage per tenant. Ensure proper fallback logic to maintain reliability during outages or misconfigurations.",
+  "tags_v1": [
+    "rate-limiting",
+    "[INFERRED] resilience"
+  ],
+  "tags_v2": [],
+  "tags_v3": [
+    "rate-limiting",
+    "api",
+    "burst limits"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "rate-limiting",
+      "aliases": [
+        "rate_limiting",
+        "rate-limit",
+        "rate limiting",
+        "rate limit",
+        "rate limit policies"
+      ],
+      "cluster_id": "47",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.810402,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rate-limiting",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "api",
+      "aliases": [
+        "apis"
+      ],
+      "cluster_id": "52",
+      "domains": [],
+      "model": "opus4",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.742905,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "api",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "burst limits",
+      "aliases": [],
+      "cluster_id": "358",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.79351,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "burst limits",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.953249Z"
+}

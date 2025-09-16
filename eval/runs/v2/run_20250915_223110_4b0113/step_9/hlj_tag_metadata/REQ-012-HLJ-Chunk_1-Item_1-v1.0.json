@@ -1,0 +1,84 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_1-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Implement dynamic GST rate table with auto-updates for all supported provinces",
+  "summary": "Design and deliver a robust GST rate management framework that supports all Canadian provinces, enabling ongoing updates to GST rates as they change at the federal and provincial levels. The solution must actively reflect and enforce new rates across the entire B2B SaaS platform. It should integrate automated update mechanisms to minimize manual intervention and ensure tax accuracy.",
+  "tags_v1": [
+    "gst",
+    "rates",
+    "[INFERRED] automation"
+  ],
+  "tags_v2": [
+    "gst",
+    "rates"
+  ],
+  "tags_v3": [
+    "gst",
+    "rates",
+    "tax",
+    "provincial tax"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 4,
+      "confidence": 0.769053,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "rates",
+      "aliases": [],
+      "cluster_id": "153",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.742179,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "rates",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "tax",
+      "aliases": [
+        "taxation"
+      ],
+      "cluster_id": "204",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.735756,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "taxation",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "provincial tax",
+      "aliases": [],
+      "cluster_id": "399",
+      "domains": [],
+      "model": "meta70b",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.789851,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "provincial tax",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968260Z"
+}

@@ -1,0 +1,3473 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Design scheduling UI to support cross-border payment setup and FX rate previews",
+    "summary": "Create an intuitive user interface enabling users to schedule cross-border payments with upfront FX rate previews. The UI must clearly present scheduling options and ensure transparency in rate selection for international transactions.",
+    "tags": [
+      "scheduled payments",
+      "ui",
+      "[INFERRED] usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "UserInterface"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 07–11",
+    "reasoning": {
+      "source_summary_fragment": "Enhance the payments UI to allow scheduling, FX rate previews, locking actions, expiry visuals",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduled payments",
+          "confidence": 0.96
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "cross-border payment setup",
+        "FX preview",
+        "payment scheduling interface"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "usability",
+      "confidence": 0.88,
+      "method": "semantic_feature_match_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "scheduled payments",
+      "ui",
+      "[INFERRED] usability"
+    ],
+    "tags_v2": [
+      "scheduled payments",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "scheduled payments",
+        "canonical_tag": "scheduled payments",
+        "matched_tag": "scheduled payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.535875Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.540079Z"
+      },
+      {
+        "original_tag": "[INFERRED] usability",
+        "canonical_tag": "[INFERRED] usability",
+        "matched_tag": "[INFERRED] usability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.722103Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "payments",
+      "scheduled payments",
+      "scheduling"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 6,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.714701,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:10.932656Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.748263,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:12.058754Z"
+      },
+      {
+        "tag": "scheduled payments",
+        "original_tag": "scheduled payments",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.799316,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:13.176957Z"
+      },
+      {
+        "tag": "scheduling",
+        "original_tag": "scheduling",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.753704,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:14.519970Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement FX rate lock option with selectable expiry window (e.g., 24h) after scheduling",
+    "summary": "Provide a functionality allowing users to lock in a foreign exchange rate for a fixed, user-selected expiry window after scheduling a payment. This ensures price certainty and risk mitigation against FX fluctuations.",
+    "tags": [
+      "fx",
+      "locking",
+      "[INFERRED] risk management"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "UserScheduling"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 10–14",
+    "reasoning": {
+      "source_summary_fragment": "users to lock foreign exchange (FX) rates for a defined window (e.g., 24 hours), ensuring price certainty",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.98
+        },
+        {
+          "tag": "locking",
+          "confidence": 0.97
+        }
+      ],
+      "mapped_concepts": [
+        "rate lock window",
+        "FX expiry",
+        "user-selected lock time"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "risk management",
+      "confidence": 0.84,
+      "method": "policy_link_inference_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "locking",
+      "[INFERRED] risk management"
+    ],
+    "tags_v2": [
+      "fx",
+      "lock"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.727052Z"
+      },
+      {
+        "original_tag": "locking",
+        "canonical_tag": "lock",
+        "matched_tag": "lock",
+        "tag_origin_cluster_id": "lock",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:29.731942Z"
+      },
+      {
+        "original_tag": "[INFERRED] risk management",
+        "canonical_tag": "[INFERRED] risk management",
+        "matched_tag": "[INFERRED] risk management",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.931666Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fx",
+      "lock",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706898,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:28.852156Z"
+      },
+      {
+        "tag": "lock",
+        "original_tag": "locking",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.730215,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:30.067586Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.67562,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:31.616401Z"
+      },
+      {
+        "tag": "preview",
+        "original_tag": "preview",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.675332,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:33.098867Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.791395,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:34.327584Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Display FX lock expiry details and countdown timers in the user interface",
+    "summary": "Surface FX rate lock expiry information and real-time countdowns in the payment UI. This visually alerts users to the remaining validity window for their locked rate, increasing transparency and preventing confusion.",
+    "tags": [
+      "fx",
+      "ui",
+      "[INFERRED] countdown"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "UserInterface"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.83,
+    "priority": "medium",
+    "priority_confidence": 0.87,
+    "line_source": "Ln 12–13",
+    "reasoning": {
+      "source_summary_fragment": "Enhance the payments UI to allow ... expiry visuals, and countdowns",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.92
+        },
+        {
+          "tag": "ui",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "lock expiry timer",
+        "visual expiry indication"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "countdown",
+      "confidence": 0.86,
+      "method": "semantic_fragment_match_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "ui",
+      "[INFERRED] countdown"
+    ],
+    "tags_v2": [
+      "fx",
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.935659Z"
+      },
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:29.950370Z"
+      },
+      {
+        "original_tag": "[INFERRED] countdown",
+        "canonical_tag": "[INFERRED] countdown",
+        "matched_tag": "[INFERRED] countdown",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.132866Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "ui",
+      "fx",
+      "payments",
+      "fx-rates",
+      "rate-lock",
+      "countdown"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712092,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:49.411212Z"
+      },
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.731912,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:50.479879Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.748843,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:51.557047Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.798908,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:52.638567Z"
+      },
+      {
+        "tag": "rate-lock",
+        "original_tag": "rate-lock",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.797693,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:53.713818Z"
+      },
+      {
+        "tag": "countdown",
+        "original_tag": "countdown",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.740555,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:54:54.784312Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Integrate with FX rate providers for real-time rate fetch and lock confirmation",
+    "summary": "Connect and interface with external FX rate provider APIs to retrieve live exchange rates and process lock confirmations in real time. Ensure the system handles external data consistency and transaction reliability.",
+    "tags": [
+      "fx",
+      "api",
+      "[INFERRED] integrations"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "Integrations"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 15–16",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with external FX rate providers for real-time quotes and locking commitments",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.98
+        },
+        {
+          "tag": "api",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "FX API integration",
+        "real-time provider fetching"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "integrations",
+      "confidence": 0.91,
+      "method": "api_match_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "api",
+      "[INFERRED] integrations"
+    ],
+    "tags_v2": [
+      "fx",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.137352Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.155545Z"
+      },
+      {
+        "original_tag": "[INFERRED] integrations",
+        "canonical_tag": "[INFERRED] integrations",
+        "matched_tag": "[INFERRED] integrations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.338640Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fx",
+      "timer",
+      "ui",
+      "api",
+      "integration",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709508,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:08.851028Z"
+      },
+      {
+        "tag": "timer",
+        "original_tag": "timer",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720343,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:09.930919Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.685537,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:11.062486Z"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.71104,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:12.113732Z"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.69247,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:13.185031Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.79651,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:14.289356Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Revert to live FX rate and notify users if lock expires without funding",
+    "summary": "If a user fails to fund a payment within the FX lock window, the system must revert to the latest available FX rate and promptly notify the user. This prevents stale rate execution and keeps the transaction process transparent.",
+    "tags": [
+      "fx",
+      "notifications",
+      "[INFERRED] fallback"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.81,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 17–18",
+    "reasoning": {
+      "source_summary_fragment": "Payment logic must handle rate expiry, user funding failures, and enable notification",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.93
+        },
+        {
+          "tag": "notifications",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "FX rate expiry handler",
+        "user notification on expiry"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "fallback",
+      "confidence": 0.85,
+      "method": "policy_failover_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "notifications",
+      "[INFERRED] fallback"
+    ],
+    "tags_v2": [
+      "fx",
+      "notification"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.344034Z"
+      },
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:30.361688Z"
+      },
+      {
+        "original_tag": "[INFERRED] fallback",
+        "canonical_tag": "[INFERRED] fallback",
+        "matched_tag": "[INFERRED] fallback",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.537270Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fx",
+      "compliance",
+      "notification",
+      "lock",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.703165,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:28.499297Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.683406,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:29.606957Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.675215,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:30.723881Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717605,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:31.832593Z"
+      },
+      {
+        "tag": "lock",
+        "original_tag": "lock",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.720789,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:33.076775Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.783796,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:34.186427Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Record all locked FX rates, metadata, and expiry data for audit and reconciliation",
+    "summary": "Store all locked FX rates together with full metadata and expiry information to enable complete audit trails and finance reconciliation. The solution must ensure robust, tamper-evident record keeping aligned with audit requirements.",
+    "tags": [
+      "audit",
+      "fx",
+      "[INFERRED] traceability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Audit",
+      "ForeignExchange"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.84,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 19–20",
+    "reasoning": {
+      "source_summary_fragment": "record all rate locks with audit metadata",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.98
+        },
+        {
+          "tag": "fx",
+          "confidence": 0.95
+        }
+      ],
+      "mapped_concepts": [
+        "FX lock records",
+        "audit-ready metadata"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "traceability",
+      "confidence": 0.89,
+      "method": "audit_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "audit",
+      "fx",
+      "[INFERRED] traceability"
+    ],
+    "tags_v2": [
+      "audit",
+      "fx"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.98,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.542072Z"
+      },
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.546643Z"
+      },
+      {
+        "original_tag": "[INFERRED] traceability",
+        "canonical_tag": "[INFERRED] traceability",
+        "matched_tag": "[INFERRED] traceability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.729926Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "payments",
+      "audit",
+      "fx",
+      "scheduling",
+      "processing"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 4,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.737496,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:48.431192Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.74204,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:49.494773Z"
+      },
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70614,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:50.590829Z"
+      },
+      {
+        "tag": "scheduling",
+        "original_tag": "scheduling",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.737221,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:51.696757Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.67833,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:52.793225Z"
+      },
+      {
+        "tag": "processing",
+        "original_tag": "processing",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699567,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:55:53.896751Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Validate locked rate at execution; require user confirmation if rate expired",
+    "summary": "Upon payment execution, the system must verify the validity of the locked FX rate. If the rate has expired, confirmation from the user is required before proceeding to avoid unintended rate acceptance.",
+    "tags": [
+      "fx",
+      "validation",
+      "[INFERRED] user confirmation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "UserScheduling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.8,
+    "priority": "medium",
+    "priority_confidence": 0.88,
+    "line_source": "Ln 22–24",
+    "reasoning": {
+      "source_summary_fragment": "Payment logic must handle rate expiry ... require user confirmation if rate expired",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.93
+        },
+        {
+          "tag": "validation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "FX rate validation",
+        "post-expiry user flow"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "user confirmation",
+      "confidence": 0.84,
+      "method": "user_flow_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "validation",
+      "[INFERRED] user confirmation"
+    ],
+    "tags_v2": [
+      "fx",
+      "validation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.742007Z"
+      },
+      {
+        "original_tag": "validation",
+        "canonical_tag": "validation",
+        "matched_tag": "validation",
+        "tag_origin_cluster_id": "validation",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.758778Z"
+      },
+      {
+        "original_tag": "[INFERRED] user confirmation",
+        "canonical_tag": "[INFERRED] user confirmation",
+        "matched_tag": "[INFERRED] user confirmation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.932719Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "cancellation",
+      "payments",
+      "fx",
+      "workflow",
+      "validation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "cancellation",
+        "original_tag": "cancellation",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.708123,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:06.190410Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.734608,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:07.225564Z"
+      },
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699075,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:08.312153Z"
+      },
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.699495,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:09.419114Z"
+      },
+      {
+        "tag": "validation",
+        "original_tag": "validation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.711311,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:10.539681Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Support partial/full cancellation of scheduled payments with refunds and notifications",
+    "summary": "Allow users or system administrators to cancel scheduled payments either partially or in full, ensuring that refunds are processed and users are notified. This feature increases flexibility and user trust in the scheduling system.",
+    "tags": [
+      "scheduled payments",
+      "refund",
+      "[INFERRED] cancellation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.82,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 25–26",
+    "reasoning": {
+      "source_summary_fragment": "enable pre-execution cancellations with appropriate refund, notification",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduled payments",
+          "confidence": 0.97
+        },
+        {
+          "tag": "refund",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "partial/full payment cancellation",
+        "refund workflow"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "cancellation",
+      "confidence": 0.89,
+      "method": "payments_action_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "scheduled payments",
+      "refund",
+      "[INFERRED] cancellation"
+    ],
+    "tags_v2": [
+      "scheduled payments",
+      "refund"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "scheduled payments",
+        "canonical_tag": "scheduled payments",
+        "matched_tag": "scheduled payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.937253Z"
+      },
+      {
+        "original_tag": "refund",
+        "canonical_tag": "refund",
+        "matched_tag": "refund",
+        "tag_origin_cluster_id": "refund",
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:30.955523Z"
+      },
+      {
+        "original_tag": "[INFERRED] cancellation",
+        "canonical_tag": "[INFERRED] cancellation",
+        "matched_tag": "[INFERRED] cancellation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.133180Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "refund",
+      "cancellation",
+      "scheduled payments",
+      "compliance",
+      "payments"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "refund",
+        "original_tag": "refunds",
+        "score": 4,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.749456,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:25.636276Z"
+      },
+      {
+        "tag": "cancellation",
+        "original_tag": "cancellation",
+        "score": 3,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.727811,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:26.829438Z"
+      },
+      {
+        "tag": "scheduled payments",
+        "original_tag": "scheduled payments",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.78653,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:28.126504Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.682708,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:29.258316Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.731125,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:30.398669Z"
+      },
+      {
+        "tag": "risk",
+        "original_tag": "risk",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.678162,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:31.543559Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Implement controls against abuse of FX rate locks (e.g., repeated locking/cancelling)",
+    "summary": "Introduce mechanisms to detect and prevent abuse of the FX rate lock function, such as users repeatedly locking and cancelling to speculate on rates. Enforcement policies must be auditable and aligned with regulatory oversight.",
+    "tags": [
+      "fx",
+      "abuse prevention",
+      "[INFERRED] compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "Risk"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.93,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 28–29",
+    "reasoning": {
+      "source_summary_fragment": "Build mechanisms to prevent abuse of rate locks (e.g., speculative cancelling), support regulatory documentation",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.96
+        },
+        {
+          "tag": "abuse prevention",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "FX lock abuse detection",
+        "anti-speculation controls"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.95,
+      "method": "regulation_risk_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "abuse prevention",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "fx"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.138099Z"
+      },
+      {
+        "original_tag": "abuse prevention",
+        "canonical_tag": "abuse prevention",
+        "matched_tag": "abuse prevention",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.313831Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.489121Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "fx",
+      "beta",
+      "feature-toggle",
+      "regulation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 3,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70297,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:45.216556Z"
+      },
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.707222,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:46.388971Z"
+      },
+      {
+        "tag": "beta",
+        "original_tag": "beta",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.684892,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:47.485395Z"
+      },
+      {
+        "tag": "feature-toggle",
+        "original_tag": "feature-toggle",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704819,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:48.624039Z"
+      },
+      {
+        "tag": "regulation",
+        "original_tag": "regulation",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712548,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:56:49.901467Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Support regulatory documentation for large-value cross-border payments",
+    "summary": "Implement workflows to collect and manage regulatory documentation for high-value cross-border transfers, ensuring adherence to compliance requirements and enabling smooth audit processes.",
+    "tags": [
+      "compliance",
+      "documentation",
+      "[INFERRED] regulatory reporting"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Compliance",
+      "CrossBorderPayments"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 29–30",
+    "reasoning": {
+      "source_summary_fragment": "support regulatory documentation for large-value transfers, and maintain complete audit logs",
+      "tag_metadata_reference": [
+        {
+          "tag": "compliance",
+          "confidence": 0.97
+        },
+        {
+          "tag": "documentation",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "regulatory submission",
+        "large-value KYC documentation"
+      ]
+    },
+    "low_confidence_reason": null,
+    "inference_notes": {
+      "tag_added": "regulatory reporting",
+      "confidence": 0.9,
+      "method": "compliance_doc_infer_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "compliance",
+      "documentation",
+      "[INFERRED] regulatory reporting"
+    ],
+    "tags_v2": [
+      "compliance",
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.523618Z"
+      },
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:31.533630Z"
+      },
+      {
+        "original_tag": "[INFERRED] regulatory reporting",
+        "canonical_tag": "[INFERRED] regulatory reporting",
+        "matched_tag": "[INFERRED] regulatory reporting",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.040696Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "beta",
+      "documentation",
+      "audit"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 4,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.722775,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:06.316791Z"
+      },
+      {
+        "tag": "feedback",
+        "original_tag": "feedback",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.678505,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:07.414393Z"
+      },
+      {
+        "tag": "beta",
+        "original_tag": "beta",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.683962,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:08.595869Z"
+      },
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.705672,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:09.720041Z"
+      },
+      {
+        "tag": "analytics",
+        "original_tag": "analytics",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.669059,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:10.865333Z"
+      },
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.739875,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_1-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:12.073516Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+    "title": "Maintain audit logs for all scheduling, FX locking, and execution events",
+    "summary": "Implement comprehensive audit logging to capture all user and system actions related to payment scheduling, FX rate locking, and payment executions. This ensures traceability for compliance and supports investigations or regulatory reporting.",
+    "tags": [
+      "audit",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Audit",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 31",
+    "reasoning": {
+      "source_summary_fragment": "Maintain complete audit logs.",
+      "tag_metadata_reference": [
+        {
+          "tag": "audit",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "event logging in payments"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.95,
+      "method": "direct_inference_from_label"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "audit",
+      "compliance"
+    ],
+    "tags_v2": [
+      "audit",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.046585Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.058273Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "audit",
+      "compliance",
+      "api",
+      "notification",
+      "integration",
+      "sms",
+      "fx-rates",
+      "real-time"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "audit",
+        "original_tag": "audit",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.736539,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:33.345467Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706966,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:34.446409Z"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.680649,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:35.547946Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706925,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:36.653836Z"
+      },
+      {
+        "tag": "integration",
+        "original_tag": "integration",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.681121,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:37.761257Z"
+      },
+      {
+        "tag": "email",
+        "original_tag": "email",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.678497,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:38.858427Z"
+      },
+      {
+        "tag": "sms",
+        "original_tag": "sms",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.686291,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:39.958815Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.771069,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:41.088835Z"
+      },
+      {
+        "tag": "real-time",
+        "original_tag": "real-time",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.721343,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_1-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:42.179349Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+    "title": "Send confirmations, reminders, and expiry alerts via email, SMS, and in-app notifications",
+    "summary": "Establish a multichannel notification system to inform users at key stages in scheduled payments, including confirmations, reminders before execution, and expiry alerts. This maximizes usability and reduces missed transactions.",
+    "tags": [
+      "notifications",
+      "usability",
+      "[INFERRED] messaging"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Notifications",
+      "UserInterface"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 33–34",
+    "reasoning": {
+      "source_summary_fragment": "Notify users at all key stages (confirmation, reminders, expiry) via multiple channels.",
+      "tag_metadata_reference": [
+        {
+          "tag": "notifications",
+          "confidence": 0.94
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        },
+        {
+          "tag": "messaging",
+          "confidence": 0.82
+        }
+      ],
+      "mapped_concepts": [
+        "user alerts",
+        "communication channels",
+        "event-driven messaging"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "messaging",
+      "confidence": 0.82,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "notifications",
+      "usability",
+      "[INFERRED] messaging"
+    ],
+    "tags_v2": [
+      "notification",
+      "usability"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "notifications",
+        "canonical_tag": "notification",
+        "matched_tag": "notification",
+        "tag_origin_cluster_id": "notification",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": true,
+        "timestamp": "2025-05-31T23:59:32.071378Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.082950Z"
+      },
+      {
+        "original_tag": "[INFERRED] messaging",
+        "canonical_tag": "[INFERRED] messaging",
+        "matched_tag": "[INFERRED] messaging",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.268520Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "reporting",
+      "notification",
+      "usability",
+      "fx-rates",
+      "rate-lock"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "reporting",
+        "original_tag": "reporting",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.685493,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:56.700484Z"
+      },
+      {
+        "tag": "notification",
+        "original_tag": "notifications",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.749494,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:57.819675Z"
+      },
+      {
+        "tag": "usability",
+        "original_tag": "usability",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.698674,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:57:58.951154Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.772312,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:00.035607Z"
+      },
+      {
+        "tag": "rate-lock",
+        "original_tag": "rate-lock",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.768134,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:01.205781Z"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 1,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.666404,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_2-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:02.377400Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+    "title": "Develop dashboards for finance/compliance teams to monitor payments, locks, and exceptions",
+    "summary": "Create monitoring dashboards for finance and compliance personnel to review scheduled payments, rate locks, and exception events. These dashboards support operational oversight and regulatory auditing.",
+    "tags": [
+      "dashboard",
+      "compliance"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Reporting",
+      "Compliance"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 35–36",
+    "reasoning": {
+      "source_summary_fragment": "Provide dashboards for finance/compliance monitoring.",
+      "tag_metadata_reference": [
+        {
+          "tag": "dashboard",
+          "confidence": 0.95
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "compliance reporting tools",
+        "operational dashboards",
+        "real-time monitoring"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.93,
+      "method": "direct_inference_from_label"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "dashboard",
+      "compliance"
+    ],
+    "tags_v2": [
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "dashboard",
+        "canonical_tag": "dashboard",
+        "matched_tag": "dashboard",
+        "tag_origin_cluster_id": "dashboard",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.465693Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.476721Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "compliance",
+      "payments",
+      "fx",
+      "dashboard",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717147,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:14.941707Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.733843,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:16.038225Z"
+      },
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.70163,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:17.140388Z"
+      },
+      {
+        "tag": "dashboard",
+        "original_tag": "dashboard",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.719077,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:18.232939Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.777751,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_3-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:19.344546Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+    "title": "Restrict new payment scheduling during FX provider outages and notify users of service limitations",
+    "summary": "Implement logic to block scheduling of new payments when FX services are unavailable, and promptly notify users of any service limitations. This prevents failed lock actions and improves system transparency.",
+    "tags": [
+      "fx",
+      "availability",
+      "[INFERRED] outage-handling"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "Notifications"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.9,
+    "priority": "high",
+    "priority_confidence": 0.95,
+    "line_source": "Ln 38–39",
+    "reasoning": {
+      "source_summary_fragment": "Support edge cases such as FX provider outages.",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.92
+        },
+        {
+          "tag": "availability",
+          "confidence": 0.9
+        },
+        {
+          "tag": "outage-handling",
+          "confidence": 0.86
+        }
+      ],
+      "mapped_concepts": [
+        "upstream dependency management",
+        "service alerts",
+        "resiliency"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "outage-handling",
+      "confidence": 0.86,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "availability",
+      "[INFERRED] outage-handling"
+    ],
+    "tags_v2": [
+      "fx"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.481056Z"
+      },
+      {
+        "original_tag": "availability",
+        "canonical_tag": "availability",
+        "matched_tag": "availability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.671598Z"
+      },
+      {
+        "original_tag": "[INFERRED] outage-handling",
+        "canonical_tag": "[INFERRED] outage-handling",
+        "matched_tag": "[INFERRED] outage-handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.853186Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fx",
+      "rollback",
+      "availability",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.689292,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:36.048503Z"
+      },
+      {
+        "tag": "database",
+        "original_tag": "database",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.660407,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:37.185494Z"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.689405,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:38.302510Z"
+      },
+      {
+        "tag": "metadata",
+        "original_tag": "metadata",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.651508,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:39.436377Z"
+      },
+      {
+        "tag": "beta",
+        "original_tag": "beta",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.658883,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:40.575985Z"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.724651,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:41.709937Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.766905,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_4-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:42.841394Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 15,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+    "title": "Handle insufficient balance at execution: auto-cancel or retry scheduled payment",
+    "summary": "Define failure handling for scheduled payments that cannot execute due to insufficient user balance, enabling either automatic cancellation or a retry mechanism. This improves payment reliability and reduces manual intervention.",
+    "tags": [
+      "scheduled payments",
+      "error handling",
+      "[INFERRED] retry"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "CrossBorderPayments",
+      "ErrorHandling"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 40–41",
+    "reasoning": {
+      "source_summary_fragment": "Handle rate expiry, user funding failures...",
+      "tag_metadata_reference": [
+        {
+          "tag": "scheduled payments",
+          "confidence": 0.93
+        },
+        {
+          "tag": "error handling",
+          "confidence": 0.9
+        },
+        {
+          "tag": "retry",
+          "confidence": 0.78
+        }
+      ],
+      "mapped_concepts": [
+        "automated failure handling",
+        "payment transaction flow",
+        "user funding errors"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "retry",
+      "confidence": 0.78,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "scheduled payments",
+      "error handling",
+      "[INFERRED] retry"
+    ],
+    "tags_v2": [
+      "scheduled payments"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "scheduled payments",
+        "canonical_tag": "scheduled payments",
+        "matched_tag": "scheduled payments",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:32.864872Z"
+      },
+      {
+        "original_tag": "error handling",
+        "canonical_tag": "error handling",
+        "matched_tag": "error handling",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.072615Z"
+      },
+      {
+        "original_tag": "[INFERRED] retry",
+        "canonical_tag": "[INFERRED] retry",
+        "matched_tag": "[INFERRED] retry",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.247807Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "scheduled payments",
+      "fx-rates",
+      "retry"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "scheduled payments",
+        "original_tag": "scheduled payments",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.785401,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:52.741783Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "meta70b",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.667211,
+        "validated": false,
+        "validation_reason": "borderline_similarity",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:53.810926Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.76972,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:54.907905Z"
+      },
+      {
+        "tag": "retry",
+        "original_tag": "retry",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.708839,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_5-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:58:56.030315Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 16,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+    "title": "Integrate with FX provider APIs and validate contractual dependencies",
+    "summary": "Build and verify integration with FX provider APIs, ensuring all contractual obligations are met before enabling live operations. This underpins real-time rate locks and compliance with third-party terms.",
+    "tags": [
+      "fx",
+      "api",
+      "[INFERRED] integrations"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "ForeignExchange",
+      "Integrations"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.96,
+    "line_source": "Ln 43–44",
+    "reasoning": {
+      "source_summary_fragment": "Integrate with external FX rate providers for real-time quotes and locking commitments.",
+      "tag_metadata_reference": [
+        {
+          "tag": "fx",
+          "confidence": 0.93
+        },
+        {
+          "tag": "api",
+          "confidence": 0.91
+        },
+        {
+          "tag": "integrations",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "external API integration",
+        "contract validation",
+        "interface stability"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "integrations",
+      "confidence": 0.89,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "fx",
+      "api",
+      "[INFERRED] integrations"
+    ],
+    "tags_v2": [
+      "fx",
+      "api"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "fx",
+        "canonical_tag": "fx",
+        "matched_tag": "fx",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.251861Z"
+      },
+      {
+        "original_tag": "api",
+        "canonical_tag": "api",
+        "matched_tag": "api",
+        "tag_origin_cluster_id": "api",
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.269342Z"
+      },
+      {
+        "original_tag": "[INFERRED] integrations",
+        "canonical_tag": "[INFERRED] integrations",
+        "matched_tag": "[INFERRED] integrations",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.444154Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "fx",
+      "api",
+      "fx-rates",
+      "availability"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "fx",
+        "original_tag": "fx",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.712113,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:01.658251Z"
+      },
+      {
+        "tag": "api",
+        "original_tag": "api",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.705932,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:02.717743Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.787276,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:03.772785Z"
+      },
+      {
+        "tag": "availability",
+        "original_tag": "availability",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717467,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_6-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:04.800373Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 17,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+    "title": "Ensure no degradation to payment SLAs or regulatory deadlines with new features",
+    "summary": "Guarantee that scheduled payment enhancements do not cause delays or missed cutoffs with respect to payment SLAs or regulation-mandated timelines. This is critical for ongoing trust and legal compliance.",
+    "tags": [
+      "sla",
+      "compliance",
+      "[INFERRED] reliability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "PaymentProcessing",
+      "Compliance"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.92,
+    "priority": "high",
+    "priority_confidence": 0.97,
+    "line_source": "Ln 45–46",
+    "reasoning": {
+      "source_summary_fragment": "Ensure payment processing SLAs/regulatory timelines remain unaffected.",
+      "tag_metadata_reference": [
+        {
+          "tag": "sla",
+          "confidence": 0.93
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.94
+        },
+        {
+          "tag": "reliability",
+          "confidence": 0.81
+        }
+      ],
+      "mapped_concepts": [
+        "service quality",
+        "SLA adherence",
+        "regulatory compliance timing"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "reliability",
+      "confidence": 0.81,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "sla",
+      "compliance",
+      "[INFERRED] reliability"
+    ],
+    "tags_v2": [
+      "sla",
+      "compliance"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "sla",
+        "canonical_tag": "sla",
+        "matched_tag": "sla",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.462142Z"
+      },
+      {
+        "original_tag": "compliance",
+        "canonical_tag": "compliance",
+        "matched_tag": "compliance",
+        "tag_origin_cluster_id": "compliance",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.480903Z"
+      },
+      {
+        "original_tag": "[INFERRED] reliability",
+        "canonical_tag": "[INFERRED] reliability",
+        "matched_tag": "[INFERRED] reliability",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.664892Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "validation",
+      "compliance",
+      "sla",
+      "payments",
+      "fx-rates"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "validation",
+        "original_tag": "validation",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.685841,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:11.210181Z"
+      },
+      {
+        "tag": "compliance",
+        "original_tag": "compliance",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.704728,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:12.228973Z"
+      },
+      {
+        "tag": "sla",
+        "original_tag": "sla",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.706365,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:13.226754Z"
+      },
+      {
+        "tag": "payments",
+        "original_tag": "payments",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.725468,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:14.260462Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.758736,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_7-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:15.312713Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 18,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+    "title": "Prepare and execute limited beta rollout with feedback collection processes",
+    "summary": "Plan and launch a controlled beta release for the scheduled FX payments feature, incorporating mechanisms to capture user and support feedback to inform future improvements.",
+    "tags": [
+      "beta",
+      "usability",
+      "[INFERRED] rollout"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Rollout",
+      "UserFeedback"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 48–49",
+    "reasoning": {
+      "source_summary_fragment": "The feature will launch as a limited beta before general release, with user and support documentation and a structured feedback process.",
+      "tag_metadata_reference": [
+        {
+          "tag": "beta",
+          "confidence": 0.92
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.87
+        },
+        {
+          "tag": "rollout",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "beta testing",
+        "feedback-driven development",
+        "controlled release"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "rollout",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "beta",
+      "usability",
+      "[INFERRED] rollout"
+    ],
+    "tags_v2": [
+      "beta"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "beta",
+        "canonical_tag": "beta",
+        "matched_tag": "beta",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.668810Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.87,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:33.860494Z"
+      },
+      {
+        "original_tag": "[INFERRED] rollout",
+        "canonical_tag": "[INFERRED] rollout",
+        "matched_tag": "[INFERRED] rollout",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:34.040201Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "workflow",
+      "beta",
+      "ui",
+      "fx-rates",
+      "rollback"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "workflow",
+        "original_tag": "workflow",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.719547,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:21.488840Z"
+      },
+      {
+        "tag": "beta",
+        "original_tag": "beta",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.73107,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:22.521634Z"
+      },
+      {
+        "tag": "ui",
+        "original_tag": "ui",
+        "score": 2,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.686897,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:23.560999Z"
+      },
+      {
+        "tag": "fx-rates",
+        "original_tag": "fx-rates",
+        "score": 1,
+        "model": "opus4",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.77074,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:24.601522Z"
+      },
+      {
+        "tag": "rollback",
+        "original_tag": "rollout",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.709301,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_8-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:25.626825Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 19,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_9-v1.0",
+    "title": "Develop user and support documentation for new scheduled FX payment features",
+    "summary": "Produce comprehensive documentation to support users and internal teams regarding the new scheduled FX payment capabilities. Clear guides enhance adoption and reduce support burden.",
+    "tags": [
+      "documentation",
+      "usability"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 47–48",
+    "reasoning": {
+      "source_summary_fragment": "Develop user and support documentation for new scheduled FX payment features.",
+      "tag_metadata_reference": [
+        {
+          "tag": "documentation",
+          "confidence": 0.95
+        },
+        {
+          "tag": "usability",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "user guides",
+        "support resources",
+        "feature onboarding"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": 0.94,
+      "method": "direct_inference_from_label"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "documentation",
+      "usability"
+    ],
+    "tags_v2": [
+      "documentation"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "documentation",
+        "canonical_tag": "documentation",
+        "matched_tag": "documentation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:34.049098Z"
+      },
+      {
+        "original_tag": "usability",
+        "canonical_tag": "usability",
+        "matched_tag": "usability",
+        "tag_origin_cluster_id": "usability",
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:34.379652Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "documentation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "documentation",
+        "original_tag": "documentation",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.717528,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_9-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:26.715260Z"
+      }
+    ]
+  },
+  {
+    "seq_no": 20,
+    "schema_version": "2025-05-17",
+    "id": "REQ-009-HLJ-Chunk_2-Item_10-v1.0",
+    "title": "Deliver updated modules: UI, FX integration, audit/reporting tools per scope",
+    "summary": "Deliver the comprehensive update covering user interface enhancements, FX provider integration, and audit/reporting functionality as specified in the overall project scope. Each module must meet quality and compliance requirements.",
+    "tags": [
+      "delivery",
+      "modularity",
+      "[INFERRED] implementation"
+    ],
+    "domain": "FinTech",
+    "subdomain": [
+      "UserInterface",
+      "ForeignExchange",
+      "Audit"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.94,
+    "priority": "high",
+    "priority_confidence": 0.98,
+    "line_source": "Ln 50–55",
+    "reasoning": {
+      "source_summary_fragment": "Deliver updated modules: UI, FX integration, audit/reporting tools per scope.",
+      "tag_metadata_reference": [
+        {
+          "tag": "delivery",
+          "confidence": 0.95
+        },
+        {
+          "tag": "modularity",
+          "confidence": 0.91
+        },
+        {
+          "tag": "implementation",
+          "confidence": 0.85
+        }
+      ],
+      "mapped_concepts": [
+        "modular delivery",
+        "end-to-end deployment",
+        "scope alignment"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "implementation",
+      "confidence": 0.85,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-009",
+    "tags_v1": [
+      "delivery",
+      "modularity",
+      "[INFERRED] implementation"
+    ],
+    "tags_v2": [
+      "delivery"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "delivery",
+        "canonical_tag": "delivery",
+        "matched_tag": "delivery",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "mapped_concepts",
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:34.420041Z"
+      },
+      {
+        "original_tag": "modularity",
+        "canonical_tag": "modularity",
+        "matched_tag": "modularity",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:34.651667Z"
+      },
+      {
+        "original_tag": "[INFERRED] implementation",
+        "canonical_tag": "[INFERRED] implementation",
+        "matched_tag": "[INFERRED] implementation",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-05-31T23:59:35.015613Z"
+      }
+    ],
+    "validation_version": "v2",
+    "tags_v3": [
+      "delivery",
+      "implementation"
+    ],
+    "tag_nlu_validation": [
+      {
+        "tag": "delivery",
+        "original_tag": "delivery",
+        "score": 2,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.707169,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:27.705350Z"
+      },
+      {
+        "tag": "implementation",
+        "original_tag": "implementation",
+        "score": 1,
+        "model": "gpt41",
+        "version": "tags_v1",
+        "method": "dedup_canonical",
+        "confidence": 0.715915,
+        "validated": true,
+        "validation_reason": "similarity_above_threshold",
+        "hlj_id": "REQ-009-HLJ-Chunk_2-Item_10-v1.0",
+        "req_id": "req-009",
+        "timestamp": "2025-09-16T00:59:28.697448Z"
+      }
+    ]
+  }
+]

@@ -1,0 +1,1365 @@
+[
+  {
+    "seq_no": 1,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_1-v1.0",
+    "title": "Implement OAuth authentication flow for Salesforce CRM integration",
+    "summary": "Build OAuth 2.0 authentication flow specifically for Salesforce CRM, handling token refresh, permission scopes, and secure credential storage.",
+    "tags": [
+      "oauth",
+      "salesforce",
+      "authentication"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRM Integration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 13",
+    "reasoning": {
+      "source_summary_fragment": "OAuth/API keys integration with major CRMs (Salesforce, HubSpot)",
+      "tag_metadata_reference": [
+        {
+          "tag": "oauth",
+          "confidence": 0.95
+        },
+        {
+          "tag": "salesforce",
+          "confidence": 0.99
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "OAuth flow",
+        "CRM integration",
+        "token management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "oauth",
+      "salesforce",
+      "authentication"
+    ],
+    "tags_v2": [
+      "oauth",
+      "salesforce",
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "oauth",
+        "canonical_tag": "oauth",
+        "matched_tag": "oauth",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.650264Z"
+      },
+      {
+        "original_tag": "salesforce",
+        "canonical_tag": "salesforce",
+        "matched_tag": "salesforce",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.652146Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.653993Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 2,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_2-v1.0",
+    "title": "Implement OAuth authentication flow for HubSpot CRM integration",
+    "summary": "Build OAuth 2.0 authentication flow for HubSpot CRM, managing access tokens, refresh cycles, and API scope permissions.",
+    "tags": [
+      "oauth",
+      "hubspot",
+      "authentication"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRM Integration"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.88,
+    "priority": "high",
+    "priority_confidence": 0.94,
+    "line_source": "Ln 13",
+    "reasoning": {
+      "source_summary_fragment": "OAuth/API keys integration with major CRMs (Salesforce, HubSpot)",
+      "tag_metadata_reference": [
+        {
+          "tag": "oauth",
+          "confidence": 0.95
+        },
+        {
+          "tag": "hubspot",
+          "confidence": 0.99
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.96
+        }
+      ],
+      "mapped_concepts": [
+        "OAuth flow",
+        "CRM integration",
+        "token management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "oauth",
+      "hubspot",
+      "authentication"
+    ],
+    "tags_v2": [
+      "oauth",
+      "hubspot",
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "oauth",
+        "canonical_tag": "oauth",
+        "matched_tag": "oauth",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.656096Z"
+      },
+      {
+        "original_tag": "hubspot",
+        "canonical_tag": "hubspot",
+        "matched_tag": "hubspot",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.99,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.658394Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.660400Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 3,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_3-v1.0",
+    "title": "Build API key authentication mechanism for CRM connections",
+    "summary": "Implement secure API key authentication system for CRM integrations, including key validation, rotation, and secure storage.",
+    "tags": [
+      "api-key",
+      "authentication",
+      "crm-sync"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "CRM Integration"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.92,
+    "line_source": "Ln 13",
+    "reasoning": {
+      "source_summary_fragment": "OAuth/API keys integration with major CRMs",
+      "tag_metadata_reference": [
+        {
+          "tag": "api-key",
+          "confidence": 0.94
+        },
+        {
+          "tag": "authentication",
+          "confidence": 0.96
+        },
+        {
+          "tag": "crm-sync",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "API key management",
+        "CRM authentication",
+        "security"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "api-key",
+      "authentication",
+      "crm-sync"
+    ],
+    "tags_v2": [
+      "authentication"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "api-key",
+        "canonical_tag": "api-key",
+        "matched_tag": "api-key",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.746401Z"
+      },
+      {
+        "original_tag": "authentication",
+        "canonical_tag": "authentication",
+        "matched_tag": "authentication",
+        "tag_origin_cluster_id": "authentication",
+        "original_confidence": 0.96,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.748705Z"
+      },
+      {
+        "original_tag": "crm-sync",
+        "canonical_tag": "crm-sync",
+        "matched_tag": "crm-sync",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.837883Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 4,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_4-v1.0",
+    "title": "Create contact import service with dry run preview functionality",
+    "summary": "Develop contact import service that provides dry run preview capability, showing potential changes before actual import execution.",
+    "tags": [
+      "import",
+      "dry-run",
+      "contacts"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management",
+      "Data Synchronization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 15",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled merge workflows including dry run preview",
+      "tag_metadata_reference": [
+        {
+          "tag": "import",
+          "confidence": 0.92
+        },
+        {
+          "tag": "dry-run",
+          "confidence": 0.96
+        },
+        {
+          "tag": "contacts",
+          "confidence": 0.94
+        }
+      ],
+      "mapped_concepts": [
+        "contact import",
+        "preview functionality",
+        "data validation"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "import",
+      "dry-run",
+      "contacts"
+    ],
+    "tags_v2": [
+      "import",
+      "contacts"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "import",
+        "canonical_tag": "import",
+        "matched_tag": "import",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.840457Z"
+      },
+      {
+        "original_tag": "dry-run",
+        "canonical_tag": "dry-run",
+        "matched_tag": "dry-run",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.935957Z"
+      },
+      {
+        "original_tag": "contacts",
+        "canonical_tag": "contacts",
+        "matched_tag": "contacts",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:15.975194Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 5,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_5-v1.0",
+    "title": "Implement email-based duplicate detection algorithm",
+    "summary": "Create algorithm to detect duplicate contacts based on email addresses, handling variations and formatting differences.",
+    "tags": [
+      "duplicate-detection",
+      "email",
+      "matching"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 19",
+    "reasoning": {
+      "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+      "tag_metadata_reference": [
+        {
+          "tag": "duplicate-detection",
+          "confidence": 0.95
+        },
+        {
+          "tag": "email",
+          "confidence": 0.97
+        },
+        {
+          "tag": "matching",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate detection",
+        "email matching",
+        "data quality"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "duplicate-detection",
+      "email",
+      "matching"
+    ],
+    "tags_v2": [
+      "duplicate-detection",
+      "email",
+      "matching"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "duplicate-detection",
+        "canonical_tag": "duplicate-detection",
+        "matched_tag": "duplicate-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7627638578414917,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.030821Z"
+      },
+      {
+        "original_tag": "email",
+        "canonical_tag": "email",
+        "matched_tag": "email",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.035896Z"
+      },
+      {
+        "original_tag": "matching",
+        "canonical_tag": "matching",
+        "matched_tag": "matching",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.042828Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 6,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_6-v1.0",
+    "title": "Implement phone number duplicate detection algorithm",
+    "summary": "Create algorithm to identify duplicate contacts based on phone numbers, handling different formats and international variations.",
+    "tags": [
+      "duplicate-detection",
+      "phone",
+      "matching"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 19",
+    "reasoning": {
+      "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+      "tag_metadata_reference": [
+        {
+          "tag": "duplicate-detection",
+          "confidence": 0.95
+        },
+        {
+          "tag": "phone",
+          "confidence": 0.97
+        },
+        {
+          "tag": "matching",
+          "confidence": 0.92
+        }
+      ],
+      "mapped_concepts": [
+        "duplicate detection",
+        "phone matching",
+        "data normalization"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "duplicate-detection",
+      "phone",
+      "matching"
+    ],
+    "tags_v2": [
+      "duplicate-detection",
+      "phone",
+      "matching"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "duplicate-detection",
+        "canonical_tag": "duplicate-detection",
+        "matched_tag": "duplicate-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.6981877088546753,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.095833Z"
+      },
+      {
+        "original_tag": "phone",
+        "canonical_tag": "phone",
+        "matched_tag": "phone",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.97,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.098185Z"
+      },
+      {
+        "original_tag": "matching",
+        "canonical_tag": "matching",
+        "matched_tag": "matching",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "source_fragment",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.105757Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 7,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_7-v1.0",
+    "title": "Build fuzzy name matching algorithm for duplicate detection",
+    "summary": "Develop advanced fuzzy matching algorithm to detect duplicate contacts based on similar names, accounting for typos and variations.",
+    "tags": [
+      "duplicate-detection",
+      "fuzzy-matching",
+      "names"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 19",
+    "reasoning": {
+      "source_summary_fragment": "configurable duplicate detection using email/phone/fuzzy name matching",
+      "tag_metadata_reference": [
+        {
+          "tag": "duplicate-detection",
+          "confidence": 0.95
+        },
+        {
+          "tag": "fuzzy-matching",
+          "confidence": 0.96
+        },
+        {
+          "tag": "names",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "fuzzy matching",
+        "name similarity",
+        "duplicate detection"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "duplicate-detection",
+      "fuzzy-matching",
+      "names"
+    ],
+    "tags_v2": [
+      "duplicate-detection"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "duplicate-detection",
+        "canonical_tag": "duplicate-detection",
+        "matched_tag": "duplicate-detection",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "semantic",
+        "similarity": 0.7273359298706055,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.161196Z"
+      },
+      {
+        "original_tag": "fuzzy-matching",
+        "canonical_tag": "fuzzy-matching",
+        "matched_tag": "fuzzy-matching",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.245338Z"
+      },
+      {
+        "original_tag": "names",
+        "canonical_tag": "names",
+        "matched_tag": "names",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.342889Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 8,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_8-v1.0",
+    "title": "Create duplicate review UI with merge/keep/ignore actions",
+    "summary": "Build user interface for reviewing detected duplicates, providing clear options to merge, keep, or ignore duplicate contacts.",
+    "tags": [
+      "ui",
+      "duplicate-resolution",
+      "user-action"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.85,
+    "priority": "high",
+    "priority_confidence": 0.9,
+    "line_source": "Ln 20",
+    "reasoning": {
+      "source_summary_fragment": "user-controlled merge workflows",
+      "tag_metadata_reference": [
+        {
+          "tag": "ui",
+          "confidence": 0.94
+        },
+        {
+          "tag": "duplicate-resolution",
+          "confidence": 0.95
+        },
+        {
+          "tag": "user-action",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "UI design",
+        "duplicate management",
+        "user workflow"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "ui",
+      "duplicate-resolution",
+      "user-action"
+    ],
+    "tags_v2": [
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.345593Z"
+      },
+      {
+        "original_tag": "duplicate-resolution",
+        "canonical_tag": "duplicate-resolution",
+        "matched_tag": "duplicate-resolution",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.441068Z"
+      },
+      {
+        "original_tag": "user-action",
+        "canonical_tag": "user-action",
+        "matched_tag": "user-action",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.538404Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 9,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_9-v1.0",
+    "title": "Build side-by-side field comparison UI for merge conflicts",
+    "summary": "Create interface displaying conflicting field values side-by-side during contact merge, allowing users to select preferred values.",
+    "tags": [
+      "ui",
+      "conflict-resolution",
+      "data-merge"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.86,
+    "priority": "high",
+    "priority_confidence": 0.91,
+    "line_source": "Ln 21",
+    "reasoning": {
+      "source_summary_fragment": "side-by-side field comparison, and conflict resolution",
+      "tag_metadata_reference": [
+        {
+          "tag": "ui",
+          "confidence": 0.94
+        },
+        {
+          "tag": "conflict-resolution",
+          "confidence": 0.96
+        },
+        {
+          "tag": "data-merge",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "field comparison",
+        "conflict UI",
+        "merge workflow"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "ui",
+      "conflict-resolution",
+      "data-merge"
+    ],
+    "tags_v2": [
+      "ui"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "ui",
+        "canonical_tag": "ui",
+        "matched_tag": "ui",
+        "tag_origin_cluster_id": "ui",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.541083Z"
+      },
+      {
+        "original_tag": "conflict-resolution",
+        "canonical_tag": "conflict-resolution",
+        "matched_tag": "conflict-resolution",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.96,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.618225Z"
+      },
+      {
+        "original_tag": "data-merge",
+        "canonical_tag": "data-merge",
+        "matched_tag": "data-merge",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.698498Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 10,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_1-Item_10-v1.0",
+    "title": "Implement automatic duplicate merge based on saved user preferences",
+    "summary": "Develop automated merge system that applies user-defined rules and preferences to handle duplicates without manual intervention.",
+    "tags": [
+      "auto-merge",
+      "preferences",
+      "sync"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Data Synchronization",
+      "Contact Management"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 25",
+    "reasoning": {
+      "source_summary_fragment": "ongoing auto-sync with saved merge preferences",
+      "tag_metadata_reference": [
+        {
+          "tag": "auto-merge",
+          "confidence": 0.94
+        },
+        {
+          "tag": "preferences",
+          "confidence": 0.92
+        },
+        {
+          "tag": "sync",
+          "confidence": 0.93
+        }
+      ],
+      "mapped_concepts": [
+        "automation",
+        "merge rules",
+        "preference management"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": null,
+      "confidence": null,
+      "method": null
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "auto-merge",
+      "preferences",
+      "sync"
+    ],
+    "tags_v2": [
+      "preferences",
+      "sync"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "auto-merge",
+        "canonical_tag": "auto-merge",
+        "matched_tag": "auto-merge",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.94,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.784687Z"
+      },
+      {
+        "original_tag": "preferences",
+        "canonical_tag": "preferences",
+        "matched_tag": "preferences",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.787303Z"
+      },
+      {
+        "original_tag": "sync",
+        "canonical_tag": "sync",
+        "matched_tag": "sync",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.825955Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 11,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_11-v1.0",
+    "title": "Create contact merge history logging system with per-contact audit trail",
+    "summary": "Implement comprehensive logging system that tracks all merge operations with detailed per-contact audit trails. System must capture before/after field states, timestamp all changes, and maintain queryable history for compliance and debugging purposes.",
+    "tags": [
+      "logging",
+      "audit",
+      "history",
+      "[INFERRED] compliance"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Data Synchronization"
+    ],
+    "difficulty": "medium",
+    "difficulty_confidence": 0.87,
+    "priority": "high",
+    "priority_confidence": 0.93,
+    "line_source": "Ln 26",
+    "reasoning": {
+      "source_summary_fragment": "comprehensive change logging",
+      "tag_metadata_reference": [
+        {
+          "tag": "logging",
+          "confidence": 0.95
+        },
+        {
+          "tag": "audit",
+          "confidence": 0.94
+        },
+        {
+          "tag": "history",
+          "confidence": 0.92
+        },
+        {
+          "tag": "compliance",
+          "confidence": 0.88
+        }
+      ],
+      "mapped_concepts": [
+        "audit trail",
+        "change tracking",
+        "data history"
+      ]
+    },
+    "inference_notes": {
+      "tag_added": "compliance",
+      "confidence": 0.88,
+      "method": "sem_tag_synth_v1"
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "logging",
+      "audit",
+      "history",
+      "[INFERRED] compliance"
+    ],
+    "tags_v2": [
+      "audit",
+      "history"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "logging",
+        "canonical_tag": "logs",
+        "matched_tag": "logs",
+        "tag_origin_cluster_id": "logs",
+        "original_confidence": 0.95,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:16.919376Z"
+      },
+      {
+        "original_tag": "audit",
+        "canonical_tag": "audit",
+        "matched_tag": "audit",
+        "tag_origin_cluster_id": "audit",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.922377Z"
+      },
+      {
+        "original_tag": "history",
+        "canonical_tag": "history",
+        "matched_tag": "history",
+        "tag_origin_cluster_id": "history",
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:16.924937Z"
+      },
+      {
+        "original_tag": "[INFERRED] compliance",
+        "canonical_tag": "[INFERRED] compliance",
+        "matched_tag": "[INFERRED] compliance",
+        "tag_origin_cluster_id": null,
+        "original_confidence": null,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.022019Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 12,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_12-v1.0",
+    "title": "Implement webhook conflict detection and sync pause mechanism",
+    "summary": "Build conflict detection system for webhook events that identifies synchronization conflicts between CRM and local data. System must automatically pause sync operations when conflicts detected and provide clear warnings to users.",
+    "tags": [
+      "webhooks",
+      "conflict",
+      "sync-control"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Data Synchronization"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.91,
+    "priority": "medium",
+    "priority_confidence": 0.85,
+    "line_source": "Ln 30",
+    "reasoning": {
+      "source_summary_fragment": "Edge cases handle webhook conflicts by pausing sync with warnings",
+      "tag_metadata_reference": [
+        {
+          "tag": "webhooks",
+          "confidence": 0.93
+        },
+        {
+          "tag": "conflict",
+          "confidence": 0.92
+        },
+        {
+          "tag": "sync-control",
+          "confidence": 0.9
+        }
+      ],
+      "mapped_concepts": [
+        "conflict detection",
+        "sync pause",
+        "webhook handling"
+      ]
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "webhooks",
+      "conflict",
+      "sync-control"
+    ],
+    "tags_v2": [
+      "webhook",
+      "conflict"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "webhooks",
+        "canonical_tag": "webhook",
+        "matched_tag": "webhook",
+        "tag_origin_cluster_id": "webhook",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": true,
+        "timestamp": "2025-09-15T10:30:17.024251Z"
+      },
+      {
+        "original_tag": "conflict",
+        "canonical_tag": "conflict",
+        "matched_tag": "conflict",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.92,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.026366Z"
+      },
+      {
+        "original_tag": "sync-control",
+        "canonical_tag": "sync-control",
+        "matched_tag": "sync-control",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.9,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.103810Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 13,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_13-v1.0",
+    "title": "Build 24-hour merge rollback functionality",
+    "summary": "Develop rollback capability allowing users to undo contact merge operations within 24-hour window. System must restore pre-merge state for all affected contacts and update any dependent records accordingly.",
+    "tags": [
+      "rollback",
+      "undo",
+      "data-recovery"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Contact Management"
+    ],
+    "difficulty": "high",
+    "difficulty_confidence": 0.89,
+    "priority": "medium",
+    "priority_confidence": 0.84,
+    "line_source": "Ln 31",
+    "reasoning": {
+      "source_summary_fragment": "24-hour rollback capability",
+      "tag_metadata_reference": [
+        {
+          "tag": "rollback",
+          "confidence": 0.94
+        },
+        {
+          "tag": "undo",
+          "confidence": 0.91
+        },
+        {
+          "tag": "data-recovery",
+          "confidence": 0.89
+        }
+      ],
+      "mapped_concepts": [
+        "merge rollback",
+        "time-based undo",
+        "state restoration"
+      ]
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "rollback",
+      "undo",
+      "data-recovery"
+    ],
+    "tags_v2": [
+      "rollback",
+      "undo"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "rollback",
+        "canonical_tag": "rollback",
+        "matched_tag": "rollback",
+        "tag_origin_cluster_id": "rollback",
+        "original_confidence": 0.94,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.106011Z"
+      },
+      {
+        "original_tag": "undo",
+        "canonical_tag": "undo",
+        "matched_tag": "undo",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "summary",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.112686Z"
+      },
+      {
+        "original_tag": "data-recovery",
+        "canonical_tag": "data-recovery",
+        "matched_tag": "data-recovery",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.89,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.192356Z"
+      }
+    ],
+    "validation_version": "v2"
+  },
+  {
+    "seq_no": 14,
+    "schema_version": "2025-05-28",
+    "id": "REQ-020-HLJ-Chunk_2-Item_14-v1.0",
+    "title": "Update onboarding guide with CRM sync and duplicate management documentation",
+    "summary": "Create comprehensive documentation covering CRM sync setup, authentication process, duplicate detection configuration, and merge workflow best practices. Include troubleshooting guides and common use case examples.",
+    "tags": [
+      "docs",
+      "onboarding",
+      "user-guide"
+    ],
+    "domain": "SaaS",
+    "subdomain": [
+      "Documentation"
+    ],
+    "difficulty": "low",
+    "difficulty_confidence": 0.92,
+    "priority": "medium",
+    "priority_confidence": 0.86,
+    "line_source": "Ln 35",
+    "reasoning": {
+      "source_summary_fragment": "Includes updated onboarding documentation for CRM sync and duplicate management features",
+      "tag_metadata_reference": [
+        {
+          "tag": "docs",
+          "confidence": 0.95
+        },
+        {
+          "tag": "onboarding",
+          "confidence": 0.93
+        },
+        {
+          "tag": "user-guide",
+          "confidence": 0.91
+        }
+      ],
+      "mapped_concepts": [
+        "documentation update",
+        "user onboarding",
+        "feature guide"
+      ]
+    },
+    "source_hlj_id": "REQ-020",
+    "tags_v1": [
+      "docs",
+      "onboarding",
+      "user-guide"
+    ],
+    "tags_v2": [
+      "docs",
+      "onboarding"
+    ],
+    "tag_validation": [
+      {
+        "original_tag": "docs",
+        "canonical_tag": "docs",
+        "matched_tag": "docs",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.95,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "raw_requirement",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.233008Z"
+      },
+      {
+        "original_tag": "onboarding",
+        "canonical_tag": "onboarding",
+        "matched_tag": "onboarding",
+        "tag_origin_cluster_id": "onboarding",
+        "original_confidence": 0.93,
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.235384Z"
+      },
+      {
+        "original_tag": "user-guide",
+        "canonical_tag": "user-guide",
+        "matched_tag": "user-guide",
+        "tag_origin_cluster_id": null,
+        "original_confidence": 0.91,
+        "validation_status": "none",
+        "similarity": 0.0,
+        "context": null,
+        "alias_used": false,
+        "timestamp": "2025-09-15T10:30:17.332161Z"
+      }
+    ],
+    "validation_version": "v2"
+  }
+]

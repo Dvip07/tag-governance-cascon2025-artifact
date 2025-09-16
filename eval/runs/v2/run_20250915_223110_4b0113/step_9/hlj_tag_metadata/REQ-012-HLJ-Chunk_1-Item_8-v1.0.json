@@ -1,0 +1,51 @@
+{
+  "hlj_id": "REQ-012-HLJ-Chunk_1-Item_8-v1.0",
+  "model": "gpt41",
+  "req_id": "req-012",
+  "domain": "FinTech",
+  "title": "Apply fallback GST rules for ambiguous or missing address data and flag for review",
+  "summary": "Implement fallback rules to determine provisional GST rates when address data is incomplete or ambiguous, and flag such transactions for manual review. This helps maintain tax integrity and reduces risk posed by data errors or incomplete customer records.",
+  "tags_v1": [
+    "gst",
+    "fallback"
+  ],
+  "tags_v2": [
+    "gst",
+    "fallback"
+  ],
+  "tags_v3": [
+    "gst",
+    "fallback"
+  ],
+  "all_tag_metadata": [
+    {
+      "tag": "gst",
+      "aliases": [],
+      "cluster_id": "152",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.770136,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "gst",
+      "method": "dedup_canonical"
+    },
+    {
+      "tag": "fallback",
+      "aliases": [],
+      "cluster_id": "58",
+      "domains": [],
+      "model": "gpt41",
+      "version": "tags_v1",
+      "score": 2,
+      "confidence": 0.736067,
+      "validated": true,
+      "validation_reason": "similarity_above_threshold",
+      "original_tag": "fallback",
+      "method": "dedup_canonical"
+    }
+  ],
+  "timestamp": "2025-09-16T03:13:35.968757Z"
+}
