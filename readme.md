@@ -14,7 +14,7 @@
 * Tail logs: `docker compose logs -f`
 * Stop everything: `docker compose down`
 
-## Work in the Python Container
+## **Work in the Python Container and Running Scripts**
 
 * Open shell: `docker compose exec pipeline bash`
 * Run pipeline script: `docker compose exec pipeline python scripts/run_pipeline.py --config configs/pipeline_v2.yaml`
