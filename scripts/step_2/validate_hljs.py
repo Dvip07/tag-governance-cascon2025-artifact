@@ -14,7 +14,6 @@ from scripts.utils.pipeline_context import get_current_run
 def normalize_tag(tag: str):
     return tag.lower().replace("-", " ").strip()
 
-
 def build_reverse_cluster_map(alias_map):
     reverse_map = {}
     for canonical_tag, cluster_info in alias_map.items():
@@ -76,15 +75,46 @@ def main(cfg, run_id=None, **kwargs):
     domains = cfg.get("step4.domains", ["FinTech", "SaaS"])
     hlj_subpath = cfg.get("step4.hlj_subpath", "hlj/trim_merged/all_trimmed_hljs.json")
     alias_map_path = cfg.get("outputs.tag_alias_map")
+
     if not alias_map_path or not os.path.exists(alias_map_path):
-        raise RuntimeError("❌ Alias map path not set or file missing. Did you run tag_alias_mapping first?")
+        # fallback: try to auto-pick the latest alias map
+        alias_dir = "eval/runs/v1/tag_alias_maps"
+        if os.path.isdir(alias_dir):
+            maps = sorted(
+                [f for f in os.listdir(alias_dir) if f.startswith("tag_alias_map_pipeline")],
+                reverse=True
+            )
+            if maps:
+                alias_map_path = os.path.join(alias_dir, maps[0])
+                print(f"⚠️ Falling back to latest alias map: {alias_map_path}")
+            else:
+                raise RuntimeError(f"❌ No alias maps found in {alias_dir}")
+        else:
+            raise RuntimeError(f"❌ Alias map path not set or file missing, and no alias dir {alias_dir}")
+
 
     sbert_fix_base = cfg.get("outputs.sbert_fix", "sbert_fix")
     sbert_threshold = cfg.get("step4.sbert_threshold", 0.68)
 
     # --- load models
-    nlp = spacy.load("en_core_web_sm")
-    sbert = SentenceTransformer(cfg.get("step4.embedding_model", "all-MiniLM-L6-v2"))
+    # --- load models with auto-download ---
+    try:
+        nlp = spacy.load("en_core_web_sm")
+    except OSError:
+        from spacy.cli import download
+        print("⚠️ spaCy model 'en_core_web_sm' not found. Downloading...")
+        download("en_core_web_sm")
+        nlp = spacy.load("en_core_web_sm")
+
+    embedding_model = cfg.get("step4.embedding_model", "all-MiniLM-L6-v2")
+    try:
+        sbert = SentenceTransformer(embedding_model)
+    except Exception as e:
+        print(f"⚠️ Failed to load SBERT model '{embedding_model}'. Error: {e}")
+        print("Attempting to download from Hugging Face...")
+        # SentenceTransformers auto-downloads when model name is valid, so retry once
+        sbert = SentenceTransformer(embedding_model)
+
 
     # --- load alias map
     if os.path.exists(alias_map_path):

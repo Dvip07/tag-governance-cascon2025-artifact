@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tag Governance & HLJ Pipeline</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <!-- DaisyUI (Tailwind component library for nice UI) -->
+    <script>
+      tailwind.config = {
+        plugins: [daisyui],
+      };
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.js"></script>
+  </head>
+  <body class="bg-gray-50 text-gray-900 font-sans">
+    <div class="max-w-5xl mx-auto p-8 space-y-8">
+      <h1 class="text-4xl font-bold">Tag Governance & HLJ Pipeline</h1>
+      <p class="text-lg text-gray-600">
+        Central README for the research repo tying together HLJ parsing, versioned tag-governance, benchmarking, and the paper.
+      </p>
+
+      <div class="card bg-white shadow-xl p-6">
+        <h2 class="text-2xl font-semibold mb-2">Why this repo exists</h2>
+        <p>
+          We automate requirements engineering artifacts into
+          <b>High-Level JSON (HLJ)</b> and apply a
+          <b>versioned tag-governance pipeline</b> (v0 → v1 → v2). The design
+          emphasizes <b>auditability</b>, <b>confidence scoring</b>, and
+          <b>reproducibility</b> across multi-model outputs (GPT-4.1, Opus4, Meta-70B, etc.).
+        </p>
+      </div>
+
+      <!-- Tabs -->
+      <div role="tablist" class="tabs tabs-boxed">
+        <a role="tab" class="tab tab-active">Repo Map</a>
+        <a role="tab" class="tab">Dataset</a>
+        <a role="tab" class="tab">Pipelines</a>
+        <a role="tab" class="tab">Runner</a>
+      </div>
+
+      <!-- Example content -->
+      <div class="bg-white shadow-md rounded-lg p-4">
+        <ul class="list-disc pl-6 space-y-1">
+          <li><b>configs/</b> – Versioned, YAML-driven pipeline configs.</li>
+          <li><b>scripts/</b> – Runnable modules grouped by step (evaluation, governance, validation).</li>
+          <li><b>raw_requirement/</b> – Domain folders with raw requirement markdown.</li>
+          <li><b>prompts/</b> – Prompt templates (HLJ planning/expansion).</li>
+          <li><b>eval/</b> – All evaluation artifacts.</li>
+          <li><b>output/</b> – Model outputs by requirement.</li>
+          <li><b>docs/</b> – In-depth docs for each pipeline version.</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>

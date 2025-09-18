@@ -1,0 +1,31 @@
+version: "3.8"
+
+services:
+  pipeline:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: tag-governance-pipeline
+    restart: unless-stopped
+    working_dir: /workspace
+    volumes:
+      - .:/workspace
+    command: tail -f /dev/null
+
+  frontend:
+    build:
+      context: ./tag-governance-app
+      dockerfile: Dockerfile
+    container_name: tag-governance-frontend
+    restart: unless-stopped
+    ports:
+      - "5173:5173"
+    working_dir: /app
+    volumes:
+      - ./tag-governance-app:/app
+      - /app/node_modules
+    environment:
+      - VITE_PORT=5173
+    depends_on:
+      - pipeline
+

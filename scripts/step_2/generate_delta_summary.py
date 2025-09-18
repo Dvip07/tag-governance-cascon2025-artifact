@@ -6,6 +6,11 @@ from collections import Counter
 from datetime import datetime
 from scripts.utils.config_resolver import ConfigResolver
 from scripts.utils.pipeline_context import get_current_run
+import sys
+
+ROOT_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if ROOT_DIR not in sys.path:
+    sys.path.insert(0, ROOT_DIR)
 
 
 def summarize_audits(cfg, base_path=None, out_dir=None):
@@ -13,7 +18,8 @@ def summarize_audits(cfg, base_path=None, out_dir=None):
     base_path = base_path or cfg.get("globals.sbert_fix_base", "sbert_fix")
     out_dir = out_dir or cfg.get("outputs.delta_dir", "sbert_fix")
 
-    run = get_current_run()
+    # run = get_current_run()
+    run_id = get_current_run(args.config)
     # run_id = run["run_id"]
     ts = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 

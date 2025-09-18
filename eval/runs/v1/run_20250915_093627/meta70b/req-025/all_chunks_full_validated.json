@@ -57,7 +57,7 @@
         "similarity": 1.0,
         "context": "raw_requirement",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:08.940097Z"
+        "timestamp": "2025-09-18T05:26:43.755309Z"
       },
       {
         "original_tag": "performance",
@@ -69,7 +69,7 @@
         "similarity": 1.0,
         "context": "summary",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:08.944557Z"
+        "timestamp": "2025-09-18T05:26:43.758437Z"
       },
       {
         "original_tag": "[INFERRED] optimization",
@@ -81,7 +81,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.042410Z"
+        "timestamp": "2025-09-18T05:26:43.842952Z"
       }
     ],
     "validation_version": "v2"
@@ -144,7 +144,7 @@
         "similarity": 1.0,
         "context": "raw_requirement",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.092299Z"
+        "timestamp": "2025-09-18T05:26:43.874064Z"
       },
       {
         "original_tag": "analytics",
@@ -156,7 +156,7 @@
         "similarity": 1.0,
         "context": "raw_requirement",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.141493Z"
+        "timestamp": "2025-09-18T05:26:43.903513Z"
       },
       {
         "original_tag": "[INFERRED] metrics",
@@ -168,7 +168,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.238261Z"
+        "timestamp": "2025-09-18T05:26:43.989296Z"
       }
     ],
     "validation_version": "v2"
@@ -231,7 +231,7 @@
         "similarity": 1.0,
         "context": "raw_requirement",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.288779Z"
+        "timestamp": "2025-09-18T05:26:44.021112Z"
       },
       {
         "original_tag": "dashboards",
@@ -243,7 +243,7 @@
         "similarity": 1.0,
         "context": "mapped_concepts",
         "alias_used": true,
-        "timestamp": "2025-09-15T10:29:09.297187Z"
+        "timestamp": "2025-09-18T05:26:44.026965Z"
       },
       {
         "original_tag": "[INFERRED] engineering",
@@ -255,7 +255,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.389974Z"
+        "timestamp": "2025-09-18T05:26:44.119255Z"
       }
     ],
     "validation_version": "v2"
@@ -318,7 +318,7 @@
         "similarity": 1.0,
         "context": "raw_requirement",
         "alias_used": true,
-        "timestamp": "2025-09-15T10:29:09.439492Z"
+        "timestamp": "2025-09-18T05:26:44.150352Z"
       },
       {
         "original_tag": "Root Cause Analysis",
@@ -327,10 +327,10 @@
         "tag_origin_cluster_id": null,
         "original_confidence": null,
         "validation_status": "semantic",
-        "similarity": 0.7526103258132935,
+        "similarity": 0.7526102066040039,
         "context": "mapped_concepts",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.525562Z"
+        "timestamp": "2025-09-18T05:26:44.212624Z"
       },
       {
         "original_tag": "[INFERRED] debugging",
@@ -342,7 +342,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.621728Z"
+        "timestamp": "2025-09-18T05:26:44.299259Z"
       }
     ],
     "validation_version": "v2"
@@ -405,7 +405,7 @@
         "similarity": 1.0,
         "context": "mapped_concepts",
         "alias_used": true,
-        "timestamp": "2025-09-15T10:29:09.629957Z"
+        "timestamp": "2025-09-18T05:26:44.305395Z"
       },
       {
         "original_tag": "SLA",
@@ -417,7 +417,7 @@
         "similarity": 1.0,
         "context": "mapped_concepts",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.637835Z"
+        "timestamp": "2025-09-18T05:26:44.310814Z"
       },
       {
         "original_tag": "[INFERRED] notification",
@@ -429,7 +429,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.738145Z"
+        "timestamp": "2025-09-18T05:26:44.396122Z"
       }
     ],
     "validation_version": "v2"
@@ -478,20 +478,21 @@
       "[INFERRED] automation"
     ],
     "tags_v2": [
+      "ci/cd",
       "optimization"
     ],
     "tag_validation": [
       {
         "original_tag": "CI/CD",
-        "canonical_tag": "ci cd",
-        "matched_tag": "ci cd",
-        "tag_origin_cluster_id": "ci cd",
+        "canonical_tag": "ci/cd",
+        "matched_tag": "ci/cd",
+        "tag_origin_cluster_id": "ci/cd",
         "original_confidence": 0.95,
-        "validation_status": "none",
-        "similarity": 0.0,
-        "context": null,
-        "alias_used": true,
-        "timestamp": "2025-09-15T10:29:09.838098Z"
+        "validation_status": "direct",
+        "similarity": 1.0,
+        "context": "title",
+        "alias_used": false,
+        "timestamp": "2025-09-18T05:26:44.398466Z"
       },
       {
         "original_tag": "optimization",
@@ -503,7 +504,7 @@
         "similarity": 1.0,
         "context": "mapped_concepts",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.847676Z"
+        "timestamp": "2025-09-18T05:26:44.405168Z"
       },
       {
         "original_tag": "[INFERRED] automation",
@@ -515,7 +516,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.943528Z"
+        "timestamp": "2025-09-18T05:26:44.487020Z"
       }
     ],
     "validation_version": "v2"
@@ -578,7 +579,7 @@
         "similarity": 1.0,
         "context": "title",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.946433Z"
+        "timestamp": "2025-09-18T05:26:44.489378Z"
       },
       {
         "original_tag": "external services",
@@ -590,7 +591,7 @@
         "similarity": 1.0,
         "context": "title",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:09.949340Z"
+        "timestamp": "2025-09-18T05:26:44.491113Z"
       },
       {
         "original_tag": "[INFERRED] reliability",
@@ -602,7 +603,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:10.051088Z"
+        "timestamp": "2025-09-18T05:26:44.571653Z"
       }
     ],
     "validation_version": "v2"
@@ -665,7 +666,7 @@
         "similarity": 1.0,
         "context": "title",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:10.053664Z"
+        "timestamp": "2025-09-18T05:26:44.573709Z"
       },
       {
         "original_tag": "compliance",
@@ -677,7 +678,7 @@
         "similarity": 1.0,
         "context": "mapped_concepts",
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:10.062567Z"
+        "timestamp": "2025-09-18T05:26:44.580044Z"
       },
       {
         "original_tag": "[INFERRED] data protection",
@@ -689,7 +690,7 @@
         "similarity": 0.0,
         "context": null,
         "alias_used": false,
-        "timestamp": "2025-09-15T10:29:10.167937Z"
+        "timestamp": "2025-09-18T05:26:44.661267Z"
       }
     ],
     "validation_version": "v2"

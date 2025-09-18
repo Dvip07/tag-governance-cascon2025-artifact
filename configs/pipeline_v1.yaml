@@ -1,6 +1,6 @@
 globals:
   base_eval_dir: eval/runs/v1
-  current_run_id: pipeline_20250915_095209_d5351f
+  current_run_id: pipeline_20250918_052625_a1a788
   run_dir: eval/runs/v1/run_20250915_093627
   run_id: run_20250915_093627
 outputs:
@@ -13,7 +13,7 @@ outputs:
   eval_base: eval/runs/v1
   flagged_csv: null
   flagged_md: null
-  tag_alias_map: eval/runs/v1/tag_alias_maps/tag_alias_map_pipeline_20250915_095209_d5351f.json
+  tag_alias_map: eval/runs/v1/tag_alias_maps/tag_alias_map_pipeline_20250918_052625_a1a788.json
   tag_alias_maps: eval/runs/v1/tag_alias_maps
   trends_csv: null
   trends_md: null
@@ -42,6 +42,20 @@ pipeline_runs:
     timestamp: '2025-09-15T09:51:35.389671'
   pipeline_20250915_095209_d5351f:
     timestamp: '2025-09-15T09:52:09.326838'
+  pipeline_20250916_064343_0119f5:
+    timestamp: '2025-09-16T06:43:43.931004'
+  pipeline_20250916_070029_53342e:
+    timestamp: '2025-09-16T07:00:29.407785'
+  pipeline_20250916_070451_f45fb2:
+    timestamp: '2025-09-16T07:04:51.493839'
+  pipeline_20250916_070806_ea495c:
+    timestamp: '2025-09-16T07:08:06.328122'
+  pipeline_20250918_051810_50cb28:
+    timestamp: '2025-09-18T05:18:10.588749'
+  pipeline_20250918_052356_322a24:
+    timestamp: '2025-09-18T05:23:56.727749'
+  pipeline_20250918_052625_a1a788:
+    timestamp: '2025-09-18T05:26:25.032899'
 scripts:
 - args: []
   script: scripts/step_2/list_dropped_tags.py
@@ -56,7 +70,7 @@ scripts:
 - args: []
   script: scripts/step_2/generate_audits.py
 - args: []
-  script: scripts/step_2/delta_summary.py
+  script: scripts/step_2/generate_delta_summary.py
 - args: []
   script: scripts/step_2/analyze_change_trends.py
 - args: []
@@ -78,6 +92,3 @@ step4:
   hlj_subpath: hlj/trim_merged/all_trimmed_hljs.json
   raw_requirements: raw_requirement
   sbert_threshold: 0.68
-
-
-# python -m scripts.run_pipeline --config configs/pipeline_v1.yaml

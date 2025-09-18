@@ -16,7 +16,7 @@
     similarity: 0.0
     context: null
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.624004Z'
+    timestamp: '2025-09-18T05:27:43.347952Z'
   - original_tag: parallel
     canonical_tag: parallel
     matched_tag: parallel
@@ -26,7 +26,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.626864Z'
+    timestamp: '2025-09-18T05:27:43.350098Z'
   - original_tag: staging
     canonical_tag: staging
     matched_tag: staging
@@ -36,27 +36,28 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.629199Z'
+    timestamp: '2025-09-18T05:27:43.351782Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:20.629205Z'
+  timestamp: '2025-09-18T05:27:43.351788Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_2-v1.0
   original_tags:
   - ci-cd
   - blocking
   - critical-path
   validated_tags:
+  - ci/cd
   - blocking
   tag_results:
   - original_tag: ci-cd
-    canonical_tag: ci cd
-    matched_tag: ci cd
-    tag_origin_cluster_id: ci cd
+    canonical_tag: ci/cd
+    matched_tag: ci/cd
+    tag_origin_cluster_id: ci/cd
     original_confidence: 0.97
-    validation_status: none
-    similarity: 0.0
-    context: null
-    alias_used: false
-    timestamp: '2025-09-15T10:30:20.730157Z'
+    validation_status: direct
+    similarity: 1.0
+    context: title
+    alias_used: true
+    timestamp: '2025-09-18T05:27:43.353577Z'
   - original_tag: blocking
     canonical_tag: blocking
     matched_tag: blocking
@@ -66,7 +67,7 @@
     similarity: 1.0
     context: raw_requirement
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.783469Z'
+    timestamp: '2025-09-18T05:27:43.387539Z'
   - original_tag: critical-path
     canonical_tag: critical-path
     matched_tag: critical-path
@@ -76,9 +77,9 @@
     similarity: 0.0
     context: null
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.883841Z'
+    timestamp: '2025-09-18T05:27:43.476902Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:20.883846Z'
+  timestamp: '2025-09-18T05:27:43.476908Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_3-v1.0
   original_tags:
   - coverage
@@ -96,7 +97,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.886910Z'
+    timestamp: '2025-09-18T05:27:43.479249Z'
   - original_tag: analytics
     canonical_tag: analytics
     matched_tag: analytics
@@ -106,9 +107,9 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.889641Z'
+    timestamp: '2025-09-18T05:27:43.481037Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:20.889643Z'
+  timestamp: '2025-09-18T05:27:43.481040Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_4-v1.0
   original_tags:
   - coverage
@@ -126,7 +127,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.891594Z'
+    timestamp: '2025-09-18T05:27:43.482506Z'
   - original_tag: visualization
     canonical_tag: visualization
     matched_tag: visualization
@@ -136,9 +137,9 @@
     similarity: 1.0
     context: mapped_concepts
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.902714Z'
+    timestamp: '2025-09-18T05:27:43.490191Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:20.902717Z'
+  timestamp: '2025-09-18T05:27:43.490193Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_5-v1.0
   original_tags:
   - logs
@@ -159,7 +160,7 @@
     similarity: 1.0
     context: raw_requirement
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.954456Z'
+    timestamp: '2025-09-18T05:27:43.522001Z'
   - original_tag: screenshots
     canonical_tag: screenshots
     matched_tag: screenshots
@@ -169,7 +170,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.957134Z'
+    timestamp: '2025-09-18T05:27:43.523754Z'
   - original_tag: video
     canonical_tag: video
     matched_tag: video
@@ -179,7 +180,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:20.959646Z'
+    timestamp: '2025-09-18T05:27:43.525405Z'
   - original_tag: '[INFERRED] artifact-retention'
     canonical_tag: '[INFERRED] artifact-retention'
     matched_tag: '[INFERRED] artifact-retention'
@@ -189,9 +190,9 @@
     similarity: 0.0
     context: null
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.059130Z'
+    timestamp: '2025-09-18T05:27:43.617475Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.059135Z'
+  timestamp: '2025-09-18T05:27:43.617481Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_6-v1.0
   original_tags:
   - flakiness
@@ -209,7 +210,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.061419Z'
+    timestamp: '2025-09-18T05:27:43.619385Z'
   - original_tag: recommendations
     canonical_tag: recommendations
     matched_tag: recommendations
@@ -219,9 +220,9 @@
     similarity: 1.0
     context: summary
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.067201Z'
+    timestamp: '2025-09-18T05:27:43.623373Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.067204Z'
+  timestamp: '2025-09-18T05:27:43.623375Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_7-v1.0
   original_tags:
   - flakiness
@@ -239,7 +240,7 @@
     similarity: 1.0
     context: mapped_concepts
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.077585Z'
+    timestamp: '2025-09-18T05:27:43.630543Z'
   - original_tag: headless
     canonical_tag: headless
     matched_tag: headless
@@ -249,9 +250,9 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.079745Z'
+    timestamp: '2025-09-18T05:27:43.632007Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.079747Z'
+  timestamp: '2025-09-18T05:27:43.632009Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_8-v1.0
   original_tags:
   - quarantine
@@ -269,7 +270,7 @@
     similarity: 1.0
     context: summary
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.087378Z'
+    timestamp: '2025-09-18T05:27:43.636885Z'
   - original_tag: flakiness
     canonical_tag: flakiness
     matched_tag: flakiness
@@ -279,9 +280,9 @@
     similarity: 1.0
     context: raw_requirement
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.138252Z'
+    timestamp: '2025-09-18T05:27:43.668041Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.138256Z'
+  timestamp: '2025-09-18T05:27:43.668045Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_9-v1.0
   original_tags:
   - documentation
@@ -298,7 +299,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.141112Z'
+    timestamp: '2025-09-18T05:27:43.669891Z'
   - original_tag: testing-guides
     canonical_tag: testing-guides
     matched_tag: testing-guides
@@ -308,9 +309,9 @@
     similarity: 0.0
     context: null
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.242495Z'
+    timestamp: '2025-09-18T05:27:43.758246Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.242499Z'
+  timestamp: '2025-09-18T05:27:43.758251Z'
 - hlj_id: REQ-030-HLJ-Chunk_1-Item_10-v1.0
   original_tags:
   - browser-matrix
@@ -325,10 +326,10 @@
     tag_origin_cluster_id: null
     original_confidence: 0.91
     validation_status: semantic
-    similarity: 0.7607664465904236
+    similarity: 0.7607661485671997
     context: source_fragment
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.323318Z'
+    timestamp: '2025-09-18T05:27:43.808967Z'
   - original_tag: communication
     canonical_tag: communication
     matched_tag: communication
@@ -338,9 +339,9 @@
     similarity: 1.0
     context: summary
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.330032Z'
+    timestamp: '2025-09-18T05:27:43.813841Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.330035Z'
+  timestamp: '2025-09-18T05:27:43.813845Z'
 - hlj_id: REQ-030-HLJ-Chunk_2-Item_1-v1.0
   original_tags:
   - security
@@ -359,7 +360,7 @@
     similarity: 1.0
     context: summary
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.339020Z'
+    timestamp: '2025-09-18T05:27:43.819498Z'
   - original_tag: artifacts
     canonical_tag: artifacts
     matched_tag: artifacts
@@ -369,7 +370,7 @@
     similarity: 1.0
     context: summary
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.347787Z'
+    timestamp: '2025-09-18T05:27:43.824671Z'
   - original_tag: '[INFERRED] compliance'
     canonical_tag: '[INFERRED] compliance'
     matched_tag: '[INFERRED] compliance'
@@ -379,9 +380,9 @@
     similarity: 0.0
     context: null
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.490097Z'
+    timestamp: '2025-09-18T05:27:43.923901Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.490102Z'
+  timestamp: '2025-09-18T05:27:43.923908Z'
 - hlj_id: REQ-030-HLJ-Chunk_2-Item_2-v1.0
   original_tags:
   - accessibility
@@ -399,7 +400,7 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.492900Z'
+    timestamp: '2025-09-18T05:27:43.926014Z'
   - original_tag: compliance
     canonical_tag: compliance
     matched_tag: compliance
@@ -409,6 +410,6 @@
     similarity: 1.0
     context: title
     alias_used: false
-    timestamp: '2025-09-15T10:30:21.495294Z'
+    timestamp: '2025-09-18T05:27:43.927624Z'
   validation_version: v2
-  timestamp: '2025-09-15T10:30:21.495296Z'
+  timestamp: '2025-09-18T05:27:43.927627Z'
