@@ -19,6 +19,11 @@
 * Open shell: `docker compose exec pipeline bash`
 * Run pipeline script: `docker compose exec pipeline python scripts/run_pipeline.py --config configs/pipeline_v2.yaml`
 * Container mounts the repo at `/workspace`
+* Full Run at Once: 
+1. `docker compose build`
+2. `docker compose exec pipeline bash`
+3. `python -m scripts.run_pipeline --all`
+
 
 ## React Frontend
 
